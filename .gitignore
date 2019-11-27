@@ -1,0 +1,9 @@
+*.log
+*.lis
+*.err
+*.bak
+*.dmp
+*.dmp
+*.pyc
+*.vscode
+_build
