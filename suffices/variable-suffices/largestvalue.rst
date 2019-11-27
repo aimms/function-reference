@@ -1,0 +1,30 @@
+.. _.LargestValue:
+
+.LargestValue
+=============
+
+Definition
+----------
+
+    When the property ``ValueRange`` of a variable is set and the option
+    ``Calculate_Sensitivity_Ranges`` is not set to ``off`` a value range
+    sensitivity analysis is conducted such that the objective value remains
+    constant. As a result of this analysis the variable suffix
+    ``.LargestValue`` contains the largest possible value of that variable.
+
+Datatype
+--------
+
+    The value of the ``.LargestValue`` suffix is numeric.
+
+Dimension
+---------
+
+    The ``.LargestValue`` suffix has the same dimension and domain as that
+    of the variable at hand.
+
+.. note::
+
+    -  The default of the option ``Calculate_Sensitivity_Ranges`` is ``on``.
+
+    -  See also Section 14.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.

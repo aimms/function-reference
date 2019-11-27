@@ -1,0 +1,31 @@
+.. _.LargestCoefficient:
+
+.LargestCoefficient
+===================
+
+Definition
+----------
+
+    When the property ``CoefficientRange`` of a variable is set and the
+    option ``Calculate_Sensitivity_Ranges`` is not set to ``off`` a
+    coefficient range sensitivity analysis is conducted such that the
+    optimal basis remains constant. As a result of this analysis the
+    variable suffix ``.LargestCoefficient`` contains the largest objective
+    coefficient value.
+
+Datatype
+--------
+
+    The value of the ``.LargestCoefficient`` suffix is numeric.
+
+Dimension
+---------
+
+    The ``.LargestCoefficient`` suffix has the same dimension and domain as
+    that of the variable at hand.
+
+.. note::
+
+    -  The default of the option ``Calculate_Sensitivity_Ranges`` is ``on``.
+
+    -  See also Section 14.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.

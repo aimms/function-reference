@@ -1,0 +1,85 @@
+.. aimms:function:: DepreciationNonLinearSumOfYear(PurchaseDate, NextPeriodDate, Cost, Salvage, Life, Period, Basis)
+
+.. _DepreciationNonLinearSumOfYear:
+
+DepreciationNonLinearSumOfYear
+==============================
+
+The function :aimms:func:`DepreciationNonLinearSumOfYear` returns the depreciation
+of an asset for the specified period, using sum of years' digits
+depreciation. The accounting periods have a length of one year, but they
+don't necessary need to start January 1. The depreciation amounts
+decline linear for every following period until the value reaches the
+salvage.
+
+.. code-block:: aimms
+
+    DepreciationNonLinearSumOfYear(
+        PurchaseDate,             ! (input) scalar string expression
+        NextPeriodDate,           ! (input) scalar string expression
+        Cost,                     ! (input) numerical expression
+        Salvage,                  ! (input) numerical expression
+        Life,                     ! (input) numerical expression
+        Period,                   ! (input) numerical expression
+        [Basis]                   ! (optional) numerical expression
+        )
+
+Arguments
+---------
+
+    *PurchaseDate*
+        The date of purchase of the asset. *PurchaseDate* must be given in a
+        date format. This is the first day that there will be depreciated.
+
+    *NextPeriodDate*
+        The next date after the balance is drawn up. *NextPeriodDate* must also
+        be in date format. *NextPeriodDate* is the first day of a new period and
+        must be further in time than *PurchaseDate*, but not more than one year
+        after *PurchaseDate*. When *NextPeriodDate* is an empty string, it will
+        get the default value of January 1st of the next year after purchase.
+
+    *Cost*
+        The purchase or initial cost of the asset. *Cost* must be a positive
+        number.
+
+    *Salvage*
+        The value of the asset at the end of its useful life. *Salvage* must be
+        a scalar numerical expression in the range :math:`[0, Cost)`.
+
+    *Life*
+        The number of periods until the asset will be fully depreciated, also
+        called the useful life of the asset. *Life* must be a positive integer.
+
+    *Period*
+        The period for which you want to compute the depreciation. *Period* an
+        integer in the range :math:`\{1, Life + 1\}`. Period 1 is the (partial)
+        period from *PurchaseDate* until *NextPeriodDate*.
+
+    *Basis*
+        The day-count basis method to be used. The default is 1.
+
+Return Value
+------------
+
+    The function :aimms:func:`DepreciationNonLinearSumOfYear` returns the depreciation
+    of an asset for the specified period.
+
+Equation
+--------
+
+    The method-dependent depreciation :math:`\tilde{d_i}` is expressed by
+    the equation
+
+    .. math::
+
+       \begin{aligned}
+        \tilde{d_1} &= \frac{c-s}{\frac{1}{2}L(L+1)}Lf_{PN} & \\ \tilde{d_i} &= \frac{c-s}{\frac{1}{2}L(L+1)}(L + 2 - i - f_{PN}) & \qquad (i\neq 1). \end{aligned}
+
+.. note::
+
+    The function :aimms:func:`DepreciationNonLinearSumOfYear` is similar to the Excel
+    function ``SYD``.
+
+.. seealso::
+
+    Day count basis :ref:`methods<ff.dcb>`. General equations for computing :ref:`depreciations<FF.depreq>`.

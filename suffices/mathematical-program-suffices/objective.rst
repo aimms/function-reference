@@ -1,0 +1,23 @@
+.. _.objective:
+
+.objective
+==========
+
+Definition
+----------
+
+    The mathematical program suffix ``.objective`` suffix contains the value
+    of the objective at the end of the solve.
+
+Datatype
+--------
+
+    The value of the ``.objective`` suffix is numeric. When the solve is not
+    successful or infeasible the value of the ``.objective`` is ``NA``.
+
+.. note::
+
+    -  The equivalent GAMS and AIMMS 2 name is ``.objval``.
+
+    -  The ``.objective`` suffix is also mentioned in Table 15.3 of the
+       `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.

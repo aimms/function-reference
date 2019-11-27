@@ -1,0 +1,40 @@
+.. aimms:function:: IdentifierText(identifierName)
+
+.. _IdentifierText:
+
+IdentifierText
+==============
+
+The function :aimms:func:`IdentifierText` returns the text of ``identifierName``
+or, if the text is not specified, the name of the identifier.
+
+.. code-block:: aimms
+
+    IdentifierText(
+         identifierName)       ! (input) scalar element parameter
+
+Arguments
+---------
+
+    *identifierName*
+        An element expression in the predefined set :aimms:set:`AllIdentifiers` specifying the
+        identifier for which the text should be obtained.
+
+Return Value
+------------
+
+    This function returns a non-negative integer. If ``identifierName`` is
+    not an identifier, an error message is issued. When the text is not
+    specified, the name of the identifier is returned.
+
+.. note::
+
+    This function replaces the deprecated suffix :ref:`.txt`.
+
+.. seealso::
+
+    -  The functions :aimms:func:`IdentifierText`.
+
+    -  Section 25.4 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+
+    -  The common example in :numref:`CommonModelQueryExample`.

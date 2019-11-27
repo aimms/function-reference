@@ -1,0 +1,51 @@
+.. aimms:function:: StringOccurrences(SearchString, Key, CaseSensitive, WordOnly, IgnoreWhite)
+
+.. _StringOccurrences:
+
+StringOccurrences
+=================
+
+The function :aimms:func:`StringOccurrences` counts the number of occurrences of a
+particular substring in a string.
+
+.. code-block:: aimms
+
+    StringOccurrences(
+         SearchString,    ! (input) a string expression
+         Key,             ! (input) a string expression
+         [CaseSensitive], ! (optional) binary
+         [WordOnly],      ! (optional) binary
+         [IgnoreWhite]    ! (optional) binary
+         )
+
+Arguments
+---------
+
+    *SearchString*
+        A string in which you want to find the substring(s).
+
+    *Key*
+        The substring.
+
+    *CaseSensitive*
+        The search will be case sensitive when the value is 1. The default
+        depends on the setting of the option
+        ``Case_sensitive_string_comparison``, and is 1 if this option is 'On'
+        and 0 if this option is 'Off'. The default of the option
+        ``Case_sensitive_string_comparison`` is 'On'.
+
+    *WordOnly*
+        It is a word only search when this option is set to 1. The default is 0.
+
+    *IgnoreWhite*
+        The search ignores whites if this option is set to 1. The default is 0.
+
+Return Value
+------------
+
+    The function returns how many occurrences of the substring *Key* exist
+    in the string *SearchString*.
+
+.. seealso::
+
+    The functions :aimms:func:`FindString`, :aimms:func:`FindNthString`.
