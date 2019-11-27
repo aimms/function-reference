@@ -130,8 +130,8 @@ Example
                    ! in solution repository.
                    GMP::Solution::Copy(gmp_mip,1,cnt);
                endwhile;
-
-        After executing this code, the five best integer solutions will be
+    
+    After executing this code, the five best integer solutions will be
     stored at positions 2 - 6 in the solution repository, with the best
     solution at position 2 and the 5th best at position 6.
 

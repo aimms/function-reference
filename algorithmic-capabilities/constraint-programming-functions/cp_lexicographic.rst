@@ -155,9 +155,7 @@ Example
 .. seealso::
 
     -  The help text associated with the option ``constraint_listing``. This
-       option can be found via the AIMMS menu ``settings`` â€"
-       ``project options`` category ``Solvers general`` â€"
-       ``Standard reports`` â€" ``constraints``.
+       option can be found via the AIMMS menu ``settings`` > ``project options`` category ``Solvers general`` > ``Standard reports`` > ``constraints``.
 
     -  Chapter 22 on Constraint Programming in the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
 

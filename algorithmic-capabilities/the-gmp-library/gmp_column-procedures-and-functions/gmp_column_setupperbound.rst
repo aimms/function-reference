@@ -81,10 +81,10 @@ Example
                GMP::Column::SetUpperBound( 'MP', x1, 40 * GMP::Column::GetScale( 'MP', x1 ) );
                ub3 := GMP::Column::GetUpperBound( 'MP', x1 );
                display ub3;
-
-        (where 'ub1', 'ub2' and 'ub3' are parameters without a unit) we get the
-    following results: 
-
+    
+    (where 'ub1', 'ub2' and 'ub3' are parameters without a unit) we get the
+    following results:
+    
     .. code-block:: aimms
 
                ub1 := 20 ;

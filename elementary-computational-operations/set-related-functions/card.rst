@@ -76,7 +76,7 @@ Return Value
                            A := 1;
                            display TheCards;
 
-              Here ``TheCards`` is computed in the display statement because ``A``
+       Here ``TheCards`` is computed in the display statement because ``A``
        just changed. The definition of ``TheCards``, that is made up to date
        by the display statement, will, however, not invoke the computation
        of ``B``, although it is not up to date. This is done in order to

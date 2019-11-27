@@ -81,10 +81,9 @@ Example
                GMP::Column::SetLowerBound( 'MP', x1, 40 * GMP::Column::GetScale( 'MP', x1 ) );
                lb3 := GMP::Column::GetLowerBound( 'MP', x1 );
                display lb3;
-
-        (where 'lb1', 'lb2' and 'lb3' are parameters without a unit) we get the
-    following results: 
-
+    
+    (where 'lb1', 'lb2' and 'lb3' are parameters without a unit) we get the following results: 
+    
     .. code-block:: aimms
 
                lb1 := 20 ;
