@@ -1,4 +1,4 @@
-.. aimms:procedure:: DisAggregate(PeriodData, TimeslotData, Timetable, Type, Locus (only for {\tt interpolation} type))
+.. aimms:procedure:: DisAggregate(PeriodData, TimeslotData, Timetable, Type[, Locus])
 
 .. _DisAggregate:
 
@@ -43,8 +43,8 @@ Arguments
         An element of the pre-defined set :aimms:set:`AggregationTypes` (``summation``, ``average``,
         ``maximum``, ``minimum``, or ``interpolation``).
 
-    *Locus*
-        (only for ``interpolation`` type)] A number between 0 and 1, that
+    *Locus (only for ``interpolation`` type)*
+        A number between 0 and 1, that
         indicates at which moment in a period the quantity is to be measured.
 
 .. seealso::
