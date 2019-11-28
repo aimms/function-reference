@@ -1,4 +1,4 @@
-.. aimms:function:: cp::BinPacking(binBinding, binCapacity, objectBinding, objectAssignment, objectWeight, numberOfBinsUsed)
+.. aimms:function:: cp::BinPacking(binBinding, binCapacity, objectBinding, objectAssignment, objectWeight[, numberOfBinsUsed])
 
 .. _cp::BinPacking:
 
@@ -71,7 +71,7 @@ Arguments
         The weight of each object, defined over the binding domain
         ``objectBinding``. This expression cannot involve variables.
 
-    *numberOfBinsUsed*
+    *numberOfBinsUsed (optional)*
         The number of bins that are used to pack the objects. This argument is
         an optional expression with a numerical value that may involve
         variables.
