@@ -1,4 +1,4 @@
-.. aimms:procedure:: HistogramSetDomain(histogram\_id, intervals[, left][, width][, left\_tail][, right\_tail])
+.. aimms:procedure:: HistogramSetDomain(histogram\_id, intervals[, left, width, left\_tail, right\_tail])
 
 .. _HistogramSetDomain:
 
