@@ -54,8 +54,6 @@ if os.name != 'nt':
     extensions.append('sphinx_sitemap')
     html_baseurl = "https://documentation.aimms.com/functionreference/"
 
-intersphinx_mapping = {'aimmsdoc': ('https://documentation.aimms.com',
-                                  (None,'objects-docs.inv'))}
  
 
 # Add any paths that contain templates here, relative to this directory.
