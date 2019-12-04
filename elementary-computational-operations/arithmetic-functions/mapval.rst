@@ -25,16 +25,15 @@ Return Value
 
     .. table:: 
 
-        =========== ========================================================================== ==========
-        **Value x** **Description**                                                            **MapVal**
-        \                                                                                      **value**
+        =========== ========================================================================== ================
+        **Value x** **Description**                                                            **MapVal value**
         *number*    any valid real number                                                      0
         ``UNDF``    undefined (result of an arithmetic error)                                  4
         ``NA``      not available                                                              5
         ``INF``     :math:`+\infty`                                                            6
         ``-INF``    :math:`-\infty`                                                            7
         ``ZERO``    numerically indistinguishable from zero, but has the logical value of one. 8
-        =========== ========================================================================== ==========
+        =========== ========================================================================== ================
 
 .. seealso::
 
