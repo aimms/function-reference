@@ -24,7 +24,7 @@ Arguments
         a network location.
 
     *contents*
-        A subset of ``AllIdentifiers`` containing all the identifiers that must
+        A subset of :aimms:set:`AllIdentifiers` containing all the identifiers that must
         be saved. Preferrably, this set is an element of :aimms:set:`AllCaseFileContentTypes` such that,
         when reading back the case file, the content type can be determined
         correctly.
