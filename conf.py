@@ -162,7 +162,7 @@ latex_documents = [
      u'AIMMS User Support', 'manual', True),
 ]
 
-latex_logo = "resources\\images\\aimms-logo-bw.jpg"
+latex_logo = "_static/AIMMS_logo_BlackWhite-PRINT-900x508.jpg"
 
 latex_show_pagerefs = True
 
