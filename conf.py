@@ -20,7 +20,7 @@ import sys
 # -- Project information -----------------------------------------------------
 
 project = u'AIMMS Function Reference'
-copyright = u'2019, AIMMS B.V.'
+copyright = u'2020, AIMMS B.V.'
 author = u'AIMMS'
 
 book_title = "Function Reference"
@@ -135,6 +135,8 @@ htmlhelp_basename = 'book-testdoc'
 
 
 # -- Options for LaTeX output ------------------------------------------------
+
+latex_engine = 'pdflatex'
 
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
