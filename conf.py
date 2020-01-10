@@ -105,6 +105,7 @@ html_theme_options = {
     'display_community_embeddable' : False,
     'display_local_toc' : False,
     'titles_only' : True,
+    'display_algolia_search': False,
 
 }
 
