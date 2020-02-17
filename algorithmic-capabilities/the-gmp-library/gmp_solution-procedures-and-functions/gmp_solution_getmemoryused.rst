@@ -30,6 +30,12 @@ Return Value
 
     The amount of megabytes used to create a solution.
 
+.. note::
+
+    For CPLEX and GUROBI, AIMMS calculates the memory in use
+    based on the virtual memory used by the process. This approach is not
+    reliable for asynchronous solver sessions.
+
 .. seealso::
 
     The procedure :aimms:func:`GMP::Instance::SetMemoryLimit`.
