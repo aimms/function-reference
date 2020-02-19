@@ -80,7 +80,7 @@ language = None
 exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'default'
+pygments_style = 'aimmslexer'
 
 
 # -- Options for HTML output -------------------------------------------------
@@ -139,6 +139,12 @@ htmlhelp_basename = 'book-testdoc'
 
 latex_engine = 'pdflatex'
 
+my_preamble =  '''
+\\usepackage{etoolbox}
+\\BeforeBeginEnvironment{fulllineitems}{\\begingroup\\color{white}\\tiny}%
+\\AfterEndEnvironment{fulllineitems}{\\endgroup}%
+'''
+
 latex_elements = {
     # The paper size ('letterpaper' or 'a4paper').
     #
@@ -150,7 +156,7 @@ latex_elements = {
 
     # Additional stuff for the LaTeX preamble.
     #
-    # 'preamble': '',
+    'preamble': my_preamble,
 
     # Latex figure (float) alignment
     #
@@ -165,7 +171,7 @@ latex_documents = [
      u'AIMMS User Support', 'manual', True),
 ]
 
-latex_logo = "_static/AIMMS_logo_BlackWhite-PRINT-900x508.jpg"
+latex_logo = "AIMMS_logo_BlackWhite-PRINT-900x508.jpg"
 
 latex_show_pagerefs = True
 
