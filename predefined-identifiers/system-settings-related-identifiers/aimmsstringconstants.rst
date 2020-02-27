@@ -15,20 +15,20 @@ determine which installation of AIMMS is running.
             IndexDomain :  ( IndexAimmsStringConstantElements );
         }
 
-    This string parameter contains the following elements:
+This string parameter contains the following elements:
 
--  **``Platform``** AIMMS supports the platform ``"Windows"``, and the
-   platform ``"Linux"``.
+``Platform``
+    AIMMS supports the platform ``"Windows"``, and the platform ``"Linux"``.
 
--  **``Architecture``** The architecture for 32 bit systems is known as
-   ``"x86"``, and the architecture for 64 bit systems is known as
-   ``"x64"``.
+``Architecture``
+    The architecture for 32 bit systems is known as ``"x86"``, and the 
+    architecture for 64 bit systems is known as ``"x64"``.
 
--  **``Flavor``** AIMMS comes only in a single flavor: ``"utf8"``. Up to
-   AIMMS 3.13, AIMMS came in the single byte per character flavor,
-   abbreviated to ``"asc"``, and it came in the two byte per character
-   flavor, abbreviated to ``"uni"``. For the ``Linux`` platform only the
-   ``asc`` flavor was available.
+``Flavor``
+    AIMMS comes only in a single flavor: ``"utf8"``. Up to AIMMS 3.13, AIMMS 
+    came in the single byte per character flavor, abbreviated to ``"asc"``, and 
+    it came in the two byte per character flavor, abbreviated to ``"uni"``. For 
+    the ``Linux`` platform only the ``asc`` flavor was available.
 
 Example
 -------
@@ -37,8 +37,8 @@ Example
 
                 StringParameter myDllName {
                     Definition : {
-                        AimmsStringConstants('Architecture') + "\" +
-                        AimmsStringConstants('Flavor') + "\" +
+                        AimmsStringConstants('Architecture') + "\\" +
+                        AimmsStringConstants('Flavor') + "\\" +
                         "myDll.dll"
                     }
                 }
