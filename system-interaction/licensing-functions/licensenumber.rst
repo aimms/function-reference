@@ -29,8 +29,8 @@ Return Value
 .. note::
 
     The procedure will return the license number as a string of the form
-    "``015.090.010.007``" if you are using an AIMMS 3 license, or as a
-    string of the form "``1234.56``" if you are using an AIMMS 2 license.
+    ``015.090.010.007`` if you are using an AIMMS 3 license, or as a
+    string of the form ``1234.56`` if you are using an AIMMS 2 license.
 
 .. seealso::
 
