@@ -34,8 +34,7 @@ Return Value
     -  The functions :aimms:func:`me::IsRunnable` and the ``APPLY statement``
        `[LRsec:intern.ref.apply] <#LRsec:intern.ref.apply>`__.
 
-    -  The AIMMS blog post: `Getting value of a dynamic
-       identifier <http://blog.aimms.com/2011/11/getting-value-of-a-dynamic-identifier/>`__
+    -  :any:`Articles/146/146-value-dynamic-identifier`
        illustrates the use of model edit functions. The purpose of
        :aimms:func:`me::Compile` in that post is to check the code in the runtime
        library and prepare it for execution.
