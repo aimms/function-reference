@@ -36,5 +36,4 @@ Updatability
 
 .. seealso::
 
-    Options in AIMMS is described in detail in Section 20.1 of the User's
-    Guide.
+    Options in AIMMS is described in detail in Section 20.1 of the '`User\'s Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__'.

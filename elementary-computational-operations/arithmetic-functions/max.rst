@@ -1,4 +1,4 @@
-.. aimms:function:: Max(x1,x2,$\dots$)
+.. aimms:function:: Max(x1,x2,...)
 
 .. _Max:
 
@@ -10,13 +10,13 @@ Max
     Max(
         x1,      ! (input) numerical, string or element expression
         x2,      ! (input) numerical, string or element expression
-        ..
+        ...
         )
 
 Arguments
 ---------
 
-    *x1,x2,$\dots$*
+    *x1,x2,...*
         Multiple numerical, string or element expressions.
 
 Return Value

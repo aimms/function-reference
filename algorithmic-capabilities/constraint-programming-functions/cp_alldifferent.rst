@@ -125,6 +125,5 @@ Example
     -  Further information on index binding can be found in the Chapter on
        Index Binding 9 in the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
 
-    -  The global constraint catalog
-       http://www.emn.fr/z-info/sdemasse/gccat/Calldifferent.html which
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/>`__, which
        references this function as ``alldifferent``.

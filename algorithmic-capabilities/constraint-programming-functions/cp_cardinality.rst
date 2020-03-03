@@ -110,6 +110,5 @@ Example
 
     -  The Chapter on Constraint Programming 22 in the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
 
-    -  The global constraint catalog
-       http://www.emn.fr/z-info/sdemasse/gccat/Cglobal_cardinality.html
-       which references this function as ``global_cardinality``.
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/>`__, which
+       references this function as ``global_cardinality``.

@@ -21,7 +21,7 @@ Return Value
 ------------
 
     The function :aimms:func:`Trunc` returns the truncated value of *x*:
-    ``Sign``\ (:math:`x`)\ :math:`\cdot`\ ``Floor``\ (``Abs``\ (:math:`x`)).
+    :math:`\textrm{sgn} \left( x \right) \cdot \lfloor \mid x \mid \rfloor`.
 
 .. note::
 

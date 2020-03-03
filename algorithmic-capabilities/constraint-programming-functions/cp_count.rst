@@ -123,7 +123,6 @@ Example
 
     -  Chapter 22 on Constraint Programming in the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
 
-    -  The global constraint catalog
-       http://www.emn.fr/z-info/sdemasse/gccat/Ccount.html which references
-       this function as ``count``, or, depending on a particular choice of
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/>`__, which
+       references this function as ``count`` or, depending on a particular choice of
        :math:`\otimes`, as ``atleast``, ``atmost`` or ``exactly``.
