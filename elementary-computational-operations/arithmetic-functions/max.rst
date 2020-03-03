@@ -10,7 +10,7 @@ Max
     Max(
         x1,      ! (input) numerical, string or element expression
         x2,      ! (input) numerical, string or element expression
-        ..
+        ...
         )
 
 Arguments
