@@ -34,7 +34,7 @@ Return Value
     -  The functions :aimms:func:`me::IsRunnable` and the ``APPLY statement``, 
        see Section 10.3.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
 
-    -  :doc:`../146-value-dynamic-identifier`
+    -  :ref:`146-value-dynamic-identifier`
        illustrates the use of model edit functions. The purpose of
        :aimms:func:`me::Compile` in that post is to check the code in the runtime
        library and prepare it for execution.
