@@ -79,9 +79,3 @@ Return Value
     -  Upto AIMMS 3.11 this function was known as ``ExcelRetrieveTable``,
        which has become deprecated as of AIMMS 3.12.
 
-.. seealso::
-
-    An example of the use of ``ExcelRetrieveTable`` is presented on the
-    AIMMS blog post: `Reading multi-dimensional Excel data with
-    ExcelRetrieveTable <http://blog.aimms.com/2011/11/reading-multi-dimensional-excel-data-with-excelretrievetable/>`__
-    including a pictorial explanation of the use of spreadsheet ranges.

@@ -36,7 +36,6 @@ Return Value
 
     -  The functions :aimms:func:`MomentToString`, :aimms:func:`CurrentToMoment`.
 
-    -  The AIMMS blog post: `Creating StopWatch in AIMMS to time
-       execution <http://blog.aimms.com/2011/12/creating-stopwatch-in-aimms-to-time-execution/>`__
+    -  :any:`Articles/144/144-Stopwatch`
        illustrates the use of some time functions. The purpose of
        :aimms:func:`CurrentToString` in that post is to mark the starting point.
