@@ -13,8 +13,8 @@ definitions can be evaluated provided there are no errors.
 .. code-block:: aimms
 
     me::Compile(
-            runtimeId  ! (input) an element
-    )
+               runtimeId  ! (input) an element
+               )
 
 Arguments
 ---------
