@@ -36,5 +36,4 @@ Return Value
 .. seealso::
 
     The procedures :aimms:func:`HistogramCreate`, :aimms:func:`HistogramAddObservation`, :aimms:func:`HistogramAddObservations`. Histogram support in
-    AIMMS is discussed in full detail in Section A.6 of the Language
-    Reference.
+    AIMMS is discussed in full detail in Section A.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
