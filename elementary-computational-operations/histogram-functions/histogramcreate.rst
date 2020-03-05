@@ -42,4 +42,4 @@ Return Value
 .. seealso::
 
     The functions :aimms:func:`HistogramDelete`, :aimms:func:`HistogramAddObservation`, :aimms:func:`HistogramAddObservations`. Histogram support in
-    AIMMS is discussed in full detail in Section A.6 of the `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__.
+    AIMMS is discussed in full detail in Section A.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
