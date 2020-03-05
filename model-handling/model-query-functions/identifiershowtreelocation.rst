@@ -21,7 +21,7 @@ Arguments
 ---------
 
     *identifier*
-        The identifier for whcih you want to show the location in the Model
+        The identifier for which you want to show the location in the Model
         Explorer.
 
 .. seealso::
