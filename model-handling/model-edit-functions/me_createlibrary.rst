@@ -35,5 +35,5 @@ Return Value
 
     -  The functions :aimms:func:`me::ImportLibrary` and :aimms:func:`me::Create`.
 
-    -  :any:`Articles/146/146-value-dynamic-identifier`
+    -  :doc:`Articles/146/146-value-dynamic-identifier`
        illustrates the use of model edit functions.
