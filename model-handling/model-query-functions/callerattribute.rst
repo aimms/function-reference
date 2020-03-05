@@ -11,8 +11,8 @@ on the current execution stack.
 .. code-block:: aimms
 
     CallerAttribute(
-         Depth      ! (optional) scalar element parameter
-         )
+                   Depth      ! (optional) scalar element parameter
+                   )
 
 Arguments
 ---------
@@ -29,6 +29,6 @@ Return Value
 
 .. seealso::
 
-    -  The example at :aimms:func:`CallerNumberOfLocations`
+    -  The example at :aimms:func:`CallerNumberOfLocations`.
 
     -  The functions :aimms:func:`errh::Attribute`, :aimms:func:`CallerLine`, :aimms:func:`CallerNode`, and :aimms:func:`CallerNumberOfLocations`.
