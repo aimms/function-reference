@@ -41,7 +41,7 @@ Return Value
 
     -  The procedures :aimms:func:`me::Create` and :aimms:func:`me::ChangeType`.
 
-    -  :any:`Articles/146/146-value-dynamic-identifier`
+    -  :doc:`Articles/146/146-value-dynamic-identifier`
        illustrates the use of model edit functions. The purpose of
        :aimms:func:`me::SetAttribute` in that post is to specify the body of the
        procedure that does the actual work.
