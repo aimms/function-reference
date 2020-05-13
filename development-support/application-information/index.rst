@@ -7,7 +7,6 @@ Application Information
    identifiergetusedinformation
    identifiermemory
    identifiermemorystatistics
-   listexpressionsubstitutions
    memoryinuse
    memorystatistics
    showhelptopic
