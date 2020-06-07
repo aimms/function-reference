@@ -1,4 +1,4 @@
-.. aimms:function:: Execute(executable[, commandline][, workdir][, wait][, minimized])
+.. aimms:function:: Execute(executable[, commandline, workdir, wait, minimized])
 
 .. _Execute:
 
