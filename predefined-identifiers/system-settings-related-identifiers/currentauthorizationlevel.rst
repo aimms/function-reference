@@ -42,7 +42,7 @@ Updatability
     The use of authorization levels in AIMMS directly is deprecated, as user
     authentication and authorization during deployment is now arranged via
     AIMMS PRO (cf. Section
-    `[UGsec:security.auth] <#UGsec:security.auth>`__).
+    `Project Security <https://download.aimms.com/aimms/download/manuals/AIMMS3UG_ProjectSecurity.pdf>`_).
 
 .. seealso::
 

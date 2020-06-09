@@ -53,7 +53,7 @@ Return Value
        with ``mp.ExtendedVariable(MasterMIPObjective)``. The extra row will
        be
 
-       .. math:: \verb|objvar| - \verb|mp.ExtendedVariable(MasterMIPObjective)| = 0
+       .. math:: objvar - mp.ExtendedVariable(MasterMIPObjective) = 0
 
        \ where ``objvar`` denotes the objective variable of the GMP. Column
        ``mp.ExtendedVariable(MasterMIPObjective)`` will become the objective

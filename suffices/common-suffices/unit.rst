@@ -11,7 +11,7 @@ Definition
 Datatype
 --------
 
-    The datatype of the u̇nit suffix is string
+    The datatype of the ``.unit`` suffix is string
 
 Dimension
 ---------

@@ -24,7 +24,7 @@ Arguments
 
     *NumberOfTries*
         A integer numerical expression in the range
-        :math:`1,\dots,\mbox\textit{PopulationSize}`.
+        :math:`1,\dots,{PopulationSize}`.
 
     *PopulationSize*
         A integer numerical expression :math:`> 0`.
@@ -40,8 +40,8 @@ Return Value
 .. note::
 
     The probability of success *ProbabilityOfSuccess* must assume one of the
-    values :math:`i/\mbox\textit{size}`, where :math:`i` is in the range
-    :math:`1,\dots,\mbox\textit{PopulationSize}-1`.
+    values :math:`i/{size}`, where :math:`i` is in the range
+    :math:`1,\dots,{PopulationSize}-1`.
 
 .. seealso::
 
