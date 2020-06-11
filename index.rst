@@ -4,7 +4,7 @@ Function Reference
 Please find the PDF version of the AIMMS Function Reference `here <https://documentation.aimms.com/_downloads/AIMMS_func.pdf>`__.
 
 .. toctree::
-   :maxdepth: 1
+   :maxdepth: 3
 
    elementary-computational-operations/index
    algorithmic-capabilities/index

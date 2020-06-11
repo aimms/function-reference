@@ -120,8 +120,6 @@ html_theme_options = {
     'display_algolia_search': False,
     'google_analytics_id': 'UA-1290545-13',
     'generate_google_analytics' : Display_3rd_Party_Extensions,
-
-
 }
 
 
@@ -167,7 +165,7 @@ latex_elements = {
 
     # The font size ('10pt', '11pt' or '12pt').
     #
-    'pointsize': '11pt',
+    #'pointsize': '11pt',
 
     # Additional stuff for the LaTeX preamble.
     #
@@ -181,8 +179,10 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
+latex_doc_name = 'AIMMS_func.tex'
+
 latex_documents = [
-    (master_doc, 'master.tex', book_title,
+    (master_doc, latex_doc_name, book_title,
      u'AIMMS User Support', 'manual', True),
 ]
 
@@ -190,30 +190,9 @@ latex_logo = "AIMMS_logo_BlackWhite-PRINT-900x508.jpg"
 
 latex_show_pagerefs = True
 
-latex_show_urls = 'footnote'
+#latex_show_urls = 'footnote'
 
-latex_additional_files = ['_fortex/Makefile']
-
-# -- Options for manual page output ------------------------------------------
-
-# One entry per manual page. List of tuples
-# (source start file, name, description, authors, manual section).
-man_pages = [
-    (master_doc, 'master', book_title,
-     [author], 1)
-]
-
-
-# -- Options for Texinfo output ----------------------------------------------
-
-# Grouping the document tree into Texinfo files. List of tuples
-# (source start file, target name, title, author,
-#  dir menu entry, description, category)
-texinfo_documents = [
-    (master_doc, 'book-test', book_title,
-     author, 'book-test', 'One line description of project.',
-     'Miscellaneous'),
-]
+#latex_additional_files = ['_fortex/Makefile']
 
 
 # -- Extension configuration -------------------------------------------------
