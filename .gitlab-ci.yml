@@ -14,3 +14,17 @@ build_and_install:
   only:
     - master
   
+compile_PDF:
+  stage: build
+  script:
+    - sudo apt-get install texlive-latex-recommended -y
+    - sudo apt-get install texlive-fonts-recommended -y
+    - sudo apt-get install texlive-latex-extra -y
+    - sudo apt-get install latexmk -y
+    - sphinx-build -M latex . _build 
+    - sphinx-build -M latexpdf . _build 
+    - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
+  tags: 
+    - ubuntu
+  only:
+    - master
