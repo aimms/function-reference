@@ -34,7 +34,7 @@ Return Value
 
     -  This function can also be used for GMPs with model type QP that are
        solved with CPLEX, if the CPLEX option *Solution Target* is set to
-       'Search for global optimum's.
+       'Search for global optimum'.
 
     -  This function can also be used for GMPs with model type QP or QCP that are
        solved with GUROBI 9.0 or higher, if the GUROBI option *Nonconvex Strategy*
