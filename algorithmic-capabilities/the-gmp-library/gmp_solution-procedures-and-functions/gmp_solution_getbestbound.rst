@@ -31,10 +31,18 @@ Return Value
 
 .. note::
 
-    -  This function has only meaning for a generated mathematical program
-       with model type MIP, MIQP or MIQCP.
+    -  This function can be used for GMPs with model type MIP, MIQP or MIQCP.
 
-    -  
+    -  This function can also be used for GMPs solved with BARON,
+       regardless of the model type.
+
+    -  This function can also be used for GMPs with model type QP that are
+       solved with CPLEX, if the CPLEX option *Solution Target* is set to
+       'Search for global optimum's.
+
+    -  This function can also be used for GMPs with model type QP or QCP that are
+       solved with GUROBI 9.0 or higher, if the GUROBI option *Nonconvex Strategy*
+       is set to 'Translate'.
 
 .. seealso::
 
