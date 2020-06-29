@@ -22,6 +22,8 @@ import sys
 project = u'AIMMS Function Reference'
 copyright = u'2020, AIMMS B.V.'
 author = u'AIMMS'
+# changes format of date on the home page
+today_fmt = '%B, %Y'
 
 book_title = "Function Reference"
 
@@ -170,6 +172,9 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     #
     'preamble': my_preamble,
+    #changes color of internal hyperlinks
+    'passoptionstopackages': r'\PassOptionsToPackage{svgnames}{xcolor}',
+    'sphinxsetup': 'InnerLinkColor={RGB}{203,65,84}, TitleColor={RGB}{203,65,84}',
 
     # Latex figure (float) alignment
     #
@@ -183,7 +188,7 @@ latex_doc_name = 'AIMMS_func.tex'
 
 latex_documents = [
     (master_doc, latex_doc_name, book_title,
-     u'AIMMS User Support', 'manual', True),
+     u'AIMMS', 'manual', True),
 ]
 
 latex_logo = "AIMMS_logo_BlackWhite-PRINT-900x508.jpg"
