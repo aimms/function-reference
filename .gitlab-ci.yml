@@ -8,7 +8,7 @@ build_and_install:
   stage: build
   script:
     - sphinx-build -M html . _build 
-    - python -msphinx.ext.intersphinx _build/html/object.inv > _build/html/help_index_functionreference.txt
+    - python -msphinx.ext.intersphinx _build/html/objects.inv > _build/html/help_index_functionreference.txt
     - rsync -rt _build/html/ support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
   tags: 
     - ubuntu
