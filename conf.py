@@ -174,7 +174,7 @@ latex_elements = {
     'preamble': my_preamble,
     #changes color of internal hyperlinks
     'passoptionstopackages': r'\PassOptionsToPackage{svgnames}{xcolor}',
-    'sphinxsetup': 'InnerLinkColor={RGB}{203,65,84}, TitleColor={RGB}{203,65,84}',
+    'sphinxsetup': 'InnerLinkColor={RGB}{203,65,84}, OuterLinkColor={RGB}{0,102,204}',
 
     # Latex figure (float) alignment
     #
