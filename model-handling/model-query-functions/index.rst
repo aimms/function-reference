@@ -1,3 +1,5 @@
+.. _chap:model.query.functions
+
 Model Query Functions
 ---------------------
 
