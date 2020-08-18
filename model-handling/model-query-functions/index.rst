@@ -1,4 +1,4 @@
-.. _chap:model.query.functions
+.. _chap:model.query.functions:
 
 Model Query Functions
 ---------------------
