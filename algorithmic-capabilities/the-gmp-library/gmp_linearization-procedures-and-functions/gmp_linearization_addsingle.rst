@@ -16,7 +16,7 @@ second generated mathematical program (*GMP2*).
          GMP1,                  ! (input) a generated mathematical program
          GMP2,                  ! (input) a generated mathematical program
          solution,              ! (input) a solution
-         row,                   ! (input) a scalar reference
+         row,                   ! (input) a scalar reference or row number
          deviationPermitted,    ! (input) a binary scalar
          penaltyMultiplier,     ! (input) a double scalar
          linNo,                 ! (input) a linearization number
@@ -37,8 +37,9 @@ Arguments
         *GMP2*.
 
     *row*
-        A scalar reference to an existing nonlinear row in *GMP2* for which the
-        linearization is added to *GMP1*.
+        A scalar reference to an existing nonlinear row in the matrix of *GMP2* or the number of
+        that row in the range :math:`\{ 0 .. m-1 \}` where :math:`m` is the
+        number of rows in the matrix of *GMP2*.
 
     *deviationPermitted*
         A binary scalar indicating whether a deviation is permitted for this

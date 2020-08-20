@@ -6,8 +6,8 @@ GMP::Row::SetPoolTypeMulti
 ==========================
 
 The procedure :aimms:func:`GMP::Row::SetPoolTypeMulti` can be used to indicate
-that a group of rows, belonging to a constraint, in a generated
-mathematical program should become part of a pool of lazy constraints or
+that a group of rows, belonging to a constraint in a generated
+mathematical program, should become part of a pool of lazy constraints or
 a pool of (user) cuts. The solvers CPLEX, GUROBI and ODH-CPLEX can make
 use of this information.
 
@@ -16,9 +16,9 @@ use of this information.
     GMP::Row::SetPoolTypeMulti(
          GMP,            ! (input) a generated mathematical program
          binding,        ! (input) an index binding
-         row,            ! (input) a scalar reference or row number
-         value,          ! (input) a scalar reference
-         mode            ! (input) a scalar reference
+         row,            ! (input) a constraint expression
+         value,          ! (input) a numerical expression
+         mode            ! (input) a numerical expression
          )
 
 Arguments

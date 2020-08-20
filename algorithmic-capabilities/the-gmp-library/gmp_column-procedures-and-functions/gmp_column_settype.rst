@@ -13,7 +13,7 @@ the matrix of a generated mathematical program.
     GMP::Column::SetType(
          GMP,            ! (input) a generated mathematical program
          column,         ! (input) a scalar reference or column number
-         type            ! (input) a element in AllColumnTypes
+         type            ! (input) an element in AllColumnTypes
          )
 
 Arguments

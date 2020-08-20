@@ -34,7 +34,7 @@ Return Value
 .. note::
 
     -  The column will not be printed in the constraint listing, nor be
-       visible in the math program inspector and it will be removed from any
+       visible in the Math Program Inspector and it will be removed from any
        solver maintained copies.
 
     -  Use ``GMP::Column::Add`` to undo this action.

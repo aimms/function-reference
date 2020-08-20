@@ -37,7 +37,7 @@ Return Value
        but its contents will not be copied to a solver session.
 
     -  The row will not be printed in the constraint listing, nor be visible
-       in the math program inspector and it will be removed from any solver
+       in the Math Program Inspector and it will be removed from any solver
        maintained copies.
 
 .. seealso::
