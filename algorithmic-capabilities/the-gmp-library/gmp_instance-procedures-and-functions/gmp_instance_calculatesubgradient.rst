@@ -63,7 +63,7 @@ Return Value
        part of *GMP* will be ignored. A row corresponding to a constraint in
        *constraintSet* that is not part of *GMP* will also be ignored.
 
-    -  This procedure is only supported by CPLEX and GUROBI 7.0 or higher.
+    -  This procedure is only supported by CPLEX and GUROBI.
 
     -  This procedure cannot be used if the *GMP* is created by
        ``GMP::Instance::CreateDual``.

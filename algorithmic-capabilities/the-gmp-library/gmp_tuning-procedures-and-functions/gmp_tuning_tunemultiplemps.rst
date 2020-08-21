@@ -74,16 +74,16 @@ Example
 
                Set FixedOptions {
                    SubsetOf   :  AllOptions;
-                   Definition :  data { 'CPLEX 12.9::mip_search_strategy' };
+                   Definition :  data { 'CPLEX 12.10::mip_search_strategy' };
                }
 
     Using
-    CPLEX 12.9 we tune all '.mps', '.lp' and '.sav' problems inside the
+    CPLEX 12.10 we tune all '.mps', '.lp' and '.sav' problems inside the
     directory 'Set1' by executing: 
 
     .. code-block:: aimms
 
-               GMP::Tuning::TuneMultipleMPS( "Set1", 'CPLEX 12.9', FixedOptions );
+               GMP::Tuning::TuneMultipleMPS( "Set1", 'CPLEX 12.10', FixedOptions );
 
     Note that the opion 'mip
     search strategy' is fixed and will not be tuned.

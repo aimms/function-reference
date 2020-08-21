@@ -78,7 +78,7 @@ Return Value
     -  This procedure can be used in combination with a normal solve
        statement.
 
-    -  This procedure is only supported by GUROBI 7.0 or higher.
+    -  This procedure is only supported by GUROBI.
 
     -  If the *computeserver* argument is not specified then the compute
        server must be specified via a Gurobi client license key file.
@@ -108,19 +108,19 @@ Example
 
     .. code-block:: aimms
 
-               GMP::Solver::InitializeEnvironment( 'Gurobi 7.5' );
+               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0' );
 
                solve MP1;
 
-               GMP::Solver::FreeEnvironment( 'Gurobi 7.5' );
+               GMP::Solver::FreeEnvironment( 'Gurobi 9.0' );
 
-               GMP::Solver::InitializeEnvironment( 'Gurobi 7.5', computeserver: "my.server.com",
+               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0', computeserver: "my.server.com",
                                                    priority: 10 );
 
                mgGMP := GMP::Instance::Generate( MP2 );
                GMP::Instance::Solve( myGMP );
 
-               GMP::Solver::FreeEnvironment( 'Gurobi 7.5' );
+               GMP::Solver::FreeEnvironment( 'Gurobi 9.0' );
 
 .. seealso::
 

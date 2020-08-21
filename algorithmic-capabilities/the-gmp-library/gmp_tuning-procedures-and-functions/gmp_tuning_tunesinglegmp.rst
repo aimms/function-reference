@@ -68,7 +68,7 @@ Example
 
                Set FixedOptions {
                    SubsetOf   :  AllOptions;
-                   Definition :  data { 'CPLEX 12.9::mip_search_strategy' };
+                   Definition :  data { 'CPLEX 12.10::mip_search_strategy' };
                }
 
     To tune 'MP' we have
@@ -81,7 +81,7 @@ Example
                GMP::Tuning::TuneSingleGMP( gmpMP, FixedOptions );
 
     Here the opion 'mip search strategy' is fixed and
-    will not be tuned (assuming we are using solver CPLEX 12.9).
+    will not be tuned (assuming we are using solver CPLEX 12.10).
 
 .. seealso::
 

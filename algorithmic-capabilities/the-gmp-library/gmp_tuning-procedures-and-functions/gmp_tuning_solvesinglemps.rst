@@ -72,11 +72,11 @@ Return Value
 Example
 -------
 
-    To solve model 'mod1.mps' using CPLEX 12.9 execute: 
+    To solve model 'mod1.mps' using CPLEX 12.10 execute: 
 
     .. code-block:: aimms
 
-               GMP::Tuning::SolveSingleMPS( 'mod1.mps', 'CPLEX 12.9', SolStat, ProStat, obj, iter,
+               GMP::Tuning::SolveSingleMPS( 'mod1.mps', 'CPLEX 12.10', SolStat, ProStat, obj, iter,
                                             nodes, soltime );
 
 .. seealso::
