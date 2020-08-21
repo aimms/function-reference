@@ -44,7 +44,7 @@ Return Value
 
 .. note::
 
-    -  Use ``Column::SetDecompositionMulti`` if the decomposition value of
+    -  Use ``GMP::Column::SetDecompositionMulti`` if the decomposition value of
        many columns corresponding to some variable have to be set, because
        that will be more efficient.
 

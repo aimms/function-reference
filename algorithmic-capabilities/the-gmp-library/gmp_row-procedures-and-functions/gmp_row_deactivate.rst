@@ -32,6 +32,11 @@ Return Value
 
     The procedure returns 1 on success, and 0 otherwise.
 
+.. note::
+
+    Use ``GMP::Row::DeactivateMulti`` if many rows corresponding to some constraint
+    have to be deactivated, because that will be more efficient.
+
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Row::Activate`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Activate` and :aimms:func:`GMP::Row::DeactivateMulti`.

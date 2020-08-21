@@ -31,15 +31,18 @@ Return Value
 
 .. note::
 
-    Coefficients for this column can be added to the matrix by using the
-    procedure ``GMP::Coefficient::Set``. After calling :aimms:func:`GMP::Column::Add`
-    the type and the lower and upper bound of the column are set according
-    to the definition of the corresponding symbolic variable. By using the
-    procedures ``GMP::Column::SetType``, ``GMP::Column::SetLowerBound`` and
-    ``GMP::Column::SetUpperBound`` the column type and the lower and upper
-    bound can be changed.
+    -  Use ``GMP::Column::AddMulti`` if many columns corresponding to some variable
+       have to be added, because that will be more efficient.
+
+    -  Coefficients for this column can be added to the matrix by using the
+       procedure ``GMP::Coefficient::Set``. After calling :aimms:func:`GMP::Column::Add`
+       the type and the lower and upper bound of the column are set according
+       to the definition of the corresponding symbolic variable. By using the
+       procedures ``GMP::Column::SetType``, ``GMP::Column::SetLowerBound`` and
+       ``GMP::Column::SetUpperBound`` the column type and the lower and upper
+       bound can be changed.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Coefficient::Set`, :aimms:func:`GMP::Column::Delete`, :aimms:func:`GMP::Column::SetType`, :aimms:func:`GMP::Column::SetLowerBound` and
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Coefficient::Set`, :aimms:func:`GMP::Column::AddMulti`, :aimms:func:`GMP::Column::Delete`, :aimms:func:`GMP::Column::SetType`, :aimms:func:`GMP::Column::SetLowerBound` and
     :aimms:func:`GMP::Column::SetUpperBound`.

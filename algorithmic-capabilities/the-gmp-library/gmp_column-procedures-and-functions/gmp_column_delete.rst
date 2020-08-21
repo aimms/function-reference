@@ -33,6 +33,9 @@ Return Value
 
 .. note::
 
+    -  Use ``GMP::Column::DeleteMulti`` if many columns corresponding to some variable
+       have to be deleted, because that will be more efficient.
+
     -  The column will not be printed in the constraint listing, nor be
        visible in the Math Program Inspector and it will be removed from any
        solver maintained copies.
@@ -41,4 +44,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Column::Add`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::Add` and :aimms:func:`GMP::Column::DeleteMulti`.

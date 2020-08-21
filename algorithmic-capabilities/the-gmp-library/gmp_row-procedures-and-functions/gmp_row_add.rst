@@ -31,6 +31,9 @@ Return Value
 
 .. note::
 
+    -  Use ``GMP::Row::AddMulti`` if many rows corresponding to some constraint
+       have to be added, because that will be more efficient.
+
     -  Coefficients for this row can be added to the matrix by using the
        procedure ``GMP::Coefficient::Set``.
 
@@ -46,5 +49,5 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Coefficient::Set`, :aimms:func:`GMP::Row::Delete`, :aimms:func:`GMP::Row::SetType`, :aimms:func:`GMP::Row::SetLeftHandSide`,
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Coefficient::Set`, :aimms:func:`GMP::Row::AddMulti`, :aimms:func:`GMP::Row::Delete`, :aimms:func:`GMP::Row::SetType`, :aimms:func:`GMP::Row::SetLeftHandSide`,
     :aimms:func:`GMP::Row::SetRightHandSide` and :aimms:func:`GMP::Row::Generate`.
