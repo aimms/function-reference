@@ -6,7 +6,7 @@ AttributeContainsString
 ========================
 
 The function :aimms:func:`AttributeContainsString` returns 1 if the string representation of a specified attribute for a
-given identifier contains the specified text.
+given identifier contains the specified text (case sensitive).
 
 .. code-block:: aimms
 
@@ -33,7 +33,7 @@ Arguments
 Return Value
 ------------
 
-    1 if the attribute text contains the Key string, 0 otherwise. In case of failure, the return value is 0 and the predeclared identifier
+    1 if the attribute text contains the Key string (always case sensitive), 0 otherwise. In case of failure, the return value is 0 and the predeclared identifier
     :aimms:set:`CurrentErrorMessage` contains an appropriate error message.
 
 .. seealso::
