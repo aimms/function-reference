@@ -28,7 +28,7 @@ Updatability
 
 .. note::
 
-    ELement parameters into :aimms:set:`AllRowTypes` can be used as the *type*
+    Element parameters into :aimms:set:`AllRowTypes` can be used as the *type*
     argument of the :aimms:func:`GMP::Row::SetType` function.
 
 .. seealso::
