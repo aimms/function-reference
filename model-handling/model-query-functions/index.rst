@@ -10,6 +10,8 @@ identifiers in the model:
    :maxdepth: 1
 
    attributetostring
+   attributelength
+   attributecontainsstring
    callerattribute
    callerline
    callernode
