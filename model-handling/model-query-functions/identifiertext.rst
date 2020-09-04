@@ -5,7 +5,7 @@
 IdentifierText
 ==============
 
-The function :aimms:func:`IdentifierText` returns the text of ``identifierName``
+The function :aimms:func:`IdentifierText` returns the string representation of the text attribute of ``identifierName``
 or, if the text is not specified, the name of the identifier.
 
 .. code-block:: aimms
@@ -23,9 +23,9 @@ Arguments
 Return Value
 ------------
 
-    This function returns a non-negative integer. If ``identifierName`` is
-    not an identifier, an error message is issued. When the text is not
-    specified, the name of the identifier is returned.
+    This function returns a string containing the text attribute of ``identifierName``.
+    If ``identifierName`` is not an identifier, an error message is issued. 
+    When the text is not specified, the name of the identifier is returned.
 
 .. note::
 
