@@ -1,0 +1,3 @@
+[submodule "buildtool"]
+	path = buildtool
+	url = git@gitlab.aimms.com:other/buildtool.git
