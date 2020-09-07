@@ -3,7 +3,6 @@ variables:
 
 stages:
   - build
-  - synch
   
 build_and_install:
   stage: build
@@ -15,9 +14,8 @@ build_and_install:
     - ubuntu
   only:
     - master
-  
-compile_PDF:
-  stage: build
+
+.build_PDF: &build_PDF # helper
   script:
     - sudo apt-get install texlive-latex-recommended -y
     - sudo apt-get install texlive-fonts-recommended -y
@@ -25,27 +23,26 @@ compile_PDF:
     - sudo apt-get install latexmk -y
     - sphinx-build -M latex . _build 
     - sphinx-build -M latexpdf . _build 
-  tags: 
-    - ubuntu
-  only:
-    variables: #CaseSensitive!
-      - ($CI_COMMIT_BRANCH == "master" || $CI_COMMIT_MESSAGE =~ /\[yabr\]/)
 
-PDF_SyncPdfToWebsite:
-  stage: synch
+install_PDF:
+  stage: build
+  <<: *build_PDF
   script:
     - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
+    - bash PackPdfFiles.sh push
   tags: 
     - ubuntu
   only:
     - master
 
-PDF_YabrPackage:
-  stage: synch
+yabr_PDF:
+  stage: build
+  <<: *build_PDF
   script:
     - bash PackPdfFiles.sh push
   tags: 
     - ubuntu
   only:
     variables: #CaseSensitive!
-      - ($CI_COMMIT_BRANCH == "master" || $CI_COMMIT_MESSAGE =~ /\[yabr\]/)
+      - ($CI_COMMIT_MESSAGE =~ /\[yabr\]/)
+
