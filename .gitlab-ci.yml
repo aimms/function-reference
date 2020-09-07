@@ -15,7 +15,9 @@ build_and_install:
   only:
     - master
 
-.build_PDF: &build_PDF # helper
+compile_PDF:
+  stage: build
+  <<: *build_PDF
   script:
     - sudo apt-get install texlive-latex-recommended -y
     - sudo apt-get install texlive-fonts-recommended -y
@@ -23,11 +25,6 @@ build_and_install:
     - sudo apt-get install latexmk -y
     - sphinx-build -M latex . _build 
     - sphinx-build -M latexpdf . _build 
-
-install_PDF:
-  stage: build
-  <<: *build_PDF
-  script:
     - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
     - bash PackPdfFiles.sh push
   tags: 
@@ -35,10 +32,16 @@ install_PDF:
   only:
     - master
 
-yabr_PDF:
+yabr_only_PDF:
   stage: build
   <<: *build_PDF
   script:
+    - sudo apt-get install texlive-latex-recommended -y
+    - sudo apt-get install texlive-fonts-recommended -y
+    - sudo apt-get install texlive-latex-extra -y
+    - sudo apt-get install latexmk -y
+    - sphinx-build -M latex . _build 
+    - sphinx-build -M latexpdf . _build 
     - bash PackPdfFiles.sh push
   tags: 
     - ubuntu
