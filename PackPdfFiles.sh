@@ -7,7 +7,7 @@ cd "${0%/*}"
 
 mkdir -p "target/all"
 cp _build/latex/AIMMS_func.pdf target/all
-../../buildtool/yabr.sh -release -yabr yabr.xml -toolset all $1
+buildtool/yabr.sh -release -yabr yabr.xml -toolset all $1
 
 python -u writeVersionAndBranchToDB.py
 

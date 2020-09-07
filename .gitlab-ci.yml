@@ -3,6 +3,7 @@ variables:
 
 stages:
   - build
+  - synch
   
 build_and_install:
   stage: build
@@ -30,8 +31,8 @@ compile_PDF:
     variables: #CaseSensitive!
       - ($CI_COMMIT_BRANCH == "master" || $CI_COMMIT_MESSAGE =~ /\[yabr\]/)
 
-PDF_SyncToWebsite:
-  stage: build
+PDF_SyncPdfToWebsite:
+  stage: synch
   script:
     - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
   tags: 
@@ -40,7 +41,7 @@ PDF_SyncToWebsite:
     - master
 
 PDF_YabrPackage:
-  stage: build
+  stage: synch
   script:
     - bash PackPdfFiles.sh push
   tags: 
