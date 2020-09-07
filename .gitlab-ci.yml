@@ -24,8 +24,27 @@ compile_PDF:
     - sudo apt-get install latexmk -y
     - sphinx-build -M latex . _build 
     - sphinx-build -M latexpdf . _build 
+  tags: 
+    - ubuntu
+  only:
+    variables: #CaseSensitive!
+      - ($CI_COMMIT_BRANCH == "master" || $CI_COMMIT_MESSAGE =~ /\[yabr\]/)
+
+PDF_SyncToWebsite:
+  stage: build
+  script:
     - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
   tags: 
     - ubuntu
   only:
     - master
+
+PDF_YabrPackage:
+  stage: build
+  script:
+    - bash PackPdfFiles.sh push
+  tags: 
+    - ubuntu
+  only:
+    variables: #CaseSensitive!
+      - ($CI_COMMIT_BRANCH == "master" || $CI_COMMIT_MESSAGE =~ /\[yabr\]/)
