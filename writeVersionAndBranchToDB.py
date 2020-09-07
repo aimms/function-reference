@@ -8,7 +8,7 @@ sys.path.insert(0,'../..')
 from buildtool.gitinfo import gitinfo
 
 aimms_version = gitinfo().getVersion()
-branchName = os.getenv('CI_COMMIT_REF_NAME', "AZ")
+branchName = os.getenv('CI_COMMIT_REF_NAME', "dummyName")
 
 print ("Going to write to AimmsVersion.FunctionReferenceVersions table the following values: (Branch: %s, Version: %s)" % (branchName, aimms_version))
 

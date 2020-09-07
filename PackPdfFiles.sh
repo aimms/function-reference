@@ -3,7 +3,7 @@
 # creating the doxygen files and pushing it to the yabr repository
 
 #set current directory here
-cd "${0%/*}"
+cd $(dirname $0)
 
 mkdir -p "target/all"
 cp _build/latex/AIMMS_func.pdf target/all
