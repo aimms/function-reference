@@ -17,7 +17,6 @@ build_and_install:
 
 compile_PDF:
   stage: build
-  <<: *build_PDF
   script:
     - sudo apt-get install texlive-latex-recommended -y
     - sudo apt-get install texlive-fonts-recommended -y
@@ -34,7 +33,6 @@ compile_PDF:
 
 yabr_only_PDF:
   stage: build
-  <<: *build_PDF
   script:
     - sudo apt-get install texlive-latex-recommended -y
     - sudo apt-get install texlive-fonts-recommended -y
