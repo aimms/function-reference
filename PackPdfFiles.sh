@@ -5,8 +5,8 @@
 #set current directory here
 cd $(dirname $0)
 
-mkdir -p "target/all"
-cp _build/latex/AIMMS_func.pdf target/all
+mkdir -p "target/all/OnlinePDF"
+cp _build/latex/AIMMS_func.pdf target/all/OnlinePDF
 buildtool/yabr.sh -release -yabr yabr.xml -toolset all $1
 
 python -u writeVersionAndBranchToDB.py
