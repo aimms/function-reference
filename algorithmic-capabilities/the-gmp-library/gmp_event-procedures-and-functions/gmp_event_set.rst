@@ -28,4 +28,3 @@ Return Value
 
     The routines :aimms:func:`GMP::Event::Create`, :aimms:func:`GMP::Event::Delete` and :aimms:func:`GMP::Event::Reset`, and Section 16.6 of the
     `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
-
