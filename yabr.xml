@@ -1,0 +1,25 @@
+
+<yabr>
+	<project>
+		<!-- main component -->
+		<component>
+			<groupId>com.aimms</groupId>
+			<componentId>FunctionReference</componentId>
+		</component>
+		
+		<dependencies>						
+		</dependencies>
+	</project>
+	
+	
+	<repositoryConfig>
+		<pullRepositoryIds>
+			<repositoryId>com.aimms.internal</repositoryId>
+			<repositoryId>com.aimms.supplier</repositoryId>
+		</pullRepositoryIds>
+		
+		<pushRepositoryIds>
+			<repositoryId>com.aimms.internal</repositoryId>
+		</pushRepositoryIds>
+	</repositoryConfig>
+</yabr>

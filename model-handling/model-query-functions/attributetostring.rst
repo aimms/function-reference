@@ -46,4 +46,4 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`me::GetAttribute`.
+    The function :aimms:func:`me::GetAttribute`, functions :aimms:func:`AttributeContainsString`, :aimms:func:`AttributeLength`.
