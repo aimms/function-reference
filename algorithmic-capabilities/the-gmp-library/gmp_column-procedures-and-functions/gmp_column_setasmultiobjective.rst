@@ -81,26 +81,25 @@ Return Value
 Example
 -------
 
-    In the example below two multi-objectives are specified:: 
+In the example below two multi-objectives are specified:
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generate( MP );
+    myGMP := GMP::Instance::Generate( MP );
 
-               GMP::Column::SetAsMultiObjective( myGMP, TotalDist, 2, 1.0, 0, 0.1 );
-               GMP::Column::SetAsMultiObjective( myGMP, TotalTime, 1, 1.0, 0, 0.0 );
+    GMP::Column::SetAsMultiObjective( myGMP, TotalDist, 2, 1.0, 0, 0.1 );
+    GMP::Column::SetAsMultiObjective( myGMP, TotalTime, 1, 1.0, 0, 0.0 );
 
-               GMP::Instance::Solve( myGMP );
+    GMP::Instance::Solve( myGMP );
 
-    We
-    can now switch the priorities of the two objectives by adding:
+We can now switch the priorities of the two objectives by adding:
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Column::SetAsMultiObjective( myGMP, TotalDist, 1, 1.0, 0, 0.1 );
-               GMP::Column::SetAsMultiObjective( myGMP, TotalTime, 2, 1.0, 0, 0.0 );
+    GMP::Column::SetAsMultiObjective( myGMP, TotalDist, 1, 1.0, 0, 0.1 );
+    GMP::Column::SetAsMultiObjective( myGMP, TotalTime, 2, 1.0, 0, 0.0 );
 
-               GMP::Instance::Solve( myGMP );
+    GMP::Instance::Solve( myGMP );
 
 .. seealso::
 
