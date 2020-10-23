@@ -30,7 +30,7 @@ Updatability
 
 .. note::
 
-    ELement parameters into :aimms:set:`AllMathematicalProgrammingRowTypes` can be
+    Element parameters into :aimms:set:`AllMathematicalProgrammingRowTypes` can be
     used as the *type* argument of the :aimms:func:`GMP::Row::SetType` function.
 
 .. seealso::

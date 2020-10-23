@@ -13,7 +13,7 @@ the matrix of a generated mathematical program.
     GMP::Column::SetType(
          GMP,            ! (input) a generated mathematical program
          column,         ! (input) a scalar reference or column number
-         type            ! (input) a element in AllColumnTypes
+         type            ! (input) an element in AllColumnTypes
          )
 
 Arguments
@@ -35,6 +35,11 @@ Return Value
 
     The procedure returns 1 on success, or 0 otherwise.
 
+.. note::
+
+    Use ``GMP::Column::SetTypeMulti`` if the type of many columns
+    corresponding to some variable have to be set, because that will be more efficient.
+
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Column::GetType`.
+    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::GetType` and :aimms:func:`GMP::Column::SetTypeMulti`.

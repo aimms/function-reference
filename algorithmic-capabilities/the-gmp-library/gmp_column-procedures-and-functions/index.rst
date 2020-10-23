@@ -9,7 +9,9 @@ instance:
    :maxdepth: 1
 
    gmp_column_add
+   gmp_column_addmulti
    gmp_column_delete
+   gmp_column_deletemulti
    gmp_column_freeze
    gmp_column_freezemulti
    gmp_column_getlowerbound
@@ -25,6 +27,7 @@ instance:
    gmp_column_setlowerbound
    gmp_column_setlowerboundmulti
    gmp_column_settype
+   gmp_column_settypemulti
    gmp_column_setupperbound
    gmp_column_setupperboundmulti
    gmp_column_unfreeze

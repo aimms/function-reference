@@ -56,7 +56,7 @@ Return Value
     -  To count the number of asynchronous solver sessions currently running
        with a solver, AIMMS checks all solver versions available. For
        example, if one asynchronous solver session is running with
-       CPLEX 12.9 and another simultaneous with CPLEX 12.8 then solver CPLEX
+       CPLEX 12.10 and another simultaneous with CPLEX 12.9 then solver CPLEX
        is running two asynchronous solver sessions. The value returned by
        this function limits all solver versions together (even though the
        argument passed to the function refers to a particular solver
@@ -70,11 +70,11 @@ Example
 
     .. code-block:: aimms
 
-               MaxSes := GMP::Solver::GetAsynchronousSessionsLimit( 'CPLEX 12.9' );
+               MaxSes := GMP::Solver::GetAsynchronousSessionsLimit( 'CPLEX 12.10' );
 
     The value MaxSes is the limit on asynchronous solver
-    sessions that can run at the same time with CPLEX 12.9 plus CPLEX 12.8
-    plus CPLEX 12.7, etc.
+    sessions that can run at the same time with CPLEX 12.10 plus CPLEX 12.9
+    plus CPLEX 12.8, etc.
 
 .. seealso::
 

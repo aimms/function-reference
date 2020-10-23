@@ -6,7 +6,7 @@ GMP::Row::SetRightHandSideMulti
 ===============================
 
 The procedure :aimms:func:`GMP::Row::SetRightHandSideMulti` changes the
-right-hand-side of a group of row, belonging to a constraint, in a
+right-hand-side of a group of rows, belonging to a constraint, in a
 generated mathematical program.
 
 .. code-block:: aimms

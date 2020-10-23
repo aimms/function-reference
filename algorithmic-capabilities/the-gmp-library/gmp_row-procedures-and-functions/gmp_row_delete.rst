@@ -33,13 +33,16 @@ Return Value
 
 .. note::
 
+    -  Use ``GMP::Row::DeleteMulti`` if many rows corresponding to some constraint
+       have to be deleted, because that will be more efficient.
+
     -  A deleted row remains present in the generated mathematical program
-       but its contents will not be copied to a solver session.
+       but its content will not be copied to a solver session.
 
     -  The row will not be printed in the constraint listing, nor be visible
-       in the math program inspector and it will be removed from any solver
+       in the Math Program Inspector and it will be removed from any solver
        maintained copies.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Row::Add`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Add` and :aimms:func:`GMP::Row::DeleteMulti`.

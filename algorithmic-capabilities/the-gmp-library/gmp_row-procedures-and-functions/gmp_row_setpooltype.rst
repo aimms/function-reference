@@ -56,8 +56,8 @@ Return Value
        more efficient.
 
     -  The *mode* is only used if the row should be added to the lazy
-       constraint pool (i.e., if *value* equals 1), and if GUROBI 7.0 or
-       higher is used. The *mode* should be a value between 0 and 3, and
+       constraint pool (i.e., if *value* equals 1) and if GUROBI is used.
+       The *mode* should be a value between 0 and 3, and
        these values have the following meaning:
 
        -  0: The mode is specified by the GUROBI option

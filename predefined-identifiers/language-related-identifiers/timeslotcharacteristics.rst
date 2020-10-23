@@ -35,7 +35,7 @@ Updatability
 
 .. note::
 
-    ELement parameters into :aimms:set:`TimeSlotCharacteristics` can be used as the
+    Element parameters into :aimms:set:`TimeSlotCharacteristics` can be used as the
     *characteristic* argument of the :aimms:func:`TimeSlotCharacteristic` function.
 
 .. seealso::

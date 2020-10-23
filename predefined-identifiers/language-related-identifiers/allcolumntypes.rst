@@ -28,7 +28,7 @@ Updatability
 
 .. note::
 
-    ELement parameters into :aimms:set:`AllColumnTypes` can be used as the *type*
+    Element parameters into :aimms:set:`AllColumnTypes` can be used as the *type*
     argument of the :aimms:func:`GMP::Column::SetType` function.
 
 .. seealso::

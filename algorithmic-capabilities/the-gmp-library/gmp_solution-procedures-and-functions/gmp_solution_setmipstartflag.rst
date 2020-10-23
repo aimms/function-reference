@@ -65,8 +65,8 @@ Return Value
           performing the usual checks. If the solution defined by the MIP
           start is infeasible, behavior is undefined.
 
-    -  Level 5 is only supported by CPLEX 12.7 or higher (for other solver
-       versions it is translated to 0).
+    -  Level 5 is only supported by CPLEX (for other solvers it is translated
+       to 0).
 
 .. seealso::
 

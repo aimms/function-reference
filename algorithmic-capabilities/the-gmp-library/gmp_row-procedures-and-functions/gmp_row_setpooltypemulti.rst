@@ -6,8 +6,8 @@ GMP::Row::SetPoolTypeMulti
 ==========================
 
 The procedure :aimms:func:`GMP::Row::SetPoolTypeMulti` can be used to indicate
-that a group of rows, belonging to a constraint, in a generated
-mathematical program should become part of a pool of lazy constraints or
+that a group of rows, belonging to a constraint in a generated
+mathematical program, should become part of a pool of lazy constraints or
 a pool of (user) cuts. The solvers CPLEX, GUROBI and ODH-CPLEX can make
 use of this information.
 
@@ -16,9 +16,9 @@ use of this information.
     GMP::Row::SetPoolTypeMulti(
          GMP,            ! (input) a generated mathematical program
          binding,        ! (input) an index binding
-         row,            ! (input) a scalar reference or row number
-         value,          ! (input) a scalar reference
-         mode            ! (input) a scalar reference
+         row,            ! (input) a constraint expression
+         value,          ! (input) a numerical expression
+         mode            ! (input) a numerical expression
          )
 
 Arguments
@@ -58,8 +58,8 @@ Return Value
        while the cut pool is supported by CPLEX and ODH-CPLEX.
 
     -  The *mode* is only used if the row should be added to the lazy
-       constraint pool (i.e., if *value* equals 1), and if GUROBI 7.0 or
-       higher is used. The *mode* should be a value between 0 and 3, and
+       constraint pool (i.e., if *value* equals 1) and if GUROBI is used.
+       The *mode* should be a value between 0 and 3, and
        these values have the following meaning:
 
        -  0: The mode is specified by the GUROBI option

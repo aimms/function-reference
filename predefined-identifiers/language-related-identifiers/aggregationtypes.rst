@@ -33,7 +33,7 @@ Updatability
 
 .. note::
 
-    ELement parameters into :aimms:set:`AggregationTypes` can be used as the *type*
+    Element parameters into :aimms:set:`AggregationTypes` can be used as the *type*
     argument of the :aimms:procedure:`Aggregate` and :aimms:procedure:`DisAggregate` functions.
 
 .. seealso::

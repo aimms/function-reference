@@ -40,6 +40,9 @@ Return Value
 
 .. note::
 
+    -  Use ``GMP::Row::GenerateMulti`` if many rows corresponding to some
+       constraint have to be generated, because that will be more efficient.
+
     -  Before generating the row all existing matrix coefficients for this
        row are removed.
 
@@ -86,4 +89,4 @@ Example
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::Add`, :aimms:func:`GMP::Column::Delete`, :aimms:func:`GMP::Row::Add` and :aimms:func:`GMP::Row::Delete`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::Add`, :aimms:func:`GMP::Column::Delete`, :aimms:func:`GMP::Row::Add`, :aimms:func:`GMP::Row::Delete` and :aimms:func:`GMP::Row::GenerateMulti`.

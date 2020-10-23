@@ -44,12 +44,12 @@ Return Value
 
 .. note::
 
-    -  Use ``Column::SetDecompositionMulti`` if the decomposition value of
+    -  Use ``GMP::Column::SetDecompositionMulti`` if the decomposition value of
        many columns corresponding to some variable have to be set, because
        that will be more efficient.
 
     -  This procedure can be used to specify the decomposition in the
-       Benders algorithm of CPLEX 12.7 or higher. See the CPLEX option
+       Benders algorithm of CPLEX. See the CPLEX option
        ``Benders strategy`` for more information.
 
     -  For CPLEX, use a value of 0 to assign a column to the master problem,

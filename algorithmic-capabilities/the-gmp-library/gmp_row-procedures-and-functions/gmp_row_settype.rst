@@ -13,7 +13,7 @@ matrix of a generated mathematical program.
     GMP::Row::SetType(
          GMP,            ! (input) a generated mathematical program
          row,            ! (input) a scalar reference or row number
-         type            ! (input) a element in AllRowTypes
+         type            ! (input) an element in AllRowTypes
          )
 
 Arguments
@@ -35,6 +35,11 @@ Return Value
 
     The procedure returns 1 on success, or 0 otherwise.
 
+.. note::
+
+    Use ``GMP::Row::SetTypeMulti`` if the type of many rows corresponding to some constraint
+    have to be changed, because that will be more efficient.
+
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Row::GetType`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::GetType` and :aimms:func:`GMP::Row::SetTypeMulti`.
