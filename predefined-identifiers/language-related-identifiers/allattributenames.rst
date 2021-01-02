@@ -29,6 +29,6 @@ Updatability
 
     -  The sets :aimms:set:`AllIdentifierTypes`, and :aimms:set:`AllSuffixNames`.
 
-    -  Model edit functions, see Section 35.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  Model edit functions, see :doc:`advanced-language-components/model-structure-and-modules/runtime-libraries-and-the-model-edit-functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  The functions :aimms:func:`me::AllowedAttribute` and :aimms:func:`IdentifierAttributes`.

@@ -42,5 +42,5 @@ Return Value
 
 .. seealso::
 
-    See Section 15.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ for more details on how to
+    See :doc:`optimization-modeling-components/solving-mathematical-programs/suffices-and-callbacks` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for more details on how to
     install a callback procedure to add cuts.

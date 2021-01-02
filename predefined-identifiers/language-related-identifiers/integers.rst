@@ -37,4 +37,4 @@ Updatability
 .. seealso::
 
     The sets :aimms:set:`AllDataFiles`, :aimms:set:`AllCases`, :aimms:set:`AllDataSets`. Integer sets are discussed in
-    Section 3.2.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    :ref:`sec:set.integer` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

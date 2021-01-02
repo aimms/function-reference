@@ -32,4 +32,4 @@ Return Value
 .. seealso::
 
     The procedure :aimms:func:`HistogramCreate`. Histogram support in AIMMS is discussed in full
-    detail in Section A.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/creating-histograms` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

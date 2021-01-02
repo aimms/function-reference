@@ -18,5 +18,5 @@ Datatype
 
     -  The GAMS and AIMMS 2 equivalent name is ``.number``.
 
-    -  The ``.SolverCalls`` suffix is also mentioned in Table 15.5 of the
+    -  The ``.SolverCalls`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Aimms` of the
        `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.

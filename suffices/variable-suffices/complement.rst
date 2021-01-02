@@ -25,4 +25,4 @@ Dimension
     -  The ``Complement`` suffix is only applicable for complementarity
        variables.
 
-    -  See also Section 23.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also :doc:`optimization-modeling-components/mixed-complementarity-problems/complementarity-problems` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

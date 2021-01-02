@@ -138,5 +138,5 @@ Example
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Instance::Generate`. See Section 16.3.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ for
+    The function :aimms:func:`GMP::Instance::Generate`. See :ref:`sec:matrix.extended` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for
     more details on extended suffixes.

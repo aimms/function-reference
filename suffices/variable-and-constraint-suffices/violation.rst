@@ -29,4 +29,4 @@ Dimension
        defining constraint of ``X``. An alternative is to use
        ``X_definition.Violation``.
 
-    -  See also Section 15.4.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ and :ref:`.DefinitionViolation`.
+    -  See also :ref:`sec:mp.infeas.inspect` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ and :ref:`.DefinitionViolation`.

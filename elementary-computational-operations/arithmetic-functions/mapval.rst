@@ -38,4 +38,4 @@ Return Value
 .. seealso::
 
     Special numbers in AIMMS and the :aimms:func:`MapVal` function are discussed in
-    full detail in Section 6.1.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    full detail in :ref:`sec:expr.num.arith-ext` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

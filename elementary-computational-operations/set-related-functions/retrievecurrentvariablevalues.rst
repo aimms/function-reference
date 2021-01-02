@@ -25,5 +25,5 @@ Arguments
 
 .. seealso::
 
-    Solver callback procedures are discussed in full detail in Section 15.2
-    of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__
+    Solver callback procedures are discussed in full detail in :doc:`optimization-modeling-components/solving-mathematical-programs/suffices-and-callbacks`
+    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__

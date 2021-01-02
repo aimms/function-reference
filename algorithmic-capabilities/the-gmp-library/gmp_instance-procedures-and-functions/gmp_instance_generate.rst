@@ -47,7 +47,7 @@ Return Value
        deleted.
 
     -  It is possible to generate indexed mathematical program instances.
-       See the example in Section 16.13.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+       See the example in :ref:`sec:gmp.examples.indexed` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  A callback procedure should be installed using the appropriate GMP
        procedure, (e.g., ``GMP::Instance::SetCallbackIterations``) instead

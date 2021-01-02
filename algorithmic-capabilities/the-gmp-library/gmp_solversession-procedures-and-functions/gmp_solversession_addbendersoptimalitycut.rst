@@ -67,7 +67,7 @@ Return Value
        the constraints and the reduced costs of the variables in the
        Benders' subproblem are used.
 
-    -  See Section 21.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ for more information about
+    -  See :ref:`sec:benders.textbook.alg` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for more information about
        the Benders' decomposition algorithm in which a single master MIP
        problem is solved.
 

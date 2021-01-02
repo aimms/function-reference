@@ -30,4 +30,4 @@ Dimension
 
     -  The default of the option ``Calculate_Sensitivity_Ranges`` is ``on``.
 
-    -  See also Section 14.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also :doc:`optimization-modeling-components/variable-and-constraint-declaration/constraint-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

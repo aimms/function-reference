@@ -38,5 +38,5 @@ Updatability
 .. seealso::
 
     The set :aimms:set:`AllValueKeywords`, :aimms:set:`CurrentSolver`. Mathematical programs are discussed in
-    full detail in Section 15.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__, the ``SOLVE``
-    statement in Section 15.3.
+    full detail in :doc:`optimization-modeling-components/solving-mathematical-programs/mathematicalprogram-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__, the ``SOLVE``
+    statement in :doc:`optimization-modeling-components/solving-mathematical-programs/the-solve-statement`

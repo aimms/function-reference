@@ -40,7 +40,7 @@ Dimension
        variable and subsequently removed from the generated mathematical
        program independently from the setting of the ``.nonvar`` suffix.
 
-    -  See also Section 14.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also :doc:`optimization-modeling-components/variable-and-constraint-declaration/variable-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  The AIMMS 2 equivalent suffix name is ``.freeze``.
 

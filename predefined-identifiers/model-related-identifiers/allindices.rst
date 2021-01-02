@@ -30,4 +30,4 @@ Updatability
 .. seealso::
 
     The sets :aimms:set:`AllSets`, :aimms:set:`AllIdentifiers`. Sets and their corresponding indices are
-    discussed in Section 3.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    discussed in :doc:`non-procedural-language-components/set-declaration/set-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

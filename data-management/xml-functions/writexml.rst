@@ -46,5 +46,5 @@ Return Value
 .. seealso::
 
     The procedures :aimms:func:`GenerateXML`, :aimms:func:`ReadGeneratedXML`, :aimms:func:`ReadXML`. Writing user-defined XML
-    data is discussed in full detail in Section 30.4 of the Language
+    data is discussed in full detail in :doc:`data-communication-components/reading-and-writing-xml-data/reading-and-writing-user-defined-xml-data` of the Language
     Reference.

@@ -29,5 +29,5 @@ Updatability
 
 .. seealso::
 
-    The sets :aimms:set:`AllIdentifiers`. Database tables are discussed in Section 27.1 of the
+    The sets :aimms:set:`AllIdentifiers`. Database tables are discussed in :doc:`data-communication-components/communicating-with-databases/the-databasetable-declaration` of the
     `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.

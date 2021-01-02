@@ -35,4 +35,4 @@ Return Value
 .. seealso::
 
     The procedures :aimms:func:`GenerateXML`, :aimms:func:`ReadXML`, :aimms:func:`WriteXML`. Generating XML data is
-    discussed in full detail in Section 30.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    discussed in full detail in :doc:`data-communication-components/reading-and-writing-xml-data/reading-and-writing-aimms-generated-xml-data` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

@@ -35,5 +35,5 @@ Updatability
 
 .. seealso::
 
-    The set :aimms:set:`AllValueKeywords`. Solver callback procedures are discussed in Section
-    15.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    The set :aimms:set:`AllValueKeywords`. Solver callback procedures are discussed in :doc:`optimization-modeling-components/solving-mathematical-programs/suffices-and-callbacks`
+    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

@@ -30,5 +30,5 @@ Updatability
 
 .. seealso::
 
-    The sets :aimms:set:`AllSets`. Sets are discussed in Section 3.2 of the Language
+    The sets :aimms:set:`AllSets`. Sets are discussed in :doc:`non-procedural-language-components/set-declaration/set-declaration-and-attributes` of the Language
     Reference.

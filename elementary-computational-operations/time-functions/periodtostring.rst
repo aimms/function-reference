@@ -23,7 +23,7 @@ Arguments
         A string that holds the date and time format used in the returned
         string. This format string can contain period specific conversion
         specifiers to generate a description referring to both the beginning and
-        end of the period, see Section 33.7
+        end of the period, see :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`
 
     *Timetable*
         An indexed set in a calendar and defined over a horizon.

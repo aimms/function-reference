@@ -36,4 +36,4 @@ Updatability
 .. seealso::
 
     The set :aimms:set:`AllValueKeywords`. The ``PageMode`` suffix of ``FILE`` identifiers is
-    discussed in full detail in Section 31.4.
+    discussed in full detail in :doc:`data-communication-components/text-reports-and-output-listing/structuring-a-page-in-page-mode`

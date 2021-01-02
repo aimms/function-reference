@@ -49,11 +49,11 @@ is interrupted after executing this statement. Suggested rewrite: use a
 ``display`` statement followed by a ``halt`` statement or a
 ``raise error`` statement. See also
 
--  ``display`` (see Section 31.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__),
+-  ``display`` (see :doc:`data-communication-components/text-reports-and-output-listing/the-display-statement` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__),
 
--  ``halt`` (see Section 8.3.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__) and
+-  ``halt`` (see :ref:`sec:exec.flow.halt` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__) and
 
--  ``raise error`` (see Section 8.4.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__).
+-  ``raise error`` (see :ref:`sec:exec.error.raising` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).
 
 The Deprecated Keywords ``yes`` and ``no``
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -104,7 +104,7 @@ Deprecated Intrinsic Procedures and Functions
 ---------------------------------------------
 
 The mapping of the matrix manipulation procedures to GMP procedures and
-functions is documented in Table 46.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__. The
+functions is documented in :ref:`sec:gmp.matrix` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__. The
 following intrinsic functions are deprecated, but can be replaced by an
 equivalent call to an existing intrinsic procedure or function:
 
@@ -195,7 +195,7 @@ deserve some more consideration:
 
 -  ``.ap`` The append mode of a file, 0: replace contents when opening
    the file, 1: append to file. This functionality is now covered by the
-   ``mode`` attribute of that file, see Section 31.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+   ``mode`` attribute of that file, see :doc:`data-communication-components/text-reports-and-output-listing/the-file-declaration` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
 -  ``.m`` The marginal value of a variable or constraint. For a
    constraint the suffix ``.m`` should be replaced by the suffix
@@ -206,14 +206,14 @@ deserve some more consideration:
    should be replaced by the element valued suffix ``.ProgramStatus``.
    Note that
    ``Element( AllSolutionStates, mp.solvestat+1 ) = mp.ProgramStatus``.
-   See also Table 15.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ and
+   See also :ref:`table:mp.status` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ and
    :aimms:set:`AllSolutionStates`.
 
 -  ``.solvestat`` or ``.solverstat`` These suffixes of a mathematical
    program are numeric, they should be replaced by the element valued
    suffix ``.SolverStatus``. Note that
    ``Element( AllSolutionStates, mp.solvestat+15 ) = mp.SolverStatus``.
-   See also Table 15.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ and
+   See also :ref:`table:mp.status` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ and
    :aimms:set:`AllSolutionStates`.
 
 -  ``.dim`` This should be replaced by a call to :aimms:func:`IdentifierDimension`.

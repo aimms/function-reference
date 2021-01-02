@@ -26,4 +26,4 @@ Dimension
 
 .. note::
 
-    -  See also section 11.4.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also :ref:`sec:intern.func.derivative` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

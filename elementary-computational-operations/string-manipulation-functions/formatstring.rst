@@ -39,4 +39,4 @@ Return Value
 .. seealso::
 
     For a detailed description of the conversion specifiers in AIMMS see
-    Section 5.3.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    :ref:`sec:set-expr.string.format` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

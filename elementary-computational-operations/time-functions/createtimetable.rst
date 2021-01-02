@@ -58,4 +58,4 @@ Arguments
 .. seealso::
 
     The procedures :aimms:procedure:`Aggregate`, :aimms:procedure:`DisAggregate`. For a more detailed description of
-    the creation of timetables, see Section 33.4 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    the creation of timetables, see :doc:`advanced-language-components/time-based-modeling/creating-timetables` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

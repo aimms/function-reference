@@ -34,5 +34,5 @@ Return Value
 
 .. seealso::
 
-    AIMMS support for time zones is discussed in full detail in Sections
-    33.7.4 and 33.10 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    AIMMS support for time zones is discussed in full detail in :ref:`sec:time.format.dst` 
+    and :doc:`advanced-language-components/time-based-modeling/working-in-multiple-time-zones` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

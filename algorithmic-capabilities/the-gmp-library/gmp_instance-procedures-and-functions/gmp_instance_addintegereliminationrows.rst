@@ -137,5 +137,5 @@ Example
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::DeleteIntegerEliminationRows` and :aimms:func:`GMP::Solution::IsInteger`. See Section 16.3.6 of the Language
+    The routines :aimms:func:`GMP::Instance::DeleteIntegerEliminationRows` and :aimms:func:`GMP::Solution::IsInteger`. See :ref:`sec:matrix.extended` of the Language
     Reference for more details on extended suffixes.

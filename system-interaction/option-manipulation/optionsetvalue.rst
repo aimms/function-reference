@@ -40,7 +40,7 @@ Return Value
        :aimms:func:`OptionGetString` and :aimms:func:`OptionGetKeywords`.
 
     -  You can also modify option values using the ``OPTION`` statement (see
-       also Section 8.5 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__).
+       also :doc:`procedural-language-components/execution-statements/the-option-and-property-statements` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).
 
 .. seealso::
 

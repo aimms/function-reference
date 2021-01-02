@@ -34,5 +34,5 @@ Return Value
 
 .. seealso::
 
-    Unit expressions and conventions are discussed in full detail in Chapter
-    32 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    Unit expressions and conventions are discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index`
+    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

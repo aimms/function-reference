@@ -41,5 +41,5 @@ Updatability
 .. seealso::
 
     The function :aimms:func:`TimeSlotCharacteristic`. The use of the function
-    ``TimeSlotCharacteristic`` is explained in more detail in Section 33.4
-    of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    ``TimeSlotCharacteristic`` is explained in more detail in :doc:`advanced-language-components/time-based-modeling/creating-timetables`
+    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

@@ -41,5 +41,5 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::GenerateStochasticProgram` and :aimms:func:`GMP::Stochastic::GetRelativeWeight`. See Section 19.1 of the Language
+    The routines :aimms:func:`GMP::Instance::GenerateStochasticProgram` and :aimms:func:`GMP::Stochastic::GetRelativeWeight`. See :doc:`optimization-modeling-components/robust-optimization/basic-concepts` of the Language
     Reference for more details on scenario tree, scenarios and stages.

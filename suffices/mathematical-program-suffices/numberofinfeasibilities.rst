@@ -20,4 +20,4 @@ Datatype
     -  The GAMS and AIMMS 2 equivalent name is ``.numinfes``.
 
     -  The ``.NumberOfInfeasibilities`` suffix is also mentioned in Table
-       15.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+       :ref:`table:mp.suffix-mp.Solver` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

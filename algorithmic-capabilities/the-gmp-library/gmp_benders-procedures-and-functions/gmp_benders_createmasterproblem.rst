@@ -68,11 +68,9 @@ Return Value
     -  If the *GMP* contains integer variables then they all must be
        included in the set *Variables*.
 
-    -  The *feasibilityOnly* argument is discussed in more detail in Section
-       21.5.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  The *feasibilityOnly* argument is discussed in more detail in :ref:`sec:benders.feas.prob` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
-    -  The *addConstraints* argument is discussed in more detail in Section
-       21.5.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  The *addConstraints* argument is discussed in more detail in :ref:`sec:benders.feas.prob` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
 Example
 -------

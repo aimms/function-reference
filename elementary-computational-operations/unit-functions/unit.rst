@@ -31,5 +31,5 @@ Return Value
 
 .. seealso::
 
-    Unit expressions discussed in full detail in Chapter 32 of the Language
+    Unit expressions discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index` of the Language
     Reference.

@@ -53,4 +53,4 @@ identifiers:
 .. note::
 
     Note that the suffixes :ref:`.dim`, :ref:`.txt` and :ref:`.type` are
-    deprecated. See also Section 25.4 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    deprecated. See also :doc:`data-communication-components/data-initialization-verification-and-control/working-with-the-set-allidentifiers` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

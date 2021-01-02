@@ -36,5 +36,5 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Instance::SetCallbackCandidate`. See Section 16.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ for
+    The procedure :aimms:func:`GMP::Instance::SetCallbackCandidate`. See :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-generated-mathematical-program-instances` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for
     more details on how to install a candidate callback procedure.

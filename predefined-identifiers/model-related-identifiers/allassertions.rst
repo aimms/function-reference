@@ -34,5 +34,5 @@ Updatability
 
 .. seealso::
 
-    The sets :aimms:set:`AllIdentifiers`. Assertions are discussed in Section 25.2 of the
+    The sets :aimms:set:`AllIdentifiers`. Assertions are discussed in :doc:`data-communication-components/data-initialization-verification-and-control/assertions` of the
     `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.

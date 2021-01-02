@@ -42,4 +42,4 @@ Return Value
 .. seealso::
 
     The function :aimms:func:`DistributionInverseCumulative`. The function :aimms:func:`DistributionCumulative` is
-    discussed in full detail in Appendix A of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

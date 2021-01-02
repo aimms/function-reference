@@ -37,4 +37,4 @@ Updatability
 .. seealso::
 
     The set :aimms:set:`AllValueKeywords`. Mathematical programs are discussed in more detail in
-    Section 15.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    :doc:`optimization-modeling-components/solving-mathematical-programs/mathematicalprogram-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

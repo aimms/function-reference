@@ -16,5 +16,5 @@ Datatype
 
 .. note::
 
-    -  The ``.NumberOfBranches`` suffix is also mentioned in Table 15.3 of
-       the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  The ``.NumberOfBranches`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver` of
+       the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

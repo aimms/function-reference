@@ -39,4 +39,4 @@ Updatability
 .. seealso::
 
     The set :aimms:set:`AllSuffixNames`. Matrix manipulation is discussed in more detail in
-    Chapter 16 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

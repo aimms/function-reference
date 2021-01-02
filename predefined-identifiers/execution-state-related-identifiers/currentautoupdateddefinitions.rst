@@ -50,4 +50,4 @@ Updatability
 
     The sets :aimms:set:`AllIdentifiers`, :aimms:set:`CurrentInputs`. The ``UPDATE`` statement and the set
     :aimms:set:`CurrentAutoUpdatedDefinitions` are discussed in more detail in
-    Section 7.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    :doc:`non-procedural-language-components/execution-of-nonprocedural-components/nonprocedural-execution` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

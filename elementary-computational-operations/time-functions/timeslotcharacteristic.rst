@@ -44,4 +44,4 @@ Return Value
 .. seealso::
 
     The function :aimms:func:`TimeSlotCharacteristic` is discussed in full detail in
-    Section 33.4 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    :doc:`advanced-language-components/time-based-modeling/creating-timetables` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

@@ -43,7 +43,7 @@ Arguments
 
     -  To include a special character in a string, it should be escaped by
        the backslash character ``\`` (for more information on special
-       characters see also Section 5.3.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__). In
+       characters see also :ref:`sec:set-expr.string.format` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__). In
        regular expressions special characters also have to be escaped in
        order to be included in a pattern. So, for example, in order to match
        a backslash character the pattern should contain four backslashes

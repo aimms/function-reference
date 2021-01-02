@@ -34,5 +34,5 @@ Updatability
 
 .. seealso::
 
-    The sets :aimms:set:`AllIdentifiers`. Procedures are discussed in Section 10.1 of the
-    `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__, the ``APPLY`` statement in Section 10.3.1.
+    The sets :aimms:set:`AllIdentifiers`. Procedures are discussed in :doc:`procedural-language-components/procedures-and-functions/internal-procedures` of the
+    `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__, the ``APPLY`` statement in :ref:`sec:intern.ref.apply`.

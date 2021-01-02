@@ -17,4 +17,4 @@ Datatype
 
 .. note::
 
-    See also Section 33.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    See also :doc:`advanced-language-components/time-based-modeling/horizons` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

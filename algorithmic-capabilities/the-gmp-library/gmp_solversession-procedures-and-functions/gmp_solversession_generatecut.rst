@@ -65,6 +65,6 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`GMP::Instance::SetCallbackAddCut` and :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`. See Section 16.2 of the Language
+    The procedures :aimms:func:`GMP::Instance::SetCallbackAddCut` and :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`. See :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-generated-mathematical-program-instances` of the Language
     Reference for more details on how to install a callback procedure to add
     cuts.

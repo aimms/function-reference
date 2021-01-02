@@ -29,4 +29,4 @@ Dimension
 
 .. note::
 
-    -  See also Chapter 19 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also :doc:`optimization-modeling-components/stochastic-programming/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

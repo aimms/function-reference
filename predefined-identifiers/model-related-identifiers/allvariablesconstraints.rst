@@ -38,5 +38,5 @@ Updatability
 .. seealso::
 
     The sets :aimms:set:`AllIdentifiers`, :aimms:set:`AllVariables`, :aimms:set:`AllConstraints`. The ``ViolationPenalties``
-    attribute of a mathematical programs is discussed in Section 15.4 of the
+    attribute of a mathematical programs is discussed in :doc:`optimization-modeling-components/solving-mathematical-programs/infeasibility-analysis` of the
     `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
