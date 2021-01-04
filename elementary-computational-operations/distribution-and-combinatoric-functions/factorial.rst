@@ -26,4 +26,4 @@ Return Value
 
 .. seealso::
 
-    Combinatoric functions are discussed in full detail in Section 6.1.7.
+    Combinatoric functions are discussed in full detail in :ref:`table:expr.combinatoric`.

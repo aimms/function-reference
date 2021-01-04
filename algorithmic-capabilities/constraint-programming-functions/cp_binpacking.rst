@@ -233,7 +233,7 @@ Example
        index binding can be found in the Chapter on Index Binding 9 in the
        `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
 
-    -  Chapter 22 on Constraint Programming in the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/>`__, which
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
        references this function as ``bin_packing``.

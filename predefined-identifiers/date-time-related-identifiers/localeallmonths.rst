@@ -30,7 +30,7 @@ Updatability
 .. note::
 
     The set :aimms:set:`LocaleAllMonths` can be used to construct a date-time format
-    specification as specified in Section 33.7. Such date-time format
+    specification as specified in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods` Such date-time format
     specifications are required, for instance, in the ``TimeslotFormat``
     attribute of a ``Calendar``. The current system locale can be modified
     through the **Regional Settings** dialog box in the Windows **Control
@@ -39,5 +39,5 @@ Updatability
 .. seealso::
 
     The sets :aimms:set:`AllAbbrMonths`, :aimms:set:`AllMonths`, :aimms:set:`LocaleAllAbbrMonths`. Calendars are discussed in
-    full detail in Section 33.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__, date-time formats
-    in Section 33.7.
+    full detail in :doc:`advanced-language-components/time-based-modeling/calendars` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__, date-time formats
+    in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`

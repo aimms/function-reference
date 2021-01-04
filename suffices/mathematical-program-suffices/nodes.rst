@@ -18,4 +18,4 @@ Datatype
 
     -  The equivalent ``GAMS`` and AIMMS 2 name is ``.nodusd``.
 
-    -  The ``.Nodes`` suffix is also mentioned in Table 15.3.
+    -  The ``.Nodes`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver`.

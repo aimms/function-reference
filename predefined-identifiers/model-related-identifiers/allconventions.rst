@@ -36,4 +36,4 @@ Updatability
 .. seealso::
 
     The sets :aimms:set:`AllIdentifiers`, :aimms:set:`AllQuantities`. Conventions are discussed in full detail
-    in Section 32.8 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    in :doc:`advanced-language-components/units-of-measurement/globally-overriding-units-through-conventions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

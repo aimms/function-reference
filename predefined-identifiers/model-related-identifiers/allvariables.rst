@@ -35,5 +35,5 @@ Updatability
 
 .. seealso::
 
-    The sets :aimms:set:`AllIdentifiers`, :aimms:set:`AllConstraints`. Variables are discussed in Section 14.1,
-    mathematical programs in Section 15.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    The sets :aimms:set:`AllIdentifiers`, :aimms:set:`AllConstraints`. Variables are discussed in :doc:`optimization-modeling-components/variable-and-constraint-declaration/variable-declaration-and-attributes`,
+    mathematical programs in :doc:`optimization-modeling-components/solving-mathematical-programs/mathematicalprogram-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

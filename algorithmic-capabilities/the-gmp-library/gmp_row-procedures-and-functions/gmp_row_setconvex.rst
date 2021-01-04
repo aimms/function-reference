@@ -46,4 +46,4 @@ Return Value
 .. seealso::
 
     The function :aimms:func:`GMP::Row::GetConvex`. The ``Convex`` suffix is explained in full
-    detail in Section 14.2.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    detail in :ref:`sec:var.constr.glob-suff` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

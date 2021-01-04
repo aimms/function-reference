@@ -91,5 +91,5 @@ Example
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::SolverSession::Execute` and :aimms:func:`GMP::SolverSession::AsynchronousExecute`. See Section
-    16.3.6 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ for more details on extended suffixes.
+    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::SolverSession::Execute` and :aimms:func:`GMP::SolverSession::AsynchronousExecute`. See 
+    :ref:`sec:matrix.extended` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for more details on extended suffixes.

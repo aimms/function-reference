@@ -57,11 +57,11 @@ Return Value
        function specifies how the variables (and constraints) are divided
        among the master and subproblem.
 
-    -  The *useDual* argument is discussed in more detail in Section 21.5.1
-       of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  The *useDual* argument is discussed in more detail in :ref:`sec:benders.primaldual.sub`
+       of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  The *normalizationType* argument is discussed in more detail in
-       Section 21.5.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+       :ref:`sec:benders.primaldual.sub` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
 Example
 -------

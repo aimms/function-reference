@@ -82,9 +82,9 @@ Return Value
        of ``B``, although it is not up to date. This is done in order to
        avoid circular references while making set and parameter definitions
        up to date. In order to make ``B`` up to date consider using the
-       ``Update`` statement, see also Section 7.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+       ``Update`` statement, see also :doc:`non-procedural-language-components/execution-of-nonprocedural-components/nonprocedural-execution` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
 .. seealso::
 
-    The function :aimms:func:`ActiveCard` and the ``Count`` operator (see also Section 7.3
-    of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__).
+    The function :aimms:func:`ActiveCard` and the ``Count`` operator (see also :doc:`non-procedural-language-components/execution-of-nonprocedural-components/nonprocedural-execution`
+    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).

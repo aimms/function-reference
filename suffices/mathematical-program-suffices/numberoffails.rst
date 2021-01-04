@@ -17,5 +17,5 @@ Datatype
 
 .. note::
 
-    -  The ``.NumberOfFails`` suffix is also mentioned in Table 15.3 of the
+    -  The ``.NumberOfFails`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver` of the
        `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.

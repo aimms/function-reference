@@ -40,5 +40,5 @@ Updatability
 
     The sets :aimms:set:`AllMathematicalProgrammingTypes`, :aimms:set:`AllMatrixManipulationDirections`, :aimms:set:`ContinueAbort`, :aimms:set:`DiskWindowVoid`, :aimms:set:`MaximizingMinimizing`,
     :aimms:set:`MergeReplace`, :aimms:set:`OnOff`. The ``ViolationPenalties`` attribute of a
-    mathematical programs is discussed in Section 15.4 of the Language
+    mathematical programs is discussed in :doc:`optimization-modeling-components/solving-mathematical-programs/infeasibility-analysis` of the Language
     Reference.

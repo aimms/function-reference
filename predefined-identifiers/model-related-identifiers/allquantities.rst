@@ -30,4 +30,4 @@ Updatability
 .. seealso::
 
     The sets :aimms:set:`AllIdentifiers`, :aimms:set:`AllConventions`. Quantities are discussed in full detail
-    in Section 32.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    in :doc:`advanced-language-components/units-of-measurement/the-quantity-declaration` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

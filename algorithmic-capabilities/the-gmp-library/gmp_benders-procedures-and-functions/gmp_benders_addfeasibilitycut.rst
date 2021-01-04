@@ -75,8 +75,7 @@ Example
     infeasible. The way :aimms:func:`GMP::Benders::AddFeasibilityCut` is called
     depends on whether the primal or dual of the Benders' subproblem was
     generated. In the first example we use the dual. In that case an
-    unbounded extreme ray is used to create a feasibility cut. See Section
-    21.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__. 
+    unbounded extreme ray is used to create a feasibility cut. See :ref:`sec:benders.textbook.alg` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__. 
 
     .. code-block:: aimms
 
@@ -112,7 +111,7 @@ Example
     infeasible then we solve a feasibility problem to get a solution of
     minimum infeasibility (according to some measurement). The shadow prices
     of the constraints and the reduced costs of the variables in that
-    solution are used to create a feasibility cut. See Section 21.3 of the
+    solution are used to create a feasibility cut. See :ref:`sec:benders.textbook.alg` of the
     `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__. 
 
     .. code-block:: aimms

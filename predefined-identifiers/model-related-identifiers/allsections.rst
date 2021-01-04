@@ -37,6 +37,6 @@ Updatability
 .. seealso::
 
     The set :aimms:set:`AllIdentifiers`. Model sections are discussed in Section 4.2 of the
-    `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__. Data control statements are discussed in Section 25.3, the
-    ``READ`` and ``WRITE`` statements in Section 26.2, and the ``DISPLAY``
-    statement in Section 4.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__. Data control statements are discussed in Section :doc:`data-communication-components/data-initialization-verification-and-control/data-control`, the
+    ``READ`` and ``WRITE`` statements in :ref:`sec:rw.read-write`, and the ``DISPLAY``
+    statement in :ref:`sec:report.display` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

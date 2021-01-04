@@ -29,4 +29,4 @@ Updatability
 
 .. seealso::
 
-    Macros are discussed in Section 6.4 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    Macros are discussed in :doc:`non-procedural-language-components/numerical-and-logical-expressions/macro-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

@@ -46,4 +46,4 @@ Return Value
 .. seealso::
 
     The :aimms:func:`HyperGeometric` distribution is discussed in full detail in
-    Appendix A of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

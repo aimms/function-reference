@@ -29,11 +29,11 @@ Dimension
        the ``.Upper`` suffix of that variable this variable is treated as a
        frozen variable and subsequently removed from the generated
        mathematical program independently from the setting of the
-       ``.nonvar`` suffix (see 14.1).
+       ``.nonvar`` suffix (see :doc:`optimization-modeling-components/variable-and-constraint-declaration/variable-declaration-and-attributes`).
 
     -  In order to access the upper bound of the definition of a variable
        ``X`` use the notation ``X_definition.Upper``.
 
-    -  See also Sections 14.1 and 14.2.5 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also Sections :doc:`optimization-modeling-components/variable-and-constraint-declaration/variable-declaration-and-attributes` and :ref:`sec:constr.values` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  The ``GAMS`` and ``AIMMS 2`` equivalent suffix name is ``.up``.

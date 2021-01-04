@@ -108,7 +108,7 @@ Example
 
     -  The functions :aimms:func:`cp::Count` and :aimms:func:`cp::Sequence`.
 
-    -  The Chapter on Constraint Programming 22 in the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/>`__, which
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
        references this function as ``global_cardinality``.

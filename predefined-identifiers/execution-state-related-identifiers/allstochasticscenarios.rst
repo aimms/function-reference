@@ -27,7 +27,7 @@ Updatability
 
 .. seealso::
 
-    -  Stochastic programming is discussed in Chapter 19 of the Language
+    -  Stochastic programming is discussed in :doc:`optimization-modeling-components/stochastic-programming/index` of the Language
        Reference.
 
     -  The intrinsic function :aimms:func:`GMP::Instance::GenerateStochasticProgram`.

@@ -46,5 +46,5 @@ Return Value
 .. seealso::
 
     Calling stored procedures and executing SQL queries through AIMMS
-    ``DATABASE PROCEDURES`` is discussed in Section 27.5 of the Language
+    ``DATABASE PROCEDURES`` is discussed in :doc:`data-communication-components/communicating-with-databases/executing-stored-procedures-and-sql-queries` of the Language
     Reference.

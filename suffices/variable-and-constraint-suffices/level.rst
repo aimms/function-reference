@@ -28,6 +28,6 @@ Dimension
        statement or a parameter definition the ``.Level`` suffix is
        automatically used.
 
-    -  See also Section 14.2.5 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also :ref:`sec:constr.values` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  The GAMS and AIMMS 2 equivalent suffix name is ``.l``.

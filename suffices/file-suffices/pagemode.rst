@@ -26,4 +26,4 @@ Datatype
     -  The equivalent GAMS and AIMMS 2 name is *.pc* but this value is
        numeric.
 
-    -  See also Section 31.4 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also :doc:`data-communication-components/text-reports-and-output-listing/structuring-a-page-in-page-mode` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

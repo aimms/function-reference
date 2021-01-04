@@ -21,7 +21,7 @@ Arguments
 
     *Format*
         A string that holds the date and time format used in the returned
-        string. Valid format strings are described in Section 33.7.
+        string. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`
 
     *Date*
         It is tested whether or not this string is according to format *Format*.

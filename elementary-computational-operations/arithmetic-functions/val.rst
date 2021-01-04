@@ -30,5 +30,5 @@ Return Value
 
 .. seealso::
 
-    The :aimms:func:`Val` function is discussed in full detail in Section 5.2.1 of the
+    The :aimms:func:`Val` function is discussed in full detail in :ref:`sec:set-expr.elem.functions` of the
     `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.

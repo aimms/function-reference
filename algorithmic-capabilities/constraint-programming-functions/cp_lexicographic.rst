@@ -157,7 +157,7 @@ Example
     -  The help text associated with the option ``constraint_listing``. This
        option can be found via the AIMMS menu ``settings`` > ``project options`` category ``Solvers general`` > ``Standard reports`` > ``constraints``.
 
-    -  Chapter 22 on Constraint Programming in the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/>`__, which
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
        references this function as ``lex_less`` and ``lex_lesseq``.

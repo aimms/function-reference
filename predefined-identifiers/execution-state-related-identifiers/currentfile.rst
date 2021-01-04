@@ -38,5 +38,5 @@ Updatability
 .. seealso::
 
     The string parameter :aimms:set:`CurrentFileName`. The ``PUT`` statement is discussed in
-    Section 31.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__, the ``DISPLAY`` statement in
-    Section 31.3.
+    :doc:`data-communication-components/text-reports-and-output-listing/the-put-statement` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__, the ``DISPLAY`` statement in
+    :doc:`data-communication-components/text-reports-and-output-listing/the-display-statement`

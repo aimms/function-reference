@@ -51,7 +51,7 @@ Return Value
           session, else
 
        -  the value used in the ``OPTION`` statement if that statement is
-          used (see also Section 8.5 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__), else
+          used (see also :doc:`procedural-language-components/execution-statements/the-option-and-property-statements` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__), else
 
        -  the option value in the option tree.
 

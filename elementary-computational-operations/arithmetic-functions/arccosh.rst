@@ -34,4 +34,4 @@ Return Value
 .. seealso::
 
     The functions :aimms:func:`ArcSinh`, :aimms:func:`ArcTanh`, :aimms:func:`Cosh`. Arithmetic functions are
-    discussed in full detail in Section 6.1.4 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

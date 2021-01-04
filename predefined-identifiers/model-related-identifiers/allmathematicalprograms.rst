@@ -29,6 +29,6 @@ Updatability
 
 .. seealso::
 
-    -  Mathematical programs in Section 15.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  Mathematical programs in :doc:`optimization-modeling-components/solving-mathematical-programs/mathematicalprogram-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GenerateStochasticProgram`, and :aimms:func:`GMP::Instance::GetSymbolicMathematicalProgram`.

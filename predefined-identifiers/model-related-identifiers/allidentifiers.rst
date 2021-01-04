@@ -37,8 +37,7 @@ Updatability
 
 .. seealso::
 
-    The set :aimms:set:`AllSymbols`. Data control statements are discussed in Section
-    25.3, the ``READ`` and ``WRITE`` statements in Section 26.2, and the
-    ``DISPLAY`` statement in Section 31.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__. Working
-    with the set :aimms:set:`AllIdentifiers` is described in more detail in Section
-    25.4.
+    The set :aimms:set:`AllSymbols`. Data control statements are discussed in :doc:`data-communication-components/data-initialization-verification-and-control/data-control`, 
+    the ``READ`` and ``WRITE`` statements in :doc:`data-communication-components/the-read-and-write-statements/syntax-of-the-read-and-write-statements`, and the
+    ``DISPLAY`` statement in :doc:`data-communication-components/text-reports-and-output-listing/the-display-statement` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__. Working
+    with the set :aimms:set:`AllIdentifiers` is described in more detail in :doc:`data-communication-components/data-initialization-verification-and-control/working-with-the-set-allidentifiers`.

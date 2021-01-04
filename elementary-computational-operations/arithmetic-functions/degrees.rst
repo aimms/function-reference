@@ -31,4 +31,4 @@ Return Value
 .. seealso::
 
     The function :aimms:func:`Radians`. Arithmetic functions are discussed in full
-    detail in Section 6.1.4 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

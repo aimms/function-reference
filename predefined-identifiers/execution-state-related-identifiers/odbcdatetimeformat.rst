@@ -38,6 +38,6 @@ Updatability
 
 .. seealso::
 
-    The use of :aimms:stringparameter:`ODBCDateTimeFormat` is discussed in more detail in Section
-    27.8 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__. The format to which values of
-    :aimms:stringparameter:`ODBCDateTimeFormat` should comply are discussed in Section 33.7.
+    The use of :aimms:stringparameter:`ODBCDateTimeFormat` is discussed in more detail in :doc:`data-communication-components/communicating-with-databases/dealing-with-date-time-values`
+    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__. The format to which values of
+    :aimms:stringparameter:`ODBCDateTimeFormat` should comply are discussed in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`

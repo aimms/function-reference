@@ -30,4 +30,4 @@ Dimension
     -  In order to access the basic status of the definition of a variable
        ``X`` use the notation ``X_definition.Basic``.
 
-    -  See also Section 14.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__
+    -  See also :doc:`optimization-modeling-components/variable-and-constraint-declaration/variable-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__

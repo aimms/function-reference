@@ -18,7 +18,7 @@ Datatype
 
 .. note::
 
-    -  See also Section 15.2 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also :doc:`optimization-modeling-components/solving-mathematical-programs/suffices-and-callbacks` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  The ``CallbackTime`` callback procedure is supported by CPLEX,
        GUROBI, CBC, XA, CP OPTIMIZER, CONOPT, KNITRO, SNOPT and IPOPT.

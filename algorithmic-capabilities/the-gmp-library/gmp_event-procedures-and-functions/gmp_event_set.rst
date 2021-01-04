@@ -26,6 +26,6 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Event::Create`, :aimms:func:`GMP::Event::Delete` and :aimms:func:`GMP::Event::Reset`, and Section 16.6 of the
+    The routines :aimms:func:`GMP::Event::Create`, :aimms:func:`GMP::Event::Delete` and :aimms:func:`GMP::Event::Reset`, and :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/synchronization-events` of the
     `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
 

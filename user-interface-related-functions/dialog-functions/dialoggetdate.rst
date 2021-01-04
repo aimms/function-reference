@@ -57,4 +57,4 @@ Return Value
 .. seealso::
 
     The date format specification components are discussed in full detail in
-    Section 33.7.1 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    :ref:`sec:time.format.date` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

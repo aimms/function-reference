@@ -75,8 +75,8 @@ Arguments
         When non-zero, defined subsets are included in the ``modifiedSets`` as
         well. When these defined subsets are evaluated thereafter again, this
         may result in the creation of inactive data. Inactive data can be
-        removed by a ``CLEANUP`` or ``CLEANDEPENDENTS`` statement, see Section
-        25.3 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__. Defined subsets that are defined as an
+        removed by a ``CLEANUP`` or ``CLEANDEPENDENTS`` statement, see :doc:`data-communication-components/data-initialization-verification-and-control/data-control`
+        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__. Defined subsets that are defined as an
         enumeration are never included.
 
 Return Value

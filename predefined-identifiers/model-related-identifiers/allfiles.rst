@@ -33,5 +33,5 @@ Updatability
 
 .. seealso::
 
-    The element parameter :aimms:set:`CurrentFile`. Files are discussed in Section 31.1 of
-    the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    The element parameter :aimms:set:`CurrentFile`. Files are discussed in :doc:`data-communication-components/text-reports-and-output-listing/the-file-declaration` of
+    the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

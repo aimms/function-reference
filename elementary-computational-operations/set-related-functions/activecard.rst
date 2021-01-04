@@ -42,5 +42,5 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`Card` and ``Count`` operator (see also Section 6.1.6 of
-    the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__).
+    The function :aimms:func:`Card` and ``Count`` operator (see also :ref:`sec:expr.num.iter` of
+    the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).

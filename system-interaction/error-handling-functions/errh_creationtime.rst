@@ -23,7 +23,7 @@ Arguments
 
     *fmt*
         A string that holds the date and time format used in the returned
-        string. Valid format strings are described in Section 33.7. When this
+        string. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods` When this
         argument is not given, or if ``fmt`` is not a valid string format, the
         full reference date format "``\%c\%y-\%m-\%d \%H:\%M:\%S``" will be
         used.

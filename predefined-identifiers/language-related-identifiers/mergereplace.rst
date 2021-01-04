@@ -36,6 +36,6 @@ Updatability
 
 .. seealso::
 
-    The set :aimms:set:`AllValueKeywords`. The ``SOLVE`` statement is discussed in Section 15.3
-    of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__, the ``READ`` and ``WRITE`` statements in
-    Section 26.2.
+    The set :aimms:set:`AllValueKeywords`. The ``SOLVE`` statement is discussed in :doc:`optimization-modeling-components/solving-mathematical-programs/the-solve-statement`
+    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__, the ``READ`` and ``WRITE`` statements in
+    :doc:`data-communication-components/the-read-and-write-statements/syntax-of-the-read-and-write-statements`

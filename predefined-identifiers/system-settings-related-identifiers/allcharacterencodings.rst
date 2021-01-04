@@ -138,7 +138,7 @@ Updatability
 
 .. seealso::
 
-    -  Paragraph Text files in the preliminaries of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__
+    -  Paragraph Text files in the preliminaries of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__
        18.
 
     -  The encoding attribute of files, see page 496 of the Language

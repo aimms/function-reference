@@ -99,8 +99,7 @@ The brief header contains the solve ``number`` (the suffix ``.number``)
 of the mathematical program and the name of the generated mathematical
 program. Whenever this suffix is less than or equal to twenty, it is
 written as a word. When the generated mathematical program is a
-scheduling problem, containing activities as documented in Section
-22.2.1, the problem schedule domain is also printed, as illustrated in
+scheduling problem, containing activities as documented in :ref:`sec:constraint.programming.scheduling.activities`, the problem schedule domain is also printed, as illustrated in
 the following example: 
 
 .. code-block:: aimms

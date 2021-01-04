@@ -48,4 +48,4 @@ Return Value
 
     -  The functions :aimms:func:`cp::EndAtEnd` and :aimms:func:`cp::EndBeforeBegin`, and
 
-    -  Chapter 22 on Constraint Programming in the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

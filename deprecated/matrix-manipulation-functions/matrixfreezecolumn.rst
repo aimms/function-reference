@@ -48,5 +48,5 @@ Return Value
 .. seealso::
 
     The procedures :aimms:func:`MatrixModifyLowerBound`, :aimms:func:`MatrixModifyUpperBound`, :aimms:func:`MatrixUnfreezeColumn`. Matrix manipulation
-    routines are discussed in more detail in Chapter 16 of the Language
+    routines are discussed in more detail in :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/index` of the Language
     Reference.

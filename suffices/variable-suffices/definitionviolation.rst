@@ -23,4 +23,4 @@ Dimension
 
 .. note::
 
-    -  See also section 15.4 of the `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+    -  See also :doc:`optimization-modeling-components/solving-mathematical-programs/infeasibility-analysis` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
