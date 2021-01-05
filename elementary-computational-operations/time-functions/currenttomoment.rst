@@ -23,7 +23,7 @@ Arguments
 
     *ReferenceDate*
         A string that holds the begin date using the fixed format for date and
-        time, see paragraph *Reference date format* on page 544 of the Language
+        time, see paragraph :ref:`calendar.reference_date_format` of the Language
         Reference.
 
 Return Value
