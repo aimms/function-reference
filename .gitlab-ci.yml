@@ -3,12 +3,24 @@ variables:
 
 stages:
   - build
+
+before_script:
+  - sudo apt-get install software-properties-common -y
+  - sudo add-apt-repository ppa:deadsnakes/ppa -y
+  - sudo apt-get update -y
+  - sudo apt-get install python3.8 python3.8-dev python3.8-venv python3-pip python3-venv python-enchant -y
+  - python3.8 -mvenv ../myenv
+  - source ../myenv/bin/activate
+  - python3.8 -mpip install -U  pip
+  - python3.8 -mpip install sphinx==3.2.1
+  - python3.8 -mpip install -U sphinx-aimms-theme aimms-pygments-style sphinx-sitemap sphinx-last-updated-by-git sphinxcontrib-bibtex
+
   
 build_and_install:
   stage: build
   script:
-    - sphinx-build -M html . _build 
-    - python -msphinx.ext.intersphinx _build/html/objects.inv > _build/html/help_index_functionreference.txt
+    - python3.8 -msphinx -W -b html . _build/html
+    - python3.8 -msphinx.ext.intersphinx _build/html/objects.inv > _build/html/help_index_functionreference.txt
     - rsync -rt _build/html/ support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
   tags: 
     - ubuntu
@@ -22,8 +34,8 @@ compile_PDF:
     - sudo apt-get install texlive-fonts-recommended -y
     - sudo apt-get install texlive-latex-extra -y
     - sudo apt-get install latexmk -y
-    - sphinx-build -M latex . _build 
-    - sphinx-build -M latexpdf . _build 
+    - python3.8 -msphinx -M latex . _build 
+    - python3.8 -msphinx -M latexpdf . _build 
     - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
   tags: 
     - ubuntu
