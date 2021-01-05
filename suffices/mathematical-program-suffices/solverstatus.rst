@@ -13,7 +13,7 @@ Datatype
 --------
 
     The value of the ``.SolverStatus`` suffix is element and its range is
-    ``AllSolutionStates``.
+    :aimms:set:`AllSolutionStates`.
 
 .. note::
 

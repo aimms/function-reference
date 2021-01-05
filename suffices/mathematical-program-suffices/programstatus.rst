@@ -13,7 +13,7 @@ Datatype
 --------
 
     The value of the ``.ProgramStatus`` suffix is an element in the set
-    :any:`AllSolutionStates`.
+    :aimms:set:`AllSolutionStates`.
 
 .. note::
 
