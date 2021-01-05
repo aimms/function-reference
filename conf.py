@@ -54,7 +54,7 @@ if os.name != 'nt':
     #Imports sitemap extension to build the sitemap automatically
     extensions.append('sphinx_sitemap')
     html_baseurl = "https://documentation.aimms.com/functionreference/"
-    extension.append('sphinx_last_updated_by_git')
+    extensions.append('sphinx_last_updated_by_git')
 
 intersphinx_mapping = {'howto': ('https://how-to.aimms.com/', None),
                        'lr': ('https://documentation.aimms.com/language-reference', None)}
