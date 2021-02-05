@@ -37,6 +37,7 @@ compile_PDF:
     - python3.8 -msphinx -M latex . _build 
     - python3.8 -msphinx -M latexpdf . _build 
     - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
+    - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/data/download/manuals
   tags: 
     - ubuntu
   only:
