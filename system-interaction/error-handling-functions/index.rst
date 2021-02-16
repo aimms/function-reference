@@ -22,3 +22,8 @@ AIMMS supports the following functions for error handling:
    errh_node
    errh_numberoflocations
    errh_severity
+
+.. seealso::
+    
+    - Our online training about error handling `following this link <https://academy.aimms.com/course/view.php?id=50>`__.
+    - More documentation about using those functions in :doc:`procedural-language-components/execution-statements/raising-and-handling-warnings-and-errors`
