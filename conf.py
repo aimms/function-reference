@@ -59,6 +59,9 @@ if os.name != 'nt':
 intersphinx_mapping = {'howto': ('https://how-to.aimms.com/', None),
                        'lr': ('https://documentation.aimms.com/language-reference', None)}
 
+# A list of regular expressions that match URIs that should not be checked when doing a linkcheck build.   
+linkcheck_ignore = [r'https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html']
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 

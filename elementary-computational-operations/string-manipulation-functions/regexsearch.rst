@@ -38,7 +38,7 @@ Arguments
        Standard Library. It follows ECMA-262 grammar and POSIX grammar,
        with some modifications. For further references go to `this link <https://en.cppreference.com/w/cpp/regex/ecmascript>`__. 
        You can find more information on ESMA Script regular expressions
-       via `this link <https://ecma-international.org/ecma-262/#sec-regexp-regular-expression-objects>`__.
+       via `this link <https://ecma-international.org/ecma-262/>`__.
        You can find more information on POSIX regular expressions via `this link <http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html#tag_09_03>`__.
 
     -  To include a special character in a string, it should be escaped by
