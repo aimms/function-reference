@@ -15,6 +15,7 @@ AIMMS supports the following functions for manipulating strings:
    formatstring
    garbagecollectstrings
    regexsearch
+   regexreplace
    stringcapitalize
    stringlength
    stringoccurrences
