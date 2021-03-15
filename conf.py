@@ -126,6 +126,10 @@ html_theme_options = {
     'display_algolia_search': False,
     'google_analytics_id': 'UA-1290545-13',
     'generate_google_analytics' : Display_3rd_Party_Extensions,
+    'display_help_and_feedback' : True,
+    'is_github' : True,
+    'repo_url' : "https://github.com/aimms/function-reference",
+
 }
 
 html_last_updated_fmt = '%b %d, %Y'
