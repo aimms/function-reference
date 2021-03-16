@@ -29,8 +29,8 @@ Arguments
 Return Value
 ------------
 
-    An element in the predefined set ``AllRowColumnStatuses``. The set
-    ``AllRowColumnStatuses`` contains the following elements:
+    An element in the predefined set :aimms:set:`AllRowColumnStatuses`. The set
+    :aimms:set:`AllRowColumnStatuses` contains the following elements:
 
     -  Active,
 

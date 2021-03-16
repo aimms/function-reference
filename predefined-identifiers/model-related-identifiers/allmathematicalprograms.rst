@@ -5,7 +5,7 @@
 AllMathematicalPrograms
 =======================
 
-The predefined set ``AllMathematicalprograms`` contains the names of all
+The predefined set :aimms:set:`AllMathematicalprograms` contains the names of all
 mathematical programs within an AIMMS model.
 
 .. code-block:: aimms

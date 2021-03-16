@@ -20,7 +20,7 @@ Definition
 ----------
 
     An element in the set :aimms:set:`AllCaseFileContentTypes` is a subset of
-    ``AllIdentifiers``. Such a subset defines the identifiers that are
+    :aimms:set:`AllIdentifiers`. Such a subset defines the identifiers that are
     stored in a case file.
 
 Updatability

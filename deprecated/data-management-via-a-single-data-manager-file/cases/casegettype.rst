@@ -19,11 +19,11 @@ Arguments
 ---------
 
     *case*
-        An element of the set ``AllCases``, refering to the case for which you
+        An element of the set :aimms:set:`AllCases`, refering to the case for which you
         want to retrieve its case type.
 
     *case\_type*
-        An element parameter into ``AllCaseTypes``, on successfull return this
+        An element parameter into :aimms:set:`AllCaseTypes`, on successfull return this
         argument will contain the case type for the given case.
 
 Return Value

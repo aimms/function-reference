@@ -20,10 +20,10 @@ Arguments
 ---------
 
     *FromTZ*
-        An element from the set ``AllTimeZones``.
+        An element from the set :aimms:set:`AllTimeZones`.
 
     *ToTZ*
-        An element from the set ``AllTimeZones``.
+        An element from the set :aimms:set:`AllTimeZones`.
 
     *UseDST (optional)*
         A scalar expression specifying whether or not the current setting for

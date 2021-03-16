@@ -21,15 +21,15 @@ Arguments
 ---------
 
     *case*
-        An element in the set ``AllCases``, refering to the case for which you
+        An element in the set :aimms:set:`AllCases`, refering to the case for which you
         want to retrieve the dataset reference.
 
     *data-category*
-        An element in the set ``AllDataCategories``, refering to the specific
+        An element in the set :aimms:set:`AllDataCategories`, refering to the specific
         data category for which you want to obtain the dataset reference.
 
     *dataset*
-        An element parameter into ``AllDataSets``, on return this argument will
+        An element parameter into :aimms:set:`AllDataSets`, on return this argument will
         contain the included dataset. It is set to the empty element if no
         dataset is included or if the dataset no longer exists.
 

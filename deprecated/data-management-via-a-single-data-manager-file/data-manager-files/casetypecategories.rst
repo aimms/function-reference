@@ -19,11 +19,11 @@ Arguments
 ---------
 
     *case\_type*
-        An element of the set ``AllCaseTypes``, refering to the case type for
+        An element of the set :aimms:set:`AllCaseTypes`, refering to the case type for
         which you want to retrieve the included data categories.
 
     *category\_set*
-        A subset of the set ``AllDataCategories``, on successfull return this
+        A subset of the set :aimms:set:`AllDataCategories`, on successfull return this
         subset is filled with the data categories included in the case type.
 
 Return Value

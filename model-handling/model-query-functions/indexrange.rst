@@ -18,7 +18,7 @@ Arguments
 ---------
 
     *indexName*
-        An element expression in the predefined set ``AllIdentifiers``
+        An element expression in the predefined set :aimms:set:`AllIdentifiers`
         specifying the index for which the range should be returned.
 
 Return Value

@@ -20,7 +20,7 @@ Arguments
 ---------
 
     *data\_category*
-        An element in ``AllDataCategories``, specifying the data category for
+        An element in :aimms:set:`AllDataCategories`, specifying the data category for
         which the datasets must be searched.
 
     *dataset\_path*
@@ -29,7 +29,7 @@ Arguments
         Data Management tree.
 
     *dataset*
-        An element parameter into ``AllDataSets``. On successful return this
+        An element parameter into :aimms:set:`AllDataSets`. On successful return this
         parameter will refer to the dataset found.
 
 Return Value

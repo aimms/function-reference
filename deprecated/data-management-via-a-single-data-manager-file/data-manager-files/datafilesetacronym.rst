@@ -5,12 +5,12 @@
 DataFileSetAcronym
 ==================
 
-The predefined set ``AllDataFiles`` (and its subsets ``AllCases`` and
-``AllDataSets``), is an integer set. The mapping of these integers onto
+The predefined set :aimms:set:`AllDataFiles` (and its subsets :aimms:set:`AllCases` and
+:aimms:set:`AllDataSets`), is an integer set. The mapping of these integers onto
 the cases and datasets in the project is maintained by the data manager,
 and is not editable. With the procedure :aimms:func:`DataFileSetAcronym` you can
 set the acronym for the data file corresponding to any element of the
-set ``AllDataFiles`` (cases or datasets).
+set :aimms:set:`AllDataFiles` (cases or datasets).
 
 .. code-block:: aimms
 
@@ -23,7 +23,7 @@ Arguments
 ---------
 
     *datafile*
-        An element in the set ``AllDataFiles``.
+        An element in the set :aimms:set:`AllDataFiles`.
 
     *acronym*
         A scalar string valued parameter. This parameter contains the acronym to

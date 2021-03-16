@@ -19,7 +19,7 @@ Arguments
 ---------
 
     *datafile*
-        An element in the set ``AllDataFiles``.
+        An element in the set :aimms:set:`AllDataFiles`.
 
     *owner*
         A scalar string valued parameter. On return this parameter will contain

@@ -20,11 +20,11 @@ Arguments
 ---------
 
     *data\_category*
-        An element in ``AllDataCategories``, specifying the data category for
+        An element in :aimms:set:`AllDataCategories`, specifying the data category for
         which you want to the user to select a new dataset.
 
     *dataset*
-        An element parameter in ``AllDataSets``. On return the dataset will
+        An element parameter in :aimms:set:`AllDataSets`. On return the dataset will
         refer to the selected dataset.
 
     *title (optional)*

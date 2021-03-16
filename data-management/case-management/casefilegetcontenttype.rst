@@ -25,7 +25,7 @@ Arguments
         on your local file system, or to a network location.
 
     *contents*
-        An element parameter in ``AllSubsetsOfAllIdentifiers``. On return it
+        An element parameter in :aimms:set:`AllSubsetsOfAllIdentifiers`. On return it
         holds the reference to the subset that was used when saving the case
         file.
 

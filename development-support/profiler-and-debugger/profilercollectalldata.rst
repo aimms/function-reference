@@ -27,10 +27,10 @@ Arguments
         A three dimensional identifier where the indices represent (1) the
         identifiers, (2) the line numbers and (3) the specific profiler value.
         The first index should be an index in (a subset of) the predeclared set
-        ``AllIdentifiers``, only for identifiers in this set the profiling data
+        :aimms:set:`AllIdentifiers`, only for identifiers in this set the profiling data
         will be retrieved. The second index should be an index in a subset of
         ``Integers``. The third index should be an index in (a subset of) the
-        predeclared set ``AllProfilerTypes``.
+        predeclared set :aimms:set:`AllProfilerTypes`.
 
     *GrossTimeThreshold*
         An optional value, in seconds, which filters out all the profiler

@@ -19,7 +19,7 @@ Arguments
 ---------
 
     *case*
-        An element parameter in ``AllCases``. On return the case will refer to
+        An element parameter in :aimms:set:`AllCases`. On return the case will refer to
         the selected case.
 
     *title (optional)*

@@ -14,7 +14,7 @@ Datatype
 --------
 
     The value of the ``.CallbackTime`` suffix is an element in the set of
-    ``AllProcedures`` and the default is the empty element ``''``.
+    :aimms:set:`AllProcedures` and the default is the empty element ``''``.
 
 .. note::
 

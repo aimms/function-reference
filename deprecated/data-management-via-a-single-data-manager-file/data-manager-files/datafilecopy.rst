@@ -21,13 +21,13 @@ Arguments
 ---------
 
     *datafile*
-        An element in the set ``AllDataFiles``, ``AllCases`` or ``AllDataSets``.
+        An element in the set :aimms:set:`AllDataFiles`, :aimms:set:`AllCases` or :aimms:set:`AllDataSets`.
 
     *acronym*
         The name of the new data file to be created
 
     *copiedDatafile*
-        On success, contains the element in ``AllDataFiles`` associated with the
+        On success, contains the element in :aimms:set:`AllDataFiles` associated with the
         datafile into which the original data file was copied.
 
 Return Value

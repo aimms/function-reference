@@ -19,7 +19,7 @@ Definition
 ----------
 
     The value of :aimms:set:`CurrentCaseFileContentType` is a references to a subset
-    of ``AllIdentifiers``, which corresponds to the data that is stored in
+    of :aimms:set:`AllIdentifiers`, which corresponds to the data that is stored in
     the most recently loaded or saved case file. This subset is also used to
     determine whether any data needs to be saved for the current case,
     before loading another case file.

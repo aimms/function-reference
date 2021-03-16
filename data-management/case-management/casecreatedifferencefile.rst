@@ -25,7 +25,7 @@ Arguments
 ---------
 
     *referenceCase*
-        An element in the set ``AllCases`` specifying the case to which the
+        An element in the set :aimms:set:`AllCases` specifying the case to which the
         current data should be compared.
 
     *outputFilename*

@@ -19,7 +19,7 @@ Arguments
 ---------
 
     *data\_category*
-        An element of the set ``AllDataCategories``, refering to the data
+        An element of the set :aimms:set:`AllDataCategories`, refering to the data
         category for which you want to retrieve the contents.
 
     *identifier\_set*

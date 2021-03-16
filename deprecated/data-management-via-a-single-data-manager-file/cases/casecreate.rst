@@ -25,7 +25,7 @@ Arguments
 
     *case*
         An element parameter into :aimms:set:`AllCases`. On successful return this parameter
-        will refer to the newly created element in ``AllCases``.
+        will refer to the newly created element in :aimms:set:`AllCases`.
 
 Return Value
 ------------

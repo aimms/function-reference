@@ -7,7 +7,7 @@ DataChangeMonitorCreate
 
 With the function :aimms:func:`DataChangeMonitorCreate`, you can create a new data
 change monitor. With a data change monitor, you can determine whether
-any identifiers in a subset of ``AllIdentifiers`` have been changed
+any identifiers in a subset of :aimms:set:`AllIdentifiers` have been changed
 since the latest call to :aimms:func:`DataChangeMonitorCreate` or
 ``DataChangeMonitorReset``. To check for any changes, you can use
 :aimms:func:`DataChangeMonitorHasChanged`.

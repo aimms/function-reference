@@ -11,7 +11,7 @@ new case file. If the selected file already exists, an overwrite
 confirmation dialog box is displayed. The procedure only results in the
 url of the selected case file, it does not actually create the file or
 replace the existing contents. If the predefined set
-``AllCaseFileContentTypes`` contains multiple elements, then the dialog
+:aimms:set:`AllCaseFileContentTypes` contains multiple elements, then the dialog
 box also allows the user to select the specific contents that he wants
 to save.
 
@@ -31,7 +31,7 @@ Arguments
         return, the string will contain the reference to the selected case file.
 
     *contentType*
-        An element parameter in ``AllCaseFileContentTypes``. On return, this
+        An element parameter in :aimms:set:`AllCaseFileContentTypes`. On return, this
         element parameter will contain the element that the user selected.
 
 Return Value

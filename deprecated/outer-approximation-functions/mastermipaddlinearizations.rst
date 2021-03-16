@@ -6,7 +6,7 @@ MasterMIPAddLinearizations
 ==========================
 
 The procedure :aimms:func:`MasterMIPAddLinearizations` adds a linearization for a
-subset of ``AllNonlinearConstraints``. The linearizations are created by
+subset of :aimms:set:`AllNonlinearConstraints`. The linearizations are created by
 using the solution present at that time inside the AIMMS Outer
 Approximation solver interface. Normally the solution that is returned
 by the NLP solver is used. When permitted, variables are introduced to

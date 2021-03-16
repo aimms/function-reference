@@ -22,7 +22,7 @@ Arguments
 ---------
 
     *identifier*
-        The identifier, given as element in the set ``AllIdentifiers``, whose
+        The identifier, given as element in the set :aimms:set:`AllIdentifiers`, whose
         usage info you want to retrieve. Please note that local identifiers
         (declared inside procedures or functions) are not taken into account by
         this function.

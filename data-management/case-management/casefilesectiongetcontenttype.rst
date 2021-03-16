@@ -30,7 +30,7 @@ Arguments
         are ignored, and an empty string is not allowed.
 
     *contents*
-        An element parameter in ``AllSubsetsOfAllIdentifiers``. Upon return, it
+        An element parameter in :aimms:set:`AllSubsetsOfAllIdentifiers`. Upon return, it
         holds the reference to the subset that was used when saving the user
         section in the case file.
 

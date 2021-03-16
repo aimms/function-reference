@@ -31,7 +31,7 @@ Updatability
 
 .. note::
 
-    Element parameters into the set ``AllMatrixManipulationDirections`` can
+    Element parameters into the set :aimms:set:`AllMatrixManipulationDirections` can
     be used as the *type* argument of the :aimms:func:`GMP::Instance::SetMathematicalProgrammingType` function.
 
 .. seealso::

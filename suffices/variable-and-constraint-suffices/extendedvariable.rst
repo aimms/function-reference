@@ -15,7 +15,7 @@ Dimension
 
     The dimension of the suffix ``.ExtendedVariable`` is one higher than the
     dimension of the identifier at hand. The domain of the suffix
-    ``.ExtendedVariable`` is the set ``AllGMPExtensions`` followed by the
+    ``.ExtendedVariable`` is the set :aimms:set:`AllGMPExtensions` followed by the
     domain of the identifier at hand.
 
 .. note::

@@ -23,7 +23,7 @@ Arguments
 ---------
 
     *case*
-        An element parameter into the pre-defined set ``AllCases``. If the
+        An element parameter into the pre-defined set :aimms:set:`AllCases`. If the
         argument *dialog* is set to 0, then no dialog box is shown and the case
         to which the element parameter currently refers is loaded. If the
         argument *dialog* is set to 1, then the value of the element parameter

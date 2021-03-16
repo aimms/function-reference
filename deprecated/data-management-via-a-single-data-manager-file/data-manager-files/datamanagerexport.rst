@@ -23,7 +23,7 @@ Arguments
         datasets must be exported.
 
     *datafiles*
-        A subset of ``AllDataFiles``, containing the cases and datasets that you
+        A subset of :aimms:set:`AllDataFiles`, containing the cases and datasets that you
         want to export. Any dataset that is referred to by a case in this set is
         automatically added to the set.
 

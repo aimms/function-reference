@@ -34,7 +34,7 @@ Arguments
         allowed. The length of the name is limited to 27 characters.
 
     *contents*
-        A subset of ``AllIdentifiers`` containing all the identifiers that must
+        A subset of :aimms:set:`AllIdentifiers` containing all the identifiers that must
         be saved.
 
 Return Value

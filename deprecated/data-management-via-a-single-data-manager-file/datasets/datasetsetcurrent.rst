@@ -22,11 +22,11 @@ Arguments
 ---------
 
     *data\_category*
-        An element in ``AllDataCategories``, specifying the data category for
+        An element in :aimms:set:`AllDataCategories`, specifying the data category for
         which you want to set the current dataset.
 
     *dataset*
-        An element of the set ``AllDataSets``, refering to the dataset that
+        An element of the set :aimms:set:`AllDataSets`, refering to the dataset that
         should become the current dataset.
 
 Return Value

@@ -19,11 +19,11 @@ Arguments
 ---------
 
     *dataset*
-        An element of the set ``AllDataSets``, refering to the dataset for which
+        An element of the set :aimms:set:`AllDataSets`, refering to the dataset for which
         you want to retrieve its data category.
 
     *data\_category*
-        An element parameter into ``AllDataCategories``, on successfull return
+        An element parameter into :aimms:set:`AllDataCategories`, on successfull return
         this argument will contain the data category of the given dataset.
 
 Return Value

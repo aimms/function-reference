@@ -21,7 +21,7 @@ Arguments
 ---------
 
     *case*
-        An element of the set ``AllCases``, refering to the case that should
+        An element of the set :aimms:set:`AllCases`, refering to the case that should
         become the current case.
 
 Return Value

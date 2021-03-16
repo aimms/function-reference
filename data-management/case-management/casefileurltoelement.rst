@@ -6,12 +6,12 @@ CaseFileURLtoElement
 ====================
 
 For each case file that has been accessed during an AIMMS session, a new
-element is created in the predefined set ``AllCases``. The predefined
+element is created in the predefined set :aimms:set:`AllCases`. The predefined
 string parameter :aimms:set:`CaseFileURL` is updated accordingly. When working with a
 selection of case files, for example in a multiple case view, or in
 statements with the case dot notation, you should actually create a
-subset of ``AllCases``. In that process, it may be useful to find the
-corresponding element in ``AllCases`` given the url of a case file.
+subset of :aimms:set:`AllCases`. In that process, it may be useful to find the
+corresponding element in :aimms:set:`AllCases` given the url of a case file.
 
 .. code-block:: aimms
 
@@ -27,10 +27,10 @@ Arguments
     *url*
         A string referencing the url of a case file. This url can point to an
         existing file on your local file system, or to a network location. The
-        given url does not need to be present in ``AllCases`` a priori.
+        given url does not need to be present in :aimms:set:`AllCases` a priori.
 
     *caseFileElement*
-        On return, this element parameter is set to the element in ``AllCases``
+        On return, this element parameter is set to the element in :aimms:set:`AllCases`
         that corresponds to the given url. In other words, the following
         condition will be true: ``CaseFileUrl(caseFileElement) = url``.
 
@@ -38,7 +38,7 @@ Arguments
         If this value is set to 1 then the procedure always returns 0 if the
         specified url cannot be found in the underlying file system. If set to 0
         and the underlying file does not exist, the procedure returns 1 if the
-        corresponding element already existed in ``AllCases``. The default value
+        corresponding element already existed in :aimms:set:`AllCases`. The default value
         is 0.
 
 Return Value

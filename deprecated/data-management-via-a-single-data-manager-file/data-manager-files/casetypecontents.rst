@@ -19,7 +19,7 @@ Arguments
 ---------
 
     *case\_type*
-        An element of the set ``AllCaseTypes``, refering to the case type for
+        An element of the set :aimms:set:`AllCaseTypes`, refering to the case type for
         which you want to retrieve the contents.
 
     *identifier\_set*

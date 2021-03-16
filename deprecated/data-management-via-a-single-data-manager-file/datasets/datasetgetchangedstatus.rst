@@ -19,7 +19,7 @@ Arguments
 ---------
 
     *data\_category*
-        An element in ``AllDataCategories``, specifying the data category for
+        An element in :aimms:set:`AllDataCategories`, specifying the data category for
         which the changed status must be retrieved.
 
 Return Value

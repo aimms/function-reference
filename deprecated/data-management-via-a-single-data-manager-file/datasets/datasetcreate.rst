@@ -21,7 +21,7 @@ Arguments
 ---------
 
     *data\_category*
-        An element in ``AllDataCategories``, specifying the data category for
+        An element in :aimms:set:`AllDataCategories`, specifying the data category for
         which a dataset must be created.
 
     *dataset\_path*
@@ -30,8 +30,8 @@ Arguments
         in the Data Management tree.
 
     *dataset*
-        An element parameter into ``AllDataSets``. On successful return this
-        parameter will refer to the newly created element in ``AllDataSets``.
+        An element parameter into :aimms:set:`AllDataSets`. On successful return this
+        parameter will refer to the newly created element in :aimms:set:`AllDataSets`.
 
 Return Value
 ------------

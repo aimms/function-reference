@@ -53,7 +53,7 @@ Return Value
        host (if any) are used to create a new element in the set :aimms:set:`AllGeneratedMathematicalPrograms`.
 
     -  If an element with name specified by the *Name* argument is already
-       present in the set ``AllSolverSessions`` then the corresponding
+       present in the set :aimms:set:`AllSolverSessions` then the corresponding
        solver session will first be deleted.
 
 .. seealso::

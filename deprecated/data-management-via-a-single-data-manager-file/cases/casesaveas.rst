@@ -22,7 +22,7 @@ Arguments
 ---------
 
     *case*
-        An element parameter in ``AllCases``. On return this parameter will
+        An element parameter in :aimms:set:`AllCases`. On return this parameter will
         refer to the case that the user selected.
 
 Return Value

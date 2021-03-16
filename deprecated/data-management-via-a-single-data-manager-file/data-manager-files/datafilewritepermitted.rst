@@ -22,7 +22,7 @@ Arguments
 ---------
 
     *datafile*
-        An element in the set ``AllDataFiles``.
+        An element in the set :aimms:set:`AllDataFiles`.
 
 Return Value
 ------------

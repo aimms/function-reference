@@ -19,11 +19,11 @@ Arguments
 ---------
 
     *data\_category*
-        An element in ``AllDataCategories``, specifying the data category for
+        An element in :aimms:set:`AllDataCategories`, specifying the data category for
         which a dataset is be deleted.
 
     *dataset*
-        An element parameter into ``AllDataSets``, representing the dataset that
+        An element parameter into :aimms:set:`AllDataSets`, representing the dataset that
         you want to delete.
 
 Return Value

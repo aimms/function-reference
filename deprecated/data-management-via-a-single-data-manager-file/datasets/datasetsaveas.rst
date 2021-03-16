@@ -19,11 +19,11 @@ Arguments
 ---------
 
     *data\_category*
-        An element in ``AllDataCategories``, specifying the data category for
+        An element in :aimms:set:`AllDataCategories`, specifying the data category for
         which you want to save the data.
 
     *dataset*
-        An element parameter in ``AllDataSets``. On return this parameter will
+        An element parameter in :aimms:set:`AllDataSets`. On return this parameter will
         refer to the dataset that the user selected.
 
 Return Value

@@ -26,11 +26,11 @@ Arguments
 ---------
 
     *category*
-        An element in ``AllDataCategories``, specifying the data category for
+        An element in :aimms:set:`AllDataCategories`, specifying the data category for
         which a dataset is loaded.
 
     *dataset*
-        An element parameter in the set ``AllDataSets``. If the argument
+        An element parameter in the set :aimms:set:`AllDataSets`. If the argument
         *dialog* is set to 0, then no dialog box is shown and the dataset to
         which the element parameter currently refers is loaded. If the argument
         *dialog* is set to 1, then the value of the element parameter is used to

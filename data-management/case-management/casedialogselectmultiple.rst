@@ -20,7 +20,7 @@ Arguments
 ---------
 
     *selectedCaseFiles*
-        A subset of ``AllCases``. On entry, this subset is used to initalize the
+        A subset of :aimms:set:`AllCases`. On entry, this subset is used to initalize the
         selection in the dialog box. On return, it contains the subset that has
         been selected by the user.
 
@@ -39,7 +39,7 @@ Return Value
        running the component version of AIMMS, or when running with the
        command line option ``--as-server``.
 
-    -  You can use any subset of ``AllCases`` as an argument to this
+    -  You can use any subset of :aimms:set:`AllCases` as an argument to this
        function, but if you want to use it for a multiple case view in one
        of your pages, you should use the predefined set :aimms:set:`CurrentCaseSelection`.
 

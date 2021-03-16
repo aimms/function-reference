@@ -34,10 +34,10 @@ Arguments
         program should have model type LP or MIP.
 
     *UncertainParameters*
-        A subset of ``AllUncertainParameters``.
+        A subset of :aimms:set:`AllUncertainParameters`.
 
     *UncertaintyConstraints*
-        A subset of ``AllUncertaintyConstraints``.
+        A subset of :aimms:set:`AllUncertaintyConstraints`.
 
     *Name*
         A string that holds the name for the generated robust counterpart.

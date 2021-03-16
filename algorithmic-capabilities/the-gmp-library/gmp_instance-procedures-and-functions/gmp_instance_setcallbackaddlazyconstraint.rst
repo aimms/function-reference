@@ -20,7 +20,7 @@ Arguments
 ---------
 
     *GMP*
-        An element in ``AllGeneratedMathematicalPrograms``.
+        An element in :aimms:set:`AllGeneratedMathematicalPrograms`.
 
     *callback*
         A reference to a procedure in the set :aimms:set:`AllIdentifiers`.
@@ -53,7 +53,7 @@ Return Value
        cut off, the lazy constraint callback is called again.
 
     -  The callback procedure should have exactly one argument; a scalar
-       input element parameter into the set ``AllSolverSessions``.
+       input element parameter into the set :aimms:set:`AllSolverSessions`.
 
     -  The ``CallbackAddLazyConstraint`` callback procedure should have a
        return value of

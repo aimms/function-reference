@@ -48,7 +48,7 @@ Return Value
 
     -  If the *Name* argument is not specified then the name of the
        generated mathematical program will be used to name the element in
-       the set ``AllProgressCategories``.
+       the set :aimms:set:`AllProgressCategories`.
 
     -  The information displayed in a GMP progress category is controlled by
        AIMMS and cannot be modified by the user.

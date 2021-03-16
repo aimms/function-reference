@@ -5,7 +5,7 @@
 CurrentDefaultCaseType
 ======================
 
-The predefined element parameter ``AllCaseTypes`` contains the name of
+The predefined element parameter :aimms:set:`AllCaseTypes` contains the name of
 the current default case type.
 
 .. code-block:: aimms

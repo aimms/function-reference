@@ -6,7 +6,7 @@ AllSolverSessionCompletionObjects
 =================================
 
 The predefined set :aimms:set:`AllSolverSessionCompletionObjects` is the root set
-containing both ``AllGMPEvents`` and ``AllSolverSessions``.
+containing both :aimms:set:`AllGMPEvents` and :aimms:set:`AllSolverSessions`.
 
 .. code-block:: aimms
 
@@ -18,8 +18,8 @@ containing both ``AllGMPEvents`` and ``AllSolverSessions``.
 Definition
 ----------
 
-    The set ``AllExecutionStatuses`` is the root set containing both
-    ``AllGMPEvents`` and ``AllSolverSessions``.
+    The set :aimms:set:`AllExecutionStatuses` is the root set containing both
+    :aimms:set:`AllGMPEvents` and :aimms:set:`AllSolverSessions`.
 
 .. seealso::
 
