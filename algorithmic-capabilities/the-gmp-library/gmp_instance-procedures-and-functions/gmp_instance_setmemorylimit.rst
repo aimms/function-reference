@@ -30,6 +30,14 @@ Return Value
 
     The procedure returns 1 on success, or 0 otherwise.
 
+.. note::
+
+    -  Setting the memory limit using this procedure has the same effect as using
+       the Solvers General option ``Solver workspace``.
+    
+    -  This procedure has no effect on CPLEX. For CPLEX the option ``Tree Memory Limit``
+       should be used instead.
+
 .. seealso::
 
     The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::Instance::SetCutoff`, :aimms:func:`GMP::Instance::SetIterationLimit` and :aimms:func:`GMP::Instance::SetTimeLimit`.
