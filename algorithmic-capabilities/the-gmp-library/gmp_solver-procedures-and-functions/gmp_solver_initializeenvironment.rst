@@ -99,17 +99,12 @@ Return Value
     -  This procedure cannot be called if one of the solver sessions is
        asynchronous executing.
 
-    -  Technical note: if the optional argument *computeserver* is specified
-       then the Gurobi function ``GRBloadclientenv`` is called underneath,
-       otherwise the Gurobi function ``GRBloadenv`` (if the AIMMS license
-       features the Gurobi Link-only).
-
 Example
 -------
 
     .. code-block:: aimms
 
-               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0' );
+               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0', computeserver: "myserver1:61000" );
 
                solve MP1;
 
