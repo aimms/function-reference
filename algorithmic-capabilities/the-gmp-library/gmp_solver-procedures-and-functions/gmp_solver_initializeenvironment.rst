@@ -1,4 +1,4 @@
-.. aimms:procedure:: GMP::Solver::InitializeEnvironment(solver, computeserver, port, password, priority, timeout, logfile)
+.. aimms:procedure:: GMP::Solver::InitializeEnvironment(solver, computeserver, password, priority, timeout, logfile)
 
 .. _GMP::Solver::InitializeEnvironment:
 
@@ -22,7 +22,6 @@ GMP::Solver::InitializeEnvironment
     GMP::Solver::InitializeEnvironment(
          solver,            ! (input) a solver
          [computeserver],   ! (input, optional) a string expression
-         [port],            ! (input, optional) integer, default -1
          [password],        ! (input, optional) a string expression
          [priority],        ! (input, optional) integer, default 0
          [timeout],         ! (input, optional) integer, default -1
@@ -40,12 +39,6 @@ Arguments
         refer to compute server machines using their names or their IP
         addresses.
 
-    *port*
-        The port number used to connect to the compute server. Use the default
-        value of -1, which indicates that the default port should be used,
-        unless your server administrator has changed the recommended port
-        settings.
-
     *password*
         The password for gaining access to the specified compute servers. Do not
         specify this argument if no password is required.
@@ -56,7 +49,7 @@ Arguments
         queue before lower priority jobs.
 
     *timeout*
-        Job timeout (in seconds). If the job does not reach the front of the
+        Job queue timeout (in seconds). If the job does not reach the front of the
         queue before the specified timeout, the call will exit with an error.
         Use the default value of -1 to indicate that the call should never
         timeout.
@@ -83,7 +76,15 @@ Return Value
     -  If the *computeserver* argument is not specified then the compute
        server must be specified via a Gurobi client license key file.
 
-    -  The optional arguments *port*, *password*, *priority*, *timeout* and
+    -  The *computeserver* argument can refer to a server using its name or
+       its IP address. If you are using a non-default port, the server name
+       should be followed by the port number (e.g., myserver1:61000).
+
+    -  The *computeserver* argument may contain a comma-separated list of servers
+       to increase robustness. If the first server in the list does not respond then
+       the second will be tried, etc.
+
+    -  The optional arguments *password*, *priority*, *timeout* and
        *logfile* are only used if the optional argument *computeserver* is
        specified.
 
@@ -114,7 +115,7 @@ Example
 
                GMP::Solver::FreeEnvironment( 'Gurobi 9.0' );
 
-               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0', computeserver: "my.server.com",
+               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0', computeserver: "myserver1:61000",
                                                    priority: 10 );
 
                mgGMP := GMP::Instance::Generate( MP2 );
