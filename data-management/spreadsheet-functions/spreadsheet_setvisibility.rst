@@ -5,6 +5,10 @@
 Spreadsheet::SetVisibility
 ==========================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::SetVisibility` turns the visibility mode
 of the given Excel or OpenOffice Calc workbook on or off.
 

@@ -5,6 +5,10 @@
 Spreadsheet::ClearRange
 =======================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::ClearRange` empties the specified range in
 the specified sheet.
 

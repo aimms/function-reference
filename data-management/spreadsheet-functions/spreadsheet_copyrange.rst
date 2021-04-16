@@ -5,6 +5,10 @@
 Spreadsheet::CopyRange
 ======================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::CopyRange` copies the contents of a
 complete Excel or OpenOffice Calc range to another Excel/Calc range.
 

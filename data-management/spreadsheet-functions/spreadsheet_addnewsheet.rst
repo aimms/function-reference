@@ -5,6 +5,10 @@
 Spreadsheet::AddNewSheet
 ========================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::AddNewSheet` adds a new empty sheet to the
 specified Excel or OpenOffice Calc workbook.
 

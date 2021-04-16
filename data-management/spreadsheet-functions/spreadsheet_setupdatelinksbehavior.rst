@@ -5,6 +5,10 @@
 Spreadsheet::SetUpdateLinksBehavior
 ===================================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 This procedure specifies how Excel or OpenOffice Calc workbooks
 containing links to other workbooks should be opened. In the Excel case,
 such links can be either links to external workbooks or to remote

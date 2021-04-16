@@ -5,6 +5,10 @@
 Spreadsheet::RetrieveValue
 ==========================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::RetrieveValue` reads the value of an Excel
 or OpenOffice Calc cell into a scalar AIMMS parameter.
 

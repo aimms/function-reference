@@ -1,6 +1,12 @@
 Spreadsheet Functions
 ---------------------
 
+.. warning:: 
+  
+  As detailed in the :doc:`deprecation-table`, Spreadsheet Functions are deprecated. 
+
+  One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 AIMMS supports the following functions for reading from and
 writing to Excel and OpenOffice Calc workbooks:
 

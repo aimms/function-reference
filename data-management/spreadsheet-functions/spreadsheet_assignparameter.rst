@@ -5,6 +5,10 @@
 Spreadsheet::AssignParameter
 ============================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::AssignParameter` writes data from the
 given parameter into the range of the Excel or OpenOffice Calc workbook.
 

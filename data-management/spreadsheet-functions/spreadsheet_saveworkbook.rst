@@ -5,6 +5,10 @@
 Spreadsheet::SaveWorkbook
 =========================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::SaveWorkbook` saves the specified Excel or
 OpenOffice Calc workbook. The workbook is saved with the name under
 which it is known in AIMMS, unless the *SaveAsName* argument is

@@ -5,6 +5,10 @@
 Spreadsheet::AssignValue
 ========================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::AssignValue` writes a value or formula
 from AIMMS to an Excel or OpenOffice Calc cell or range of cells.
 

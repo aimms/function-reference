@@ -57,7 +57,8 @@ if os.name != 'nt':
     extensions.append('sphinx_last_updated_by_git')
 
 intersphinx_mapping = {'howto': ('https://how-to.aimms.com/', None),
-                       'lr': ('https://documentation.aimms.com/language-reference', None)}
+                       'lr': ('https://documentation.aimms.com/language-reference', None),
+                       'docs': ('https://documentation.aimms.com', None)}
 
 # A list of regular expressions that match URIs that should not be checked when doing a linkcheck build.   
 linkcheck_ignore = [r'https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html']

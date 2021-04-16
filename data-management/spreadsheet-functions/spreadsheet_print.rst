@@ -5,6 +5,10 @@
 Spreadsheet::Print
 ==================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::Print` makes it possible to print an Excel
 or OpenOffice Calc sheet from AIMMS.
 

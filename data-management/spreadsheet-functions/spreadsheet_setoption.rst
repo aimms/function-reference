@@ -5,6 +5,10 @@
 Spreadsheet::SetOption
 ======================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::SetOption` sets a global option that has
 an effect in all subsequent calls to the spreadsheet functions.
 Currently the following options are supported:

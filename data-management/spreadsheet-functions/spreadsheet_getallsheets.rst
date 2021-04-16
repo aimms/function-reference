@@ -5,6 +5,10 @@
 Spreadsheet::GetAllSheets
 =========================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::GetAllSheets` obtains the names of all
 sheets currently present in the specified Excel or OpenOffice Calc
 workbook.

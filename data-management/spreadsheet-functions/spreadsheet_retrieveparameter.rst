@@ -5,6 +5,10 @@
 Spreadsheet::RetrieveParameter
 ==============================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::RetrieveParameter` reads data from the
 given range in the Excel or OpenOffice Calc workbook into the specified
 AIMMS parameter.

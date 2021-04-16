@@ -5,6 +5,10 @@
 Spreadsheet::ColumnNumber
 =========================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The function :aimms:func:`Spreadsheet::ColumnNumber` returns the number of the
 Excel or OpenOffice Calc column with the given name.
 

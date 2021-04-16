@@ -5,6 +5,10 @@
 Spreadsheet::CloseWorkbook
 ==========================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::CloseWorkbook` closes the specified Excel
 or OpenOffice Calc workbook. Internally, AIMMS keeps the workbook open
 from the moment that a procedure is applied on it for the first time.

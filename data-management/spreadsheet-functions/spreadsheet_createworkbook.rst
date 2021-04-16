@@ -5,6 +5,10 @@
 Spreadsheet::CreateWorkbook
 ===========================
 
+.. warning::
+
+  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
+
 The procedure :aimms:func:`Spreadsheet::CreateWorkbook` creates a new Excel or
 OpenOffice Calc workbook. In the Calc case, the workbook contains three
 empty sheets. In the Excel case, it is dependant of an Excel setting how
