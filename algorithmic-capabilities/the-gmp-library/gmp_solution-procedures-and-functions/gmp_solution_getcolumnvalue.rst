@@ -34,7 +34,7 @@ Arguments
 
     *valueType*
         A scalar value specifying the value type. If 0 (the default) then the
-        level value will be returned. If 1, the reduced cost.
+        level value will be returned. If 1, the reduced cost. If 3, the basic state.
 
 Return Value
 ------------
@@ -46,6 +46,14 @@ Return Value
     -  To get the reduced cost of a column the option
        ``Always Store Marginals`` should be switched on or the
        **ReducedCost** property of the corresponding variable should be set.
+
+    -  To get the basic state of a column the option
+       ``Always Store Basics`` should be switched on or the
+       **Basic** property of the corresponding variable should be set.
+    
+    -  This function returns 0 as basic state if the column is **nonbasic**;
+       it returns 1 if the column is **basic** and 2 if the column is **superbasic**
+       (nonlinear models only).
 
     -  If the column has a unit then the scaled value is returned (without
        unit). You can get the scale factor by using the function
