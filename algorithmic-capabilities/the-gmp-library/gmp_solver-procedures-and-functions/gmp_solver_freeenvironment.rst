@@ -39,7 +39,7 @@ Return Value
     -  This procedure can be used in combination with a normal solve
        statement.
 
-    -  This procedure is only supported by GUROBI.
+    -  This procedure is only supported by Gurobi.
 
     -  This procedure cannot be called inside a solver callback procedure.
 
@@ -51,18 +51,20 @@ Example
 
     .. code-block:: aimms
 
-               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0' );
+               MIPSolver := 'Gurobi 9.1';
+               
+               GMP::Solver::InitializeEnvironment( MIPSolver );
 
                solve MP1;
 
-               GMP::Solver::FreeEnvironment( 'Gurobi 9.0' );
+               GMP::Solver::FreeEnvironment( MIPSolver );
 
-               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0' );
+               GMP::Solver::InitializeEnvironment( MIPSolver );
 
                mgGMP := GMP::Instance::Generate( MP2 );
                GMP::Instance::Solve( myGMP );
 
-               GMP::Solver::FreeEnvironment( 'Gurobi 9.0' );
+               GMP::Solver::FreeEnvironment( MIPSolver );
 
 .. seealso::
 

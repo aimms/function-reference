@@ -55,7 +55,7 @@ Return Value
     -  The options file (if any) can be imported into the AIMMS project
        using the options dialog box.
 
-    -  This procedure is only supported by CPLEX and GUROBI.
+    -  This procedure is only supported by CPLEX and Gurobi.
 
 Example
 -------

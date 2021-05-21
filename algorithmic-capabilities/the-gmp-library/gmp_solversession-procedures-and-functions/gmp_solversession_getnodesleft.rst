@@ -33,7 +33,7 @@ Return Value
     -  This function can be used inside a **branch**, **candidate**, **cut**
        or **heuristic** callback.
 
-    -  This function is only supported by CPLEX and GUROBI.
+    -  This function is only supported by CPLEX and Gurobi.
 
 .. seealso::
 

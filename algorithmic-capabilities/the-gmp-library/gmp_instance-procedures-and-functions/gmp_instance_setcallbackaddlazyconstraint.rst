@@ -66,7 +66,7 @@ Return Value
        *callback* argument.
 
     -  A ``CallbackAddLazyConstraint`` callback procedure will only be
-       called when solving mixed integer programs with CPLEX or GUROBI.
+       called when solving mixed integer programs with CPLEX or Gurobi.
 
     -  This procedure can also be used for MIQP and MIQCP problems.
 

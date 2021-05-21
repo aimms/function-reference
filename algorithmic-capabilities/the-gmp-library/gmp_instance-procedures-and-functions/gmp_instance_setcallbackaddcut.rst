@@ -49,7 +49,7 @@ Return Value
        *callback* argument.
 
     -  A ``CallbackAddCut`` callback procedure will only be called when
-       solving mixed integer programs with CPLEX, GUROBI or ODH-CPLEX.
+       solving mixed integer programs with CPLEX, Gurobi or ODH-CPLEX.
 
     -  This procedure can also be used for MIQP and MIQCP problems.
 

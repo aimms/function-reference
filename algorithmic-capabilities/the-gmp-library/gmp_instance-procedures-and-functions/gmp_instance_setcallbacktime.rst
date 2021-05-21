@@ -45,7 +45,7 @@ Return Value
        *callback* argument.
 
     -  The ``CallbackTime`` callback procedure is supported by CPLEX,
-       GUROBI, CBC, ODH-CPLEX, XA, CP OPTIMIZER, CONOPT, KNITRO, SNOPT and
+       Gurobi, CBC, ODH-CPLEX, XA, CP Optimizer, CONOPT, Knitro, SNOPT and
        IPOPT.
 
     -  The number of (elapsed) seconds is determined by the general solvers

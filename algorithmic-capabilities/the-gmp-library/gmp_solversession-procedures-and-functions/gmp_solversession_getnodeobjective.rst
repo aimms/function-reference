@@ -40,8 +40,7 @@ Return Value
        **heuristic** callback.
 
     -  This function is only supported by CPLEX, however it is not supported
-       if the CPLEX option ``Use generic callbacks`` is switched on in
-       CPLEX 12.8 or higher.
+       if the CPLEX option ``Use generic callbacks`` is switched on.
 
 .. seealso::
 

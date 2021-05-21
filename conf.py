@@ -61,7 +61,9 @@ intersphinx_mapping = {'howto': ('https://how-to.aimms.com/', None),
                        'docs': ('https://documentation.aimms.com', None)}
 
 # A list of regular expressions that match URIs that should not be checked when doing a linkcheck build.   
-linkcheck_ignore = [r'https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html']
+linkcheck_ignore = [r'https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html',
+                    r'https://www.gurobi.com/documentation/9.1/refman/configuration_parameters.html',
+                    r'https://www.gurobi.com/documentation/9.1/refman/parameters.html#sec:Parameters']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']

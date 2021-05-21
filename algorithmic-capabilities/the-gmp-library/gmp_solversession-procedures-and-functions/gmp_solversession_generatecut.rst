@@ -50,12 +50,12 @@ Return Value
        ``CallbackAddlazyConstraint`` callback procedure.
 
     -  A ``CallbackAddCut`` callback procedure will only be called when
-       solving mixed integer programs with CPLEX, GUROBI or ODH-CPLEX. In
-       case of GUROBI the cuts are always local even if argument *local* has
+       solving mixed integer programs with CPLEX, Gurobi or ODH-CPLEX. In
+       case of Gurobi the cuts are always local even if argument *local* has
        value 0.
 
     -  A ``CallbackAddLazyConstraint`` callback procedure will only be
-       called when solving mixed integer programs with CPLEX or GUROBI.
+       called when solving mixed integer programs with CPLEX or Gurobi.
 
     -  Argument *purgeable* can only be used with CPLEX. If the cut is local
        then the cut will not be purgeable even if argument *purgeable* has

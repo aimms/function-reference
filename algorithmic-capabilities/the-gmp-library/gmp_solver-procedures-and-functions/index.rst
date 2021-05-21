@@ -10,3 +10,6 @@ related information, and managing solver environments:
    gmp_solver_freeenvironment
    gmp_solver_getasynchronoussessionslimit
    gmp_solver_initializeenvironment
+   gmp_solver_setenvironmentdoubleparameter
+   gmp_solver_setenvironmentintegerparameter
+   gmp_solver_setenvironmentstringparameter

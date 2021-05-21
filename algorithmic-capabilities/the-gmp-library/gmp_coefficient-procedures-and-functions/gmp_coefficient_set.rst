@@ -63,7 +63,7 @@ Example
 -------
 
     | Assume that we have the following variable and constraint declarations
-      (in aim format):. 
+      (in ams format):. 
 
       .. code-block:: aimms
 

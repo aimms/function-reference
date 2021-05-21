@@ -70,12 +70,12 @@ Return Value
        all multi-objectives.
 
     -  Multi-objective optimization is only supported by CPLEX 12.9 or
-       higher, and GUROBI 8.0 or higher.
+       higher, and Gurobi 8.0 or higher.
 
     -  The meaning of the relaxation of the objective, which is controlled
        by the *abstol* and *reltol* arguments, depends on whether the
        multi-objective problem is an LP or MIP. See the Multi-Objective
-       Optimization section in the CPLEX Help or the GUROBI Help for more
+       Optimization section in the CPLEX Help or the Gurobi Help for more
        information.
 
 Example

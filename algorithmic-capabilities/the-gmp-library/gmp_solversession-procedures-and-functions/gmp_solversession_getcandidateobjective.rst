@@ -39,8 +39,8 @@ Return Value
        used to retrieve a candidate solution inside a **candidate** or
        **lazy constraint** callback.
 
-    -  This function is only supported by CPLEX and GUROBI. Please note that
-       the **candidate** callback is not supported by GUROBI.
+    -  This function is only supported by CPLEX and Gurobi. Please note that
+       the **candidate** callback is not supported by Gurobi.
 
 .. seealso::
 

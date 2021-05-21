@@ -41,7 +41,7 @@ Return Value
        'Search for global optimum'.
 
     -  This function can also be used for GMPs with model type QP or QCP that are
-       solved with GUROBI 9.0 or higher, if the GUROBI option *Nonconvex Strategy*
+       solved with Gurobi 9.0 or higher, if the Gurobi option *Nonconvex Strategy*
        is set to 'Translate'.
 
 .. seealso::

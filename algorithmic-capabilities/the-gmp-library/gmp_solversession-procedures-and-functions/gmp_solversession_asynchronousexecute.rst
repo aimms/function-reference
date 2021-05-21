@@ -36,7 +36,7 @@ Return Value
 
     -  The following solvers are thread-safe and can be used for solving
        multiple mathematical programs in parallel using the same solver:
-       CPLEX, GUROBI, XA, CONOPT, and KNITRO.
+       CPLEX, Gurobi, XA, CONOPT, and Knitro.
 
     -  The following solvers are not thread-safe but the AIMMS-solver
        interface is thread safe and therefore they can be used in parallel

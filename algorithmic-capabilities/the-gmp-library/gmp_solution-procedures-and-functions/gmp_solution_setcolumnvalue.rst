@@ -57,7 +57,7 @@ Return Value
        can get the scale factor by using the function
        ``GMP::Column::GetScale``.
 
-    -  Hint values and priorities are only supported by GUROBI.
+    -  Hint values and priorities are only supported by Gurobi.
 
 Example
 -------
