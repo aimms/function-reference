@@ -23,7 +23,8 @@ Arguments
 
     *Format*
         A string that holds the date and time format used in the returned
-        string. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`
+        string. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`.
+        Note that the format uses the local timezone by default. Thus the UTC timezone should be specified if the intent is to use the result as a reference date.
 
     *unit*
         The time unit that is used in the argument *Elapsed*.
