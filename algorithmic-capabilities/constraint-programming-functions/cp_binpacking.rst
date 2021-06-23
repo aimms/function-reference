@@ -231,9 +231,9 @@ Example
     -  The examples of the function :aimms:func:`cp::AllDifferent` that illustrate how the index
        binding and indexed arguments can be used. Further information on
        index binding can be found in the Chapter on Index Binding 9 in the
-        Language Reference.
+       Language Reference.
 
-    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the Language Reference.
 
     -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
        references this function as ``bin_packing``.

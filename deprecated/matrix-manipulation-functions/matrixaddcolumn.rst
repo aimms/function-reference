@@ -50,4 +50,4 @@ Return Value
 
     The procedures :aimms:func:`MatrixModifyCoefficient`, :aimms:func:`MatrixModifyColumnType`, :aimms:func:`MatrixModifyLowerBound`, :aimms:func:`MatrixModifyUpperBound`. Matrix
     manipulation routines are discussed in more detail in :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/index` of the
-     Language Reference.
+    Language Reference.
