@@ -17,4 +17,4 @@ Datatype
 .. note::
 
     -  The ``.Incumbent`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver` of the
-       `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+        Language Reference.

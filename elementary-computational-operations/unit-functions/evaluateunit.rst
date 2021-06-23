@@ -35,4 +35,4 @@ Return Value
 .. seealso::
 
     Unit expressions are discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index` of the
-    `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+     Language Reference.

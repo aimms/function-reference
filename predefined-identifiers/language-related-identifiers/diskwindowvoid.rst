@@ -37,4 +37,4 @@ Updatability
 .. seealso::
 
     The set :aimms:set:`AllValueKeywords`. File identifiers are discussed in :doc:`data-communication-components/text-reports-and-output-listing/the-file-declaration` of the
-    `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+     Language Reference.

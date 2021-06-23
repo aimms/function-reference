@@ -52,5 +52,5 @@ Return Value
 .. seealso::
 
     The routines :aimms:func:`GMP::Instance::GenerateStochasticProgram`, :aimms:func:`GMP::Stochastic::BendersFindReference` and :aimms:func:`GMP::Stochastic::UpdateBendersSubproblem`. See :doc:`optimization-modeling-components/robust-optimization/basic-concepts` of the
-    `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ for more details on scenario tree, scenarios and
+     Language Reference for more details on scenario tree, scenarios and
     stages.
