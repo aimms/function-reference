@@ -41,7 +41,7 @@ Arguments
     *merge*
         A scalar binary value to indicate whether the values of the variables and
         constraints in the math program should be replaced by (value 0) or merged
-        with (value 1) the solution.
+        with (value 1 or 2) the solution.
 
 Return Value
 ------------
@@ -69,10 +69,16 @@ Return Value
 
     -  By default the values of the variables in the Variables set of the mathematical
        program will be emptied for all index tuples before sending the solution values
-       to the variables. If the argument *merge* is set to 1 then only values of columns
+       to the variables. If the argument *merge* is set to 1 or 2 then only values of columns
        (i.e., individual variables) present in the *GMP* will be replaced. (The same holds
-       for the constraints.) Note that setting *merge* to 1 has no impact on scalar variables
+       for the constraints.) Note that setting *merge* to 1 or 2 has no impact on scalar variables
        (and constraints).
+
+    -  The difference between values 1 and 2 for argument *merge* only affects the objective variable.
+       With value 1 the level value of the objective variable will be **increased** by the level value for
+       the corresponding column in the *solution*. With value 2 the level value of the objective
+       variable will be **replaced** by the level value for the corresponding column in the
+       *solution*.
 
 .. seealso::
 
