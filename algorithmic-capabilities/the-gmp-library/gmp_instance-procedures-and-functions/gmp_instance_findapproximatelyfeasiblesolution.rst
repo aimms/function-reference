@@ -10,6 +10,7 @@ GMP::Instance::FindApproximatelyFeasibleSolution
   mathematical program. It uses the column level values of the first
   solution as a starting point. The approximately feasible solution is
   stored in the second solution.
+|
 | The algorithm used to find the approximately feasible solution is
   based on the constraint consensus method as developed by John W.
   Chinneck. The constraint consensus method is an iterative projection

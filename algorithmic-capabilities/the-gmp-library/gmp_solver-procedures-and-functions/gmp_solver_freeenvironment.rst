@@ -9,6 +9,7 @@ GMP::Solver::FreeEnvironment
   solver environment. By using the procedure
   ``GMP::Solver::InitializeEnvironment`` you can initialize a solver
   environment; by using this procedure you can free it again.
+|
 | Normally AIMMS initializes solver environments at startup and frees
   them when it is closed. The procodures
   ``GMP::Solver::InitializeEnvironment`` and

@@ -8,6 +8,7 @@ GMP::Solution::SetColumnValue
 | The procedure :aimms:func:`GMP::Solution::SetColumnValue` sets the level value,
   reduced cost, hint value or hint priority of a column in a solution in
   the solution repository of a generated mathematical program.
+|
 | Hint values and hint priorities can be used as follows: If you know
   that a variable is likely to take a particular value in high quality
   solutions of a MIP model, you can provide that value as a hint. You

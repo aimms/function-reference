@@ -8,6 +8,7 @@ GMP::Row::GetLeftHandSide
 | The function :aimms:func:`GMP::Row::GetLeftHandSide` returns the left-hand-side
   value of a row as present in the generated mathematical program. This
   function is typically used for ranged constraints.
+|
 | Note that this function does not return the (evaluated) level value of
   a row; you should use the function ``GMP::Solution::GetRowValue``
   instead.

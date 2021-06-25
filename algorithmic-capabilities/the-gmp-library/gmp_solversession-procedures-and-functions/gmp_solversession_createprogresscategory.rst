@@ -9,6 +9,7 @@ GMP::SolverSession::CreateProgressCategory
   new progress category for a solver session. This progress category can
   be used to display solver (session) related information in the
   Progress Window.
+|
 | There are three levels of progress categories for solver information.
   By default all solver progress will be displayed in the general AIMMS
   progress category for solver progress. If a progress category was

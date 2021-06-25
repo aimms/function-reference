@@ -77,14 +77,14 @@ Example
                      Definition :  2*y + 3*z;
                  }
 
-      To change the coefficient of variable
+    | To change the coefficient of variable
       :math:`\verb|y|` in constraint :math:`\verb|e1|` to 4 we use:
 
       .. code-block:: aimms
 
                  GMP::Coefficient::Set( myGMP, e1, y, 4 );
 
-      This results in the row :math:`\verb|x1 + 4*y - 3*z = 0|`.
+    | This results in the row :math:`\verb|x1 + 4*y - 3*z = 0|`.
 
     | The definition of variable :math:`\verb|x2|` is generated as the row
       :math:`\verb|x2 - 2*y - 3*z = 0|` by AIMMS. Therefore, using

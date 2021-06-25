@@ -8,6 +8,7 @@ GMP::Instance::GetOptionValue
 | The function :aimms:func:`GMP::Instance::GetOptionValue` returns the value of a
   solver specific option corresponding to a generated mathematical
   program as set with the procedure ``GMP::Instance::SetOptionValue``.
+|
 | This procedure can also be used to retrieve the current option value
   of certain Solvers General options (see below).
 

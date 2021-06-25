@@ -15,7 +15,7 @@ program.
          GMP,            ! (input) a generated mathematical program
          column1,        ! (input) a scalar value or column number
          column2,        ! (input) a scalar value or column number
-         value           | (input) a scalar numerical value
+         value           ! (input) a scalar numerical value
          )
 
 Arguments

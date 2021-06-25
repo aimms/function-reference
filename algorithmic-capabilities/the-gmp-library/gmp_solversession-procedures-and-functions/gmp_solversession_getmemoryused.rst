@@ -7,6 +7,7 @@ GMP::SolverSession::GetMemoryUsed
 
 | The function :aimms:func:`GMP::SolverSession::GetMemoryUsed` returns the amount
   of memory used by the solver session.
+|
 | During a solve this function returns the current amount of memory used
   by the solver. After the solve, this function returns the peak memory
   used by the solver.

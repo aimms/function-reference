@@ -11,6 +11,7 @@ GMP::Instance::CreateFeasibility
   in an infeasible problem. The feasibility problem can be used to
   minimize the sum of infeasibilities, or to minimize the maximum
   infeasibility.
+|
 | This function can be used for both linear and nonlinear problems but
   not for constraint programming problems.
 
@@ -41,6 +42,7 @@ Mathematical formulation
 | In this section we show how the feasibility problem is constructed. To
   simplify the explanation we use a linear problem but the same
   construction applies to a nonlinear problem.
+|
 | Consider the following problem where :math:`J` denotes the set of
   variables, :math:`I_1` the set of :math:`\geq` inequalities,
   :math:`I_2` the set of :math:`\leq` inequalities, and :math:`I_3` the
