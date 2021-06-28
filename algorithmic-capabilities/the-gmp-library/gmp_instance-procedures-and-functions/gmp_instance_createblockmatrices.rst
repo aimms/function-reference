@@ -7,11 +7,20 @@ GMP::Instance::CreateBlockMatrices
 
 | The function :aimms:func:`GMP::Instance::CreateBlockMatrices` generates a set
   of generated mathematical programs that are independent block representations
-  of the specified generated mathematical program. I.e., the original generated
-  mathematical program will be partitioned into multiple generated mathematical
-  programs.
+  of the specified generated mathematical program. In other words, the original
+  generated mathematical program will be partitioned into multiple generated
+  mathematical programs.
 |
-| The generated mathematical program should be linear.
+| The mathematical program visualized in :numref:`fig:gmp:blocks` contains three
+  blocks (the first row and column represent the objective). This model can be
+  solved by solving each block separately, and combining the solutions.
+  
+.. figure:: blocks.bmp
+   :scale: 40%
+   :align: center
+   :name: fig:gmp:blocks
+   
+   A mathematical program with three blocks
 
 .. code-block:: aimms
 
@@ -48,6 +57,8 @@ Return Value
 
 .. note::
 
+    -  The *GMP* must be linear.
+
     -  The objective column will be copied to every block GMP. The objective row
        also, but it will only include the columns assigned to that block GMP.
 
@@ -57,7 +68,7 @@ Return Value
     -  A *blockValue* of 0 for a certain column means that AIMMS will automatically
        assign that column to a block.
 
-    -  The user can specify the *blockValue* for every column in the orginal GMP,
+    -  The user can specify the *blockValue* for every column in the *GMP*,
        in which case this function will create block GMP's based on this partition.
        If a different (positive) *blockValue* is assigned to two columns, and it turns
        out that the two corresponding blocks are not independent, then this function
@@ -67,9 +78,9 @@ Return Value
 
     -  If *colSet* is empty, or if *blockValue* equals 0 for each column, then AIMMS
        will create block matrices automatically, and as many as possible.
-       If the original GMP cannot be partitioned in multiple block GMP's then
+       If the *GMP* cannot be partitioned in multiple block GMP's then
        the returned subset of the set :aimms:set:`AllGeneratedMathematicalPrograms`
-       will only contain one element, namely a copy of the original GMP.
+       will only contain one element, namely a copy of the *GMP*.
 
     -  It is possible to assign a (positive) *blockValue* for a subset of the columns.
        This function will then automatically assign the other columns to block GMP's.
@@ -77,14 +88,15 @@ Return Value
     -  The *prefix* argument is used to create the names of the block GMP's, which will
        consist of the *prefix* value followed by the block number. The block numbers
        correspond to the *blockValue* assigned to (a selection of) the columns. If
-       extra block GMP's a created (besides those specified through the *blockValue*
+       extra block GMP's are created (besides those specified through the *blockValue*
        argument) then their numbering will start at the largest *blockValue* plus one.
        (And if the *colSet* is empty, or if *blockValue* equals 0 for each column, then
        the numbering will start at one.)
 
-    -  In the rare situation that the orginal GMP contains columns (besides the objective
-       column) that only appear in the objective row, then these columns will be assigned
-       to the last block GMP.
+    -  If the objective row contains an objective constant then this will be added to the
+       last block GMP only. And in the rare situation that the *GMP* contains columns
+       (besides the objective column) that only appear in the objective row, then these
+       columns will also be assigned to the last block GMP.
 
 Example
 -------
@@ -130,12 +142,12 @@ Example
                ElementParameter myGMP {
                    Range: AllGeneratedMathematicalPrograms;
                }
-               ElementParameter session {
-                   Range: AllSolverSessions;
-               }
                Set GMPset {
                    SubsetOf: AllGeneratedMathematicalPrograms;
-                   Index: g;
+                   Parameter: CurrentGMP;
+               }
+               ElementParameter session {
+                   Range: AllSolverSessions;
                }
                Set ColumnSet {
                    SubsetOf: Integers;
@@ -175,17 +187,23 @@ Example
                
                GMPset := GMP::Instance::CreateBlockMatrices( myGMP, ColumnSet, BlockVals, "block-" );
                
-               for ( g ) do
-                   session := GMP::Instance::CreateSolverSession( g );
+               while ( Card(GMPset) >= 1 ) do
+                   CurrentGMP := First(GMPset);
+               
+                   session := GMP::Instance::CreateSolverSession( CurrentGMP );
                
                	   GMP::SolverSession::Execute( session );
-               	
+               
                    GMP::Solution::RetrieveFromSolverSession( session, 1 );
-                   GMP::Solution::SendToModel( g, 1, merge : 1 );
-               endfor;
+                   GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1 );
+               
+                   GMP::Instance::Delete( CurrentGMP );
+               endwhile;
+               
+               GMP::Instance::Delete( myGMP );
 
     The above piece of code creates three block GMP's (with names "block-1", "block-2" and "block-3").
-    This is also the case if 'ColumnSet' of 'BlockVals' would have been empty. If we assign the block
+    This is also the case if 'ColumnSet' or 'BlockVals' would have been empty. If we assign the block
     values as follows then only two blocks will be created:
 
     .. code-block:: aimms
