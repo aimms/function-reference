@@ -124,7 +124,7 @@ Example
                }
                Constraint c1 {
                    IndexDomain: t;
-                   Definition: - x1(t) + 2 * x2(t) <= 4;
+                   Definition: - x(t) + 2 * y(t) <= 4;
                }
                MathematicalProgram MP {
                    Objective: obj;
