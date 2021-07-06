@@ -16,7 +16,6 @@ GMP::Instance::CreateBlockMatrices
   solved by solving each block separately, and combining the solutions.
   
 .. figure:: blocks.bmp
-   :scale: 40%
    :align: center
    :name: fig:gmp:blocks
    
