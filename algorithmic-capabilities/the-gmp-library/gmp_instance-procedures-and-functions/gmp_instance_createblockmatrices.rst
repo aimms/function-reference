@@ -69,9 +69,9 @@ Return Value
 
     -  The user can specify the *blockValue* for every column in the *GMP*,
        in which case this function will create block GMP's based on this partition.
-       If a different (positive) *blockValue* is assigned to two columns, and it turns
+       If a different non-zero *blockValue* is assigned to two columns, and it turns
        out that the two corresponding blocks are not independent, then this function
-       will generate an error. If two columns are assigned the same (positive) *blockValue*
+       will generate an error. If two columns are assigned the same non-zero *blockValue*
        then these columns will be assigned to the same block, even if this block could
        be partitioned into two blocks.
 
@@ -93,7 +93,7 @@ Return Value
        the numbering will start at one.)
 
     -  If the objective row contains an objective constant then this will be added to the
-       last block GMP only. And in the rare situation that the *GMP* contains columns
+       last block GMP only. And in the unusual situation that the *GMP* contains columns
        (besides the objective column) that only appear in the objective row, then these
        columns will also be assigned to the last block GMP.
 
