@@ -85,26 +85,26 @@ Example
 -------
 
     Assume that 'PrimalModel' is a mathematical program with the following
-    declaration (in aim format): 
+    declaration (in ams format): 
 
     .. code-block:: aimms
 
                Variable x1 {
-                   Range      :  [0, 5];
+                   Range: [0, 5];
                }
                Variable x2 {
-                   Range      :  nonnegative;
+                   Range: nonnegative;
                }
                Variable obj {
-                   Definition :  - 7 * x1 - 2 * x2;
+                   Definition: - 7 * x1 - 2 * x2;
                }
                Constraint c1 {
-                   Definition :  -x1 + 2 * x2 <= 4;
+                   Definition: - x1 + 2 * x2 <= 4;
                }
                MathematicalProgram PrimalModel {
-                   Objective  :  obj;
-                   Direction  :  minimize;
-                   Type       :  lp;
+                   Objective: obj;
+                   Direction: minimize;
+                   Type: LP;
                }
 
     Then

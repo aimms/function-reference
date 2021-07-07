@@ -9,6 +9,7 @@ GMP::SolverSession::AddBendersFeasibilityCut
   generates a feasibility cut for a Benders' master problem using the
   solution of a Benders' subproblem (or the corresponding feasibility
   problem). The Benders' master problem must be a MIP problem.
+|
 | The cut is typically added as a lazy constraint in a callback during
   the MIP branch & cut search. This procedure is typically used in a
   Benders' decomposition algorithm in which a single master MIP problem

@@ -8,6 +8,7 @@ GMP::SolverSession::Transfer
 | The procedure :aimms:func:`GMP::SolverSession::Transfer` can be used to transfer
   a solver session from its current GMP to another similar GMP. Both
   GMPs should be created from the same symbolic math program.
+|
 | Currently this procedure is only supported for stochastic Benders
   decomposition.
 

@@ -93,7 +93,7 @@ Example
                     Definition   : {
                         data{ 1 : A,
                               2 : B,
-                              3 : C }
+                              3 : A }
                     }
                 }
 

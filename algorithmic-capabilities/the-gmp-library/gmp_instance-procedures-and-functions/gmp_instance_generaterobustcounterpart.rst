@@ -7,14 +7,17 @@ GMP::Instance::GenerateRobustCounterpart
 
 | The function :aimms:func:`GMP::Instance::GenerateRobustCounterpart` generates
   the robust counterpart of a (linear) mathematical program.
+| 
 | If the deterministic model is a linear program (LP) then the robust
   counterpart will be a LP if the uncertainty constraints are linear, or
   a second-order cone program (SOCP) if some of the uncertainty
   constraints are ellipsoidal.
+| 
 | If the deterministic model is a mixed-integer program (MIP) then the
   robust counterpart will be a MIP if the uncertainty constraints are
   linear, or a mixed-integer second-order cone program (MISOCP) if some
   of the uncertainty constraints are ellipsoidal.
+| 
 | SOCP and MISOCP problems can be solved by using CPLEX or Gurobi.
 
 .. code-block:: aimms

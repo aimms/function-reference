@@ -31,4 +31,4 @@ Updatability
 .. seealso::
 
     The sets :aimms:set:`AllParameters`. Parameters are discussed in :doc:`non-procedural-language-components/parameter-declaration/parameter-declaration-and-attributes` of the
-    `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+     Language Reference.

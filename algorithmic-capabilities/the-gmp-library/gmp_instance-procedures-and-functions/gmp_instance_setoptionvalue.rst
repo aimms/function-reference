@@ -8,6 +8,7 @@ GMP::Instance::SetOptionValue
 | The procedure :aimms:func:`GMP::Instance::SetOptionValue` sets the value of a
   solver specific option corresponding to a generated mathematical
   program.
+|
 | This procedure can also be used to set certain Solvers General options
   (see below).
 

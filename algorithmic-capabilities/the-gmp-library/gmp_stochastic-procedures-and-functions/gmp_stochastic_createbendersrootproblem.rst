@@ -9,6 +9,7 @@ GMP::Stochastic::CreateBendersRootproblem
   mathematical program that represents the Benders problem at the unique
   node at stage 1 in the scenario tree of a stochastic mathematical
   program, and it also creates all Benders problems for all other nodes.
+|
 | This function collects all columns and rows that correspond to the
   unique (representive) scenario at stage 1 in the scenario tree.
 
@@ -52,5 +53,5 @@ Return Value
 .. seealso::
 
     The routines :aimms:func:`GMP::Instance::GenerateStochasticProgram`, :aimms:func:`GMP::Stochastic::BendersFindReference` and :aimms:func:`GMP::Stochastic::UpdateBendersSubproblem`. See :doc:`optimization-modeling-components/robust-optimization/basic-concepts` of the
-    `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__ for more details on scenario tree, scenarios and
+    Language Reference for more details on scenario tree, scenarios and
     stages.

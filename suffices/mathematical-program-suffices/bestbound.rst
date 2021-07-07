@@ -26,4 +26,4 @@ Datatype
        QP or QCP problem with GUROBI, if the GUROBI option *Nonconvex Strategy* is set to 'Translate'.
 
     -  The ``.BestBound`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver` of the
-       `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+        Language Reference.

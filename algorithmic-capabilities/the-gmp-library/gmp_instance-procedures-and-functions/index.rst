@@ -10,6 +10,7 @@ managing generated mathematical program instances:
    gmp_instance_addintegereliminationrows
    gmp_instance_calculatesubgradient
    gmp_instance_copy
+   gmp_instance_createblockmatrices
    gmp_instance_createdual
    gmp_instance_createfeasibility
    gmp_instance_createmastermip

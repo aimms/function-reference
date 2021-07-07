@@ -41,4 +41,4 @@ Arguments
     -  The procedure :aimms:procedure:`SetElementAdd`, and the function :aimms:func:`StringToElement`.
 
     -  The lexical conventions for set elements in :doc:`preliminaries/language-preliminaries/lexical-conventions` of the
-       `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__.
+        Language Reference.

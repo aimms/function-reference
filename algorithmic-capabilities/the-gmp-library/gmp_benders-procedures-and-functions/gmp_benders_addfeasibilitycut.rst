@@ -112,7 +112,7 @@ Example
     minimum infeasibility (according to some measurement). The shadow prices
     of the constraints and the reduced costs of the variables in that
     solution are used to create a feasibility cut. See :ref:`sec:benders.textbook.alg` of the
-    `Language Reference <https://documentation.aimms.com/_downloads/AIMMS_ref.pdf>`__. 
+    Language Reference. 
 
     .. code-block:: aimms
 

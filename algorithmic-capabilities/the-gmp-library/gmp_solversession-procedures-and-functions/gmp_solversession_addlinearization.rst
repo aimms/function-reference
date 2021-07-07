@@ -19,7 +19,7 @@ mathematical program.
          solution,         ! (input) a solution
          constraintSet,    ! (input) a set of nonlinear constraints
          [jacTol],         ! (optional) the Jacobian tolerance
-         [local],          ! (optional, default 0) a scalar value
+         [local],          ! (optional, default 0) a scalar binary expression
          [purgeable]       ! (optional, default 0) a scalar binary expression
          )
 

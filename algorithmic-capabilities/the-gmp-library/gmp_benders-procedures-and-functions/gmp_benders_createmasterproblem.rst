@@ -26,8 +26,6 @@ Arguments
         An element in the set :aimms:set:`AllGeneratedMathematicalPrograms`.
 
     *Variables*
-
-    *Variables*
         A subset of :aimms:set:`AllVariables`.
 
     *name*
