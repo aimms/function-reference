@@ -19,9 +19,11 @@ GMP::Solver::InitializeEnvironment
   or a cloud system.
 |
 | Several environment parameters can be set using the optional arguments. Instead you
-  can also use one of the procedures :aimms:func:`GMP::Solver::SetEnvironmentDoubleParameter`,
-  :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter` or
-  :aimms:func:`GMP::Solver::SetEnvironmentStringParameter` to set these or other parameters.
+  can also use one of the following procedures to set these or other parameters:
+  
+  * :aimms:func:`GMP::Solver::SetEnvironmentDoubleParameter`
+  * :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter`
+  * :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`
 
 .. code-block:: aimms
 
