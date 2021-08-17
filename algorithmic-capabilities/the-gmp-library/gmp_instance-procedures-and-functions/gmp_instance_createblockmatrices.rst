@@ -194,7 +194,11 @@ Example
                	   GMP::SolverSession::Execute( session );
                
                    GMP::Solution::RetrieveFromSolverSession( session, 1 );
-                   GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1 );
+                   if ( Card(GMPset) = 1 ) then
+    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1, evalInline : 1 );
+                   else
+    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1, evalInline : 0 );
+                   endif;
                
                    GMP::Instance::Delete( CurrentGMP );
                endwhile;

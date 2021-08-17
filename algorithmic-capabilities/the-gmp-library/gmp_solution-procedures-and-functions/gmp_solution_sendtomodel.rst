@@ -14,7 +14,8 @@ of a generated mathematical program.
     GMP::Solution::SendToModel(
          GMP,            ! (input) a generated mathematical program
          solution,       ! (input) a solution
-         [merge]         ! (optional, default 0) a scalar binary expression
+         [merge],        ! (optional, default 0) a scalar value
+         [evalInline]    ! (optional, default 1) a scalar binary value
          )
 
 Arguments
@@ -27,9 +28,13 @@ Arguments
         An integer scalar reference to a solution.
 
     *merge*
-        A scalar binary value to indicate whether the values of the variables and
+        A scalar value to indicate whether the values of the variables and
         constraints in the mathematical program should be replaced by (value 0) or
         merged with (value 1 or 2) the solution.
+
+    *evalInline*
+        A scalar binary value to indicate whether the level values of inline variables
+        (if any) in the mathematical program should be evaluated (value 1) or not (value 0).
 
 Return Value
 ------------
