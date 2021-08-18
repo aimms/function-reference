@@ -17,7 +17,7 @@ for a generated mathematical program.
          sumInfeas,      ! (output) sum of infeasibilities
          maxInfeas,      ! (output) maximum infeasibility
          [skipObj],      ! (optional, default 0) a scalar value
-		 [feasTol]       ! (optional, default -1) a scalar value
+         [feasTol]       ! (optional, default -1) a scalar value
          )
 
 Arguments
@@ -42,10 +42,10 @@ Arguments
         A scalar binary value to indicate whether constraints containing the
         objective variable should be skipped (value 1) or not (value 0).
 
-	*feasTol*
-		Feasibility tolerance in checking the constraints violations. If this
-		argument is negative, the value of the option ``Constraint Listing
-		Feasibility Tolerance`` is used.
+    *feasTol*
+        Feasibility tolerance in checking the constraints violations. If this
+        argument is negative, the value of the option ``Constraint Listing
+        Feasibility Tolerance`` is used.
 
 Return Value
 ------------
@@ -55,10 +55,10 @@ Return Value
 .. note::
 
     The optional argument feasTol determines the feasibility tolerance used by
-	this procedure. If a constraint violation is smaller than this tolerance
-	then it will be ignored. If this argument is not passed, or if it is set
-	to a negative value, the option ``Constraint Listing Feasibility Tolerance``
-	is used as the feasibility tolerance.
+    this procedure. If a constraint violation is smaller than this tolerance
+    then it will be ignored. If this argument is not passed, or if it is set
+    to a negative value, the option ``Constraint Listing Feasibility Tolerance``
+    is used as the feasibility tolerance.
 
 .. seealso::
 
