@@ -4,6 +4,7 @@ variables:
 stages:
   - test
   - build
+  - pdf
 
 before_script:
   - sudo apt-get install software-properties-common -y
@@ -35,7 +36,7 @@ build_and_install:
     - master
   
 compile_PDF:
-  stage: build
+  stage: pdf
   script:
     - sudo apt-get install texlive-latex-recommended -y
     - sudo apt-get install texlive-fonts-recommended -y
