@@ -4,6 +4,7 @@ variables:
 stages:
   - test
   - build
+  - pdf
 
 before_script:
   - sudo apt-get install software-properties-common -y
@@ -28,14 +29,14 @@ build_and_install:
   script:
     - python3.8 -msphinx -W -b html . _build/html
     - python3.8 -msphinx.ext.intersphinx _build/html/objects.inv > _build/html/help_index_functionreference.txt
-    - rsync -rt _build/html/ support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
+    - rsync -rt --delete-excluded _build/html/ support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
   tags: 
     - ubuntu
   only:
     - master
   
 compile_PDF:
-  stage: build
+  stage: pdf
   script:
     - sudo apt-get install texlive-latex-recommended -y
     - sudo apt-get install texlive-fonts-recommended -y
