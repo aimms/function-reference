@@ -1,4 +1,4 @@
-.. aimms:function:: Min(x1,x2,$\dots$)
+.. aimms:function:: Min(x1,x2,...)
 
 .. _Min:
 
@@ -16,7 +16,7 @@ Min
 Arguments
 ---------
 
-    *x1,x2,$\dots$*
+    *x1,x2,*:math:`\dots`
         Multiple numerical, string or element expressions.
 
 Return Value
