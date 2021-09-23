@@ -6,7 +6,7 @@ GMP::SolverSession::GetIIS
 ==========================
 
 The procedure :aimms:func:`GMP::SolverSession::GetIIS` returns an
-infeasible irreducible set (IIS) for an infeasible math program, by
+irreducible infeasible set (IIS) for an infeasible math program, by
 returning the numbers of the rows and columns that are part of the IIS.
 
 .. code-block:: aimms
