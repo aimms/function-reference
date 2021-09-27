@@ -37,4 +37,4 @@ Updatability
 .. seealso::
 
     The set :aimms:set:`AllCases`, the element parameter :aimms:set:`CurrentDataSet`. Loading and saving
-    cases is discussed in full detail in Section 16.1 of the `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__.
+    cases is discussed in full detail in :doc:`data-management/case-management/working-with-cases`.

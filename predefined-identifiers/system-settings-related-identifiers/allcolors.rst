@@ -36,5 +36,4 @@ Updatability
 
 .. seealso::
 
-    The use of user colors is explained in full detail in Section 11.4 of
-    the `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__.
+    The use of user colors is explained in full detail in :doc:`miscellaneous/user-interface-language-components/setting-colors-within-the-model`.

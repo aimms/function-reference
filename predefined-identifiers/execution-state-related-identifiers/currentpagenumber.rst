@@ -44,5 +44,4 @@ Updatability
 .. seealso::
 
     The functions :aimms:func:`PrintPage`, :aimms:func:`PrintStartReport`, :aimms:func:`PrintEndReport`. Print pages are discussed
-    in Section 14.1 of the `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__, print functions are discussed in
-    more detail in Section 17.3.2.
+    in :doc:`miscellaneous/project-settings-and-options/print-configuration`

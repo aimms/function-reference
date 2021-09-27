@@ -58,6 +58,7 @@ if os.name != 'nt':
 
 intersphinx_mapping = {'howto': ('https://how-to.aimms.com/', None),
                        'lr': ('https://documentation.aimms.com/language-reference', None),
+                       'ug': ('https://documentation.aimms.com/user-guide', None),
                        'docs': ('https://documentation.aimms.com', None)}
 
 # A list of regular expressions that match URIs that should not be checked when doing a linkcheck build.   

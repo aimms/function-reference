@@ -36,8 +36,7 @@ Updatability
 
 .. seealso::
 
-    -  Solver configuration is discussed in full detail in Section 20.3 of
-       the `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__.
+    -  Solver configuration is discussed in full detail in :doc:`miscellaneous/project-settings-and-options/solver-configuration`.
 
     -  The parameter :aimms:set:`CurrentSolver`.
 

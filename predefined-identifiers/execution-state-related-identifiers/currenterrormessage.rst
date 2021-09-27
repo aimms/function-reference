@@ -40,5 +40,4 @@ Updatability
 .. seealso::
 
     Error handling in the AIMMS API is discussed in more detail in :doc:`advanced-language-components/the-aimms-programming-interface/passing-errors-and-messages`
-    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__. Error messages from interface functions
-    are discussed in Section 17.3 from the `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__.
+    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__. 
