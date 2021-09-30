@@ -79,7 +79,7 @@ Return Value
        will create block matrices automatically, and as many as possible.
        If the *GMP* cannot be partitioned in multiple block GMP's then
        the returned subset of the set :aimms:set:`AllGeneratedMathematicalPrograms`
-       will only contain one element, namely a copy of the *GMP*.
+       will only contain one element, namely a copy of the original *GMP*.
 
     -  It is possible to assign a (positive) *blockValue* for a subset of the columns.
        This function will then automatically assign the other columns to block GMP's.
@@ -223,6 +223,26 @@ Example
 
     In this case the columns corresponding to the periods "per-2" and "per-3" will be assigned to the
     same block GMP (with the name "block-2").
+    
+    Note: the first piece of code is optimized for mathematical programs with inline variables because
+    it contains the following code snippet:
+
+    .. code-block:: aimms
+
+               GMP::Solution::RetrieveFromSolverSession( session, 1 );
+               if ( Card(GMPset) = 1 ) then
+    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1, evalInline : 1 );
+               else
+    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1, evalInline : 0 );
+               endif;
+    
+    If your mathematical program does not contain any inline variables then you can use the following
+    code instead:
+
+    .. code-block:: aimms
+
+               GMP::Solution::RetrieveFromSolverSession( session, 1 );
+               GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1 );
     
 .. seealso::
 
