@@ -158,6 +158,9 @@ Example
                StringParameter ColumnName {
                    IndexDomain: cc;
                }
+               Parameter MergeSolution {
+                   Range: Binary;
+               }
 
     To create block matrices and solve them to create a solution for the original model
     we can use: 
@@ -186,6 +189,8 @@ Example
                
                GMPset := GMP::Instance::CreateBlockMatrices( myGMP, ColumnSet, BlockVals, "block-" );
                
+               MergeSolution := 0;
+               
                while ( Card(GMPset) >= 1 ) do
                    CurrentGMP := First(GMPset);
                
@@ -195,12 +200,14 @@ Example
                
                    GMP::Solution::RetrieveFromSolverSession( session, 1 );
                    if ( Card(GMPset) = 1 ) then
-    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1, evalInline : 1 );
+    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 1 );
                    else
-    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1, evalInline : 0 );
+    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 0 );
                    endif;
                
-                   GMP::Instance::Delete( CurrentGMP );
+                   GMP::Instance::Delete( CurrentGMP );   ! Also deletes session
+                   
+                   MergeSolution := 1;
                endwhile;
                
                GMP::Instance::Delete( myGMP );
@@ -224,6 +231,9 @@ Example
     In this case the columns corresponding to the periods "per-2" and "per-3" will be assigned to the
     same block GMP (with the name "block-2").
     
+    The parameter 'MergeSolution' is set to 0 for the first block GMP, otherwise the solution will be
+    merged with an old solution (if one exists).
+    
     Note: the first piece of code is optimized for mathematical programs with inline variables because
     it contains the following code snippet:
 
@@ -231,9 +241,9 @@ Example
 
                GMP::Solution::RetrieveFromSolverSession( session, 1 );
                if ( Card(GMPset) = 1 ) then
-    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1, evalInline : 1 );
+    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 1 );
                else
-    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1, evalInline : 0 );
+    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 0 );
                endif;
     
     If your mathematical program does not contain any inline variables then you can use the following
@@ -242,7 +252,7 @@ Example
     .. code-block:: aimms
 
                GMP::Solution::RetrieveFromSolverSession( session, 1 );
-               GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1 );
+               GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution );
     
 .. seealso::
 
