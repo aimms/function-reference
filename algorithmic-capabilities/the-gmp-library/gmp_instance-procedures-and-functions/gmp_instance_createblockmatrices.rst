@@ -81,7 +81,7 @@ Return Value
        the returned subset of the set :aimms:set:`AllGeneratedMathematicalPrograms`
        will only contain one element, namely a copy of the original *GMP*.
 
-    -  It is possible to assign a (positive) *blockValue* for a subset of the columns.
+    -  It is possible to assign a positive *blockValue* for a subset of the columns.
        This function will then automatically assign the other columns to block GMP's.
 
     -  The *prefix* argument is used to create the names of the block GMP's, which will
@@ -93,9 +93,11 @@ Return Value
        the numbering will start at one.)
 
     -  If the objective row contains an objective constant then this will be added to the
-       last block GMP only. And in the unusual situation that the *GMP* contains columns
-       (besides the objective column) that only appear in the objective row, then these
-       columns will also be assigned to the last block GMP.
+       last block GMP only.
+
+    -  In the unusual situation that the *GMP* contains columns (besides the objective column)
+       that only appear in the objective row, then these columns will be assigned to the
+       last block GMP if their corresponding *blockValue* equals 0.
 
 Example
 -------
