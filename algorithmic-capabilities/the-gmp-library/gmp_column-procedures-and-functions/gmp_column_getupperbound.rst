@@ -38,7 +38,8 @@ Return Value
 
     -  This function can be used to retrieve the upper bound after
        presolving in case the GMP was created by
-       ``GMP::Instance::CreatePresolved``, even if the column was deleted.
+       ``GMP::Instance::CreatePresolved``, even if the column was deleted
+       by the AIMMS Presolver.
 
 Example
 -------
