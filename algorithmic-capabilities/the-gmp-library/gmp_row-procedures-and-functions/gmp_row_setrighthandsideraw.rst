@@ -1,6 +1,6 @@
 .. aimms:procedure:: GMP::Row::SetRightHandSideRaw(GMP, rowSet, value)
 
-.. _GMP::Row::SetRightHandSideMulti:
+.. _GMP::Row::SetRightHandSideRaw:
 
 GMP::Row::SetRightHandSideRaw
 =============================
