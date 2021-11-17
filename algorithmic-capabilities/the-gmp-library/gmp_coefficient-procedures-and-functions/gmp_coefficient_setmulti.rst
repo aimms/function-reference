@@ -48,8 +48,8 @@ Return Value
 
 .. note::
 
-    -  This procedure cannot be used if the column refers to the objective
-       variable.
+    -  This procedure cannot be used if the objective variable is passed
+       as *column*.
 
     -  In case the generated mathematical program is nonlinear, this
        procedure will fail if one the columns is part of a nonlinear term in

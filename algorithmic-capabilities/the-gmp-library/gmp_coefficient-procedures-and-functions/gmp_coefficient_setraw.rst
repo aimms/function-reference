@@ -49,10 +49,10 @@ Return Value
 
 .. note::
 
-    -  Normally a coefficient with a value of 0 (zero) will be skipped by this procedure
+    -  A coefficient with a value of 0 (zero) will be skipped by this procedure
        unless *changeZero* is set to 1 for the corresponding (row, column) combination.
     
-    -  This procedure cannot be used if the column refers to the objective
+    -  This procedure cannot be used if one of the columns refers to the objective
        variable.
 
     -  In case the generated mathematical program is nonlinear, this
