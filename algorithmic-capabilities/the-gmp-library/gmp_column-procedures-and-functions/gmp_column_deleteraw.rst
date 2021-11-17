@@ -1,6 +1,6 @@
 .. aimms:procedure:: GMP::Column::DeleteRaw(GMP, colSet)
 
-.. _GMP::Column::DeleteMulti:
+.. _GMP::Column::DeleteRaw:
 
 GMP::Column::DeleteRaw
 ======================
