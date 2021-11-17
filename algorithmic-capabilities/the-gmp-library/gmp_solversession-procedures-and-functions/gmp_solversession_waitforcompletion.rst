@@ -31,7 +31,7 @@ Return Value
 .. note::
 
     This procedure ignores solver sessions that are not asynchronous
-    executing but using the procedure ``GMP::SolverSession::Execute``.
+    executing but using the procedure :aimms:func:`GMP::SolverSession::Execute`.
 
 .. seealso::
 

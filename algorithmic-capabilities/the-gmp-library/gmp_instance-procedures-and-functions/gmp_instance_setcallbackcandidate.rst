@@ -8,8 +8,8 @@ GMP::Instance::SetCallbackCandidate
 The procedure :aimms:func:`GMP::Instance::SetCallbackCandidate` installs a
 callback procedure that is called every time an incumbent solution is
 found during the solution process of a MIP model. By using the procedure
-``GMP::SolverSession::RejectIncumbent`` the incumbent solution can be
-rejected. If ``GMP::SolverSession::RejectIncumbent`` is not called
+:aimms:func:`GMP::SolverSession::RejectIncumbent` the incumbent solution can be
+rejected. If :aimms:func:`GMP::SolverSession::RejectIncumbent` is not called
 inside the ``CallbackCandidate`` callback procedure then the incumbent
 solution will be accepted and replace the best incumbent solution found
 by so far.
@@ -54,7 +54,7 @@ Return Value
        *callback* argument.
 
     -  If an **incumbent** callback procedure is installed by using the
-       procedure ``GMP::Instance::SetCallbackIncumbent``, then that callback
+       procedure :aimms:func:`GMP::Instance::SetCallbackIncumbent`, then that callback
        will be called after the **candidate** callback procedure if the
        incumbent solution is not rejected inside the **candidate** callback.
 

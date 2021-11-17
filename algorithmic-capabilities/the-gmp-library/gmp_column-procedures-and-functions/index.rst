@@ -12,8 +12,10 @@ instance:
    gmp_column_addmulti
    gmp_column_delete
    gmp_column_deletemulti
+   gmp_column_deleteraw
    gmp_column_freeze
    gmp_column_freezemulti
+   gmp_column_freezeraw
    gmp_column_getlowerbound
    gmp_column_getname
    gmp_column_getscale
@@ -26,9 +28,13 @@ instance:
    gmp_column_setdecompositionmulti
    gmp_column_setlowerbound
    gmp_column_setlowerboundmulti
+   gmp_column_setlowerboundraw
    gmp_column_settype
    gmp_column_settypemulti
+   gmp_column_settyperaw
    gmp_column_setupperbound
    gmp_column_setupperboundmulti
+   gmp_column_setupperboundraw
    gmp_column_unfreeze
    gmp_column_unfreezemulti
+   gmp_column_unfreezeraw

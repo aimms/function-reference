@@ -46,7 +46,7 @@ Return Value
 
     This function will return '\ ``PresolveDeleted``\ ' only if the
     generated mathematical program has been created with
-    ``GMP::Instance::CreatePresolved``. Status '\ ``PresolveDeleted``\ '
+    :aimms:func:`GMP::Instance::CreatePresolved`. Status '\ ``PresolveDeleted``\ '
     means that the row was generated for the original generated mathematical
     program but deleted when the presolved mathematical program was created.
 

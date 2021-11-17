@@ -32,20 +32,20 @@ Arguments
         indices.
 
     *row*
-        A constraint that, combined with the ``binding`` domain, specifies the
+        A constraint that, combined with the *binding* domain, specifies the
         rows.
 
     *value*
-        The pool type for each row, defined over the binding domain ``binding``.
+        The pool type for each row, defined over the *binding* domain.
         A value of 1 specifies that the row should be added to the **lazy
         constraint pool** and 2 specifies that the row should be added to the
         **cut pool**. The value 0 indicates that the row will be removed from
         either pools (and treated as a normal row).
 
     *mode*
-        The lazy constraint mode for each row, defined over the binding domain
-        ``binding``. Its value should be a number between 0 and 3. The meaning
-        of these values is explained below.
+        The lazy constraint mode for each row, defined over the *binding* domain.
+        Its value should be a number between 0 and 3. The meaning of these
+        values is explained below.
 
 Return Value
 ------------

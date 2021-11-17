@@ -44,7 +44,7 @@ Return Value
     -  All solutions in the solution repository of the generated
        mathematical program are also copied.
 
-    -  The solver selection as specified by ``GMP::Instance::SetSolver`` (if
+    -  The solver selection as specified by :aimms:func:`GMP::Instance::SetSolver` (if
        any) will not be copied.
 
 .. seealso::

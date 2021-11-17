@@ -44,7 +44,7 @@ Return Value
           string), else
 
        -  the solver that was assigned to the *GMP* if procedure
-          ``GMP::Instance::SetSolver`` was called before, else
+          :aimms:func:`GMP::Instance::SetSolver` was called before, else
 
        -  the default solver in AIMMS for the GMP its model type.
 

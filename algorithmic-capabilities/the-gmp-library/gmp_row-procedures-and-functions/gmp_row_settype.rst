@@ -5,8 +5,8 @@
 GMP::Row::SetType
 =================
 
-The procedure :aimms:func:`GMP::Row::SetType` changes the type of a row in the
-matrix of a generated mathematical program.
+The procedure :aimms:func:`GMP::Row::SetType` changes the type of a row in
+a generated mathematical program.
 
 .. code-block:: aimms
 
@@ -37,9 +37,9 @@ Return Value
 
 .. note::
 
-    Use ``GMP::Row::SetTypeMulti`` if the type of many rows corresponding to some constraint
-    have to be changed, because that will be more efficient.
+    Use :aimms:func:`GMP::Row::SetTypeMulti` or :aimms:func:`GMP::Row::SetTypeRaw`
+    if the types of many rows have to be changed, because that will be more efficient.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::GetType` and :aimms:func:`GMP::Row::SetTypeMulti`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::GetType`, :aimms:func:`GMP::Row::SetTypeMulti` and :aimms:func:`GMP::Row::SetTypeRaw`.

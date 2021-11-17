@@ -48,13 +48,13 @@ Return Value
 .. note::
 
     -  The *GMP1* should have been created using the function
-       ``GMP::Benders::CreateMasterProblem``.
+       :aimms:func:`GMP::Benders::CreateMasterProblem`.
 
     -  The *GMP2* should have been created using the function
-       ``GMP::Benders::CreateSubProblem`` or the function
-       ``GMP::Instance::CreateFeasibility``.
+       :aimms:func:`GMP::Benders::CreateSubProblem` or the function
+       :aimms:func:`GMP::Instance::CreateFeasibility`.
 
-    -  If the GMP that was created by ``GMP::Benders::CreateSubProblem``
+    -  If the GMP that was created by :aimms:func:`GMP::Benders::CreateSubProblem`
        represents the dual of the Benders' subproblem then this GMP should
        be used as argument *GMP2*. If it represents the primal of the
        Benders' subproblem then first the feasibility problem should be

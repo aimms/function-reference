@@ -38,7 +38,7 @@ Return Value
 
     -  This function can be used to retrieve the lower bound after
        presolving in case the *GMP* was created by
-       ``GMP::Instance::CreatePresolved``, even if the column was deleted
+       :aimms:func:`GMP::Instance::CreatePresolved`, even if the column was deleted
        by the AIMMS Presolver.
 
 Example
@@ -64,7 +64,7 @@ Example
 
     If we want to multiply the lower bound by 1.5
     and assign it as the new value by using function
-    ``GMP::Column::SetLowerBound`` we can use 
+    :aimms:func:`GMP::Column::SetLowerBound` we can use 
 
     .. code-block:: aimms
 

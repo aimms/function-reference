@@ -49,12 +49,12 @@ Return Value
 .. note::
 
     -  A call to :aimms:func:`GMP::Benders::CreateMasterProblem` is typically followed
-       by a call to the function ``GMP::Benders::CreateSubProblem``.
+       by a call to the function :aimms:func:`GMP::Benders::CreateSubProblem`.
 
     -  The *GMP* must have type LP, MIP or RMIP.
 
     -  This function cannot be used if the *GMP* is created by the function
-       ``GMP::Instance::GenerateStochasticProgram``.
+       :aimms:func:`GMP::Instance::GenerateStochasticProgram`.
 
     -  The *Variables* argument specifies the variables that become part of
        the Benders' master problem. All other variables will become part of

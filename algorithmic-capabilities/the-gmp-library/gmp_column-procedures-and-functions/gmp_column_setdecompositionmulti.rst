@@ -36,12 +36,12 @@ Arguments
         indices.
 
     *column*
-        A variable that, combined with the ``binding`` domain, specifies the
+        A variable that, combined with the *binding* domain, specifies the
         columns.
 
     *value*
         The new decomposition value for each column, defined over the binding
-        domain ``binding``.
+        domain *binding*.
 
 Return Value
 ------------

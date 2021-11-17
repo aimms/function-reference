@@ -37,13 +37,13 @@ Return Value
 
 .. note::
 
-    -  Use ``GMP::Row::SetRightHandSideMulti`` if the right-hand-side of
-       many rows corresponding to some constraint have to be set, because
-       that will be more efficient.
+    -  Use :aimms:func:`GMP::Row::SetRightHandSideMulti` or
+       :aimms:func:`GMP::Row::SetRightHandSideRaw` if the right-hand-side
+       values of many rows have to be set, because that will be more efficient.
 
     -  If the row has a unit then *value* should have the same unit. If
        *value* has no unit then you should multiply it by the row scale, as
-       returned by the function ``GMP::Row::GetScale``.
+       returned by the function :aimms:func:`GMP::Row::GetScale`.
 
 Example
 -------
@@ -91,4 +91,4 @@ Example
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSideMulti`, :aimms:func:`GMP::Row::SetLeftHandSide`, :aimms:func:`GMP::Row::GetRightHandSide` and :aimms:func:`GMP::Row::GetScale`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSideMulti`, :aimms:func:`GMP::Row::SetRightHandSideRaw`, :aimms:func:`GMP::Row::SetLeftHandSide`, :aimms:func:`GMP::Row::GetRightHandSide` and :aimms:func:`GMP::Row::GetScale`.

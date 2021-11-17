@@ -169,7 +169,7 @@ Example
 
     .. code-block:: aimms
 
-               myGMP := GMP::Instance::Generate( FlowShopModel );
+               myGMP := GMP::Instance::Generate( MP );
                
                ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, AllVariables );
                

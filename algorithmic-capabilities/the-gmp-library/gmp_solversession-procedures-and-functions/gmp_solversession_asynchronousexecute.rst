@@ -53,8 +53,8 @@ Return Value
     -  The procedure :aimms:func:`GMP::SolverSession::AsynchronousExecute` cannot be
        used if an external function is used in a constraint.
 
-    -  The procedures ``GMP::SolverSession::WaitForCompletion`` and
-       ``GMP::SolverSession::WaitForSingleCompletion`` can be used to let
+    -  The procedures :aimms:func:`GMP::SolverSession::WaitForCompletion` and
+       :aimms:func:`GMP::SolverSession::WaitForSingleCompletion` can be used to let
        AIMMS wait until one or more asynchronous executing solver sessions
        are finished.
 
@@ -65,7 +65,7 @@ Return Value
        solve.
 
     -  This procedure does not create a listing file but you can use the
-       procedure ``GMP::Solution::ConstraintListing`` for that.
+       procedure :aimms:func:`GMP::Solution::ConstraintListing` for that.
 
 .. seealso::
 

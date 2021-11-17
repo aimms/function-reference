@@ -31,7 +31,7 @@ Return Value
 
 .. note::
 
-    -  The procedure ``GMP::SolverSession::GenerateCut`` can be used inside
+    -  The procedure :aimms:func:`GMP::SolverSession::GenerateCut` can be used inside
        a ``CallbackAddCut`` callback procedure to add cuts during the MIP
        branch & cut process.
 

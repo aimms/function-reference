@@ -37,13 +37,13 @@ Return Value
 
 .. note::
 
-    -  Use ``GMP::Column::SetUpperBoundMulti`` if the upper bound of many
-       columns corresponding to some variable have to be set, because that
-       will be more efficient.
+    -  Use :aimms:func:`GMP::Column::SetUpperBoundMulti` or :aimms:func:`GMP::Column::SetUpperBoundRaw`
+       if the upper bounds of many columns have to be set, because that will
+       be more efficient.
 
     -  If the column has a unit then *value* should have the same unit. If
        *value* has no unit then you should multiply it by the column scale,
-       as returned by the function ``GMP::Column::GetScale``.
+       as returned by the function :aimms:func:`GMP::Column::GetScale`.
 
 Example
 -------
@@ -95,4 +95,4 @@ Example
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetUpperBoundMulti`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetScale`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetUpperBoundMulti`, :aimms:func:`GMP::Column::SetUpperBoundRaw`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetScale`.

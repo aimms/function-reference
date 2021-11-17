@@ -1,4 +1,4 @@
-.. aimms:procedure:: GMP::Row::AddMulti(GMP, row)
+.. aimms:procedure:: GMP::Row::AddMulti(GMP, binding, row)
 
 .. _GMP::Row::AddMulti:
 
@@ -27,7 +27,7 @@ Arguments
         indices.
 
     *row*
-        A constraint that, combined with the ``binding`` domain, specifies the
+        A constraint that, combined with the *binding* domain, specifies the
         rows.
 
 Return Value
@@ -38,16 +38,16 @@ Return Value
 .. note::
 
     -  Coefficients for the rows can be added to the matrix by using the
-       procedure ``GMP::Coefficient::Set``.
+       procedure :aimms:func:`GMP::Coefficient::Set`.
 
     -  After calling :aimms:func:`GMP::Row::Add` the type and the left-hand-side and
        right-hand-side values are set according to the definition of the
        corresponding symbolic constraint. By using the procedures
-       ``GMP::Row::SetType``, ``GMP::Row::SetLeftHandSide`` and
-       ``GMP::Row::SetRightHandSide`` the row type and row bounds can be
+       :aimms:func:`GMP::Row::SetType`, :aimms:func:`GMP::Row::SetLeftHandSide` and
+       :aimms:func:`GMP::Row::SetRightHandSide` the row type and row bounds can be
        changed.
 
-    -  Use procedure ``GMP::Row::GenerateMulti`` to generate (non-empty) rows
+    -  Use procedure :aimms:func:`GMP::Row::GenerateMulti` to generate (non-empty) rows
        according to the definition of the associated symbolic constraint.
 
 .. seealso::

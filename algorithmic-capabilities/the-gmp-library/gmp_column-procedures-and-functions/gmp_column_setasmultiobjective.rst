@@ -66,7 +66,7 @@ Return Value
        column then only the information from the second call is used (and
        the information from the first call is ignored).
 
-    -  Use the procedure ``GMP::Instance::DeleteMultiObjectives`` to delete
+    -  Use the procedure :aimms:func:`GMP::Instance::DeleteMultiObjectives` to delete
        all multi-objectives.
 
     -  Multi-objective optimization is only supported by CPLEX 12.9 or

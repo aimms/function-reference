@@ -44,7 +44,7 @@ Return Value
 
 .. note::
 
-    -  Use ``GMP::Column::SetDecompositionMulti`` if the decomposition value of
+    -  Use :aimms:func:`GMP::Column::SetDecompositionMulti` if the decomposition value of
        many columns corresponding to some variable have to be set, because
        that will be more efficient.
 
@@ -105,7 +105,7 @@ Example
 
     The second example shows how to specify
     model structure used by ODH-CPLEX. All columns ``X(i,j)`` and
-    ``Y(i,j,k)`` with the same '\ ``i``\ ' are assigned to the same
+    ``Y(i,j,k)`` with the same ``i`` are assigned to the same
     subproblem. 
 
     .. code-block:: aimms

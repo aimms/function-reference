@@ -13,3 +13,4 @@ instance:
    gmp_coefficient_set
    gmp_coefficient_setmulti
    gmp_coefficient_setquadratic
+   gmp_coefficient_setraw

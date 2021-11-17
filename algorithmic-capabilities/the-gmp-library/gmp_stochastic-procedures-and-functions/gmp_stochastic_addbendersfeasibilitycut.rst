@@ -39,7 +39,7 @@ Return Value
 .. note::
 
     -  The *GMP* should have been created by the function
-       ``GMP::Stochastic::CreateBendersFeasibilitySubproblem``.
+       :aimms:func:`GMP::Stochastic::CreateBendersFeasibilitySubproblem`.
 
     -  By using the suffix ``.SubproblemFeasibilityCuts`` of the associated
        symbolic mathematical program it is possible to refer to the row that

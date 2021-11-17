@@ -6,7 +6,7 @@ GMP::Column::GetStatus
 ======================
 
 The function :aimms:func:`GMP::Column::GetStatus` returns the status of a column
-in the matrix of a generated mathematical program.
+in a generated mathematical program.
 
 .. code-block:: aimms
 
@@ -46,7 +46,7 @@ Return Value
 
     -  This function will return '\ ``PresolveDeleted``\ ' only if the
        generated mathematical program has been created with
-       ``GMP::Instance::CreatePresolved``. Status '\ ``PresolveDeleted``\ '
+       :aimms:func:`GMP::Instance::CreatePresolved`. Status '\ ``PresolveDeleted``\ '
        means that the column was generated for the original generated
        mathematical program but deleted when the presolved mathematical
        program was created.

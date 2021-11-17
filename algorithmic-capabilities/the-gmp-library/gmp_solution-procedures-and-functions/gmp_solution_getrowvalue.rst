@@ -64,7 +64,7 @@ Return Value
 
     -  If the row has a unit then the scaled value is returned (without
        unit). You can get the scale factor by using the function
-       ``GMP::Row::GetScale``.
+       :aimms:func:`GMP::Row::GetScale`.
 
 .. seealso::
 

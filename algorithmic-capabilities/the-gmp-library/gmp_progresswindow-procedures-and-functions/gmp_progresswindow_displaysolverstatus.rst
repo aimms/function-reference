@@ -37,10 +37,10 @@ Return Value
 .. note::
 
     -  If the *Category* argument is used then the element should be created
-       with the function ``GMP::SolverSession::CreateProgressCategory``.
+       with the function :aimms:func:`GMP::SolverSession::CreateProgressCategory`.
 
     -  The solver status can also be displayed by using the procedure
-       ``GMP::ProgressWindow::DisplayLine`` with title 'Solver Status'.
+       :aimms:func:`GMP::ProgressWindow::DisplayLine` with title 'Solver Status'.
 
 .. seealso::
 

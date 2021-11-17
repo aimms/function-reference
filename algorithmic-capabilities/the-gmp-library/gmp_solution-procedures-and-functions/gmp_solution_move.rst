@@ -37,7 +37,7 @@ Return Value
 
     After calling this procedure, the solution at position *fromSolution* in
     the solution repository will be empty. This is not the case if you use
-    the procedure ``GMP::Solution::Copy``.
+    the procedure :aimms:func:`GMP::Solution::Copy`.
 
 .. seealso::
 

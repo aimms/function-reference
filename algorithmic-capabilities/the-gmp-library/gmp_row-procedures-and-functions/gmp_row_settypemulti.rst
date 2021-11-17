@@ -1,12 +1,12 @@
-.. aimms:procedure:: GMP::Row::SetTypeMulti(GMP, row, type)
+.. aimms:procedure:: GMP::Row::SetTypeMulti(GMP, binding, row, type)
 
 .. _GMP::Row::SetTypeMulti:
 
 GMP::Row::SetTypeMulti
 ======================
 
-The procedure :aimms:func:`GMP::Row::SetTypeMulti` changes the type of a group of rows,
-belonging to a constraint, in the matrix of a generated mathematical program.
+The procedure :aimms:func:`GMP::Row::SetTypeMulti` changes the types of a group of rows,
+belonging to a constraint, in a generated mathematical program.
 
 .. code-block:: aimms
 
@@ -28,11 +28,11 @@ Arguments
         indices.
 
     *row*
-        A constraint that, combined with the ``binding`` domain, specifies the
+        A constraint that, combined with the *binding* domain, specifies the
         rows.
 
     *type*
-        An element parameter in :aimms:set:`AllRowTypes`, defined over the binding domain ``binding``.
+        An element parameter in :aimms:set:`AllRowTypes`, defined over the *binding* domain.
 
 Return Value
 ------------

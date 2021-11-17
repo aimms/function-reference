@@ -39,7 +39,7 @@ Return Value
 
     If the row has a unit then *value* should have the same unit. If *value*
     has no unit then you should multiply it by the row scale, as returned by
-    the function ``GMP::Row::GetScale``.
+    the function :aimms:func:`GMP::Row::GetScale`.
 
 Example
 -------

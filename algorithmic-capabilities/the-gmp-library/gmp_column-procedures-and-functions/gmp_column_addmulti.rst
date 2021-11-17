@@ -6,7 +6,7 @@ GMP::Column::AddMulti
 =====================
 
 The procedure :aimms:func:`GMP::Column::AddMulti` adds a group of columns, belonging
-to a variable, to the matrix of a generated mathematical program.
+to a variable, to a generated mathematical program.
 
 .. code-block:: aimms
 
@@ -27,7 +27,7 @@ Arguments
         indices.
 
     *column*
-        A variable that, combined with the ``binding`` domain, specifies the
+        A variable that, combined with the *binding* domain, specifies the
         columns.
 
 Return Value
@@ -38,11 +38,11 @@ Return Value
 .. note::
 
     Coefficients for these columns can be added to the matrix by using the
-    procedure ``GMP::Coefficient::Set``. After calling :aimms:func:`GMP::Column::AddMulti`
+    procedure :aimms:func:`GMP::Coefficient::Set`. After calling :aimms:func:`GMP::Column::AddMulti`
     the type and the lower and upper bound of the columns are set according
     to the definition of the corresponding symbolic variable. By using the
-    procedures ``GMP::Column::SetType``, ``GMP::Column::SetLowerBound`` and
-    ``GMP::Column::SetUpperBound`` the column types and the lower and upper
+    procedures :aimms:func:`GMP::Column::SetType`, :aimms:func:`GMP::Column::SetLowerBound` and
+    :aimms:func:`GMP::Column::SetUpperBound` the column types and the lower and upper
     bounds can be changed.
 
 .. seealso::

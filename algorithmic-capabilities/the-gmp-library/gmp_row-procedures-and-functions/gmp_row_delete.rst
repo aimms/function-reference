@@ -5,7 +5,7 @@
 GMP::Row::Delete
 ================
 
-The procedure :aimms:func:`GMP::Row::Delete` marks a row in the matrix of a
+The procedure :aimms:func:`GMP::Row::Delete` marks a row in a
 generated mathematical program as deleted.
 
 .. code-block:: aimms
@@ -33,8 +33,8 @@ Return Value
 
 .. note::
 
-    -  Use ``GMP::Row::DeleteMulti`` if many rows corresponding to some constraint
-       have to be deleted, because that will be more efficient.
+    -  Use :aimms:func:`GMP::Row::DeleteMulti` or :aimms:func:`GMP::Row::DeleteMulti`
+       if many rows have to be deleted, because that will be more efficient.
 
     -  A deleted row remains present in the generated mathematical program
        but its content will not be copied to a solver session.
@@ -45,4 +45,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Add` and :aimms:func:`GMP::Row::DeleteMulti`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Add`, :aimms:func:`GMP::Row::DeleteMulti` and :aimms:func:`GMP::Row::DeleteRaw`.

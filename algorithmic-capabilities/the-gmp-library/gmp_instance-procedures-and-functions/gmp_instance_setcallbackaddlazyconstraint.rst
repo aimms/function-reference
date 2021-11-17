@@ -41,7 +41,7 @@ Return Value
        -  when the LP at a node is unbounded, and a lazy constraint might
           cut off the primal ray.
 
-    -  The procedure ``GMP::SolverSession::GenerateCut`` can be used inside
+    -  The procedure :aimms:func:`GMP::SolverSession::GenerateCut` can be used inside
        a ``CallbackAddLazyConstraint`` callback procedure to add (globally
        or locally valid) lazy constraints during the MIP branch & cut
        process. Lazy constraints added to the problem are first put into a

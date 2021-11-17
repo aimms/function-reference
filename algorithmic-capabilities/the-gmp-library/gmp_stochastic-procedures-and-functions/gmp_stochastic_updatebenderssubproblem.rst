@@ -33,13 +33,13 @@ Return Value
 .. note::
 
     -  The *GMP* should have been created by the function
-       ``GMP::Stochastic::CreateBendersRootproblem`` or obtained by the
-       function ``GMP::Stochastic::BendersFindReference``.
+       :aimms:func:`GMP::Stochastic::CreateBendersRootproblem` or obtained by the
+       function :aimms:func:`GMP::Stochastic::BendersFindReference`.
 
     -  This procedure does not use the *solution* if the *GMP* belongs to
        the Benders problem at (the unique node at) stage 1, i.e., if it was
        created by the function
-       ``GMP::Stochastic::CreateBendersRootproblem``.
+       :aimms:func:`GMP::Stochastic::CreateBendersRootproblem`.
 
 .. seealso::
 

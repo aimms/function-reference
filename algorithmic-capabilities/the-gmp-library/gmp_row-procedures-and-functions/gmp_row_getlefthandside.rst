@@ -10,7 +10,7 @@ GMP::Row::GetLeftHandSide
   function is typically used for ranged constraints.
 |
 | Note that this function does not return the (evaluated) level value of
-  a row; you should use the function ``GMP::Solution::GetRowValue``
+  a row; you should use the function :aimms:func:`GMP::Solution::GetRowValue`
   instead.
 
 .. code-block:: aimms
@@ -68,7 +68,7 @@ Example
 
     If we want to multiply the
     left-hand-side value by 1.5 and assign it as the new value by using
-    function ``GMP::Row::SetLeftHandSide`` we can use 
+    function :aimms:func:`GMP::Row::SetLeftHandSide` we can use 
 
     .. code-block:: aimms
 

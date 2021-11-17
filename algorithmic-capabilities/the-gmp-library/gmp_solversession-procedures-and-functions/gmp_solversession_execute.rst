@@ -35,7 +35,7 @@ Return Value
        these tasks.
 
     -  This procedure does not create a listing file but you can use the
-       procedure ``GMP::Solution::ConstraintListing`` for that.
+       procedure :aimms:func:`GMP::Solution::ConstraintListing` for that.
 
 .. seealso::
 

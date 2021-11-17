@@ -46,7 +46,7 @@ Return Value
        contains the option).
 
     -  This procedure will be overruled by the procedure
-       ``GMP::SolverSession::SetOptionValue`` in case a solver session is
+       :aimms:func:`GMP::SolverSession::SetOptionValue` in case a solver session is
        used to solve the generated mathematical program.
 
     -  Options for which strings are displayed in the AIMMS **Options**

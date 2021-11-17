@@ -34,9 +34,9 @@ Return Value
 
 .. note::
 
-    Use ``GMP::Row::DeactivateMulti`` if many rows corresponding to some constraint
-    have to be deactivated, because that will be more efficient.
+    Use :aimms:func:`GMP::Row::DeactivateMulti` or :aimms:func:`GMP::Row::DeactivateRaw`
+    if many rows have to be deactivated, because that will be more efficient.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Activate` and :aimms:func:`GMP::Row::DeactivateMulti`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Activate`, :aimms:func:`GMP::Row::DeactivateMulti` and :aimms:func:`GMP::Row::DeactivateRaw`.

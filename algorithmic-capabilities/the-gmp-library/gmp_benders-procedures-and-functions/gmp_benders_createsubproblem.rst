@@ -53,7 +53,7 @@ Return Value
     -  The *GMP1* must have type LP, MIP or RMIP.
 
     -  The *GMP2* should have been created using the function
-       ``GMP::Benders::CreateMasterProblem``. Note that the call to that
+       :aimms:func:`GMP::Benders::CreateMasterProblem`. Note that the call to that
        function specifies how the variables (and constraints) are divided
        among the master and subproblem.
 
