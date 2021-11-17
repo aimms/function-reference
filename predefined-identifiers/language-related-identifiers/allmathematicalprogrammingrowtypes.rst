@@ -6,8 +6,7 @@ AllMathematicalProgrammingRowTypes
 ==================================
 
 The predefined set :aimms:set:`AllMathematicalProgrammingRowTypes` contains the
-collection of all possible row types available in the matrix
-manipulation library of AIMMS.
+collection of all possible row types available in the GMP library of AIMMS.
 
 .. code-block:: aimms
 
@@ -20,8 +19,7 @@ Definition
 ----------
 
     The set :aimms:set:`AllMathematicalProgrammingRowTypes` contains the collection
-    of all possible row types available in the matrix manipulation library
-    of AIMMS.
+    of all possible row types available in the GMP library of AIMMS.
 
 Updatability
 ------------
@@ -35,5 +33,5 @@ Updatability
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Row::SetType` and the super set :aimms:set:`AllRowTypes`. Matrix manipulation
+    The function :aimms:func:`GMP::Row::SetType` and the super set :aimms:set:`AllRowTypes`. The GMP library
     is discussed in more detail in :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

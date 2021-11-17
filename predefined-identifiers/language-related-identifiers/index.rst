@@ -26,6 +26,7 @@ used for the specification of accurate prototypes of intrinsic AIMMS functions.
    allmatrixmanipulationprogrammingtypes
    allprofilertypes
    allconstraintprogrammingrowtypes
+   allrowcolumnstatuses
    allrowtypes
    allmathematicalprogrammingrowtypes
    allsolutionstates

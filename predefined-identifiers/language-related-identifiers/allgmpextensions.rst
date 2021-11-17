@@ -6,7 +6,7 @@ AllGMPExtensions
 ================
 
 The predefined set :aimms:set:`AllGMPExtensions` contains the collection of all
-possible extensions in the matrix manipulation library of AIMMS.
+possible extensions in the GMP library of AIMMS.
 
 .. code-block:: aimms
 
@@ -22,7 +22,7 @@ Definition
 ----------
 
     The predefined set :aimms:set:`AllGMPExtensions` contains the collection of all
-    possible extensions in the matrix manipulation library of AIMMS.
+    possible extensions in the GMP library of AIMMS.
 
 Updatability
 ------------
@@ -38,5 +38,5 @@ Updatability
 
 .. seealso::
 
-    The set :aimms:set:`AllSuffixNames`. Matrix manipulation is discussed in more detail in
+    The set :aimms:set:`AllSuffixNames`. The GMP library is discussed in more detail in
     :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

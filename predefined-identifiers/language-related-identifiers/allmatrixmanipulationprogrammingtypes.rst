@@ -7,7 +7,7 @@ AllMatrixManipulationProgrammingTypes
 
 The predefined set :aimms:set:`AllMatrixManipulationProgrammingTypes` contains
 the collection of mathematical programming types that can be used in
-conjunction with the matrix manipulation library of AIMMS.
+conjunction with the GMP library of AIMMS.
 
 .. code-block:: aimms
 
@@ -21,7 +21,7 @@ Definition
 
     The predefined set :aimms:set:`AllMatrixManipulationProgrammingTypes` contains
     the collection of mathematical programming types that can be used in
-    conjunction with the matrix manipulation library of AIMMS.
+    conjunction with the GMP library of AIMMS.
 
 Updatability
 ------------
@@ -36,5 +36,5 @@ Updatability
 
 .. seealso::
 
-    The set :aimms:set:`AllMathematicalProgrammingTypes`, the function :aimms:func:`GMP::Instance::SetMathematicalProgrammingType`. Matrix manipulation is
+    The set :aimms:set:`AllMathematicalProgrammingTypes`, the function :aimms:func:`GMP::Instance::SetMathematicalProgrammingType`. The GMP library is
     discussed in more detail in :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
