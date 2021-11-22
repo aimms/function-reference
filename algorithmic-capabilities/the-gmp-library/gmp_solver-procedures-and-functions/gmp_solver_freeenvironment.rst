@@ -52,7 +52,7 @@ Example
 
     .. code-block:: aimms
 
-               MIPSolver := 'Gurobi 9.1';
+               MIPSolver := 'Gurobi 9.5';
                
                GMP::Solver::InitializeEnvironment( MIPSolver );
 
