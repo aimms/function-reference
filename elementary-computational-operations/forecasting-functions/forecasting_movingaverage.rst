@@ -215,7 +215,6 @@ Example
 
     |image|
 
-    Here the history is from ``2021-04-01`` till ``2021-06-30`` and the horizon is
-    from ``2021-07-01`` till ``2021-07-31``.
+    Here the history is from ``2021-04-01`` till ``2021-06-30`` and the horizon is from ``2021-07-01`` till ``2021-07-31``.
 
     .. |image| image:: MA2021.png

@@ -101,39 +101,19 @@ Example
                     weightSet := ElementRange(1,4);
                     locWeights := data { 1 : 0.1, 2 : 0.2, 3: 0.3, 4: 0.4 } ;
                     forecasting::WeightedMovingAverage(
-                        dataValues         :  sampDat,
-                        estimates          :  sampEst1,
-                        noObservations     :  31,
+                        dataValues         :  p_dat,
+                        estimates          :  p_est,
+                        noObservations     :  91,
                         weights            :  locWeights,
                         noAveragingPeriods :  4);
 
-    Will result in the following output: 
 
-    .. code-block:: aimms
-
-                    sampEst1 := data 
-                    { 01-01 : 46.901412,  01-02 : 46.901412,  01-03 : 45.400983,
-                      01-04 : 41.907042,  01-05 : 36.063210,  01-06 : 28.902678,
-                      01-07 : 29.356152,  01-08 : 33.990024,  01-09 : 41.435848,
-                      01-10 : 45.518815,  01-11 : 41.568491,  01-12 : 35.958284,
-                      01-13 : 37.144096,  01-14 : 39.077193,  01-15 : 51.025996,
-                      01-16 : 58.200997,  01-17 : 54.913605,  01-18 : 48.165158,
-                      01-19 : 44.846840,  01-20 : 53.967984,  01-21 : 63.412990,
-                      01-22 : 62.343600,  01-23 : 58.683930,  01-24 : 53.088836,
-                      01-25 : 53.599271,  01-26 : 64.608926,  01-27 : 69.237841,
-                      01-28 : 68.325173,  01-29 : 60.482475,  01-30 : 56.579581,
-                      01-31 : 62.544522,  02-01 : 72.698920,  02-02 : 73.408174,
-                      02-03 : 73.248910,  02-04 : 74.611221,  02-05 : 73.212924,
-                      02-06 : 73.581479,  02-07 : 73.683663,  02-08 : 73.893028,
-                      02-09 : 73.485649,  02-10 : 73.664861,  02-11 : 73.704989,
-                      02-12 : 73.706377,  02-13 : 73.605353,  02-14 : 73.679252 } ;
 
     This can be
     graphically displayed as:
 
     |image|
 
-    Here the history is from ``01-01`` till ``01-31`` and the horizon is
-    from ``02-01`` till ``02-14``.
+    Here the history is from ``2021-04-01`` till ``2021-06-30`` and the horizon is from ``2021-07-01`` till ``2021-07-31``.
 
-    .. |image| image:: WeightedMovingAverage.png
+    .. |image| image:: WMA2021.png
