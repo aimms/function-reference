@@ -42,5 +42,4 @@ Arguments
 
     -  The function :aimms:func:`ElementCast` and the procedures :aimms:procedure:`SetElementRename` and :aimms:func:`StringToElement`.
 
-    -  The lexical conventions for set elements in :doc:`preliminaries/language-preliminaries/lexical-conventions` of the
-        Language Reference.
+    -  The lexical conventions for set elements in :doc:`preliminaries/language-preliminaries/lexical-conventions`.
