@@ -32,7 +32,7 @@ Return Value
 .. note::
 
     If the *Category* argument is used then the element should be created
-    with the function ``GMP::SolverSession::CreateProgressCategory``.
+    with the function :aimms:func:`GMP::SolverSession::CreateProgressCategory`.
 
 .. seealso::
 

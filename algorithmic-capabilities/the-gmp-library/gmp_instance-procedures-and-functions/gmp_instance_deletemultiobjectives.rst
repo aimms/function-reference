@@ -28,14 +28,14 @@ Return Value
 .. note::
 
     A column can be specified as a multi-objective by using the procedure
-    ``GMP::Column::SetAsMultiObjective``.
+    :aimms:func:`GMP::Column::SetAsMultiObjective`.
 
 Example
 -------
 
     In the example below two multi-objectives are specified after which a
     multi-objective optimization problem is solved. Next all
-    multi-objectives are deleted by calling ``GMP::Instance::CreateDual``
+    multi-objectives are deleted by calling :aimms:func:`GMP::Instance::CreateDual`
     and the model is solved once again, this time as an ordinary
     optimization problem with one objective (namely the one specified in the
     objective attribute of the mathematical programming). 

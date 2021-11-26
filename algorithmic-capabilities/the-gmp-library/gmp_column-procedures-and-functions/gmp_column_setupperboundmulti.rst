@@ -6,7 +6,7 @@ GMP::Column::SetUpperBoundMulti
 ===============================
 
 The procedure :aimms:func:`GMP::Column::SetUpperBoundMulti` changes the upper
-bound of a group of columns, belonging to a variable, in the generated
+bounds of a group of columns, belonging to a variable, in the generated
 mathematical program.
 
 .. code-block:: aimms
@@ -29,12 +29,11 @@ Arguments
         indices.
 
     *column*
-        A variable that, combined with the ``binding`` domain, specifies the
+        A variable that, combined with the *binding* domain, specifies the
         columns.
 
     *value*
-        The new upper bound for each column, defined over the binding domain
-        ``binding``.
+        The new upper bound for each column, defined over the *binding* domain.
 
 Return Value
 ------------
@@ -45,8 +44,8 @@ Return Value
 
     If the variable has a unit then *value* should have the same unit. If
     *value* has no unit then you should multiply it by the column scale, as
-    returned by the function ``GMP::Column::GetScale``. See
-    ``GMP::Column::SetUpperBound`` for an example with units.
+    returned by the function :aimms:func:`GMP::Column::GetScale`. See
+    :aimms:func:`GMP::Column::SetUpperBound` for an example with units.
 
 Example
 -------

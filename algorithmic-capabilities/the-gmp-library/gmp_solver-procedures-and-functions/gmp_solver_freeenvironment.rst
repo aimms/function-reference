@@ -7,12 +7,12 @@ GMP::Solver::FreeEnvironment
 
 | The procedure :aimms:func:`GMP::Solver::FreeEnvironment` can be used to free a
   solver environment. By using the procedure
-  ``GMP::Solver::InitializeEnvironment`` you can initialize a solver
+  :aimms:func:`GMP::Solver::InitializeEnvironment` you can initialize a solver
   environment; by using this procedure you can free it again.
 |
 | Normally AIMMS initializes solver environments at startup and frees
   them when it is closed. The procodures
-  ``GMP::Solver::InitializeEnvironment`` and
+  :aimms:func:`GMP::Solver::InitializeEnvironment` and
   :aimms:func:`GMP::Solver::FreeEnvironment` can be used to initialize and free a
   solver environment multiple times inside one AIMMS sesstion. Both
   procedures are typically used for solvers running on a remote server
@@ -52,7 +52,7 @@ Example
 
     .. code-block:: aimms
 
-               MIPSolver := 'Gurobi 9.1';
+               MIPSolver := 'Gurobi 9.5';
                
                GMP::Solver::InitializeEnvironment( MIPSolver );
 

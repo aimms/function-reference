@@ -50,7 +50,7 @@ Return Value
        See the example in :ref:`sec:gmp.examples.indexed` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  A callback procedure should be installed using the appropriate GMP
-       procedure, (e.g., ``GMP::Instance::SetCallbackIterations``) instead
+       procedure, (e.g., :aimms:func:`GMP::Instance::SetCallbackIterations`) instead
        of using a suffix of the mathematical program (e.g., suffix
        ``CallbackIterations``).
 

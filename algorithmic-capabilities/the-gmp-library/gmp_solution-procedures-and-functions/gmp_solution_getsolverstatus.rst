@@ -33,7 +33,7 @@ Return Value
 .. note::
 
     The solver status is only available if the solution has been retrieved
-    from the solver, or if the procedure ``GMP::Solution::SetSolverStatus``
+    from the solver, or if the procedure :aimms:func:`GMP::Solution::SetSolverStatus`
     has been called before.
 
 .. seealso::

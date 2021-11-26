@@ -32,7 +32,7 @@ Return Value
 .. note::
 
     -  This routine ignores solver sessions that are not asynchronous
-       executing but using the procedure ``GMP::SolverSession::Execute``.
+       executing but using the procedure :aimms:func:`GMP::SolverSession::Execute`.
 
     -  This routine will return immediately if one of the objects is a
        solver session that has execution status 'Finished'.

@@ -46,8 +46,8 @@ Return Value
 .. note::
 
     -  The *GMP* should have been created by the function
-       ``GMP::Stochastic::CreateBendersRootproblem`` or by the function
-       ``GMP::Stochastic::BendersFindReference``.
+       :aimms:func:`GMP::Stochastic::CreateBendersRootproblem` or by the function
+       :aimms:func:`GMP::Stochastic::BendersFindReference`.
 
     -  It is most efficient to only update the objective value during the
        last call to :aimms:func:`GMP::Stochastic::MergeSolution`, i.e., set *updObj*

@@ -40,12 +40,12 @@ Return Value
        (**branch**, **cut**, **heuristic**) or an integer feasible solution
        (**lazy constraint**).
 
-    -  The function ``GMP::SolverSession::GetNodeObjective`` can be used to
+    -  The function :aimms:func:`GMP::SolverSession::GetNodeObjective` can be used to
        get the objective value corresponding to the solution retrieved with
        this procedure inside a **branch**, **candidate**, **cut**,
        **heuristic** or **lazy constraint** callback.
 
-    -  By using the procedure ``GMP::SolverSession::RejectIncumbent`` the
+    -  By using the procedure :aimms:func:`GMP::SolverSession::RejectIncumbent` the
        incumbent solution can be rejected inside a **candidate** callback.
 
 .. seealso::

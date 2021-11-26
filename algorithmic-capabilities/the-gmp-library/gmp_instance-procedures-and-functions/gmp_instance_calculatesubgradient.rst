@@ -52,11 +52,11 @@ Return Value
        no unit and are not scaled.
 
     -  This procedure should be called after a normal solve statement or
-       after a successful call to procedure ``GMP::Instance::Solve``.
+       after a successful call to procedure :aimms:func:`GMP::Instance::Solve`.
 
     -  This procedure can also be called after a successful call to the
-       procedure ``GMP::SolverSession::Execute`` or the procedure
-       ``GMP::SolverSession::AsynchronousExecute``. In that case the solver
+       procedure :aimms:func:`GMP::SolverSession::Execute` or the procedure
+       :aimms:func:`GMP::SolverSession::AsynchronousExecute`. In that case the solver
        session should be passed using the *session* argument.
 
     -  A column corresponding to a variable in *variableSet* that is not
@@ -66,7 +66,7 @@ Return Value
     -  This procedure is only supported by CPLEX and Gurobi.
 
     -  This procedure cannot be used if the *GMP* is created by
-       ``GMP::Instance::CreateDual``.
+       :aimms:func:`GMP::Instance::CreateDual`.
 
 Example
 -------

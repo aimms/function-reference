@@ -60,6 +60,10 @@ Return Value
        variable will be **replaced** by the level value for the corresponding column in the
        *solution*.
 
+    -  With the argument *merge* set to 1, if the level value of the objective variable equals NA, or if
+       the level value for the corresponding column in the *solution* equals NA, then the level value of
+       the objective variable will remain or be set to NA.
+
 .. seealso::
 
     The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::RetrieveFromModel`, :aimms:func:`GMP::Solution::RetrieveFromSolverSession`, :aimms:func:`GMP::Solution::SendToModelSelection` and :aimms:func:`GMP::Solution::SendToSolverSession`.

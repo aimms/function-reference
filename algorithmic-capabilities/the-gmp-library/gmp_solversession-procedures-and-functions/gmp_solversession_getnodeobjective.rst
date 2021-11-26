@@ -35,7 +35,7 @@ Return Value
     -  This function can only be used inside a **branch**, **cut** or
        **heuristic** callback.
 
-    -  The procedure ``GMP::Solution::RetrieveFromSolverSession`` can be
+    -  The procedure :aimms:func:`GMP::Solution::RetrieveFromSolverSession` can be
        used to retrieve the node solution inside a **branch**, **cut** or
        **heuristic** callback.
 

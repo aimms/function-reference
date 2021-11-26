@@ -24,7 +24,7 @@ Arguments
     *GMP*
         An element in :aimms:set:`AllGeneratedMathematicalPrograms`.
 
-    *column1,Column2*
+    *column1,column2*
         A scalar reference to an existing column in the model or the number of
         that column in the range :math:`\{ 0 .. n-1 \}` where :math:`n` is the
         number of columns in the matrix.
@@ -43,7 +43,7 @@ Return Value
        coefficient by 0.5 before it is stored (and passed to the solver).
 
     -  This procedure operates on the objective. To set a quadratic
-       coefficient in a row the procedure ``GMP::QuadraticCoefficient::Set``
+       coefficient in a row the procedure :aimms:func:`GMP::QuadraticCoefficient::Set`
        should be used.
 
 .. seealso::

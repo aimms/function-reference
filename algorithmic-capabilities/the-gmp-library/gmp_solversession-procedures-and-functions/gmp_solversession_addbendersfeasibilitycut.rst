@@ -63,13 +63,13 @@ Return Value
 
     -  The generated mathematical program corresponding to the
        *solverSession* should have been created using the function
-       ``GMP::Benders::CreateMasterProblem``.
+       :aimms:func:`GMP::Benders::CreateMasterProblem`.
 
     -  The *GMP* should have been created using the function
-       ``GMP::Benders::CreateSubProblem`` or the function
-       ``GMP::Instance::CreateFeasibility``.
+       :aimms:func:`GMP::Benders::CreateSubProblem` or the function
+       :aimms:func:`GMP::Instance::CreateFeasibility`.
 
-    -  If the function ``GMP::Benders::CreateSubProblem`` was used to create
+    -  If the function :aimms:func:`GMP::Benders::CreateSubProblem` was used to create
        a GMP representing the dual of the Benders' subproblem then this GMP
        should be used as argument *GMP2*. If it represents the primal of the
        Benders' subproblem then first the feasibility problem should be
@@ -89,7 +89,7 @@ Return Value
 Example
 -------
 
-    The way ``GMP::Benders::AddFeasibilityCut`` is called depends on whether
+    The way :aimms:func:`GMP::Benders::AddFeasibilityCut` is called depends on whether
     the primal or dual of the Benders' subproblem was generated. In the
     example below we use the dual. In that case an unbounded extreme ray is
     used to create a feasibility cut. In this example we solve only one

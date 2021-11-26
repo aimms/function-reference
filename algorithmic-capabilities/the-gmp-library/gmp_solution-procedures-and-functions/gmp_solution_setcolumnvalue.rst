@@ -56,7 +56,7 @@ Return Value
 
     -  If the column has a unit then the scaled value should be passed. You
        can get the scale factor by using the function
-       ``GMP::Column::GetScale``.
+       :aimms:func:`GMP::Column::GetScale`.
 
     -  Hint values and priorities are only supported by Gurobi.
 
@@ -67,7 +67,7 @@ Example
     repository at positions 1 and 2. Our goal is to add up the level values
     of each column in the solutions, and place the result in the solution at
     position 3 in the solution repository. This can be done in a generic way
-    using the function ``GMP::Instance::GetColumnNumbers`` as follows. Here
+    using the function :aimms:func:`GMP::Instance::GetColumnNumbers` as follows. Here
     ``ColumnNrs`` is a subset of :aimms:set:`Integers` with index ``c``. 
 
     .. code-block:: aimms

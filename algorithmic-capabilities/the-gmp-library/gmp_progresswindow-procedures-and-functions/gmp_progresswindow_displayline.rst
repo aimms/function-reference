@@ -45,11 +45,11 @@ Return Value
 .. note::
 
     -  If the *Category* argument is used then the element should be created
-       with the function ``GMP::SolverSession::CreateProgressCategory``.
+       with the function :aimms:func:`GMP::SolverSession::CreateProgressCategory`.
 
     -  To freeze (lock) a line the procedure
-       ``GMP::ProgressWindow::FreezeLine`` should be called. To unfreeze it
-       thereafter the procedure ``GMP::ProgressWindow::UnfreezeLine`` should
+       :aimms:func:`GMP::ProgressWindow::FreezeLine` should be called. To unfreeze it
+       thereafter the procedure :aimms:func:`GMP::ProgressWindow::UnfreezeLine` should
        be called.
 
 .. seealso::

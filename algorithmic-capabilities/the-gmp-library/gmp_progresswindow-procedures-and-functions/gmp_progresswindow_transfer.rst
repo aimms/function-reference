@@ -34,7 +34,7 @@ Return Value
 .. note::
 
     -  The *Category* should have been created with the function
-       ``GMP::SolverSession::CreateProgressCategory``.
+       :aimms:func:`GMP::SolverSession::CreateProgressCategory`.
 
     -  The *solverSession* argument specifies the solver session to which
        the progress category should be transfered.

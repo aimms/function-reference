@@ -35,7 +35,7 @@ Return Value
     -  This function can only be used inside a **candidate** or **lazy
        constraint** callback.
 
-    -  The procedure ``GMP::Solution::RetrieveFromSolverSession`` can be
+    -  The procedure :aimms:func:`GMP::Solution::RetrieveFromSolverSession` can be
        used to retrieve a candidate solution inside a **candidate** or
        **lazy constraint** callback.
 

@@ -53,7 +53,7 @@ Return Value
 .. note::
 
     -  This procedure should be called after calling the function
-       ``GMP::Instance::CreatePresolved`` if it is used in combination with
+       :aimms:func:`GMP::Instance::CreatePresolved` if it is used in combination with
        that function. Otherwise the sampled level values might be outside
        the range of the columns in the presolved model.
 

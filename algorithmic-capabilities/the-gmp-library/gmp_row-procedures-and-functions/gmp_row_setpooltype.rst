@@ -51,7 +51,7 @@ Return Value
     -  The lazy constraint pool is supported by CPLEX, Gurobi and ODH-CPLEX
        while the cut pool is supported by CPLEX and ODH-CPLEX.
 
-    -  Use ``GMP::Row::SetPoolTypeMulti`` if the pool type of many rows
+    -  Use :aimms:func:`GMP::Row::SetPoolTypeMulti` if the pool type of many rows
        corresponding to some constraint have to be set, because that will be
        more efficient.
 

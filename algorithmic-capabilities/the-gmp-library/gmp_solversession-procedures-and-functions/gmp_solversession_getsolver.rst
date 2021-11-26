@@ -28,10 +28,10 @@ Return Value
 .. note::
 
     Which solver is assigned to the solver session is determined by the
-    routines ``GMP::Instance::CreateSolverSession`` and
-    ``GMP::Instance::SetSolver``. Note that if the *Solver* argument of
-    ``GMP::Instance::CreateSolverSession`` is used then it overrules
-    ``GMP::Instance::SetSolver``.
+    routines :aimms:func:`GMP::Instance::CreateSolverSession` and
+    :aimms:func:`GMP::Instance::SetSolver`. Note that if the *Solver* argument of
+    :aimms:func:`GMP::Instance::CreateSolverSession` is used then it overrules
+    :aimms:func:`GMP::Instance::SetSolver`.
 
 .. seealso::
 

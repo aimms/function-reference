@@ -120,7 +120,7 @@ Return Value
           vector of the current iteration and that of the previous
           iteration.
 
-    -  The procedure ``GMP::Solution::Check`` can be used to get the sum and
+    -  The procedure :aimms:func:`GMP::Solution::Check` can be used to get the sum and
        number of infeasibilies before and after calling the procedure
        :aimms:func:`GMP::Instance::FindApproximatelyFeasibleSolution`.
 

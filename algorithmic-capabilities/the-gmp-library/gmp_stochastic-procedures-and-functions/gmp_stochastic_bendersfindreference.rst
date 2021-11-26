@@ -38,12 +38,12 @@ Return Value
 
 .. note::
 
-    -  The function ``GMP::Stochastic::CreateBendersRootproblem`` creates
+    -  The function :aimms:func:`GMP::Stochastic::CreateBendersRootproblem` creates
        all Benders problems for all nodes in the scenario tree, and must be
        called before calling :aimms:func:`GMP::Stochastic::BendersFindReference`.
 
     -  The *GMP* should correspond to a root node, i.e., be created by using
-       the function ``GMP::Stochastic::CreateBendersRootproblem``.
+       the function :aimms:func:`GMP::Stochastic::CreateBendersRootproblem`.
 
 .. seealso::
 

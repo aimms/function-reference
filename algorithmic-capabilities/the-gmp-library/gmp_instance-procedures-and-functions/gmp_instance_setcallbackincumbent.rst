@@ -51,8 +51,8 @@ Return Value
        procedure was named ``GMP::Instance::SetCallbackNewIncumbent``. That
        procedure has become deprecated. AIMMS version 4.68 and older already
        contained a procedure that was named
-       :aimms:func:`GMP::Instance::SetCallbackIncumbent` but that procedure has been
-       renamed to ``GMP::Instance::SetCallbackCandidate``.
+       ``GMP::Instance::SetCallbackIncumbent`` but that procedure has been
+       renamed to :aimms:func:`GMP::Instance::SetCallbackCandidate`.
 
 .. seealso::
 

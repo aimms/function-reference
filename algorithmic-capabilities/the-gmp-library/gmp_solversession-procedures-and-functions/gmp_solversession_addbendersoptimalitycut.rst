@@ -56,10 +56,10 @@ Return Value
 
     -  The generated mathematical program corresponding to the
        *solverSession* should have been created using the function
-       ``GMP::Benders::CreateMasterProblem``.
+       :aimms:func:`GMP::Benders::CreateMasterProblem`.
 
     -  The *GMP* should have been created using the function
-       ``GMP::Benders::CreateSubProblem``.
+       :aimms:func:`GMP::Benders::CreateSubProblem`.
 
     -  The *solution* of the Benders' subproblem (represented by *GMP*) is
        used to generate an optimality cut for the Benders' master problem

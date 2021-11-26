@@ -40,7 +40,7 @@ Return Value
        coefficient by 2 before it is returned by this function.
 
     -  This function operates on the objective. To get a quadratic
-       coefficient in a row the function ``GMP::QuadraticCoefficient::Get``
+       coefficient in a row the function :aimms:func:`GMP::QuadraticCoefficient::Get`
        should be used.
 
 .. seealso::

@@ -36,7 +36,7 @@ Return Value
 .. note::
 
     A row is marked as being a relaxation-only row if the procedure
-    ``GMP::Row::SetRelaxationOnly`` has been called before or if the
+    :aimms:func:`GMP::Row::SetRelaxationOnly` has been called before or if the
     ``RelaxationOnly`` suffix has been set to 1 for the corresponding
     constraint.
 

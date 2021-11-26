@@ -31,20 +31,20 @@ Return Value
 
 .. note::
 
-    -  Use ``GMP::Row::AddMulti`` if many rows corresponding to some constraint
+    -  Use :aimms:func:`GMP::Row::AddMulti` if many rows corresponding to some constraint
        have to be added, because that will be more efficient.
 
     -  Coefficients for this row can be added to the matrix by using the
-       procedure ``GMP::Coefficient::Set``.
+       procedure :aimms:func:`GMP::Coefficient::Set`.
 
     -  After calling :aimms:func:`GMP::Row::Add` the type and the left-hand-side and
        right-hand-side values are set according to the definition of the
        corresponding symbolic constraint. By using the procedures
-       ``GMP::Row::SetType``, ``GMP::Row::SetLeftHandSide`` and
-       ``GMP::Row::SetRightHandSide`` the row type and row bounds can be
+       :aimms:func:`GMP::Row::SetType`, :aimms:func:`GMP::Row::SetLeftHandSide` and
+       :aimms:func:`GMP::Row::SetRightHandSide` the row type and row bounds can be
        changed.
 
-    -  Use procedure ``GMP::Row::Generate`` to generate a (non-empty) row
+    -  Use procedure :aimms:func:`GMP::Row::Generate` to generate a (non-empty) row
        according to the definition of its associated symbolic constraint.
 
 .. seealso::

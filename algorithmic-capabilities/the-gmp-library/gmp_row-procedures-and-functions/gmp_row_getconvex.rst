@@ -35,7 +35,7 @@ Return Value
 .. note::
 
     AIMMS cannot detect whether a row is convex or not. A row is marked as
-    being convex if the procedure ``GMP::Row::SetConvex`` has been called
+    being convex if the procedure :aimms:func:`GMP::Row::SetConvex` has been called
     before or if the ``Convex`` suffix has been set to 1 for the
     corresponding constraint.
 

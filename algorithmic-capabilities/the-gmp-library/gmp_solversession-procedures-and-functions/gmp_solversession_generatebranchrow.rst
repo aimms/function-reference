@@ -37,8 +37,8 @@ Return Value
 .. note::
 
     -  A branch can be specified by adding multiple rows and bound changes
-       (with ``GMP::SolverSession::GenerateBranchLowerBound`` and
-       ``GMP::SolverSession::GenerateBranchUpperBound``) to the node
+       (with :aimms:func:`GMP::SolverSession::GenerateBranchLowerBound` and
+       :aimms:func:`GMP::SolverSession::GenerateBranchUpperBound`) to the node
        problem.
 
     -  This procedure can only be called from within a ``CallbackBranch``

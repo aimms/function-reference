@@ -5,7 +5,7 @@
 GMP::Column::Freeze
 ===================
 
-The procedure :aimms:func:`GMP::Column::Freeze` freezes a column in the matrix of
+The procedure :aimms:func:`GMP::Column::Freeze` freezes a column in
 a generated mathematical program at the given value.
 
 .. code-block:: aimms
@@ -37,21 +37,21 @@ Return Value
 
 .. note::
 
-    -  Use ``GMP::Column::FreezeMulti`` if many columns corresponding to
-       some variable have to be frozen, because that will be more efficient.
+    -  Use :aimms:func:`GMP::Column::FreezeMulti` or :aimms:func:`GMP::Column::FreezeRaw`
+       if many columns have to be frozen, because that will be more efficient.
 
     -  The column remains visible in the constraint listing and math program
        inspector. In addition, it will be retained in solver maintained
        copies of the generated math program.
 
-    -  Use ``GMP::Column::Unfreeze`` to undo the freezing.
+    -  Use :aimms:func:`GMP::Column::Unfreeze` to undo the freezing.
 
-    -  During a call to function :aimms:func:`GMP::Column::Freeze` AIMMS stores the
-       upper and lower bound of the column before the function was called.
-       This information is used when function ``GMP::Column::Unfreeze`` is
+    -  During a call to procedure :aimms:func:`GMP::Column::Freeze` AIMMS stores the
+       upper and lower bound of the column before the procedure was called.
+       This information is used when procedure :aimms:func:`GMP::Column::Unfreeze` is
        called thereafter. This information is not copied by the function
-       ``GMP::Instance::Copy``.
+       :aimms:func:`GMP::Instance::Copy`.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::FreezeMulti`, :aimms:func:`GMP::Column::Unfreeze` and :aimms:func:`GMP::Instance::Copy`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::FreezeMulti`, :aimms:func:`GMP::Column::FreezeRaw`, :aimms:func:`GMP::Column::Unfreeze` and :aimms:func:`GMP::Instance::Copy`.

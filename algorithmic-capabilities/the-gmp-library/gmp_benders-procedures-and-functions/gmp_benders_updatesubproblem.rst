@@ -44,11 +44,11 @@ Return Value
 .. note::
 
     -  The *GMP1* should have been created using the function
-       ``GMP::Benders::CreateSubProblem`` or the function
-       ``GMP::Instance::CreateFeasibility``.
+       :aimms:func:`GMP::Benders::CreateSubProblem` or the function
+       :aimms:func:`GMP::Instance::CreateFeasibility`.
 
     -  The *GMP2* should have been created using the function
-       ``GMP::Benders::CreateMasterProblem``.
+       :aimms:func:`GMP::Benders::CreateMasterProblem`.
 
     -  The *solution* of the Benders' master problem (represented by *GMP2*)
        is used to update the Benders' subproblem (represented by *GMP1*).
