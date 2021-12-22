@@ -27,7 +27,7 @@ Updatability
 ------------
 
     The contents of this set can be freely modified. By default, it only
-    contains the element ``'AllIdentifiers'``. If your project uses multiple
+    contains the element :aimms:set:`AllIdentifiers`. If your project uses multiple
     types of case files with different content, you should replace the
     default content of this set with all content types applicable to your
     project.
