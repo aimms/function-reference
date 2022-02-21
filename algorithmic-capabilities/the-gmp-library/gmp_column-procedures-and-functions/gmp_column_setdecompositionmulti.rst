@@ -68,7 +68,7 @@ Return Value
        that the column is not assigned to any subproblem.
 
     -  This procedure can be used to specify a partition used by the
-       partition heuristic of Gurobi 8.0 or higher. See the Gurobi option
+       partition heuristic of Gurobi. See the Gurobi option
        ``Partition heuristic`` for more information.
 
     -  For Gurobi, use a positive value to indicate that the column should
