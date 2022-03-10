@@ -12,7 +12,9 @@ first make sure that you have connected to all datasources involved.
 Information for tables contained in non-connected datasources is not
 stored. In order to connect to a datasource, you should either run a
 read or write statement using one of its tables, or open the mapping
-wizard of one of its database tables.
+wizard of one of its database tables. 
+Only the active tables information will be stored, 
+so if you want to have the complete database structure to be saved then all tables have to be active.
 
 .. code-block:: aimms
 
