@@ -82,8 +82,6 @@ place.
 
 -  :ref:`.CallbackAddCut`
 
--  :ref:`.CallbackAOA`
-
 The fourth group of suffixes are obsolete ones. They are only retained
 in order not to invalidate converted AIMMS 2 and ``GAMS`` models.
 
@@ -166,7 +164,6 @@ in order not to invalidate converted AIMMS 2 and ``GAMS`` models.
    sumofinfeasibilities
    callbackstatuschange
    callbacktime
-   callbackaoa
    callbackincumbent
    callbackreturnstatus
    callbackaddcut

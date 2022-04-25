@@ -45,7 +45,7 @@ Return Value
        SNOPT 7.1.
 
     -  The procedure :aimms:func:`GMP::SolverSession::AsynchronousExecute` cannot be
-       used by the following solvers: AOA, BARON, CBC, ODH-CPLEX, and PATH.
+       used by the following solvers: BARON, CBC, ODH-CPLEX, and PATH.
 
     -  Calling :aimms:func:`GMP::SolverSession::AsynchronousExecute` inside a callback
        procedure is not allowed.
