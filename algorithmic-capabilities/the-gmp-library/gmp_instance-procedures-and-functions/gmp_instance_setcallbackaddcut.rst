@@ -33,7 +33,7 @@ Return Value
 
     -  The procedure :aimms:func:`GMP::SolverSession::GenerateCut` can be used inside
        a ``CallbackAddCut`` callback procedure to add cuts during the MIP
-       branch & cut process.
+       branch-and-cut process.
 
     -  The callback procedure should have exactly one argument; a scalar
        input element parameter into the set :aimms:set:`AllSolverSessions`.

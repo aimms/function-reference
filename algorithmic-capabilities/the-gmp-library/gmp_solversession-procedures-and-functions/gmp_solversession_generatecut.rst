@@ -6,7 +6,7 @@ GMP::SolverSession::GenerateCut
 ===============================
 
 The procedure :aimms:func:`GMP::SolverSession::GenerateCut` adds a cut to the LP
-subproblem of the current node during MIP branch & cut. It can also be
+subproblem of the current node during MIP branch-and-cut. It can also be
 used to add a lazy constraint inside a callback for adding lazy
 constraints.
 
@@ -26,7 +26,7 @@ Arguments
         An element in the set :aimms:set:`AllSolverSessions`.
 
     *row*
-        A scalar reference to an existing row in the model.
+        A scalar reference to a row in the model.
 
     *local*
         A scalar binary value to indicate whether the cut is valid for the local
@@ -62,6 +62,50 @@ Return Value
        value 1.
 
     -  This procedure can also be used for MIQP and MIQCP problems.
+
+Example
+-------
+
+    We have a math program, with variables ``x(v1)`` and ``y(v1,v2)``,for which we
+    want add certain cuts, namely triangle cut
+    and triangle clique constraints, during the solve. For that we use a callback
+    procedure that is called whenever the MIP solver finds a new fractional solution
+    (typically after solving a subproblem in the branch-and-bound algorithm).
+    The cut callback procedure can be implemented as follows.
+
+    .. code-block:: aimms
+    
+               ! Get fractional solution from solver and pass it to the AIMMS identifiers.
+               
+               myGMP := GMP::SolverSession::GetInstance( solvSess );
+               
+               GMP::Solution::RetrieveFromSolverSession( solvSess, 1 );
+               GMP::Solution::SendToModel( myGMP, 1 );
+               
+               ! Find violated triangle cut and triangle clique constraints and pass them
+               ! as cuts to the MIP solver.
+               
+               for ( (v1,v2,v3) | v1 < v2 and v2 < v3 ) do
+                   ! Triangle Cut.
+               
+                   if ( x(v1) + x(v2) + x(v3) - y(v1,v2) - y(v1,v3) - y(v2,v3) > 1 ) then
+                       GMP::SolverSession::GenerateCut( solvSess, Triangle_Cut(v1,v2,v3) );
+                   endif;
+               
+                   ! Triangle Clique.
+               
+                   if ( y(v1,v2) + y(v1,v3) - x(v1) - y(v2,v3) > 0 ) then
+                       GMP::SolverSession::GenerateCut( solvSess, Triangle_Clique(v1,v2,v3) );
+                   endif;
+               endfor;
+               
+               return 1;
+
+    Here 'solvSess' is an input argument of the callback procedure and a
+    scalar element parameter into the set :aimms:set:`AllSolverSessions`.
+    And 'myGMP' is a scalar element parameter into the set
+    :aimms:set:`AllGeneratedMathematicalPrograms`,
+    defined as a local parameter of the callback procedure.
 
 .. seealso::
 

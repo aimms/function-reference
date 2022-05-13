@@ -7,7 +7,7 @@ GMP::SolverSession::GenerateBranchUpperBound
 
 The procedure :aimms:func:`GMP::SolverSession::GenerateBranchUpperBound` specifies
 the upper bound change of a column in a branch to be taken from the
-current node during MIP branch & cut.
+current node during MIP branch-and-cut.
 
 .. code-block:: aimms
 

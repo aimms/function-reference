@@ -43,7 +43,7 @@ Return Value
 
     -  The procedure :aimms:func:`GMP::SolverSession::GenerateCut` can be used inside
        a ``CallbackAddLazyConstraint`` callback procedure to add (globally
-       or locally valid) lazy constraints during the MIP branch & cut
+       or locally valid) lazy constraints during the MIP branch-and-cut
        process. Lazy constraints added to the problem are first put into a
        pool of lazy constraints, so they are not present in the subproblem
        LP until after the callback is finished.

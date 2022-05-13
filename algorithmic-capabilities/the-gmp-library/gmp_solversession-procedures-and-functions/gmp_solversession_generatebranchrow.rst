@@ -6,7 +6,7 @@ GMP::SolverSession::GenerateBranchRow
 =====================================
 
 The procedure :aimms:func:`GMP::SolverSession::GenerateBranchRow` adds a row to a
-branch to be taken from the current node during MIP branch & cut.
+branch to be taken from the current node during MIP branch-and-cut.
 
 .. code-block:: aimms
 

@@ -88,6 +88,8 @@ Example
                    GMP::SolverSession::GenerateBinaryEliminationRow(ThisSession,1,1);
 
                endif;
+               
+               return 1;
 
     Here
     'ThisSession' is an input argument of the callback procedure and a
