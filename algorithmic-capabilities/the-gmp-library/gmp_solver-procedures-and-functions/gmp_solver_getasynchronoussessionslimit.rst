@@ -54,7 +54,7 @@ Return Value
        asynchronous solve (e.g., BARON, CBC, ODH-CPLEX).
 
     -  The function returns 1 if the solver is not thread-safe (e.g., IPOPT,
-       SNOPT.
+       SNOPT).
 
     -  The number of asynchronous solver sessions running in parallel using
        a certain solver should not exceed the limit on asynchronous solver sessions,
