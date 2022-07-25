@@ -1,7 +1,7 @@
 Function Reference
 ------------------
 
-Please find the PDF version of the AIMMS Function Reference `here <https://documentation.aimms.com/functionreference/AIMMS_func.pdf>`__.
+Please find the PDF version of the AIMMS Function Reference.
 
 .. toctree::
    :maxdepth: 3
