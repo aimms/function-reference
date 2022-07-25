@@ -63,7 +63,7 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program which we want to solve twice thereby changing the constraint set: 
+    Assume that 'MP' is a symbolic mathematical program which we want to solve twice thereby changing the constraint set: 
 
     .. code-block:: aimms
 
@@ -75,8 +75,8 @@ Example
                myGMP2 := GMP::Instance::Generate( MP );
 
     After executing these statements, 'myGMP1' and 'myGMP2' will point to the same generated math program,
-    namely the one using the constraints 'C3' and 'C4'. (The set
-    :aimms:set:`AllGeneratedMathematicalPrograms` will contain only one element.) At this point it
+    namely the one using the constraints 'C3' and 'C4'. The set
+    :aimms:set:`AllGeneratedMathematicalPrograms` will contain only one element, namely 'MP'. At this point it
     makes no difference to use
     
     .. code-block:: aimms
@@ -89,7 +89,7 @@ Example
 
                GMP::Instance::Solve( myGMP2 );
     
-    By using the *name* argument we can create two different GMP's:
+    By using the *name* argument we can create two different GMP's from the same symbolic mathematical program:
 
     .. code-block:: aimms
 
@@ -101,7 +101,8 @@ Example
                myGMP2 := GMP::Instance::Generate( MP, "SecondGMP" );
                GMP::Instance::Solve( myGMP2 );
 
-    This time the set :aimms:set:`AllGeneratedMathematicalPrograms` will contain two elements.
+    This time the set :aimms:set:`AllGeneratedMathematicalPrograms` will contain two elements, namely
+    'FirstGMP' and 'SecondGMP'.
                
 .. seealso::
 
