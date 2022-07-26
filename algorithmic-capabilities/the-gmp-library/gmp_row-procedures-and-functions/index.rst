@@ -29,6 +29,7 @@ instance:
    gmp_row_getname
    gmp_row_getrelaxationonly
    gmp_row_getrighthandside
+   gmp_row_getrighthandsidemultiraw
    gmp_row_getscale
    gmp_row_getstatus
    gmp_row_gettype
