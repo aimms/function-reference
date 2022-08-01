@@ -9,6 +9,7 @@ instance:
    :maxdepth: 1
 
    gmp_coefficient_get
+   gmp_coefficient_getminandmax
    gmp_coefficient_getmultiraw
    gmp_coefficient_getquadratic
    gmp_coefficient_set
