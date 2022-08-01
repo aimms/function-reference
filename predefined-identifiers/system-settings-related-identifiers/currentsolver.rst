@@ -34,6 +34,18 @@ Updatability
     settings in the **Solver Configuration** dialog box, that will be loaded
     at startup.
 
+.. note::
+
+    -  The procedure :aimms:func:`GMP::Instance::Solve` takes :aimms:set:`CurrentSolver`
+       into account unless a solver has been assigned using the procedure
+       :aimms:func:`GMP::Instance::SetSolver`.
+
+    -  The procedures :aimms:func:`GMP::SolverSession::Execute` and
+       :aimms:func:`GMP::SolverSession::AsynchronousExecute` take :aimms:set:`CurrentSolver`
+       into account unless a solver has been assigned using the function
+       :aimms:func:`GMP::Instance::CreateSolverSession` or the procedure
+       :aimms:func:`GMP::Instance::SetSolver`.
+
 .. seealso::
 
     -  The sets :aimms:set:`AllMathematicalProgrammingTypes` and :aimms:set:`AllSolvers`.
