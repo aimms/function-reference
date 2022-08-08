@@ -17,13 +17,13 @@ instance:
    gmp_column_freezemulti
    gmp_column_freezeraw
    gmp_column_getlowerbound
-   gmp_column_getlowerboundmultiraw
+   gmp_column_getlowerboundraw
    gmp_column_getname
    gmp_column_getscale
    gmp_column_getstatus
    gmp_column_gettype
    gmp_column_getupperbound
-   gmp_column_getupperboundmultiraw
+   gmp_column_getupperboundraw
    gmp_column_setasmultiobjective
    gmp_column_setasobjective
    gmp_column_setdecomposition

@@ -1,17 +1,17 @@
-.. aimms:procedure:: GMP::Row::GetRightHandSideMultiRaw(GMP, rowSet, rhs)
+.. aimms:procedure:: GMP::Row::GetRightHandSideRaw(GMP, rowSet, rhs)
 
-.. _GMP::Row::GetRightHandSideMultiRaw:
+.. _GMP::Row::GetRightHandSideRaw:
 
-GMP::Row::GetRightHandSideMultiRaw
-==================================
+GMP::Row::GetRightHandSideRaw
+=============================
 
-The procedure :aimms:procedure:`GMP::Row::GetRightHandSideMultiRaw` retrieves 
+The procedure :aimms:procedure:`GMP::Row::GetRightHandSideRaw` retrieves 
 a collection of right-hand-side values corresponding to a given set of row 
 numbers in the generated mathematical program.
 
 .. code-block:: aimms
 
-    GMP::Row::GetRightHandSideMultiRaw(
+    GMP::Row::GetRightHandSideRaw(
          GMP,            ! (input)  a generated mathematical program
          rowSet,         ! (input)  a subset of Integers
          rhs             ! (output) a real-valued parameter

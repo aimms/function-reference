@@ -1,16 +1,16 @@
-.. aimms:procedure:: GMP::Coefficient::GetMultiRaw(GMP, rowSet, colSet, coef)
+.. aimms:procedure:: GMP::Coefficient::GetRaw(GMP, rowSet, colSet, coef)
 
-.. _GMP::Coefficient::GetMultiRaw:
+.. _GMP::Coefficient::GetRaw:
 
-GMP::Coefficient::GetMultiRaw
+GMP::Coefficient::GetRaw
 =============================
 
-The procedure :aimms:func:`GMP::Coefficient::GetMultiRaw` retrieves a collection of (linear) coefficients
+The procedure :aimms:func:`GMP::Coefficient::GetRaw` retrieves a collection of (linear) coefficients
 in a generated mathematical program. The retrieved collection is indicated by the given row and column sets.
 
 .. code-block:: aimms
 
-    GMP::Coefficient::GetMultiRaw(
+    GMP::Coefficient::GetRaw(
          GMP,            ! (input)  a generated mathematical program
          rowSet,         ! (input)  a subset of Integers
          colSet,         ! (input)  a subset of Integers

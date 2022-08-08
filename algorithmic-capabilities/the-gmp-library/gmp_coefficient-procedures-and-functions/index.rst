@@ -10,7 +10,7 @@ instance:
 
    gmp_coefficient_get
    gmp_coefficient_getminandmax
-   gmp_coefficient_getmultiraw
+   gmp_coefficient_getraw
    gmp_coefficient_getquadratic
    gmp_coefficient_set
    gmp_coefficient_setmulti
