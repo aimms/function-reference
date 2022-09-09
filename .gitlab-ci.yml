@@ -1,4 +1,5 @@
 variables:
+variables:
   GIT_SUBMODULE_STRATEGY: recursive
 
 stages:
@@ -10,12 +11,15 @@ before_script:
   - sudo add-apt-repository ppa:deadsnakes/ppa -y
   - sudo apt-get update -y
   - sudo apt-get install python3.8 python3.8-dev python3.8-venv python3-pip python3-venv python-enchant -y
+  - git --version
+  - sudo apt-get install git
+  - git --version
   - python3.8 -mvenv ../myenv
   - source ../myenv/bin/activate
   - python3.8 -mpip install -U pip
   - python3.8 -mpip install -U -Iv sphinx==4.5.0 
   - python3.8 -mpip install -U sphinx-rtd-theme sphinx-aimms-theme aimms-pygments-style sphinx-sitemap sphinx-last-updated-by-git sphinxcontrib-bibtex
-
+  
 linkcheck:
   stage: test
   script:
