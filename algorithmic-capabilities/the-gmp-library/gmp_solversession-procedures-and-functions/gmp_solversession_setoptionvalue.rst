@@ -46,7 +46,7 @@ Return Value
        -  the procedure :aimms:func:`GMP::SolverSession::SetOptionValue` if it is
           called for the solver session, else
 
-       -  the procedure ``GMP::Instance::SetOptionValue`` if it is called
+       -  the procedure :aimms:func:`GMP::Instance::SetOptionValue` if it is called
           for the generated mathematical program corresponding to the solver
           session, else
 

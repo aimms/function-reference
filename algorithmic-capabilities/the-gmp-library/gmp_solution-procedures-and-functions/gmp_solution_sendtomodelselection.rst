@@ -16,7 +16,8 @@ solution repository of a generated mathematical program.
          solution,       ! (input) a solution
          Identifiers,    ! (input) a set expression
          Suffices,       ! (input) a set expression
-         [merge]         ! (optional, default 0) a scalar binary expression
+         [merge],        ! (optional, default 0) a scalar value
+         [evalInline]    ! (optional, default 1) a scalar binary value
          )
 
 Arguments
@@ -39,9 +40,13 @@ Arguments
         *solution*.
 
     *merge*
-        A scalar binary value to indicate whether the values of the variables and
+        A scalar value to indicate whether the values of the variables and
         constraints in the math program should be replaced by (value 0) or merged
         with (value 1 or 2) the solution.
+
+    *evalInline*
+        A scalar binary value to indicate whether the level values of inline variables
+        (if any) in the mathematical program should be evaluated (value 1) or not (value 0).
 
 Return Value
 ------------
@@ -79,6 +84,10 @@ Return Value
        the corresponding column in the *solution*. With value 2 the level value of the objective
        variable will be **replaced** by the level value for the corresponding column in the
        *solution*.
+
+    -  With the argument *merge* set to 1, if the level value of the objective variable equals NA, or if
+       the level value for the corresponding column in the *solution* equals NA, then the level value of
+       the objective variable will remain or be set to NA.
 
 .. seealso::
 

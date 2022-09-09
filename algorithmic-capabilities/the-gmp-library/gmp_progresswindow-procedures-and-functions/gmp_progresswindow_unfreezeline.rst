@@ -32,13 +32,13 @@ Return Value
 .. note::
 
     -  If the *Category* argument is used then the element should be created
-       with the function ``GMP::SolverSession::CreateProgressCategory``.
+       with the function :aimms:func:`GMP::SolverSession::CreateProgressCategory`.
 
     -  If the *Category* argument is not specified then this procedure will
        unfreeze a line in the general AIMMS progress category for displaying
        solver progress, or in the solver progress category of the generated
        mathematical program in case function
-       ``GMP::Instance::CreateProgressCategory`` was called.
+       :aimms:func:`GMP::Instance::CreateProgressCategory` was called.
 
 .. seealso::
 

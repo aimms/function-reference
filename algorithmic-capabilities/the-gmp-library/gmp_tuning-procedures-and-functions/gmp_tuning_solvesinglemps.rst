@@ -65,7 +65,7 @@ Return Value
     -  The solver will use the option settings as specified in the AIMMS
        project.
 
-    -  This procedure is supported by the solvers CPLEX, GUROBI, CBC,
+    -  This procedure is supported by the solvers CPLEX, Gurobi, CBC,
        ODH-CPLEX and XA. XA does not support the LP format. Only CPLEX
        supports the SAV format.
 

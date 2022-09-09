@@ -34,11 +34,11 @@ Return Value
 .. note::
 
     -  The *GMP* should have been created by the function
-       ``GMP::Stochastic::BendersFindReference``.
+       :aimms:func:`GMP::Stochastic::BendersFindReference`.
 
     -  Initially, the column ``mp.SubproblemObjectiveBound`` is not part of
        the Benders problem but it will be added if the procedure
-       ``GMP::Stochastic::AddBendersOptimalityCut`` is called.
+       :aimms:func:`GMP::Stochastic::AddBendersOptimalityCut` is called.
 
 .. seealso::
 

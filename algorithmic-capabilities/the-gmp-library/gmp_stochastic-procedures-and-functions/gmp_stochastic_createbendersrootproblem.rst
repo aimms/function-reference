@@ -39,11 +39,11 @@ Return Value
 .. note::
 
     -  The *GMP* should have been created by the function
-       ``GMP::Instance::GenerateStochasticProgram``.
+       :aimms:func:`GMP::Instance::GenerateStochasticProgram`.
 
     -  The generated math program belonging to the node of a Benders
        subproblem can be obtained by using the function
-       ``GMP::Stochastic::BendersFindReference``.
+       :aimms:func:`GMP::Stochastic::BendersFindReference`.
 
     -  If the *name* argument is not specified, or if it is the empty
        string, then the name of the *GMP*, stage 1 and the unique

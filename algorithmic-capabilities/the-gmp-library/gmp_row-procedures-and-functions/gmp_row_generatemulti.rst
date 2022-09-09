@@ -1,4 +1,4 @@
-.. aimms:procedure:: GMP::Row::GenerateMulti(GMP, row, autoAddColumn)
+.. aimms:procedure:: GMP::Row::GenerateMulti(GMP, binding, row, autoAddColumn)
 
 .. _GMP::Row::GenerateMulti:
 
@@ -30,7 +30,7 @@ Arguments
         indices.
 
     *row*
-        A constraint that, combined with the ``binding`` domain, specifies the
+        A constraint that, combined with the *binding* domain, specifies the
         rows.
 
     *autoAddColumn*
@@ -59,7 +59,7 @@ Return Value
     -  If the value of *autoAddColumn* equals 0, then this procedure will
        generate an error if it encounters a column that is not in the *GMP*.
        You then have to add that column before calling this procedure by
-       using the procedure ``GMP::Column::Add``.
+       using the procedure :aimms:func:`GMP::Column::Add`.
 
     -  Setting the value of *autoAddColumn* to 1 should only be done if
        you know exactly which columns are automatically added by this procedure.
@@ -67,7 +67,7 @@ Return Value
        one of these rows, possibly making this row redundant.
 
     -  This procedure will never add columns that were deleted before with
-       the procedure ``GMP::Column::Delete``.
+       the procedure :aimms:func:`GMP::Column::Delete`.
 
 Example
 -------

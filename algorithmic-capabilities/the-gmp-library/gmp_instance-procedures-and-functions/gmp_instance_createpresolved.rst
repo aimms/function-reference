@@ -9,7 +9,7 @@ The function :aimms:func:`GMP::Instance::CreatePresolved` generates a mathematic
 program that is the presolved representation of the specified generated
 mathematical program. The generated mathematical program can be a linear
 or nonlinear model, and should be generated using the function
-``GMP::Instance::Generate``.
+:aimms:func:`GMP::Instance::Generate`.
 
 .. code-block:: aimms
 
@@ -36,12 +36,12 @@ Return Value
 
 .. note::
 
-    -  By using the functions ``GMP::Column::GetStatus`` and
-       ``GMP::Row::GetStatus`` it is possible to check whether a column or
+    -  By using the functions :aimms:func:`GMP::Column::GetStatus` and
+       :aimms:func:`GMP::Row::GetStatus` it is possible to check whether a column or
        row was deleted when the presolved mathematical program was created.
 
-    -  By using the functions ``GMP::Column::GetLowerBound`` and
-       ``GMP::Column::GetUpperBound`` it is possible to retrieve the lower
+    -  By using the functions :aimms:func:`GMP::Column::GetLowerBound` and
+       :aimms:func:`GMP::Column::GetUpperBound` it is possible to retrieve the lower
        and upper bound of a column in the presolved mathematical program.
 
     -  If the original *GMP* is deleted then the presolved GMP created by

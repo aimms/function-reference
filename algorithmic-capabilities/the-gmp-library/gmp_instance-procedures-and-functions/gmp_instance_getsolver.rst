@@ -28,7 +28,7 @@ Return Value
 .. note::
 
     The solver can be assigned by the procedure
-    ``GMP::Instance::SetSolver``, or derived by AIMMS as the default solver
+    :aimms:func:`GMP::Instance::SetSolver`, or derived by AIMMS as the default solver
     for the model class of the generated mathematical program.
 
 .. seealso::

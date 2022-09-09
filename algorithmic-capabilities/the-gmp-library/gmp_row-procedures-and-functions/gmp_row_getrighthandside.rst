@@ -59,7 +59,7 @@ Example
 
     If we want to multiply the
     right-hand-side value by 1.5 and assign it as the new value by using
-    function ``GMP::Row::SetRightHandSide`` we can use 
+    function :aimms:func:`GMP::Row::SetRightHandSide` we can use 
 
     .. code-block:: aimms
 

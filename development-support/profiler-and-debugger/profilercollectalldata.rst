@@ -63,7 +63,7 @@ Example
                 Subset of: Integers;
             }
             Parameter Results {
-                IndexDomain: (IndexIdentifiers,line,IndexProfilerValues);
+                IndexDomain: (IndexIdentifiers,line,IndexProfilerTypes);
             }
 
     the procedure call 

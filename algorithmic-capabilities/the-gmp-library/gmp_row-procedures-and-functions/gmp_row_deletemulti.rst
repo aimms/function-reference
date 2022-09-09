@@ -1,13 +1,12 @@
-.. aimms:procedure:: GMP::Row::DeleteMulti(GMP, row)
+.. aimms:procedure:: GMP::Row::DeleteMulti(GMP, binding, row)
 
 .. _GMP::Row::DeleteMulti:
 
 GMP::Row::DeleteMulti
 =====================
 
-The procedure :aimms:func:`GMP::Row::DeleteMulti` marks a group of rows,
-belonging to a constraint, as deleted in the matrix of a generated
-mathematical program.
+The procedure :aimms:func:`GMP::Row::DeleteMulti` marks a group of rows
+in a generated mathematical program, belonging to a constraint, as deleted.
 
 .. code-block:: aimms
 
@@ -28,7 +27,7 @@ Arguments
         indices.
 
     *row*
-        A constraint that, combined with the ``binding`` domain, specifies the
+        A constraint that, combined with the *binding* domain, specifies the
         rows.
 
 Return Value

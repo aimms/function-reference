@@ -37,7 +37,7 @@ Return Value
 .. note::
 
     -  The *GMP* should have been created by the function
-       ``GMP::Stochastic::BendersFindReference``.
+       :aimms:func:`GMP::Stochastic::BendersFindReference`.
 
     -  By using the suffix ``.SubproblemOptimalityCuts`` of the associated
        symbolic mathematical program it is possible to refer to the row that

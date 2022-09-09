@@ -44,4 +44,4 @@ Return Value
 .. seealso::
 
     :aimms:func:`UserColorAdd`, :aimms:func:`UserColorDelete`, :aimms:func:`UserColorModify`. User colors are discussed in full
-    detail in Section 11.4 of the `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__.
+    detail in :doc:`miscellaneous/user-interface-language-components/setting-colors-within-the-model`.

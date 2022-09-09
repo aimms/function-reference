@@ -32,4 +32,4 @@ Updatability
 .. seealso::
 
     The set :aimms:set:`AllCases`. Working with multiple cases is discussed in full
-    detail in Section 16.2 of the `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__.
+    detail in :doc:`data-management/case-management/managing-multiple-case-selections`.

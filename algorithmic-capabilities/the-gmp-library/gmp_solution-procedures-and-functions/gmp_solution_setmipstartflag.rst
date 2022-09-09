@@ -45,6 +45,10 @@ Return Value
 
 .. note::
 
+    -  This procedure is only supported by CPLEX and Gurobi.
+    
+    -  The argument *effortLevel* is only used by CPLEX.
+    
     -  The levels of effort and their effect as specified by argument
        *effortLevel* are:
 
@@ -64,9 +68,6 @@ Return Value
        -  Level 5: A complete solution is injected without the solver
           performing the usual checks. If the solution defined by the MIP
           start is infeasible, behavior is undefined.
-
-    -  Level 5 is only supported by CPLEX (for other solvers it is translated
-       to 0).
 
 .. seealso::
 

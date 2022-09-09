@@ -14,7 +14,7 @@ GMP::SolverSession::CreateProgressCategory
   By default all solver progress will be displayed in the general AIMMS
   progress category for solver progress. If a progress category was
   created for the GMP with procedure
-  ``GMP::Instance::CreateProgressCategory``, then all solver progress
+  :aimms:func:`GMP::Instance::CreateProgressCategory`, then all solver progress
   related to that GMP will by default be displayed in the solver
   progress category of the GMP. For displaying solver session progress
   in a separated category the function
@@ -54,13 +54,13 @@ Return Value
 
     -  The information displayed in the solver session progress window can
        be controlled by using the procedures
-       ``GMP::ProgressWindow::DisplayLine`` and
-       ``GMP::ProgressWindow::FreezeLine``.
+       :aimms:func:`GMP::ProgressWindow::DisplayLine` and
+       :aimms:func:`GMP::ProgressWindow::FreezeLine`.
 
     -  A progress category created before for the solver session will be
        deleted.
 
-    -  The procedure ``GMP::ProgressWindow::Transfer`` can be used to share
+    -  The procedure :aimms:func:`GMP::ProgressWindow::Transfer` can be used to share
        a progress category among several solver sessions.
 
 .. seealso::

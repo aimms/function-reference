@@ -65,7 +65,7 @@ Example
     The procedure :aimms:func:`GMP::SolverSession::GenerateBinaryEliminationRow` can
     be used to enforce a MIP solver to branch a node that would have been
     fathomed otherwise. We can achieve this by installing a branching
-    callback using procedure ``GMP::Instance::SetCallbackBranch`` and adding
+    callback using procedure :aimms:func:`GMP::Instance::SetCallbackBranch` and adding
     the following code to the callback procedure: 
 
     .. code-block:: aimms
@@ -88,6 +88,8 @@ Example
                    GMP::SolverSession::GenerateBinaryEliminationRow(ThisSession,1,1);
 
                endif;
+               
+               return 1;
 
     Here
     'ThisSession' is an input argument of the callback procedure and a

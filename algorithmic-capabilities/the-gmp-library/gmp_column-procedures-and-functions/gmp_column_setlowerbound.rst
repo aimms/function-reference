@@ -6,7 +6,7 @@ GMP::Column::SetLowerBound
 ==========================
 
 The procedure :aimms:func:`GMP::Column::SetLowerBound` changes the lower bound of
-a column in the generated mathematical program.
+a column in a generated mathematical program.
 
 .. code-block:: aimms
 
@@ -37,13 +37,13 @@ Return Value
 
 .. note::
 
-    -  Use ``GMP::Column::SetLowerBoundMulti`` if the lower bound of many
-       columns corresponding to some variable have to be set, because that
-       will be more efficient.
+    -  Use :aimms:func:`GMP::Column::SetLowerBoundMulti` or :aimms:func:`GMP::Column::SetLowerBoundRaw`
+       if the lower bounds of many columns have to be set, because that will
+       be more efficient.
 
     -  If the column has a unit then *value* should have the same unit. If
        *value* has no unit then you should multiply it by the column scale,
-       as returned by the function ``GMP::Column::GetScale``.
+       as returned by the function :aimms:func:`GMP::Column::GetScale`.
 
 Example
 -------
@@ -94,4 +94,4 @@ Example
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetLowerBoundMulti`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::GetLowerBound` and :aimms:func:`GMP::Column::GetScale`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetLowerBoundMulti`, :aimms:func:`GMP::Column::SetLowerBoundRaw`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::GetLowerBound` and :aimms:func:`GMP::Column::GetScale`.

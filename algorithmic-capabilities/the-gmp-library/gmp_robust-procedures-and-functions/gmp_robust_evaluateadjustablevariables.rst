@@ -39,7 +39,7 @@ Return Value
 .. note::
 
     -  The *GMP* must have been created using the procedure
-       ``GMP::Instance::GenerateRobustCounterpart``.
+       :aimms:func:`GMP::Instance::GenerateRobustCounterpart`.
 
     -  This procedure will ignore variables in the set *Variables* that are
        not part of the *GMP*. It will also ignore non-adjustable variables.
@@ -50,7 +50,7 @@ Return Value
 
     -  This procedure will fail if the option ``Keep`` ``Uncertain``
        ``Mathematical`` ``Program`` was not switched on before calling
-       procedure ``GMP::Instance::GenerateRobustCounterpart``.
+       procedure :aimms:func:`GMP::Instance::GenerateRobustCounterpart`.
 
 Example
 -------

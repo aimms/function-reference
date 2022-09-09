@@ -40,7 +40,7 @@ Return Value
 
 .. note::
 
-    -  Use ``GMP::Row::GenerateMulti`` if many rows corresponding to some
+    -  Use :aimms:func:`GMP::Row::GenerateMulti` if many rows corresponding to some
        constraint have to be generated, because that will be more efficient.
 
     -  Before generating the row all existing matrix coefficients for this
@@ -57,7 +57,7 @@ Return Value
     -  If the value of *autoAddColumn* equals 0, then this procedure will
        generate an error if it encounters a column that is not in the *GMP*.
        You then have to add that column before calling this procedure by
-       using the procedure ``GMP::Column::Add``.
+       using the procedure :aimms:func:`GMP::Column::Add`.
 
     -  Setting the value of *autoAddColumn* to 1 should only be done if you
        know exactly which columns are automatically added by this procedure.
@@ -65,7 +65,7 @@ Return Value
        appear in this row, possibly making this row redundant.
 
     -  This procedure will never add columns that were deleted before with
-       the procedure ``GMP::Column::Delete``.
+       the procedure :aimms:func:`GMP::Column::Delete`.
 
 Example
 -------

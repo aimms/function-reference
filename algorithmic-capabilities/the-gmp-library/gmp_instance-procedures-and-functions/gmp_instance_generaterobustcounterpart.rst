@@ -18,7 +18,7 @@ GMP::Instance::GenerateRobustCounterpart
   linear, or a mixed-integer second-order cone program (MISOCP) if some
   of the uncertainty constraints are ellipsoidal.
 | 
-| SOCP and MISOCP problems can be solved by using CPLEX or GUROBI.
+| SOCP and MISOCP problems can be solved by using CPLEX or Gurobi.
 
 .. code-block:: aimms
 

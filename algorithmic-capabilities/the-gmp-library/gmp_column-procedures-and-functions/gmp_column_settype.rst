@@ -6,7 +6,7 @@ GMP::Column::SetType
 ====================
 
 The procedure :aimms:func:`GMP::Column::SetType` changes the type of a column in
-the matrix of a generated mathematical program.
+a generated mathematical program.
 
 .. code-block:: aimms
 
@@ -37,9 +37,9 @@ Return Value
 
 .. note::
 
-    Use ``GMP::Column::SetTypeMulti`` if the type of many columns
-    corresponding to some variable have to be set, because that will be more efficient.
+    Use :aimms:func:`GMP::Column::SetTypeMulti` or :aimms:func:`GMP::Column::SetTypeRaw`
+    if the types of many columns have to be set, because that will be more efficient.
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::GetType` and :aimms:func:`GMP::Column::SetTypeMulti`.
+    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::GetType`, :aimms:func:`GMP::Column::SetTypeMulti` and :aimms:func:`GMP::Column::SetTypeRaw`.

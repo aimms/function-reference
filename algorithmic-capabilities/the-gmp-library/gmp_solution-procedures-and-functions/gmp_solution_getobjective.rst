@@ -34,7 +34,7 @@ Return Value
 
     The objective function value is only available if the solution has been
     retrieved from the solver, or if the function
-    ``GMP::Solution::SetObjective`` has been called before.
+    :aimms:func:`GMP::Solution::SetObjective` has been called before.
 
 .. seealso::
 

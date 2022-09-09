@@ -55,7 +55,7 @@ Return Value
        but will be overruled if the *value* is not equal to 0.
 
     -  During a MIP solve, the iterations callback will be called
-       irregularly by CPLEX, GUROBI and ODH-CPLEX (especially during the MIP
+       irregularly by CPLEX, Gurobi and ODH-CPLEX (especially during the MIP
        phase).
 
     -  The iterations callback will be called less often if CPLEX uses

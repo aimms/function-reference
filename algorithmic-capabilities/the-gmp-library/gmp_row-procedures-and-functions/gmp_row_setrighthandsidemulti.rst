@@ -6,7 +6,7 @@ GMP::Row::SetRightHandSideMulti
 ===============================
 
 The procedure :aimms:func:`GMP::Row::SetRightHandSideMulti` changes the
-right-hand-side of a group of rows, belonging to a constraint, in a
+right-hand-sides of a group of rows, belonging to a constraint, in a
 generated mathematical program.
 
 .. code-block:: aimms
@@ -29,12 +29,11 @@ Arguments
         indices.
 
     *row*
-        A constraint that, combined with the ``binding`` domain, specifies the
+        A constraint that, combined with the *binding* domain, specifies the
         rows.
 
     *value*
-        The new right-hand-side for each row, defined over the binding domain
-        ``binding``.
+        The new right-hand-side for each row, defined over the *binding* domain.
 
 Return Value
 ------------
@@ -45,8 +44,8 @@ Return Value
 
     If the constraint has a unit then *value* should have the same unit. If
     *value* has no unit then you should multiply it by the row scale, as
-    returned by the function ``GMP::Row::GetScale``. See
-    ``GMP::Row::SetRightHandSide`` for an example with units.
+    returned by the function :aimms:func:`GMP::Row::GetScale`. See
+    :aimms:func:`GMP::Row::SetRightHandSide` for an example with units.
 
 Example
 -------

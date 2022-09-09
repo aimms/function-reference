@@ -23,6 +23,7 @@ instance:
    gmp_solversession_getbestbound
    gmp_solversession_getcallbackinterruptstatus
    gmp_solversession_getcandidateobjective
+   gmp_solversession_getiis
    gmp_solversession_getinstance
    gmp_solversession_getiterationsused
    gmp_solversession_getmemoryused

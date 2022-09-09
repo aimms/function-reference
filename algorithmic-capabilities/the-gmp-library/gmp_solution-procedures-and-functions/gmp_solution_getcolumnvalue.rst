@@ -57,7 +57,7 @@ Return Value
 
     -  If the column has a unit then the scaled value is returned (without
        unit). You can get the scale factor by using the function
-       ``GMP::Column::GetScale``.
+       :aimms:func:`GMP::Column::GetScale`.
 
 .. seealso::
 

@@ -7,7 +7,7 @@ GMP::Row::SetPoolType
 
 The procedure :aimms:func:`GMP::Row::SetPoolType` can be used to indicate that a
 row in a generated mathematical program should become part of a pool of
-lazy constraints or a pool of (user) cuts. The solvers CPLEX, GUROBI and
+lazy constraints or a pool of (user) cuts. The solvers CPLEX, Gurobi and
 ODH-CPLEX can make use of this information.
 
 .. code-block:: aimms
@@ -48,19 +48,19 @@ Return Value
 
 .. note::
 
-    -  The lazy constraint pool is supported by CPLEX, GUROBI and ODH-CPLEX
+    -  The lazy constraint pool is supported by CPLEX, Gurobi and ODH-CPLEX
        while the cut pool is supported by CPLEX and ODH-CPLEX.
 
-    -  Use ``GMP::Row::SetPoolTypeMulti`` if the pool type of many rows
+    -  Use :aimms:func:`GMP::Row::SetPoolTypeMulti` if the pool type of many rows
        corresponding to some constraint have to be set, because that will be
        more efficient.
 
     -  The *mode* is only used if the row should be added to the lazy
-       constraint pool (i.e., if *value* equals 1) and if GUROBI is used.
+       constraint pool (i.e., if *value* equals 1) and if Gurobi is used.
        The *mode* should be a value between 0 and 3, and
        these values have the following meaning:
 
-       -  0: The mode is specified by the GUROBI option
+       -  0: The mode is specified by the Gurobi option
           ``Lazy constraint mode``.
 
        -  1: The lazy constraint can be used to cut off a feasible solution,

@@ -43,6 +43,9 @@ Return Value
        program will be replaced (or updated in case the same symbolic
        mathematical program is involved).
 
+    -  The solution of a dual variable can be accessed through the ``.ShadowPrice``
+       suffix of the corresponding (primal) constraint.
+
     -  Before a generated mathematical program is dualized, AIMMS first
        transforms it temporary into a standard form using the following
        rules:
@@ -75,6 +78,9 @@ Return Value
        -  The constraints ``c.ExtendedConstraint('DualLowerBound',j)`` and
           ``c.ExtendedConstraint('DualUpperBound',j)`` replace a ranged
           constraint ``c(j)``.
+
+       The solution of these constraints can be accessed through the ``.ShadowPrice``
+       suffix, e.g., ``v.ExtendedConstraint('DualUpperBound',i).ShadowPrice``.
 
     -  The objective variable for the dual mathematical program will become
        ``mp.ExtendedConstraint(DualObjective)`` and the objective constraint

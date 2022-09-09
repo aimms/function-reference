@@ -48,14 +48,14 @@ Return Value
 .. note::
 
     If the row has a unit then the scaled value should be passed. You can
-    get the scale factor by using the function ``GMP::Row::GetScale``.
+    get the scale factor by using the function :aimms:func:`GMP::Row::GetScale`.
 
 Example
 -------
 
     Assume we have a GMP for which we want to multiply all shadow prices in
     a solution by some value, say 10. This can be done in a generic way
-    using the function ``GMP::Instance::GetRowNumbers`` as follows. Here
+    using the function :aimms:func:`GMP::Instance::GetRowNumbers` as follows. Here
     ``RowNrs`` is a subset of :aimms:set:`Integers` with index ``r``. 
 
     .. code-block:: aimms

@@ -35,13 +35,12 @@ Return Value
     -  This function can only be used inside a **branch**, **cut** or
        **heuristic** callback.
 
-    -  The procedure ``GMP::Solution::RetrieveFromSolverSession`` can be
+    -  The procedure :aimms:func:`GMP::Solution::RetrieveFromSolverSession` can be
        used to retrieve the node solution inside a **branch**, **cut** or
        **heuristic** callback.
 
     -  This function is only supported by CPLEX, however it is not supported
-       if the CPLEX option ``Use generic callbacks`` is switched on in
-       CPLEX 12.8 or higher.
+       if the CPLEX option ``Use generic callbacks`` is switched on.
 
 .. seealso::
 

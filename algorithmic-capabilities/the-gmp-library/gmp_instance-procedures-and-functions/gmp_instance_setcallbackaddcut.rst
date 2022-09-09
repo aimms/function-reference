@@ -31,9 +31,9 @@ Return Value
 
 .. note::
 
-    -  The procedure ``GMP::SolverSession::GenerateCut`` can be used inside
+    -  The procedure :aimms:func:`GMP::SolverSession::GenerateCut` can be used inside
        a ``CallbackAddCut`` callback procedure to add cuts during the MIP
-       branch & cut process.
+       branch-and-cut process.
 
     -  The callback procedure should have exactly one argument; a scalar
        input element parameter into the set :aimms:set:`AllSolverSessions`.
@@ -49,7 +49,7 @@ Return Value
        *callback* argument.
 
     -  A ``CallbackAddCut`` callback procedure will only be called when
-       solving mixed integer programs with CPLEX, GUROBI or ODH-CPLEX.
+       solving mixed integer programs with CPLEX, Gurobi or ODH-CPLEX.
 
     -  This procedure can also be used for MIQP and MIQCP problems.
 

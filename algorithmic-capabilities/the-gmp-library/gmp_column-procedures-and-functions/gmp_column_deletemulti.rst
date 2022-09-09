@@ -5,8 +5,8 @@
 GMP::Column::DeleteMulti
 ========================
 
-The procedure :aimms:func:`GMP::Column::DeleteMulti` marks a column in the matrix of a
-generated mathematical program as deleted.
+The procedure :aimms:func:`GMP::Column::DeleteMulti` marks a group of columns, belonging
+to a variable, in a generated mathematical program as deleted.
 
 .. code-block:: aimms
 
@@ -27,7 +27,7 @@ Arguments
         indices.
 
     *column*
-        A variable that, combined with the ``binding`` domain, specifies the
+        A variable that, combined with the *binding* domain, specifies the
         columns.
 
 Return Value
@@ -41,8 +41,8 @@ Return Value
        visible in the Math Program Inspector and they will be removed from any
        solver maintained copies.
 
-    -  Use ``GMP::Column::Add`` to undo this action.
+    -  Use :aimms:func:`GMP::Column::AddMulti` to undo this action.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::Add` and :aimms:func:`GMP::Column::Delete`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::AddMulti` and :aimms:func:`GMP::Column::Delete`.

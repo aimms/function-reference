@@ -13,7 +13,7 @@ the generated mathematical program.
 This procedure can be used to specify a decomposition for the Benders
 algorithm in CPLEX by assigning the columns to the master problem or a
 subproblem. It can also be used to specify a decompostion for
-ODH-CPLEX. And it can be used to specify a partition for GUROBI to be
+ODH-CPLEX. And it can be used to specify a partition for Gurobi to be
 used by its partition heuristic.
 
 .. code-block:: aimms
@@ -36,12 +36,12 @@ Arguments
         indices.
 
     *column*
-        A variable that, combined with the ``binding`` domain, specifies the
+        A variable that, combined with the *binding* domain, specifies the
         columns.
 
     *value*
         The new decomposition value for each column, defined over the binding
-        domain ``binding``.
+        domain *binding*.
 
 Return Value
 ------------
@@ -68,10 +68,10 @@ Return Value
        that the column is not assigned to any subproblem.
 
     -  This procedure can be used to specify a partition used by the
-       partition heuristic of GUROBI 8.0 or higher. See the GUROBI option
+       partition heuristic of Gurobi. See the Gurobi option
        ``Partition heuristic`` for more information.
 
-    -  For GUROBI, use a positive value to indicate that the column should
+    -  For Gurobi, use a positive value to indicate that the column should
        be included when the correspondingly numbered sub-MIP is solved, a
        value of 0 to indicate that the column should be included in every
        sub-MIP, and a value of -1 to indicate that the column should not be

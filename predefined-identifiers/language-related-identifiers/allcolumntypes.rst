@@ -6,7 +6,7 @@ AllColumnTypes
 ==============
 
 The predefined set :aimms:set:`AllColumnTypes` contains the names of all column
-types available in the matrix manipulation library of AIMMS.
+types available in the GMP library of AIMMS.
 
 .. code-block:: aimms
 
@@ -19,7 +19,7 @@ Definition
 ----------
 
     The set :aimms:set:`AllColumnTypes` contains the names of all column types
-    available in the matrix manipulation library of AIMMS.
+    available in the GMP library of AIMMS.
 
 Updatability
 ------------
@@ -33,5 +33,5 @@ Updatability
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Column::SetType`. Matrix manipulation is discussed in more detail
+    The function :aimms:func:`GMP::Column::SetType`. The GMP library is discussed in more detail
     in :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

@@ -36,7 +36,7 @@ Return Value
 
     -  The following solvers are thread-safe and can be used for solving
        multiple mathematical programs in parallel using the same solver:
-       CPLEX, GUROBI, XA, CONOPT, and KNITRO.
+       CPLEX, Gurobi, XA, CONOPT, and Knitro.
 
     -  The following solvers are not thread-safe but the AIMMS-solver
        interface is thread safe and therefore they can be used in parallel
@@ -45,7 +45,7 @@ Return Value
        SNOPT 7.1.
 
     -  The procedure :aimms:func:`GMP::SolverSession::AsynchronousExecute` cannot be
-       used by the following solvers: AOA, BARON, CBC, ODH-CPLEX, and PATH.
+       used by the following solvers: BARON, CBC, ODH-CPLEX, and PATH.
 
     -  Calling :aimms:func:`GMP::SolverSession::AsynchronousExecute` inside a callback
        procedure is not allowed.
@@ -53,8 +53,8 @@ Return Value
     -  The procedure :aimms:func:`GMP::SolverSession::AsynchronousExecute` cannot be
        used if an external function is used in a constraint.
 
-    -  The procedures ``GMP::SolverSession::WaitForCompletion`` and
-       ``GMP::SolverSession::WaitForSingleCompletion`` can be used to let
+    -  The procedures :aimms:func:`GMP::SolverSession::WaitForCompletion` and
+       :aimms:func:`GMP::SolverSession::WaitForSingleCompletion` can be used to let
        AIMMS wait until one or more asynchronous executing solver sessions
        are finished.
 
@@ -65,7 +65,7 @@ Return Value
        solve.
 
     -  This procedure does not create a listing file but you can use the
-       procedure ``GMP::Solution::ConstraintListing`` for that.
+       procedure :aimms:func:`GMP::Solution::ConstraintListing` for that.
 
 .. seealso::
 

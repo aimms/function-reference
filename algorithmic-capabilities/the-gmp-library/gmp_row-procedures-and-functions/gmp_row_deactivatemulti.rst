@@ -1,4 +1,4 @@
-.. aimms:procedure:: GMP::Row::DeactivateMulti(GMP, row)
+.. aimms:procedure:: GMP::Row::DeactivateMulti(GMP, binding, row)
 
 .. _GMP::Row::DeactivateMulti:
 
@@ -27,7 +27,7 @@ Arguments
         indices.
 
     *row*
-        A constraint that, combined with the ``binding`` domain, specifies the
+        A constraint that, combined with the *binding* domain, specifies the
         rows.
 
 Return Value

@@ -6,13 +6,12 @@ SaveDatabaseStructure
 =====================
 
 With the procedure :aimms:func:`SaveDatabaseStructure` you can save the database
-table structure information such that this information is quickly
-retrieved in subsequent AIMMS sessions. Please note that you should
-first make sure that you have connected to all datasources involved.
-Information for tables contained in non-connected datasources is not
-stored. In order to connect to a datasource, you should either run a
-read or write statement using one of its tables, or open the mapping
-wizard of one of its database tables.
+table structure information such that this information can be quickly 
+retrieved in subsequent AIMMS sessions. This procedure only stores the structure 
+information for tables that are currently connected. 
+In order to connect to a database table, you should either run a read or write statement, 
+or open the mapping wizard of that database tables. Please note that calling :aimms:func:`CloseDataSource` 
+will close all these connections, so this should not be called before the call to :aimms:func:`SaveDatabaseStructure`.
 
 .. code-block:: aimms
 

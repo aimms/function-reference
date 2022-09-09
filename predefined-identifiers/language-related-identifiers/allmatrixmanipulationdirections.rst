@@ -6,8 +6,7 @@ AllMatrixManipulationDirections
 ===============================
 
 The predefined set :aimms:set:`AllMatrixManipulationDirections` contains the list
-of optimization directions supported by the matrix manipulation library
-of AIMMS.
+of optimization directions supported by the GMP library of AIMMS.
 
 .. code-block:: aimms
 
@@ -20,8 +19,7 @@ Definition
 ----------
 
     The set :aimms:set:`AllMatrixManipulationDirections` contains the list of
-    optimization directions supported by the matrix manipulation library of
-    AIMMS.
+    optimization directions supported by the GMP library of AIMMS.
 
 Updatability
 ------------
@@ -36,5 +34,5 @@ Updatability
 
 .. seealso::
 
-    The set :aimms:set:`AllValueKeywords`, the function :aimms:func:`GMP::Instance::SetDirection`. Matrix manipulation is
+    The set :aimms:set:`AllValueKeywords`, the function :aimms:func:`GMP::Instance::SetDirection`. The GMP library is
     discussed in more detail in :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

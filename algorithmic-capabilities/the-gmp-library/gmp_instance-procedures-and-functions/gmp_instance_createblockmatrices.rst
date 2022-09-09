@@ -15,8 +15,7 @@ GMP::Instance::CreateBlockMatrices
   blocks (the first row and column represent the objective). This model can be
   solved by solving each block separately, and combining the solutions.
   
-.. figure:: blocks.bmp
-   :scale: 40%
+.. figure:: blocks.png
    :align: center
    :name: fig:gmp:blocks
    
@@ -70,9 +69,9 @@ Return Value
 
     -  The user can specify the *blockValue* for every column in the *GMP*,
        in which case this function will create block GMP's based on this partition.
-       If a different (positive) *blockValue* is assigned to two columns, and it turns
+       If a different non-zero *blockValue* is assigned to two columns, and it turns
        out that the two corresponding blocks are not independent, then this function
-       will generate an error. If two columns are assigned the same (positive) *blockValue*
+       will generate an error. If two columns are assigned the same non-zero *blockValue*
        then these columns will be assigned to the same block, even if this block could
        be partitioned into two blocks.
 
@@ -80,9 +79,9 @@ Return Value
        will create block matrices automatically, and as many as possible.
        If the *GMP* cannot be partitioned in multiple block GMP's then
        the returned subset of the set :aimms:set:`AllGeneratedMathematicalPrograms`
-       will only contain one element, namely a copy of the *GMP*.
+       will only contain one element, namely a copy of the original *GMP*.
 
-    -  It is possible to assign a (positive) *blockValue* for a subset of the columns.
+    -  It is possible to assign a positive *blockValue* for a subset of the columns.
        This function will then automatically assign the other columns to block GMP's.
 
     -  The *prefix* argument is used to create the names of the block GMP's, which will
@@ -94,9 +93,11 @@ Return Value
        the numbering will start at one.)
 
     -  If the objective row contains an objective constant then this will be added to the
-       last block GMP only. And in the rare situation that the *GMP* contains columns
-       (besides the objective column) that only appear in the objective row, then these
-       columns will also be assigned to the last block GMP.
+       last block GMP only.
+
+    -  In the unusual situation that the *GMP* contains columns (besides the objective column)
+       that only appear in the objective row, then these columns will be assigned to the
+       last block GMP if their corresponding *blockValue* equals 0.
 
 Example
 -------
@@ -125,7 +126,7 @@ Example
                }
                Constraint c1 {
                    IndexDomain: t;
-                   Definition: - x1(t) + 2 * x2(t) <= 4;
+                   Definition: - x(t) + 2 * y(t) <= 4;
                }
                MathematicalProgram MP {
                    Objective: obj;
@@ -159,13 +160,16 @@ Example
                StringParameter ColumnName {
                    IndexDomain: cc;
                }
+               Parameter MergeSolution {
+                   Range: Binary;
+               }
 
     To create block matrices and solve them to create a solution for the original model
     we can use: 
 
     .. code-block:: aimms
 
-               myGMP := GMP::Instance::Generate( FlowShopModel );
+               myGMP := GMP::Instance::Generate( MP );
                
                ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, AllVariables );
                
@@ -187,6 +191,8 @@ Example
                
                GMPset := GMP::Instance::CreateBlockMatrices( myGMP, ColumnSet, BlockVals, "block-" );
                
+               MergeSolution := 0;
+               
                while ( Card(GMPset) >= 1 ) do
                    CurrentGMP := First(GMPset);
                
@@ -195,9 +201,15 @@ Example
                	   GMP::SolverSession::Execute( session );
                
                    GMP::Solution::RetrieveFromSolverSession( session, 1 );
-                   GMP::Solution::SendToModel( CurrentGMP, 1, merge : 1 );
+                   if ( Card(GMPset) = 1 ) then
+    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 1 );
+                   else
+    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 0 );
+                   endif;
                
-                   GMP::Instance::Delete( CurrentGMP );
+                   GMP::Instance::Delete( CurrentGMP );   ! Also deletes session
+                   
+                   MergeSolution := 1;
                endwhile;
                
                GMP::Instance::Delete( myGMP );
@@ -220,6 +232,29 @@ Example
 
     In this case the columns corresponding to the periods "per-2" and "per-3" will be assigned to the
     same block GMP (with the name "block-2").
+    
+    The parameter 'MergeSolution' is set to 0 for the first block GMP, otherwise the solution will be
+    merged with an old solution (if one exists).
+    
+    Note: the first piece of code is optimized for mathematical programs with inline variables because
+    it contains the following code snippet:
+
+    .. code-block:: aimms
+
+               GMP::Solution::RetrieveFromSolverSession( session, 1 );
+               if ( Card(GMPset) = 1 ) then
+    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 1 );
+               else
+    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 0 );
+               endif;
+    
+    If your mathematical program does not contain any inline variables then you can use the following
+    code instead:
+
+    .. code-block:: aimms
+
+               GMP::Solution::RetrieveFromSolverSession( session, 1 );
+               GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution );
     
 .. seealso::
 

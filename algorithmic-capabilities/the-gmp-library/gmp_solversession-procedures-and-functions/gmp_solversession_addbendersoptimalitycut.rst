@@ -9,7 +9,7 @@ The procedure :aimms:func:`GMP::SolverSession::AddBendersOptimalityCut` generate
 an optimality cut for a Benders' master problem using the (dual)
 solution of a Benders' subproblem. The Benders' master problem must be a
 MIP problem. The cut is typically added as a lazy constraint in a
-callback during the MIP branch & cut search. This procedure is typically
+callback during the MIP branch-and-cut search. This procedure is typically
 used in a Benders' decomposition algorithm in which a single master MIP
 problem is solved.
 
@@ -56,10 +56,10 @@ Return Value
 
     -  The generated mathematical program corresponding to the
        *solverSession* should have been created using the function
-       ``GMP::Benders::CreateMasterProblem``.
+       :aimms:func:`GMP::Benders::CreateMasterProblem`.
 
     -  The *GMP* should have been created using the function
-       ``GMP::Benders::CreateSubProblem``.
+       :aimms:func:`GMP::Benders::CreateSubProblem`.
 
     -  The *solution* of the Benders' subproblem (represented by *GMP*) is
        used to generate an optimality cut for the Benders' master problem

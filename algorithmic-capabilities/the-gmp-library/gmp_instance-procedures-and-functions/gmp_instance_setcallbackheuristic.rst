@@ -52,7 +52,7 @@ Return Value
        *callback* argument.
 
     -  A ``CallbackHeuristic`` callback procedure will only be called when
-       solving mixed integer programs with CPLEX, GUROBI or ODH-CPLEX.
+       solving mixed integer programs with CPLEX, Gurobi or ODH-CPLEX.
 
 .. seealso::
 

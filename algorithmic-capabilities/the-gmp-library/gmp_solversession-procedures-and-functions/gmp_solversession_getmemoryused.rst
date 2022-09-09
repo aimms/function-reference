@@ -37,7 +37,7 @@ Return Value
 
     -  During a solve, the memory used by the solver can fluctuate.
     
-    -  For CPLEX and GUROBI, AIMMS calculates the memory in use
+    -  For CPLEX and Gurobi, AIMMS calculates the memory in use
        based on the virtual memory used by the process. This approach is not
        reliable for asynchronous solver sessions.
 

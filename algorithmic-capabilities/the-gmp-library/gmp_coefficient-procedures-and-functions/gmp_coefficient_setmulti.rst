@@ -30,16 +30,16 @@ Arguments
         indices.
 
     *row*
-        A constraint that, combined with the ``binding`` domain, specifies the
+        A constraint that, combined with the *binding* domain, specifies the
         rows.
 
     *column*
-        A variable that, combined with the ``binding`` domain, specifies the
+        A variable that, combined with the *binding* domain, specifies the
         columns.
 
     *value*
         The new coefficient for each combination of row and column, defined over
-        the binding domain ``binding``.
+        the *binding* domain.
 
 Return Value
 ------------
@@ -48,8 +48,8 @@ Return Value
 
 .. note::
 
-    -  This procedure cannot be used if the column refers to the objective
-       variable.
+    -  This procedure cannot be used if the objective variable is passed
+       as *column*.
 
     -  In case the generated mathematical program is nonlinear, this
        procedure will fail if one the columns is part of a nonlinear term in
@@ -60,7 +60,7 @@ Return Value
     -  GMP procedures operate on a generated mathematical program in which
        all variables are moved to the left-hand-side of each constraint.
        This can have an influence on the sign of the coeffients as
-       demonstrated in the example of procedure ``GMP::Coefficient::Set``.
+       demonstrated in the example of procedure :aimms:func:`GMP::Coefficient::Set`.
 
 Example
 -------

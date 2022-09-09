@@ -33,7 +33,7 @@ Return Value
 .. note::
 
     The program status is only available if the solution has been retrieved
-    from the solver, or if the procedure ``GMP::Solution::SetProgramStatus``
+    from the solver, or if the procedure :aimms:func:`GMP::Solution::SetProgramStatus`
     has been called before.
 
 .. seealso::

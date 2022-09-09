@@ -19,7 +19,7 @@ Definition
 ----------
 
     The set :aimms:set:`AllRowTypes` contains the collection of all possible row
-    types available in the matrix manipulation library of AIMMS.
+    types available in AIMMS.
 
 Updatability
 ------------
@@ -33,5 +33,5 @@ Updatability
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Row::SetType`. Matrix manipulation is discussed in more detail
+    The function :aimms:func:`GMP::Row::SetType`. The GMP library is discussed in more detail
     in :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

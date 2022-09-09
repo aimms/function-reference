@@ -7,15 +7,23 @@ GMP::Solver::InitializeEnvironment
 
 | The procedure :aimms:func:`GMP::Solver::InitializeEnvironment` can be used to
   initialize a solver environment. By using the procedure
-  ``GMP::Solver::FreeEnvironment`` you can free a solver environment; by
+  :aimms:func:`GMP::Solver::FreeEnvironment` you can free a solver environment; by
   using this procedure you can initialize it again.
+|
 | Normally AIMMS initializes solver environments at startup and frees
-  them when it is closed. The procodures
+  them when it is closed. The procedures
   :aimms:func:`GMP::Solver::InitializeEnvironment` and
-  ``GMP::Solver::FreeEnvironment`` can be used to initialize and free a
+  :aimms:func:`GMP::Solver::FreeEnvironment` can be used to initialize and free a
   solver environment multiple times inside one AIMMS sesstion. Both
   procedures are typically used for solvers running on a remote server
   or a cloud system.
+|
+| Several environment parameters can be set using the optional arguments. Instead you
+  can also use one of the following procedures to set these or other parameters:
+  
+  * :aimms:func:`GMP::Solver::SetEnvironmentDoubleParameter`
+  * :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter`
+  * :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`
 
 .. code-block:: aimms
 
@@ -71,10 +79,11 @@ Return Value
     -  This procedure can be used in combination with a normal solve
        statement.
 
-    -  This procedure is only supported by GUROBI.
+    -  This procedure is only supported by Gurobi.
 
     -  If the *computeserver* argument is not specified then the compute
-       server must be specified via a Gurobi client license key file.
+       server must be specified via a Gurobi client license key file, or using
+       the procedure :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`.
 
     -  The *computeserver* argument can refer to a server using its name or
        its IP address. If you are using a non-default port, the server name
@@ -104,20 +113,24 @@ Example
 
     .. code-block:: aimms
 
-               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0', computeserver: "myserver1:61000" );
+               MIPSolver := 'Gurobi 9.5';
+               
+               GMP::Solver::InitializeEnvironment( MIPSolver, computeserver: "myserver1:61000", priority: 10 );
 
                solve MP1;
 
-               GMP::Solver::FreeEnvironment( 'Gurobi 9.0' );
+               GMP::Solver::FreeEnvironment( MIPSolver );
 
-               GMP::Solver::InitializeEnvironment( 'Gurobi 9.0', computeserver: "myserver1:61000",
-                                                   priority: 10 );
+               GMP::Solver::SetEnvironmentStringParameter( MIPSolver, "ComputeServer", "myserver1:61000" );
+               GMP::Solver::SetEnvironmentIntegerParameter( MIPSolver, "CSPriority", 10 );
+
+               GMP::Solver::InitializeEnvironment( MIPSolver );
 
                mgGMP := GMP::Instance::Generate( MP2 );
                GMP::Instance::Solve( myGMP );
 
-               GMP::Solver::FreeEnvironment( 'Gurobi 9.0' );
+               GMP::Solver::FreeEnvironment( MIPSolver );
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Solver::FreeEnvironment`.
+    The procedures :aimms:func:`GMP::Solver::FreeEnvironment`, :aimms:func:`GMP::Solver::SetEnvironmentDoubleParameter`, :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter` and :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`.

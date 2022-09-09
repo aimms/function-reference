@@ -47,8 +47,8 @@ Return Value
     -  If the objective coefficient of the deviation column (if any) was not
        changed, the weight equals the penalty multiplier multiplied with the
        marginal value of the row that was used when the linearization was
-       added with ``GMP::Linearization::Add`` or
-       ``GMP::Linearization::AddSingle``.
+       added with :aimms:func:`GMP::Linearization::Add` or
+       :aimms:func:`GMP::Linearization::AddSingle`.
 
 .. seealso::
 

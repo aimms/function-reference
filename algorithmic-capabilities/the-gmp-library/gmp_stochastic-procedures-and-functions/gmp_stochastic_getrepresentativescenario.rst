@@ -37,7 +37,7 @@ Return Value
 .. note::
 
     The *GMP* should have been created by the function
-    ``GMP::Instance::GenerateStochasticProgram``.
+    :aimms:func:`GMP::Instance::GenerateStochasticProgram`.
 
 .. seealso::
 

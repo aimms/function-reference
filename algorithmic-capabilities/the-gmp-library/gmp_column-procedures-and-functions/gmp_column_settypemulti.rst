@@ -1,12 +1,12 @@
-.. aimms:procedure:: GMP::Column::SetTypeMulti(GMP, column, type)
+.. aimms:procedure:: GMP::Column::SetTypeMulti(GMP, binding, column, type)
 
 .. _GMP::Column::SetTypeMulti:
 
 GMP::Column::SetTypeMulti
 =========================
 
-The procedure :aimms:func:`GMP::Column::SetTypeMulti` changes the type of a
-group of columns, belonging to a variable, in the matrix of a generated mathematical program.
+The procedure :aimms:func:`GMP::Column::SetTypeMulti` changes the types of a
+group of columns, belonging to a variable, in a generated mathematical program.
 
 .. code-block:: aimms
 
@@ -28,11 +28,11 @@ Arguments
         indices.
 
     *column*
-        A variable that, combined with the ``binding`` domain, specifies the
+        A variable that, combined with the *binding* domain, specifies the
         columns.
 
     *type*
-        An element parameter in :aimms:set:`AllColumnTypes`, defined over the binding domain ``binding``.
+        An element parameter in :aimms:set:`AllColumnTypes`, defined over the *binding* domain.
 
 Return Value
 ------------

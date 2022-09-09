@@ -63,4 +63,4 @@ Updatability
 .. seealso::
 
     The set :aimms:set:`AllDataFiles`. Accessing cases from within an AIMMS model is
-    discussed in full detail in Section 16.2 of the `User's Guide <https://documentation.aimms.com/_downloads/AIMMS_user.pdf>`__.
+    discussed in full detail in :doc:`data-management/case-management/managing-multiple-case-selections`.

@@ -54,14 +54,17 @@ if os.name != 'nt':
     #Imports sitemap extension to build the sitemap automatically
     extensions.append('sphinx_sitemap')
     html_baseurl = "https://documentation.aimms.com/functionreference/"
-    extensions.append('sphinx_last_updated_by_git')
+    #extensions.append('sphinx_last_updated_by_git')
 
 intersphinx_mapping = {'howto': ('https://how-to.aimms.com/', None),
                        'lr': ('https://documentation.aimms.com/language-reference', None),
+                       'ug': ('https://documentation.aimms.com/user-guide', None),
                        'docs': ('https://documentation.aimms.com', None)}
 
 # A list of regular expressions that match URIs that should not be checked when doing a linkcheck build.   
-linkcheck_ignore = [r'https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html']
+linkcheck_ignore = [r'https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html',
+                    r'https://www.gurobi.com/documentation/9.1/refman/configuration_parameters.html',
+                    r'https://www.gurobi.com/documentation/9.1/refman/parameters.html#sec:Parameters']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -125,8 +128,8 @@ html_theme_options = {
     'display_local_toc' : False,
     'titles_only' : True,
     'display_algolia_search': False,
-    'google_analytics_id': 'UA-1290545-13',
-    'generate_google_analytics' : Display_3rd_Party_Extensions,
+    'google_tag_manager_id': 'GTM-5T37RFM',
+    'generate_google_tag_manager' : Display_3rd_Party_Extensions,
     'display_help_and_feedback' : True,
     'is_github' : True,
     'repo_url' : "https://github.com/aimms/function-reference",

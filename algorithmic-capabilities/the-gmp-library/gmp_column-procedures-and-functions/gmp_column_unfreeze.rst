@@ -6,7 +6,7 @@ GMP::Column::Unfreeze
 =====================
 
 The procedure :aimms:func:`GMP::Column::Unfreeze` removes the frozen status of a
-column in the matrix of a generated mathematical program.
+column in a generated mathematical program.
 
 .. code-block:: aimms
 
@@ -33,15 +33,14 @@ Return Value
 
 .. note::
 
-    -  Use ``GMP::Column::UnfreezeMulti`` if many columns corresponding to
-       some variable have to be unfrozen, because that will be more
-       efficient.
+    -  Use :aimms:func:`GMP::Column::UnfreezeMulti` or :aimms:func:`GMP::Column::UnfreezeRaw`
+       if many columns have to be unfrozen, because that will be more efficient.
 
-    -  During a call to function ``GMP::Column::Freeze`` AIMMS stores the
-       upper and lower bound of the column before the function was called.
-       This information is used when function :aimms:func:`GMP::Column::Unfreeze` is
+    -  During a call to procedure :aimms:func:`GMP::Column::Freeze` AIMMS stores the
+       upper and lower bound of the column before the procedure was called.
+       This information is used when procedure :aimms:func:`GMP::Column::Unfreeze` is
        called thereafter. This information is not copied by the function
-       ``GMP::Instance::Copy``. Therefore the call to
+       :aimms:func:`GMP::Instance::Copy`. Therefore the call to
        :aimms:func:`GMP::Column::Unfreeze` in the following piece of code is useless:
 
        .. code-block:: aimms
@@ -52,4 +51,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::UnfreezeMulti`, :aimms:func:`GMP::Column::Freeze` and :aimms:func:`GMP::Instance::Copy`.
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::UnfreezeMulti`, :aimms:func:`GMP::Column::UnfreezeRaw`, :aimms:func:`GMP::Column::Freeze` and :aimms:func:`GMP::Instance::Copy`.

@@ -10,13 +10,16 @@ instance:
 
    gmp_row_activate
    gmp_row_activatemulti
+   gmp_row_activateraw
    gmp_row_add
    gmp_row_addmulti
    gmp_row_deactivate
    gmp_row_deactivatemulti
+   gmp_row_deactivateraw
    gmp_row_delete
    gmp_row_deleteindicatorcondition
    gmp_row_deletemulti
+   gmp_row_deleteraw
    gmp_row_generate
    gmp_row_generatemulti
    gmp_row_getconvex
@@ -26,6 +29,7 @@ instance:
    gmp_row_getname
    gmp_row_getrelaxationonly
    gmp_row_getrighthandside
+   gmp_row_getrighthandsideraw
    gmp_row_getscale
    gmp_row_getstatus
    gmp_row_gettype
@@ -37,5 +41,7 @@ instance:
    gmp_row_setrelaxationonly
    gmp_row_setrighthandside
    gmp_row_setrighthandsidemulti
+   gmp_row_setrighthandsideraw
    gmp_row_settype
    gmp_row_settypemulti
+   gmp_row_settyperaw
