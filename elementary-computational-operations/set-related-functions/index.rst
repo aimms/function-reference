@@ -19,6 +19,7 @@ AIMMS supports the following set related functions:
    restoreinactiveelements
    retrievecurrentvariablevalues
    setaddrecursive
+   setasstring
    setelementadd
    setelementrename
    stringtoelement
