@@ -12,4 +12,3 @@ Elementary Computational Operations
    financial-functions/index
    distribution-and-combinatoric-functions/index
    histogram-functions/index
-   forecasting-functions/index
