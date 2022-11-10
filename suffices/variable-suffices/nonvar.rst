@@ -9,14 +9,17 @@ Definition
     The ``.Nonvar`` suffix controls whether individual variables are frozen
     or not. This suffix can take on three values:
 
-    #. This variable is not frozen and a value for the variable should be
+    ``0``
+       This variable is not frozen and a value for the variable should be
        found in the next solve statement.
 
-    #. This variable is frozen and it will retain its value during the SOLVE
+    ``1``
+       This variable is frozen and it will retain its value during the SOLVE
        statement. The corresponding column will be removed from the
        generated mathematical program for the sake of efficiency.
 
-    #. This variable is frozen and it will retain its value during the SOLVE
+    ``-1``
+       This variable is frozen and it will retain its value during the SOLVE
        statement. The corresponding column will *not* be removed from the
        generated mathematical program but can be manipulated during
        subsequent calls of the GMP function library.
@@ -42,7 +45,11 @@ Dimension
 
     -  See also :doc:`optimization-modeling-components/variable-and-constraint-declaration/variable-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
-    -  The AIMMS 2 equivalent suffix name is ``.freeze``.
+    -  The option ``Bound_tolerance`` can affect variables that are frozen
+       using the .Nonvar suffix, using a value of 1, but only if the level
+       value of the variable is outside its bounds. If the bound violation
+       is greater than the bound tolerance then the level value will be
+       rounded to the nearest bound, and otherwise not.
 
     -  The ``.NonVar`` suffix should not be confused with the GAMS suffix
        ``.fx``. This latter suffix is a shorthand for the GAMS suffixes
