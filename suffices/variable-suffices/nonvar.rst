@@ -41,16 +41,16 @@ Dimension
     -  When the ``.lower`` suffix of a variable is equal to the ``.upper``
        suffix of the same variable that variable is treated as a frozen
        variable and subsequently removed from the generated mathematical
-       program independently from the setting of the ``.nonvar`` suffix.
+       program independently from the setting of the ``.Nonvar`` suffix.
 
     -  See also :doc:`optimization-modeling-components/variable-and-constraint-declaration/variable-declaration-and-attributes` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
     -  The option ``Bound_tolerance`` can affect variables that are frozen
-       using the .Nonvar suffix, using a value of 1, but only if the level
+       using the ``.Nonvar`` suffix, using a value of 1, but only if the level
        value of the variable is outside its bounds. If the bound violation
        is greater than the bound tolerance then the level value will be
        rounded to the nearest bound, and otherwise not.
 
-    -  The ``.NonVar`` suffix should not be confused with the GAMS suffix
+    -  The ``.Nonvar`` suffix should not be confused with the GAMS suffix
        ``.fx``. This latter suffix is a shorthand for the GAMS suffixes
        ``.l``, ``.lo`` and ``.up``.
