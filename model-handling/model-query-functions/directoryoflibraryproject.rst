@@ -5,7 +5,7 @@
 DirectoryOfLibraryProject
 ==========================
 
-Via the procedure :aimms:func:`DirectoryOfLibraryProject` the name of the folder (directory) where a library is located can be obtained. This is the folder where the corresponding `.libprj` file exists.
+Via the procedure :aimms:func:`DirectoryOfLibraryProject` the name of the folder (directory) where a library is located can be obtained. This is the folder where the corresponding `Project.xml` file exists.
 
 .. code-block:: aimms
 
@@ -21,7 +21,7 @@ Arguments
         The name of the library or the name of the library prefix.
 
     *directoryname* 
-        The full path to the folder where the .libprj file of the library is located.
+        The full path to the folder where the `Project.xml` file of the library is located.
 
 Return value
 -------------
