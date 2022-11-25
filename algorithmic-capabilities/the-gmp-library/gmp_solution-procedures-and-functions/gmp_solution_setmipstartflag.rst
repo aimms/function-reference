@@ -45,7 +45,7 @@ Return Value
 
 .. note::
 
-    -  This procedure is only supported by CPLEX and Gurobi.
+    -  This procedure is only supported by CPLEX, Gurobi and COPT.
     
     -  The argument *effortLevel* is only used by CPLEX.
     

@@ -45,6 +45,8 @@ Return Value
     -  To remove the callback the empty element should be used as the
        *callback* argument.
 
+    -  This procedure is not supported by COPT.
+
 .. seealso::
 
     The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`, :aimms:func:`GMP::Instance::SetCallbackBranch`, :aimms:func:`GMP::Instance::SetCallbackCandidate`,

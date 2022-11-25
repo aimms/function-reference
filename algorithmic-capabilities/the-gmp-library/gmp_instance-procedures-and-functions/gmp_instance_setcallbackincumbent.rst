@@ -45,6 +45,8 @@ Return Value
     -  To remove the callback the empty element should be used as the
        *callback* argument.
 
+    -  This procedure is not supported by COPT.
+
     -  The functionality of the procedure
        :aimms:func:`GMP::Instance::SetCallbackIncumbent` has been changed between
        AIMMS versions 4.68 and 4.69. In AIMMS version 4.68 and older this

@@ -61,6 +61,8 @@ Return Value
     -  The iterations callback will be called less often if CPLEX uses
        dynamic search as the MIP Search Strategy instead of branch-and-cut.
 
+    -  This procedure is not supported by COPT.
+
 .. seealso::
 
     The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`, :aimms:func:`GMP::Instance::SetCallbackBranch`, :aimms:func:`GMP::Instance::SetCallbackCandidate`,
