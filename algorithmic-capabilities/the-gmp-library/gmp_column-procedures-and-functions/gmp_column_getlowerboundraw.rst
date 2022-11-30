@@ -39,7 +39,7 @@ Return Value
 
 .. note::
 
-    -  If a column has a unit then the scaled upper bound is retrieved
+    -  If a column has a unit then the scaled lower bound is retrieved
        (without unit).
     
     -  This procedure is much more efficient than calling the function 

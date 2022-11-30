@@ -29,7 +29,7 @@ Arguments
         where :math:`n` is the number of columns in the matrix.
 
     *ubs*
-        A real-valued parameter over colSet indicating the lower bound 
+        A real-valued parameter over colSet indicating the upper bound 
         values of each column in colSet.
 
 Return Value
