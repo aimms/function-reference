@@ -20,5 +20,5 @@ Datatype
     -  The related GAMS and AIMMS 2 name is ``.modelstat`` but that value is
        a numeric code.
 
-    -  The ``.ProgramStatus`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver` of the
-        Language Reference.
+    -  The ``.ProgramStatus`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver`
+       of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

@@ -25,5 +25,5 @@ Datatype
     -  The ``.BestBound`` suffix suffix also contains the current best bound during the solve of a nonconvex
        QP or QCP problem with GUROBI, if the GUROBI option *Nonconvex Strategy* is set to 'Translate'.
 
-    -  The ``.BestBound`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver` of the
-        Language Reference.
+    -  The ``.BestBound`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver`
+       of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

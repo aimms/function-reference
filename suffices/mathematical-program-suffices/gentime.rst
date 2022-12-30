@@ -23,4 +23,5 @@ Datatype
 
     -  The equivalent GAMS and AIMMS 2 name is ``.resgen``.
 
-    -  The ``.GenTime`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver`.
+    -  The ``.GenTime`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver`
+       of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

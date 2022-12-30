@@ -23,5 +23,5 @@ Datatype
 
     -  The GAMS and AIMMS 2 equivalent name is ``.resusd``.
 
-    -  The ``.SolutionTime`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver` of the
-        Language Reference.
+    -  The ``.SolutionTime`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver`
+       of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

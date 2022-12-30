@@ -159,11 +159,11 @@ in order not to invalidate converted AIMMS 2 and ``GAMS`` models.
    numberofconstraints
    numberoffails
    numberofinfeasibilities
+   sumofinfeasibilities
    numberofnonzeros
    numberofvariables
    callbackiterations
    callbackprocedure
-   sumofinfeasibilities
    callbackstatuschange
    callbacktime
    callbackincumbent

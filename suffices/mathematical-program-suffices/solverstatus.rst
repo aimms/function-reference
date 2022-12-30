@@ -20,5 +20,5 @@ Datatype
     -  The related GAMS and AIMMS 2 name is ``.SolveStat`` but that value is
        a numeric code.
 
-    -  The ``.SolverStatus`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver` of the
-        Language Reference.
+    -  The ``.SolverStatus`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver`
+       of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
