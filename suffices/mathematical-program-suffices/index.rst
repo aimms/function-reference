@@ -38,7 +38,7 @@ the solve statement.
 
 -  :ref:`.SolverCalls`
 
--  :ref:`.objective`
+-  :ref:`.Objective`
 
 -  :ref:`.incumbent`
 
@@ -49,6 +49,8 @@ the solve statement.
 -  :ref:`.SolutionTime`
 
 -  :ref:`.Iterations`
+
+-  :ref:`.Nodes`
 
 -  :ref:`.NumberOfBranches`
 
