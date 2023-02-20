@@ -96,13 +96,13 @@ Return Value
           ``v.ExtendedConstraint('EliminationUpperBound``\ *k*\ ``',i)`` and
           ``v.ExtendedConstraint('Elimination``\ *k*\ ``',i)`` are added for
           each integer variable ``v(i)`` with the level value between its
-          bounds. (These constraints correspond to (:eq:`eq:aier1`, (:eq:`eq:aier2` and
-          (:eq:`eq:aier3` respectively.)
+          bounds. (These constraints correspond to :eq:`eq:aier1`, :eq:`eq:aier2` and
+          :eq:`eq:aier3` respectively.)
 
        -  Constraint ``mp.ExtendedConstraint('Elimination``\ *k*\ ``')``,
           where ``mp`` denotes the symbolic mathematical program, is added
           for every call to :aimms:func:`GMP::Instance::AddIntegerEliminationRows`.
-          (This constraint corresponds to (:eq:`eq:aier4`.)
+          (This constraint corresponds to :eq:`eq:aier4`.)
 
        Here :math:`k` denotes the value of the argument *elimNo*.
 
