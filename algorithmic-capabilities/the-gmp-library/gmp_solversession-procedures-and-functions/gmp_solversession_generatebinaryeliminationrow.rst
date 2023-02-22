@@ -50,10 +50,8 @@ Return Value
        adds the following row:
 
        .. math::
-          :label: eq:gber1
-
           \begin{aligned}
-           \sum_{i\in S_{lo}} x_i - \sum_{i\in S_{up}} x_i \geq 1 - \sum_{i\in S_{up}} lev_i  \end{aligned}
+           \sum_{i\in S_{lo}} x_i - \sum_{i\in S_{up}} x_i \geq 1 - |S_{up}|  \end{aligned}
 
        \ where :math:`S_{lo}` defines the set of binary columns whose level
        values equals 0 and :math:`S_{up}` the set of binary columns whose
