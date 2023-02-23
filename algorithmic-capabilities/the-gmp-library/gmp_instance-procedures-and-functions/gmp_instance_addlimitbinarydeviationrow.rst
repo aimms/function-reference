@@ -1,6 +1,6 @@
 .. aimms:procedure:: GMP::Instance::AddLimitBinaryDeviationRow(GMP, solution, varSet, deviation, refNo )
 
-.. _GMP::Instance::AddIntegerEliminationRows:
+.. _GMP::Instance::AddLimitBinaryDeviationRow:
 
 GMP::Instance::AddLimitBinaryDeviationRow
 =========================================
