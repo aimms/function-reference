@@ -1,4 +1,4 @@
-.. aimms:procedure:: GMP::Instance::AddIntegerEliminationRows(GMP, solution, elimNo)
+.. aimms:procedure:: GMP::Instance::AddIntegerEliminationRows(GMP, solution, refNo)
 
 .. _GMP::Instance::AddIntegerEliminationRows:
 
@@ -14,7 +14,7 @@ eliminate an integer solution.
     GMP::Instance::AddIntegerEliminationRows(
          GMP,          ! (input) a generated mathematical program
          solution,     ! (input) a solution
-         elimNo        ! (input) an elimination number
+         refNo         ! (input) a scalar integer value
          )
 
 Arguments
@@ -26,8 +26,8 @@ Arguments
     *solution*
         An integer scalar reference to a solution.
 
-    *elimNo*
-        An integer scalar reference to an elimination number.
+    *refNo*
+        A positive integer scalar value representing a reference number.
 
 Return Value
 ------------
@@ -36,7 +36,7 @@ Return Value
 
 .. note::
 
-    -  Rows and columns added before for *elimNo* will be deleted first.
+    -  Rows and columns added before for *refNo* will be deleted first.
 
     -  If the GMP contains only binary variables then only one row will be
        added; if the GMP contains general integer variables then several
@@ -102,7 +102,7 @@ Return Value
           for every call to :aimms:func:`GMP::Instance::AddIntegerEliminationRows`.
           (This constraint corresponds to :eq:`eq:aier4`.)
 
-       Here :math:`k` denotes the value of the argument *elimNo*.
+       Here :math:`k` denotes the value of the argument *refNo*.
 
 Example
 -------
