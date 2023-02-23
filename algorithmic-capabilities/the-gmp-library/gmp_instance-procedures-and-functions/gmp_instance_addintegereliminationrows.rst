@@ -36,8 +36,6 @@ Return Value
 
 .. note::
 
-    -  If the GMP is not integer then this procedure will fail.
-
     -  Rows and columns added before for *elimNo* will be deleted first.
 
     -  If the GMP contains only binary variables then only one row will be
@@ -114,21 +112,21 @@ Example
 
     .. code-block:: aimms
 
-               gmp_mip := GMP::Instance::Generate(MIP_Model);
+               gmp_mip := GMP::Instance::Generate( MIP_Model );
 
                cnt := 1;
 
                while ( cnt <= 5 ) do
-                   GMP::Instance::Solve(gmp_mip);
+                   GMP::Instance::Solve( gmp_mip );
 
                    ! Eliminate previous found integer solution.
-                   GMP::Instance::AddIntegerEliminationRows(gmp_mip,1,cnt);
+                   GMP::Instance::AddIntegerEliminationRows( gmp_mip, 1, cnt );
 
                    cnt += 1;
 
                    ! Copy solution at position 1 to solution at position cnt
                    ! in solution repository.
-                   GMP::Solution::Copy(gmp_mip,1,cnt);
+                   GMP::Solution::Copy( gmp_mip, 1, cnt );
                endwhile;
     
     After executing this code, the five best integer solutions will be

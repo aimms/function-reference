@@ -13,7 +13,7 @@ column numbers that are generated for a set of variables.
 
     GMP::Instance::GetColumnNumbers(
          GMP,                ! (input) a generated mathematical program
-         variableSet,        ! (input) a set of variables
+         variableSet         ! (input) a set of variables
          )
 
 Arguments

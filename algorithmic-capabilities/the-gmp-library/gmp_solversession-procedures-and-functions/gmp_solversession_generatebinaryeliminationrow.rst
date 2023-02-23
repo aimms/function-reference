@@ -51,10 +51,10 @@ Return Value
 
        .. math::
           \begin{aligned}
-           \sum_{i\in S_{lo}} x_i - \sum_{i\in S_{up}} x_i \geq 1 - |S_{up}|  \end{aligned}
+           \sum_{i\in S_{0}} x_i - \sum_{i\in S_{1}} x_i \geq 1 - |S_{1}|  \end{aligned}
 
-       \ where :math:`S_{lo}` defines the set of binary columns whose level
-       values equals 0 and :math:`S_{up}` the set of binary columns whose
+       \ where :math:`S_{0}` defines the set of binary columns whose level
+       values equals 0 and :math:`S_{1}` the set of binary columns whose
        level values equals 1.
 
 Example
