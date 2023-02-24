@@ -6,8 +6,13 @@ GMP::Instance::AddLimitBinaryDeviationRow
 =========================================
 
 The procedure :aimms:func:`GMP::Instance::AddLimitBinaryDeviationRow` adds a row to a GMP that sets a
-limit on the number of binary columns, from a given set of variables, whose solution value is allowed
-to change from the solution value in a given solution.
+limit on the number of binary columns, from a given set of variables, of which the solution value is allowed
+to vary.
+
+A scenario in which the procedure could be used is the following. Imagine you have created a production
+plan based on optimizing some mathematical program and that something unexpected
+happened that (partly) ruined the plan. You now have to re-optimize the mathematical program, with some
+changes, but would like the solution of the new optimization to be close to the previous one.
 
 .. code-block:: aimms
 
