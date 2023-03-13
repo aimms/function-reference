@@ -1,4 +1,4 @@
-.. aimms:function:: GMP::SolverSession::GetIIS(solverSession, rowSet, colSet)
+.. aimms:procedure:: GMP::SolverSession::GetIIS(solverSession, rowSet, colSet)
 
 .. _GMP::SolverSession::GetIIS:
 

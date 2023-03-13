@@ -26,8 +26,8 @@ Arguments
         An element in :aimms:set:`AllGeneratedMathematicalPrograms`.
 
     *row*
-        A scalar reference to an existing row in the matrix or the number of
-        that row in the range :math:`\{ 0 .. m-1 \}` where :math:`m` is the
+        A scalar reference to an existing row in the matrix or an element in the
+        set :aimms:set:`Integers` in the range :math:`\{ 0 .. m-1 \}` where :math:`m` is the
         number of rows in the matrix.
 
     *value*
