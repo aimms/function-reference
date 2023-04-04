@@ -8,6 +8,7 @@ managing generated mathematical program instances:
    :maxdepth: 1
 
    gmp_instance_addintegereliminationrows
+   gmp_instance_addlimitbinarydeviationrow
    gmp_instance_calculatesubgradient
    gmp_instance_copy
    gmp_instance_createblockmatrices
@@ -19,6 +20,7 @@ managing generated mathematical program instances:
    gmp_instance_createsolversession
    gmp_instance_delete
    gmp_instance_deleteintegereliminationrows
+   gmp_instance_deletelimitbinarydeviationrow
    gmp_instance_deletemultiobjectives
    gmp_instance_deletesolversession
    gmp_instance_findapproximatelyfeasiblesolution

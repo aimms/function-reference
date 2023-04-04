@@ -1,4 +1,4 @@
-.. aimms:procedure:: GMP::Instance::AddIntegerEliminationRows(GMP, solution, elimNo)
+.. aimms:procedure:: GMP::Instance::AddIntegerEliminationRows(GMP, solution, refNo)
 
 .. _GMP::Instance::AddIntegerEliminationRows:
 
@@ -14,7 +14,7 @@ eliminate an integer solution.
     GMP::Instance::AddIntegerEliminationRows(
          GMP,          ! (input) a generated mathematical program
          solution,     ! (input) a solution
-         elimNo        ! (input) an elimination number
+         refNo         ! (input) a scalar integer value
          )
 
 Arguments
@@ -26,8 +26,8 @@ Arguments
     *solution*
         An integer scalar reference to a solution.
 
-    *elimNo*
-        An integer scalar reference to an elimination number.
+    *refNo*
+        A positive integer scalar value representing a reference number.
 
 Return Value
 ------------
@@ -36,9 +36,7 @@ Return Value
 
 .. note::
 
-    -  If the GMP is not integer then this procedure will fail.
-
-    -  Rows and columns added before for *elimNo* will be deleted first.
+    -  Rows and columns added before for *refNo* will be deleted first.
 
     -  If the GMP contains only binary variables then only one row will be
        added; if the GMP contains general integer variables then several
@@ -104,7 +102,7 @@ Return Value
           for every call to :aimms:func:`GMP::Instance::AddIntegerEliminationRows`.
           (This constraint corresponds to :eq:`eq:aier4`.)
 
-       Here :math:`k` denotes the value of the argument *elimNo*.
+       Here :math:`k` denotes the value of the argument *refNo*.
 
 Example
 -------
@@ -114,21 +112,21 @@ Example
 
     .. code-block:: aimms
 
-               gmp_mip := GMP::Instance::Generate(MIP_Model);
+               gmp_mip := GMP::Instance::Generate( MIP_Model );
 
                cnt := 1;
 
                while ( cnt <= 5 ) do
-                   GMP::Instance::Solve(gmp_mip);
+                   GMP::Instance::Solve( gmp_mip );
 
                    ! Eliminate previous found integer solution.
-                   GMP::Instance::AddIntegerEliminationRows(gmp_mip,1,cnt);
+                   GMP::Instance::AddIntegerEliminationRows( gmp_mip, 1, cnt );
 
                    cnt += 1;
 
                    ! Copy solution at position 1 to solution at position cnt
                    ! in solution repository.
-                   GMP::Solution::Copy(gmp_mip,1,cnt);
+                   GMP::Solution::Copy( gmp_mip, 1, cnt );
                endwhile;
     
     After executing this code, the five best integer solutions will be

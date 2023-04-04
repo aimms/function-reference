@@ -13,7 +13,7 @@ numbers that are generated for a set of constraints.
 
     GMP::Instance::GetRowNumbers(
          GMP,                  ! (input) a generated mathematical program
-         constraintSet,        ! (input) a set of constraints
+         constraintSet        ! (input) a set of constraints
          )
 
 Arguments

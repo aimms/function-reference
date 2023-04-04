@@ -1,4 +1,4 @@
-.. aimms:procedure:: GMP::Instance::DeleteIntegerEliminationRows(GMP, elimNo)
+.. aimms:procedure:: GMP::Instance::DeleteIntegerEliminationRows(GMP, refNo)
 
 .. _GMP::Instance::DeleteIntegerEliminationRows:
 
@@ -13,7 +13,7 @@ mathematical program.
 
     GMP::Instance::DeleteIntegerEliminationRows(
          GMP,          ! (input) a generated mathematical program
-         elimNo        ! (input) an elimination number
+         refNo         ! (input) a scalar integer value
          )
 
 Arguments
@@ -22,8 +22,8 @@ Arguments
     *GMP*
         An element in :aimms:set:`AllGeneratedMathematicalPrograms`.
 
-    *elimNo*
-        An integer scalar reference to an elimination number.
+    *refNo*
+        A positive integer scalar value representing a reference number.
 
 Return Value
 ------------
