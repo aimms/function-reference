@@ -1,4 +1,4 @@
-.. aimms:procedure:: GMP::Instance::AddLimitBinaryDeviationRow(GMP, solution, varSet, deviation, refNo )
+.. aimms:procedure:: GMP::Instance::AddLimitBinaryDeviationRow(GMP, solution, varSet, deviation, refNo)
 
 .. _GMP::Instance::AddLimitBinaryDeviationRow:
 
@@ -16,11 +16,11 @@ changes, but would like the solution of the new optimization to be close to the 
 
 .. code-block:: aimms
 
-    GMP::Instance::AddLimitBinaryDeviationRow
+    GMP::Instance::AddLimitBinaryDeviationRow(
          GMP,          ! (input) a generated mathematical program
          solution,     ! (input) a solution
          variableSet,  ! (input) a reference number
-         deviation     ! (input) a scalar integer value
+         deviation,    ! (input) a scalar integer value
          [refNo]       ! (optional, default 1) a scalar integer value
          )
 
