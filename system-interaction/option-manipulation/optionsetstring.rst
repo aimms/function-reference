@@ -44,7 +44,7 @@ Return Value
     -  The procedure :aimms:func:`OptionSetString` can also be used to set
        a solver specific option by prefixing the option name by the name of
        the solver followed by a double colon ``::``, e.g.,
-       ''"CPLEX 22.1::LP method"''.
+       "CPLEX 22.1::LP method".
 
 .. seealso::
 
