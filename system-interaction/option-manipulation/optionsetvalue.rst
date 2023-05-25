@@ -39,6 +39,11 @@ Return Value
        obtain the corresponding option keywords, you can use the procedures
        :aimms:func:`OptionGetString` and :aimms:func:`OptionGetKeywords`.
 
+    -  The procedure :aimms:func:`OptionSetValue` can also be used to set
+       a solver specific option by prefixing the option name by the name of
+       the solver followed by a double colon ``::``, e.g.,
+       ''"CPLEX 22.1::Integrality"''.
+
     -  You can also modify option values using the ``OPTION`` statement (see
        also :doc:`procedural-language-components/execution-statements/the-option-and-property-statements` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).
 
