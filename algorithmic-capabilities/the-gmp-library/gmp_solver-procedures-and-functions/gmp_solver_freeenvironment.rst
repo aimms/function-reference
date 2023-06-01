@@ -50,9 +50,12 @@ Return Value
 Example
 -------
 
+    Assume that 'MIPSolver' is an element parameter with range :aimms:set:`AllSolvers`
+    and 'myGMP' is an element parameter with range :aimms:set:`AllGeneratedMathematicalPrograms`.
+
     .. code-block:: aimms
 
-               MIPSolver := 'Gurobi 9.5';
+               MIPSolver := 'Gurobi 10.0';
                
                GMP::Solver::InitializeEnvironment( MIPSolver );
 
