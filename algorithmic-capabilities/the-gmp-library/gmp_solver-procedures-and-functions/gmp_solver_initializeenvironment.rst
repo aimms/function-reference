@@ -117,12 +117,16 @@ Example
     .. code-block:: aimms
 
                MIPSolver := 'Gurobi 10.0';
-               
+
+               ! First solve using normal solve statement.
+
                GMP::Solver::InitializeEnvironment( MIPSolver, computeserver: "myserver1:61000", priority: 10 );
 
                solve MP1;
 
                GMP::Solver::FreeEnvironment( MIPSolver );
+
+               ! Second solve using GMP solve.
 
                GMP::Solver::SetEnvironmentStringParameter( MIPSolver, "ComputeServer", "myserver1:61000" );
                GMP::Solver::SetEnvironmentIntegerParameter( MIPSolver, "CSPriority", 10 );

@@ -56,12 +56,16 @@ Example
     .. code-block:: aimms
 
                MIPSolver := 'Gurobi 10.0';
-               
+
+               ! First solve using normal solve statement.
+
                GMP::Solver::InitializeEnvironment( MIPSolver );
 
                solve MP1;
 
                GMP::Solver::FreeEnvironment( MIPSolver );
+
+               ! Second solve using GMP solve.
 
                GMP::Solver::InitializeEnvironment( MIPSolver );
 
