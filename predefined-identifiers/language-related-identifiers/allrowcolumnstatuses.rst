@@ -11,7 +11,7 @@ possible row and column statuses.
 .. code-block:: aimms
 
         Set AllRowColumnStatuses {
-            Index      :  IndexRowColumnStatusess;
+            Index      :  IndexRowColumnStatuses;
             Definition :  data { Active, Deactivated, Deleted, NotGenerated, PresolveDeleted };
         }
 

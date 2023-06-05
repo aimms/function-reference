@@ -7,3 +7,4 @@ Algorithmic Capabilities
    constraint-programming-functions/index
    scheduling-functions/index
    the-gmp-library/index
+   miscellaneous/index

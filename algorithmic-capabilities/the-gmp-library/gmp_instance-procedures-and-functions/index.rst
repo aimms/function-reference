@@ -52,6 +52,8 @@ managing generated mathematical program instances:
    gmp_instance_getsymbolicmathematicalprogram
    gmp_instance_memorystatistics
    gmp_instance_rename
+   gmp_instance_restorestate
+   gmp_instance_savestate
    gmp_instance_setcallbackaddcut
    gmp_instance_setcallbackaddlazyconstraint
    gmp_instance_setcallbackbranch
