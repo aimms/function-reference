@@ -5,8 +5,8 @@
 GenerateCut
 ===========
 
-The procedure :aimms:func:`GenerateCut` adds a row to the matrix during the
-solution process of a mixed integer proghram.
+The procedure :aimms:func:`GenerateCut` adds a cut during the
+solution process of a mixed integer program.
 
 .. code-block:: aimms
 
