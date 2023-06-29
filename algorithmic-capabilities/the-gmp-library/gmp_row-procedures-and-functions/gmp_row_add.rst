@@ -37,17 +37,15 @@ Return Value
     -  Coefficients for this row can be added to the matrix by using the
        procedure :aimms:func:`GMP::Coefficient::Set`.
 
-    -  After calling :aimms:func:`GMP::Row::Add` the type and the left-hand-side and
-       right-hand-side values are set according to the definition of the
-       corresponding symbolic constraint. By using the procedures
-       :aimms:func:`GMP::Row::SetType`, :aimms:func:`GMP::Row::SetLeftHandSide` and
-       :aimms:func:`GMP::Row::SetRightHandSide` the row type and row bounds can be
-       changed.
+    -  The procedure :aimms:func:`GMP::Row::Add` sets the row type to '<=' and the
+       right-hand-side value to ``INF``. By using the procedures
+       :aimms:func:`GMP::Row::SetType` and :aimms:func:`GMP::Row::SetRightHandSide`
+       the row type and the right-hand-side value can be changed.
 
     -  Use procedure :aimms:func:`GMP::Row::Generate` to generate a (non-empty) row
        according to the definition of its associated symbolic constraint.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Coefficient::Set`, :aimms:func:`GMP::Row::AddMulti`, :aimms:func:`GMP::Row::Delete`, :aimms:func:`GMP::Row::SetType`, :aimms:func:`GMP::Row::SetLeftHandSide`,
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Coefficient::Set`, :aimms:func:`GMP::Row::AddMulti`, :aimms:func:`GMP::Row::Delete`, :aimms:func:`GMP::Row::SetType`,
     :aimms:func:`GMP::Row::SetRightHandSide` and :aimms:func:`GMP::Row::Generate`.
