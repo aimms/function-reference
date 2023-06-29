@@ -40,7 +40,7 @@ Return Value
     -  Coefficients for the rows can be added to the matrix by using the
        procedure :aimms:func:`GMP::Coefficient::SetMulti`.
 
-    -  The procedure :aimms:func:`GMP::Row::AddMulti` sets the row type to '<=' and the
+    -  The procedure :aimms:func:`GMP::Row::AddMulti` sets the row type to ``'<='`` and the
        right-hand-side values to ``INF``. By using the procedures
        :aimms:func:`GMP::Row::SetTypeMulti` and :aimms:func:`GMP::Row::SetRightHandSideMulti`
        the row type and the right-hand-side value can be changed.

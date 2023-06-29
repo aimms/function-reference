@@ -37,7 +37,7 @@ Return Value
     -  Coefficients for this row can be added to the matrix by using the
        procedure :aimms:func:`GMP::Coefficient::Set`.
 
-    -  The procedure :aimms:func:`GMP::Row::Add` sets the row type to '<=' and the
+    -  The procedure :aimms:func:`GMP::Row::Add` sets the row type to ``'<='`` and the
        right-hand-side value to ``INF``. By using the procedures
        :aimms:func:`GMP::Row::SetType` and :aimms:func:`GMP::Row::SetRightHandSide`
        the row type and the right-hand-side value can be changed.
