@@ -34,11 +34,16 @@ Return Value
 
 .. note::
 
-    Options for which strings are displayed in the AIMMS **Options** dialog
-    box, are represented by numerical (integer) values internally. To obtain
-    the numerical option value, or to obtain the mapping between numerical
-    option values and the corresponding string keywords, you can use the
-    procedures :aimms:func:`OptionGetValue` and :aimms:func:`OptionGetKeywords`.
+    -  Options for which strings are displayed in the AIMMS **Options** dialog
+       box, are represented by numerical (integer) values internally. To obtain
+       the numerical option value, or to obtain the mapping between numerical
+       option values and the corresponding string keywords, you can use the
+       procedures :aimms:func:`OptionGetValue` and :aimms:func:`OptionGetKeywords`.
+
+    -  The procedure :aimms:func:`OptionGetString` can also be used to set
+       a solver specific option by prefixing the option name by the name of
+       the solver followed by a double colon ``::``, e.g.,
+       'CPLEX 22.1::LP method'.
 
 .. seealso::
 
