@@ -128,6 +128,8 @@ html_theme_options = {
     'display_local_toc' : False,
     'titles_only' : True,
     'display_algolia_search': False,
+    'aimms_support_menu_id': 'documentation',
+    'generate_aimms_support_menu' : True,
     'google_tag_manager_id': 'GTM-5T37RFM',
     'generate_google_tag_manager' : Display_3rd_Party_Extensions,
     'display_help_and_feedback' : True,
