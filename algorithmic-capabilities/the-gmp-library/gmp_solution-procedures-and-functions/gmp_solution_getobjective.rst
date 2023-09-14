@@ -32,9 +32,12 @@ Return Value
 
 .. note::
 
-    The objective function value is only available if the solution has been
-    retrieved from the solver, or if the function
-    :aimms:func:`GMP::Solution::SetObjective` has been called before.
+    -  The objective function value is only available if the solution has been
+       retrieved from the solver, or if the function
+       ``GMP::Solution::SetObjective`` has been called before.
+
+    -  For multi-objective models, the objective value refers to the (blended) objective
+       with the highest priority.
 
 .. seealso::
 

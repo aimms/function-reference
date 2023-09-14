@@ -26,6 +26,11 @@ Return Value
     In case of success, the function returns the current objective function
     value. Otherwise it returns ``UNDF``.
 
+.. note::
+
+    For multi-objective models, the objective value refers to the (blended) objective
+    with the highest priority.
+
 .. seealso::
 
     The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve` and :aimms:func:`GMP::Instance::GetBestBound`.

@@ -17,6 +17,9 @@ Datatype
 
 .. note::
 
+    -  For multi-objective models, the ``.Objective`` suffix refers to the (blended) objective
+       with the highest priority.
+
     -  The equivalent GAMS and AIMMS 2 name is ``.objval``.
 
     -  The ``.Objective`` suffix is also mentioned in Table :ref:`table:mp.suffix-mp.Solver`

@@ -25,6 +25,11 @@ Return Value
 
     The objective function value associated with a solver session.
 
+.. note::
+
+    For multi-objective models, the objective value refers to the (blended) objective
+    with the highest priority.
+
 .. seealso::
 
     The routines :aimms:func:`GMP::SolverSession::Execute`, :aimms:func:`GMP::SolverSession::GetBestBound`, :aimms:func:`GMP::SolverSession::GetIterationsUsed`, :aimms:func:`GMP::SolverSession::GetMemoryUsed`, :aimms:func:`GMP::SolverSession::GetTimeUsed` and
