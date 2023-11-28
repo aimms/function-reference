@@ -24,7 +24,7 @@ Arguments
 Return Value
 ------------
 
-    An element in the set :aimms:set:`AllSolutionStates`.
+    An element in the set :aimms:set:`AllSolverInterrupts`.
 
 .. note::
 
