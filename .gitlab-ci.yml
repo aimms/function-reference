@@ -29,10 +29,10 @@ build_and_install:
   script:
     - python3 -msphinx -W -b html . _build/html
     - python3 -msphinx.ext.intersphinx _build/html/objects.inv > _build/html/help_index_functionreference.txt
-    - bash load_ssh_key_for_deploy.sh
-    - rsync -rt --delete-excluded _build/html/ support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
     - cp -r _build/html functionreference
     - az storage copy -s 'functionreference' --recursive --destination-container '$web' -- --overwrite=true --as-subdir=true
+    - bash load_ssh_key_for_deploy.sh
+    - rsync -rt --delete-excluded _build/html/ support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
 
 compile_PDF:
   <<: *run_on_dockerhost
@@ -44,9 +44,9 @@ compile_PDF:
   script:
     - python3 -msphinx -M latex . _build
     - python3 -msphinx -M latexpdf . _build
+    - mkdir -p functionreference && cp _build/latex/AIMMS_func.pdf functionreference/AIMMS_func.pdf
+    - az storage copy -s 'functionreference' --recursive --destination-container '$web' -- --overwrite=true --as-subdir=true
     - bash load_ssh_key_for_deploy.sh
     - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/documentation.aimms.com/functionreference
     - rsync -rt _build/latex/AIMMS_func.pdf support@data.aimms.com:/home/aimms/www/data/download/manuals
-    - mkdir -p functionreference && cp _build/latex/AIMMS_func.pdf functionreference/AIMMS_func.pdf
-    - az storage copy -s 'functionreference' --recursive --destination-container '$web' -- --overwrite=true --as-subdir=true
   allow_failure: true
