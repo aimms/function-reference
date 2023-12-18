@@ -69,8 +69,20 @@ Return Value
     -  Use the procedure :aimms:func:`GMP::Instance::DeleteMultiObjectives` to delete
        all multi-objectives.
 
-    -  Multi-objective optimization is only supported by CPLEX 12.9 or
-       higher, and Gurobi.
+    -  Multi-objective optimization is only supported by CPLEX and Gurobi.
+    
+    -  Multi-objective optimization is not supported for generated mathematical programs
+       created by one of the following functions:
+
+       -  GMP::Instance::GenerateRobustCounterpart,
+       
+       -  GMP::Instance::GenerateStochasticProgram,
+       
+       -  GMP::Instance::CreatePresolved,
+       
+       -  GMP::Instance::CreateDual, or
+       
+       -  GMP::Instance::CreateMasterMIP.
 
     -  The meaning of the relaxation of the objective, which is controlled
        by the *abstol* and *reltol* arguments, depends on whether the
