@@ -25,5 +25,5 @@ AIMMS supports the following functions for error handling:
 
 .. seealso::
     
-    - Our online training about error handling `following this link <https://academy.aimms.com/course/view.php?id=50>`__.
+    - Our online training about error handling `following this link <https://elearning.aimms.com/course/error-handling>`__.
     - More documentation about using those functions in :doc:`procedural-language-components/execution-statements/raising-and-handling-warnings-and-errors`
