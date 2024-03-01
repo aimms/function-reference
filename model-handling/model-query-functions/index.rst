@@ -18,7 +18,6 @@ identifiers in the model:
    callernumberoflocations
    constraintvariables
    declaredsubset
-   directoryoflibraryproject
    domainindex
    identifierattributes
    identifierdimension

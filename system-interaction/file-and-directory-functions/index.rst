@@ -15,6 +15,7 @@ directories:
    directorygetfiles
    directorygetsubdirectories
    directorymove
+   directoryoflibraryproject
    directoryselect
    fileappend
    filecopy
