@@ -66,7 +66,7 @@ Example
                    SubsetOf: Integers;
                    Index: rr;
                }
-               Set ColumnSet {
+               Set ColSet {
                    SubsetOf: Integers;
                    Index: cc;
                }
