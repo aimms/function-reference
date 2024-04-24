@@ -18,6 +18,7 @@ for a generated mathematical program.
          maxInfeas,      ! (output) maximum infeasibility
          [skipObj],      ! (optional, default 0) a scalar value
          [feasTol]       ! (optional, default -1) a scalar value
+		 [checkColumns]  ! (optional, default 0) a scalar value
          )
 
 Arguments
@@ -46,6 +47,8 @@ Arguments
         Feasibility tolerance in checking the constraints violations. If this
         argument is negative, the value of the option ``Constraint Listing
         Feasibility Tolerance`` is used.
+	*checkColumns* 
+		A scalar binary value to indicate whether or not to check for variable bound violations and integrality violations. By default, this function does not check for bound violations and integrality violations. 
 
 Return Value
 ------------
