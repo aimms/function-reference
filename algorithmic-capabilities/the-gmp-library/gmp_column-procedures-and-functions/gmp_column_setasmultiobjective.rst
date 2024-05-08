@@ -5,9 +5,12 @@
 GMP::Column::SetAsMultiObjective
 ================================
 
-The procedure :aimms:func:`GMP::Column::SetAsMultiObjective` sets a column as one
-of the multi-objectives of a generated mathematical program, thereby
-creating a multi-objective optimization problem.
+| The procedure :aimms:func:`GMP::Column::SetAsMultiObjective` sets a column as one
+  of the multi-objectives of a generated mathematical program, thereby
+  creating a multi-objective optimization problem.
+|
+| Lexicographic (or hierarchical) multi-objective optimization will optimize for the
+  different objectives in the mathematical program one step at a time, in priority order.
 
 .. code-block:: aimms
 
@@ -41,14 +44,16 @@ Arguments
         blended objective, i.e., if multiple objectives have the same priority.
 
     *abstol*
-        A scalar value specifying the absolute tolerance by which a solution may
-        deviate from the optimal value of the objective of the previous
-        optimization problem. The default value is 0.0.
+        A scalar value specifying the absolute tolerance. In subsequent steps
+        (for objectives with a lower priority) the solution value of *column*
+        may deviate from the optimized value of *column*, as calculated in this step,
+        using this absolute tolerance. The default value is 0.0.
 
     *reltol*
-        A scalar value specifying the relative tolerance by which a solution may
-        deviate from the optimal value of the objective of the previous
-        optimization problem. The default value is 0.0.
+        A scalar value specifying the relative tolerance. In subsequent steps
+        (for objectives with a lower priority) the solution value of *column*
+        may deviate from the optimized value of *column*, as calculated in this step,
+        using this relative tolerance. The default value is 0.0.
 
 Return Value
 ------------
@@ -70,7 +75,7 @@ Return Value
        all multi-objectives.
 
     -  Multi-objective optimization is only supported by CPLEX and Gurobi.
-    
+
     -  Multi-objective optimization is not supported for generated mathematical programs
        created by one of the following functions:
 
@@ -89,6 +94,9 @@ Return Value
        multi-objective problem is an LP or MIP. See the Multi-Objective
        Optimization section in the CPLEX Help or the Gurobi Help for more
        information.
+
+    -  The *abstol* and *reltol* arguments are meaningless for the objective(s) with the
+       lowest priority.
 
 Example
 -------
