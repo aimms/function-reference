@@ -16,6 +16,17 @@ Arguments
 
     *x*
         A scalar numerical expression.
+		
+Example
+-----------
+
+.. code-block:: aimms
+
+	_p_returnM1 := Abs(-1); ! returns 1. Abs of negative value is the negated value.
+	_p_returnZ  := Abs( 0); ! returns 0. Abs of 0.0 is 0.0
+	_p_returnP1 := Abs( 1); ! returns 1. Abs of positive value is the same value.
+
+
 
 Return Value
 ------------

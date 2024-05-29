@@ -25,6 +25,27 @@ Arguments
     *Suffix*
         An element in the predefined set :aimms:set:`AllSuffixNames`.
 
+Example
+-----------
+
+.. code-block:: aimms
+
+	! Small data set: keeping stock of two fruits.
+	_s_fruits := data { apple, pear } ;
+	_p_stock(_i_fruit) := data { apple : 4, pear : 5 } ;
+
+	! Removing one fruit from our data set.
+	_s_fruits -= data { pear };
+	! There is now only one fruit left in _p_stock.
+
+	display _p_stock ; ! Writes "_p_stock(_i_fruit) := data { apple : 4 };" to listing file.
+
+	_p_activeCard := ActiveCard( _p_stock ); ! 1: ActiveCard counts the number of elements available.
+	_p_card := Card( _p_stock ); ! 2; Card counts the number of elements actually stored.
+
+	! The difference between Card and ActiveCard is the number of so-called inactive elements.
+
+
 Return Value
 ------------
 
@@ -42,5 +63,7 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`Card` and ``Count`` operator (see also :ref:`sec:expr.num.iter` of
-    the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).
+	-	The function :aimms:func:`Card` and ``Count`` operator (see also :ref:`sec:expr.num.iter` of
+		the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).
+
+	-	The explanation of inactive elements in the Language Reference at :ref:`inactive_data`.
