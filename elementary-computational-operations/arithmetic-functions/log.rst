@@ -17,6 +17,16 @@ Arguments
     *x*
         A scalar numerical expression in the range :math:`(0,\infty)`.
 
+Example
+-----------
+
+.. code-block:: aimms
+
+    p_return := Log(10);
+    ! Result is 2.302585093 
+
+
+
 Return Value
 ------------
 
