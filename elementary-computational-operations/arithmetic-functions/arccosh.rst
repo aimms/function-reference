@@ -17,6 +17,23 @@ Arguments
     *x*
         A scalar numerical expression in the range :math:`[1,\infty)`.
 
+Graph
+----------
+
+.. image:: images/arccosh.png
+    :align: center
+
+Example
+----------------
+
+.. code-block:: aimms
+
+	_p_return1   := arcCosH(1);   ! returns 0
+	_p_return1e3 := arcCosH(1e3); ! returns 7.60
+	_p_return1e6 := arcCosH(1e6); ! returns 14.51
+	_p_return1e9 := arcCosH(1e9); ! returns 21.42
+	_p_return0   := arcCosH(0);   ! Runtime error
+
 Return Value
 ------------
 
@@ -33,5 +50,7 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`ArcSinh`, :aimms:func:`ArcTanh`, :aimms:func:`Cosh`. Arithmetic functions are
-    discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   The functions :aimms:func:`ArcSinh`, :aimms:func:`ArcTanh`, :aimms:func:`Cosh`. Arithmetic functions are
+        discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+
+    -   `Wikipedia <https://en.wikipedia.org/wiki/Inverse_hyperbolic_functions>`_
