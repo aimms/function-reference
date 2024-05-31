@@ -17,6 +17,23 @@ Arguments
     *x*
         A scalar numerical expression.
 
+Graph
+-----------------
+
+.. image:: images/arctan.png
+    :align: center
+
+
+Example
+-----------
+
+.. code-block:: aimms
+
+	_p_returnM1 := arcTan(-1e9); ! returns almost -pi/2
+	_p_returnZ  := arcTan( 0); ! returns 0
+	_p_returnP1 := arcTan( 1e9); ! returns almost pi/2
+
+
 Return Value
 ------------
 
@@ -30,5 +47,8 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`ArcSin`, :aimms:func:`ArcCos`, :aimms:func:`Tan`. Arithmetic functions are
-    discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   The functions :aimms:func:`ArcSin`, :aimms:func:`ArcCos`, :aimms:func:`Tan`. Arithmetic functions are
+        discussed in full detail in :ref:`sec:expr.num.functions` of 
+        the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+        
+    -   `Wikipedia <https://en.wikipedia.org/wiki/Inverse_trigonometric_functions>`_

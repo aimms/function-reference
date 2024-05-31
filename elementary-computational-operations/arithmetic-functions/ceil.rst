@@ -17,11 +17,21 @@ Arguments
     *x*
         A scalar numerical expression.
 
+Example
+-----------------
+
+.. code-block:: aimms
+
+	_p_returnA := ceil(-1.00); ! returns -1
+	_p_returnB := ceil(-0.99); ! returns  0
+	_p_returnC := ceil( 0   ); ! returns  0
+	_p_returnD := ceil( 0.99); ! returns  1
+
+
 Return Value
 ------------
 
-    The function :aimms:func:`Ceil` returns the smallest integer value :math:`\geq`
-    *x*.
+    The function :aimms:func:`Ceil` returns the smallest integer value :math:`\geq` *x*.
 
 .. note::
 
