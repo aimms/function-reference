@@ -16,6 +16,23 @@ Arguments
 
     *x*
         A scalar numerical expression in radians.
+        
+Graph
+-----------------
+
+.. image:: images/cos.png
+    :align: center
+
+
+Example
+-----------
+
+.. code-block:: aimms
+
+    _p_returnM1 := Cos(-p_pi); ! cos(-π) = -1
+    _p_returnZ  := Cos( 0   ); ! cos( 0) =  1
+    _p_returnP1 := Cos( p_pi); ! cos( π) = -1
+        
 
 Return Value
 ------------
@@ -30,5 +47,7 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`Sin`, :aimms:func:`Tan`, :aimms:func:`ArcCos`. Arithmetic functions are
-    discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   The functions :aimms:func:`Sin`, :aimms:func:`Tan`, :aimms:func:`ArcCos`. Arithmetic functions are
+        discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+
+    -   `Wikipedia <https://en.wikipedia.org/wiki/Sine_and_cosine>`_
