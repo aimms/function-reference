@@ -17,6 +17,16 @@ Arguments
     *x*
         A scalar numerical expression.
 
+Example
+-----------------
+
+.. code-block:: aimms
+
+	_p_returnA := radians(180); ! radians(180) = pi
+	_p_returnB := radians( 90); ! radians( 90) = pi/2
+	_p_returnC := radians(  0); ! radians(  0) = 0
+	_p_returnD := radians( 45); ! radians( 45) = pi/4
+
 Return Value
 ------------
 

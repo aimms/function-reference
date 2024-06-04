@@ -17,6 +17,25 @@ Arguments
     *x*
         A scalar numerical expression.
 
+
+Graph
+-----------------
+
+.. image:: images/cube.png
+    :align: center
+
+
+Example
+-----------
+
+.. code-block:: aimms
+
+	_p_returnM1 := Cube(-1); ! Cube(-1) = -1
+	_p_returnZ  := Cube( 0); ! Cube( 0) =  0
+	_p_returnP1 := Cube( 1); ! Cube( 1) =  1
+	_p_returnP2 := Cube( 2); ! Cube( 2) =  8
+
+
 Return Value
 ------------
 

@@ -17,6 +17,18 @@ Arguments
     *x*
         A scalar numerical expression.
 
+Example
+-----------------
+
+.. code-block:: aimms
+
+	_p_returnA := degrees(p_pi  ); ! degrees(pi)   = 180
+	_p_returnB := degrees(p_pi/2); ! degrees(pi/2) =  90
+	_p_returnC := degrees(   0  ); ! degrees(0)    =   0 
+	_p_returnD := degrees(p_pi/4); ! degrees(pi/4) =  45  1
+
+
+
 Return Value
 ------------
 
