@@ -21,6 +21,16 @@ Arguments
     *y*
         A scalar numerical expression unequal to 0.
 
+Example
+-----------------
+
+.. code-block:: aimms
+
+	_p_returnA := div( 8, 3 ); ! div( 8, 3 ) =   2
+	_p_returnB := div( 8,-3 ); ! div( 8,-3 ) =  -3
+	_p_returnC := div(-8, 3 ); ! div(-8, 3 ) =  -3
+	_p_returnD := div(-8,-3 ); ! div(-8,-3 ) =   2
+
 Return Value
 ------------
 

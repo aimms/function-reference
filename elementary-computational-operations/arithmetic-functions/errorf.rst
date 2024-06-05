@@ -16,6 +16,24 @@ Arguments
 
     *x*
         A scalar numerical expression.
+        
+Graph
+-----------------
+
+.. image:: images/errorf.png
+    :align: center
+
+
+Example
+-----------
+
+.. code-block:: aimms
+
+    _p_returnM1 := ErrorF(-1); ! ErrorF(-1) = 0.158655253931
+    _p_returnZ  := ErrorF( 0); ! ErrorF( 0) = 0.5
+    _p_returnP1 := ErrorF( 1); ! ErrorF( 1) = 0.841344746069
+        
+
 
 Return Value
 ------------
@@ -30,5 +48,7 @@ Return Value
 
 .. seealso::
 
-    Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of
-    the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of
+        the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+
+    -   `Wikipedia <https://en.wikipedia.org/wiki/Error_function>`_
