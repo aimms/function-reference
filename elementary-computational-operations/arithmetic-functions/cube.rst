@@ -17,6 +17,12 @@ Arguments
     *x*
         A scalar numerical expression.
 
+Return Value
+------------
+
+    The function :aimms:func:`Cube` returns :math:`x^3`.
+
+
 
 Graph
 -----------------
@@ -34,12 +40,6 @@ Example
 	_p_returnZ  := Cube( 0); ! Cube( 0) =  0
 	_p_returnP1 := Cube( 1); ! Cube( 1) =  1
 	_p_returnP2 := Cube( 2); ! Cube( 2) =  8
-
-
-Return Value
-------------
-
-    The function :aimms:func:`Cube` returns :math:`x^3`.
 
 .. note::
 

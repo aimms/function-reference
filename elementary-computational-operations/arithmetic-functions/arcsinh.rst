@@ -17,6 +17,13 @@ Arguments
     *x*
         A scalar numerical expression.
 
+Return Value
+------------
+
+    The :aimms:func:`ArcSinh` function returns the inverse hyperbolic sine of *x* in
+    the range from :math:`-\infty` to :math:`\infty`.
+
+
 Graph
 --------
 
@@ -36,12 +43,6 @@ Example
 	_p_returnC := arcsinH( 0.0); ! returns 0
 	_p_returnD := arcSinH( 1e3); ! returns 7.600902709542
 	_p_returnE := arcSinH( 1e9); ! returns 21.416413017506
-
-Return Value
-------------
-
-    The :aimms:func:`ArcSinh` function returns the inverse hyperbolic sine of *x* in
-    the range from :math:`-\infty` to :math:`\infty`.
 
 .. note::
 

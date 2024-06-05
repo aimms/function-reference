@@ -17,6 +17,13 @@ Arguments
     *x*
         A scalar numerical expression in the range :math:`[1,\infty)`.
 
+Return Value
+------------
+
+    The :aimms:func:`ArcCosh` function returns the inverse hyperbolic cosine of *x* in
+    the range from :math:`0` to :math:`\infty`.
+
+
 Graph
 ----------
 
@@ -33,12 +40,6 @@ Example
 	_p_return1e6 := arcCosH(1e6); ! returns 14.51
 	_p_return1e9 := arcCosH(1e9); ! returns 21.42
 	_p_return0   := arcCosH(0);   ! Runtime error
-
-Return Value
-------------
-
-    The :aimms:func:`ArcCosh` function returns the inverse hyperbolic cosine of *x* in
-    the range from :math:`0` to :math:`\infty`.
 
 .. note::
 

@@ -17,6 +17,13 @@ Arguments
     *x*
         A scalar numerical expression.
 
+Return Value
+------------
+
+    The :aimms:func:`ArcTan` function returns the arctangent of *x* in the range
+    :math:`-\pi/2` to :math:`\pi/2` radians.
+
+
 Graph
 -----------------
 
@@ -32,13 +39,6 @@ Example
 	_p_returnM1 := arcTan(-1e9); ! returns almost -pi/2
 	_p_returnZ  := arcTan( 0); ! returns 0
 	_p_returnP1 := arcTan( 1e9); ! returns almost pi/2
-
-
-Return Value
-------------
-
-    The :aimms:func:`ArcTan` function returns the arctangent of *x* in the range
-    :math:`-\pi/2` to :math:`\pi/2` radians.
 
 .. note::
 

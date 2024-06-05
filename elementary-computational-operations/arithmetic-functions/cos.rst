@@ -16,6 +16,13 @@ Arguments
 
     *x*
         A scalar numerical expression in radians.
+
+Return Value
+------------
+
+    The :aimms:func:`Cos` function returns the cosine of *x* in the range :math:`-1`
+    to 1.
+
         
 Graph
 -----------------
@@ -33,13 +40,6 @@ Example
     _p_returnZ  := Cos( 0   ); ! cos( 0) =  1
     _p_returnP1 := Cos( p_pi); ! cos( π) = -1
         
-
-Return Value
-------------
-
-    The :aimms:func:`Cos` function returns the cosine of *x* in the range :math:`-1`
-    to 1.
-
 .. note::
 
     The function :aimms:func:`Cos` can be used in constraints of nonlinear

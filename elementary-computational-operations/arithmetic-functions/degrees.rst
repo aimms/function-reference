@@ -17,6 +17,12 @@ Arguments
     *x*
         A scalar numerical expression.
 
+Return Value
+------------
+
+    The function :aimms:func:`Degrees` returns the value of *x* converted from radians
+    to degrees.
+
 Example
 -----------------
 
@@ -28,12 +34,6 @@ Example
 	_p_returnD := degrees(p_pi/4); ! degrees(pi/4) =  45  1
 
 
-
-Return Value
-------------
-
-    The function :aimms:func:`Degrees` returns the value of *x* converted from radians
-    to degrees.
 
 .. note::
 

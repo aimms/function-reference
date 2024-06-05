@@ -17,6 +17,12 @@ Arguments
     *x*
         A scalar numerical expression in the range :math:`(-1,1)`.
 
+Return Value
+------------
+
+    The :aimms:func:`ArcTanh` function returns the inverse hyperbolic tangent of *x*.
+
+
 Graph
 -----------------
 
@@ -32,12 +38,6 @@ Example
 	_p_returnA := arcTanH(-0.99); ! returns -2.646652412362
 	_p_returnB := arcTanH( 0   ); ! returns  0
 	_p_returnC := arcTanH( 0.99); ! returns  2.646652412362
-
-
-Return Value
-------------
-
-    The :aimms:func:`ArcTanh` function returns the inverse hyperbolic tangent of *x*.
 
 .. note::
 

@@ -16,6 +16,13 @@ Arguments
 
     *x*
         A scalar numerical expression.
+
+Return Value
+------------
+
+    The function :aimms:func:`ErrorF` returns the error function value
+    :math:`{\frac{1}{\sqrt{2\pi}}} \int_{-\infty}^x e^{-{\frac{t^2}{2}}}\, dt`.
+
         
 Graph
 -----------------
@@ -33,13 +40,6 @@ Example
     _p_returnZ  := ErrorF( 0); ! ErrorF( 0) = 0.5
     _p_returnP1 := ErrorF( 1); ! ErrorF( 1) = 0.841344746069
         
-
-
-Return Value
-------------
-
-    The function :aimms:func:`ErrorF` returns the error function value
-    :math:`{\frac{1}{\sqrt{2\pi}}} \int_{-\infty}^x e^{-{\frac{t^2}{2}}}\, dt`.
 
 .. note::
 

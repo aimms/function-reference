@@ -16,6 +16,13 @@ Arguments
 
     *x*
         A scalar numerical expression in the range :math:`[-1,1]`.
+
+Return Value
+------------
+
+    The :aimms:func:`ArcCos` function returns the arccosine of *x* in the range 0 to
+    :math:`\pi` radians.
+
 		
 Graph
 -----------------
@@ -32,13 +39,6 @@ Example
 	_p_returnM1 := arcCos(-1); ! returns pi
 	_p_returnZ  := arcCos( 0); ! returns half pi
 	_p_returnP1 := arcCos( 1); ! returns 0
-
-
-Return Value
-------------
-
-    The :aimms:func:`ArcCos` function returns the arccosine of *x* in the range 0 to
-    :math:`\pi` radians.
 
 .. note::
 

@@ -23,6 +23,17 @@ Return Value
     The function :aimms:func:`Floor` returns the largest integer value :math:`\leq`
     *x*.
 
+
+Example
+-----------
+
+.. code-block:: aimms
+
+	_p_returnA := Floor(-1.00); ! returns -1
+	_p_returnB := Floor(-0.99); ! returns -1
+	_p_returnC := Floor( 0   ); ! returns  0
+	_p_returnD := Floor( 0.99); ! returns  0
+
 .. note::
 
     -  The function :aimms:func:`Floor` will round to the nearest integer, if it lies

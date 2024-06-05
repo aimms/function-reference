@@ -16,6 +16,13 @@ Arguments
 
     *x*
         A scalar numerical expression.
+
+Return Value
+------------
+
+    The :aimms:func:`Cosh` function returns the hyperbolic cosine of *x* in the range
+    1 to :math:`\infty`.
+
         
 Graph
 -----------------
@@ -33,13 +40,6 @@ Example
 	_p_returnZ  := Cosh( 0 ); ! cosh(  0) =     1
 	_p_returnP1 := Cosh( 10); ! cosh( 10) = 11013.232920103323
         
-
-Return Value
-------------
-
-    The :aimms:func:`Cosh` function returns the hyperbolic cosine of *x* in the range
-    1 to :math:`\infty`.
-
 .. note::
 
     The function :aimms:func:`Cosh` can be used in constraints of nonlinear

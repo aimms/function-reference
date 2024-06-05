@@ -20,6 +20,13 @@ Arguments
 
     *y*
         A scalar numerical expression unequal to 0.
+		
+Return Value
+------------
+
+    The function :aimms:func:`Div` returns :math:`x` divided by :math:`y` rounded down
+    to an integer.
+
 
 Example
 -----------------
@@ -30,12 +37,6 @@ Example
 	_p_returnB := div( 8,-3 ); ! div( 8,-3 ) =  -3
 	_p_returnC := div(-8, 3 ); ! div(-8, 3 ) =  -3
 	_p_returnD := div(-8,-3 ); ! div(-8,-3 ) =   2
-
-Return Value
-------------
-
-    The function :aimms:func:`Div` returns :math:`x` divided by :math:`y` rounded down
-    to an integer.
 
 .. note::
 

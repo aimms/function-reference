@@ -16,6 +16,12 @@ Arguments
 
     *x*
         A scalar numerical expression.
+
+Return Value
+------------
+
+    The function :aimms:func:`Abs` returns the absolute value of *x*.
+
 		
 Example
 -----------
@@ -26,12 +32,6 @@ Example
 	_p_returnZ  := Abs( 0); ! returns 0. Abs of 0.0 is 0.0
 	_p_returnP1 := Abs( 1); ! returns 1. Abs of positive value is the same value.
 
-
-
-Return Value
-------------
-
-    The function :aimms:func:`Abs` returns the absolute value of *x*.
 
 .. note::
 

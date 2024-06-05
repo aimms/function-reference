@@ -16,6 +16,13 @@ Arguments
 
     *x*
         A scalar numerical expression in the range :math:`[-1,1]`.
+
+Return Value
+------------
+
+    The :aimms:func:`ArcSin` function returns the arcsine of *x* in the range
+    :math:`-\pi/2` to :math:`\pi/2` radians.
+
 		
 Graph
 --------
@@ -34,13 +41,6 @@ Example
 	_p_returnM1 := arcSin(-1); ! returns -pi/2
 	_p_returnZ  := arcSin( 0); ! returns 0
 	_p_returnP1 := arcsin( 1); ! returns pi/2
-
-
-Return Value
-------------
-
-    The :aimms:func:`ArcSin` function returns the arcsine of *x* in the range
-    :math:`-\pi/2` to :math:`\pi/2` radians.
 
 .. note::
 

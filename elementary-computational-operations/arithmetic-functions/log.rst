@@ -17,6 +17,21 @@ Arguments
     *x*
         A scalar numerical expression in the range :math:`(0,\infty)`.
 
+
+Return Value
+------------
+
+    The function :aimms:func:`Log` returns the natural logarithm :math:`\ln(x)`.
+
+        
+Graph
+-----------------
+
+.. image:: images/log.png
+    :align: center
+
+
+
 Example
 -----------
 
@@ -25,12 +40,6 @@ Example
     p_return := Log(10);
     ! Result is 2.302585093 
 
-
-
-Return Value
-------------
-
-    The function :aimms:func:`Log` returns the natural logarithm :math:`\ln(x)`.
 
 .. note::
 
