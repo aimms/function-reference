@@ -35,6 +35,17 @@ Return Value
         ``ZERO``    numerically indistinguishable from zero, but has the logical value of one. 8
         =========== ========================================================================== ================
 
+
+Example
+-----------
+
+.. code-block:: aimms
+
+    _p_val := inf ;
+    _p_return := mapval(_p_val); ! mapval(inf) returns 6.
+
+
+
 .. seealso::
 
     Special numbers in AIMMS and the :aimms:func:`MapVal` function are discussed in

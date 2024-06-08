@@ -22,6 +22,24 @@ Return Value
 
     The function :aimms:func:`Log10` returns the base-10 logarithm of :math:`x`.
 
+
+Graph
+-----------------
+
+.. image:: images/log10.png
+    :align: center
+
+
+
+Example
+-----------
+
+.. code-block:: aimms
+
+    p_return := Log(10);
+    ! Result is 1 
+
+
 .. note::
 
     -  A run-time error results if *x* is outside the range
