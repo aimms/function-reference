@@ -21,10 +21,27 @@ Arguments
     *y*
         A scalar numerical expression.
 
+
+
+
 Return Value
 ------------
 
     The function :aimms:func:`Power` returns :math:`x` raised to the power :math:`y`.
+
+
+
+
+Example
+-----------------
+
+.. code-block:: aimms
+
+    _p_returnA := power( 8, 3 ); ! power( 8, 3 ) =  512
+    _p_returnB := power( 8,-3 ); ! power( 8,-3 ) =  0.001953125000
+    _p_returnC := power(-8, 3 ); ! power(-8, 3 ) =  -512
+    _p_returnD := power(-8,-3 ); ! power(-8,-3 ) =  -0.001953125000
+
 
 .. note::
 

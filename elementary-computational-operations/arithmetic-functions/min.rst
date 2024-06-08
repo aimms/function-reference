@@ -51,7 +51,7 @@ Example
     _p_minFunc := min( _p_values( 'John' ), _p_values( 'Jack' ) ); ! returns 3
     _p_minIter := min( _i_name, _p_values( _i_name ) ); ! returns 3
 
-    ! For string, ordering is the lexicographic ordering.
+    ! For strings, ordering is the lexicographic ordering.
     _ep_minFunc := min( _ep_name1, _ep_name2 ); ! returns 'John'.
     _ep_minIter := min( _i_name, _i_name ); ! returns 'John'.
 

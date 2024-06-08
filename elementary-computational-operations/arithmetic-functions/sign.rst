@@ -23,6 +23,17 @@ Return Value
     The function :aimms:func:`Sign` returns :math:`+1` if :math:`x > 0`, :math:`-1` if
     :math:`x < 0` and 0 if :math:`x = 0`.
 
+
+Example
+-----------------
+
+.. code-block:: aimms
+
+    _p_returnM1 := Sign(-3); ! returns -1. Sign of negative value is -1.
+    _p_returnZ  := Sign( 0); ! returns  0. Sign of 0.0 is 0.0
+    _p_returnP1 := Sign( 3); ! returns  1. Sign of positive value is 1.
+
+
 .. note::
 
     The function :aimms:func:`Sign` can be used in constraints of nonlinear

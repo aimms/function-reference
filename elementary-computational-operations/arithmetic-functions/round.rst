@@ -29,6 +29,19 @@ Return Value
     value of *x* rounded to *n* decimal places left (:math:`decimals < 0`)
     or right (:math:`decimals > 0`) of the decimal point.
 
+
+Example
+-----------------
+
+.. code-block:: aimms
+
+    _p_val := 123.456789 ;
+    _p_returnA := round( _p_val, -1 ); ! round( _p_val, -1 ) =  120
+    _p_returnB := round( _p_val,  0 ); ! round( _p_val,  0 ) =  123
+    _p_returnC := round( _p_val,  2 ); ! round( _p_val,  2 ) =  123.46
+    _p_returnD := round( _p_val,  5 ); ! round( _p_val,  5 ) =  123.45679
+
+
 .. note::
 
     -  The function :aimms:func:`Round` can be used in constraints of nonlinear

@@ -27,6 +27,22 @@ Return Value
     The function :aimms:func:`Precision` returns *x* rounded to *y* significant
     digits.
 
+
+
+
+Example
+-----------------
+
+.. code-block:: aimms
+
+    _p_val := 123.456789 ;
+    _p_returnA := precision( _p_val, 1 ); ! precision( _p_val, 1 ) =  100
+    _p_returnB := precision( _p_val, 3 ); ! precision( _p_val, 3 ) =  123
+    _p_returnC := precision( _p_val, 5 ); ! precision( _p_val, 5 ) =  123.46
+    _p_returnD := precision( _p_val, 7 ); ! precision( _p_val, 7 ) =  123.4568
+
+
+
 .. note::
 
     -  The function :aimms:func:`Precision` can be used in constraints of nonlinear

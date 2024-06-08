@@ -52,7 +52,7 @@ Example
     _ep_maxFunc := max( _ep_name1, _ep_name2 ); ! returns 'Jack'.
     _ep_maxIter := max( _i_name, _i_name ); ! returns 'Jack'.
 
-    ! For string, ordering is the lexicographic ordering.
+    ! For strings, ordering is the lexicographic ordering.
     _sp_maxFunc := max( _sp_name1, _sp_name2 ); ! returns "John"
     _sp_maxIter := max( _i_name, _sp_names(_i_name) );  ! returns "John"
 

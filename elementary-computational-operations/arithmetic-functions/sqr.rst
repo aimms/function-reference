@@ -22,6 +22,29 @@ Return Value
 
     The function :aimms:func:`Sqr` returns :math:`x^2`.
 
+
+Graph
+-----------------
+
+.. image:: images/sqr.png
+    :align: center
+
+Example
+-----------
+
+.. code-block:: aimms
+
+    _p_returnA := Sqr( 0    ); ! Sqr(  0 ) = 0
+    _p_returnB := Sqr( 1    ); ! Sqr(  1 ) = 1 
+    _p_returnC := Sqr( p_pi ); ! Sqr(  π ) = 9.869604401089
+    _p_returnD := Sqr( 10   ); ! Sqr( 10 ) = 100
+
+
+
+
+
+
+
 .. note::
 
     The function :aimms:func:`Sqr` can be used in constraints of nonlinear
