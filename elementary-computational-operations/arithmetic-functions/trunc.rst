@@ -23,6 +23,21 @@ Return Value
     The function :aimms:func:`Trunc` returns the truncated value of *x*:
     :math:`\textrm{sgn} \left( x \right) \cdot \lfloor \mid x \mid \rfloor`.
 
+
+
+Example
+-----------
+
+.. code-block:: aimms
+
+	_p_returnA := Trunc(-1.00); ! returns -1
+	_p_returnB := Trunc(-0.99); ! returns  0
+	_p_returnC := Trunc( 0   ); ! returns  0
+	_p_returnD := Trunc( 0.99); ! returns  0
+
+
+
+
 .. note::
 
     -  The function :aimms:func:`Trunc` will round to the nearest integer, if it lies
