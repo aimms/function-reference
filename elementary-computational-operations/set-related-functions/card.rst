@@ -46,6 +46,29 @@ Return Value
     returns the number of nondefault values stored in the data of the given
     identifier, or in the data of the suffix of that identifier.
 
+
+Example
+-----------
+
+.. code-block:: aimms
+
+	! Some data
+	_s_genders := data { male, female };
+	_s_names := data { John, Jill, Jack, Joan } ;
+	_s_nameByGender(_i_gender) := data {
+		male : { John, Jack },
+		female : { Jill, Joan } 
+	} ;
+
+	! Getting the cardinality of a set
+	_p_noGenders := card(_s_genders); ! Returns 2
+	_p_noNames := card( _s_names );  ! Returns 4
+
+	! Getting the cardinality of sets in an indexed set
+	_p_noNamesByGender(_i_gender) := 
+		card( _s_nameByGender( _i_gender ) ); ! Returns 2, twice.
+
+
 .. note::
 
     -  The :aimms:func:`Card` function cannot be applied to slices of indexed
