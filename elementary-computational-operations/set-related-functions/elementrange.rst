@@ -49,3 +49,27 @@ Return Value
 ------------
 
     The function returns a set containing the created elements.
+
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+	_s_ints     := ElementRange(1,12);
+	_s_regions  := ElementRange(1,12,prefix:"reg",fill:0);
+	_s_products := ElementRange(1,12,prefix:"prd",fill:1);
+	display _s_ints, _s_regions, _s_products ;
+
+produces 
+
+.. code-block:: aimms
+
+    _s_ints := data { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 } ;
+
+    _s_regions := data { reg1, reg2, reg3, reg4, reg5, reg6, reg7, reg8, reg9, reg10, reg11, reg12 } ;
+
+    _s_products := data { prd01, prd02, prd03, prd04, prd05, prd06, prd07, prd08, prd09, prd10, prd11, prd12 } ;
+
+in the listing file.

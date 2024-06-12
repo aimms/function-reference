@@ -30,6 +30,17 @@ Return Value
 
     The function Element returns the :math:`n`-th element of set *Set*.
 
+Example
+-----------
+
+.. code-block:: aimms
+
+	_s_names := data { Jack, Jill, John, Joan } ;
+	_s_positions := ElementRange(1,4);
+
+	! Relate the positions to the names.
+	_ep_name( _i_pos ) := element( _s_names, ord( _i_pos ) ) ;
+
 .. note::
 
     If there is no :math:`n`-th element in *Set*, the function returns the

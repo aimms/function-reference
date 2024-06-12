@@ -39,6 +39,35 @@ Return Value
     1, the function returns the empty element. If *create* is set to 1,
     nonexisting elements will be created on the fly.
 
+
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+    s_Jnames := data { Jack, Jill, John, Joan } ;
+    s_bnames := data { Brian, Brooke, Benjamin, Bianca } ;
+
+    for i_jname do
+        s_localNames += ElementCast( s_localNames, i_jname, create: 1 );
+    endfor ;
+    for i_bname do
+        s_localNames += ElementCast( s_localNames, i_bname, create: 1 );
+    endfor ;
+    display s_localNames ;
+
+Will produce:
+
+
+.. code-block:: aimms
+
+    elementary::setop::funcElementCast::s_localNames := 
+    data { Jack, Jill, John, Joan, Brian, Brooke, Benjamin, Bianca } ;
+
+in the listing file.
+
 .. seealso::
 
     The procedure :aimms:procedure:`SetElementAdd`.
