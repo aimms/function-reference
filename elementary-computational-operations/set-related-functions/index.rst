@@ -17,7 +17,6 @@ AIMMS supports the following set related functions:
    last
    ord
    restoreinactiveelements
-   retrievecurrentvariablevalues
    setaddrecursive
    setasstring
    setelementadd
