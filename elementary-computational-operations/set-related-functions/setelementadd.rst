@@ -38,6 +38,44 @@ Arguments
     any changes to the set, and on return the element parameter *Elempar*
     will point to the existing element.
 
+
+Example
+-----------
+
+Given the declarations:
+
+.. code-block:: aimms
+
+	Set s_products;
+	Set s_fastMovingProducts {
+		SubsetOf: s_products;
+	}
+	ElementParameter ep_newProd {
+		Range: s_products;
+	}
+
+The code
+
+.. code-block:: aimms
+
+	SetElementAdd(
+		Setname :  s_fastMovingProducts, 
+		Elempar :  ep_newProd, 
+		Newname :  "p0");
+
+	display s_products, s_fastMovingProducts, ep_newProd ;
+
+Will produce in the listing file:
+
+.. code-block:: aimms
+
+    s_products := data { p0 } ;
+    s_fastMovingProducts := data { p0 } ;
+    ep_newProd := 'p0' ;
+
+As you can see, the element ``p0`` is added to both ``s_fastMovingProducts`` and ``s_products``.
+
+
 .. seealso::
 
     -  The function :aimms:func:`ElementCast` and the procedures :aimms:procedure:`SetElementRename` and :aimms:func:`StringToElement`.

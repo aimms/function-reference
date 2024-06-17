@@ -28,6 +28,25 @@ Arguments
     *Suffix*
         An element in the predefined set :aimms:set:`AllSuffixNames`.
 
+Return Value
+------------
+
+    #.  If *Identifier* is a set, the function ActiveCard returns the number of 
+        active elements in *Identifier*. 
+    
+    #.  If *Identifier* is an indexed identifier, the function ActiveCard returns the number of active elements
+        in *Identifier*. 
+    
+    #.  If *Suffix* is given, the number of active elements for the given suffix of *Identifier*.
+
+.. note::
+
+    The :aimms:func:`ActiveCard` function cannot be applied to slices of indexed
+    identifiers. In such a case, you can use the ``Count`` operator to count
+    the number of active elements.
+
+
+
 Example
 -----------
 
@@ -49,28 +68,14 @@ Example
 	! The difference between Card and ActiveCard is the number of inactive elements.
 
 
-Return Value
-------------
-
-    #.  If *Identifier* is a set, the function ActiveCard returns the number of 
-        active elements in *Identifier*. 
-    
-    #.  If *Identifier* is an indexed identifier, the function ActiveCard returns the number of active elements
-        in *Identifier*. 
-    
-    #.  If *Suffix* is given, the number of active elements for the given suffix of *Identifier*.
-
-.. note::
-
-    The :aimms:func:`ActiveCard` function cannot be applied to slices of indexed
-    identifiers. In such a case, you can use the ``Count`` operator to count
-    the number of active elements.
 
 .. seealso::
 
 	-	The function :aimms:func:`Card` and ``Count`` operator (see also :ref:`sec:expr.num.iter` of
 		the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).
 
+	-	The procedure :aimms:procedure:`RestoreInactiveElements`
+
 	-	The explanation of inactive elements in the Language Reference at :ref:`inactive_data`.
-	
+
 	-	The AIMMS Developer tool Identifier Cardinalities, see :ref:`sec:debug.card`.
