@@ -34,6 +34,17 @@ Return Value
 
     The function returns the requested substring.
 
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+	sp_str := "hello HELLO";
+	sp_res := subString( sp_str, 4, 5 );
+	display sp_res ; ! sp_res := "lo" ;
+
 .. note::
 
     If the arguments *from* and *to* are positive, then the position is

@@ -25,6 +25,20 @@ Return Value
 
     The function returns the capitalized string.
 
+
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+	sp_str := "hello HELLO";
+	sp_res := StringCapitalize( sp_str );
+	display sp_res ; ! sp_res := "Hello hello" ;
+
+
+
 .. seealso::
 
     The functions :aimms:func:`StringToLower`, :aimms:func:`StringToUpper`.

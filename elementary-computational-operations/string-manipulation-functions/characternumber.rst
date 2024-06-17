@@ -23,9 +23,32 @@ Arguments
 Return Value
 ------------
 
-    The function CharacterNumber returns a value in the range { 0 .. 65535
-    }.
+    The function CharacterNumber returns a value in the range { 0 .. }.
+
+
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+	p_charNoSmiling := characterNumber( "☺" );
+	display p_charNoSmiling  ;
+
+
+will produce the following in the listing file:
+
+.. code-block:: aimms
+
+	p_charNoSmiling := 9786 ;
+
+
+
+
 
 .. seealso::
 
-    The function :aimms:func:`Character`.
+    -   The function :aimms:func:`Character`.
+
+    -   `Wikipedia <https://en.wikipedia.org/wiki/Unicode>`_

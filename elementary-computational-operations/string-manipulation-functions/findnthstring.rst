@@ -61,6 +61,60 @@ Return Value
     function returns 0. When the argument ``Nth`` is 0, then this function
     will always return 0.
 
+
+Example
+-----------
+
+Given the declarations:
+
+.. code-block:: aimms
+
+	StringParameter _sp_str;
+	StringParameter _sp_key1;
+	StringParameter _sp_key2;
+	Parameter _p_pos1;
+	Parameter _p_pos2;
+
+
+And a bit of data:
+
+.. code-block:: aimms
+
+
+	_sp_str := "Nice weather today";
+	_sp_key1 := "r t";
+	_sp_key2 := "tomorrow";
+
+The code:
+
+.. code-block:: aimms
+
+	_p_pos1 := FindNthString(
+		SearchString  :  _sp_str, 
+		Key           :  _sp_key1, 
+		Nth           :  1, 
+		CaseSensitive :  1, 
+		WordOnly      :  0, 
+		IgnoreWhite   :  0);
+	_p_pos2 := FindNthString(
+		SearchString  :  _sp_str, 
+		Key           :  _sp_key2, 
+		Nth           :  1, 
+		CaseSensitive :  1, 
+		WordOnly      :  0, 
+		IgnoreWhite   :  0);
+	display _p_pos1, _p_pos2 ;
+
+will produce the following in the listing file:
+
+.. code-block:: aimms
+
+    _p_pos1 := 12 ;
+    _p_pos2 := 0 ;
+
+Indicating that the string ``"r t"`` was found, but the string ``"tomorrow"`` was not found.
+
+
 .. seealso::
 
     The functions :aimms:func:`FindString`, :aimms:func:`StringOccurrences`, :aimms:func:`RegexSearch`.

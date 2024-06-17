@@ -53,6 +53,50 @@ Return Value
     The function returns the resulting string. If *Key* is not found, the
     original string is returned.
 
+
+Example
+-----------
+
+Given the declarations:
+
+.. code-block:: aimms
+
+	StringParameter sp_str;
+	StringParameter sp_key;
+	StringParameter sp_rep;
+	StringParameter sp_res;
+
+
+And a bit of data:
+
+.. code-block:: aimms
+
+	sp_str := "Hello Hello";
+	sp_key := "Hello";
+	sp_rep := "'Allo";
+
+The code:
+
+.. code-block:: aimms
+
+	sp_res := FindReplaceStrings(
+		SearchString  :  sp_str, 
+		Key           :  sp_key, 
+		Replacement   :  sp_rep, 
+		CaseSensitive :  1, 
+		WordOnly      :  0);
+	display sp_res  ;
+
+will produce the following in the listing file:
+
+.. code-block:: aimms
+
+    sp_res := "'Allo 'Allo" ;
+ 
+Indicating that both "Hello" words are replaced by the string "'Allo" ;
+
+
+
 .. seealso::
 
     The functions :aimms:func:`FindString`, :aimms:func:`StringOccurrences` and :aimms:func:`FindReplaceNthString`.

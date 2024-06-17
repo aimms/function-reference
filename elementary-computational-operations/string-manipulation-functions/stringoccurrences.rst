@@ -46,6 +46,27 @@ Return Value
     The function returns how many occurrences of the substring *Key* exist
     in the string *SearchString*.
 
+
+
+
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+	sp_str := "Hello Hello";
+	sp_key := "Hello";
+	p_res := StringOccurrences(
+		SearchString  :  sp_str, 
+		Key           :  sp_key, 
+		CaseSensitive :  1, 
+		WordOnly      :  0,
+		IgnoreWhite   :  0);
+	display p_res ; ! p_res := 2 ;
+
+
 .. seealso::
 
     The functions :aimms:func:`FindString`, :aimms:func:`FindNthString`.

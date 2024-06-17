@@ -24,3 +24,12 @@ Return Value
 ------------
 
     The function returns the number of characters in the string.
+
+Example
+-----------
+
+.. code-block:: aimms
+
+	sp_str := "hello HELLO";
+	p_res := StringLength( sp_str );
+	display p_res ; ! p_res := 11 ;

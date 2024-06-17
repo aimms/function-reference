@@ -25,6 +25,18 @@ Return Value
 
     The function returns the upper case string.
 
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+	sp_str := "hello HELLO";
+	sp_res := StringToUpper( sp_str );
+	display sp_res ; ! sp_res := "HELLO HELLO" ;
+
+
 .. seealso::
 
     The functions :aimms:func:`StringToLower`, :aimms:func:`StringCapitalize`.

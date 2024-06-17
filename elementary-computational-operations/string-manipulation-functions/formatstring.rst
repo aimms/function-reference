@@ -36,6 +36,21 @@ Return Value
 
     The function returns the formatted string.
 
+
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+	p_million := 1e6 ;
+	sp_millions := formatString("%i %6.3n %.0g", p_million, p_million, p_million );
+	display sp_millions  ; ! sp_millions := "1000000 1.000e+06 1e+06" ;
+
+Is a first illustration of various ways of formatting a number.
+
+
 .. seealso::
 
     For a detailed description of the conversion specifiers in AIMMS see

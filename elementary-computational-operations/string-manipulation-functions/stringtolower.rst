@@ -25,6 +25,20 @@ Return Value
 
     The function returns the lower case string.
 
+
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+	sp_str := "hello HELLO";
+	sp_res := StringToLower( sp_str );
+	display sp_res ; ! sp_res := "hello hello" ;
+
+
+
 .. seealso::
 
     The functions :aimms:func:`StringToUpper`, :aimms:func:`StringCapitalize`.
