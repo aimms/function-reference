@@ -27,6 +27,31 @@ Return Value
     The result of :aimms:func:`CurrentToString` is a description of the current time
     according to *Format*.
 
+
+Example
+-----------
+
+
+The code:
+
+.. code-block:: aimms
+
+	_sp_today := CurrentToString("%d-%Am|AllAbbrMonths|-%c%y");
+	_sp_nowAsReferenceDate :=  CurrentToString("%c%y-%m-%d %H:%M:%S");
+
+	display _sp_today, _sp_nowAsReferenceDate ;
+
+Resulted in:
+
+
+.. code-block:: aimms
+
+    _sp_today := "09-Jul-2024" ;
+    _sp_nowAsReferenceDate := "2024-07-09 14:25:50" ;
+
+When this example was created.
+
+
 .. note::
 
     There is an option ``Current_Time_in_LocalDST`` that specifies whether
