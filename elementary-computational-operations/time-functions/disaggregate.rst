@@ -47,6 +47,63 @@ Arguments
         A number between 0 and 1, that
         indicates at which moment in a period the quantity is to be measured.
 
+
+Example
+-----------
+
+
+Given the `timetable declarations in the example of CreateTimeTable   <https://documentation.aimms.com/functionreference/elementary-computational-operations/time-functions/createtimetable.html>`_ and the following declarations:
+
+.. code-block:: aimms
+
+	Parameter p_datCal {
+		IndexDomain: i_day;
+	}
+	Parameter p_datHor {
+		IndexDomain: i_hor;
+		Definition: {
+			data 
+			{ p0 : 20,  
+			  p1 : 30,
+			  p2 : 40,
+			  p3 : 50,
+			  p4 : 60
+			 }
+		}
+	}
+
+The code
+
+.. code-block:: aimms
+
+	DisAggregate(
+		PeriodData   :  p_datHor, 
+		TimeSlotData :  p_datCal, 
+		TimeTable    :  s_timetable, 
+		Type         :  'summation' );
+
+Produces:
+
+.. code-block:: aimms
+
+    p_datCal(i_day) := data 
+    { 2024-01-01 : 20.000,
+      2024-01-02 : 15.000,
+      2024-01-03 : 15.000,
+      2024-01-04 : 13.333,
+      2024-01-05 : 13.333,
+      2024-01-06 : 13.333,
+      2024-01-07 : 12.500,
+      2024-01-08 : 12.500,
+      2024-01-09 : 12.500,
+      2024-01-10 : 12.500,
+      2024-01-11 : 15.000,
+      2024-01-12 : 15.000,
+      2024-01-13 : 15.000,
+      2024-01-14 : 15.000 } ;
+
+
+
 .. seealso::
 
     The procedure :aimms:procedure:`Aggregate`. Time-dependent aggregation and disaggregation

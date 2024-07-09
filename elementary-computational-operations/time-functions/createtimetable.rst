@@ -55,6 +55,80 @@ Arguments
         A subset of the calendar, indicating the time slots that will (usually)
         result in starting a new period in the horizon.
 
+
+
+Example
+-----------
+
+Given the declarations:
+
+.. code-block:: aimms
+
+	Calendar cal_days {
+		Index: i_day;
+		Unit: day;
+		BeginDate: "2024-01-01";
+		EndDate: "2024-01-14";
+		TimeslotFormat: "%c%y-%m-%d";
+	}
+	Set s_horizon {
+		Index: i_hor;
+		Definition: ElementRange(0,4,prefix:"p");
+	}
+	ElementParameter ep_currentTimeSlot {
+		Range: cal_days;
+	}
+	ElementParameter ep_currentPeriod {
+		Range: s_horizon;
+	}
+	Parameter p_periodLength {
+		IndexDomain: i_hor;
+		Definition: data { p0 : 1,  p1 : 2,  p2 : 3,  p3 : 4,  p4 : 4 };
+	}
+	Parameter bp_lengthDominates {
+		IndexDomain: i_hor;
+	}
+	Set s_inactiveTimeSlots {
+		SubsetOf: cal_days;
+	}
+	Set s_delimiterSlots {
+		SubsetOf: cal_days;
+	}
+	Set s_timetable {
+		IndexDomain: i_hor;
+		SubsetOf: cal_days;
+	}
+
+The code:
+
+.. code-block:: aimms
+
+	ep_currentTimeSlot := element( cal_days, 2 );
+	ep_currentPeriod := element( s_horizon, 2 );
+	CreateTimeTable(
+		TimeTable         :  s_timetable,         ! Timetable constructed
+		CurrentTimeSlot   :  ep_currentTimeSlot,  ! Timeslot 2024-01-02 is linked to
+		CurrentPeriod     :  ep_currentPeriod,    ! start of period p1.
+		PeriodLength      :  p_periodLength,      ! Lengths are 1, 2, 3, 4, and 4 days  
+		LengthDominates   :  bp_lengthDominates,  ! No length dominates
+		InactiveTimeSlots :  s_inactiveTimeSlots, ! No inactive periods
+		DelimiterSlots    :  s_delimiterSlots);   ! And no delimiter time slots.
+	display s_timetable ;
+
+creates the timetable:
+
+.. code-block:: aimms
+
+    s_timetable := data 
+    { p0 : { 2024-01-01 } ,
+      p1 : { 2024-01-02, 2024-01-03 } ,
+      p2 : { 2024-01-04, 2024-01-05, 2024-01-06 } ,
+      p3 : { 2024-01-07, 2024-01-08, 2024-01-09, 2024-01-10 } ,
+      p4 : { 2024-01-11, 2024-01-12, 2024-01-13, 2024-01-14 } } ;
+
+
+
+
 .. seealso::
 
     The procedures :aimms:procedure:`Aggregate`, :aimms:procedure:`DisAggregate`. For a more detailed description of
