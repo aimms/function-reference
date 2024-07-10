@@ -80,7 +80,8 @@ Return Value
        optimize the mathematical program :math:`n` times using different
        objectives (in priority order).
 
-    -  CPLEX and Gurobi allow you to use different option settings for each optimization round
+    -  During the solution process, you may prefer that optimization problems with different
+       priorities are solved with different option settings. CPLEX and Gurobi make this possible
        by using parameter files. See the option ``Read Parameter File`` in the CPLEX Help
        or the Gurobi Help for more information.
     
