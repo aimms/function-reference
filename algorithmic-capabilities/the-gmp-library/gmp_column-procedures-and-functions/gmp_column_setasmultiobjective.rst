@@ -75,7 +75,15 @@ Return Value
        all multi-objectives.
 
     -  Multi-objective optimization is only supported by CPLEX and Gurobi.
+    
+    -  If you specify :math:`n` different priorities then CPLEX or Gurobi will
+       optimize the mathematical program :math:`n` times (in priority order) using
+       different objectives.
 
+    -  CPLEX and Gurobi allow you to use different option settings for each optimization round
+       by using parameter files. See the option ``Read Parameter File`` in the CPLEX Help
+       or the Gurobi Help for more information.
+    
     -  Multi-objective optimization is not supported for generated mathematical programs
        created by one of the following functions:
 
