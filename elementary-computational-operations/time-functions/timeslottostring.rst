@@ -35,6 +35,37 @@ Return Value
     The function :aimms:func:`TimeSlotToString` returns a string representation of the
     time slot.
 
+Example
+-----------
+
+Given the declarations:
+
+.. code-block:: aimms
+
+	Calendar cal_days {
+		Index: i_day;
+		Unit: day;
+		BeginDate: "2024-01-01";
+		EndDate: "2024-01-14";
+		TimeslotFormat: "%c%y-%m-%d";
+	}
+
+The code:
+
+.. code-block:: aimms
+
+	_sp_day1 := TimeslotToString(
+		Format   :  "%Aw|AllAbbrWeekDays| %Am|AllAbbrMonths| %d, %c%y", 
+		Calendar :  cal_days, 
+		Timeslot :  first(cal_days));
+	display _sp_day1 ;
+
+Results in:
+
+.. code-block:: aimms
+
+    _sp_day1 := "Mon Jan 01, 2024" ;
+
 .. seealso::
 
     The functions :aimms:func:`MomentToString`, :aimms:func:`CurrentToTimeSlot`, :aimms:func:`StringToTimeSlot`.

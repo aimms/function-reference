@@ -43,6 +43,34 @@ Return Value
     The result of :aimms:func:`StringToMoment` is the elapsed time in *unit* between
     *reference-date* and *date*.
 
+
+Example
+-----------
+
+The code:
+
+.. code-block:: aimms
+
+	_p_noSec := StringToMoment(
+		Format        :  "%c%y-%m-%d %H:%M:%S%TZ('UTC')", 
+		Unit          :  [s], 
+		ReferenceDate :  "2020-01-01 09:30:30", 
+		Timeslot      :  "2020-01-01 09:30:58");
+	display _p_noSec ;
+
+Reference dates are with respect to timezone 'UTC'.  
+By default, timeslots are with respect to timezone 'Local'.
+This timezone can be overridden in the format argument, as illustrated in this example.
+
+Thus the result is:
+
+.. code-block:: aimms
+
+    _p_noSec := 28 [s] ;
+
+
+
+
 .. seealso::
 
     The functions :aimms:func:`MomentToString`, :aimms:func:`CurrentToMoment`.

@@ -37,6 +37,49 @@ Return Value
     The function :aimms:func:`StringToTimeSlot` returns the time slot in the calendar
     that contains the given moment.
 
+Example
+-----------
+
+Given the declarations:
+
+.. code-block:: aimms
+
+	Calendar cal_days {
+		Index: i_day;
+		Unit: day;
+		BeginDate: "2024-01-01";
+		EndDate: "2024-01-14";
+		TimeslotFormat: "%c%y-%m-%d";
+	}
+	ElementParameter _ep_day {
+		Range: cal_days;
+	}
+	ElementParameter _ep_tooLate {
+		Range: cal_days;
+	}
+
+The code
+
+.. code-block:: aimms
+
+	_ep_day := StringToTimeSlot(
+			Format       :  "%m-%d", 
+			Calendar     :  cal_days, 
+			MomentString :  "01-03");
+	_ep_tooLate := StringToTimeSlot(
+			Format       :  "%m-%d", 
+			Calendar     :  cal_days, 
+			MomentString :  "01-20");
+	display _ep_day, _ep_tooLate ;
+
+results in:
+
+.. code-block:: aimms
+
+    _ep_day := '2024-01-03' ;
+    _ep_tooLate := '' ;
+
+
 .. seealso::
 
     The functions :aimms:func:`CurrentToTimeSlot`, :aimms:func:`MomentToTimeSlot`.

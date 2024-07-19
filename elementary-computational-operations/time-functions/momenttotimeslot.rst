@@ -38,6 +38,25 @@ Return Value
     that contains the given moment. When the time slot is outside the
     calendar the empty element is returned.
 
+Example
+-----------
+
+The code
+
+.. code-block:: aimms
+
+	ep_nextYear := MomentToTimeSlot(
+		Calendar      :  cal_days,
+		ReferenceDate :  '2021-01-01', 
+		Elapsed       :  365[day]);
+	display ep_nextYear ;
+	
+gives the result:
+
+.. code-block:: aimms
+
+    ep_nextYear := '2022-01-01' ;
+
 .. seealso::
 
     The functions :aimms:func:`TimeSlotToMoment`, :aimms:func:`CurrentToTimeSlot`, :aimms:func:`StringToTimeSlot`.

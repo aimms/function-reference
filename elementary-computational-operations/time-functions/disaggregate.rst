@@ -52,7 +52,7 @@ Example
 -----------
 
 
-Given the `timetable declarations in the example of CreateTimeTable   <https://documentation.aimms.com/functionreference/elementary-computational-operations/time-functions/createtimetable.html>`_ and the following declarations:
+Given the timetable declarations in the example of :aimms:func:`CreateTimeTable` and the following declarations:
 
 .. code-block:: aimms
 

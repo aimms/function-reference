@@ -41,6 +41,46 @@ Return Value
     The function :aimms:func:`TimeSlotCharacteristic` returns a numerical value for
     the requested time slot characteristic.
 
+
+
+Example
+-----------
+
+Given the declarations:
+
+.. code-block:: aimms
+
+	Calendar cal_days {
+		Index: i_day;
+		Unit: day;
+		BeginDate: "2024-01-01";
+		EndDate: "2024-01-14";
+		TimeslotFormat: "%c%y-%m-%d";
+	}
+	ElementParameter _ep_firstDay {
+		Range: cal_days;
+	}
+	Parameter _p_dayNoInWeek;
+
+The code:
+
+.. code-block:: aimms
+
+	_ep_firstDay := first( cal_days );
+	_p_dayNoInWeek := TimeslotCharacteristic(
+		Timeslot       :  _ep_firstDay, 
+		Characteristic :  'weekday' );
+	display _p_dayNoInWeek ;
+
+Results in:
+
+.. code-block:: aimms
+
+    _p_dayNoInWeek := 1 ;
+
+Indicating that the first day of the calendar is a Monday.
+
+
 .. seealso::
 
     The function :aimms:func:`TimeSlotCharacteristic` is discussed in full detail in

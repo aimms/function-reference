@@ -39,15 +39,17 @@ Return Value
 Example
 -------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-        ok := TestDate( "\%c\%y-\%m-\%d", "2015-xx-xx" ); ! ok becomes 0; Not numeric.
-        ok := TestDate( "\%c\%y-\%m-\%d", "2015-02-29" ); ! ok becomes 0; Feb 2015 has only 28 days.
-        ok := TestDate( "\%c\%y-\%m-\%d", "2016-02-29" ); ! ok becomes 1; Feb 29, 2016 exists.
-        ok := TestDate( "\%c\%y-\%m-\%d", "2015-04-31" ); ! ok becomes 0; April 31 does not exist.
-        ok := TestDate( "\%c\%y-\%m-\%d", "2015-04-01" ); ! ok becomes 1; April 01 does exist (-;
-        ok := TestDate( "\%m-\%d", "03-03", requireUnique:1 ); ! Not unique, ok becomes 0.
-        ok := TestDate( "\%m-\%d", "03-03", requireUnique:0 ); ! Uniqueness not required; ok becomes 1.
+	_bp_ok1 := TestDate( "%c%y-%m-%d", "2015-xx-xx" ); ! ok becomes 0; Not numeric.
+	_bp_ok2 := TestDate( "%c%y-%m-%d", "2015-02-29" ); ! ok becomes 0; Feb 2015 has only 28 days.
+	_bp_ok3 := TestDate( "%c%y-%m-%d", "2016-02-29" ); ! ok becomes 1; Feb 29, 2016 exists.
+	_bp_ok4 := TestDate( "%c%y-%m-%d", "2015-04-31" ); ! ok becomes 0; April 31 does not exist.
+	_bp_ok5 := TestDate( "%c%y-%m-%d", "2015-04-01" ); ! ok becomes 1; April 01 does exist (-;
+	_bp_ok6 := TestDate( "%m-%d", "03-03", requireUnique:1 ); ! Not unique, ok becomes 0.
+	_bp_ok7 := TestDate( "%m-%d", "03-03", requireUnique:0 ); ! Uniqueness not required; ok becomes 1.
+	_bp_ok8 := TestDate( "%Aw|AllAbbrWeekdays| %Am|AllAbbrMonths| %d, %c%y", "Mon Jul 22, 2024" ); ! ok becomes 1; Jul 24, 2024 is a Monday.
+	_bp_ok9 := TestDate( "%Aw|AllAbbrWeekdays| %Am|AllAbbrMonths| %d, %c%y", "Tue Jul 22, 2024" ); ! ok becomes 0; Jul 24, 2024 is not a Tuesday.
 
 .. seealso::
 

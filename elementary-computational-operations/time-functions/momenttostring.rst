@@ -43,6 +43,27 @@ Return Value
     The result of :aimms:func:`MomentToString` is a string describing the
     corresponding moment according to *Format*.
 
+Example
+-----------
+
+The code
+
+.. code-block:: aimms
+
+	sp_nextYear := MomentToString(
+		Format        :  "%c%y-%m-%d", 
+		unit          :  day, 
+		ReferenceDate :  "2021-01-01", 
+		Elapsed       :  365[day]);
+	display sp_nextYear ;
+	
+gives the result:
+
+.. code-block:: aimms
+
+    sp_nextYear := "2022-01-01" ;
+
+
 .. seealso::
 
     The function :aimms:func:`StringToMoment`.
