@@ -45,5 +45,5 @@ Return Value
 
 .. seealso::
 
-    The :aimms:func:`Weibull` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions`
+    The :aimms:func:`Weibull` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
     of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

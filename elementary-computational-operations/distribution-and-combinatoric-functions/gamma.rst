@@ -22,7 +22,7 @@ Arguments
         A scalar numerical expression :math:`> 0`.
 
     *Lowerbound*
-        A scalar numerical expression :math:`> 0`.
+        A scalar numerical expression :math:`>= 0`.
 
     *Scale*
         A scalar numerical expression :math:`> 0`.
@@ -43,7 +43,50 @@ Return Value
     returns a random value drawn from a gamma distribution with rate
     :math:`alpha = 1/Scale`, shape *Shape* and lower bound :math:`0`.
 
-.. seealso::
+Graph
+-----------------
 
-    The :aimms:func:`Gamma` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of
-    the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+.. image:: images/gamma.png
+    :align: center
+
+A graph with:
+ 
+*   a histogram for 1.000.000 experiments of drawing from distribution ``Gamma(3,0,2)``, and
+
+*   the :aimms:func:`DistributionDensity` for ``Gamma(3,0,2)``
+
+Example
+--------
+
+The code:
+
+.. code-block:: aimms
+
+	option seed := 1234 ;
+	_p_draw := Gamma( 3, 0, 2 )  ;
+	_p_pointDensity := DistributionDensity( Gamma( 3, 0, 2 ), 9 );
+
+	block where listing_number_precision := 6 ;
+		display _p_draw, _p_pointDensity ;
+	endblock ;
+
+will produce
+
+.. code-block:: aimms
+
+    _p_draw := 11.206294 ;
+    _p_pointDensity := 0.056239 ;
+
+in the listing file.
+
+References
+-----------
+
+    *    The :aimms:func:`Gamma` distribution is discussed in full detail in
+         :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of
+         the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+
+    *   `Wikipedia <https://en.wikipedia.org/wiki/Gamma_distribution>`_
+
+
+

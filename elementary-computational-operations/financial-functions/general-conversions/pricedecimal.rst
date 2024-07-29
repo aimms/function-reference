@@ -51,8 +51,31 @@ Equation
        the decimal price.
 
     -  The function :aimms:func:`PriceDecimal` is similar to the Excel function
-       ``DOLLARDE``.
+       `DOLLARDE <https://support.microsoft.com/en-us/office/dollarde-function-db85aab0-1677-428a-9dfd-a38476693427>`_ .
 
-.. seealso::
 
-    The function :aimms:func:`PriceFractional`.
+Example
+--------
+
+.. code-block:: aimms
+
+	_p_r1 := PriceDecimal( 1.02, 16 );
+	_p_r2 := PriceDecimal( 1.1 , 32 );
+	
+results in:
+
+.. code-block:: aimms
+
+    _p_r1 := 1.125000 ;
+    _p_r2 := 1.312500 ;
+
+
+
+References
+-----------
+
+    *   The function :aimms:func:`PriceFractional`.
+
+	*   `Microsoft support DOLLARDE <https://support.microsoft.com/en-us/office/dollarde-function-db85aab0-1677-428a-9dfd-a38476693427>`_
+	
+	*   `EXCELJET example DOLLARDE <https://exceljet.net/functions/dollarde-function>`_
