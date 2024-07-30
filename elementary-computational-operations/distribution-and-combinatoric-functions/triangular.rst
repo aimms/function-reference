@@ -47,7 +47,48 @@ Return Value
     satisfy the relation :math:`a < b < c`. The relation between the
     arguments *Shape* and *b* is given by :math:`Shape = (b - a)/(c - a)`.
 
-.. seealso::
 
-    The :aimms:func:`Triangular` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
-    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+Graph
+-----------------
+
+.. image:: images/pareto.png
+    :align: center
+
+A graph with:
+ 
+*   a histogram for 100 experiments of drawing from distribution ``Triangular(0.300,0,100)``, and
+
+*   the :aimms:func:`DistributionDensity` for ``Triangular(0.300,0,100)``
+
+Example
+--------
+
+The code:
+
+.. code-block:: aimms
+
+    option seed := 1234 ;
+    _p_draw := Triangular( 0.3, 0, 100 )  ;
+    _p_pointDensity := DistributionDensity( Triangular( 0.3, 0, 100  ), 20 );
+
+    block where listing_number_precision := 6 ;
+        display _p_draw, _p_pointDensity ;
+    endblock ;
+
+will produce
+
+.. code-block:: aimms
+
+    _p_draw := 40.585179 ;
+    _p_pointDensity := 0.013333 ;
+
+in the listing file.
+
+References
+-----------
+
+    *   The :aimms:func:`Triangular` distribution is discussed in full detail in 
+        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
+        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+
+    *   `Wikipedia <https://en.wikipedia.org/wiki/Triangular_distribution>`_

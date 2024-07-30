@@ -34,7 +34,53 @@ Return Value
 
     The arguments must satisfy the relation :math:`Minimum < Maximum`.
 
-.. seealso::
 
-    The :aimms:func:`Uniform` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
-    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+
+Graph
+-----------------
+
+.. image:: images/uniform.png
+    :align: center
+
+A graph with:
+ 
+*   a histogram for 100 experiments of drawing from distribution ``Uniform(0,25)``, and
+
+*   the :aimms:func:`DistributionDensity` for ``Uniform(0,25)``
+
+Example
+--------
+
+The code:
+
+.. code-block:: aimms
+
+    option seed := 1234 ;
+    _p_draw := Uniform( 0, 100 )  ;
+    _p_pointDensity := DistributionDensity( Uniform( 0, 100  ), 45 );
+
+    block where listing_number_precision := 6 ;
+        display _p_draw, _p_pointDensity ;
+    endblock ;
+
+will produce
+
+.. code-block:: aimms
+
+    _p_draw := 69.551654 ;
+    _p_pointDensity := 0.010000 ;
+
+in the listing file.
+
+
+
+References
+-----------
+
+
+    *   The :aimms:func:`Uniform` distribution is discussed in full detail in 
+        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
+        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+
+    *   `Wikipedia <https://en.wikipedia.org/wiki/Uniform_distribution>`_
+
