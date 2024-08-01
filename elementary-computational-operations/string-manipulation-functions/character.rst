@@ -45,7 +45,10 @@ will produce the following in the listing file:
 
 	sp_pct := "%" ;
 
-.. seealso::
+
+References
+-----------
+
 
     -   The function :aimms:func:`CharacterNumber`.
 

@@ -33,21 +33,24 @@ The code:
 
 .. code-block:: aimms
 
-	p_charNoPct := characterNumber( "%" );
-	display p_charNoPct  ;
+    p_charNoPct := characterNumber( "%" );
+    display p_charNoPct  ;
 
 
 will produce the following in the listing file:
 
 .. code-block:: aimms
 
-	p_charNoPct := 37 ;
+    p_charNoPct := 37 ;
 
 
 
 
 
-.. seealso::
+
+References
+-----------
+
 
     -   The function :aimms:func:`Character`.
 
