@@ -38,7 +38,7 @@ Example
 
     _p_returnA := TanH( 0    ); ! TanH( 0   ) = 0
     _p_returnB := TanH( 1    ); ! TanH( 1   ) = 0.761594155956
-    _p_returnC := TanH( p_pi ); ! TanH( π   ) = 0.996272076221
+    _p_returnC := TanH( p_pi ); ! TanH( pi  ) = 0.996272076221
     _p_returnD := TanH( 1e9  ); ! TanH( 1e3 ) = 1 
 
 

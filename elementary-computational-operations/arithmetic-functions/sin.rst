@@ -33,9 +33,9 @@ Example
 
 .. code-block:: aimms
 
-    _p_returnM1 := Sin(-p_pi); ! Sin(-π) = 0
-    _p_returnZ  := Sin( 0   ); ! Sin( 0) = 0
-    _p_returnP1 := Sin( p_pi); ! Sin( π) = 0
+    _p_returnM1 := Sin(-p_pi); ! Sin(-pi) = 0
+    _p_returnZ  := Sin( 0   ); ! Sin( 0 ) = 0
+    _p_returnP1 := Sin( p_pi); ! Sin( pi) = 0
 
 
 .. note::

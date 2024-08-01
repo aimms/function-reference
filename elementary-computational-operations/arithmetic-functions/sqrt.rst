@@ -36,7 +36,7 @@ Example
 
     _p_returnA := Sqrt( 0    ); ! Sqrt(  0 ) = 0
     _p_returnB := Sqrt( 1    ); ! Sqrt(  1 ) = 1 
-    _p_returnC := Sqrt( p_pi ); ! Sqrt(  π ) = 1.772453850906
+    _p_returnC := Sqrt( p_pi ); ! Sqrt( pi ) = 1.772453850906
     _p_returnD := Sqrt( 10   ); ! Sqrt( 10 ) = 3.162277660168
 
 

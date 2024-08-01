@@ -36,9 +36,9 @@ Example
 
 .. code-block:: aimms
 
-    _p_returnM1 := Cos(-p_pi); ! cos(-π) = -1
-    _p_returnZ  := Cos( 0   ); ! cos( 0) =  1
-    _p_returnP1 := Cos( p_pi); ! cos( π) = -1
+    _p_returnM1 := Cos(-p_pi); ! cos(-pi) = -1
+    _p_returnZ  := Cos( 0   ); ! cos( 0 ) =  1
+    _p_returnP1 := Cos( p_pi); ! cos( pi) = -1
         
 .. note::
 
