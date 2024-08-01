@@ -39,6 +39,38 @@ Return Value
     The function :aimms:func:`DateDifferenceDays` is similar to the Excel function
     ``DAYS300``.
 
-.. seealso::
+Example
+--------
 
-    Day count basis :ref:`methods<ff.dcb>`.
+The code
+
+.. code-block:: aimms
+
+    _p_r1 := DateDifferenceDays( "2024-02-01", "2024-03-01", 1 );  
+    _p_r2 := DateDifferenceDays( "2024-02-01", "2024-03-01", 2 );  
+    _p_r3 := StringToMoment(
+        Format        :  "%c%y-%m-%d", 
+        Unit          :  [day], 
+        ReferenceDate :  "2024-02-01", 
+        Timeslot      :  "2024-03-01");
+
+    block where listing_number_precision := 6 ;
+        display _p_r1, _p_r2, _p_r3  ;
+    endblock ;
+   
+results in:
+
+.. code-block:: aimms
+
+    _p_r1 := 30 ;
+    _p_r2 := 29 ;
+    _p_r3 := 29 ;
+
+
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`.
+
+    *   :aimms:func:`MomentToString`

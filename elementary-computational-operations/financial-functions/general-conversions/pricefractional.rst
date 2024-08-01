@@ -42,6 +42,31 @@ Return Value
     -  The function ``FractionalDecimal`` is similar to the Excel function
        ``DOLLARFR``.
 
-.. seealso::
 
-    The function :aimms:func:`PriceDecimal`.
+Example
+--------
+
+.. code-block:: aimms
+
+	_p_r1 := PriceFractional( 1.125000, 16 );
+	_p_r2 := PriceFractional( 1.312500, 32 );
+
+	block where listing_number_precision := 6 ;
+		display _p_r1, _p_r2 ;
+	endblock ;
+    
+results in:
+
+.. code-block:: aimms
+
+    _p_r1 := 1.020000 ;
+    _p_r2 := 1.100000 ;
+
+
+References
+-----------
+
+    *   The function :aimms:func:`PriceDecimal`.
+
+    *   `Microsoft support DOLLARDE <https://support.microsoft.com/en-us/office/dollarfr-function-0835d163-3023-4a33-9824-3042c5d4f495>`_
+

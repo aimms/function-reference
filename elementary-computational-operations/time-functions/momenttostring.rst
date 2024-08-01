@@ -23,8 +23,10 @@ Arguments
 
     *Format*
         A string that holds the date and time format used in the returned
-        string. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`.
-        Note that the format uses the local timezone by default. Thus the UTC timezone should be specified if the intent is to use the result as a reference date.
+        string. Valid format strings are described in 
+        :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`.
+        Note that the format uses the local timezone by default. 
+        Thus the UTC timezone should be specified if the intent is to use the result as a reference date.
 
     *unit*
         The time unit that is used in the argument *Elapsed*.
@@ -50,13 +52,13 @@ The code
 
 .. code-block:: aimms
 
-	sp_nextYear := MomentToString(
-		Format        :  "%c%y-%m-%d", 
-		unit          :  day, 
-		ReferenceDate :  "2021-01-01", 
-		Elapsed       :  365[day]);
-	display sp_nextYear ;
-	
+    sp_nextYear := MomentToString(
+        Format        :  "%c%y-%m-%d", 
+        unit          :  day, 
+        ReferenceDate :  "2021-01-01", 
+        Elapsed       :  365[day]);
+    display sp_nextYear ;
+    
 gives the result:
 
 .. code-block:: aimms
@@ -64,6 +66,9 @@ gives the result:
     sp_nextYear := "2022-01-01" ;
 
 
-.. seealso::
+References
+-----------
 
-    The function :aimms:func:`StringToMoment`.
+    *   The function :aimms:func:`StringToMoment`.
+
+

@@ -45,6 +45,30 @@ Return Value
     -  The function :aimms:func:`RateNominal` is similar to the Excel function
        ``NOMINAL``.
 
-.. seealso::
+Example
+--------
 
-    The function :aimms:func:`RateEffective`.
+.. code-block:: aimms
+
+	_p_r1 := RateNominal( 2, 12 );  
+	_p_r2 := RateNominal( 5, 12 ); 
+
+	block where listing_number_precision := 6 ;
+		display _p_r1, _p_r2 ;
+	endblock ;
+    
+results in:
+
+.. code-block:: aimms
+
+    _p_r1 := 1.150472 ;
+    _p_r2 := 1.932440 ;
+
+References
+-----------
+
+    *   The function :aimms:func:`RateEffective`.
+
+    *   `Microsoft Support EXCEL Nominal <https://support.microsoft.com/en-us/office/nominal-function-7f1ae29b-6b92-435e-b950-ad8b190ddd2b>`_
+
+	
