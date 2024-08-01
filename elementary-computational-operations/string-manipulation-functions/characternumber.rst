@@ -33,15 +33,15 @@ The code:
 
 .. code-block:: aimms
 
-	p_charNoSmiling := characterNumber( "☺" );
-	display p_charNoSmiling  ;
+	p_charNoPct := characterNumber( "%" );
+	display p_charNoPct  ;
 
 
 will produce the following in the listing file:
 
 .. code-block:: aimms
 
-	p_charNoSmiling := 9786 ;
+	p_charNoPct := 37 ;
 
 
 
