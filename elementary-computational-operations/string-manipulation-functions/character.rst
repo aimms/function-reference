@@ -35,15 +35,15 @@ The code:
 
 .. code-block:: aimms
 
-	sp_heart := character( 10084 );
-	display sp_heart ;
+	sp_pct := character( 37 );
+	display sp_pct ;
 
 
 will produce the following in the listing file:
 
 .. code-block:: aimms
 
-	sp_heart := "❤" ;
+	sp_pct := "%" ;
 
 .. seealso::
 
