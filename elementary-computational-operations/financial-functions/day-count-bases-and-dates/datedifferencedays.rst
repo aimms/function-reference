@@ -64,9 +64,16 @@ results in:
 
     _p_r1 := 30 ;
     _p_r2 := 29 ;
-    _p_r3 := 29 ;
+    _p_r3 := 29 [day] ;
 
+Remarks:
 
+    #.  The default method of ``DateDifferenceDays`` uses 30 days per month, so one month results in 30.
+    
+    #.  The more advanced method, method 2, uses the actual number of days per month.
+
+    #.  :aimms:func:`MomentToString` can do the same, but also supports other time units including ``second``.
+        Note that the result of this function has a time unit.
 
 References
 -----------
@@ -74,3 +81,4 @@ References
     *   Day count basis :ref:`methods<ff.dcb>`.
 
     *   :aimms:func:`MomentToString`
+

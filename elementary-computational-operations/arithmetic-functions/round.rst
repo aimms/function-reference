@@ -107,6 +107,7 @@ then these units can be used to specify the magnitudes of the following identifi
 And the following code will assign some values:
 
 .. code-block:: aimms
+    :linenos:
 
     _p_inpSmall := 0.12345 ;
     _p_pct := _p_inpSmall ;
@@ -145,7 +146,10 @@ The code will produce the following overview in the listing file:
     _p_rndMega  :=           123  [M1] ;
 
 As you can see, ``_p_rndpct`` is a rounded multiple of a percentage.
-Similarly, ``_p_rndKilo``, and ``_p_rndMega`` are rounded multiples of 1.000 and 1.000.000 respectively.
+Note that in the computation of this value, round uses the unit of its argument, so the unit of ``_p_pct``.
+
+Similarly, ``_p_rndKilo``, and ``_p_rndMega`` are rounded multiples of 1.000 and 1.000.000 respectively
+by using the units of ``_p_kilo`` and ``_p_mega``.
 
 References
 -----------
@@ -155,7 +159,7 @@ References
     *   :aimms:func:`Ceil`
 
     *   :aimms:func:`Floor` 
-    
+
     *   :aimms:func:`Trunc`
 
     *   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the Language Reference.
