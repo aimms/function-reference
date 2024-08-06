@@ -76,6 +76,10 @@ declining amounts functions:
 -  :aimms:func:`DepreciationNonLinearRate`
 -  :aimms:func:`DepreciationSum`
 
+.. image:: images/depreciations.png
+    :align: center
+
+
 .. toctree::
    :hidden:
    
@@ -86,3 +90,4 @@ declining amounts functions:
    depreciationnonlinearlife
    depreciationnonlinearrate
    depreciationsum
+

@@ -101,6 +101,55 @@ Return Value
     The function :aimms:func:`DepreciationSum` is similar to the Excel function
     ``VDB``.
 
-.. seealso::
+Example
+-------
 
-    The functions :aimms:func:`DepreciationNonLinearFactor`, :aimms:func:`DepreciationLinearLife`. Day count basis :ref:`methods<ff.dcb>`. General equations for computing :ref:`depreciations<FF.depreq>`.
+Using ``DepreciationSum`` for declining depreciation over a period of 10 years:
+ 
+
+.. code-block:: aimms
+
+    _p_life := 10 ;
+    _s_periods := ElementRange(1,_p_life  );
+    _p_deprec( _i_per ) := DepreciationSum(
+        PurchaseDate   :  "2024-03-01", 
+        NextPeriodDate :  "2025-01-01", 
+        Cost           :  1e5, 
+        Salvage        :  1e4, 
+        Life           :  _p_life, 
+        StartPeriod    :  _i_per, 
+        EndPeriod      :  _i_per, 
+        Factor         :  2, 
+        Basis          :  1, 
+        Mode           :  1, 
+        Switch         :  1);
+    _p_totDeprec := sum( _i_per, _p_deprec( _i_per ) );
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_deprec( _i_per ) ;
+    endblock ;
+
+The actual values computed are:
+
+.. code-block:: aimms
+
+    _p_deprec(_i_per) := data 
+    {  1 : 16968.734756,
+       2 : 16606.253049,
+       3 : 13285.002439,
+       4 : 10628.001951,
+       5 :  8502.401561,
+       6 :  6801.921249,
+       7 :  5441.536999,
+       8 :  4353.229599,
+       9 :  3706.459199,
+      10 :  3706.459199 } ;
+
+References
+-----------
+
+
+    *   The functions :aimms:func:`DepreciationNonLinearFactor`, :aimms:func:`DepreciationLinearLife`. 
+    
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General equations for computing :ref:`depreciations<FF.depreq>`.

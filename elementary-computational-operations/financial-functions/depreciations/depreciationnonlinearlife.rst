@@ -92,6 +92,52 @@ Equation
     The function ``DepreciationLinearNonLife`` is similar to the Excel
     function ``DB``.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General equations for computing :ref:`depreciations<FF.depreq>`.
+Example
+-------
+
+Using ``DepreciationNonLinearLife`` for declining depreciation over a period of 10 years:
+
+
+.. code-block:: aimms
+
+    _p_life := 10 ;
+    _s_periods := ElementRange(1,_p_life+1  );
+    _p_deprec( _i_per ) := DepreciationNonLinearLife(
+        PurchaseDate     :  "2024-03-01", 
+        NextPeriodDate   :  "2025-01-01", 
+        Cost             :  1e5, 
+        Salvage          :  1e4, 
+        Life             :  _p_life,
+        Period           :  _i_per, 
+        Basis            :  1,
+        Mode             :  1);
+    _p_totDeprec := sum( _i_per, _p_deprec( _i_per ) );
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_deprec( _i_per ) ;
+    endblock ;
+
+The actual values computed are:
+
+.. code-block:: aimms
+
+    _p_deprec(_i_per) := data 
+    {  1 : 17459.581473,
+       2 : 16976.233585,
+       3 : 13484.701656,
+       4 : 10711.279262,
+       5 :  8508.271548,
+       6 :  6758.360319,
+       7 :  5368.356422,
+       8 :  4264.237080,
+       9 :  3387.203912,
+      10 :  2690.551704,
+      11 :   391.223038 } ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General equations for computing :ref:`depreciations<FF.depreq>`.
+

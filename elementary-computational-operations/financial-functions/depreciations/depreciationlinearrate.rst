@@ -85,8 +85,56 @@ Equation
        its salvage value.
 
     -  The function :aimms:func:`DepreciationLinearRate` is similar to the Excel
-       function ``AMORLINC``.
+       function `AMORLINC <https://support.microsoft.com/en-us/office/amorlinc-function-7d417b45-f7f5-4dba-a0a5-3451a81079a8>`_.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General equations for computing :ref:`depreciations<FF.depreq>`.
+Example
+-------
+
+The following code illustrates how to compute the linear depreciation for each period of an investment 
+initially costing 100.000, at the end of its useful life having value of 10.000,
+with a constant rate of 10%.
+
+.. code-block:: aimms
+
+    _p_life := 10 ;
+    _s_periods := ElementRange(1,_p_life  );
+    _p_deprec( _i_per ) := DepreciationLinearRate(
+        PurchaseDate     :  "2024-03-01", 
+        NextPeriodDate   :  "2025-01-01", 
+        Cost             :  1e5, 
+        Salvage          :  1e4, 
+        Period           :  _i_per, 
+        DepreciationRate :  0.1,
+        Basis            :  1);
+    _p_totDeprec := sum( _i_per, _p_deprec( _i_per ) );
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_deprec( _i_per ) ;
+    endblock ;
+
+The actual values computed are:
+
+.. code-block:: aimms
+
+    _p_deprec(_i_per) := data 
+    {  1 :  8333.333333,
+       2 : 10000.000000,
+       3 : 10000.000000,
+       4 : 10000.000000,
+       5 : 10000.000000,
+       6 : 10000.000000,
+       7 : 10000.000000,
+       8 : 10000.000000,
+       9 : 10000.000000,
+      10 :  1666.666667 } ;
+
+
+
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General equations for computing :ref:`depreciations<FF.depreq>`.
+

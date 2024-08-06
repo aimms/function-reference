@@ -93,8 +93,54 @@ Equation
 .. note::
 
     The function ``DepreciationLinearNonRate`` is similar to the Excel
-    function ``AMORDEGRC``.
+    function `AMORDEGRC <https://support.microsoft.com/en-us/office/amordegrc-function-a14d0ca1-64a4-42eb-9b3d-b0dededf9e51>`_.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General equations for computing :ref:`depreciations<FF.depreq>`.
+
+Example
+-------
+
+Using ``pr_testDepreciationNonLinearRate`` for declining depreciation over a period of 10 years:
+ 
+
+.. code-block:: aimms
+
+	_p_life := 10 ;
+	_s_periods := ElementRange(1,_p_life  );
+	_p_deprec( _i_per ) := DepreciationNonLinearRate(
+		PurchaseDate     :  "2024-03-01", 
+		NextPeriodDate   :  "2025-01-01", 
+		Cost             :  1e5, 
+		Salvage          :  1e4, 
+		Period           :  _i_per, 
+		DepreciationRate :  0.1,
+		Basis            :  1,
+		Mode             :  1);
+	_p_totDeprec := sum( _i_per, _p_deprec( _i_per ) );
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_deprec( _i_per ) ;
+	endblock ;
+
+The actual values computed are:
+
+.. code-block:: aimms
+
+    _p_deprec(_i_per) := data 
+    { 1 : 21316.370243,
+      2 : 19670.907439,
+      3 : 14753.180579,
+      4 : 11064.885435,
+      5 :  8298.664076,
+      6 :  6223.998057,
+      7 :  4667.998543,
+      8 :  3500.998907,
+      9 :   502.996721 } ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General equations for computing :ref:`depreciations<FF.depreq>`.
+
+

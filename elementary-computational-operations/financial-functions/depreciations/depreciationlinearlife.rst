@@ -78,8 +78,58 @@ Equation
 .. note::
 
     The function :aimms:func:`DepreciationLinearLife` is similar to the Excel function
-    ``SLN``.
+    `SLN <https://support.microsoft.com/en-us/office/sln-function-cdb666e5-c1c6-40a7-806a-e695edc2f1c8>`_.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General equations for computing :ref:`depreciations<FF.depreq>`.
+
+Example
+-------
+
+The following code illustrates how to compute the linear depreciation for each period of an investment 
+initially costing 100.000, at the end of its useful life having value of 10.000,
+over a period of 10 years.
+
+.. code-block:: aimms
+
+	_p_life := 10 ;
+	_s_periods := ElementRange(1,_p_life +1 );
+	_p_deprec( _i_per ) := DepreciationLinearLife(
+		PurchaseDate   :  "2024-03-01", 
+		NextPeriodDate :  "2025-01-01", 
+		Cost           :  1e5, 
+		Salvage        :  1e4, 
+		Life           :  10, 
+		Period         :  _i_per, 
+		Basis          :  1);
+	_p_totDeprec := sum( _i_per, _p_deprec( _i_per ) );
+
+	block where single_column_display := 1 ;
+		display _p_deprec( _i_per ) ;
+	endblock ;
+
+The actual values computed are:
+
+.. code-block:: aimms
+
+    _p_deprec(_i_per) := data 
+    {  1 : 7500,
+       2 : 9000,
+       3 : 9000,
+       4 : 9000,
+       5 : 9000,
+       6 : 9000,
+       7 : 9000,
+       8 : 9000,
+       9 : 9000,
+      10 : 9000,
+      11 : 1500 } ;
+
+As you can see, the depreciation of the first and last period add up to the 
+depreciation for a single year.
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General equations for computing :ref:`depreciations<FF.depreq>`.

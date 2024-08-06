@@ -42,7 +42,7 @@ Return Value
        See also the option ``rounding compatibility`` in the option category ``backward compatibility``.
 
 Example
------------------
+-------
 
 basic
 ^^^^^

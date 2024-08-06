@@ -78,8 +78,55 @@ Equation
 .. note::
 
     The function :aimms:func:`DepreciationNonLinearSumOfYear` is similar to the Excel
-    function ``SYD``.
+    function `SYD <https://support.microsoft.com/en-us/office/syd-function-1be51f4f-62fc-4b9e-a000-b43e6c2ae86f>`_.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General equations for computing :ref:`depreciations<FF.depreq>`.
+Example
+-------
+
+Using ``DepreciationNonLinearSumOfYear`` for declining depreciation over a period of 10 years:
+ 
+
+.. code-block:: aimms
+
+	_p_life := 10 ;
+	_s_periods := ElementRange(1,_p_life+1  );
+	_p_deprec( _i_per ) := DepreciationNonLinearSumOfYear(
+		PurchaseDate     :  "2024-03-01", 
+		NextPeriodDate   :  "2025-01-01", 
+		Cost             :  1e5, 
+		Salvage          :  1e4, 
+		Life             :  _p_life,
+		Period           :  _i_per, 
+		Basis            :  1);
+	_p_totDeprec := sum( _i_per, _p_deprec( _i_per ) );
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_deprec( _i_per ) ;
+	endblock ;
+
+The actual values computed are:
+
+.. code-block:: aimms
+
+    _p_deprec(_i_per) := data 
+    {  1 : 13636.363636,
+       2 : 15000.000000,
+       3 : 13363.636364,
+       4 : 11727.272727,
+       5 : 10090.909091,
+       6 :  8454.545455,
+       7 :  6818.181818,
+       8 :  5181.818182,
+       9 :  3545.454545,
+      10 :  1909.090909,
+      11 :   272.727273 } ;
+
+
+
+References
+-----------
+
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General equations for computing :ref:`depreciations<FF.depreq>`.
