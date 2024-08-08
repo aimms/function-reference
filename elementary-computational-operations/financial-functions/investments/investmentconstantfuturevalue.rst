@@ -56,8 +56,38 @@ Return Value
        be used as a variable.
 
     -  The function :aimms:func:`InvestmentConstantFutureValue` is similar to the
-       Excel function ``FV``.
+       Excel function `FV <https://support.microsoft.com/en-us/office/fv-function-2eef9f44-a084-4c61-bdd8-4fe4bb1b71b3>`_.
 
-.. seealso::
 
-    General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+Example
+-------
+
+Receiving regularly money over time, leads to a debt:
+
+.. code-block:: aimms
+
+    ! Receiving 10 per period, 
+    ! for 10 periods, and 
+    ! an interest of 4%, 
+    ! results in a debt of 120.06
+    _p_constFutureValue := InvestmentConstantFutureValue(
+        PresentValue  :  0,
+        Payment       :  10,
+        NumberPeriods :  10,
+        InterestRate  :  0.04,
+        type          :  0);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_constFutureValue;
+    endblock ;
+
+The future value computed is negative, indicating a debt:
+
+.. code-block:: aimms
+
+    _p_constFutureValue := -120.061071 ;
+
+References
+-----------
+
+    *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+

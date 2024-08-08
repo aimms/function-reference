@@ -105,7 +105,7 @@ Equation
        drop below its salvage value.
 
     -  The function ``DepreciationLinearNonFactor`` is similar to the Excel
-       function ``DDB``.
+       function `DDB <https://support.microsoft.com/en-us/office/ddb-function-2c7b49c7-11de-4297-8d21-99111d1783b8>`_.
 
 
 

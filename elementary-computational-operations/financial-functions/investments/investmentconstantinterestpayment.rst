@@ -75,6 +75,45 @@ Equation
     -  The function :aimms:func:`InvestmentConstantInterestPayment` is similar to the
        Excel function ``IPMT``.
 
-.. seealso::
+Example
+-------
 
-    General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+How much interest is paid for a loan of ten years and an interest of 4% in each period:
+
+.. code-block:: aimms
+
+    _p_life := 10 ;
+    _bp_type := 1;
+    _s_periods := ElementRange(1, _p_life + _bp_type);
+    _p_InterestPayment(_i_per) :=
+        InvestmentConstantInterestPayment(
+            PresentValue  :  100, 
+            FutureValue   :  0, 
+            NumberPeriods :  10, 
+            Period        :  _i_per, 
+            InterestRate  :  0.04, 
+            type          :  _bp_type);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_InterestPayment;
+    endblock ;
+
+The following table shows that the interest portion of each anuity becomes less:
+
+.. code-block:: aimms
+
+    _p_InterestPayment := data 
+    {  2 : -3.525804e+00,
+       3 : -3.192640e+00,
+       4 : -2.846150e+00,
+       5 : -2.485800e+00,
+       6 : -2.111036e+00,
+       7 : -1.721282e+00,
+       8 : -1.315937e+00,
+       9 : -8.943784e-01,
+      10 : -4.559576e-01,
+      11 :  4.440892e-15 } ;
+
+References
+-----------
+
+    *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

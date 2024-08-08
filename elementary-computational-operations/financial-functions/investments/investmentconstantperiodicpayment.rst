@@ -58,6 +58,49 @@ Return Value
     -  The function :aimms:func:`InvestmentConstantPeriodicPayment` is similar to the
        Excel function ``PMT``.
 
-.. seealso::
 
-    General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+
+Example
+-------
+
+Perhaps the following will encourage you to save up first:
+
+.. code-block:: aimms
+
+    ! How much needs to be paid per period, 
+    ! for 10 periods, and an interest rate of 4% 
+    ! to attain a capital of 100 in the end?
+    _p_constPeriodicPaymentSavingup := InvestmentConstantPeriodicPayment(
+        PresentValue  :  0,
+        FutureValue   :  100, 
+        NumberPeriods :  10,
+        InterestRate  :  0.04,
+        type          :  0);
+
+    ! Spending a 100 now, how much do I have to 
+    ! reimburse/compensate over each of the 10 periods, 
+    ! whereby the interest rate is 4%
+    _p_constPeriodicPaymentReimbursing := InvestmentConstantPeriodicPayment(
+        PresentValue  :  100,
+        FutureValue   :  0, 
+        NumberPeriods :  10,
+        InterestRate  :  0.04,
+        type          :  0);
+
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display { _p_constPeriodicPaymentSavingup, _p_constPeriodicPaymentReimbursing } ;
+    endblock ;
+
+The result of this example shows there is a 50% difference 
+in amount to be saved per period, if you spent it 
+at the beginning or at the end:
+
+.. code-block:: aimms
+
+    _p_constPeriodicPaymentSavingup    :=  -8.329094 ;
+    _p_constPeriodicPaymentReimbursing := -12.329094 ;
+
+References
+-----------
+
+    *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

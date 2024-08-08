@@ -72,6 +72,35 @@ Return Value
     -  The function :aimms:func:`InvestmentConstantCumulativeInterestPayment` is
        similar to the Excel function ``CUMIPMT``.
 
-.. seealso::
 
-    General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+Example
+-------
+
+How much of the payments during the first half of the loan is interest?
+
+.. code-block:: aimms
+
+    _p_interestFirstFiveYears := 
+        InvestmentConstantCumulativeInterestPayment(
+            PresentValue  :  10, 
+            FutureValue   :  0, 
+            NumberPeriods :  10, 
+            StartPeriod   :  1, 
+            EndPeriod     :  5, 
+            InterestRate  :  0.1, 
+            type          :  0);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_interestFirstFiveYears ;
+    endblock ;
+
+That is significant:
+
+.. code-block:: aimms
+
+    _p_interestFirstFiveYears := -4.306601 ;
+      
+
+References
+-----------
+
+    *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

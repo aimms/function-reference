@@ -70,6 +70,54 @@ Arguments
     -  The function :aimms:func:`InvestmentConstantRateAll` is similar to the Excel
        function ``RATE``.
 
-.. seealso::
 
-    General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+Example
+-------
+
+Given the local declarations:
+
+.. code-block:: aimms
+
+    Parameter _p_noSol;
+    Set _s_solutionNumbers {
+        SubsetOf: Integers;
+        Index: _i_solNo;
+    }
+    Parameter _p_sols {
+        IndexDomain: _i_solNo;
+    }
+
+
+All solutions to ``InvestmentConstantRate`` can be obtained using 
+
+.. code-block:: aimms
+
+    _s_solutionNumbers := ElementRange(1,100);
+    InvestmentConstantRateAll(
+        PresentValue    :  -100, 
+        FutureValue     :  0, 
+        Payment         :  10, 
+        NumberPeriods   :  8, 
+        type            :  0, 
+        Mode            :  1,
+        NumberSolutions :  _p_noSol,
+        Solutions       :  _p_sols );
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_noSol, _p_sols ;
+    endblock ;
+
+In this particular example there is only one solution: 
+
+.. code-block:: aimms
+
+    _p_noSol := 1 ;
+
+
+    _p_sols := data 
+    { 1 : -0.047087 } ;
+      
+
+References
+-----------
+
+    *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

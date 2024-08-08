@@ -99,7 +99,7 @@ Return Value
 .. note::
 
     The function :aimms:func:`DepreciationSum` is similar to the Excel function
-    ``VDB``.
+    `VDB <https://support.microsoft.com/en-us/office/vdb-function-dde4e207-f3fa-488d-91d2-66d55e861d73>`_.
 
 Example
 -------

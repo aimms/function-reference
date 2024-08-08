@@ -58,6 +58,36 @@ Return Value
     -  The function :aimms:func:`InvestmentConstantPresentValue` is similar to the
        Excel function ``PV``.
 
-.. seealso::
 
-    General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+
+Example
+-------
+
+Paying regularly money over time, resolves a debt:
+
+.. code-block:: aimms
+
+    ! Paying 10 per period, 
+    ! for 10 periods, and 
+    ! an interest of 4%, 
+    ! resolves a debt of 81
+    _p_constPresentValue := InvestmentConstantPresentValue(
+        FutureValue   :  0,
+        Payment       :  10,
+        NumberPeriods :  10,
+        InterestRate  :  0.04,
+        type          :  0);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_constPresentValue;
+    endblock ;
+
+The present value computed is negative, indicating a debt:
+
+.. code-block:: aimms
+
+    _p_constPresentValue := -81.108958 ;
+
+References
+-----------
+
+    *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

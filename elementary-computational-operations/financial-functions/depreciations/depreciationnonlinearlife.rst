@@ -90,7 +90,7 @@ Equation
 .. note::
 
     The function ``DepreciationLinearNonLife`` is similar to the Excel
-    function ``DB``.
+    function `DB <https://support.microsoft.com/en-us/office/db-function-354e7d28-5f93-4ff1-8a52-eb4ee549d9d7>`_.
 
 
 Example

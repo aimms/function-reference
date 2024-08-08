@@ -79,6 +79,54 @@ Return Value
     -  The function :aimms:func:`InvestmentConstantRate` is similar to the Excel
        function ``RATE``.
 
-.. seealso::
 
-    General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+Example
+-------
+
+``InvestmentConstantRate`` is used when there is a fixed series of equal payments
+to determine the interest percentage needed to make up for a loan or to save up for an investment.
+
+.. code-block:: aimms
+
+	! Which interest rate do I need to save up for a given investment
+	! with a given series of fixed savings?
+	_p_pctSavingUp := 
+		InvestmentConstantRate(
+			PresentValue  :  0, 
+			FutureValue   :  -100, 
+			Payment       :  10, 
+			NumberPeriods :  8, 
+			type          :  0, 
+			LowerBound    :  -1, 
+			UpperBound    :  5, 
+			Error         :  1);
+
+	! With which percentage can I pay off a loan,
+	! given a fixed series of equal payments?
+	_p_pctReimburse := 
+		InvestmentConstantRate(
+			PresentValue  :  -100, 
+			FutureValue   :  0, 
+			Payment       :  10, 
+			NumberPeriods :  13, 
+			type          :  0, 
+			LowerBound    :  -1, 
+			UpperBound    :  5, 
+			Error         :  1);
+
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display { _p_pctSavingUp, _p_pctReimburse};
+	endblock ;
+
+As the number of periods used are not equal, it is hard to compare the results.
+
+.. code-block:: aimms
+
+    _p_pctSavingUp  := 0.062870 ;
+    _p_pctReimburse := 0.039769 ;
+      
+
+References
+-----------
+
+    *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

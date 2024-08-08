@@ -73,6 +73,36 @@ Return Value
     -  The function :aimms:func:`InvestmentConstantCumulativePrincipalPayment` is
        similar to the Excel function ``CUMPRINC``.
 
-.. seealso::
 
-    General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+
+Example
+-------
+
+How much of the payments during the first half of the loan is pay off?
+
+.. code-block:: aimms
+
+    _p_payoffFirstFiveYears := 
+        InvestmentConstantCumulativePrincipalPayment(
+            PresentValue  :  10, 
+            FutureValue   :  0, 
+            NumberPeriods :  10, 
+            StartPeriod   :  1, 
+            EndPeriod     :  5, 
+            InterestRate  :  0.1, 
+            type          :  0);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_payoffFirstFiveYears ;
+    endblock ;
+
+That is actually less than the interest pay!
+
+.. code-block:: aimms
+
+   _p_payoffFirstFiveYears := -3.830669 ;
+      
+
+References
+-----------
+
+    *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

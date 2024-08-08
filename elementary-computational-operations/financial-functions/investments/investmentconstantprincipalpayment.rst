@@ -77,6 +77,49 @@ Equation
     -  The function :aimms:func:`InvestmentConstantPrincipalPayment` is similar to the
        Excel function ``PPMT``.
 
-.. seealso::
 
-    General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
+Example
+-------
+
+How much is paid off for a loan of ten years and an interest of 4% in each period:
+
+.. code-block:: aimms
+
+	_p_life := 10 ;
+	_bp_type := 1;
+	_s_periods := ElementRange(1, _p_life + _bp_type);
+	_p_PrincipalPayment(_i_per) :=
+		InvestmentConstantPrincipalPayment(
+			PresentValue  :  100, 
+			FutureValue   :  0, 
+			NumberPeriods :  10, 
+			Period        :  _i_per, 
+			InterestRate  :  0.04, 
+			type          :  _bp_type);
+	block where single_column_display := 1, listing_number_precision := 8 ;
+		display _p_PrincipalPayment;
+	endblock ;
+
+The following table that the pay off portion of each anuity increases:
+
+.. code-block:: aimms
+
+    _p_PrincipalPayment := data 
+    {  1 : -1.18548985e+01,
+       2 : -8.32909443e+00,
+       3 : -8.66225821e+00,
+       4 : -9.00874854e+00,
+       5 : -9.36909848e+00,
+       6 : -9.74386242e+00,
+       7 : -1.01336169e+01,
+       8 : -1.05389616e+01,
+       9 : -1.09605201e+01,
+      10 : -1.13989409e+01,
+      11 : -4.44089210e-15 } ;
+	  
+Except for the first period; there is no interest to be paid when no time is passed.
+
+References
+-----------
+
+    *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
