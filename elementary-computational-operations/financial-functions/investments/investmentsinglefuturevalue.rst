@@ -55,3 +55,43 @@ Equation
 
     -  The function :aimms:func:`InvestmentSingleFutureValue` is similar to the Excel
        function ``FVSCHEDULE``.
+
+
+Example
+-------
+
+Given the local declarations:
+
+.. code-block:: aimms
+
+    Set _s_years {
+        SubsetOf: Integers;
+        Index: _i_year;
+    }
+    Parameter _p_value {
+        IndexDomain: _i_year;
+    }
+    Parameter _p_npv;
+
+Net present value can be computed as follows:
+
+.. code-block:: aimms
+
+    _s_years := ElementRange(2005,2008);
+    _p_value(_i_year) := ord(_i_year) * 100 + 50 ;
+    _p_npv := InvestmentVariablePresentValue( _p_value, 0.07 );
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_npv ;
+    endblock ;
+
+With the following result in the listing file:
+
+.. code-block:: aimms
+
+    _p_npv := 987.553700 ;
+      
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`.

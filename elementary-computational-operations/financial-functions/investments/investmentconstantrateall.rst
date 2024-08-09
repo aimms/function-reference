@@ -97,7 +97,7 @@ All solutions to ``InvestmentConstantRate`` can be obtained using
         PresentValue    :  -100, 
         FutureValue     :  0, 
         Payment         :  10, 
-        NumberPeriods   :  8, 
+        NumberPeriods   :  13, 
         type            :  0, 
         Mode            :  1,
         NumberSolutions :  _p_noSol,
@@ -114,7 +114,7 @@ In this particular example there is only one solution:
 
 
     _p_sols := data 
-    { 1 : -0.047087 } ;
+    { 1 : 0.039769 } ;
       
 
 References
