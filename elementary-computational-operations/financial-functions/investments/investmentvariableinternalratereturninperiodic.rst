@@ -77,8 +77,59 @@ Return Value
        *Value* can be used as a variable.
 
     -  The function :aimms:func:`InvestmentVariableInternalRateReturnInPeriodic` is
-       similar to the Excel function ``XIRR``.
+       similar to the Excel function `XIRR <https://learn.microsoft.com/en-us/office/troubleshoot/excel/algorithm-of-xirr-funcation>`_.
 
-.. seealso::
 
-    The functions :aimms:func:`InvestmentVariableInternalRateReturn`, :aimms:func:`InvestmentVariableInternalRateReturnInPeriodicAll`. Day count basis :ref:`methods<ff.dcb>`.
+Example
+-------
+
+Often, internal rate of return is an investment first, (period 0, negative value),
+and then return cashflows in following periods. 
+
+.. code-block:: aimms
+
+    _s_periods := ElementRange(0,4);
+    _p_val('0') := -100 ;
+    _p_val('1') := 25 ;
+    _p_val(_i_per | _i_per > '1') := _p_val(_i_per-1) * 1.1 ;
+    _sp_startQuarter(_i_per) := MomentToString(
+        Format        :  "%c%y-%m-%d", 
+        unit          :  [month], 
+        ReferenceDate :  "2024-01-01", 
+        Elapsed       :  ((ord(_i_per)-1)*3)[month]);
+
+    _p_irr := InvestmentVariableInternalRateReturnInPeriodic(
+        value      :  _p_val, 
+        date       :  _sp_startQuarter,
+        LowerBound :  -1, 
+        UpperBound :  5, 
+        Error      :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display { _p_val, _sp_startQuarter }, _p_irr ;
+    endblock ;
+
+This results in the following IRR:
+
+.. code-block:: aimms
+
+    Composite table:
+        _i_per         _p_val  _sp_startQuarter
+    !   ------    -----------  ----------------
+             0    -100.000000  "2024-01-01"    
+             1      25.000000  "2024-04-01"    
+             2      27.500000  "2024-07-01"    
+             3      30.250000  "2024-10-01"    
+             4      33.275000  "2025-01-01"    
+        ;
+
+        _p_irr := 0.258815 ;
+      
+
+References
+-----------
+
+    *  The functions :aimms:func:`InvestmentVariableInternalRateReturn`, 
+
+    * :aimms:func:`InvestmentVariableInternalRateReturnInPeriodicAll`. 
+
+    * Day count basis :ref:`methods<ff.dcb>`.

@@ -67,8 +67,55 @@ Equation
        constraint you have to use *InvestmentVariableInternalRateReturn*.
 
     -  The function :aimms:func:`InvestmentVariableInternalRateReturnAll` is similar
-       to the Excel function ``IRR``.
+       to the Excel function `IRR <https://support.microsoft.com/en-us/office/irr-function-64925eaa-9988-495b-b290-3ad0c163c1bc>`_.
 
-.. seealso::
 
-    The functions :aimms:func:`InvestmentVariableInternalRateReturn`, :aimms:func:`InvestmentVariableInternalRateReturnInPeriodic`.
+
+Example
+-------
+
+Often, internal rate of return is an investment first, (period 0, negative value),
+and then return cashflows in following periods. 
+
+.. code-block:: aimms
+
+    _s_periods := ElementRange(0,4);
+    _p_val('0') := -100 ;
+    _p_val('1') := 50 ;
+    _p_val(_i_per | _i_per > '1') := _p_val(_i_per-1) * 1.5 ;
+    _s_sols := ElementRange(1,5);
+    _p_sols := 0 ;
+    InvestmentVariableInternalRateReturnAll(
+        value           :  _p_val, 
+        Mode            :  1, 
+        NumberSolutions :  _p_sols, 
+        IRR             :  _p_irr(_i_sol) );
+
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_val, _p_sols, _p_irr ;
+    endblock ;
+
+This results in the following IRR:
+
+.. code-block:: aimms
+
+    _p_val := data 
+    { 0 : -100.000000,
+      1 :   50.000000,
+      2 :   75.000000,
+      3 :  112.500000,
+      4 :  168.750000 } ;
+
+    _p_sols := 1 ;
+
+
+    _p_irr := data 
+    { 1 : 0.688847 } ;
+
+References
+-----------
+
+
+    *  The functions :aimms:func:`InvestmentVariableInternalRateReturn`, 
+    
+    *  :aimms:func:`InvestmentVariableInternalRateReturnInPeriodic`.

@@ -64,11 +64,48 @@ Equation
        the input parameters *Value*, *FinanceRate* and *ReinvestRate* can be
        used as a variable.
 
-    -  There should be at least one negative and one negative *Value*.
+    -  There should be at least one negative and one positive *Value*.
 
     -  The function :aimms:func:`InvestmentVariableInternalRateReturnModified` is
-       similar to the Excel function ``MIRR``.
+       similar to the Excel function `MIRR <https://support.microsoft.com/en-us/office/mirr-function-28b62fff-b057-47ee-9ff9-13ea2628a007>_`.
 
-.. seealso::
 
-    The function :aimms:func:`InvestmentVariableInternalRateReturn`.
+Example
+-------
+
+Often, internal rate of return is an investment first, (period 0, negative value),
+and then return cashflows in following periods. 
+
+.. code-block:: aimms
+
+    _s_periods := ElementRange(0,4);
+    _p_val('0') := -100 ;
+    _p_val('1') := 50 ;
+    _p_val(_i_per | _i_per > '1') := _p_val(_i_per-1) * 1.5 ;
+    _p_irr := InvestmentVariableInternalRateReturnModified(
+        value        :  _p_val, 
+        FinanceRate  :  0.07, 
+        ReinvestRate :  0.04 );
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_val, _p_irr ;
+    endblock ;
+
+This results in the following IRR:
+
+.. code-block:: aimms
+
+    _p_val := data 
+    { 0 : -100.000000,
+      1 :   50.000000,
+      2 :   75.000000,
+      3 :  112.500000,
+      4 :  168.750000 } ;
+
+    _p_irr := 0.434215 ;
+      
+
+References
+-----------
+
+
+    *   The function :aimms:func:`InvestmentVariableInternalRateReturn`.

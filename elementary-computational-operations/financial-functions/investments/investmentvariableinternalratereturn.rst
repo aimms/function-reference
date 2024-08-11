@@ -64,7 +64,7 @@ Return Value
        be used as a variable.
 
     -  The function :aimms:func:`InvestmentVariableInternalRateReturn` is similar to
-       the Excel function ``IRR``.
+       the Excel function `IRR <https://support.microsoft.com/en-us/office/irr-function-64925eaa-9988-495b-b290-3ad0c163c1bc>`_.
 
 
 Example
@@ -88,7 +88,7 @@ and then return cashflows in following periods.
 		display _p_val, _p_irr ;
 	endblock ;
 
-This results in the following (dream) IRR:
+This results in the following IRR:
 
 .. code-block:: aimms
 
