@@ -11,11 +11,11 @@ discounted security at settlement date.
 .. code-block:: aimms
 
     SecurityDiscountedPrice(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        Redemption,               ! (input) numerical expression
-        DiscountRate,             ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        SettlementDate,  ! (input) scalar string expression
+        MaturityDate,    ! (input) scalar string expression
+        Redemption,      ! (input) numerical expression
+        DiscountRate,    ! (input) numerical expression
+        [Basis]          ! (optional) numerical expression
         )
 
 Arguments
@@ -34,7 +34,7 @@ Arguments
         number.
 
     *DiscountRate*
-        The rate the security's value increases per year as a percentage of the
+        The rate the security's value increases per year as a fraction of the
         redemption value. *DiscountRate* must be a positive real number.
 
     *Basis*
@@ -53,8 +53,35 @@ Return Value
        variable.
 
     -  The function :aimms:func:`SecurityDiscountedPrice` is similar to the Excel
-       function ``PRICEDISC``.
+       function `PRICEDISC <https://support.microsoft.com/en-us/office/pricedisc-function-d06ad7c1-380e-4be7-9fd9-75e3079acfd3>_`.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.disc>` for discounted securities.
+Example
+-------
+
+Selling a security one year before maturity with a discount rate of 10%:
+
+.. code-block:: aimms
+
+    _p_sdp := SecurityDiscountedPrice(
+        SettlementDate :  "2024-01-01", 
+        MaturityDate   :  "2025-01-01", 
+        Redemption     :  100, 
+        DiscountRate   :  0.1, 
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_sdp ;
+    endblock ;
+
+This results in the following discounted price:
+
+.. code-block:: aimms
+
+    _p_sdp := 90 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.disc>` for discounted securities.
