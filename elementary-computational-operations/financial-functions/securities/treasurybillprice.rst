@@ -30,7 +30,7 @@ Arguments
         date format and must be a date after *SettlementDate*.
 
     *DiscountRate*
-        The discount rate of the security as a percentage of the redemption.
+        The discount rate of the security as a fraction of the redemption.
         *DiscountRate* must be a positive real number.
 
 Return Value
@@ -45,8 +45,31 @@ Return Value
        the input parameter *DiscountRate* can be used as a variable.
 
     -  The function :aimms:func:`TreasuryBillPrice` is similar to the Excel function
-       ``TBILLPRICE``.
+       `TBILLPRICE <https://support.microsoft.com/en-us/office/tbillprice-function-eacca992-c29d-425a-9eb8-0513fe6035a2>`_.
 
-.. seealso::
 
-    General :ref:`equations<ff.sec.disc>` for discounted securities.
+Example
+-------
+
+Half a year, 10%, what does this do?
+
+.. code-block:: aimms
+
+	_p_tbp := TreasuryBillPrice(
+		SettlementDate :  "2024-07-01", 
+		MaturityDate   :  "2025-01-01", 
+		DiscountRate   :  0.1);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_tbp ;
+	endblock ;
+
+Well:
+
+.. code-block:: aimms
+
+    _p_tbp := 94.888889 ;
+
+References
+-----------
+
+    *   General :ref:`equations<ff.sec.disc>` for discounted securities.

@@ -11,11 +11,11 @@ discounted security.
 .. code-block:: aimms
 
     SecurityDiscountedRate(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        Price,                    ! (input) numerical expression
-        Redemption,               ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        SettlementDate,  ! (input) scalar string expression
+        MaturityDate,    ! (input) scalar string expression
+        Price,           ! (input) numerical expression
+        Redemption,      ! (input) numerical expression
+        [Basis]          ! (optional) numerical expression
         )
 
 Arguments
@@ -44,7 +44,7 @@ Return Value
 ------------
 
     The function :aimms:func:`SecurityDiscountedRate` returns the annual rate the
-    security's value increases as a percentage of the redemption value.
+    security's value increases as a fraction of the redemption value.
 
 .. note::
 
@@ -53,8 +53,34 @@ Return Value
        variable.
 
     -  The function :aimms:func:`SecurityDiscountedRate` is similar to the Excel
-       function ``DISC``.
+       function `DISC <https://support.microsoft.com/en-us/office/disc-function-71fce9f3-3f05-4acf-a5a3-eac6ef4daa53>`_.
 
-.. seealso::
+Example
+-------
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.disc>` for discounted securities.
+Knowing price, redemption, and length period; what was the interest (with respect to redemption)?
+
+.. code-block:: aimms
+
+	_p_sdr := SecurityDiscountedRate(
+		SettlementDate :  "2024-01-01", 
+		MaturityDate   :  "2025-01-01", 
+		Price          :  90, 
+		Redemption     :  100, 
+		Basis          :  1);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_sdr ;
+	endblock ;
+
+This results in the following interest:
+
+.. code-block:: aimms
+
+    _p_sdr := 0.100000 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+	
+	*   General :ref:`equations<ff.sec.disc>` for discounted securities.

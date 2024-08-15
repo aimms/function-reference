@@ -11,11 +11,11 @@ maturity date of a discounted security.
 .. code-block:: aimms
 
     SecurityDiscountedRedemption(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        Price,                    ! (input) numerical expression
-        DiscountRate,             ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        SettlementDate,   ! (input) scalar string expression
+        MaturityDate,     ! (input) scalar string expression
+        Price,            ! (input) numerical expression
+        DiscountRate,     ! (input) numerical expression
+        [Basis]           ! (optional) numerical expression
         )
 
 Arguments
@@ -34,7 +34,7 @@ Arguments
         real number.
 
     *DiscountRate*
-        The rate the security's value increases per year as a percentage of the
+        The rate the security's value increases per year as a fraction of the
         redemption value. *DiscountRate* must be a positive real number.
 
     *Basis*
@@ -53,8 +53,35 @@ Return Value
        variable.
 
     -  The function :aimms:func:`SecurityDiscountedRedemption` is similar to the Excel
-       function ``RECEIVED``.
+       function `RECEIVED <https://support.microsoft.com/en-us/office/received-function-7a3f8b93-6611-4f81-8576-828312c9b5e5>`_.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.disc>` for discounted securities.
+Example
+-------
+
+Buying a security now for a given price, what will be the maturity value next year with a discount rate of 10%:
+
+.. code-block:: aimms
+
+    _p_sdr := SecurityDiscountedRedemption(
+        SettlementDate :  "2024-01-01", 
+        MaturityDate   :  "2025-01-01", 
+        Price          :  90, 
+        DiscountRate   :  0.1, 
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_sdr ;
+    endblock ;
+
+This results in the following redemption value:
+
+.. code-block:: aimms
+
+    _p_sdr := 100 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.disc>` for discounted securities.

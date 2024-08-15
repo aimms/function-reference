@@ -62,8 +62,37 @@ Return Value
        used as a variable.
 
     -  The function :aimms:func:`SecurityMaturityPrice` is similar to the Excel
-       function ``PRICEMAT``.
+       function `PRICEMAT <https://support.microsoft.com/en-us/office/pricemat-function-52c3b4da-bc7e-476a-989f-a95f675cae77>_`.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coup1>` for securities with one coupon.
+Example
+-------
+
+The code
+
+.. code-block:: aimms
+
+    _p_smp := SecurityMaturityPrice(
+        IssueDate      :  "2020-01-01", 
+        SettlementDate :  "2024-01-01", 
+        MaturityDate   :  "2025-01-01", 
+        ParValue       :  100, 
+        CouponRate     :  0.059, 
+        Yield          :  0.061, 
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_smp ;
+    endblock ;
+
+This results in:
+
+.. code-block:: aimms
+
+    _p_smp := 98.454665 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.coup1>` for securities with one coupon.

@@ -11,11 +11,11 @@ discounted security at maturity date.
 .. code-block:: aimms
 
     SecurityDiscountedYield(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        Price,                    ! (input) numerical expression
-        Redemption,               ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        SettlementDate,  ! (input) scalar string expression
+        MaturityDate,    ! (input) scalar string expression
+        Price,           ! (input) numerical expression
+        Redemption,      ! (input) numerical expression
+        [Basis]          ! (optional) numerical expression
         )
 
 Arguments
@@ -44,7 +44,7 @@ Return Value
 ------------
 
     The function :aimms:func:`SecurityDiscountedYield` returns the annual rate the
-    security's value increases as a percentage of the price.
+    security's value increases as a fraction of the price.
 
 .. note::
 
@@ -53,8 +53,35 @@ Return Value
        variable.
 
     -  The function :aimms:func:`SecurityDiscountedYield` is similar to the Excel
-       function ``YIELDDISC``.
+       function `YIELDDISC <https://support.microsoft.com/en-us/office/yielddisc-function-a9dbdbae-7dae-46de-b995-615faffaaed7>`_.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.disc>` for discounted securities.
+Example
+-------
+
+Knowing price, redemption, and length period; what was the interest (with respect to price)?
+
+.. code-block:: aimms
+
+    _p_sdf := SecurityDiscountedYield(
+        SettlementDate :  "2024-01-01", 
+        MaturityDate   :  "2025-01-01", 
+        Price          :  90, 
+        Redemption     :  100, 
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_sdf ;
+    endblock ;
+
+This results in the following interest:
+
+.. code-block:: aimms
+
+    _p_sdf := 0.111111 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.disc>` for discounted securities.
