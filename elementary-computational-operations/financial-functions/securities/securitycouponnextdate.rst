@@ -40,8 +40,32 @@ Arguments
 .. note::
 
     The function :aimms:func:`SecurityCouponNextDate` is similar to the Excel function
-    ``COUPNCD``.
+    `COUPNCD <https://support.microsoft.com/en-us/office/coupncd-function-fd962fef-506b-4d9d-8590-16df5393691f>_`.
 
-.. seealso::
 
-    General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+Example
+-------
+
+When will the next coupon be issued, when the settlement date is Feb 1, and the coupons are issued quarterly until Jan 1?
+
+.. code-block:: aimms
+
+	SecurityCouponNextDate(
+		SettlementDate :  "2025-02-01", 
+		MaturityDate   :  "2030-01-01", 
+		Frequency      :  4,
+		NextDate       :  _sp_tcnd);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _sp_tcnd ;
+	endblock ;
+
+Here it coincides with the start of every quarter, which is also Jan 1:
+
+.. code-block:: aimms
+
+    _sp_tcnd := "2025-04-01" ;
+
+References
+-----------
+
+    *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

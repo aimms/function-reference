@@ -12,14 +12,14 @@ coupon period.
 .. code-block:: aimms
 
     SecurityPeriodicDurationModified(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        ParValue,                 ! (input) numerical expression
-        Redemption,               ! (input) numerical expression
-        Frequency,                ! (input) numerical expression
-        CouponRate,               ! (input) numerical expression
-        Yield,                    ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        SettlementDate, ! (input) scalar string expression
+        MaturityDate,   ! (input) scalar string expression
+        ParValue,       ! (input) numerical expression
+        Redemption,     ! (input) numerical expression
+        Frequency,      ! (input) numerical expression
+        CouponRate,     ! (input) numerical expression
+        Yield,          ! (input) numerical expression
+        [Basis]         ! (optional) numerical expression
         )
 
 Arguments
@@ -81,6 +81,38 @@ Equation
     -  The function :aimms:func:`SecurityPeriodicDurationModified` is similar to the
        Excel function ``MDURATION``.
 
-.. seealso::
 
-    The function :aimms:func:`SecurityPeriodicDuration`. Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+Example
+-------
+
+The code:
+
+.. code-block:: aimms
+
+	_p_spdm := SecurityPeriodicDurationModified(
+		SettlementDate :  "2024-01-01", 
+		MaturityDate   :  "2044-01-01", 
+		ParValue       :  100, 
+		Redemption     :  100, 
+		Frequency      :  1, 
+		CouponRate     :  0.08, 
+		Yield          :  0.08, 
+		Basis          :  1);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_spdm ;
+	endblock ;
+
+Results in:
+
+.. code-block:: aimms
+
+    _p_spdm := 9.818147 ;
+
+References
+-----------
+
+    *   The function :aimms:func:`SecurityPeriodicDuration`. 
+	
+	*   Day count basis :ref:`methods<ff.dcb>`. 
+	
+	*   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

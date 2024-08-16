@@ -11,14 +11,14 @@ date of a security that pays interest at the end of each coupon period.
 .. code-block:: aimms
 
     SecurityPeriodicPrice(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        ParValue,                 ! (input) numerical expression
-        Redemption,               ! (input) numerical expression
-        Frequency,                ! (input) numerical expression
-        CouponRate,               ! (input) numerical expression
-        Yield,                    ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        SettlementDate,  ! (input) scalar string expression
+        MaturityDate,    ! (input) scalar string expression
+        ParValue,        ! (input) numerical expression
+        Redemption,      ! (input) numerical expression
+        Frequency,       ! (input) numerical expression
+        CouponRate,      ! (input) numerical expression
+        Yield,           ! (input) numerical expression
+        [Basis]          ! (optional) numerical expression
         )
 
 Arguments
@@ -67,8 +67,40 @@ Return Value
        *Yield* can be used as a variable.
 
     -  The function :aimms:func:`SecurityPeriodicPrice` is similar to the Excel
-       function ``PRICE``.
+       function `PRICE <https://support.microsoft.com/en-us/office/price-function-3ea9deac-8dfa-436f-a7c8-17ea02c21b0a>`.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+
+Example
+-------
+
+The code:
+
+.. code-block:: aimms
+
+    _p_spp := SecurityPeriodicPrice(
+        SettlementDate :  "2024-01-01", 
+        MaturityDate   :  "2030-01-01", 
+        ParValue       :  100, 
+        Redemption     :  100, 
+        Frequency      :  4, 
+        CouponRate     :  0.06, 
+        Yield          :  0.07, 
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_spp ;
+    endblock ;
+
+Produces:
+
+.. code-block:: aimms
+
+    _p_spp := 95.134829 ;
+
+References
+-----------
+
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

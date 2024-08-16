@@ -61,6 +61,35 @@ Return Value
     input parameters *ParValue*, *Price*, and *Yield* can be used as a
     variable.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coup1>` for securities with one coupon.
+Example
+-------
+
+The code:
+
+.. code-block:: aimms
+
+	_p_smcr := SecurityMaturityCouponRate(
+		IssueDate      :  "2020-01-01", 
+		SettlementDate :  "2024-01-01", 
+		MaturityDate   :  "2025-01-01", 
+		ParValue       :  100, 
+		Price          :  99, 
+		Yield          :  0.02, 
+		Basis          :  1);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_smcr ;
+	endblock ;
+
+Produces in the listing file:
+
+.. code-block:: aimms
+
+    _p_smcr := 0.010652 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+	
+	*   General :ref:`equations<ff.sec.coup1>` for securities with one coupon.

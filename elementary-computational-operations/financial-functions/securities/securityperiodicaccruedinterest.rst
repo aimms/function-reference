@@ -12,12 +12,12 @@ for a security that pays interest at the end of each coupon period.
 .. code-block:: aimms
 
     SecurityPeriodicAccruedInterest(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        ParValue,                 ! (input) numerical expression
-        Frequency,                ! (input) numerical expression
-        CouponRate,               ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        SettlementDate, ! (input) scalar string expression
+        MaturityDate,   ! (input) scalar string expression
+        ParValue,       ! (input) numerical expression
+        Frequency,      ! (input) numerical expression
+        CouponRate,     ! (input) numerical expression
+        [Basis]         ! (optional) numerical expression
         )
 
 Arguments
@@ -57,6 +57,34 @@ Return Value
     This function can be used in an objective function or constraint and the
     input parameters *ParValue* and *CouponRate* can be used as a variable.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+Example
+-------
+
+Security owned for half a year since last coupon date, against 4%, and value 100.
+
+.. code-block:: aimms
+
+    _p_spai := SecurityPeriodicAccruedInterest(
+        SettlementDate :  "2024-07-01", 
+        MaturityDate   :  "2025-01-01", 
+        ParValue       :  100, 
+        Frequency      :  1, 
+        CouponRate     :  0.04, 
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_spai ;
+    endblock ;
+
+Results in an accrued interest of 2:
+
+.. code-block:: aimms
+
+    _p_spai := 2 ;
+
+References
+-----------
+
+    *  Day count basis :ref:`methods<ff.dcb>`. 
+
+    *  General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

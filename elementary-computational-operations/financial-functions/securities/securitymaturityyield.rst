@@ -63,8 +63,36 @@ Return Value
        used as a variable.
 
     -  The function :aimms:func:`SecurityMaturityYield` is similar to the Excel
-       function ``YIELDMAT``.
+       function `YIELDMAT <https://support.microsoft.com/en-us/office/yieldmat-function-ba7d1809-0d33-4bcb-96c7-6c56ec62ef6f>`_.
 
-.. seealso::
+Example
+-------
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coup1>` for securities with one coupon.
+The code:
+
+.. code-block:: aimms
+
+    _p_smy := SecurityMaturityYield(
+        IssueDate      :  "2020-01-01", 
+        SettlementDate :  "2024-01-01", 
+        MaturityDate   :  "2025-01-01", 
+        ParValue       :  100, 
+        Price          :  99, 
+        CouponRate     :  0.05, 
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_smy ;
+    endblock ;
+
+Produces in the listing file:
+
+.. code-block:: aimms
+
+    _p_smy := 0.050420 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.coup1>` for securities with one coupon.

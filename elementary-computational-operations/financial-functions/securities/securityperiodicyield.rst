@@ -13,17 +13,17 @@ yields and returns the yield that is within the specified bounds.
 .. code-block:: aimms
 
     SecurityPeriodicYield(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        ParValue,                 ! (input) numerical expression
-        Price,                    ! (input) numerical expression
-        Redemption,               ! (input) numerical expression
-        Frequency,                ! (input) numerical expression
-        CouponRate,               ! (input) numerical expression
-        [Basis,]                  ! (optional) numerical expression
-        [LowerBound,]             ! (optional) numerical expression
-        [UpperBound,]             ! (optional) numerical expression
-        [Error]                   ! (optional) numerical expression
+        SettlementDate,  ! (input) scalar string expression
+        MaturityDate,    ! (input) scalar string expression
+        ParValue,        ! (input) numerical expression
+        Price,           ! (input) numerical expression
+        Redemption,      ! (input) numerical expression
+        Frequency,       ! (input) numerical expression
+        CouponRate,      ! (input) numerical expression
+        [Basis,]         ! (optional) numerical expression
+        [LowerBound,]    ! (optional) numerical expression
+        [UpperBound,]    ! (optional) numerical expression
+        [Error]          ! (optional) numerical expression
         )
 
 Arguments
@@ -88,8 +88,40 @@ Return Value
        *CouponRate* can be used as a variable.
 
     -  The function :aimms:func:`SecurityPeriodicYield` is similar to the Excel
-       function ``YIELD``.
+       function `YIELD <https://support.microsoft.com/en-us/office/yield-function-f5f5ca43-c4bd-434f-8bd2-ed3c9727a4fe>_`.
 
-.. seealso::
+Example
+-------
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+The code:
+
+.. code-block:: aimms
+
+    _p_spy := SecurityPeriodicYield(
+        SettlementDate :  "2024-01-01",
+        MaturityDate   :  "2025-01-01",
+        ParValue       :  100,
+        Price          :  95,
+        Redemption     :  100,
+        Frequency      :  4,
+        CouponRate     :  0.06,
+        Basis          :  1,
+        LowerBound     :  -1,
+        UpperBound     :  5,
+        Error          :  0);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_spy ;
+    endblock ;
+
+Produces:
+
+.. code-block:: aimms
+
+    _p_spy := 0.113600 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

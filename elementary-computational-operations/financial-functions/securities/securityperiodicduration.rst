@@ -15,14 +15,14 @@ response to changes in yield.
 .. code-block:: aimms
 
     SecurityPeriodicDuration(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        ParValue,                 ! (input) numerical expression
-        Redemption,               ! (input) numerical expression
-        Frequency,                ! (input) numerical expression
-        CouponRate,               ! (input) numerical expression
-        Yield,                    ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        SettlementDate, ! (input) scalar string expression
+        MaturityDate,   ! (input) scalar string expression
+        ParValue,       ! (input) numerical expression
+        Redemption,     ! (input) numerical expression
+        Frequency,      ! (input) numerical expression
+        CouponRate,     ! (input) numerical expression
+        Yield,          ! (input) numerical expression
+        [Basis]         ! (optional) numerical expression
         )
 
 Arguments
@@ -83,8 +83,38 @@ Equation
        *Yield* can be used as a variable.
 
     -  The function :aimms:func:`SecurityPeriodicDuration` is similar to the Excel
-       function ``DURATION``.
+       function `DURATION <https://support.microsoft.com/en-us/office/duration-function-b254ea57-eadc-4602-a86a-c8e369334038>_`.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+Example
+-------
+
+The code:
+
+.. code-block:: aimms
+
+	_p_spd := SecurityPeriodicDuration(
+		SettlementDate :  "2024-01-01", 
+		MaturityDate   :  "2044-01-01", 
+		ParValue       :  100, 
+		Redemption     :  100, 
+		Frequency      :  1, 
+		CouponRate     :  0.08, 
+		Yield          :  0.08, 
+		Basis          :  1);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_spd ;
+	endblock ;
+
+Results in:
+
+.. code-block:: aimms
+
+    _p_spd := 10.603599 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+	
+	*   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

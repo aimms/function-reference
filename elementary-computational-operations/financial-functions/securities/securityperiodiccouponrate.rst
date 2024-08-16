@@ -66,6 +66,38 @@ Return Value
     input parameters *ParValue*, *Price*, *Redemption*, and *Yield* can be
     used as a variable.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+
+Example
+-------
+
+The code:
+
+.. code-block:: aimms
+
+	_p_spcr := SecurityPeriodicCouponRate(
+		SettlementDate :  "2024-01-01", 
+		MaturityDate   :  "2030-01-01", 
+		ParValue       :  100, 
+		Price          :  100, 
+		Redemption     :  100, 
+		Frequency      :  4, 
+		Yield          :  0.04, 
+		Basis          :  1);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_spcr ;
+	endblock ;
+
+Produces:
+
+.. code-block:: aimms
+
+    _p_spcr := 0.040000 ;
+
+References
+-----------
+
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+	
+	*   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

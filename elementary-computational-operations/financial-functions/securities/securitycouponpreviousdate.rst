@@ -40,8 +40,33 @@ Arguments
 .. note::
 
     The function :aimms:func:`SecurityCouponPreviousDate` is similar to the Excel
-    function ``COUPPCD``.
+    function `COUPPCD <https://support.microsoft.com/en-us/office/couppcd-function-2eb50473-6ee9-4052-a206-77a9a385d5b3>_`.
 
-.. seealso::
 
-    General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+
+Example
+-------
+
+When was the last coupon issued, when the settlement date is Feb 1, and the coupons are issued quarterly until Jan 1?
+
+.. code-block:: aimms
+
+	SecurityCouponPreviousDate(
+		SettlementDate :  "2025-02-01", 
+		MaturityDate   :  "2030-01-01", 
+		Frequency      :  4,
+		PreviousDate   :  _sp_tcpd);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _sp_tcpd ;
+	endblock ;
+
+Here it coincides with the start of every quarter, which is also Jan 1:
+
+.. code-block:: aimms
+
+    _sp_tcpd := "2025-01-01" ;
+
+References
+-----------
+
+    *  General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

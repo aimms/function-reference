@@ -11,11 +11,11 @@ interest for a security that pays interest at maturity.
 .. code-block:: aimms
 
     SecurityMaturityAccruedInterest(
-        IssueDate,                ! (input) scalar string expression
-        SettlementDate,           ! (input) scalar string expression
-        ParValue,                 ! (input) numerical expression
-        CouponRate,               ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        IssueDate,       ! (input) scalar string expression
+        SettlementDate,  ! (input) scalar string expression
+        ParValue,        ! (input) numerical expression
+        CouponRate,      ! (input) numerical expression
+        [Basis]          ! (optional) numerical expression
         )
 
 Arguments
@@ -34,7 +34,7 @@ Arguments
         positive real number.
 
     *CouponRate*
-        The annual interest rate of the security as a percentage of the par
+        The annual interest rate of the security as a fraction of the par
         value. *CouponRate* must be a nonnegative real number.
 
     *Basis*
@@ -53,8 +53,42 @@ Return Value
        variable.
 
     -  The function :aimms:func:`SecurityMaturityAccruedInterest` is similar to the
-       Excel function ``ACCRINTM``.
+       Excel function `ACCRINTM <https://support.microsoft.com/en-us/office/accrintm-function-f62f01f9-5754-4cc4-805b-0e70199328a7>_`.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coup1>` for securities with one coupon.
+Example
+-------
+
+How much interest was paid for a security 
+
+* over a period of five years, 
+
+* with an interest rate of 7%, 
+
+* and bought for a 100 at the time?
+
+.. code-block:: aimms
+
+    _p_smai := SecurityMaturityAccruedInterest(
+        IssueDate      :  "2020-01-01", 
+        SettlementDate :  "2025-01-01", 
+        ParValue       :  100, 
+        CouponRate     :  0.07, 
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_smai ;
+    endblock ;
+
+No interest on interest, so:
+
+.. code-block:: aimms
+
+    _p_smai := 35 ;
+
+References
+-----------
+
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.coup1>` for securities with one coupon.

@@ -12,14 +12,14 @@ period.
 .. code-block:: aimms
 
     SecurityPeriodicRedemption(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        ParValue,                 ! (input) numerical expression
-        Price,                    ! (input) numerical expression
-        Frequency,                ! (input) numerical expression
-        CouponRate,               ! (input) numerical expression
-        Yield,                    ! (input) numerical expression
-        [Basis]                   ! (optional) numerical expression
+        SettlementDate, ! (input) scalar string expression
+        MaturityDate,   ! (input) scalar string expression
+        ParValue,       ! (input) numerical expression
+        Price,          ! (input) numerical expression
+        Frequency,      ! (input) numerical expression
+        CouponRate,     ! (input) numerical expression
+        Yield,          ! (input) numerical expression
+        [Basis]         ! (optional) numerical expression
         )
 
 Arguments
@@ -67,6 +67,36 @@ Return Value
     input parameters *ParValue*, *Price*, *CouponRate*, and *Yield* can be
     used as a variable.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+Example
+-------
+
+The code:
+
+.. code-block:: aimms
+
+    _p_spr := SecurityPeriodicRedemption(
+        SettlementDate :  "2024-01-01", 
+        MaturityDate   :  "2030-01-01", 
+        ParValue       :  100, 
+        Price          :  100, 
+        Frequency      :  4, 
+        CouponRate     :  0.06, 
+        Yield          :  0.07, 
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_spr ;
+    endblock ;
+
+Produces:
+
+.. code-block:: aimms
+
+    _p_spr := 107.377754 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+
+    *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

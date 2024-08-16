@@ -47,8 +47,35 @@ Return Value
 .. note::
 
     The function :aimms:func:`SecurityCouponDaysPreSettlement` is similar to the Excel
-    function ``COUPDAYBS``.
+    function `COUPDAYBS <https://support.microsoft.com/en-us/office/coupdaybs-function-eb9a8dfb-2fb2-4c61-8e5d-690b320cf872>`.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+
+Example
+-------
+
+The number of days since the last coupon issued up to the settlement date?
+
+.. code-block:: aimms
+
+    _p_scdps := SecurityCouponDaysPreSettlement(
+        SettlementDate :  "2025-02-01", 
+        MaturityDate   :  "2030-01-01", 
+        Frequency      :  4,
+        Basis          :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_scdps ;
+    endblock ;
+
+Day basis 1, just one months, so that is 30 days:
+
+.. code-block:: aimms
+
+    _p_scdps := 30 ;
+
+References
+-----------
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

@@ -41,8 +41,34 @@ Return Value
 .. note::
 
     The function :aimms:func:`SecurityCouponNumber` is similar to the Excel function
-    ``COUPNUM``.
+    `COUPNUM <https://support.microsoft.com/en-us/office/coupnum-function-a90af57b-de53-4969-9c99-dd6139db2522>_`.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+Example
+-------
+
+How many quarterly coupons are paid out over a period of five years?
+
+.. code-block:: aimms
+
+	_p_scn := SecurityCouponNumber(
+		SettlementDate :  "2025-01-01", 
+		MaturityDate   :  "2030-01-01", 
+		Frequency      :  4);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_scn ;
+	endblock ;
+
+Twenty:
+
+.. code-block:: aimms
+
+    _p_scn := 20 ;
+
+References
+-----------
+
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+	
+	*   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

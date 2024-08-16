@@ -45,8 +45,32 @@ Return Value
        the input parameter *DiscountRate* can be used as a variable.
 
     -  The function :aimms:func:`TreasuryBillBondEquivalent` is similar to the Excel
-       function ``TBILLEQ``.
+       function `TBILLEQ <https://support.microsoft.com/en-us/office/tbilleq-function-2ab72d90-9b4d-4efe-9fc2-0f81f2c19c8c>`.
 
-.. seealso::
+Example
+-------
 
-    General :ref:`equations<ff.sec.disc>` for discounted securities.
+Bond equivalent yield for a treasury bill, half a year out, 10%:
+
+.. code-block:: aimms
+
+	_p_tbbe := TreasuryBillBondEquivalent(
+		SettlementDate :  "2024-07-01", 
+		MaturityDate   :  "2025-01-01", 
+		DiscountRate   :  0.1);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_tbbe ;
+	endblock ;
+
+Well:
+
+.. code-block:: aimms
+
+    _p_tbbe := 0.106850 ;
+
+References
+-----------
+
+    *   General :ref:`equations<ff.sec.disc>` for discounted securities.
+
+	*   `Investopedia on Bond Equivalent Yield <https://www.investopedia.com/terms/b/bey.asp>`_

@@ -11,17 +11,17 @@ security that pays interest at the end of each coupon period.
 .. code-block:: aimms
 
     SecurityPeriodicYieldAll(
-        SettlementDate,           ! (input) scalar string expression
-        MaturityDate,             ! (input) scalar string expression
-        ParValue,                 ! (input) numerical expression
-        Price,                    ! (input) numerical expression
-        Redemption,               ! (input) numerical expression
-        Frequency,                ! (input) numerical expression
-        CouponRate,               ! (input) numerical expression
-        Yield,                    ! (output) one-dimensional numerical expression
-        NumberSolutions,          ! (output) numerical expression
-        [Basis,]                  ! (optional) numerical expression
-        [Mode]                    ! (optional) numerical expression
+        SettlementDate,    ! (input) scalar string expression
+        MaturityDate,      ! (input) scalar string expression
+        ParValue,          ! (input) numerical expression
+        Price,             ! (input) numerical expression
+        Redemption,        ! (input) numerical expression
+        Frequency,         ! (input) numerical expression
+        CouponRate,        ! (input) numerical expression
+        Yield,             ! (output) one-dimensional numerical expression
+        NumberSolutions,   ! (output) numerical expression
+        [Basis,]           ! (optional) numerical expression
+        [Mode]             ! (optional) numerical expression
         )
 
 Arguments
@@ -81,8 +81,49 @@ Arguments
        constraint you have to use ``SecurityPeriodicYield``.
 
     -  The function :aimms:func:`SecurityPeriodicYieldAll` is similar to the Excel
-       function ``YIELD``.
+       function `YIELD <https://support.microsoft.com/en-us/office/yield-function-f5f5ca43-c4bd-434f-8bd2-ed3c9727a4fe>_`.
 
-.. seealso::
 
-    Day count basis :ref:`methods<ff.dcb>`. General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.
+
+Example
+-------
+
+The code:
+
+.. code-block:: aimms
+
+    _s_sols := ElementRange(1,5);
+    SecurityPeriodicYieldAll(
+        SettlementDate  :  "2024-01-01", 
+        MaturityDate    :  "2025-01-01", 
+        ParValue        :  100, 
+        Price           :  95, 
+        Redemption      :  100, 
+        Frequency       :  4, 
+        CouponRate      :  0.06, 
+        Yield           :  _p_yield, 
+        NumberSolutions :  _p_noYield, 
+        Basis           :  1, 
+        Mode            :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_noYield, _p_yield ;
+    endblock ;
+
+Produces:
+
+.. code-block:: aimms
+
+    _p_noYield := 1 ;
+
+
+    _p_yield := data 
+    { 1 : 0.113600 } ;
+
+
+References
+-----------
+
+
+    *   Day count basis :ref:`methods<ff.dcb>`. 
+    
+    *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

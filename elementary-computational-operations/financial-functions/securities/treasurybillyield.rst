@@ -45,8 +45,31 @@ Return Value
        the input parameter *Price* can be used as a variable.
 
     -  The function :aimms:func:`TreasuryBillYield` is similar to the Excel function
-       ``TBILLYIELD``.
+       `TBILLYIELD <https://support.microsoft.com/en-us/office/tbillyield-function-6d381232-f4b0-4cd5-8e97-45b9c03468ba>`_.
 
-.. seealso::
 
-    General :ref:`equations<ff.sec.disc>` for discounted securities.
+Example
+-------
+
+What is the yield if a bond of 100 is bought for 95 and matures in half a year?
+
+.. code-block:: aimms
+
+	_p_tby := TreasuryBillYield(
+		SettlementDate :  "2024-07-01", 
+		MaturityDate   :  "2025-01-01", 
+		Price          :  95);
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _p_tby ;
+	endblock ;
+
+Well:
+
+.. code-block:: aimms
+
+    _p_tby := 0.102975 ;
+
+References
+-----------
+
+    *   General :ref:`equations<ff.sec.disc>` for discounted securities.
