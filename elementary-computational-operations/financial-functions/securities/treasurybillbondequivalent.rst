@@ -73,4 +73,3 @@ References
 
     *   General :ref:`equations<ff.sec.disc>` for discounted securities.
 
-	*   `Investopedia on Bond Equivalent Yield <https://www.investopedia.com/terms/b/bey.asp>`_

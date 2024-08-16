@@ -79,7 +79,7 @@ Equation
        *Yield* can be used as a variable.
 
     -  The function :aimms:func:`SecurityPeriodicDurationModified` is similar to the
-       Excel function ``MDURATION``.
+       Excel function `MDURATION <https://support.microsoft.com/en-us/office/mduration-function-b3786a69-4f20-469a-94ad-33e5b90a763c>`_.
 
 
 Example
