@@ -27,8 +27,51 @@ Return Value
 
     This function returns a line number.
 
-.. seealso::
+Example
+-------
 
-    -  The example at :aimms:func:`CallerNumberOfLocations`
+The function :aimms:func:`CallerLine` is usually part of utility code, as follows:
 
-    -  The functions :aimms:func:`CallerAttribute`, :aimms:func:`errh::Line`, :aimms:func:`CallerNode`, and :aimms:func:`CallerNumberOfLocations`.
+.. code-block:: aimms
+    :linenos:
+    :emphasize-lines: 3
+
+    Procedure pr_fragmentCallerLine {
+        Body: {
+            _p_callerLine := CallerLine(1);
+            display _p_callerLine ;
+        }
+        Parameter _p_callerLine;
+    }
+
+Which can then be used as follows:
+
+.. code-block:: aimms
+
+    Procedure pr_testCallerLine {
+        Body: {
+            ! Hello
+            
+            pr_fragmentCallerLine();
+        }
+    }
+
+A call to ``pr_testCallerLine`` produces in the listing file:
+
+.. code-block:: aimms
+
+    _p_callerLine := 3 ;
+
+For a more extended illustration of how the function :aimms:func:`CallerLine` can be part of utility code, 
+please check the example at :aimms:func:`CallerNumberOfLocations`.
+
+References
+-----------
+
+    *  :aimms:func:`CallerAttribute`, 
+
+    *  :aimms:func:`errh::Line`, 
+
+    *  :aimms:func:`CallerNode`, and 
+
+    *  :aimms:func:`CallerNumberOfLocations`.

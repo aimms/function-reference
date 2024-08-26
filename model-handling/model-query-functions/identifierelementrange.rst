@@ -28,7 +28,42 @@ Return Value
     ``identifierName`` is not element valued, the empty element is returned
     without further warning.
 
-.. seealso::
+Example
+-------
+
+Given the declaration: 
+
+
+.. code-block:: aimms
+
+	Set s_a;
+	ElementParameter ep_d {
+		Range: s_a;
+	}
+
+the code:
+
+.. code-block:: aimms
+    :linenos:
+    :emphasize-lines: 4
+
+	_ep_p := StringToElement(AllIdentifiers, 
+		"chapterModel::sectionModelQuery::funcIdentifierElementRange::ep_d", 
+		create: 0);
+	_ep_s := IdentifierElementRange( _ep_p );
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _ep_s ;
+	endblock ;
+
+produces in the listing file:
+
+.. code-block:: aimms
+
+    _ep_s := 'chapterModel::sectionModelQuery::funcIdentifierElementRange::s_a' ;
+
+
+References
+-----------
 
     -  The functions :aimms:func:`DomainIndex`, :aimms:func:`IdentifierDimension`, and :aimms:func:`IndexRange`.
 

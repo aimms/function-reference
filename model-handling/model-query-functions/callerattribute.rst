@@ -27,8 +27,52 @@ Return Value
 
     This function returns an element in :aimms:set:`AllAttributeNames`.
 
-.. seealso::
 
-    -  The example at :aimms:func:`CallerNumberOfLocations`.
+Example
+-------
 
-    -  The functions :aimms:func:`errh::Attribute`, :aimms:func:`CallerLine`, :aimms:func:`CallerNode`, and :aimms:func:`CallerNumberOfLocations`.
+The function :aimms:func:`CallerAttribute` is usually part of utility code, as follows:
+
+.. code-block:: aimms
+    :linenos:
+    :emphasize-lines: 3
+
+    Procedure pr_fragmentCallerAttribute {
+        Body: {
+            _ep_callerAttribute := CallerAttribute(1);
+            display _ep_callerAttribute ;
+        }
+        ElementParameter _ep_callerAttribute {
+            Range: AllAttributeNames;
+        }
+    }
+
+Which can then be used as follows:
+
+.. code-block:: aimms
+
+    Procedure pr_testCallerAttribute {
+        Body: {
+            pr_fragmentCallerAttribute();
+        }
+    }
+
+A call to ``pr_testCallerAttribute`` produces in the listing file:
+
+.. code-block:: aimms
+
+    _ep_callerAttribute := 'body' ;
+
+For a more extended illustration of how the function :aimms:func:`CallerAttribute` can be part of utility code, 
+please check the example at :aimms:func:`CallerNumberOfLocations`.
+
+References
+-----------
+
+    *  :aimms:func:`errh::Attribute`, 
+
+    *  :aimms:func:`CallerLine`, 
+
+    *  :aimms:func:`CallerNode`, and 
+
+    *  :aimms:func:`CallerNumberOfLocations`.

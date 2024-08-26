@@ -44,6 +44,55 @@ Return Value
     returned as string. Here component is the main model or one of the
     libraries.
 
-.. seealso::
 
-    The function :aimms:func:`me::GetAttribute`, functions :aimms:func:`AttributeContainsString`, :aimms:func:`AttributeLength`.
+
+
+
+Example
+-------
+
+Given the declaration:
+
+.. code-block:: aimms
+
+    Parameter p {
+        Comment: "Hello";
+    }
+
+inside the nested module ``chapterModel::sectionModelQuery::funcAttributeToString``, 
+the code that queries the comment attribute of identifier ``p`` is:
+
+.. code-block:: aimms
+    :linenos:
+    :emphasize-lines: 4
+
+    _ep_p := StringToElement(AllIdentifiers, 
+        "chapterModel::sectionModelQuery::funcAttributeToString::p", 
+        create: 0);
+    _sp_cmt := AttributeToString(_ep_p, 'comment');
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display { _ep_p, _sp_cmt };
+    endblock ;
+
+Remark: 
+
+    *   Lines 1-3: Note that the name of the identifier contains all prefixes of the modules it is in.
+    
+The results in the listing file:  
+
+.. code-block:: aimms
+
+    _ep_p   := 'chapterModel::sectionModelQuery::funcAttributeToString::p' ;
+    _sp_cmt :=                                                   "Hello\n" ;
+      
+
+References
+-----------
+
+    *   :aimms:func:`StringToElement`, 
+
+    *   :aimms:func:`me::GetAttribute`, 
+
+    *   :aimms:func:`AttributeContainsString`, and
+
+    *   :aimms:func:`AttributeLength`.

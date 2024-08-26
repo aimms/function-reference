@@ -35,7 +35,42 @@ Return Value
     parameter, whilst the suffix ``unit`` will return the value of that unit
     parameter.
 
-.. seealso::
+
+Example
+-------
+
+Given the declaration: 
+
+.. code-block:: aimms
+
+	Parameter p_d {
+		Unit: m;
+	}
+
+the code:
+
+.. code-block:: aimms
+    :linenos:
+    :emphasize-lines: 4
+
+	_ep_p := StringToElement(AllIdentifiers, 
+		"chapterModel::sectionModelQuery::funcIdentifierUnit::p_d", 
+		create: 0);
+	_up_p := IdentifierUnit( _ep_p );
+	block where single_column_display := 1, listing_number_precision := 6 ;
+		display _up_p ;
+	endblock ;
+
+produces in the listing file:
+
+.. code-block:: aimms
+
+    _up_p := [m] ;
+
+
+References
+-----------
+
 
     -  The functions :aimms:func:`IdentifierDimension` and :aimms:func:`IdentifierType`.
 

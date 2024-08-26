@@ -38,6 +38,54 @@ Return Value
     identifiers that are referenced in the attributes in *searchAttrSet* in
     one of the identifiers in *searchIdentSet*.
 
-.. seealso::
+Example
+-------
 
-    The function :aimms:func:`ConstraintVariables` and :aimms:func:`VariableConstraints`
+Given the declarations:
+
+.. code-block:: aimms
+
+    Parameter p1;
+    Parameter p2;
+    Parameter pd {
+        Definition: p1 + P2;
+    }
+
+The following code, checks the definition of ``pd`` to determine that the 
+identifiers ``p1`` and ``p2`` are referenced.
+
+.. code-block:: aimms
+    :linenos:
+    :emphasize-lines: 5-8
+
+    _ep_pd := StringToElement(AllIdentifiers,
+        "chapterModel::sectionModelQuery::funcReferencedIdentifiers::pd",
+        create:0);
+    _s_ids += _ep_pd ;
+    _s_refIds := ReferencedIdentifiers(
+        searchIdentSet :  _s_ids, 
+        searchAttrSet  :  AllAttributeNames, 
+        recursive      :  1);
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _s_refIds ;
+    endblock ;
+
+produces in the listing file:
+
+.. code-block:: aimms
+
+    _s_refIds := data 
+    { 'chapterModel::sectionModelQuery::funcReferencedIdentifiers::p1',
+      'chapterModel::sectionModelQuery::funcReferencedIdentifiers::p2' } ;
+
+
+References
+-----------
+
+    *   :aimms:func:`ConstraintVariables`, and 
+
+    *   :aimms:func:`VariableConstraints`
+
+    *   ``ReferencedIdentifiers`` is essential in https://how-to.aimms.com/Articles/582/582-reduce-client-server-exchange.html
+
+    *   `Working with the Set AllIdentifiers  <https://documentation.aimms.com/language-reference/data-communication-components/data-initialization-verification-and-control/working-with-the-set-allidentifiers.html#working-with-the-set-allidentifiers>`_ 

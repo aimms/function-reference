@@ -31,7 +31,41 @@ Return Value
 
     This function replaces the deprecated suffix :ref:`.txt`.
 
-.. seealso::
+
+Example
+-------
+
+Given the declaration: 
+
+.. code-block:: aimms
+
+    Parameter p_d {
+        Text: "a scalar";
+    }
+
+the code:
+
+.. code-block:: aimms
+    :linenos:
+    :emphasize-lines: 4
+
+    _ep_p := StringToElement(AllIdentifiers, 
+        "chapterModel::sectionModelQuery::funcIdentifierText::p_d", 
+        create: 0);
+    _sp_txt := IdentifierText( _ep_p );
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _sp_txt ;
+    endblock ;
+
+produces in the listing file:
+
+.. code-block:: aimms
+
+    _sp_txt := "a scalar" ;
+
+
+References
+-----------
 
     -  The functions :aimms:func:`IdentifierText`.
 

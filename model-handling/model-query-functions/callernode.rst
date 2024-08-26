@@ -27,8 +27,57 @@ Return Value
 
     This function returns an element in :aimms:set:`AllSymbols`.
 
-.. seealso::
 
-    -  The example at :aimms:func:`CallerNumberOfLocations`
 
-    -  The functions :aimms:func:`CallerAttribute`, :aimms:func:`CallerLine`, :aimms:func:`errh::Node`, and :aimms:func:`CallerNumberOfLocations`.
+Example
+-------
+
+The function :aimms:func:`CallerNode` is usually part of utility code, as follows:
+
+.. code-block:: aimms
+    :linenos:
+    :emphasize-lines: 3
+
+    Procedure pr_fragmentCallerNode {
+        Body: {
+            _ep_callerNode := CallerNode(1);
+            display _ep_callerNode ;
+        }
+        ElementParameter _ep_callerNode {
+            Range: AllSymbols;
+        }
+    }
+
+Which can then be used as follows:
+
+.. code-block:: aimms
+
+    Procedure pr_testCallerNode {
+        Body: {
+            ! Hello
+            
+            pr_fragmentCallerNode();
+        }
+        aimmsunit::TestSuite: modelQuery;
+    }
+
+A call to ``pr_testCallerNode`` produces in the listing file:
+
+.. code-block:: aimms
+
+    _ep_callerNode := 'chapterModel::sectionModelQuery::funcCallerNode::pr_testCallerNode' ;
+
+
+For a more extended illustration of how the function :aimms:func:`CallerNode` can be part of utility code, 
+please check the example at :aimms:func:`CallerNumberOfLocations`.
+
+References
+-----------
+
+    *  :aimms:func:`CallerAttribute`, 
+
+    *  :aimms:func:`CallerLine`, 
+
+    *  :aimms:func:`errh::Node`, and 
+
+    *  :aimms:func:`CallerNumberOfLocations`.

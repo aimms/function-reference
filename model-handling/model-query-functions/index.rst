@@ -21,13 +21,13 @@ identifiers in the model:
    domainindex
    identifierattributes
    identifierdimension
-   identifiershowattributes
    identifierelementrange
-   identifiershowtreelocation
    identifiertext
    identifiertype
    identifierunit
    indexrange
+   identifiershowattributes
+   identifiershowtreelocation
    isruntimeidentifier
    referencedidentifiers
    sectionidentifiers

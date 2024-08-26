@@ -32,7 +32,32 @@ Return Value
 
     This function replaces the deprecated suffix :ref:`.dim`.
 
-.. seealso::
+Example
+-------
+
+Given the declaration of a two dimensional parameter ``p_d(i_a,i_b)``, the code:
+
+.. code-block:: aimms
+    :linenos:
+    :emphasize-lines: 4
+
+    _ep_p := StringToElement(AllIdentifiers, 
+        "chapterModel::sectionModelQuery::funcIdentifierDimension::p_d", 
+        create: 0);
+    _p_dim := IdentifierDimension( _ep_p );
+    block where single_column_display := 1, listing_number_precision := 6 ;
+        display _p_dim ;
+    endblock ;
+
+produces in the listing file:
+
+.. code-block:: aimms
+
+    _p_dim := 2 ;
+
+
+References
+-----------
 
     -  The functions :aimms:func:`DomainIndex` and :aimms:func:`IndexRange`.
 
