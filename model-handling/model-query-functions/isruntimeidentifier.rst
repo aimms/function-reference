@@ -64,7 +64,7 @@ References
 
     *  `Runtime Libraries and the Model Edit Functions <https://documentation.aimms.com/language-reference/advanced-language-components/model-structure-and-modules/runtime-libraries-and-the-model-edit-functions.html#runtime-libraries-and-the-model-edit-functions>`_
 
-    *  `Retrieve Value of Dynamic <Identifier https://how-to.aimms.com/Articles/146/146-value-dynamic-identifier.html>`_ 
+    *  `Retrieve Value of Dynamic Identifier <https://how-to.aimms.com/Articles/146/146-value-dynamic-identifier.html>`_ 
     
     *  `Repeat Data with Model Query and Model Edit <https://how-to.aimms.com/Articles/132/132-Repetive-Patterns-Model-Edit.html>`_
 
