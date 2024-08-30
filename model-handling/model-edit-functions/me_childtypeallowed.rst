@@ -32,6 +32,40 @@ Return Value
     to identifier ``runtimeId``. When ``runtimeId`` doesn't reference a
     runtime identifier an error will be raised.
 
-.. seealso::
 
-    The functions :aimms:func:`me::Create` and :aimms:func:`me::Move`.
+Example
+-------
+
+Viewing a small runtime library with prefix ``frerl`` in the model explorer:
+
+.. figure:: images/runtimelib-setup.png
+    :align: center
+
+Let ``ep_functionReferenceExampleRuntimeParameter`` have value ``frerl::p_a``, 
+then the code:
+
+.. code-block:: aimms
+
+    _bp_childTypeAllowed := me::ChildTypeAllowed(
+        runtimeId :  ep_functionReferenceExampleRuntimeParameter, 
+        newType   :  'parameter');
+    display _bp_childTypeAllowed ;
+
+Produces the following in the listing file:
+
+.. code-block:: aimms
+
+    _bp_childTypeAllowed := 0 ;
+
+Illustrating that a parameter cannot have, as child, another parameter.
+
+References
+-----------
+
+    *   :aimms:func:`me::Create` 
+
+    *   :aimms:func:`me::Children`
+
+Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+
+

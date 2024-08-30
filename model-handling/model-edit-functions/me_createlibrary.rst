@@ -31,9 +31,31 @@ Return Value
     library when successful and the empty element upon failure. In the
     latter case at least one error has been raised.
 
-.. seealso::
 
-    -  The functions :aimms:func:`me::ImportLibrary` and :aimms:func:`me::Create`.
+Example
+-------
 
-    -  :doc:`Articles/146/146-value-dynamic-identifier`
-       illustrates the use of model edit functions.
+The code:
+
+.. code-block:: aimms
+
+	ep_functionReferenceExampleRuntimeLib := me::CreateLibrary(
+		libraryName :  sp_functionReferenceExampleLibName, 
+		prefixName  :  sp_functionReferenceExampleLibPrefix );
+	_ep_type := IdentifierType(ep_functionReferenceExampleRuntimeLib);
+	display _ep_type ;
+
+Creates a runtime library, and produces in the listing file:
+
+.. code-block:: aimms
+
+    _ep_type := 'LibraryModule' ;
+
+References
+-----------
+
+    *   :aimms:func:`me::ImportLibrary` 
+	
+	*   :aimms:func:`me::Create`
+
+Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_

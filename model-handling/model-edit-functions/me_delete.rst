@@ -27,11 +27,34 @@ Return Value
     latter case error(s) have been raised. When ``runtimeId`` doesn't
     reference a runtime identifier an error will be raised.
 
-.. seealso::
 
-    -  The functions :aimms:func:`me::Children` and :aimms:func:`me::GetAttribute`.
+Example
+-------
 
-    -  :doc:`Articles/146/146-value-dynamic-identifier`
-       illustrates the use of model edit functions. The purpose of
-       :aimms:func:`me::Delete` in that post is to remove an old existing library
-       before creating a new one.
+Viewing a small runtime library with prefix ``frerl`` in the model explorer:
+
+.. figure:: images/runtimelib-setup.png
+    :align: center
+
+Let ``ep_functionReferenceExampleRuntimeParameter`` have value ``frerl::p_a``, then the code:
+
+.. code-block:: aimms
+
+    me::Delete( ep_functionReferenceExampleRuntimeParameter );
+
+deletes that parameter from the declaration section, thus changing that library to the following:
+
+.. figure:: images/runtimelib-after-delete.png
+    :align: center
+
+Illustrating that a runtime library can shrink at runtime.
+
+References
+-----------
+
+    *   :aimms:func:`me::Children` 
+
+    *   :aimms:func:`me::GetAttribute`.
+
+Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+

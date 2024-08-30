@@ -50,14 +50,7 @@ produces in the listing file:
 
     _bp_isRuntime := 1 ;
 
-This illustrates that runtime identifiers are also used by AIMMS repository libraries including:
-
-#.  `AIMMS WebUI <https://documentation.aimms.com/webui/index.html>`_
-
-#.  `AIMMS DataExchange <https://documentation.aimms.com/dataexchange/index.html>`_
-
-#.  `AIMMS Collaborative Data Management <https://documentation.aimms.com/cdm/index.html>`_.
-
+ 
 
 References
 -----------

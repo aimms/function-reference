@@ -39,11 +39,41 @@ Return Value
     ``runtimeId`` doesn't reference a runtime identifier an error will be
     raised.
 
-.. seealso::
 
-    -  The functions :aimms:func:`me::Delete` and :aimms:func:`me::SetAttribute`.
+Example
+-------
 
-    -  :doc:`Articles/146/146-value-dynamic-identifier`
-       illustrates the use of model edit functions. The purpose of
-       :aimms:func:`me::Create` in that post is to create the procedure that does the
-       actual retrieving of the data.
+Viewing a small runtime library with prefix ``frerl`` in the model explorer:
+
+.. figure:: images/runtimelib-setup.png
+    :align: center
+
+Let ``ep_functionReferenceExampleRuntimeDeclSec`` have value ``frerl::runtime_declaration_identifiers``, then the code:
+
+.. code-block:: aimms
+
+    me::Create(
+        name     :  "v_x", 
+        newType  :  'variable', 
+        parentId :  ep_functionReferenceExampleRuntimeDeclSec, 
+        pos      :  0);
+
+inserts a variable at the end of the declaration section, thus changing that library to the following:
+
+.. figure:: images/runtimelib-after-create.png
+    :align: center
+
+Illustrating that a runtime library can grow at runtime.
+
+References
+-----------
+
+    *  :aimms:func:`me::Delete` 
+
+    *  :aimms:func:`me::CreateLibrary` 
+
+    *  :aimms:func:`me::Move` 
+
+    *  :aimms:func:`me::SetAttribute`.
+
+Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_

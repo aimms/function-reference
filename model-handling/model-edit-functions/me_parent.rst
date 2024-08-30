@@ -29,4 +29,9 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`me::Children` and :aimms:func:`me::GetAttribute`.
+    *   :aimms:func:`me::Children` 
+
+	*   :aimms:func:`me::GetAttribute`.
+
+Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+

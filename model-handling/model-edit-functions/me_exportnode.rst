@@ -30,6 +30,38 @@ Return Value
     The procedure returns 1 if the file is written successfully. If the
     procedure fails to write the file it returns 0 after raising errors.
 
-.. seealso::
 
-    The functions :aimms:func:`me::CreateLibrary`, :aimms:func:`me::ImportLibrary` and :aimms:func:`me::ImportNode`.
+Example
+-------
+
+Viewing a small runtime library with prefix ``frerl`` in the model explorer:
+
+.. figure:: images/runtimelib-setup.png
+    :align: center
+
+Let ``ep_functionReferenceExampleRuntimeLib`` be the element parameter 
+that holds the root of that library as value, then the code:
+
+.. code-block:: aimms
+
+    me::ExportNode(
+        esection :  ep_functionReferenceExampleRuntimeLib, 
+        filename :  "test.ams");
+
+writes the contents of the runtime library to the file ``test.ams``.
+
+
+References
+-----------
+
+    *   :aimms:func:`me::CreateLibrary`, 
+
+    *   :aimms:func:`me::ImportLibrary` 
+
+    *   :aimms:func:`me::ImportNode`.
+
+	*   :aimms:func:`me::ExportNode` plays an essential role in `Create a static AIMMS Library from a runtime library <https://how-to.aimms.com/Articles/581/581-static-lib-from-runtime-lib.html>`_
+
+
+Generic references for model edit functions can be found on the 
+`index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
