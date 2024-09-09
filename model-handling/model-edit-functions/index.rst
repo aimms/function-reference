@@ -23,6 +23,7 @@ AIMMS supports the following functions for model editing:
    me_move
    me_parent
    me_rename
+   me_setannotation
    me_setattribute
 
 

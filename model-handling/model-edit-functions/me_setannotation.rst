@@ -1,19 +1,19 @@
-.. aimms:function:: me::SetAttribute(runtimeId, attr, txt)
+.. aimms:function:: me::SetAnnotation(runtimeId, key, value)
 
-.. _me::SetAttribute:
+.. _me::SetAnnotation:
 
-me::SetAttribute
-================
+me::SetAnnotation
+=================
 
-The procedure :aimms:func:`me::SetAttribute` changes the contents 
-of an attribute of a runtime identifier.
+The procedure :aimms:func:`me::SetAnnotation` changes an annotation of a runtime
+identifier.
 
 .. code-block:: aimms
 
-    me::SetAttribute(
+    me::SetAnnotation(
             runtimeId,  ! (input) an element
-            attr,       ! (input) an element
-            txt         ! (input) a string expression
+            key,        ! (input) name of annotation
+            value       ! (input) a string expression
     )
 
 Arguments
@@ -22,12 +22,11 @@ Arguments
     *runtimeId*
         An element in the set :aimms:set:`AllIdentifiers` referencing a runtime identifier.
 
-    *attr*
-        An element in the set :aimms:set:`AllAttributeNames`
+    *key*
+        A string that is a valid annotation key.
 
-    *txt*
-        The text to be assigned. Using the empty string will effectively delete
-        the attribute from the runtime identifier.
+    *value*
+        The text to be assigned.  
 
 Return Value
 ------------
@@ -52,20 +51,20 @@ Let
 
 .. code-block:: aimms
 
-	me::SetAttribute(
-		runtimeId :  ep_functionReferenceExampleRuntimeParameter, 
-		attr      :  'text', 
-		txt       :  "just another runtime identifier");
-	_sp_text := me::GetAttribute(
-		runtimeId :  ep_functionReferenceExampleRuntimeParameter, 
-		attr      :  'text');
-	display _sp_text ;
+    me::SetAnnotation(
+        runtimeId :  ep_functionReferenceExampleRuntimeParameter, 
+        key       :  "webui::TooltipIdentifier", 
+        value     :  "chapterModel::sectionModelEdit::funcMeSetAnnotation::sp_tooltipRuntimeIdentifier");
+    me::Compile( ep_functionReferenceExampleRuntimeLib );
+    GetAnnotationValues("webui::TooltipIdentifier",_sp_rtd);
+    _sp_annot := _sp_rtd( ep_functionReferenceExampleRuntimeParameter );
+    display _sp_annot ;
 
 produces the following in the listing file:
 
 .. code-block:: aimms
 
-    _sp_text := "just another runtime identifier" ;
+    _sp_annot := "chapterModel::sectionModelEdit::funcMeSetAnnotation::sp_tooltipRuntimeIdentifier" ;
 
 
 References
@@ -74,6 +73,6 @@ References
     *   :aimms:func:`me::ChangeType`  
 
     *   :aimms:func:`me::Rename`.
-	
+    
 
 Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_

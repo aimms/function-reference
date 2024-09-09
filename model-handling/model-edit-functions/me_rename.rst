@@ -36,6 +36,37 @@ Return Value
 
     The name change file is not supported for runtime libraries.
 
-.. seealso::
 
-    The functions :aimms:func:`me::ChangeType` and :aimms:func:`me::Move`.
+Example
+-------
+
+Viewing a small runtime library with prefix ``frerl`` in the model explorer:
+
+.. figure:: images/runtimelib-setup.png
+    :align: center
+
+Let 
+
+*   ``ep_functionReferenceExampleRuntimeParameter`` refer to the parameter in the runtime library then the code:
+
+.. code-block:: aimms
+
+	me::Rename(
+		runtimeId :  ep_functionReferenceExampleRuntimeParameter, 
+		newName   :  "p_b");
+
+renames the parameter as shown below:
+
+.. figure:: images/runtimelib-after-rename.png
+    :align: center
+
+
+References
+-----------
+
+    *   :aimms:func:`me::ChangeType`  
+
+    *   :aimms:func:`me::Move`
+	
+Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+

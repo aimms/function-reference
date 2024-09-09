@@ -19,6 +19,7 @@ identifiers in the model:
    constraintvariables
    declaredsubset
    domainindex
+   getannotationvalues
    identifierattributes
    identifierdimension
    identifierelementrange
