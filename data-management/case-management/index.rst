@@ -20,13 +20,13 @@ whether current data needs to be saved. These core functions are:
 -  :aimms:func:`CaseFileGetContentType`
 -  :aimms:func:`CaseCompareIdentifier`
 -  :aimms:func:`CaseCreateDifferenceFile`
+-  :aimms:func:`CaseFileURLtoElement`
 -  :aimms:func:`CaseFileSectionExists`
 -  :aimms:func:`CaseFileSectionGetContentType`
 -  :aimms:func:`CaseFileSectionLoad`
 -  :aimms:func:`CaseFileSectionMerge`
 -  :aimms:func:`CaseFileSectionRemove`
 -  :aimms:func:`CaseFileSectionSave`
--  :aimms:func:`CaseFileURLtoElement`
 
 The GUI/IDE related data management functions can be used to create a
 specific GUI for your own (modified) data management. They allow you to

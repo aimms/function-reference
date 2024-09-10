@@ -44,6 +44,25 @@ Return Value
     -  If your application is linked to the AIMMS PRO server, the url can
        also point to a case file stored at the server.
 
+Example
+----------
+
+The code:
+
+.. code-block:: aimms
+
+	CaseFileGetContentType(
+		url         :  "data/caseA.data", 
+		contentType :  _ep_contentType);
+	display _ep_contentType ;
+
+produces in the listing file:
+
+.. code-block:: aimms
+
+    _ep_contentType := 'chapterData::sectionCaseManagement::s_CaseManagementData' ;
+
+
 .. seealso::
 
     The function :aimms:func:`CaseFileSave`.

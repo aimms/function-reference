@@ -17,7 +17,7 @@ a case file. If the file already exists, it is completely overwritten.
 
 Arguments
 ---------
-
+ 
     *url*
         A string referencing the url of the case file in which you want to save
         the data. This url can point to a file on your local file system, or to
@@ -51,6 +51,20 @@ Return Value
 
     -  When you save using :aimms:func:`CaseFileSave` to an existing ``.data`` file
        with sections, the sections are removed.
+
+
+Example
+----------
+
+The code:
+
+.. code-block:: aimms
+    :linenos:
+
+	read from file "caseFileInputData/caseC.txt" ;
+	CaseFileSave( "data/caseC.data", s_CaseManagementData );
+
+Reads data from a text file, and then saves it in binary format to ``data/caseC.data``.
 
 .. seealso::
 

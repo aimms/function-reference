@@ -49,6 +49,51 @@ Return Value
     -  Data stored in user sections of the case file, will not be read by
        :aimms:func:`CaseFileLoad`.
 
+Example
+----------
+
+Given two cases ``data/caseA.data`` and ``data/caseB.data`` containing:
+
++-----------+-----------------+--------------+------------------------+
+|           | caseA           | caseB        | caseB merged to caseA  |
++===========+=================+==============+========================+
+| p_num     | 77              | 88           | 88                     |
++-----------+-----------------+--------------+------------------------+
+| p_dat(a)  | 11              | 11           | 11                     |
++-----------+-----------------+--------------+------------------------+
+| p_dat(b)  | 22              | 20           | 20                     |
++-----------+-----------------+--------------+------------------------+
+| p_dat(c)  | 33              |              | 33                     |
++-----------+-----------------+--------------+------------------------+
+| p_dat(d)  |                 | 44           | 44                     |
++-----------+-----------------+--------------+------------------------+
+
+Then the code:
+
+.. code-block:: aimms
+    :linenos:
+
+    CaseFileLoad(
+        url                         :  "data/caseA.data", 
+        keepUnreferencedRuntimeLibs :  0);
+    block where single_column_display := 1 ;
+        display p_num, p_dat ;
+    endblock ;
+
+produces in the listing file:
+
+.. code-block:: aimms
+
+    chapterData::sectionCaseManagement::p_num := 77 ;
+
+
+    chapterData::sectionCaseManagement::p_dat := data 
+    { a : 11,
+      b : 22,
+      c : 33 } ;
+
+
+
 .. seealso::
 
     The procedure :aimms:func:`CaseFileMerge`.

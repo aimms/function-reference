@@ -72,3 +72,59 @@ Return Value
        equal to ``elementReplacement``, ``elementAddition`` or
        ``elementMultiplication``, the file is always read in merge mode, so
        that the ``diffTypes`` can be applied in a sensible way.
+
+Example
+--------
+
+Given two cases ``data/caseA.data`` and ``data/caseB.data`` containing:
+
++-----------+-----------------+--------------+------------------------+
+|           | caseA           | caseB        | caseB merged to caseA  |
++===========+=================+==============+========================+
+| p_num     | 77              | 88           | 88                     |
++-----------+-----------------+--------------+------------------------+
+| p_dat(a)  | 11              | 11           | 11                     |
++-----------+-----------------+--------------+------------------------+
+| p_dat(b)  | 22              | 20           | 20                     |
++-----------+-----------------+--------------+------------------------+
+| p_dat(c)  | 33              |              | 33                     |
++-----------+-----------------+--------------+------------------------+
+| p_dat(d)  |                 | 44           | 44                     |
++-----------+-----------------+--------------+------------------------+
+
+Then the code:
+
+.. code-block:: aimms
+    :linenos:
+
+
+    CaseFileLoad(
+        url                         :  "data/caseA.data", 
+        keepUnreferencedRuntimeLibs :  0);
+    _ep_diffTypes(i_caseManagementData) := 'elementReplacement' ;
+    CaseFileURLtoElement( "data/caseB.data", _ep_refCase, 1 );
+    CaseCreateDifferenceFile(
+        referenceCase            :  _ep_refCase, 
+        outputFilename           :  "log/casediff.txt", 
+        diffTypes                :  _ep_diffTypes, 
+        absoluteTolerance        :  0, 
+        relativeTolerance        :  0, 
+        outputPrecision          :  0, 
+        respectDomainCurrentCase :  0);
+
+Will produce the following contents in ``log/casediff.txt``:
+
+.. code-block:: aimms
+    :linenos:
+
+    chapterData::sectionCaseManagement::s_chars += data 
+    { c } ;
+    chapterData::sectionCaseManagement::s_chars -= data 
+    { d } ;
+
+    chapterData::sectionCaseManagement::p_num := 77 ;
+
+    chapterData::sectionCaseManagement::p_dat :=$ data 
+    { b : 22,
+      c : 33,
+      d :  0 } ;
