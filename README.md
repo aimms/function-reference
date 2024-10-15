@@ -27,6 +27,12 @@ After installing all the above requirements, please go to the location of your p
 
 </details>
 
+
+**Alternative**
+
+As an alternative to setting things up on your local computer, use a docker container, see https://aimmsopt.sharepoint.com/sites/InternalSupportDocumentation/SitePages/Using-docker-to-build-the-documentation-locally.aspx
+
+
 > **💡1:** GitLab CI is following exactly the same process when building the documentation in the pipeline. This is defined in the [.gitlab-ci.yml](.gitlab-ci.yml) file. More details below
 
 > **⚠️2:** When pushing to the **master branch only**, the repo is built and **pushed (merged) to [documentation.aimms.com/language-reference/](https://documentation.aimms.com/language-reference/index.html)**.
