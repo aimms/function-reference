@@ -7,7 +7,7 @@ GMP::Instance::GetInfeasibleData
 
 | NOTE: THIS PROCEDURE IS NOT AVAILABLE (YET) IN ANY OFFICIAL AIMMS RELEASE.
 |
-| Usually, methods for detecting the cause of an infeasibiliy in a mathematica model
+| Usually, methods for detecting the cause of an infeasibiliy in a mathematical model
   return information about constraints and variables. The procedure
   :aimms:func:`GMP::Instance::GetInfeasibleData` uses a different approach, namely, it
   can be used to retrieve information about parameters that cause a (linear)
@@ -84,7 +84,7 @@ Return Value
     -  The *effort* level influences how much effort is used to find outliers in the (infeasible)
        data. It does not influence the running time of the *method* used.
 
-    -  The option ``Element format`` determines the format used for printing element in the *message*.
+    -  The option ``Element format`` determines the format used for printing elements in the *message*.
 
     -  The suffix ``.SuspicionLevel`` gets a value from the set `AllSuspicionLevels`, or remains empty
        if the parameter is not part of the infeasible data.
@@ -105,17 +105,18 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a symbolic mathematical program.
+    Assume that 'MP' is a symbolic mathematical program and 'pMessage' a string parameter.
 
     .. code-block:: aimms
 
                solve MP;
                
-               if ( MP.ProgramStatus = 'Infeasible' or MP.ProgramStatus = 'InfeasibleOrUnbounded' ) then
-                   GMP::Instance::GetInfeasibleData( 'MP', AllParameters, pMessage, method: 4,
-                                                     textFormat: 1 );
+               if ( MP.ProgramStatus = 'Infeasible'            or
+                    MP.ProgramStatus = 'InfeasibleOrUnbounded' ) then
+                   GMP::Instance::GetInfeasibleData( 'MP', AllParameters, pMessage,
+                                                     method: 4, textFormat: 1 );
                    
-                   ! Change the font size for the text with HTML formatting.
+                   ! Change the font size for the HTML formatted text.
                    pMessage := "<span style=\"font-size: 20px\">" + pMessage + "</span>";
                endif;
 
