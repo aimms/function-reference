@@ -25,8 +25,8 @@ GMP::Instance::CreateBlockMatrices
 
     GMP::Instance::CreateBlockMatrices(
          GMP,            ! (input) a generated mathematical program
-         colSet          ! (input) a subset of Integers
-         blockValue      ! (input) an integer parameter
+         colSet,         ! (input) a subset of Integers
+         blockValue,     ! (input) an integer parameter
          prefix          ! (input) a string expression
     )
 

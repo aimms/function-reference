@@ -31,6 +31,7 @@ managing generated mathematical program instances:
    gmp_instance_getbestbound
    gmp_instance_getcolumnnumbers
    gmp_instance_getdirection
+   gmp_instance_getinfeasibledata
    gmp_instance_getmathematicalprogrammingtype
    gmp_instance_getmemoryused
    gmp_instance_getnumberofcolumns
