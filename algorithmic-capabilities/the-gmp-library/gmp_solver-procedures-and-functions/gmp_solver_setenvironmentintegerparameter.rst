@@ -45,8 +45,8 @@ Parameters
 ----------
 
     This procedure and the procedures :aimms:func:`GMP::Solver::SetEnvironmentDoubleParameter` and :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`
-    can be used to set Gurobi `Configuration Parameters <https://www.gurobi.com/documentation/10.0/refman/configuration_parameters.html>`__. Typically
-    these procedures are used to set Gurobi `Parameters <https://www.gurobi.com/documentation/10.0/refman/parameters.html#sec:Parameters>`__ for
+    can be used to set Gurobi `Configuration Parameters <https://www.gurobi.com/documentation/11.0/refman/configuration_parameters.html>`__. Typically
+    these procedures are used to set Gurobi `Parameters <https://www.gurobi.com/documentation/11.0/refman/parameters.html#sec:Parameters>`__ for
     Cloud, Compute Server, Cluster Manager or Token Server. Note that normally these parameters are set in the Gurobi license file.
 
 Example
