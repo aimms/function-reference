@@ -31,6 +31,30 @@ Return Value
     current filter is the filter ``To Global Collector`` an additional error
     will be raised.
 
+
+Example
+-------
+
+.. code-block:: aimms
+    :linenos:
+
+    block 
+        pr_divideByZero();
+    onerror _ep_err do
+        _bp_isMarkedAsHandled := errh::IsMarkedAsHandled(_ep_err );
+        errh::MarkAsHandled( _ep_err, 1 );
+    endblock ;
+
+
+
+Afterwards:
+
+.. code-block:: aimms
+
+    _bp_isMarkedAsHandled = 0
+    
+Because the error is marked as handled just after.
+
 .. seealso::
 
     The function :aimms:func:`errh::MarkAsHandled`.

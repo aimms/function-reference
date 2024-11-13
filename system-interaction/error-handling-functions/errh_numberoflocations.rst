@@ -32,6 +32,29 @@ Return Value
     current filter is the filter ``To Global Collector`` an additional error
     will be raised.
 
+
+Example
+-------
+
+.. code-block:: aimms
+    :linenos:
+    
+    block 
+        pr_divideByZero();
+    onerror _ep_err do
+        _p_noLoc := errh::NumberOfLocations(_ep_err);
+        errh::MarkAsHandled( _ep_err, 1 );
+    endblock ;
+
+
+Afterwards:
+
+.. code-block:: aimms
+
+    _p_noLoc >= 1
+
+Depending on the number of procedures on the running stack.
+
 .. seealso::
 
     The functions :aimms:func:`errh::Node`, :aimms:func:`errh::Attribute` and :aimms:func:`errh::Line`.

@@ -51,6 +51,34 @@ Return Value
     additional error will be raised. If the current filter is the filter
     ``To Global Collector`` an additional error will be raised.
 
-.. seealso::
 
-    The functions :aimms:func:`errh::Severity`, :aimms:func:`errh::Message`, :aimms:func:`errh::Category` and :aimms:func:`errh::Code`.
+Example
+-------
+
+.. code-block:: aimms
+    :linenos:
+
+    block 
+        pr_divideByZero();
+    onerror _ep_err do
+        errh::Adapt(
+            err      :  _ep_err, 
+            message  :  "Don't worry, be happy" );
+    endblock ;
+
+Lines 4-6 adapt the message of the error thrown by ``pr_divideByZero`` to ``"Don't worry, be happy"``
+
+References
+-----------
+
+    *   :aimms:func:`errh::Severity` 
+   
+    *   :aimms:func:`errh::Message`
+
+    *   :aimms:func:`errh::Category`
+
+    *   :aimms:func:`errh::Code`
+
+
+
+ 

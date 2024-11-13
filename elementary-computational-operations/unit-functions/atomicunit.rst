@@ -39,9 +39,7 @@ Example
 
 Given the unit of measurement declarations:
 
-
 .. code-block:: aimms
-
 
 	Quantity SI_Time_Duration {
 		BaseUnit: s;
@@ -55,6 +53,9 @@ Given the unit of measurement declarations:
 	Quantity SI_Velocity {
 		BaseUnit: m/s;
 		Comment: "Expresses the value for the change in distance per time unit.";
+	}
+	UnitParameter up_baseVelocity {
+		Definition: unit(m/s);
 	}
 	Quantity SI_Length {
 		BaseUnit: m;
@@ -71,6 +72,36 @@ The code:
 	display _up_atomic ; ! _up_atomic := [m/s] ;
 
 Returns the atomic units for speed.
+
+
+And with the procedure:
+
+.. code-block:: aimms
+
+	Procedure pr_isCommensurate {
+		Arguments: (up_one,up_two);
+		Body: {
+			_bp_isCommensurate := AtomicUnit( up_one ) = AtomicUnit( up_two );
+			
+			return _bp_isCommensurate ;
+		}
+		Comment: "Returns 1 iff units up_one and up_two measure the same quantity.";
+		UnitParameter up_one {
+			Property: Input;
+		}
+		UnitParameter up_two {
+			Property: Input;
+		}
+		Parameter _bp_isCommensurate {
+			Range: binary;
+		}
+	}
+
+we can verify whether [km/hour] is a velocity by:
+
+.. code-block:: aimms
+
+	_bp_isVelocity := pr_isCommensurate( unit(km/hour), up_baseVelocity );
 
 
 .. seealso::

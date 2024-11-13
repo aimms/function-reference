@@ -33,6 +33,29 @@ Return Value
     current filter is the filter ``To Global Collector`` an additional error
     will be raised.
 
+
+Example
+-------
+
+.. code-block:: aimms
+    :linenos:
+
+    block 
+        pr_readError();
+    onerror _ep_err do
+        _sp_file := errh::Filename(_ep_err );
+        errh::MarkAsHandled( _ep_err, 1 );
+    endblock ;
+
+
+Afterwards:
+
+.. code-block:: aimms
+
+    _sp_file = "./verifiedData/readInError.txt"
+
+When that was the file being read.
+
 .. seealso::
 
     The functions :aimms:func:`errh::Line` and :aimms:func:`errh::Column`.

@@ -39,6 +39,22 @@ Return Value
     current filter is the filter ``To Global Collector`` an additional error
     will be raised.
 
+
+Example
+-------
+
+.. code-block:: aimms
+    :linenos:
+
+    block 
+        pr_divideByZero();
+    onerror _ep_err do
+        _sp_crea := errh::CreationTime(_ep_err, "%c%y-%m-%d %H:%M:%S");
+        errh::MarkAsHandled( _ep_err, 1 );
+    endblock ;
+
+
+
 .. seealso::
 
     The function :aimms:func:`CurrentToString`.

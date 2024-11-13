@@ -5,8 +5,8 @@
 errh::Attribute
 ===============
 
-The function :aimms:func:`errh::Attribute` returns the identifier or node in which
-the error occurred.
+The function :aimms:func:`errh::Attribute` returns the attribute 
+of the identifier or node in which the error occurred.
 
 .. code-block:: aimms
 
@@ -35,6 +35,28 @@ Return Value
     When ``err`` does not reference an element in :aimms:set:`errh::PendingErrors` or when the
     current filter is the filter ``To Global Collector`` an additional error
     will be raised.
+
+
+Example
+-------
+
+.. code-block:: aimms
+    :linenos:
+
+    block 
+        pr_divideByZero();
+    onerror _ep_err do
+        _ep_attr := errh::Attribute(_ep_err);
+        errh::MarkAsHandled( _ep_err, 1 );
+    endblock ;
+
+
+
+Afterwards:
+
+.. code-block:: aimms
+
+    _ep_attr = 'body'
 
 .. seealso::
 

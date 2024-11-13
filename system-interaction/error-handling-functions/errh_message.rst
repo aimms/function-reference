@@ -31,6 +31,26 @@ Return Value
     current filter is the filter ``To Global Collector`` an additional error
     will be raised.
 
+
+Example
+-------
+
+.. code-block:: aimms
+    :linenos:
+
+    block 
+        pr_divideByZero();
+    onerror _ep_err do
+        _sp_msg := errh::Message(_ep_err);
+        errh::MarkAsHandled( _ep_err, 1 );
+    endblock ;
+
+Afterwards:
+
+.. code-block:: aimms
+
+    _sp_msg =  "Division by zero error with 1 / 0."
+
 .. seealso::
 
     The procedure :aimms:func:`errh::Adapt`.

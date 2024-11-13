@@ -35,6 +35,26 @@ Return Value
     current filter is the filter ``To Global Collector`` an additional error
     will be raised.
 
+
+Example
+-------
+
+.. code-block:: aimms
+    :linenos:
+
+    block 
+        pr_divideByZero();
+    onerror _ep_err do
+        _p_line := errh::Line(_ep_err);
+        errh::MarkAsHandled( _ep_err, 1 );
+    endblock ;
+
+Afterwards:
+
+.. code-block:: aimms
+
+    _p_line = 2
+
 .. seealso::
 
     The function :aimms:func:`errh::Column`, :aimms:func:`errh::Filename`, :aimms:func:`errh::Attribute`, :aimms:func:`errh::Node` and :aimms:func:`errh::NumberOfLocations`.

@@ -36,6 +36,27 @@ Return Value
     current filter is the filter ``To Global Collector`` an additional error
     will be raised.
 
+
+Example
+-------
+
+.. code-block:: aimms
+    :linenos:
+
+    block 
+        pr_divideByZero();
+    onerror _ep_err do
+        _ep_node := errh::Node(_ep_err);
+        errh::MarkAsHandled( _ep_err, 1 );
+    endblock ;
+
+Afterwards:
+
+.. code-block:: aimms
+
+
+    _ep_node = 'chapterSystem::sectionError::pr_divideByZero'
+
 .. seealso::
 
     The functions :aimms:func:`errh::Attribute`, :aimms:func:`errh::Line` and :aimms:func:`errh::NumberOfLocations`.
