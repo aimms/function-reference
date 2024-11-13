@@ -45,8 +45,8 @@ Parameters
 ----------
 
     This procedure and the procedures :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter` and :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`
-    can be used to set Gurobi `Configuration Parameters <https://www.gurobi.com/documentation/10.0/refman/configuration_parameters.html>`__. Typically
-    these procedures are used to set Gurobi `Parameters <https://www.gurobi.com/documentation/10.0/refman/parameters.html#sec:Parameters>`__ for
+    can be used to set Gurobi `Configuration Parameters <https://www.gurobi.com/documentation/11.0/refman/configuration_parameters.html>`__. Typically
+    these procedures are used to set Gurobi `Parameters <https://www.gurobi.com/documentation/11.0/refman/parameters.html#sec:Parameters>`__ for
     Cloud, Compute Server, Cluster Manager or Token Server. Note that normally these parameters are set in the Gurobi license file.
 
 Example
@@ -54,7 +54,7 @@ Example
 
     .. code-block:: aimms
 
-               MIPSolver := 'Gurobi 10.0';
+               MIPSolver := 'Gurobi 11.0';
                
                GMP::Solver::SetEnvironmentStringParameter( MIPSolver, "ComputeServer", "myserver1:61000" );
                GMP::Solver::SetEnvironmentDoubleParameter( MIPSolver, "CSQueueTimeout", 60 );
