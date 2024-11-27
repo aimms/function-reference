@@ -22,8 +22,6 @@ Arguments
 
     *executable*
         A string representing the name of the program that you want to execute.
-        When running on Linux and the program is located in the AIMMS project
-        folder, this string must start with a '/.' (without the single quotes).
 
     *commandline (optional)*
         A string representing the arguments that you want to pass to the
@@ -46,10 +44,26 @@ Arguments
 
 .. note::
 
-    As a general rule, you should not wait for interactive windowed
-    applications. Waiting for the termination of a program is necessary when
-    the program does some form of external data processing which is required
-    for the execution of your model.
+    *   When running on Linux and the program is located in the AIMMS project
+        folder, this string must start with a ``./``.
+
+    *   On Linux, ensure the program has the permission to execute.
+        To ensure ``myprog`` is executable, whereby ``myprog`` is in the current directory:
+        
+        .. code-block:: aimms 
+            :linenos:
+
+            Execute(
+                Executable  :  "chmod", 
+                CommandLine :  " a+rx ./myprog ");
+                
+    *   On Linux, avoid using redirects in the command line (using chacters ``>``, ``<``, and ``|``.
+
+    *   As a general rule, you should not wait for interactive windowed
+        applications. Waiting for the termination of a program is necessary when
+        the program does some form of external data processing which is required
+        for the execution of your model.
+
 
 .. seealso::
 
