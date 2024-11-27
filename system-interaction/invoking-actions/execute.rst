@@ -45,7 +45,7 @@ Arguments
 .. note::
 
     *   When running on Linux and the program is located in the AIMMS project
-        folder, this string must start with a ``./``.
+        folder, the program name must be prefixed with ``./``.
 
     *   On Linux, ensure the program has the permission to execute.
         To ensure ``myprog`` is executable, whereby ``myprog`` is in the current directory:
