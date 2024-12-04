@@ -46,8 +46,12 @@ Parameters
 
     This procedure and the procedures :aimms:func:`GMP::Solver::SetEnvironmentDoubleParameter` and :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`
     can be used to set Gurobi `Configuration Parameters <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#secparametergroups>`__. Typically
-    these procedures are used to set Gurobi `Parameters <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#paramgroupcomputeserver>`__ for
-    Cloud, Compute Server, Cluster Manager or Token Server. Note that normally these parameters are set in the Gurobi license file.
+    these procedures are used to set Gurobi parameters for
+    `Cloud <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#instant-cloud>`__,
+    `Compute Server <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#compute-server>`__,
+    `Cluster Manager <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#cluster-manager>`__ or
+    `Token Server <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#token-server>`__.
+    Note that normally these parameters are set in the Gurobi license file.
 
 Example
 -------
