@@ -37,9 +37,8 @@ Return Value
        solved with CPLEX, if the CPLEX option *Solution Target* is set to
        'Search for global optimum'.
 
-    -  This function can also be used for GMPs with model type QP or QCP that are
-       solved with GUROBI, if the GUROBI option *Nonconvex Strategy*
-       is set to 'Translate'.
+    -  This function can also be used for GMPs with model type QP, QCP, NLP or MINLP
+       that are solved with GUROBI.
 
     -  For multi-objective models, the best bound refers to the (blended) objective
        with the highest priority.

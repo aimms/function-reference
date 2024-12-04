@@ -55,7 +55,7 @@ Example
 
     .. code-block:: aimms
 
-               MIPSolver := 'Gurobi 10.0';
+               MIPSolver := 'Gurobi 12.0';
 
                ! First solve using normal solve statement.
 

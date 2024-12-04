@@ -22,8 +22,8 @@ Datatype
     -  The ``.BestBound`` suffix also contains the current best bound during the solve of a nonconvex
        QP problem with CPLEX, if the CPLEX option *Solution Target* is set to 'Search for global optimum'.
 
-    -  The ``.BestBound`` suffix suffix also contains the current best bound during the solve of a nonconvex
-       QP or QCP problem with GUROBI, if the GUROBI option *Nonconvex Strategy* is set to 'Translate'.
+    -  The ``.BestBound`` suffix suffix also contains the current best bound during the solve of a
+       QP, QCP, NLP or MINLP problem with GUROBI.
 
     -  For multi-objective models, the ``.BestBound`` suffix refers to the (blended) objective
        with the highest priority.

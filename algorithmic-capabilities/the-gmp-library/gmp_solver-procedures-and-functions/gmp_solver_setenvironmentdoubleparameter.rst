@@ -36,7 +36,7 @@ Return Value
 
 .. note::
 
-    -  This procedure is only supported by Gurobi, version 9.1 or higher. Typically it is only used in combination
+    -  This procedure is only supported by Gurobi. Typically it is only used in combination
        with a Gurobi link-only license.
 
     -  This procedure cannot be called inside a solver callback procedure.
@@ -45,8 +45,8 @@ Parameters
 ----------
 
     This procedure and the procedures :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter` and :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`
-    can be used to set Gurobi `Configuration Parameters <https://docs.gurobi.com/projects/optimizer/en/11.0/concepts/parameters/groups.html#secparametergroups>`__. Typically
-    these procedures are used to set Gurobi `Parameters <https://docs.gurobi.com/projects/optimizer/en/11.0/concepts/parameters/groups.html#secparametergroups>`__ for
+    can be used to set Gurobi `Configuration Parameters <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#secparametergroups>`__. Typically
+    these procedures are used to set Gurobi `Parameters <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#paramgroupcomputeserver>`__ for
     Cloud, Compute Server, Cluster Manager or Token Server. Note that normally these parameters are set in the Gurobi license file.
 
 Example
@@ -54,7 +54,7 @@ Example
 
     .. code-block:: aimms
 
-               MIPSolver := 'Gurobi 11.0';
+               MIPSolver := 'Gurobi 12.0';
                
                GMP::Solver::SetEnvironmentStringParameter( MIPSolver, "ComputeServer", "myserver1:61000" );
                GMP::Solver::SetEnvironmentDoubleParameter( MIPSolver, "CSQueueTimeout", 60 );
