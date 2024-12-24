@@ -32,6 +32,14 @@ Arguments
         A string that holds the begin date using the fixed format for date and
         time, see paragraph :ref:`calendar.reference_date_format` of the Language
         Reference.
+        
+    .. note::
+        Depending on the option ``use UTC forCaseAndStartEndDate``, reference dates
+        are with respect to 
+        
+        * value ``on`` : timezone ``'UTC'`` or 
+        * value ``off``: timezone ``'local'``.
+
 
     *Timeslot*
         A string representing a specific date and time moment using the format
@@ -51,22 +59,31 @@ The code:
 
 .. code-block:: aimms
 
-	_p_noSec := StringToMoment(
-		Format        :  "%c%y-%m-%d %H:%M:%S%TZ('UTC')", 
-		Unit          :  [s], 
-		ReferenceDate :  "2020-01-01 09:30:30", 
-		Timeslot      :  "2020-01-01 09:30:58");
-	display _p_noSec ;
+    block where use_UTC_forCaseAndStartEndDate := 'on' ;
+        _p_noSec1 := StringToMoment(
+            Format        :  "%c%y-%m-%d %H:%M:%S%TZ('UTC')", 
+            Unit          :  [s], 
+            ReferenceDate :  "2020-01-01 09:30:30", 
+            Timeslot      :  "2020-01-01 09:30:58");
+        display _p_noSec1 ;
+    endblock ;
+    block where use_UTC_forCaseAndStartEndDate := 'off' ;
+        _p_noSec2 := StringToMoment(
+            Format        :  "%c%y-%m-%d %H:%M:%S%TZ('local')", 
+            Unit          :  [s], 
+            ReferenceDate :  "2020-01-01 09:30:30", 
+            Timeslot      :  "2020-01-01 09:30:58");
+        display _p_noSec2 ;
+    endblock ;
 
-Reference dates are with respect to timezone 'UTC'.  
-By default, timeslots are with respect to timezone 'Local'.
-This timezone can be overridden in the format argument, as illustrated in this example.
 
-Thus the result is:
+Will result in:
 
 .. code-block:: aimms
 
-    _p_noSec := 28 [s] ;
+    _p_noSec1 := 28 [s] ;
+
+    _p_noSec2 := 28 [s] ;
 
 
 
