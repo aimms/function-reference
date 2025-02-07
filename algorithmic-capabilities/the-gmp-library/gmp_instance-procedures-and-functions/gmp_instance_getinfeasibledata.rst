@@ -124,5 +124,5 @@ Example
 
 .. seealso::
 
-    :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-generated-mathematical-program-instances.html#explainability`
-    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    Section `Explainability <https://documentation.aimms.com/language-reference/optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-generated-mathematical-program-instances.html#explainability>`__
+    in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
