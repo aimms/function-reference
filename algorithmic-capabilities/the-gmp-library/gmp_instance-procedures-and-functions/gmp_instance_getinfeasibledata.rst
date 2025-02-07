@@ -5,8 +5,6 @@
 GMP::Instance::GetInfeasibleData
 ================================
 
-| NOTE: THIS PROCEDURE IS NOT AVAILABLE (YET) IN ANY OFFICIAL AIMMS RELEASE.
-|
 | Usually, methods for detecting the cause of an infeasibiliy in a mathematical model
   return information about constraints and variables. The procedure
   :aimms:func:`GMP::Instance::GetInfeasibleData` uses a different approach, namely, it
@@ -81,6 +79,10 @@ Return Value
 
        - 4: Solve feasibility problem: minimize largest infeasibility after scaling model
 
+    -  The calculation of the IIS or solving the feasibility problem can be time consuming
+       if the model is large or complex, and as a consequence, the procedure
+       :aimms:func:`GMP::Instance::GetInfeasibleData` will then be time consuming.
+    
     -  The *effort* level influences how much effort is used to find outliers in the (infeasible)
        data. It does not influence the running time of the *method* used.
 
