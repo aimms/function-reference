@@ -68,7 +68,7 @@ Return Value
 
     -  The *GMP* must be linear.
 
-    -  Typically, :aimms:set:`AllParameters` is passed for the *parSet* argument.
+    -  Typically, :aimms:set:`AllParameters` is passed to the *parSet* argument.
 
     -  The procedure :aimms:func:`GMP::Instance::GetInfeasibleData` will use one of the
        following methods, as specified by the *method* argument:
@@ -90,11 +90,11 @@ Return Value
     -  The *effort* level influences how much effort is used to find outliers in the (infeasible)
        data. It does not influence the running time of the *method* used.
 
-    -  If the text attribute of a parameter is specified then that will be used in the *message*,
+    -  If the text attribute of a parameter is specified then it will be used in the *message*,
        otherwise the identifier name.
        
     -  If the `webui::ElementTextIdentifier <https://documentation.aimms.com/webui/multi-language.html#element-text>`_
-       attribute of a set is specified then that will be used to print the set elements in the *message*.
+       attribute of a set is specified then it will be used to print the set elements in the *message*.
     
     -  The option ``Element format`` determines the format used for printing elements in the *message*.
 
