@@ -17,7 +17,11 @@ GMP::Instance::GetInfeasibleData
 | This procedure returns information in two ways. First, it will fill the output
   *message* argument with a text describing the cause of the infeasibility.
   Second, it will fill the suffix ``.SuspicionLevel`` for each parameter that contributes
-  to the infeasibility.
+  to the infeasibility. This suffix may be used to assign identifier
+  `annotations <https://documentation.aimms.com/webui/css-styling.html#data-dependent-styling>`_
+  to the parameters of interest. Such annotations may be subsequently used in order to highlight
+  the suspicious values of those parameters in the graphical user interface and visually
+  notify the user about potentially incorrect data values.
 
 .. code-block:: aimms
 
@@ -86,6 +90,12 @@ Return Value
     -  The *effort* level influences how much effort is used to find outliers in the (infeasible)
        data. It does not influence the running time of the *method* used.
 
+    -  If the text attribute of a parameter is specified then that will be used in the *message*,
+       otherwise the identifier name.
+       
+    -  If the `webui::ElementTextIdentifier <https://documentation.aimms.com/webui/multi-language.html#element-text>`_
+       attribute of a set is specified then that will be used to print the set elements in the *message*.
+    
     -  The option ``Element format`` determines the format used for printing elements in the *message*.
 
     -  The suffix ``.SuspicionLevel`` gets a value from the set `AllSuspicionLevels`, or remains empty
@@ -124,5 +134,6 @@ Example
 
 .. seealso::
 
-    Section `Explainability <https://documentation.aimms.com/language-reference/optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-generated-mathematical-program-instances.html#explainability>`__
-    in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  Section `Explainability <https://documentation.aimms.com/language-reference/optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-generated-mathematical-program-instances.html#explainability>`__
+       in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  Example `Infeasible Data <https://how-to.aimms.com/Articles/662/662-infeasible_data.html>`__.
