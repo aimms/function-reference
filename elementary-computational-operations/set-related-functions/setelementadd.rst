@@ -5,10 +5,10 @@
 SetElementAdd
 =============
 
-With the procedure :aimms:procedure:`SetElementAdd` you can add new elements to a set.
+With the procedure :aimms:procedure:`SetElementAdd` you can add new elements to a one-dimensional set.
 When you apply :aimms:procedure:`SetElementAdd` to a root set, the element will be
 added to that root set. When you apply it to a subset, the element will
-be added to the subset as well as to all its supersets, up to and
+be added to the subset as well as to all its supersets, up to and 
 including its associated root set.
 
 .. code-block:: aimms
@@ -24,6 +24,7 @@ Arguments
 
     *Setname*
         The root set or subset to which you want to add the element.
+        This set cannot be an indexed set, nor a set that is an element in an indexed set.
 
     *Elempar*
         An element parameter into *Setname*, that on return will point to the
@@ -46,24 +47,24 @@ Given the declarations:
 
 .. code-block:: aimms
 
-	Set s_products;
-	Set s_fastMovingProducts {
-		SubsetOf: s_products;
-	}
-	ElementParameter ep_newProd {
-		Range: s_products;
-	}
+    Set s_products;
+    Set s_fastMovingProducts {
+        SubsetOf: s_products;
+    }
+    ElementParameter ep_newProd {
+        Range: s_products;
+    }
 
 The code
 
 .. code-block:: aimms
 
-	SetElementAdd(
-		Setname :  s_fastMovingProducts, 
-		Elempar :  ep_newProd, 
-		Newname :  "p0");
+    SetElementAdd(
+        Setname :  s_fastMovingProducts, 
+        Elempar :  ep_newProd, 
+        Newname :  "p0");
 
-	display s_products, s_fastMovingProducts, ep_newProd ;
+    display s_products, s_fastMovingProducts, ep_newProd ;
 
 Will produce in the listing file:
 
