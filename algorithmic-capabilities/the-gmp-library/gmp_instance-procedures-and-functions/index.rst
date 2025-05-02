@@ -28,6 +28,7 @@ managing generated mathematical program instances:
    gmp_instance_generate
    gmp_instance_generaterobustcounterpart
    gmp_instance_generatestochasticprogram
+   gmp_instance_getattributevalue
    gmp_instance_getbestbound
    gmp_instance_getcolumnnumbers
    gmp_instance_getdirection

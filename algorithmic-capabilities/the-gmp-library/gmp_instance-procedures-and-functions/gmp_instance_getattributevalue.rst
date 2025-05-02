@@ -1,0 +1,178 @@
+.. aimms:function:: GMP::Instance::GetAttributeValue(GMP)
+
+.. _GMP::Instance::GetAttributeValue:
+
+GMP::Instance::GetAttributeValue
+================================
+
+The function :aimms:func:`GMP::Instance::GetAttributeValue` can be used to get the value
+of certain solver attributes, related to solving a generated mathematical program.
+
+.. code-block:: aimms
+
+    GMP::Instance::GetAttributeValue(
+         GMP,            ! (input) a generated mathematical program
+         attr,           ! (input) a string expression
+         [objNo]         ! (input, optional) an integer expression
+         )
+
+Arguments
+---------
+
+    *GMP*
+        An element in :aimms:set:`AllGeneratedMathematicalPrograms`.
+
+    *attr*
+        A string that holds the name of the attribute.
+
+    *objNo*
+        A nonnegative scalar value specifying the objective number in a
+        multi-objective optimization problem. The default value is 0.
+
+Return Value
+------------
+
+    In case of success, the function returns the attribute value. Otherwise it returns ``UNDF``.
+
+.. note::
+
+    -  The attribute name is case-insensitive.
+
+    -  This function is only supported by CPLEX and Gurobi.
+
+    -  This function cannot be called inside a callback procedure.
+
+Attributes
+~~~~~~~~~~
+
+| The table below shows the model attributes supported by CPLEX and Gurobi.
+
++-----------------+--------+--------+----------------------------------------+
+| Attribute       | CPLEX  | Gurobi | Description                            |
++=================+========+========+========================================+
+| ObjCon          | ✔      | ✔      | Objective constant/offset           |
++-----------------+--------+--------+----------------------------------------+
+| NumStart        | ✔      | ✔      | Number of MIP starts                |
++-----------------+--------+--------+----------------------------------------+
+| NumObj          | ✔      | ✔      | Number of objectives                |
++-----------------+--------+--------+----------------------------------------+
+
+| The table below shows the solution attributes supported by CPLEX and Gurobi.
+
++-----------------+--------+--------+----------------------------------------+
+| Attribute       | CPLEX  | Gurobi | Description                            |
++=================+========+========+========================================+
+| ObjVal          | ✔      | ✔      | Objective value                     |
++-----------------+--------+--------+----------------------------------------+
+| ObjBound        | ✔      | ✔      | Best bound (MIP)                    |
++-----------------+--------+--------+----------------------------------------+
+| MIPGap          | ✔      | ✔      | Relative MIP gap                    |
++-----------------+--------+--------+----------------------------------------+
+| Runtime         | ✔      | ✔      | Runtime in seconds                  |
++-----------------+--------+--------+----------------------------------------+
+| Work            | ✔      | ✔      | Work or deterministic time          |
++-----------------+--------+--------+----------------------------------------+
+| MaxMemUsed      |        | ✔      | Maximum amount (in GB) of memory used |
++-----------------+--------+--------+----------------------------------------+
+| MemUsed         |        | ✔      | Current amount (in GB) of memory used |
++-----------------+--------+--------+----------------------------------------+
+| SolCount        |        | ✔      | Number of solutions                 |
++-----------------+--------+--------+----------------------------------------+
+| IterCount       | ✔      | ✔      | Number of simplex iterations        |
++-----------------+--------+--------+----------------------------------------+
+| BarIterCount    | ✔      | ✔      | Number of barrier iterations        |
++-----------------+--------+--------+----------------------------------------+
+| NodeCount       | ✔      | ✔      | Number of branch-and-cut nodes      |
++-----------------+--------+--------+----------------------------------------+
+| OpenNodeCount   | ✔      | ✔      | Number of open branch-and-cut nodes |
++-----------------+--------+--------+----------------------------------------+
+| NodeInt         | ✔      |        | Node number of the best solution    |
++-----------------+--------+--------+----------------------------------------+
+
+| The table below shows the solution quality attributes supported by CPLEX and Gurobi.
+
++-----------------+--------+--------+----------------------------------------+
+| Attribute       | CPLEX  | Gurobi | Description                            |
++=================+========+========+========================================+
+| MaxVio          | ✔      | ✔      | Maximum unscaled violation             |
++-----------------+--------+--------+----------------------------------------+
+| IntVio          | ✔      | ✔      | Maximum integrality violation          |
++-----------------+--------+--------+----------------------------------------+
+| Kappa           | ✔      | ✔      | Estimated condition number             |
++-----------------+--------+--------+----------------------------------------+
+| KappaExact      | ✔      | ✔      | Exact condition number                 |
++-----------------+--------+--------+----------------------------------------+
+| KappaMax        | ✔      |        | Highest condition number (MIP)         |
++-----------------+--------+--------+----------------------------------------+
+| KappaAttention  | ✔      |        | Score of numerical difficulties (MIP)  |
++-----------------+--------+--------+----------------------------------------+
+| KappaStable     | ✔      |        | Percentage of stable simplex bases     |
++-----------------+--------+--------+----------------------------------------+
+| KappaSuspicious | ✔      |        | Percentage of suspicious simplex bases |
++-----------------+--------+--------+----------------------------------------+
+| KappaUnstable   | ✔      |        | Percentage of unstable simplex bases   |
++-----------------+--------+--------+----------------------------------------+
+| KappaIllposed   | ✔      |        | Percentage of ill-posed simplex bases  |
++-----------------+--------+--------+----------------------------------------+
+
+| The table below shows the attributes for multi-objective optimization supported by CPLEX and Gurobi.
+These attribites can be used to retrieve model or solution information for each subproblem solved,
+as specified by the *objNo* argument.
+
++-----------------+--------+--------+----------------------------------------+
+| Attribute       | CPLEX  | Gurobi | Description                            |
++=================+========+========+========================================+
+| ObjVal/ObjNVal  | ✔      | ✔      | Objective value                        |
++-----------------+--------+--------+----------------------------------------+
+| ObjBound        | ✔      | ✔      | Best bound (MIP)                       |
++-----------------+--------+--------+----------------------------------------+
+| MIPGap          | ✔      | ✔      | Relative MIP gap                       |
++-----------------+--------+--------+----------------------------------------+
+| Runtime         | ✔      | ✔      | Runtime in seconds                     |
++-----------------+--------+--------+----------------------------------------+
+| Work            | ✔      | ✔      | Work or deterministic time             |
++-----------------+--------+--------+----------------------------------------+
+| Status          | ✔      | ✔      | Solution status                        |
++-----------------+--------+--------+----------------------------------------+
+| NodeCount       | ✔      | ✔      | Number of branch-and-cut nodes         |
++-----------------+--------+--------+----------------------------------------+
+| OpenNodeCount   | ✔      | ✔      | Number of open branch-and-cut nodes    |
++-----------------+--------+--------+----------------------------------------+
+| IterCount       | ✔      | ✔      | Number of simplex iterations           |
++-----------------+--------+--------+----------------------------------------+
+| BarIterCount    | ✔      | ✔      | Number of barrier iterations           |
++-----------------+--------+--------+----------------------------------------+
+| ObjNPriority    | ✔      | ✔      | Objective priority                     |
++-----------------+--------+--------+----------------------------------------+
+| ObjNCon         | ✔      | ✔      | Objective constant/offset              |
++-----------------+--------+--------+----------------------------------------+
+
+For Gurobi other model and solution attributes are supported. For a complete list; see:
+`Model attributes <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#instant-cloud>`__.
+Attributes with type 'string' are not supported.
+
+Example
+-------
+
+In the example below two multi-objectives are specified, each with its own priority. Therefore
+two subproblems are solved; one for each objective. Below we retrieve the (relative) MIP gap
+for both subproblems. We also retrieve the total runtime by the solver.
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate( MP );
+
+    GMP::Column::SetAsMultiObjective( myGMP, TotalDist, 2, 1.0 );
+    GMP::Column::SetAsMultiObjective( myGMP, TotalTime, 1, 1.0 );
+
+    GMP::Instance::Solve( myGMP );
+    
+    gap1 := GMP::Instance::GetAttributeValue( myGMP, "MIPGap", 1 );
+    gap2 := GMP::Instance::GetAttributeValue( myGMP, "MIPGap", 2 );
+    
+    runtime := GMP::Instance::GetAttributeValue( myGMP, "Runtime" );
+
+.. seealso::
+
+    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`,
+    :aimms:func:`GMP::Column::SetAsMultiObjective` and :aimms:func:`GMP::SolverSession::GetAttributeValue`.
