@@ -50,11 +50,11 @@ Attributes
 +-----------------+--------+--------+----------------------------------------+
 | Attribute       | CPLEX  | Gurobi | Description                            |
 +=================+========+========+========================================+
-| ObjCon          | ✔      | ✔      | Objective constant/offset           |
+| ObjCon          | ✔      | ✔      | Objective constant/offset              |
 +-----------------+--------+--------+----------------------------------------+
-| NumStart        | ✔      | ✔      | Number of MIP starts                |
+| NumStart        | ✔      | ✔      | Number of MIP starts                   |
 +-----------------+--------+--------+----------------------------------------+
-| NumObj          | ✔      | ✔      | Number of objectives                |
+| NumObj          | ✔      | ✔      | Number of objectives                   |
 +-----------------+--------+--------+----------------------------------------+
 
 | The table below shows the solution attributes supported by CPLEX and Gurobi.
@@ -62,31 +62,31 @@ Attributes
 +-----------------+--------+--------+----------------------------------------+
 | Attribute       | CPLEX  | Gurobi | Description                            |
 +=================+========+========+========================================+
-| ObjVal          | ✔      | ✔      | Objective value                     |
+| ObjVal          | ✔      | ✔      | Objective value                        |
 +-----------------+--------+--------+----------------------------------------+
-| ObjBound        | ✔      | ✔      | Best bound (MIP)                    |
+| ObjBound        | ✔      | ✔      | Best bound (MIP)                       |
 +-----------------+--------+--------+----------------------------------------+
-| MIPGap          | ✔      | ✔      | Relative MIP gap                    |
+| MIPGap          | ✔      | ✔      | Relative MIP gap                       |
 +-----------------+--------+--------+----------------------------------------+
-| Runtime         | ✔      | ✔      | Runtime in seconds                  |
+| Runtime         | ✔      | ✔      | Runtime in seconds                     |
 +-----------------+--------+--------+----------------------------------------+
-| Work            | ✔      | ✔      | Work or deterministic time          |
+| Work            | ✔      | ✔      | Work or deterministic time             |
 +-----------------+--------+--------+----------------------------------------+
-| MaxMemUsed      |        | ✔      | Maximum amount (in GB) of memory used |
+| MaxMemUsed      |        | ✔      | Maximum amount (in GB) of memory used  |
 +-----------------+--------+--------+----------------------------------------+
-| MemUsed         |        | ✔      | Current amount (in GB) of memory used |
+| MemUsed         |        | ✔      | Current amount (in GB) of memory used  |
 +-----------------+--------+--------+----------------------------------------+
-| SolCount        |        | ✔      | Number of solutions                 |
+| SolCount        |        | ✔      | Number of solutions                    |
 +-----------------+--------+--------+----------------------------------------+
-| IterCount       | ✔      | ✔      | Number of simplex iterations        |
+| IterCount       | ✔      | ✔      | Number of simplex iterations           |
 +-----------------+--------+--------+----------------------------------------+
-| BarIterCount    | ✔      | ✔      | Number of barrier iterations        |
+| BarIterCount    | ✔      | ✔      | Number of barrier iterations           |
 +-----------------+--------+--------+----------------------------------------+
-| NodeCount       | ✔      | ✔      | Number of branch-and-cut nodes      |
+| NodeCount       | ✔      | ✔      | Number of branch-and-cut nodes         |
 +-----------------+--------+--------+----------------------------------------+
-| OpenNodeCount   | ✔      | ✔      | Number of open branch-and-cut nodes |
+| OpenNodeCount   | ✔      | ✔      | Number of open branch-and-cut nodes    |
 +-----------------+--------+--------+----------------------------------------+
-| NodeInt         | ✔      |        | Node number of the best solution    |
+| NodeInt         | ✔      |        | Node number of the best solution       |
 +-----------------+--------+--------+----------------------------------------+
 
 | The table below shows the solution quality attributes supported by CPLEX and Gurobi.
@@ -122,34 +122,34 @@ as specified by the *objNo* argument.
 +-----------------+--------+--------+----------------------------------------+
 | Attribute       | CPLEX  | Gurobi | Description                            |
 +=================+========+========+========================================+
-| ObjVal/ObjNVal  | ✔      | ✔      | Objective value                        |
-+-----------------+--------+--------+----------------------------------------+
-| ObjBound        | ✔      | ✔      | Best bound (MIP)                       |
-+-----------------+--------+--------+----------------------------------------+
-| MIPGap          | ✔      | ✔      | Relative MIP gap                       |
-+-----------------+--------+--------+----------------------------------------+
-| Runtime         | ✔      | ✔      | Runtime in seconds                     |
-+-----------------+--------+--------+----------------------------------------+
-| Work            | ✔      | ✔      | Work or deterministic time             |
-+-----------------+--------+--------+----------------------------------------+
-| Status          | ✔      | ✔      | Solution status                        |
-+-----------------+--------+--------+----------------------------------------+
-| NodeCount       | ✔      | ✔      | Number of branch-and-cut nodes         |
-+-----------------+--------+--------+----------------------------------------+
-| OpenNodeCount   | ✔      | ✔      | Number of open branch-and-cut nodes    |
-+-----------------+--------+--------+----------------------------------------+
-| IterCount       | ✔      | ✔      | Number of simplex iterations           |
-+-----------------+--------+--------+----------------------------------------+
-| BarIterCount    | ✔      | ✔      | Number of barrier iterations           |
-+-----------------+--------+--------+----------------------------------------+
 | ObjNPriority    | ✔      | ✔      | Objective priority                     |
 +-----------------+--------+--------+----------------------------------------+
-| ObjNCon         | ✔      | ✔      | Objective constant/offset              |
+| ObjNCon         |        | ✔      | Objective constant/offset              |
++-----------------+--------+--------+----------------------------------------+
+| ObjVal/ObjNVal  | ✔      | ✔      | Objective value                        |
++-----------------+--------+--------+----------------------------------------+
+| ObjBound        | ✔      |        | Best bound (MIP)                       |
++-----------------+--------+--------+----------------------------------------+
+| MIPGap          | ✔      |        | Relative MIP gap                       |
++-----------------+--------+--------+----------------------------------------+
+| Runtime         | ✔      |        | Runtime in seconds                     |
++-----------------+--------+--------+----------------------------------------+
+| Work            | ✔      |        | Work or deterministic time             |
++-----------------+--------+--------+----------------------------------------+
+| Status          | ✔      |        | Solution status                        |
++-----------------+--------+--------+----------------------------------------+
+| NodeCount       | ✔      |        | Number of branch-and-cut nodes         |
++-----------------+--------+--------+----------------------------------------+
+| OpenNodeCount   | ✔      |        | Number of open branch-and-cut nodes    |
++-----------------+--------+--------+----------------------------------------+
+| IterCount       | ✔      |        | Number of simplex iterations           |
++-----------------+--------+--------+----------------------------------------+
+| BarIterCount    | ✔      |        | Number of barrier iterations           |
 +-----------------+--------+--------+----------------------------------------+
 
 For Gurobi other model and solution attributes are supported. For a complete list; see:
 `Model attributes <https://docs.gurobi.com/projects/optimizer/en/12.0/concepts/parameters/groups.html#instant-cloud>`__.
-Attributes with type 'string' are not supported.
+Attributes with type 'string' are not supported by this function.
 
 Example
 -------
