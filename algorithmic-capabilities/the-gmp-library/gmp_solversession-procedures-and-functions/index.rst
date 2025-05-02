@@ -20,6 +20,7 @@ instance:
    gmp_solversession_generatebranchrow
    gmp_solversession_generatebranchupperbound
    gmp_solversession_generatecut
+   gmp_solversession_getattributevalue
    gmp_solversession_getbestbound
    gmp_solversession_getcallbackinterruptstatus
    gmp_solversession_getcandidateobjective

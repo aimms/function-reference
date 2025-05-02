@@ -1,17 +1,17 @@
-.. aimms:function:: GMP::Instance::GetAttributeValue(GMP)
+.. aimms:function:: GMP::SolverSession::GetAttributeValue(GMP)
 
-.. _GMP::Instance::GetAttributeValue:
+.. _GMP::SolverSession::GetAttributeValue:
 
-GMP::Instance::GetAttributeValue
-================================
+GMP::SolverSession::GetAttributeValue
+=====================================
 
 The function :aimms:func:`GMP::Instance::GetAttributeValue` can be used to get the value
-of certain solver attributes, related to solving a generated mathematical program.
+of certain solver attributes, related to an executed solver session.
 
 .. code-block:: aimms
 
-    GMP::Instance::GetAttributeValue(
-         GMP,            ! (input) a generated mathematical program
+    GMP::SolverSession::GetAttributeValue(
+         solverSession,  ! (input) a solver session
          attr,           ! (input) a string expression
          [objNo]         ! (input, optional) an integer expression
          )
@@ -19,8 +19,8 @@ of certain solver attributes, related to solving a generated mathematical progra
 Arguments
 ---------
 
-    *GMP*
-        An element in :aimms:set:`AllGeneratedMathematicalPrograms`.
+    *solverSession*
+        An element in the set :aimms:set:`AllSolverSessions`.
 
     *attr*
         A string that holds the name of the attribute.
@@ -40,7 +40,8 @@ Return Value
 
     -  This function is only supported by CPLEX and Gurobi.
 
-    -  This function cannot be called inside a callback procedure.
+    -  This function can be called inside an incumbent, lazy, cuts or heuristic callback procedure,
+       but only for Gurobi.
 
 Attributes
 ~~~~~~~~~~
@@ -151,6 +152,25 @@ For Gurobi other model and solution attributes are supported. For a complete lis
 `Model attributes <https://docs.gurobi.com/projects/optimizer/en/current/reference/attributes/model.html>`__.
 Attributes with type 'string' are not supported by this function.
 
+The table below shows the attributes that can be called from inside an incumbent,
+lazy, cuts or heuristic callback procedure, but only for Gurobi.
+
++-----------------+----------------------------------------+
+| Attribute       | Description                            |
++=================+========+========+======================+
+| ObjBest         | Current best objective                 |
++-----------------+----------------------------------------+
+| ObjBound        | Current best objective bound           |
++-----------------+----------------------------------------+
+| NodeCount       | Current explored node count            |
++-----------------+----------------------------------------+
+| SolCount        | Current number of solutions found      |
++-----------------+----------------------------------------+
+| Phase           | Current phase in the MIP solution      |
++-----------------+----------------------------------------+
+| ObjVal          | Objective value for new solution       |
++-----------------+----------------------------------------+
+
 Example
 -------
 
@@ -164,15 +184,20 @@ for both subproblems. We also retrieve the total runtime by the solver.
 
     GMP::Column::SetAsMultiObjective( myGMP, TotalDist, 2, 1.0 );
     GMP::Column::SetAsMultiObjective( myGMP, TotalTime, 1, 1.0 );
+    
+    solSes := GMP::Instance::CreateSolverSession( myGMP 0;
 
-    GMP::Instance::Solve( myGMP );
+    GMP::SolverSession::Execute( solSes );
     
-    gap1 := GMP::Instance::GetAttributeValue( myGMP, "MIPGap", 1 );
-    gap2 := GMP::Instance::GetAttributeValue( myGMP, "MIPGap", 2 );
+    GMP::Solution::RetrieveFromSolverSession( solSes, 1 );
+    GMP::Solution::SendToModel( myGMP, 1 );
     
-    runtime := GMP::Instance::GetAttributeValue( myGMP, "Runtime" );
+    gap1 := GMP::SolverSession::GetAttributeValue( solSes, "MIPGap", 1 );
+    gap2 := GMP::SolverSession::GetAttributeValue( solSes, "MIPGap", 2 );
+    
+    runtime := GMP::SolverSession::GetAttributeValue( solSes, "Runtime" );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`,
-    :aimms:func:`GMP::Column::SetAsMultiObjective` and :aimms:func:`GMP::SolverSession::GetAttributeValue`.
+    The routines :aimms:func:`GMP::Instance::CreateSolverSession`, :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::SolverSession::Execute`,
+    :aimms:func:`GMP::Column::SetAsMultiObjective` and :aimms:func:`GMP::Instance::GetAttributeValue`.
