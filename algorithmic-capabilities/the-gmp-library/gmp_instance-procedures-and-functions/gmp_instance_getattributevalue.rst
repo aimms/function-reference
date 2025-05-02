@@ -57,7 +57,7 @@ Attributes
 | NumObj          | ✔      | ✔      | Number of objectives                   |
 +-----------------+--------+--------+----------------------------------------+
 
-| The table below shows the solution attributes supported by CPLEX and Gurobi.
+The table below shows the solution attributes supported by CPLEX and Gurobi.
 
 +-----------------+--------+--------+----------------------------------------+
 | Attribute       | CPLEX  | Gurobi | Description                            |
@@ -89,7 +89,7 @@ Attributes
 | NodeInt         | ✔      |        | Node number of the best solution       |
 +-----------------+--------+--------+----------------------------------------+
 
-| The table below shows the solution quality attributes supported by CPLEX and Gurobi.
+The table below shows the solution quality attributes supported by CPLEX and Gurobi.
 
 +-----------------+--------+--------+----------------------------------------+
 | Attribute       | CPLEX  | Gurobi | Description                            |
@@ -115,7 +115,7 @@ Attributes
 | KappaIllposed   | ✔      |        | Percentage of ill-posed simplex bases  |
 +-----------------+--------+--------+----------------------------------------+
 
-| The table below shows the attributes for multi-objective optimization supported by CPLEX and Gurobi.
+The table below shows the attributes for multi-objective optimization supported by CPLEX and Gurobi.
 These attribites can be used to retrieve model or solution information for each subproblem solved,
 as specified by the *objNo* argument.
 
