@@ -1,4 +1,4 @@
-.. aimms:function:: GMP::SolverSession::GetAttributeValue(GMP)
+.. aimms:function:: GMP::SolverSession::GetAttributeValue(GMP, attr, objNo)
 
 .. _GMP::SolverSession::GetAttributeValue:
 

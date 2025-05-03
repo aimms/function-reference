@@ -1,4 +1,4 @@
-.. aimms:function:: GMP::Instance::GetAttributeValue(GMP)
+.. aimms:function:: GMP::Instance::GetAttributeValue(GMP, attr, objNo)
 
 .. _GMP::Instance::GetAttributeValue:
 
