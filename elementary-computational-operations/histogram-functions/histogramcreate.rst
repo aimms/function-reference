@@ -1,4 +1,4 @@
-.. aimms:function:: HistogramCreate(histogram\_id[, integer\_histogram][, sample\_buffer\_size])
+.. aimms:function:: HistogramCreate(histogram_id[, integer_histogram][, sample_buffer_size])
 
 .. _HistogramCreate:
 

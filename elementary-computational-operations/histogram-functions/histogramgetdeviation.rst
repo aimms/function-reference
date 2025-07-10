@@ -1,4 +1,4 @@
-.. aimms:function:: HistogramGetDeviation(histogram\_id)
+.. aimms:function:: HistogramGetDeviation(histogram_id)
 
 .. _HistogramGetDeviation:
 

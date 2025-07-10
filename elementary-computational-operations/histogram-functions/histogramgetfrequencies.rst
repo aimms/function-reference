@@ -1,4 +1,4 @@
-.. aimms:procedure:: HistogramGetFrequencies(histogram\_id, frequencies)
+.. aimms:procedure:: HistogramGetFrequencies(histogram_id, frequencies)
 
 .. _HistogramGetFrequencies:
 

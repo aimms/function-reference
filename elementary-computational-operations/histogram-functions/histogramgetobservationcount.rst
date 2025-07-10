@@ -1,4 +1,4 @@
-.. aimms:function:: HistogramGetObservationCount(histogram\_id)
+.. aimms:function:: HistogramGetObservationCount(histogram_id)
 
 .. _HistogramGetObservationCount:
 

@@ -1,4 +1,4 @@
-.. aimms:function:: HistogramGetKurtosis(histogram\_id)
+.. aimms:function:: HistogramGetKurtosis(histogram_id)
 
 .. _HistogramGetKurtosis:
 

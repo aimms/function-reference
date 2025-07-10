@@ -1,4 +1,4 @@
-.. aimms:function:: HistogramGetSkewness(histogram\_id)
+.. aimms:function:: HistogramGetSkewness(histogram_id)
 
 .. _HistogramGetSkewness:
 

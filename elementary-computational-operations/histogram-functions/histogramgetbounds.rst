@@ -1,4 +1,4 @@
-.. aimms:function:: HistogramGetBounds(histogram\_id, left\_bound, right\_bound)
+.. aimms:function:: HistogramGetBounds(histogram_id, left_bound, right_bound)
 
 .. _HistogramGetBounds:
 

@@ -1,4 +1,4 @@
-.. aimms:function:: HistogramGetAverage(histogram\_id)
+.. aimms:function:: HistogramGetAverage(histogram_id)
 
 .. _HistogramGetAverage:
 

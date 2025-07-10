@@ -1,4 +1,4 @@
-.. aimms:procedure:: HistogramAddObservation(histogram\_id, value)
+.. aimms:procedure:: HistogramAddObservation(histogram_id, value)
 
 .. _HistogramAddObservation:
 

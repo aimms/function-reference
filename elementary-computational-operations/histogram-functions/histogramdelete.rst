@@ -1,4 +1,4 @@
-.. aimms:procedure:: HistogramDelete(histogram\_id)
+.. aimms:procedure:: HistogramDelete(histogram_id)
 
 .. _HistogramDelete:
 
