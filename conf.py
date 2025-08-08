@@ -146,7 +146,7 @@ html_theme_options = {
     'is_github' : True,
     'repo_url' : "https://github.com/aimms/function-reference",
 
-}}
+}
 
 html_last_updated_fmt = '%b %d, %Y'
 
