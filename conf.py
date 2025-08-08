@@ -120,23 +120,33 @@ else:
 #
 
 html_theme_options = {
-
+    'canonical_url': '',
+    # 'analytics_id': 'UA-XXXXXXX-1',  #  Provided by Google in your dashboard
+    'logo_only': True,
+    'display_version': False,
+    'prev_next_buttons_location': 'bottom',
+    'style_external_links': True,
+    # 'vcs_pageview_mode': '',
+    # Toc options
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    #'display_local_toc' : False,
+    #'titles_only' : True,
     'doc_title': 'Function Reference',
     'home_page_title': 'AIMMS Function Reference',
     'home_page_description': 'Find all predeclared AIMMS Language functions and identifiers',
     'display_community_embeddable' : Display_3rd_Party_Extensions,
-    'display_local_toc' : False,
-    'titles_only' : True,
+    'google_tag_manager_id': 'GTM-5T37RFM',
+    'generate_google_tag_manager' : Display_3rd_Party_Extensions,
     'display_algolia_search': False,
     'aimms_support_menu_id': 'documentation',
     'generate_aimms_support_menu' : True,
-    'google_tag_manager_id': 'GTM-5T37RFM',
-    'generate_google_tag_manager' : Display_3rd_Party_Extensions,
     'display_help_and_feedback' : True,
     'is_github' : True,
     'repo_url' : "https://github.com/aimms/function-reference",
 
-}
+}}
 
 html_last_updated_fmt = '%b %d, %Y'
 
