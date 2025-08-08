@@ -15,7 +15,7 @@
 import os
 import sys
 # sys.path.insert(0, os.path.abspath('.'))
-
+import sphinx_aimms_theme
 
 # -- Project information -----------------------------------------------------
 
@@ -91,7 +91,7 @@ language = 'en'
 exclude_patterns = [u'_build', 'Thumbs.db', '.DS_Store']
 
 # The name of the Pygments (syntax highlighting) style to use.
-pygments_style = 'aimmslexer'
+pygments_style = 'default'
 
 
 # -- Options for HTML output -------------------------------------------------
