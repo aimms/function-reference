@@ -10,32 +10,29 @@ Please find the PDF version of the AIMMS Function Reference `here <https://downl
     :gutter: 4
 
     .. grid-item-card::  Elementary Computational Operations
+        :img-top: images/Elementary-Computational-Operations-home.png
         :link: https://documentation.aimms.com/functionreference/elementary-computational-operations/index.html
 
     .. grid-item-card::  Algorithmic Capabilities
+        :img-top: images/AC-home.png
         :link: https://documentation.aimms.com/functionreference/algorithmic-capabilities/index.html
 
-    .. grid-item-card::  Model Handling
-        :link: https://documentation.aimms.com/functionreference/model-handling/index.html
-
     .. grid-item-card::  Data Management
+        :img-top: images/Data-Management-home.png
         :link: https://documentation.aimms.com/functionreference/data-management/index.html
 
     .. grid-item-card::  User Interface Related Functions
+        :img-top: images/UI-home.png
         :link: https://documentation.aimms.com/functionreference/user-interface-related-functions/index.html
 
     .. grid-item-card::  Development Support
+        :img-top: images/Development-Support-home.png
         :link: https://documentation.aimms.com/functionreference/development-support/index.html
-
-    .. grid-item-card::  System Interaction
-        :link: https://documentation.aimms.com/functionreference/system-interaction/index.html
     
     .. grid-item-card::  Predefined Identifiers
+        :img-top: images/Predefined-Identifiers-home.png
         :link: https://documentation.aimms.com/functionreference/predefined-identifiers/index.html
     
-    .. grid-item-card::  Suffices
-        :link: https://documentation.aimms.com/functionreference/suffices/index.html
-
 
 -----------------------------------------------------------
 
