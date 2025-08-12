@@ -47,6 +47,8 @@ extensions = [
     'sphinx.ext.intersphinx',
     'sphinx.builders.linkcheck',
     'sphinx_aimms_theme',
+    'sphinxcontrib.spelling',
+    'sphinx_design'
 ]
 
 if os.name != 'nt':
