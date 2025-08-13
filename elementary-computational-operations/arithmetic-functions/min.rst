@@ -70,5 +70,4 @@ Example
 .. seealso::
 
     - The function :aimms:func:`Max`. 
-    - Arithmetic functions are discussed in full
-    detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

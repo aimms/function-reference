@@ -48,5 +48,4 @@ Example
 
 .. seealso::
 
-    - Special numbers in AIMMS and the :aimms:func:`MapVal` function are discussed in
-    full detail in :ref:`sec:expr.num.arith-ext` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - Special numbers in AIMMS and the :aimms:func:`MapVal` function are discussed in full detail in :ref:`sec:expr.num.arith-ext` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

@@ -76,5 +76,4 @@ Will put the following table in the listing file:
 
     - The function :aimms:func:`Val`. 
     - The :aimms:func:`ScalarValue` function is a function that operates on subsets of :aimms:set:`AllIdentifiers`. 
-    - Other functions that operate on subsets of :aimms:set:`AllIdentifiers` are referenced in :doc:`data-communication-components/data-initialization-verification-and-control/working-with-the-set-allidentifiers` of the Language
-    Reference.
+    - Other functions that operate on subsets of :aimms:set:`AllIdentifiers` are referenced in :doc:`data-communication-components/data-initialization-verification-and-control/working-with-the-set-allidentifiers` of the Language Reference.
