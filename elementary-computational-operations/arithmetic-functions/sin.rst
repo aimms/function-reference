@@ -20,7 +20,7 @@ Arguments
 Return Value
 ------------
 
-    The :aimms:func:`Sin` function returns the sine of *x* in the range :math:`-1` to 1.
+    The :aimms:func:`Sin` function returns the sine of *x* in the range :math:`-1` to :math:`1`.
 
 Graph
 -----------------
@@ -45,7 +45,6 @@ Example
 
 .. seealso::
 
-    -   The functions :aimms:func:`Cos`, :aimms:func:`Tan`, :aimms:func:`ArcSin`. Arithmetic functions are
-        discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Sine_and_cosine>`_
+    -   The functions :aimms:func:`Cos`, :aimms:func:`Tan`, :aimms:func:`ArcSin`. 
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   `Sine and Cosine (Wikipedia) <https://en.wikipedia.org/wiki/Sine_and_cosine>`_.

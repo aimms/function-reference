@@ -52,7 +52,6 @@ Example
 
 .. seealso::
 
-    -   The functions :aimms:func:`Power`, :aimms:func:`Cube`, and :aimms:func:`Sqr`. Arithmetic functions
-        are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Square_root>`_
+    -   The functions :aimms:func:`Power`, :aimms:func:`Cube`, and :aimms:func:`Sqr`. 
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   `Square Root (Wikipedia) <https://en.wikipedia.org/wiki/Square_root>`_.

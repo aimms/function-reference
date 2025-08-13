@@ -20,7 +20,7 @@ Arguments
 Return Value
 ------------
 
-    The :aimms:func:`ArcCos` function returns the arccosine of *x* in the range 0 to
+    The :aimms:func:`ArcCos` function returns the arccosine of *x* in the range :math:`0` to
     :math:`\pi` radians.
 
 		
@@ -49,7 +49,6 @@ Example
 
 .. seealso::
 
-    -   The functions :aimms:func:`ArcSin`, :aimms:func:`ArcTan`, :aimms:func:`Cos`. Arithmetic functions are
-        discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-        
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Inverse_trigonometric_functions>`_
+    -   The functions :aimms:func:`ArcSin`, :aimms:func:`ArcTan`, :aimms:func:`Cos`.
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   `Inverse Trigonometric Functions (Wikipedia) <https://en.wikipedia.org/wiki/Inverse_trigonometric_functions>`_.

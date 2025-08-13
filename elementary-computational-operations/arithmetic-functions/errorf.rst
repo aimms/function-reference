@@ -50,5 +50,4 @@ Example
 
     -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of
         the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Error_function>`_
+    -   `Error Function (Wikipedia) <https://en.wikipedia.org/wiki/Error_function>`_.

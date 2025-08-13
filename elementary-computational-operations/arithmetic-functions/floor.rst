@@ -50,7 +50,8 @@ Example
 
 .. seealso::
 
-    The functions :aimms:func:`Ceil`, :aimms:func:`Round`, :aimms:func:`Precision`, :aimms:func:`Trunc`. Arithmetic
-    functions are discussed in full detail in :ref:`sec:expr.num.functions` of the Language
-    Reference. Numeric tolerances are discussed in :ref:`sec:expr.num.functions` of the
+    - The functions :aimms:func:`Ceil`, :aimms:func:`Round`, :aimms:func:`Precision`, :aimms:func:`Trunc`. 
+    - Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the Language
+    Reference. 
+    - Numeric tolerances are discussed in :ref:`sec:expr.num.functions` of the
     Language Reference.

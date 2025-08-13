@@ -56,5 +56,5 @@ Example
 
 .. seealso::
 
-    The functions :aimms:func:`Round`, :aimms:func:`Ceil`, :aimms:func:`Floor`, :aimms:func:`Trunc`. Arithmetic
-    functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The functions :aimms:func:`Round`, :aimms:func:`Ceil`, :aimms:func:`Floor`, :aimms:func:`Trunc`. 
+    - Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

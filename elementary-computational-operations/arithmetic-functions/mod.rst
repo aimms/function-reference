@@ -61,4 +61,4 @@ Example
     -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of
         the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
-    -   Function :aimms:func:`Div`
+    -   Function :aimms:func:`Div`.

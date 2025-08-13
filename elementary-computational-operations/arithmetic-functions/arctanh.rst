@@ -48,7 +48,6 @@ Example
 
 .. seealso::
 
-    -   The functions :aimms:func:`ArcCosh`, :aimms:func:`ArcSinh`, :aimms:func:`Tanh`. Arithmetic functions are
-        discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Inverse_hyperbolic_functions>`_
+    -   The functions :aimms:func:`ArcCosh`, :aimms:func:`ArcSinh`, :aimms:func:`Tanh`. 
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   `Inverse Hyperbolic Functions (Wikipedia) <https://en.wikipedia.org/wiki/Inverse_hyperbolic_functions>`_.

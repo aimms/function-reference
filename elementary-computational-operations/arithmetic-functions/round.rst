@@ -44,7 +44,7 @@ Return Value
 Example
 -------
 
-basic
+Basic
 ^^^^^
 
 .. code-block:: aimms
@@ -57,9 +57,7 @@ basic
 
 The above illustrates how to round up to a number of decimals, either positive or negative.
 
-How about rounding with a magnitude in mind?
-
-Arguments with a magnitude
+Arguments with a Magnitude
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Let the magnitudes of interest be specified in a quantity, 
@@ -151,15 +149,7 @@ Note that in the computation of this value, round uses the unit of its argument,
 Similarly, ``_p_rndKilo``, and ``_p_rndMega`` are rounded multiples of 1.000 and 1.000.000 respectively
 by using the units of ``_p_kilo`` and ``_p_mega``.
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`Precision`
-
-    *   :aimms:func:`Ceil`
-
-    *   :aimms:func:`Floor` 
-
-    *   :aimms:func:`Trunc`
-
+    *   :aimms:func:`Precision`, :aimms:func:`Ceil`, :aimms:func:`Floor`, :aimms:func:`Trunc`.
     *   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the Language Reference.

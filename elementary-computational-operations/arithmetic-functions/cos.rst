@@ -21,7 +21,7 @@ Return Value
 ------------
 
     The :aimms:func:`Cos` function returns the cosine of *x* in the range :math:`-1`
-    to 1.
+    to :math:`1`.
 
         
 Graph
@@ -47,7 +47,6 @@ Example
 
 .. seealso::
 
-    -   The functions :aimms:func:`Sin`, :aimms:func:`Tan`, :aimms:func:`ArcCos`. Arithmetic functions are
-        discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Sine_and_cosine>`_
+    -   The functions :aimms:func:`Sin`, :aimms:func:`Tan`, :aimms:func:`ArcCos`.
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   `Sine and Cosine (Wikipedia) <https://en.wikipedia.org/wiki/Sine_and_cosine>`_.

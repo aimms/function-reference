@@ -21,7 +21,7 @@ Return Value
 ------------
 
     The :aimms:func:`Cosh` function returns the hyperbolic cosine of *x* in the range
-    1 to :math:`\infty`.
+    :math:`1` to :math:`\infty`.
 
         
 Graph
@@ -47,7 +47,6 @@ Example
 
 .. seealso::
 
-    -   The functions :aimms:func:`Sinh`, :aimms:func:`Tanh`, :aimms:func:`ArcCosh`. Arithmetic functions are
-        discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Hyperbolic_functions>`_
+    -   The functions :aimms:func:`Sinh`, :aimms:func:`Tanh`, :aimms:func:`ArcCosh`.
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   `Hyperbolic Functions (Wikipedia) <https://en.wikipedia.org/wiki/Hyperbolic_functions>`_

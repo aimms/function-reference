@@ -47,8 +47,6 @@ Example
 
 .. seealso::
 
-    -   The functions :aimms:func:`ArcSin`, :aimms:func:`ArcCos`, :aimms:func:`Tan`. Arithmetic functions are
-        discussed in full detail in :ref:`sec:expr.num.functions` of 
-        the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-        
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Inverse_trigonometric_functions>`_
+    -   The functions :aimms:func:`ArcSin`, :aimms:func:`ArcCos`, :aimms:func:`Tan`.
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   `Inverse Trigonometric Functions (Wikipedia) <https://en.wikipedia.org/wiki/Inverse_trigonometric_functions>`_.

@@ -35,10 +35,6 @@ Example
     _p_returnC := Val( "33"   ); ! returns  33
     _p_returnD := Val( "1.0e3"); ! returns  1000
 
-
-
-
-
 .. note::
 
     If *str* cannot be interpreted as a numerical value, a runtime error may
@@ -46,5 +42,4 @@ Example
 
 .. seealso::
 
-    The :aimms:func:`Val` function is discussed in full detail in :ref:`sec:set-expr.elem.functions` of the
-     Language Reference.
+    - The :aimms:func:`Val` function is discussed in full detail in :ref:`sec:set-expr.elem.functions` of the Language Reference.

@@ -30,8 +30,6 @@ Return Value
     The function :aimms:func:`Power` returns :math:`x` raised to the power :math:`y`.
 
 
-
-
 Example
 -----------------
 
@@ -60,5 +58,5 @@ Example
 
 .. seealso::
 
-    The functions :aimms:func:`Cube`, :aimms:func:`Sqr`, and :aimms:func:`Sqrt`. Arithmetic functions
-    are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The functions :aimms:func:`Cube`, :aimms:func:`Sqr`, and :aimms:func:`Sqrt`. 
+    - Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

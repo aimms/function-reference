@@ -16,19 +16,16 @@ Arguments
 ---------
 
     *identifier*
-        A scalar element expression into :aimms:set:`AllIdentifiers`
+        A scalar element expression into :aimms:set:`AllIdentifiers`.
 
     *suffix*
-        A scalar element expression into :aimms:set:`AllSuffixNames`
+        A scalar element expression into :aimms:set:`AllSuffixNames`.
 
 Return Value
 ------------
 
     The function :aimms:func:`ScalarValue` returns the value contained in the scalar
     identifier *identifier* or scalar reference *identifier.suffix*.
-
-
-
 
 Example
 -----------------
@@ -54,6 +51,7 @@ Then the code:
     p_cap := 78 ;
     _s_kpis := scalar_value_global_declarations ;
     _p_kpiVal(_i_kpi) := ScalarValue( _i_kpi );
+
     block where single_column_display := 1;
         display _p_kpiVal ;
     endblock ;
@@ -76,7 +74,7 @@ Will put the following table in the listing file:
 
 .. seealso::
 
-    The function :aimms:func:`Val`. The :aimms:func:`ScalarValue` function is a function that
-    operates on subsets of :aimms:set:`AllIdentifiers`. Other functions that operate on
-    subsets of :aimms:set:`AllIdentifiers` are referenced in :doc:`data-communication-components/data-initialization-verification-and-control/working-with-the-set-allidentifiers` of the Language
+    - The function :aimms:func:`Val`. 
+    - The :aimms:func:`ScalarValue` function is a function that operates on subsets of :aimms:set:`AllIdentifiers`. 
+    - Other functions that operate on subsets of :aimms:set:`AllIdentifiers` are referenced in :doc:`data-communication-components/data-initialization-verification-and-control/working-with-the-set-allidentifiers` of the Language
     Reference.

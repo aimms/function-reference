@@ -51,7 +51,6 @@ Example
 
 .. seealso::
 
-    -   The functions :aimms:func:`Cos`, :aimms:func:`Sin`, :aimms:func:`ArcTan`. Arithmetic functions are
-        discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Sine_and_cosine>`_
+    -   The functions :aimms:func:`Cos`, :aimms:func:`Sin`, :aimms:func:`ArcTan`. 
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   `Sine and Cosine (Wikipedia) <https://en.wikipedia.org/wiki/Sine_and_cosine>`_.

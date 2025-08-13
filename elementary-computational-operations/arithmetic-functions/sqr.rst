@@ -39,12 +39,6 @@ Example
     _p_returnC := Sqr( p_pi ); ! Sqr( pi ) = 9.869604401089
     _p_returnD := Sqr( 10   ); ! Sqr( 10 ) = 100
 
-
-
-
-
-
-
 .. note::
 
     The function :aimms:func:`Sqr` can be used in constraints of nonlinear
@@ -52,5 +46,5 @@ Example
 
 .. seealso::
 
-    The functions :aimms:func:`Power`, :aimms:func:`Cube`, and :aimms:func:`Sqrt`. Arithmetic functions
-    are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -   The functions :aimms:func:`Power`, :aimms:func:`Cube`, and :aimms:func:`Sqrt`. 
+    -   Arithmetic functions are discussed in full detail in :ref:`sec:expr.num.functions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
