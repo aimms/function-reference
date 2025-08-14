@@ -77,7 +77,7 @@ The code:
 		display sp_productGroup ;
 	endblock ;
 
-Produces
+produces
 
 .. code-block:: aimms
 

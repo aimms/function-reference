@@ -30,7 +30,7 @@ Arguments
 
     -  The difference between this function and a regular set assignment is
        that in case *fromSet* is not the domain of *toSet* all elements
-       added to *toSet* will also be added to the domain set of *toSet*
+       added to *toSet* will also be added to the domain set of *toSet*.
 
 Example
 -----------
@@ -53,7 +53,7 @@ Given the declarations:
 		SubsetOf: s_products;
 	}
 
-And a bit of initial data:
+and a bit of initial data
 
 .. code-block:: aimms
 
@@ -63,7 +63,7 @@ And a bit of initial data:
 	s_fastMovingProducts := subrange( s_allActiveProducts, 'p4', 'p7' );
 	s_newFastMovingProducts := subrange( s_products, 'p6', 'p9' );
 
-the display statement:
+the display statement
 
 .. code-block:: aimms
 
@@ -87,7 +87,7 @@ After applying ``SetAddRecursive``:
 		toSet   :  s_fastMovingProducts, 
 		fromSet :  s_newFastMovingProducts);
 
-The display statement:
+The display statement
 
 .. code-block:: aimms
 

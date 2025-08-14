@@ -70,4 +70,4 @@ in the listing file.
 
 .. seealso::
 
-    The procedure :aimms:procedure:`SetElementAdd`.
+    - The procedure :aimms:procedure:`SetElementAdd`.

@@ -74,7 +74,7 @@ Example
 	-	The function :aimms:func:`Card` and ``Count`` operator (see also :ref:`sec:expr.num.iter` of
 		the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).
 
-	-	The procedure :aimms:procedure:`RestoreInactiveElements`
+	-	The procedure :aimms:procedure:`RestoreInactiveElements`.
 
 	-	The explanation of inactive elements in the Language Reference at :ref:`inactive_data`.
 

@@ -7,7 +7,7 @@ Card
 
 The function :aimms:func:`Card` returns the cardinality of an identifier, or the
 cardinality of a suffix of that identifier. To support the various
-usages there are three different flavors of Card:
+usages there are three different flavors of :aimms:func:`Card`:
 
 .. code-block:: aimms
 
@@ -109,5 +109,5 @@ Example
 
 .. seealso::
 
-    The function :aimms:func:`ActiveCard` and the ``Count`` operator (see also :doc:`non-procedural-language-components/execution-of-nonprocedural-components/nonprocedural-execution`
-    of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__).
+    - The function :aimms:func:`ActiveCard` and the ``Count`` operator.
+    - :doc:`non-procedural-language-components/execution-of-nonprocedural-components/nonprocedural-execution` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

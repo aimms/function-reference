@@ -66,7 +66,7 @@ The code
 
     display s_products, s_fastMovingProducts, ep_newProd ;
 
-Will produce in the listing file:
+will produce in the listing file:
 
 .. code-block:: aimms
 

@@ -60,7 +60,7 @@ Given the declarations:
 	Parameter p_ordP5;
 	Parameter p_ordP5top;
 
-The code
+The code:
 
 .. code-block:: aimms
 

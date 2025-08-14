@@ -117,9 +117,9 @@ Will produce:
 
     s_productsRequired := data { p1, p2, p4, p5 } ;
 
-In the listing file. 
+in the listing file. 
 
-And the code: 
+And the code
 
 .. code-block:: aimms
 
@@ -133,13 +133,12 @@ And the code:
     endif ;
     
 
-Will raise the error:
+will raise the error:
 
 .. code-block:: aimms
 
     The products { p4, p5 } are required, but cannot be made available.
 
-See also
---------
+.. seealso::
 
     -   `Data control function <https://documentation.aimms.com/language-reference/data-communication-components/data-initialization-verification-and-control/data-control.html#data-control>`_

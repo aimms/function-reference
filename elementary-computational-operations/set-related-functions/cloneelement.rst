@@ -142,5 +142,4 @@ Example
 
 .. seealso::
 
-    The function :aimms:func:`StringToElement`, the procedure :aimms:func:`FindUsedElements` and the procedure
-    :aimms:func:`RestoreInactiveElements`.
+    - The function :aimms:func:`StringToElement`, the procedure :aimms:func:`FindUsedElements` and the procedure :aimms:func:`RestoreInactiveElements`.

@@ -60,7 +60,7 @@ Given the declarations:
 		Range: s_products;
 	}
 
-The code
+The code:
 
 .. code-block:: aimms
 
@@ -79,7 +79,7 @@ The code
 	! Printing to listing file.
 	display s_topProducts, ep_firstProd, ep_theTopProd ;
 
-Produces 
+produces 
 
 .. code-block:: aimms
 
@@ -89,4 +89,4 @@ Produces
 
     ep_theTopProd := 'p2' ;
 
-In the listing file.
+in the listing file.

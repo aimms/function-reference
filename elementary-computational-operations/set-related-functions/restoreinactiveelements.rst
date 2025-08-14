@@ -63,7 +63,7 @@ Given the declarations:
 	}
 
 
-The code
+The code:
 
 .. code-block:: aimms
 
@@ -89,12 +89,13 @@ The code
 		SearchSet         :  s_products, 
 		SearchIdentifiers :  s_searchIds, 
 		UsedElements      :  s_restoredProducts);
+		
 	display s_restoredProducts ; ! s_restoredProducts := data { p3, p8 } ;
 	display s_products ; ! s_products := data { p0, p1, p2, p3, p5, p6, p7, p8 } ;
 	! The previously inactive data of p_rev is now active again:
 	display p_rev ; ! p_rev := data { p1 : 7,  p2 : 9,  p3 : 9,  p6 : 8,  p7 : 6,  p8 : 8 } ;
 
-See also:
+.. seealso::
 
 	-   The function :aimms:set:`ActiveCard`.
 	

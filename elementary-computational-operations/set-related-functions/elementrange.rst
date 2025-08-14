@@ -24,10 +24,10 @@ Arguments
 ---------
 
     *from*
-        The integer value for which the first element must be created
+        The integer value for which the first element must be created.
 
     *to*
-        The integer value for which the last element must be created
+        The integer value for which the last element must be created.
 
     *incr (optional)*
         The integer-valued interval length between two consecutive elements. If
