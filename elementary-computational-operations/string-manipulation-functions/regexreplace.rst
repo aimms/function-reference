@@ -32,8 +32,8 @@ Arguments
 
     *CaseSensitive (optional)*
         The search will be case sensitive when the value is 1. The default
-        depends on the setting of the option ``Case_sensitive_string_comparison``, and is 1 if this option is 'On'
-        and 0 if this option is 'Off'. The default of the option ``Case_sensitive_string_comparison`` is 'On'.
+        depends on the setting of the option ``Case_sensitive_string_comparison``, and is 1 if this option is :menuselection:`On`
+        and 0 if this option is :menuselection:`Off`. The default of the option ``Case_sensitive_string_comparison`` is :menuselection:`On`.
 
 .. note::
 
@@ -59,22 +59,22 @@ Return Value
 Example
 -------
 
-    The following example will replace all vowels with a ``*``
+The following example will replace all vowels with a ``*``
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                str := regexreplace("The quick brown fox", "a|e|i|o|u", "*" 0);
+    str := RegexReplace("The quick brown fox", "a|e|i|o|u", "*" 0);
 
-    results in ``str`` being "Q**ck br*wn f*x".
+results in ``str`` being ``Q**ck br*wn f*x``.
 
-    And in the following example all vowels will be replaced by the same vowel in between brackets:
+And in the following example all vowels will be replaced by the same vowel in between brackets
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                str := regexreplace("The quick brown fox", "a|e|i|o|u", "[$&]" 0);
+    str := RegexReplace("The quick brown fox", "a|e|i|o|u", "[$&]" 0);
 
-    results in ``str`` being "Q[u][i]ck br[o]wn f[o]x".
+results in ``str`` being ``Q[u][i]ck br[o]wn f[o]x``.
 
 .. seealso::
 
-    The functions :aimms:func:`RegexSearch`, :aimms:func:`FindReplaceStrings`.
+    - The functions :aimms:func:`RegexSearch`, :aimms:func:`FindReplaceStrings`.

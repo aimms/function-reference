@@ -41,4 +41,4 @@ The code:
 
 .. seealso::
 
-    The functions :aimms:func:`StringToUpper`, :aimms:func:`StringCapitalize`.
+    - The functions :aimms:func:`StringToUpper`, :aimms:func:`StringCapitalize`.

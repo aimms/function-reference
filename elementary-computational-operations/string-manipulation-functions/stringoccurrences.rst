@@ -30,9 +30,9 @@ Arguments
     *CaseSensitive*
         The search will be case sensitive when the value is 1. The default
         depends on the setting of the option
-        ``Case_sensitive_string_comparison``, and is 1 if this option is 'On'
-        and 0 if this option is 'Off'. The default of the option
-        ``Case_sensitive_string_comparison`` is 'On'.
+        ``Case_sensitive_string_comparison``, and is 1 if this option is :menuselection:`On`
+        and 0 if this option is :menuselection:`Off`. The default of the option
+        ``Case_sensitive_string_comparison`` is :menuselection:`On`.
 
     *WordOnly*
         It is a word only search when this option is set to 1. The default is 0.
@@ -69,4 +69,4 @@ The code:
 
 .. seealso::
 
-    The functions :aimms:func:`FindString`, :aimms:func:`FindNthString`.
+    - The functions :aimms:func:`FindString`, :aimms:func:`FindNthString`.

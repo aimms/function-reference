@@ -39,4 +39,4 @@ The code:
 
 .. seealso::
 
-    The functions :aimms:func:`StringToLower`, :aimms:func:`StringCapitalize`.
+    - The functions :aimms:func:`StringToLower`, :aimms:func:`StringCapitalize`.

@@ -23,7 +23,7 @@ Arguments
 ---------
 
     *SearchString*
-        The string in which you want to find the substring *key*.
+        The string in which you want to find the substring *Key*.
 
     *Key*
         The substring to search for.
@@ -34,9 +34,9 @@ Arguments
     *CaseSensitive*
         The search will be case sensitive when the value is 1. The default
         depends on the setting of the option
-        ``Case_sensitive_string_comparison``, and is 1 if this option is 'On'
-        and 0 if this option is 'Off'. The default of the option
-        ``Case_sensitive_string_comparison`` is 'On'.
+        ``Case_sensitive_string_comparison``, and is 1 if this option is :menuselection:`On`
+        and 0 if this option is :menuselection:`Off`. The default of the option
+        ``Case_sensitive_string_comparison`` is :menuselection:`On`.
 
     *WordOnly*
         It is a word only search when this option is set to 1. The default is 0.
@@ -57,7 +57,7 @@ Return Value
 Example
 -----------
 
-Given the declarations:
+Given the declarations
 
 .. code-block:: aimms
 
@@ -67,7 +67,7 @@ Given the declarations:
 	StringParameter sp_res;
 
 
-And a bit of data:
+and a bit of data...
 
 .. code-block:: aimms
 
@@ -93,10 +93,9 @@ will produce the following in the listing file:
 
     sp_res := "'Allo 'Allo" ;
  
-Indicating that both "Hello" words are replaced by the string "'Allo" ;
-
+indicating that both ``Hello`` words are replaced by the string ``'Allo``.
 
 
 .. seealso::
 
-    The functions :aimms:func:`FindString`, :aimms:func:`StringOccurrences` and :aimms:func:`FindReplaceNthString`.
+    - The functions :aimms:func:`FindString`, :aimms:func:`StringOccurrences` and :aimms:func:`FindReplaceNthString`.

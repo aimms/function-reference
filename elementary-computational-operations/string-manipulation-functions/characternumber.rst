@@ -23,13 +23,13 @@ Arguments
 Return Value
 ------------
 
-    The function CharacterNumber returns a value in the range { 0 .. }.
+    The function CharacterNumber returns a value in the range  :math:`{ 0 .. }`.
 
 
 Example
 -----------
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -45,13 +45,8 @@ will produce the following in the listing file:
 
 
 
-
-
-
-References
------------
-
+.. seealso::
 
     -   The function :aimms:func:`Character`.
 
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Unicode>`_
+    -   `Unicode (Wikipedia) <https://en.wikipedia.org/wiki/Unicode>`_.

@@ -41,4 +41,4 @@ The code:
 
 .. seealso::
 
-    The functions :aimms:func:`StringToLower`, :aimms:func:`StringToUpper`.
+    - The functions :aimms:func:`StringToLower`, :aimms:func:`StringToUpper`.

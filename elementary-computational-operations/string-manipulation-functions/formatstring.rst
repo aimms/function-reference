@@ -53,5 +53,4 @@ Is a first illustration of various ways of formatting a number.
 
 .. seealso::
 
-    For a detailed description of the conversion specifiers in AIMMS see
-    :ref:`sec:set-expr.string.format` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - For a detailed description of the conversion specifiers in AIMMS see :ref:`sec:set-expr.string.format` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

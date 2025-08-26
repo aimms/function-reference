@@ -36,9 +36,9 @@ Arguments
     *CaseSensitive*
         The search will be case sensitive when the value is 1. The default
         depends on the setting of the option
-        ``Case_sensitive_string_comparison``, and is 1 if this option is 'On'
-        and 0 if this option is 'Off'. The default of the option
-        ``Case_sensitive_string_comparison`` is 'On'.
+        ``Case_sensitive_string_comparison``, and is 1 if this option is :menuselection:`On`
+        and 0 if this option is :menuselection:`Off`. The default of the option
+        ``Case_sensitive_string_comparison`` is :menuselection:`On`.
 
     *WordOnly*
         It is a word only search when this option is set to 1. The default is 0.
@@ -65,7 +65,7 @@ Return Value
 Example
 -----------
 
-Given the declarations:
+Given the declarations
 
 .. code-block:: aimms
 
@@ -76,7 +76,7 @@ Given the declarations:
 	Parameter _p_pos2;
 
 
-And a bit of data:
+and a bit of data...
 
 .. code-block:: aimms
 
@@ -85,7 +85,7 @@ And a bit of data:
 	_sp_key1 := "r t";
 	_sp_key2 := "tomorrow";
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -112,9 +112,9 @@ will produce the following in the listing file:
     _p_pos1 := 12 ;
     _p_pos2 := 0 ;
 
-Indicating that the string ``"r t"`` was found, but the string ``"tomorrow"`` was not found.
+indicating that the string ``"r t"`` was found, but the string ``"tomorrow"`` was not found.
 
 
 .. seealso::
 
-    The functions :aimms:func:`FindString`, :aimms:func:`StringOccurrences`, :aimms:func:`RegexSearch`.
+    - The functions :aimms:func:`FindString`, :aimms:func:`StringOccurrences`, :aimms:func:`RegexSearch`.

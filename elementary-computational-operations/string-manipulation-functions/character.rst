@@ -31,7 +31,7 @@ Return Value
 Example
 -----------
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -46,10 +46,8 @@ will produce the following in the listing file:
 	sp_pct := "%" ;
 
 
-References
------------
-
+.. seealso::
 
     -   The function :aimms:func:`CharacterNumber`.
 
-    -   `Wikipedia <https://en.wikipedia.org/wiki/Unicode>`_
+    -   `Unicode (Wikipedia) <https://en.wikipedia.org/wiki/Unicode>`_.
