@@ -21,7 +21,7 @@ Arguments
 
     *Format*
         A string that holds the date and time format used in the returned
-        string. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`
+        string. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`.
 
     *Calendar*
         An identifier of type calendar.
@@ -50,7 +50,7 @@ Given the declarations:
 		TimeslotFormat: "%c%y-%m-%d";
 	}
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -60,7 +60,7 @@ The code:
 		Timeslot :  first(cal_days));
 	display _sp_day1 ;
 
-Results in:
+results in:
 
 .. code-block:: aimms
 
@@ -68,4 +68,4 @@ Results in:
 
 .. seealso::
 
-    The functions :aimms:func:`MomentToString`, :aimms:func:`CurrentToTimeSlot`, :aimms:func:`StringToTimeSlot`.
+    - The functions :aimms:func:`MomentToString`, :aimms:func:`CurrentToTimeSlot`, :aimms:func:`StringToTimeSlot`.

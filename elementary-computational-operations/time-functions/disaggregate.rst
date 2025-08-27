@@ -82,7 +82,7 @@ The code
 		TimeTable    :  s_timetable, 
 		Type         :  'summation' );
 
-Produces:
+produces:
 
 .. code-block:: aimms
 
@@ -106,5 +106,5 @@ Produces:
 
 .. seealso::
 
-    The procedure :aimms:procedure:`Aggregate`. Time-dependent aggregation and disaggregation
-    is discussed in full detail in :doc:`advanced-language-components/time-based-modeling/data-conversion-of-time-dependent-identifiers` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The procedure :aimms:procedure:`Aggregate`. 
+    - Time-dependent aggregation and disaggregation is discussed in full detail in :doc:`advanced-language-components/time-based-modeling/data-conversion-of-time-dependent-identifiers`.

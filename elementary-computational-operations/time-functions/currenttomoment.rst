@@ -46,7 +46,7 @@ Given the declarations:
 		Unit: minute;
 	}
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -58,14 +58,14 @@ The code:
 		Referencedate :  "2020-01-01 00:00:00");
 	display _p_secs, _p_mins ;
 
-Resulted in:
+resulted in...
 
 .. code-block:: aimms
 
     _p_secs := 142691236 [s] ;
     _p_mins := 2378187.267 [minute] ;
 
-When this example was created.
+when this example was created.
 
 .. seealso::
 

@@ -23,7 +23,7 @@ Arguments
 
     *Format*
         A string that holds the date and time format used in the fourth argument
-        *Timeslot*. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`
+        *Timeslot*. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`.
 
     *Unit*
         The time unit that is used to return the elapsed time.
@@ -55,7 +55,7 @@ Return Value
 Example
 -----------
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -77,7 +77,7 @@ The code:
     endblock ;
 
 
-Will result in:
+will result in:
 
 .. code-block:: aimms
 
@@ -90,4 +90,4 @@ Will result in:
 
 .. seealso::
 
-    The functions :aimms:func:`MomentToString`, :aimms:func:`CurrentToMoment`.
+    - The functions :aimms:func:`MomentToString`, :aimms:func:`CurrentToMoment`.

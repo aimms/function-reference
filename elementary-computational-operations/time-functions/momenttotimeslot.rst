@@ -59,4 +59,4 @@ gives the result:
 
 .. seealso::
 
-    The functions :aimms:func:`TimeSlotToMoment`, :aimms:func:`CurrentToTimeSlot`, :aimms:func:`StringToTimeSlot`.
+    - The functions :aimms:func:`TimeSlotToMoment`, :aimms:func:`CurrentToTimeSlot`, :aimms:func:`StringToTimeSlot`.

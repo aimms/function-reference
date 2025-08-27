@@ -52,7 +52,7 @@ Given the declarations:
         Range: cal_years;
     }
 
-Then the code:
+Then the code
 
 .. code-block:: aimms
 
@@ -67,10 +67,7 @@ results in:
 
     _sp_startDaylightSaving2024 := "2024-03-31 02" ;
 
-
-
-
 .. seealso::
 
-    AIMMS support for time zones is discussed in full detail in :ref:`sec:time.format.dst` 
-    and :doc:`advanced-language-components/time-based-modeling/working-in-multiple-time-zones` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - AIMMS support for time zones is discussed in full detail in :ref:`sec:time.format.dst`.
+    - :doc:`advanced-language-components/time-based-modeling/working-in-multiple-time-zones`.

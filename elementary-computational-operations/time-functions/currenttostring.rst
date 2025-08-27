@@ -19,7 +19,7 @@ Arguments
 
     *Format*
         A string that holds the date and time format used in the returned
-        string. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`
+        string. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`.
 
 Return Value
 ------------
@@ -32,7 +32,7 @@ Example
 -----------
 
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -41,7 +41,7 @@ The code:
 
 	display _sp_today, _sp_nowAsReferenceDate ;
 
-Resulted in:
+resulted in
 
 
 .. code-block:: aimms
@@ -49,7 +49,7 @@ Resulted in:
     _sp_today := "09-Jul-2024" ;
     _sp_nowAsReferenceDate := "2024-07-09 14:25:50" ;
 
-When this example was created.
+when this example was created.
 
 
 .. note::

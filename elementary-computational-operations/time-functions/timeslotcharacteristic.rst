@@ -62,7 +62,7 @@ Given the declarations:
 	}
 	Parameter _p_dayNoInWeek;
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -72,16 +72,15 @@ The code:
 		Characteristic :  'weekday' );
 	display _p_dayNoInWeek ;
 
-Results in:
+results in
 
 .. code-block:: aimms
 
     _p_dayNoInWeek := 1 ;
 
-Indicating that the first day of the calendar is a Monday.
+indicating that the first day of the calendar is a Monday.
 
 
 .. seealso::
 
-    The function :aimms:func:`TimeSlotCharacteristic` is discussed in full detail in
-    :doc:`advanced-language-components/time-based-modeling/creating-timetables` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The function :aimms:func:`TimeSlotCharacteristic` is discussed in full detail in :doc:`advanced-language-components/time-based-modeling/creating-timetables` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

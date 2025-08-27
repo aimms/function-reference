@@ -22,7 +22,7 @@ Arguments
 
     *Format*
         A string that holds the date and time format used in the third argument
-        *MomentString*. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`
+        *MomentString*. Valid format strings are described in :doc:`advanced-language-components/time-based-modeling/format-of-time-slots-and-periods`.
 
     *Calendar*
         An identifier of type calendar.
@@ -82,4 +82,4 @@ results in:
 
 .. seealso::
 
-    The functions :aimms:func:`CurrentToTimeSlot`, :aimms:func:`MomentToTimeSlot`.
+    - The functions :aimms:func:`CurrentToTimeSlot`, :aimms:func:`MomentToTimeSlot`.

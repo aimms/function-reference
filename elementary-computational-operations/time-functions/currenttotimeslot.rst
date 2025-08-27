@@ -56,7 +56,7 @@ Given the following declarations:
 		TimeslotFormat: "%c%y-%m-%d";
 	}
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -64,7 +64,7 @@ The code:
 	ep_curr := CurrentToTimeSlot( cal_ForALongTime );
 	display ep_past, ep_curr ;
 
-Results in:
+results in
 
 .. code-block:: aimms
 
@@ -75,4 +75,4 @@ when this example was created.
 
 .. seealso::
 
-    The functions :aimms:func:`StringToTimeSlot`, :aimms:func:`MomentToTimeSlot`.
+    - The functions :aimms:func:`StringToTimeSlot`, :aimms:func:`MomentToTimeSlot`.

@@ -99,7 +99,7 @@ Given the declarations:
 		SubsetOf: cal_days;
 	}
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -115,7 +115,7 @@ The code:
 		DelimiterSlots    :  s_delimiterSlots);   ! And no delimiter time slots.
 	display s_timetable ;
 
-creates the timetable:
+creates the timetable
 
 .. code-block:: aimms
 
@@ -131,5 +131,5 @@ creates the timetable:
 
 .. seealso::
 
-    The procedures :aimms:procedure:`Aggregate`, :aimms:procedure:`DisAggregate`. For a more detailed description of
-    the creation of timetables, see :doc:`advanced-language-components/time-based-modeling/creating-timetables` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The procedures :aimms:procedure:`Aggregate`, :aimms:procedure:`DisAggregate`. 
+	- For a more detailed description of the creation of timetables, see :doc:`advanced-language-components/time-based-modeling/creating-timetables` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

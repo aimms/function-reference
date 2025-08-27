@@ -46,7 +46,7 @@ Return Value
 Example
 -----------
 
-Given a selection of timezones
+Given a selection of timezones:
 
 .. code-block:: aimms
 
@@ -56,7 +56,7 @@ Given a selection of timezones
 	_ep_IndianTZ := 'India Standard Time' ;
 
 
-Wondering what time it is in the other timezones when I wake up:
+Wondering what time it is in the other timezones when I wake up...
 
 .. code-block:: aimms
 
@@ -78,7 +78,7 @@ Wondering what time it is in the other timezones when I wake up:
 		IgnoreDST     :  1);
 	display _sp_refUTC, _sp_refBrazil, _sp_refInda ;
 
-Without considering daylight saving time, the result is:
+without considering daylight saving time, the result is:
 
 .. code-block:: aimms
 
@@ -89,5 +89,5 @@ Without considering daylight saving time, the result is:
 
 .. seealso::
 
-    AIMMS support for time zones is discussed in full detail in :ref:`sec:time.format.dst` 
-    and :doc:`advanced-language-components/time-based-modeling/working-in-multiple-time-zones` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - AIMMS support for time zones is discussed in full detail in :ref:`sec:time.format.dst`.
+    - :doc:`advanced-language-components/time-based-modeling/working-in-multiple-time-zones`.

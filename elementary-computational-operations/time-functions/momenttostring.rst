@@ -66,9 +66,8 @@ gives the result:
     sp_nextYear := "2022-01-01" ;
 
 
-References
------------
+.. seealso::
 
-    *   The function :aimms:func:`StringToMoment`.
+    * The function :aimms:func:`StringToMoment`.
 
 

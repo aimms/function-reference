@@ -65,7 +65,7 @@ Given the declarations:
 		Range: cal_days;
 	}
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -83,7 +83,7 @@ The code:
 	display _ep_first, _ep_last, _p_noDaysToSecond, _p_noDays ;
 
 
-Results in:
+results in:
 
 .. code-block:: aimms
 
@@ -95,4 +95,4 @@ Results in:
 
 .. seealso::
 
-    The functions :aimms:func:`MomentToTimeSlot`, :aimms:func:`CurrentToTimeSlot`, :aimms:func:`StringToTimeSlot`.
+    - The functions :aimms:func:`MomentToTimeSlot`, :aimms:func:`CurrentToTimeSlot`, :aimms:func:`StringToTimeSlot`.
