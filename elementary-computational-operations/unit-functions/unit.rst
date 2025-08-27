@@ -17,7 +17,7 @@ Arguments
 ---------
 
     *unit*
-        A unit constant of which the associated unit value must be computed
+        A unit constant of which the associated unit value must be computed.
 
 Return Value
 ------------
@@ -55,7 +55,7 @@ Given the unit of measurement declarations:
 		Comment: "Expresses the value of a distance.";
 	}
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -71,5 +71,4 @@ illustrates how to assign a literal unit to a unit parameter.
 
 .. seealso::
 
-    Unit expressions discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index` of the Language
-    Reference.
+    - Unit expressions discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index` of the Language Reference.

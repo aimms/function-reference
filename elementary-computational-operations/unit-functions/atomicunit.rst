@@ -20,7 +20,7 @@ Arguments
 
     *unit*
         A unit expression of which the associated atomic unit expression must be
-        computed
+        computed.
 
 Return Value
 ------------
@@ -64,17 +64,16 @@ Given the unit of measurement declarations:
 	}
 	UnitParameter _up_atomic;
 
-The code:
+The code
 
 .. code-block:: aimms
 
 	_up_atomic := AtomicUnit( km/hour );
 	display _up_atomic ; ! _up_atomic := [m/s] ;
 
-Returns the atomic units for speed.
+returns the atomic units for speed.
 
-
-And with the procedure:
+And with the procedure
 
 .. code-block:: aimms
 
@@ -97,14 +96,13 @@ And with the procedure:
 		}
 	}
 
-we can verify whether [km/hour] is a velocity by:
+we can verify whether ``[km/hour]`` is a velocity by:
 
 .. code-block:: aimms
 
-	_bp_isVelocity := pr_isCommensurate( unit(km/hour), up_baseVelocity );
+	_bp_isVelocity := pr_isCommensurate( Unit(km/hour), up_baseVelocity );
 
 
 .. seealso::
 
-    Unit expressions are discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index` of the
-     Language Reference.
+	- Unit expressions in :doc:`advanced-language-components/units-of-measurement/index` of Language Reference.

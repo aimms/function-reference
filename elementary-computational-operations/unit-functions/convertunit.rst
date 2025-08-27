@@ -20,7 +20,7 @@ Arguments
 
     *unit*
         A unit expression of which the associated unit value in the given
-        convention must be computed
+        convention must be computed.
 
     *convention*
         An element expression in to :aimms:set:`AllConventions`, representing the convention with
@@ -73,17 +73,17 @@ Given the unit of measurement declarations:
 		PerQuantity: SI_Length : mile;
 	}
 
-The code:
+The code
 
 .. code-block:: aimms
 
 	_up_cnv := ConvertUnit( unit(km/hour), cnv_imperial );
 	display _up_cnv ; ! _up_cnv := [mile/hour] ;
 
-Returns the speed according to the imperial convention.
+returns the speed according to the imperial convention.
 
 
 .. seealso::
 
-    Unit expressions and conventions are discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index`
+    - Unit expressions and conventions are discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index`
     of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

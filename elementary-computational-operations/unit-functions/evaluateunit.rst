@@ -19,7 +19,7 @@ Arguments
 
     *unit*
         A unit expression of which the numerical value (with associated unit)
-        must be computed
+        must be computed.
 
 Return Value
 ------------
@@ -62,14 +62,14 @@ Given the unit of measurement declarations:
 		Unit: m/s;
 	}
 
-The code:
+The code
 
 .. code-block:: aimms
 
 	_p_uv := EvaluateUnit( unit(km/hour) );
 	display _p_uv ; ! 0.278 ; ;
 
-Returns the conversion factor in [km/hour].
+returns the conversion factor in ``[km/hour]``.
 
 
 
@@ -80,5 +80,4 @@ Returns the conversion factor in [km/hour].
 
 .. seealso::
 
-    Unit expressions are discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index` of the
-     Language Reference.
+    - Unit expressions are discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index` of the Language Reference.
