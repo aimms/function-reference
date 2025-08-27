@@ -87,3 +87,4 @@ returns the speed according to the imperial convention.
 
     - Unit expressions and conventions are discussed in full detail in :doc:`advanced-language-components/units-of-measurement/index`
     of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+	
