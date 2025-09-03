@@ -144,9 +144,7 @@ The actual values computed are:
        9 :  3706.459199,
       10 :  3706.459199 } ;
 
-References
------------
-
+.. seealso::
 
     *   The functions :aimms:func:`DepreciationNonLinearFactor`, :aimms:func:`DepreciationLinearLife`. 
     

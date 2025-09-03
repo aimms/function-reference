@@ -83,7 +83,7 @@ Equation
        *Yield* can be used as a variable.
 
     -  The function :aimms:func:`SecurityPeriodicDuration` is similar to the Excel
-       function `DURATION <https://support.microsoft.com/en-us/office/duration-function-b254ea57-eadc-4602-a86a-c8e369334038>_`.
+       function `DURATION <https://support.microsoft.com/en-us/office/duration-function-b254ea57-eadc-4602-a86a-c8e369334038>`_.
 
 
 Example
@@ -112,9 +112,7 @@ Results in:
 
     _p_spd := 10.603599 ;
 
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-	
 	*   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

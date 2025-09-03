@@ -102,9 +102,7 @@ and the results illustrate that there are small but significant differences:
     _p_r5e := 0.083333 ;
 
 
-
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`.
 

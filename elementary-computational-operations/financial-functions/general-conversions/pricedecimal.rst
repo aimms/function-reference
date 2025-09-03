@@ -69,12 +69,10 @@ results in:
     _p_r1 := 1.125000 ;
     _p_r2 := 1.312500 ;
 
-
-References
------------
+.. seealso::
 
     *   The function :aimms:func:`PriceFractional`.
 
-    *   `Microsoft support DOLLARDE <https://support.microsoft.com/en-us/office/dollarde-function-db85aab0-1677-428a-9dfd-a38476693427>`_
+    *   `Microsoft support DOLLARDE <https://support.microsoft.com/en-us/office/dollarde-function-db85aab0-1677-428a-9dfd-a38476693427>`_.
 
-    *   `EXCELJET example DOLLARDE <https://exceljet.net/functions/dollarde-function>`_
+    *   `EXCELJET example DOLLARDE <https://exceljet.net/functions/dollarde-function>`_.

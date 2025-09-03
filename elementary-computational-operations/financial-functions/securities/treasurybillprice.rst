@@ -69,7 +69,6 @@ Well:
 
     _p_tbp := 94.888889 ;
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<ff.sec.disc>` for discounted securities.

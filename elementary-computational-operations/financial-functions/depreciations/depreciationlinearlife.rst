@@ -127,8 +127,7 @@ The actual values computed are:
 As you can see, the depreciation of the first and last period add up to the 
 depreciation for a single year.
 
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
     

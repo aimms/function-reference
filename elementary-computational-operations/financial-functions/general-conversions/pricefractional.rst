@@ -63,10 +63,9 @@ results in:
     _p_r2 := 1.100000 ;
 
 
-References
------------
+.. seealso::
 
     *   The function :aimms:func:`PriceDecimal`.
 
-    *   `Microsoft support DOLLARDE <https://support.microsoft.com/en-us/office/dollarfr-function-0835d163-3023-4a33-9824-3042c5d4f495>`_
+    *   `Microsoft support DOLLARDE <https://support.microsoft.com/en-us/office/dollarfr-function-0835d163-3023-4a33-9824-3042c5d4f495>`_.
 

@@ -69,7 +69,6 @@ Well:
 
     _p_tby := 0.102975 ;
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<ff.sec.disc>` for discounted securities.

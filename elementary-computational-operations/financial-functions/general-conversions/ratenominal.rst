@@ -64,11 +64,10 @@ results in:
     _p_r1 := 1.150472 ;
     _p_r2 := 1.932440 ;
 
-References
------------
+.. seealso::
 
     *   The function :aimms:func:`RateEffective`.
 
-    *   `Microsoft Support EXCEL Nominal <https://support.microsoft.com/en-us/office/nominal-function-7f1ae29b-6b92-435e-b950-ad8b190ddd2b>`_
+    *   `Microsoft Support EXCEL Nominal <https://support.microsoft.com/en-us/office/nominal-function-7f1ae29b-6b92-435e-b950-ad8b190ddd2b>`_.
 
 	

@@ -62,7 +62,7 @@ Return Value
        used as a variable.
 
     -  The function :aimms:func:`SecurityMaturityPrice` is similar to the Excel
-       function `PRICEMAT <https://support.microsoft.com/en-us/office/pricemat-function-52c3b4da-bc7e-476a-989f-a95f675cae77>_`.
+       function `PRICEMAT <https://support.microsoft.com/en-us/office/pricemat-function-52c3b4da-bc7e-476a-989f-a95f675cae77>`_.
 
 
 Example
@@ -90,9 +90,7 @@ This results in:
 
     _p_smp := 98.454665 ;
 
-References
------------
-
-    *   Day count basis :ref:`methods<ff.dcb>`. 
+.. seealso::
     
+    *   Day count basis :ref:`methods<ff.dcb>`. 
     *   General :ref:`equations<ff.sec.coup1>` for securities with one coupon.

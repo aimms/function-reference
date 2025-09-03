@@ -86,8 +86,7 @@ The future value computed is negative, indicating a debt:
 
     _p_constFutureValue := -120.061071 ;
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.
 

@@ -75,10 +75,9 @@ Remarks:
     #.  :aimms:func:`MomentToString` can do the same, but also supports other time units including ``second``.
         Note that the result of this function has a time unit.
 
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`.
 
-    *   :aimms:func:`MomentToString`
+    *   :aimms:func:`MomentToString` function.
 

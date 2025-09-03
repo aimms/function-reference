@@ -112,10 +112,7 @@ This results in the following IRR:
     _p_irr := data 
     { 1 : 0.688847 } ;
 
-References
------------
+.. seealso::
 
-
-    *  The functions :aimms:func:`InvestmentVariableInternalRateReturn`, 
-    
+    *  The functions :aimms:func:`InvestmentVariableInternalRateReturn`.
     *  :aimms:func:`InvestmentVariableInternalRateReturnInPeriodic`.

@@ -113,7 +113,6 @@ The following table shows that the interest portion of each anuity becomes less:
       10 : -4.559576e-01,
       11 :  4.440892e-15 } ;
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

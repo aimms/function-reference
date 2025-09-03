@@ -81,9 +81,8 @@ results in:
     _p_r2 := 0.480244 ;
 
 
-References
------------
+.. seealso::
 
     *   The function :aimms:func:`RateNominal`.
 
-    *   `Microsoft Support EXCEL Effect <https://support.microsoft.com/en-us/office/effect-function-910d4e4c-79e2-4009-95e6-507e04f11bc4>`_
+    *   `Microsoft Support EXCEL Effect <https://support.microsoft.com/en-us/office/effect-function-910d4e4c-79e2-4009-95e6-507e04f11bc4>`_.

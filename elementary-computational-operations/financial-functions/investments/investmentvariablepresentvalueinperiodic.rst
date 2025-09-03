@@ -116,7 +116,7 @@ Net present value, with contributions made at the start of each quarter, can be 
         display { _p_val, _sp_startQuarter }, _p_npv ;
     endblock ;
 
-With the following result in the listing file:
+with the following result in the listing file:
 
 .. code-block:: aimms
 
@@ -132,7 +132,6 @@ With the following result in the listing file:
         _p_npv := 31.038963 ;
       
 
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`.

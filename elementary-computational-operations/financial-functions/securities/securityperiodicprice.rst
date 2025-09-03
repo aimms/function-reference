@@ -67,7 +67,7 @@ Return Value
        *Yield* can be used as a variable.
 
     -  The function :aimms:func:`SecurityPeriodicPrice` is similar to the Excel
-       function `PRICE <https://support.microsoft.com/en-us/office/price-function-3ea9deac-8dfa-436f-a7c8-17ea02c21b0a>`.
+       function `PRICE <https://support.microsoft.com/en-us/office/price-function-3ea9deac-8dfa-436f-a7c8-17ea02c21b0a>`_.
 
 
 
@@ -97,10 +97,7 @@ Produces:
 
     _p_spp := 95.134829 ;
 
-References
------------
-
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-    
     *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

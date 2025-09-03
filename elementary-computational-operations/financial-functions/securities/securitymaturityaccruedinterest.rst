@@ -53,7 +53,7 @@ Return Value
        variable.
 
     -  The function :aimms:func:`SecurityMaturityAccruedInterest` is similar to the
-       Excel function `ACCRINTM <https://support.microsoft.com/en-us/office/accrintm-function-f62f01f9-5754-4cc4-805b-0e70199328a7>_`.
+       Excel function `ACCRINTM <https://support.microsoft.com/en-us/office/accrintm-function-f62f01f9-5754-4cc4-805b-0e70199328a7>`_.
 
 
 Example
@@ -85,10 +85,7 @@ No interest on interest, so:
 
     _p_smai := 35 ;
 
-References
------------
-
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-    
     *   General :ref:`equations<ff.sec.coup1>` for securities with one coupon.

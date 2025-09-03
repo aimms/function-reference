@@ -129,11 +129,8 @@ This results in the following IRR:
         { 1 : 0.258815 } ;
       
 
-References
------------
+.. seealso::
 
-    *   The functions :aimms:func:`InvestmentVariableInternalRateReturn`, 
-    
+    *   The functions :aimms:func:`InvestmentVariableInternalRateReturn`.
     *   :aimms:func:`InvestmentVariableInternalRateReturnInPeriodic`. 
-    
     *   Day count basis :ref:`methods<ff.dcb>`.

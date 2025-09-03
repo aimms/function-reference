@@ -125,11 +125,8 @@ This results in the following IRR:
         _p_irr := 0.258815 ;
       
 
-References
------------
+.. seealso::
 
-    *  The functions :aimms:func:`InvestmentVariableInternalRateReturn`, 
-
+    * The functions :aimms:func:`InvestmentVariableInternalRateReturn`.
     * :aimms:func:`InvestmentVariableInternalRateReturnInPeriodicAll`. 
-
     * Day count basis :ref:`methods<ff.dcb>`.

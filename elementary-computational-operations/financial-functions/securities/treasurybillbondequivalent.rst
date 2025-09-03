@@ -45,7 +45,7 @@ Return Value
        the input parameter *DiscountRate* can be used as a variable.
 
     -  The function :aimms:func:`TreasuryBillBondEquivalent` is similar to the Excel
-       function `TBILLEQ <https://support.microsoft.com/en-us/office/tbilleq-function-2ab72d90-9b4d-4efe-9fc2-0f81f2c19c8c>`.
+       function `TBILLEQ <https://support.microsoft.com/en-us/office/tbilleq-function-2ab72d90-9b4d-4efe-9fc2-0f81f2c19c8c>`_.
 
 Example
 -------
@@ -68,8 +68,7 @@ Well:
 
     _p_tbbe := 0.106850 ;
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<ff.sec.disc>` for discounted securities.
 

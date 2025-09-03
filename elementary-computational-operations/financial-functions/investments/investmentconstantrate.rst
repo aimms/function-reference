@@ -126,7 +126,6 @@ As the number of periods used are not equal, it is hard to compare the results.
     _p_pctReimburse := 0.039769 ;
       
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

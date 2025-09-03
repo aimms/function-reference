@@ -88,7 +88,7 @@ Return Value
        *CouponRate* can be used as a variable.
 
     -  The function :aimms:func:`SecurityPeriodicYield` is similar to the Excel
-       function `YIELD <https://support.microsoft.com/en-us/office/yield-function-f5f5ca43-c4bd-434f-8bd2-ed3c9727a4fe>_`.
+       function `YIELD <https://support.microsoft.com/en-us/office/yield-function-f5f5ca43-c4bd-434f-8bd2-ed3c9727a4fe>`_.
 
 Example
 -------
@@ -119,9 +119,7 @@ Produces:
 
     _p_spy := 0.113600 ;
 
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-    
     *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

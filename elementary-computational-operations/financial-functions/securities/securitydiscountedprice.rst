@@ -53,7 +53,7 @@ Return Value
        variable.
 
     -  The function :aimms:func:`SecurityDiscountedPrice` is similar to the Excel
-       function `PRICEDISC <https://support.microsoft.com/en-us/office/pricedisc-function-d06ad7c1-380e-4be7-9fd9-75e3079acfd3>_`.
+       function `PRICEDISC <https://support.microsoft.com/en-us/office/pricedisc-function-d06ad7c1-380e-4be7-9fd9-75e3079acfd3>`_.
 
 
 Example
@@ -79,9 +79,7 @@ This results in the following discounted price:
 
     _p_sdp := 90 ;
 
-References
------------
+.. seealso::
 
-    *   Day count basis :ref:`methods<ff.dcb>`. 
-    
+    *   Day count basis :ref:`methods<ff.dcb>`.    
     *   General :ref:`equations<ff.sec.disc>` for discounted securities.

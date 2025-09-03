@@ -134,8 +134,7 @@ The actual values computed are:
       10 :  2690.551704,
       11 :   391.223038 } ;
 
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
     

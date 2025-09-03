@@ -47,7 +47,7 @@ Return Value
 .. note::
 
     The function :aimms:func:`SecurityCouponDays` is similar to the Excel function
-    `COUPDAYS <https://support.microsoft.com/en-us/office/coupdays-function-cc64380b-315b-4e7b-950c-b30b0a76f671>_`.
+    `COUPDAYS <https://support.microsoft.com/en-us/office/coupdays-function-cc64380b-315b-4e7b-950c-b30b0a76f671>`_.
 
 
 
@@ -73,10 +73,7 @@ Day basis 1, just three months, each of 30 days:
 
     _p_scd := 90 ;
 
-References
------------
-
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-    
     *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

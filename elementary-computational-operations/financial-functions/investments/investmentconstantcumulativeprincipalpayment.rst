@@ -102,7 +102,6 @@ That is actually less than the interest pay!
    _p_payoffFirstFiveYears := -3.830669 ;
       
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

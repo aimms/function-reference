@@ -87,9 +87,7 @@ Produces in the listing file:
 
     _p_smcr := 0.010652 ;
 
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-	
 	*   General :ref:`equations<ff.sec.coup1>` for securities with one coupon.

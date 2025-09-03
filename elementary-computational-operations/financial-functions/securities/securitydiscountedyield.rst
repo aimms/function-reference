@@ -79,9 +79,7 @@ This results in the following interest:
 
     _p_sdf := 0.111111 ;
 
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-    
     *   General :ref:`equations<ff.sec.disc>` for discounted securities.

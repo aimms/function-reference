@@ -100,7 +100,6 @@ That is significant:
     _p_interestFirstFiveYears := -4.306601 ;
       
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

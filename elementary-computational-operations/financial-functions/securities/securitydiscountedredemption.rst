@@ -79,9 +79,7 @@ This results in the following redemption value:
 
     _p_sdr := 100 ;
 
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-    
     *   General :ref:`equations<ff.sec.disc>` for discounted securities.

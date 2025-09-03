@@ -41,7 +41,7 @@ Return Value
 .. note::
 
     The function :aimms:func:`SecurityCouponNumber` is similar to the Excel function
-    `COUPNUM <https://support.microsoft.com/en-us/office/coupnum-function-a90af57b-de53-4969-9c99-dd6139db2522>_`.
+    `COUPNUM <https://support.microsoft.com/en-us/office/coupnum-function-a90af57b-de53-4969-9c99-dd6139db2522>`_.
 
 
 Example
@@ -65,10 +65,7 @@ Twenty:
 
     _p_scn := 20 ;
 
-References
------------
-
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-	
 	*   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

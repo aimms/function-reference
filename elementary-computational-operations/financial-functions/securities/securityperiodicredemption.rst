@@ -94,9 +94,7 @@ Produces:
 
     _p_spr := 107.377754 ;
 
-References
------------
-
+.. seealso::
+    
     *   Day count basis :ref:`methods<ff.dcb>`. 
-
     *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

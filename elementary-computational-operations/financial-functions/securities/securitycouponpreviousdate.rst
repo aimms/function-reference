@@ -40,7 +40,7 @@ Arguments
 .. note::
 
     The function :aimms:func:`SecurityCouponPreviousDate` is similar to the Excel
-    function `COUPPCD <https://support.microsoft.com/en-us/office/couppcd-function-2eb50473-6ee9-4052-a206-77a9a385d5b3>_`.
+    function `COUPPCD <https://support.microsoft.com/en-us/office/couppcd-function-2eb50473-6ee9-4052-a206-77a9a385d5b3>`_.
 
 
 
@@ -66,7 +66,6 @@ Here it coincides with the start of every quarter, which is also Jan 1:
 
     _sp_tcpd := "2025-01-01" ;
 
-References
------------
+.. seealso::
 
     *  General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

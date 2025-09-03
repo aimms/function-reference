@@ -106,7 +106,7 @@ All solutions to ``InvestmentConstantRate`` can be obtained using
         display _p_noSol, _p_sols ;
     endblock ;
 
-In this particular example there is only one solution: 
+in this particular example there is only one solution: 
 
 .. code-block:: aimms
 
@@ -117,7 +117,6 @@ In this particular example there is only one solution:
     { 1 : 0.039769 } ;
       
 
-References
------------
-
+.. seealso::
+    
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

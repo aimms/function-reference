@@ -100,7 +100,6 @@ at the beginning or at the end:
     _p_constPeriodicPaymentSavingup    :=  -8.329094 ;
     _p_constPeriodicPaymentReimbursing := -12.329094 ;
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

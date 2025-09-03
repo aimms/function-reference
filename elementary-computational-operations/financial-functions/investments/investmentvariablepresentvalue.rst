@@ -90,15 +90,14 @@ Net present value can be computed as follows:
         display _p_npv ;
     endblock ;
 
-With the following result in the listing file:
+with the following result in the listing file:
 
 .. code-block:: aimms
 
     _p_npv := 987.553700 ;
       
 
-References
------------
+.. seealso::
 
     *   The function :aimms:func:`InvestmentConstantPresentValue`.
 

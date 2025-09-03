@@ -119,7 +119,6 @@ The following table that the pay off portion of each anuity increases:
 	  
 Except for the first period; there is no interest to be paid when no time is passed.
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

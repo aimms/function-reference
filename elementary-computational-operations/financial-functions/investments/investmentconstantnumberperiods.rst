@@ -97,7 +97,6 @@ The results in the listing file state that saving up requires less time than pay
     _p_nperReimbursing  := 13.024384 ;
       
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

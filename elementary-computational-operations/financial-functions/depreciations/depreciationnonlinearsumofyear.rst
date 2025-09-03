@@ -123,10 +123,8 @@ The actual values computed are:
 
 
 
-References
------------
-
-
+.. seealso::
+    
     *   Day count basis :ref:`methods<ff.dcb>`. 
     
     *   General equations for computing :ref:`depreciations<FF.depreq>`.

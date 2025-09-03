@@ -67,7 +67,7 @@ Equation
     -  There should be at least one negative and one positive *Value*.
 
     -  The function :aimms:func:`InvestmentVariableInternalRateReturnModified` is
-       similar to the Excel function `MIRR <https://support.microsoft.com/en-us/office/mirr-function-28b62fff-b057-47ee-9ff9-13ea2628a007>_`.
+       similar to the Excel function `MIRR <https://support.microsoft.com/en-us/office/mirr-function-28b62fff-b057-47ee-9ff9-13ea2628a007>`_.
 
 
 Example
@@ -104,8 +104,6 @@ This results in the following IRR:
     _p_irr := 0.434215 ;
       
 
-References
------------
-
-
+.. seealso::
+    
     *   The function :aimms:func:`InvestmentVariableInternalRateReturn`.

@@ -46,7 +46,7 @@ Return Value
 .. note::
 
     The function :aimms:func:`SecurityCouponDaysPostSettlement` is similar to the
-    Excel function `COUPDAYSNC <https://support.microsoft.com/en-us/office/coupdaysnc-function-5ab3f0b2-029f-4a8b-bb65-47d525eea547>`.
+    Excel function `COUPDAYSNC <https://support.microsoft.com/en-us/office/coupdaysnc-function-5ab3f0b2-029f-4a8b-bb65-47d525eea547>`_.
 
 
 
@@ -72,10 +72,7 @@ Day basis 1, just two months, so that is 60 days:
 
     _p_scdps := 60 ;
 
-References
------------
-
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
-    
     *   General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

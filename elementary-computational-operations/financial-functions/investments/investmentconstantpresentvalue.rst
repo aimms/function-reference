@@ -87,7 +87,6 @@ The present value computed is negative, indicating a debt:
 
     _p_constPresentValue := -81.108958 ;
 
-References
------------
+.. seealso::
 
     *   General :ref:`equations<FF.inveq>` for investments with constant, periodic payments.

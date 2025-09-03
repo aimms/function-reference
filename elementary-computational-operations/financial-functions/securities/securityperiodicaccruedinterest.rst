@@ -82,9 +82,7 @@ Results in an accrued interest of 2:
 
     _p_spai := 2 ;
 
-References
------------
+.. seealso::
 
     *  Day count basis :ref:`methods<ff.dcb>`. 
-
     *  General :ref:`equations<ff.sec.coupn>` for securities with multiple coupons.

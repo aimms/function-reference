@@ -130,9 +130,7 @@ The actual values computed are:
 
 
 
-
-References
------------
+.. seealso::
 
     *   Day count basis :ref:`methods<ff.dcb>`. 
     
