@@ -10,32 +10,33 @@ they are uniquely matched to each other. For instance, see
 :numref:`fig:cp:Channel`. This function is often used to model different perspectives
 of the same problem.
 
-.. figure:: Channel.png
-   :alt: A situation accepted by :aimms:func:`cp::Channel`
-   :name: fig:cp:Channel
+.. figure:: images/Channel.png
+    :alt: A situation accepted by :aimms:func:`cp::Channel`
+    :name: fig:cp:Channel
+    :align: center
 
-   A situation accepted by :aimms:func:`cp::Channel`
+    A situation accepted by :aimms:func:`cp::Channel`.
 
 Mathematical Formulation
 ------------------------
 
-    The function ``cp::Channel(i,x_i,j,y_j)`` returns 1 if for all
-    :math:`i,j`: :math:`x_i=j` implies :math:`y_j=i` and vice versa.
-    ``cp::Channel(i,x_i,j,y_j)`` is equivalent to
+The function ``cp::Channel(i,x_i,j,y_j)`` returns 1 if for all
+:math:`i,j`: :math:`x_i=j` implies :math:`y_j=i` and vice versa.
+``cp::Channel(i,x_i,j,y_j)`` is equivalent to
 
 .. math:: \forall i,j: x_i=j \Leftrightarrow y_j=i
 
 Function Prototype
 ------------------
 
-	.. code-block:: aimms
-		
-		cp::Channel(
-			mapBinding,        ! (input) an index binding
-			map,               ! (input/output) an expression
-			inverseMapBinding, ! (input) an index binding
-			inverseMap         ! (input/output) an expression 
-			)
+.. code-block:: aimms
+    
+    cp::Channel(
+        mapBinding,        ! (input) an index binding
+        map,               ! (input/output) an expression
+        inverseMapBinding, ! (input) an index binding
+        inverseMap         ! (input/output) an expression 
+        )
 
 Arguments
 ---------
@@ -79,23 +80,22 @@ Return Value
 Example
 -------
 
-    In a sports team scheduling problem, the following constraint
+In a sports team scheduling problem, the following constraint
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-            Constraint LinkingDuplicateView {
-                Definition :  cp::Channel( s, Games(s), g, Slots(g) );
-            }
+    Constraint LinkingDuplicateView {
+        Definition :  cp::Channel( s, Games(s), g, Slots(g) );
+    }
 
-    links the variable ``Games(s)`` to the variable
-    ``Slots(g)``. A game is the identification number of a match between a
-    home and an away team. A slot is the identification number of a week and
-    a match within a week number. For each game, there is a unique slot and
-    for each slot there is a unique game.
+links the variable ``Games(s)`` to the variable
+``Slots(g)``. A game is the identification number of a match between a
+home and an away team. A slot is the identification number of a week and
+a match within a week number. For each game, there is a unique slot and
+for each slot there is a unique game.
 
 .. seealso::
 
-    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
-       references this function as ``inverse``.
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`_, which references this function as ``inverse``.

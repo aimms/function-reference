@@ -15,23 +15,23 @@ weight of) :math:`w_j` units of the resource.
 Mathematical Formulation
 ------------------------
 
-    ``cp::ParallelSchedule(c,j,s_j,d_j,e_j,w_j)`` is equivalent to
+``cp::ParallelSchedule(c,j,s_j,d_j,e_j,w_j)`` is equivalent to
 
-    .. math:: \begin{array}{l} \forall t: \sum_{j|s_j\leq{}t<e_j} w_j\leq c \\ \forall j: s_j + d_j = e_j. \end{array}
+.. math:: \begin{array}{l} \forall t: \sum_{j|s_j\leq{}t<e_j} w_j\leq c \\ \forall j: s_j + d_j = e_j. \end{array}
 
 Function Prototype
 ------------------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-            cp::ParallelSchedule(
-                resourceCapacity,  ! (input) an expression
-                jobBinding,        ! (input) an index binding
-                jobBegin,          ! (input/output) an expression
-                jobDuration,       ! (input/output) an expression
-                jobEnd,            ! (input/output) an expression
-                jobWeight          ! (input/output) an expression 
-            )
+    cp::ParallelSchedule(
+        resourceCapacity,  ! (input) an expression
+        jobBinding,        ! (input) an index binding
+        jobBegin,          ! (input/output) an expression
+        jobDuration,       ! (input/output) an expression
+        jobEnd,            ! (input/output) an expression
+        jobWeight          ! (input/output) an expression 
+    )
 
 Arguments
 ---------
@@ -100,7 +100,7 @@ Return Value
     -  The examples at the function :aimms:func:`cp::AllDifferent` illustrate how the index
        binding and vector arguments are used.
 
-    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`_, which
        references this function as ``cumulative``.

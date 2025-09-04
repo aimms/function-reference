@@ -14,21 +14,21 @@ returns 1 if the jobs are scheduled such that no two jobs overlap.
 Mathematical Formulation
 ------------------------
 
-    ``cp::SequentialSchedule(j,s_j,d_j,e_j)`` is equivalent to
+``cp::SequentialSchedule(j,s_j,d_j,e_j)`` is equivalent to
 
-    .. math:: \begin{array}{l} \forall i,j,i \neq j: (s_i+d_i\leq s_j) \vee (s_j + d_j \leq s_i) \\ \forall j: s_j + d_j = e_j \end{array}
+.. math:: \begin{array}{l} \forall i,j,i \neq j: (s_i+d_i\leq s_j) \vee (s_j + d_j \leq s_i) \\ \forall j: s_j + d_j = e_j \end{array}
 
 Function Prototype
 ------------------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-        cp::SequentialSchedule(
-                jobBinding,  ! (input) an index binding
-                jobBegin,    ! (input) an expression
-                jobDuration, ! (input) an expression
-                jobEnd       ! (input) an expression
-        )
+    cp::SequentialSchedule(
+            jobBinding,  ! (input) an index binding
+            jobBegin,    ! (input) an expression
+            jobDuration, ! (input) an expression
+            jobEnd       ! (input) an expression
+    )
 
 Arguments
 ---------
@@ -70,95 +70,93 @@ Return Value
 Example
 -------
 
-    The following example models the intuitive idea that with an increase in
-    the size of a task also the time window in which that task is to be
-    executed increases. 
+The following example models the intuitive idea that with an increase in
+the size of a task also the time window in which that task is to be
+executed increases. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Parameter nrTasks {
-                    Definition   :  10;
-                }
-                Parameter smallestWidth {
-                    Definition   :  4;
-                }
-                Set tasks {
-                    Index        :  t;
-                    Definition   :  elementrange( 1, nrTasks, 1, 'task');
-                }
-                Parameter release {
-                    IndexDomain  :  (t);
-                    Definition   :  Ord(t);
-                }
-                Parameter deadline {
-                    IndexDomain  :  (t);
-                    Definition   :  2*nrTasks-Ord(t)+smallestWidth;
-                }
-                Parameter processingTime {
-                    IndexDomain  :  (t);
-                    Definition   :  ceil(0.125*(deadline(t) - release(t)));
-                }
-                Variable startTime {
-                    IndexDomain  :  (t);
-                    Range        :  {
-                        {release(t) .. deadline(t)}
-                    }
-                }
-                Variable endTime {
-                    IndexDomain  :  (t);
-                    Range        :  {
-                        {release(t) .. deadline(t)}
-                    }
-                }
-                Constraint UnaryResource {
-                    Definition   : {
-                        cp::SequentialSchedule(t, startTime(t),
-                            processingTime(t), endTime(t))
-                    }
-                }
+    Parameter nrTasks {
+        Definition   :  10;
+    }
+    Parameter smallestWidth {
+        Definition   :  4;
+    }
+    Set tasks {
+        Index        :  t;
+        Definition   :  elementrange( 1, nrTasks, 1, 'task');
+    }
+    Parameter release {
+        IndexDomain  :  (t);
+        Definition   :  Ord(t);
+    }
+    Parameter deadline {
+        IndexDomain  :  (t);
+        Definition   :  2*nrTasks-Ord(t)+smallestWidth;
+    }
+    Parameter processingTime {
+        IndexDomain  :  (t);
+        Definition   :  ceil(0.125*(deadline(t) - release(t)));
+    }
+    Variable startTime {
+        IndexDomain  :  (t);
+        Range        :  {
+            {release(t) .. deadline(t)}
+        }
+    }
+    Variable endTime {
+        IndexDomain  :  (t);
+        Range        :  {
+            {release(t) .. deadline(t)}
+        }
+    }
+    Constraint UnaryResource {
+        Definition   : {
+            cp::SequentialSchedule(t, startTime(t),
+                processingTime(t), endTime(t))
+        }
+    }
 
-    This leads to the following results
-    (extracted from the listing file): 
+This leads to the following results
+(extracted from the listing file): 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                    name                    lower    level    upper
-                    startTime('task01')         1        1       23
-                    startTime('task02')         2       18       22
-                    startTime('task03')         3       15       21
-                    startTime('task04')         4        4       20
-                    startTime('task05')         5       13       19
-                    startTime('task06')         6        6       18
-                    startTime('task07')         7       11       17
-                    startTime('task08')         8        8       16
-                    startTime('task09')         9        9       15
-                    startTime('task10')        10       10       14
-                    endTime('task01')           1        4       23
-                    endTime('task02')           2       21       22
-                    endTime('task03')           3       18       21
-                    endTime('task04')           4        6       20
-                    endTime('task05')           5       15       19
-                    endTime('task06')           6        8       18
-                    endTime('task07')           7       13       17
-                    endTime('task08')           8        9       16
-                    endTime('task09')           9       10       15
-                    endTime('task10')          10       11       14
+    name                    lower    level    upper
+    startTime('task01')         1        1       23
+    startTime('task02')         2       18       22
+    startTime('task03')         3       15       21
+    startTime('task04')         4        4       20
+    startTime('task05')         5       13       19
+    startTime('task06')         6        6       18
+    startTime('task07')         7       11       17
+    startTime('task08')         8        8       16
+    startTime('task09')         9        9       15
+    startTime('task10')        10       10       14
+    endTime('task01')           1        4       23
+    endTime('task02')           2       21       22
+    endTime('task03')           3       18       21
+    endTime('task04')           4        6       20
+    endTime('task05')           5       15       19
+    endTime('task06')           6        8       18
+    endTime('task07')           7       13       17
+    endTime('task08')           8        9       16
+    endTime('task09')           9       10       15
+    endTime('task10')          10       11       14
 
-    The following Gantt chart
-    illustrates that the solution satisfies the restricition imposed by
-    :aimms:func:`cp::SequentialSchedule`.
+The following Gantt chart illustrates that the solution satisfies the restricition imposed by :aimms:func:`cp::SequentialSchedule`.
 
-    .. figure:: Gantt-Chart-Example-Sequential-Schedule.jpg
-       :name: fig:sequential-schedule-narrowing-gantt-chart
+.. figure:: images/Gantt-Chart-Example-Sequential-Schedule.jpg
+    :name: fig:sequential-schedule-narrowing-gantt-chart
 
-       Gantt chart for solution of :aimms:func:`cp::SequentialSchedule`
+    Gantt chart for solution of :aimms:func:`cp::SequentialSchedule`.
 
 .. seealso::
 
     -  The examples at the function :aimms:func:`cp::AllDifferent` illustrate how the index
        binding and vector arguments are used.
 
-    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`_, which
        references this function as ``disjunctive``.

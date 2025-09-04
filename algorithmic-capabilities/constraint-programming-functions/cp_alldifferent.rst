@@ -12,19 +12,19 @@ of) an indexed identifier or expression contains all different values.
 Mathematical Formulation
 ------------------------
 
-    The function ``cp::AllDifferent(i,x_i)`` is equivalent to
+The function ``cp::AllDifferent(i,x_i)`` is equivalent to
 
-    .. math:: \forall i, j, i\neq j: x_i \neq x_j
+.. math:: \forall i, j, i\neq j: x_i \neq x_j
 
 Function Prototype
 ------------------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-        cp::AllDifferent(
-                valueBinding, ! (input) an index binding
-                values        ! (input/output) an expression
-        )
+    cp::AllDifferent(
+            valueBinding, ! (input) an index binding
+            values        ! (input/output) an expression
+    )
 
 Arguments
 ---------
@@ -70,59 +70,58 @@ Return Value
 Example
 -------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                ElementParameter TheElementParameter {
-                    IndexDomain  : i
-                    Definition   : {
-                        data{ 1 : A,
-                              2 : B,
-                              3 : C }
-                    }
-                }
+    ElementParameter TheElementParameter {
+        IndexDomain  : i
+        Definition   : {
+            data{ 1 : A,
+                    2 : B,
+                    3 : C }
+        }
+    }
 
-    With the above data,
-    ``cp::AllDifferent(i, TheElementParameter(i))`` returns 1, because all
-    elements are different. However, with the data below, it returns 0 (the
-    element 'A' appears twice). 
+With the above data,
+``cp::AllDifferent(i, TheElementParameter(i))`` returns 1, because all
+elements are different. However, with the data below, it returns 0 (the
+element 'A' appears twice). 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                ElementParameter TheElementParameter {
-                    IndexDomain  : i;
-                    Definition   : {
-                        data{ 1 : A,
-                              2 : B,
-                              3 : A }
-                    }
-                }
+    ElementParameter TheElementParameter {
+        IndexDomain  : i;
+        Definition   : {
+            data{ 1 : A,
+                    2 : B,
+                    3 : A }
+        }
+    }
 
-    The following code snippet is
-    extracted from the Sudoku example (in which all rows, columns and blocks
-    should have different values). It illustrates the selection of values;
-    particularly illustrating the use of an index domain condition on the
-    first argument as used in the definition of ``DifferentValuesPerBlock``.
+The following code snippet is
+extracted from the Sudoku example (in which all rows, columns and blocks
+should have different values). It illustrates the selection of values;
+particularly illustrating the use of an index domain condition on the
+first argument as used in the definition of ``DifferentValuesPerBlock``.
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Constraint DifferentValuesPerRow {
-                    IndexDomain  :  i;
-                    Definition   :  cp::AllDifferent( j, x(i,j) );
-                }
-                Constraint DifferentValuesPerColumn {
-                    IndexDomain  :  j;
-                    Definition   :  cp::AllDifferent( i, x(i,j) );
-                }
-                Constraint DifferentValuesPerBlock {
-                    IndexDomain  :  k;
-                    Definition   :  cp::AllDifferent( (i,j) | Blck(i,j) = k, x(i,j) );
-                }
+    Constraint DifferentValuesPerRow {
+        IndexDomain  :  i;
+        Definition   :  cp::AllDifferent( j, x(i,j) );
+    }
+    Constraint DifferentValuesPerColumn {
+        IndexDomain  :  j;
+        Definition   :  cp::AllDifferent( i, x(i,j) );
+    }
+    Constraint DifferentValuesPerBlock {
+        IndexDomain  :  k;
+        Definition   :  cp::AllDifferent( (i,j) | Blck(i,j) = k, x(i,j) );
+        }
 
 .. seealso::
 
-    -  :doc:`optimization-modeling-components/constraint-programming/index` in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
 
-    -  Further information on index binding can be found in :doc:`procedural-language-components/index-binding/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  Further information on index binding can be found in :doc:`procedural-language-components/index-binding/index` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
-       references this function as ``alldifferent``.
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`_, which references this function as ``alldifferent``.

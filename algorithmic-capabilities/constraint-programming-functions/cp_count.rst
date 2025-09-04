@@ -13,25 +13,25 @@ enforce a selected value a limited number of times.
 Mathematical Formulation
 ------------------------
 
-    The function ``cp::Count(i,x_i,c,\otimes,y)`` returns 1 if the number of
-    occurrences of :math:`x_i` equal to the value :math:`c`, is related to
-    :math:`y` according to the relational operator :math:`\otimes`. The
-    function ``cp::Count(i,x_i,c,\otimes,y)`` is equivalent to
+The function ``cp::Count(i,x_i,c,\otimes,y)`` returns 1 if the number of
+occurrences of :math:`x_i` equal to the value :math:`c`, is related to
+:math:`y` according to the relational operator :math:`\otimes`. The
+function ``cp::Count(i,x_i,c,\otimes,y)`` is equivalent to
 
-    .. math:: \begin{array}{l} \sum_{i} (x_i=c) \otimes y \\ \otimes \in \{ \leq, =, \geq, <, >, \neq \} \end{array}
+.. math:: \begin{array}{l} \sum_{i} (x_i=c) \otimes y \\ \otimes \in \{ \leq, =, \geq, <, >, \neq \} \end{array}
 
 Function Prototype
 ------------------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-            cp::Count(
-                inspectedBinding,   ! (input) an index binding
-                inspectedValues,    ! (input/output) an expression
-                lookupValue,        ! (input) an expression
-                relationalOperator, ! (input) an element  
-                occurrenceLimit     ! (input/output) an expression 
-            )
+    cp::Count(
+        inspectedBinding,   ! (input) an index binding
+        inspectedValues,    ! (input/output) an expression
+        lookupValue,        ! (input) an expression
+        relationalOperator, ! (input) an element  
+        occurrenceLimit     ! (input/output) an expression 
+    )
 
 Arguments
 ---------
@@ -74,55 +74,54 @@ Return Value
 Example
 -------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                ElementParameter TheElementParameter {
-                    IndexDomain  :  i;
-                    Definition   :  data{ 1 : A, 2 : B, 3 : A };
-                }
+    ElementParameter TheElementParameter {
+        IndexDomain  :  i;
+        Definition   :  data{ 1 : A, 2 : B, 3 : A };
+    }
 
-    With the above data, the following holds: 
+With the above data, the following holds: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-            cp::Count(i, TheElementParameter(i), 'B', '<=', 1) = 1
-            cp::Count(i, TheElementParameter(i), 'B', '<', 1) = 0
-            cp::Count(i, TheElementParameter(i), 'A', '=', 2) = 1
+        cp::Count(i, TheElementParameter(i), 'B', '<=', 1) = 1
+        cp::Count(i, TheElementParameter(i), 'B', '<', 1) = 0
+        cp::Count(i, TheElementParameter(i), 'A', '=', 2) = 1
 
-    The
-    following constraint sets the number of stores supplied by a warehouse
-    ``w`` equal to the variable ``warehouseUsage``: 
+The following constraint sets the number of stores supplied by a warehouse
+``w`` equal to the variable ``warehouseUsage``: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Set Warehouses {
-                    Index        :  w;
-                }
-                Set Suppliers {
-                    Index        :  s;
-                }
-                ElementParamter SupplyingWarehouse {
-                    IndexDomain  :  s;
-                    Range        :  Warehouses;
-                }
-                Variable WarehouseUsage {
-                    IndexDomain  :  w;
-                    Range        :  integer;
-                }
-                Constraint CountUsedWarehouses {
-                    IndexDomain  :  w;
-                    Definition   : {
-                        cp::count( s, supplyingWarehouse(s), w,
-                                  '=', warehouseUsage(w) )
-                    }
-               }
+    Set Warehouses {
+        Index        :  w;
+    }
+    Set Suppliers {
+        Index        :  s;
+    }
+    ElementParamter SupplyingWarehouse {
+        IndexDomain  :  s;
+        Range        :  Warehouses;
+    }
+    Variable WarehouseUsage {
+        IndexDomain  :  w;
+        Range        :  integer;
+    }
+    Constraint CountUsedWarehouses {
+        IndexDomain  :  w;
+        Definition   : {
+            cp::count( s, supplyingWarehouse(s), w,
+                        '=', warehouseUsage(w) )
+        }
+    }
 
 .. seealso::
 
     -  The functions :aimms:func:`cp::Cardinality` and :aimms:func:`cp::Sequence`.
 
-    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`_, which
        references this function as ``count`` or, depending on a particular choice of
        :math:`\otimes`, as ``atleast``, ``atmost`` or ``exactly``.

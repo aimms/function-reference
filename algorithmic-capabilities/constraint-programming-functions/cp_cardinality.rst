@@ -16,29 +16,29 @@ bounds, or sets this equal to the value of a variable.
 Mathematical Formulation
 ------------------------
 
-    The function ``cp::Cardinality(i,x_i,j,c_j,y_j[,u_j])`` returns 1 if the
-    number of occurrences where :math:`x_i` equals :math:`c_j` is equal to
-    :math:`y_j` or in the range {:math:`y_j`..\ :math:`u_j`}for all
-    :math:`j`. ``cp::Cardinality(i,x_i,j,c_j,y_j)`` is equivalent to
+The function ``cp::Cardinality(i,x_i,j,c_j,y_j[,u_j])`` returns 1 if the
+number of occurrences where :math:`x_i` equals :math:`c_j` is equal to
+:math:`y_j` or in the range {:math:`y_j`..\ :math:`u_j`}for all
+:math:`j`. ``cp::Cardinality(i,x_i,j,c_j,y_j)`` is equivalent to
 
-    .. math:: \forall j: \sum_i (x_i=c_j) = y_j
+.. math:: \forall j: \sum_i (x_i=c_j) = y_j
 
-    \ and ``cp::Cardinality(i,x_i,j,c_j,l_j,u_j)`` is equivalent to
+\ and ``cp::Cardinality(i,x_i,j,c_j,l_j,u_j)`` is equivalent to
 
-    .. math:: \forall j: l_j \leq \sum_i (x_i=c_j) \leq u_j
+.. math:: \forall j: l_j \leq \sum_i (x_i=c_j) \leq u_j
 
 Function Prototype
 ------------------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-        cp::Cardinality(
-                inspectedBinding,    ! (input) an index binding
-                inspectedValues,     ! (input) an expression
-                lookupValueBinding,  ! (input) an index binding
-                lookupValues,        ! (input) an expression
-                numberOfOccurrences, ! (input/output) an expression
-                occurrenceLimit)     ! (optional/input) an expression
+    cp::Cardinality(
+            inspectedBinding,    ! (input) an index binding
+            inspectedValues,     ! (input) an expression
+            lookupValueBinding,  ! (input) an index binding
+            lookupValues,        ! (input) an expression
+            numberOfOccurrences, ! (input/output) an expression
+            occurrenceLimit)     ! (optional/input) an expression
 
 Arguments
 ---------
@@ -86,29 +86,28 @@ Return Value
 Example
 -------
 
-    In car sequencing the next constraint ensures that the demand
-    ``nbCarsPerClass( c )`` for each class ``c`` of type ``car(i)`` is met.
-    The value of element variable ``car`` is a class of car. 
+In car sequencing the next constraint ensures that the demand
+``nbCarsPerClass( c )`` for each class ``c`` of type ``car(i)`` is met.
+The value of element variable ``car`` is a class of car. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Constraint meetDemand {
-                    Definition   : {
-                        cp::Cardinality(
-                             inspectedBinding    :  i, 
-                             inspectedValues     :  car(i), 
-                             lookupValueBinding  :  c, 
-                             lookupValues        :  c, 
-                             numberOfOccurrences :  nbCarsPerClass( c ), 
-                             occurrenceLimit     :  nbCars)
-                    }
-                }
+    Constraint meetDemand {
+        Definition   : {
+            cp::Cardinality(
+                    inspectedBinding    :  i, 
+                    inspectedValues     :  car(i), 
+                    lookupValueBinding  :  c, 
+                    lookupValues        :  c, 
+                    numberOfOccurrences :  nbCarsPerClass( c ), 
+                    occurrenceLimit     :  nbCars)
+        }
+    }
 
 .. seealso::
 
     -  The functions :aimms:func:`cp::Count` and :aimms:func:`cp::Sequence`.
 
-    -  :doc:`optimization-modeling-components/constraint-programming/index` in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
-       references this function as ``global_cardinality``.
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`_, which references this function as ``global_cardinality``.

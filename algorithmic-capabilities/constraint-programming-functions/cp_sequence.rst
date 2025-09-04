@@ -13,27 +13,27 @@ times in a contiguous subset of the variables.
 Mathematical Formulation
 ------------------------
 
-    The function ``cp::Sequence(i,x_i,S,q,l,u[,c])`` returns 1 if, for each
-    contiguous sequence of length :math:`q`, the number of times that
-    :math:`x_i` is in :math:`S` is within the range :math:`\{ l .. u\}`.
-    ``cp::Sequence(i,x_i,S,q,l,u,c)`` is equivalent to
+The function ``cp::Sequence(i,x_i,S,q,l,u[,c])`` returns 1 if, for each
+contiguous sequence of length :math:`q`, the number of times that
+:math:`x_i` is in :math:`S` is within the range :math:`\{ l .. u\}`.
+``cp::Sequence(i,x_i,S,q,l,u,c)`` is equivalent to
 
-    .. math:: \begin{array}{llll} \forall i=1..n-q+1: & l \leq \sum_{j=0}^{q-1} (x_{i+j}\in S) & \leq u & c=0 \\ \forall i=1..n : & l \leq \sum_{j=0}^{q-1} (x_{(i+j-1)\%n+1}\in S) & \leq u & c\neq 0 \\ \end{array}
+.. math:: \begin{array}{llll} \forall i=1..n-q+1: & l \leq \sum_{j=0}^{q-1} (x_{i+j}\in S) & \leq u & c=0 \\ \forall i=1..n : & l \leq \sum_{j=0}^{q-1} (x_{(i+j-1)\%n+1}\in S) & \leq u & c\neq 0 \\ \end{array}
 
 Function Prototype
 ------------------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-            cp::Sequence(
-                inspectedBinding, ! (input) an index binding
-                inspectedValues,  ! (input/output) an expression
-                lookupValues,     ! (input) a set valued expression
-                sequenceLength,   ! (input) an expression
-                lowerBound,       ! (input) an expression 
-                upperBound,       ! (input) an expression 
-                cyclic            ! (optional, input) an expression
-            )
+    cp::Sequence(
+        inspectedBinding, ! (input) an index binding
+        inspectedValues,  ! (input/output) an expression
+        lookupValues,     ! (input) a set valued expression
+        sequenceLength,   ! (input) an expression
+        lowerBound,       ! (input) an expression 
+        upperBound,       ! (input) an expression 
+        cyclic            ! (optional, input) an expression
+    )
 
 Arguments
 ---------
@@ -83,53 +83,53 @@ Return Value
 Example
 -------
 
-    In car sequencing the constraint below ensures that no more ``car``\ s
-    of class ``c`` with option ``o`` are built in a sequence of length
-    ``blockSize(o)`` than ``maxCarsPerBlock(o)``. Here, the indexed set
-    ``classesHavingOption(o)`` is, for each option ``o``, the classes of car
-    that have that option. 
+In car sequencing the constraint below ensures that no more ``car``\ s
+of class ``c`` with option ``o`` are built in a sequence of length
+``blockSize(o)`` than ``maxCarsPerBlock(o)``. Here, the indexed set
+``classesHavingOption(o)`` is, for each option ``o``, the classes of car
+that have that option. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Constraint respectCapacity {
-                    IndexDomain  : (o);
-                    Definition   : {
-                        cp::Sequence(
-                            inspectedBinding :  i,
-                            inspectedValues  :  car(i),
-                            lookupValues     :  classesHavingOption(o),
-                            sequenceLength   :  blockSize(o),
-                            lowerBound       :  0,
-                            upperBound       :  maxCarsPerBlock(o) )
-                    }
-                }
+    Constraint respectCapacity {
+        IndexDomain  : (o);
+        Definition   : {
+            cp::Sequence(
+                inspectedBinding :  i,
+                inspectedValues  :  car(i),
+                lookupValues     :  classesHavingOption(o),
+                sequenceLength   :  blockSize(o),
+                lowerBound       :  0,
+                upperBound       :  maxCarsPerBlock(o) )
+        }
+    }
 
-    In crew scheduling the constraint
-    below ensures that after a flight an attendant ``att`` has at least two
-    days off (works at most one day in each sequence of three days). The
-    value ``1`` is converted to the set ``{1}`` by AIMMS. 
+In crew scheduling the constraint
+below ensures that after a flight an attendant ``att`` has at least two
+days off (works at most one day in each sequence of three days). The
+value ``1`` is converted to the set ``{1}`` by AIMMS. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Constraint AssureDaysOff {
-                    IndexDomain  : (att);
-                    Definition   : {
-                         cp::Sequence(
-                             inspectedBinding :  f,
-                             inspectedValues  :  CrewOnFlight(att, f),
-                             lookupValues     :  1,
-                             sequenceLength   :  3,
-                             lowerBound       :  0,
-                             upperBound       :  1,
-                             cyclic           :  1)
-                    }
-               }
+    Constraint AssureDaysOff {
+        IndexDomain  : (att);
+        Definition   : {
+                cp::Sequence(
+                    inspectedBinding :  f,
+                    inspectedValues  :  CrewOnFlight(att, f),
+                    lookupValues     :  1,
+                    sequenceLength   :  3,
+                    lowerBound       :  0,
+                    upperBound       :  1,
+                    cyclic           :  1)
+        }
+    }
 
 .. seealso::
 
     -  The functions :aimms:func:`cp::Count` and :aimms:func:`cp::Cardinality`.
 
-    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
 
-    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`__, which
+    -  The `Global Constraint Catalog <https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/titlepage.html>`_, which
        references this function as ``among_seq``.
