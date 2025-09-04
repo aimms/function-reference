@@ -40,11 +40,13 @@ Graph
 .. image:: images/extremevalue.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 1.000 experiments of drawing from distribution ``ExtremeValue(3,4)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``ExtremeValue(3,4)``
+*   the :aimms:func:`DistributionDensity` for ``ExtremeValue(3,4)``.
 
 Example
 --------
@@ -71,13 +73,8 @@ will produce
 in the listing file.
 
 
-References
------------
+.. seealso::
 
-    *   The :aimms:func:`ExtremeValue` distribution is discussed in full detail in
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` 
-        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia generalized extreme value <https://en.wikipedia.org/wiki/Generalized_extreme_value_distribution>`_
-
-    *   `Wikipedia gumbel type I <https://en.wikipedia.org/wiki/Gumbel_distribution>`_
+    *   The :aimms:func:`ExtremeValue` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Generalized Extreme Value Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Generalized_extreme_value_distribution>`_.
+    *   `Gumbel Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Gumbel_distribution>`_.

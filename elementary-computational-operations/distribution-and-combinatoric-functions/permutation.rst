@@ -32,4 +32,4 @@ Return Value
 
 .. seealso::
 
-    Combinatoric functions are discussed in full detail in :ref:`table:expr.combinatoric`.
+    - Combinatoric functions are discussed in full detail in :ref:`table:expr.combinatoric`.

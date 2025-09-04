@@ -42,11 +42,13 @@ Graph
 .. image:: images/uniform.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 100 experiments of drawing from distribution ``Uniform(0,25)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``Uniform(0,25)``
+*   the :aimms:func:`DistributionDensity` for ``Uniform(0,25)``.
 
 Example
 --------
@@ -74,13 +76,8 @@ in the listing file.
 
 
 
-References
------------
+.. seealso::
 
-
-    *   The :aimms:func:`Uniform` distribution is discussed in full detail in 
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
-        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Uniform_distribution>`_
+    *   The :aimms:func:`Uniform` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Uniform Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Uniform_distribution>`_.
 

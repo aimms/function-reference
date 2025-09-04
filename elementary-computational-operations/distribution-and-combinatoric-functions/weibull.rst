@@ -40,7 +40,7 @@ Return Value
     The prototype of this function has changed with the introduction of
     AIMMS 3.4. In order to run models that still use the original prototype,
     the option ``Distribution_compatibility`` should be set to
-    ``Aimms_3_0``. In the original function :aimms:func:`Weibull`\ (*Lowerbound*,
+    ``Aimms_3_0``. In the original function :aimms:func:`Weibull` (*Lowerbound*,
     *Shape*, *Scale*), the arguments were ordered differently.
 
 
@@ -50,11 +50,13 @@ Graph
 .. image:: images/weibull.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 100 experiments of drawing from distribution ``Weibull(5,0,5)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``Weibull(5,0,5)``
+*   the :aimms:func:`DistributionDensity` for ``Weibull(5,0,5)``.
 
 Example
 --------
@@ -80,12 +82,8 @@ will produce
 
 in the listing file.
 
-References
------------
+.. seealso::
 
-    *   The :aimms:func:`Weibull` distribution is discussed in full detail in 
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
-        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Weibull_distribution>`_
+    *   The :aimms:func:`Weibull` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Weibull Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Weibull_distribution>`_.
 

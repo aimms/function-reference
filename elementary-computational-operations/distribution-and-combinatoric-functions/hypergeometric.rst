@@ -49,11 +49,13 @@ Graph
 .. image:: images/hypergeometric.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 10000 experiments of drawing from distribution ``HyperGeometric(0.3,20,30)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``HyperGeometric(0.3,20,30)``
+*   the :aimms:func:`DistributionDensity` for ``HyperGeometric(0.3,20,30)``.
 
 Example
 --------
@@ -85,10 +87,7 @@ Indicates:
 
 * the probability for result 5 is 0.059049.
 
-References
------------
+.. seealso::
 
-    *   The :aimms:func:`HyperGeometric` distribution is discussed in full detail in
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Hypergeometric_distribution>`_
+    *   The :aimms:func:`HyperGeometric` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Hypergeometric Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Hypergeometric_distribution>`_.

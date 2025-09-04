@@ -41,7 +41,7 @@ Return Value
     The prototype of this function has changed with the introduction of
     AIMMS 3.4. In order to run models that still use the original prototype,
     the option ``Distribution_compatibility`` should be set to
-    ``Aimms_3_0``. The original function :aimms:func:`Triangular`\ (*a*, *b*, *c*)
+    ``Aimms_3_0``. The original function :aimms:func:`Triangular` (*a*, *b*, *c*)
     returns a random value drawn from a triangular distribution with a lower
     bound *a*, likeliest value *b* and upper bound *c*. The arguments must
     satisfy the relation :math:`a < b < c`. The relation between the
@@ -54,11 +54,13 @@ Graph
 .. image:: images/pareto.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 100 experiments of drawing from distribution ``Triangular(0.300,0,100)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``Triangular(0.300,0,100)``
+*   the :aimms:func:`DistributionDensity` for ``Triangular(0.300,0,100)``.
 
 Example
 --------
@@ -84,11 +86,7 @@ will produce
 
 in the listing file.
 
-References
------------
+.. seealso::
 
-    *   The :aimms:func:`Triangular` distribution is discussed in full detail in 
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
-        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Triangular_distribution>`_
+    *   The :aimms:func:`Triangular` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Triangular Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Triangular_distribution>`_.

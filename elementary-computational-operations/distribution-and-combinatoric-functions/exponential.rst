@@ -36,7 +36,7 @@ Return Value
     The prototype of this function has changed with the introduction of
     AIMMS 3.4. In order to run models that still use the original prototype,
     the option ``Distribution_compatibility`` should be set to
-    ``Aimms_3_0``. The original function :aimms:func:`Exponential`\ (*lambda*) returns
+    ``Aimms_3_0``. The original function :aimms:func:`Exponential` (*lambda*) returns
     a random value drawn from a exponential distribution with rate
     :math:`lambda = 1/scale` and lower bound :math:`0`.
 
@@ -47,11 +47,13 @@ Graph
 .. image:: images/exponential.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 100.000 experiments of drawing from distribution ``Exponential(0,1)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``Exponential(0,1)``
+*   the :aimms:func:`DistributionDensity` for ``Exponential(0,1)``.
 
 Example
 --------
@@ -78,13 +80,8 @@ will produce
 in the listing file.
 
 
+.. seealso::
 
-References
------------
-
-    *   The :aimms:func:`Exponential` distribution is discussed in full detail in 
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
-        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Exponential_distribution>`_
+    *   The :aimms:func:`Exponential` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Exponential Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Exponential_distribution>`_.
 

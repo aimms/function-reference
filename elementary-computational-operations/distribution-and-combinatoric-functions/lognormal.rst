@@ -40,7 +40,7 @@ Return Value
     The prototype of this function has changed with the introduction of
     AIMMS 3.4. In order to run models that still use the original prototype,
     the option ``Distribution_compatibility`` should be set to
-    ``Aimms_3_0``. The original function :aimms:func:`LogNormal`\ (*m*, *sd*) returns
+    ``Aimms_3_0``. The original function :aimms:func:`LogNormal` (*m*, *sd*) returns
     a random value drawn from a lognormal distribution with mean :math:`m>0`
     and standard deviation :math:`sd>0`. The same result should now be
     obtained by setting :math:`Shape = sd/m`, :math:`Lowerbound=0` and
@@ -53,11 +53,13 @@ Graph
 .. image:: images/lognormal.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 1.000.000 experiments of drawing from distribution ``LogNormal(4,0,100)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``LogNormal(4,0,100)``
+*   the :aimms:func:`DistributionDensity` for ``LogNormal(4,0,100)``.
 
 Example
 --------
@@ -84,11 +86,7 @@ will produce
 in the listing file.
 
 
-References
------------
+.. seealso::
 
-    *   The :aimms:func:`LogNormal` distribution is discussed in full detail in 
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions`
-        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Log-normal_distribution>`_
+    *   The :aimms:func:`LogNormal` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Wikipedia <https://en.wikipedia.org/wiki/Log-normal_distribution>`_.

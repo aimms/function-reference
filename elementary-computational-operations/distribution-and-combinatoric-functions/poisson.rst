@@ -33,11 +33,13 @@ Graph
 .. image:: images/poisson.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 1000 experiments of drawing from distribution ``Poisson(4)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``Poisson(4)``
+*   the :aimms:func:`DistributionDensity` for ``Poisson(4)``.
 
 Example
 --------
@@ -63,10 +65,7 @@ will produce
 
 in the listing file.
 
-References
------------
+.. seealso::
 
-    *   The :aimms:func:`Poisson` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions`
-        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Poisson_distribution>`_
+    *   The :aimms:func:`Poisson` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Poisson Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Poisson_distribution>`_.

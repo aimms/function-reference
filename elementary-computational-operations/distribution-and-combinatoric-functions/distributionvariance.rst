@@ -28,5 +28,4 @@ Return Value
 
 .. seealso::
 
-    You can find more information about the variance of a distribution in
-    :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - You can find more information about the variance of a distribution in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.

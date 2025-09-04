@@ -34,5 +34,5 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`DistributionCumulative`, :aimms:func:`DistributionInverseDensity`. The function :aimms:func:`DistributionDensity`
-    is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The functions :aimms:func:`DistributionCumulative`, :aimms:func:`DistributionInverseDensity`. 
+    - The function :aimms:func:`DistributionDensity` is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.

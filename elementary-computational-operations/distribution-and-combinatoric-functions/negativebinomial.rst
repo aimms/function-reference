@@ -42,11 +42,13 @@ Graph
 .. image:: images/negativebinomial.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 10.000 experiments of drawing from distribution ``NegativeBinomial(0.3333,20)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``NegativeBinomial(0.3333,20)``
+*   the :aimms:func:`DistributionDensity` for ``NegativeBinomial(0.3333,20)``.
 
 Example
 --------
@@ -72,14 +74,7 @@ will produce
 
 in the listing file.
 
+.. seealso::
 
-
-
-References
------------
-
-    *   The :aimms:func:`NegativeBinomial` distribution is discussed in full detail in
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` 
-        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Negative_binomial_distribution>`_
+    *   The :aimms:func:`NegativeBinomial` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Negative Binomial Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Negative_binomial_distribution>`_.

@@ -48,11 +48,13 @@ Graph
 .. image:: images/pareto.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 100 experiments of drawing from distribution ``Pareto(2,0,10)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``Pareto(2,0,10)``
+*   the :aimms:func:`DistributionDensity` for ``Pareto(2,0,10)``.
 
 Example
 --------
@@ -78,12 +80,8 @@ will produce
 
 in the listing file.
 
-References
------------
+.. seealso::
 
-    *   The :aimms:func:`Pareto` distribution is discussed in full detail in
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of
-        the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Pareto_distribution>`_
+    *   The :aimms:func:`Pareto` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Pareto Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Pareto_distribution>`_.
 

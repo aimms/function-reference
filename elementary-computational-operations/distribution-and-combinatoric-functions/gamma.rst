@@ -39,7 +39,7 @@ Return Value
     The prototype of this function has changed with the introduction of
     AIMMS 3.4. In order to run models that still use the original prototype,
     the option ``Distribution_compatibility`` should be set to
-    ``Aimms_3_0``. The original function :aimms:func:`Gamma`\ (*alpha*, *Shape*)
+    ``Aimms_3_0``. The original function :aimms:func:`Gamma` (*alpha*, *Shape*)
     returns a random value drawn from a gamma distribution with rate
     :math:`alpha = 1/Scale`, shape *Shape* and lower bound :math:`0`.
 
@@ -49,11 +49,13 @@ Graph
 .. image:: images/gamma.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 1.000.000 experiments of drawing from distribution ``Gamma(3,0,2)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``Gamma(3,0,2)``
+*   the :aimms:func:`DistributionDensity` for ``Gamma(3,0,2)``.
 
 Example
 --------
@@ -79,14 +81,10 @@ will produce
 
 in the listing file.
 
-References
------------
+.. seealso::
 
-    *    The :aimms:func:`Gamma` distribution is discussed in full detail in
-         :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of
-         the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Gamma_distribution>`_
+    *    The :aimms:func:`Gamma` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Gamma Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Gamma_distribution>`_.
 
 
 

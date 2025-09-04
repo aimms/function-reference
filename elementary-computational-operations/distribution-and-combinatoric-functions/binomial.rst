@@ -29,7 +29,7 @@ Return Value
 
     The function :aimms:func:`Binomial` returns a random value drawn from a binomial
     distribution with a probability of success *ProbabilityOfSuccess* and
-    number of tries *NumberOfTries*
+    number of tries *NumberOfTries*.
 
 		
 Graph
@@ -38,11 +38,13 @@ Graph
 .. image:: images/binomial.png
     :align: center
 
+|
+
 A graph with:
  
 *   a histogram for 1000 experiments of drawing from distribution ``Binomial(0.5,50)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``Binomial(0.5,50)``
+*   the :aimms:func:`DistributionDensity` for ``Binomial(0.5,50)``.
 
 Example
 -----------
@@ -68,11 +70,7 @@ will produce
 
 in the listing file.
 
-References
------------
+.. seealso::
 
-    *   The :aimms:func:`Binomial` distribution is discussed in full detail in
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions`
-        of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-		
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Binomial_distribution>`_
+    *   The :aimms:func:`Binomial` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/discrete-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Binomial Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Binomial_distribution>`_.

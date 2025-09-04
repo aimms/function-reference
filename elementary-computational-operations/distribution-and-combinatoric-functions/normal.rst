@@ -37,11 +37,13 @@ Graph
 .. image:: images/normal.png
     :align: center
 
+|    
+
 A graph with:
  
 *   a histogram for 1.000 experiments of drawing from distribution ``Normal(0,10)``, and
 
-*   the :aimms:func:`DistributionDensity` for ``Normal(0,10)``
+*   the :aimms:func:`DistributionDensity` for ``Normal(0,10)``.
 
 Example
 --------
@@ -68,14 +70,9 @@ will produce
 in the listing file.
 
 
+.. seealso::
 
-References
------------
-
-    *   The :aimms:func:`Normal` distribution is discussed in full detail in
-        :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of
-        the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    *   `Wikipedia <https://en.wikipedia.org/wiki/Normal_distribution>`_
+    *   The :aimms:func:`Normal` distribution is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/continuous-distributions` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    *   `Normal Distribution (Wikipedia) <https://en.wikipedia.org/wiki/Normal_distribution>`_.
 
 
