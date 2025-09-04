@@ -29,7 +29,7 @@ Arguments
         A scalar numerical expression.
 
     *Maximum*
-        A scalar numerical expression :math:`> ` *min*.
+        A scalar numerical expression :math:`>` *min*.
 
 Return Value
 ------------
