@@ -64,32 +64,31 @@ Return Value
 Example
 -------
 
-    In the example below we require precisely one of the activities
-    ``altAct(i)`` to match the activity ``chosenAct(i)``. 
+In the example below we require precisely one of the activities
+``altAct(i)`` to match the activity ``chosenAct(i)``. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Constraint PreciselyOneAlternativeMatches {
-                    Definition   :  cp::Alternative( chosenAct, i, altAct(i) );
-                }
+    Constraint PreciselyOneAlternativeMatches {
+        Definition   :  cp::Alternative( chosenAct, i, altAct(i) );
+    }
 
-    We
-    could change the above example to allow multiple matches as follows:
+We could change the above example to allow multiple matches as follows:
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Variable noMatches {
-                    Range        :  {
-                        { 1 .. n }
-                    }
-                }
-                Constraint AtLeastOneAlternativeMatches {
-                    Definition   :  cp::Alternative( chosenAct, i, altAct(i), noMatches );
-                }
+    Variable noMatches {
+        Range        :  {
+            { 1 .. n }
+        }
+    }
+    Constraint AtLeastOneAlternativeMatches {
+        Definition   :  cp::Alternative( chosenAct, i, altAct(i), noMatches );
+    }
 
-    Here, the number of matches is counted in the integer
-    variable ``noMatches``.
+Here, the number of matches is counted in the integer
+variable ``noMatches``.
 
 .. seealso::
 
-    The functions :aimms:func:`cp::Span` and :aimms:func:`cp::Synchronize`.
+    - The functions :aimms:func:`cp::Span` and :aimms:func:`cp::Synchronize`.

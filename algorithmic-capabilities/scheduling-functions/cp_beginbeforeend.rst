@@ -46,6 +46,6 @@ Return Value
 
 .. seealso::
 
-    -  The functions :aimms:func:`cp::BeginBeforeBegin` and :aimms:func:`cp::BeginAtEnd`, and
+    -  The functions :aimms:func:`cp::BeginBeforeBegin` and :aimms:func:`cp::BeginAtEnd`.
 
     -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

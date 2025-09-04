@@ -48,4 +48,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`cp::Alternative` and :aimms:func:`cp::Span`.
+    - The functions :aimms:func:`cp::Alternative` and :aimms:func:`cp::Span`.

@@ -12,19 +12,19 @@ absent.
 Mathematical Formulation
 ------------------------
 
-    The function ``cp::ActivityBegin(a,d)`` is equivalent to
+The function ``cp::ActivityBegin(a,d)`` is equivalent to
 
-    .. math:: \left\{ \begin{array}{ll} a.\texttt{begin} & \textrm{if } a.\texttt{present} \\ d & \textrm{otherwise } \end{array} \right.
+.. math:: \left\{ \begin{array}{ll} a.\texttt{begin} & \textrm{if } a.\texttt{present} \\ d & \textrm{otherwise } \end{array} \right.
 
-    \ This function is typically used in scheduling problems to link
-    activities to other components of the problem.
+\ This function is typically used in scheduling problems to link
+activities to other components of the problem.
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-        cp::ActivityBegin(
-                optionalActivity,   ! (input) an expression
-                absentValue         ! (input) an expression
-        )
+    cp::ActivityBegin(
+            optionalActivity,   ! (input) an expression
+            absentValue         ! (input) an expression
+    )
 
 Arguments
 ---------
@@ -49,16 +49,16 @@ Return Value
 Example
 -------
 
-    In the example below, we require that the beginning of the shift
-    represented by element variable ``evShift`` matches the begin of the
-    optional activity ``myAct``. 
+In the example below, we require that the beginning of the shift
+represented by element variable ``evShift`` matches the begin of the
+optional activity ``myAct``. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Constraint linkShiftActivity {
-                    Definition :  cp::ActivityBegin( myAct, first(myCal)) = beginHour(evShift) );
-                }
+    Constraint linkShiftActivity {
+        Definition :  cp::ActivityBegin( myAct, first(myCal)) = beginHour(evShift) );
+    }
 
 .. seealso::
 
-    The functions :aimms:func:`cp::Count` and :aimms:func:`cp::ActivityEnd`.
+    - The functions :aimms:func:`cp::Count` and :aimms:func:`cp::ActivityEnd`.
