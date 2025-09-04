@@ -29,6 +29,5 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`HistogramCreate`, :aimms:func:`HistogramGetObservationCount`, :aimms:func:`HistogramGetAverage`, :aimms:func:`HistogramGetDeviation`, :aimms:func:`HistogramGetSkewness`.
-    Histogram support in AIMMS is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/creating-histograms` of
-    the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The functions :aimms:func:`HistogramCreate`, :aimms:func:`HistogramGetObservationCount`, :aimms:func:`HistogramGetAverage`, :aimms:func:`HistogramGetDeviation`, :aimms:func:`HistogramGetSkewness`.
+    - Histogram support in AIMMS is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/creating-histograms` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.

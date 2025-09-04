@@ -27,8 +27,8 @@ Arguments
         using the ``HistogramCreate`` procedure.
 
     *intervals*
-        The number of fixed-width intervals (not including the left\_ or
-        right_tail interval).
+        The number of fixed-width intervals (not including the *left\_* or
+        *right_tail* interval).
 
     *left (optional)*
         The lower bound of the left-most interval (not including the left-tail
@@ -57,5 +57,5 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`HistogramCreate`, :aimms:func:`HistogramGetBounds`. Histogram support in AIMMS is
-    discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/creating-histograms` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The procedures :aimms:func:`HistogramCreate`, :aimms:func:`HistogramGetBounds`. 
+    - Histogram support in AIMMS is discussed in full detail in :doc:`appendices/distributions-statistical-operators-and-histogram-functions/creating-histograms` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
