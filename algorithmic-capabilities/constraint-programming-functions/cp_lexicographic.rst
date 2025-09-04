@@ -154,7 +154,7 @@ after the index ``i`` and thus the index ``j`` is varied more.
 
 .. seealso::
 
-    -  The help text associated with the option :menuselecion:`constraint_listing`. This option can be found via the AIMMS menu :menuselecion:`Settings > Project Options` category :menuselecion:`Solvers General > Standard Reports > Constraints`.
+    -  The help text associated with the option :menuselection:`constraint_listing`. This option can be found via the AIMMS menu :menuselection:`Settings > Project Options` category :menuselection:`Solvers General > Standard Reports > Constraints`.
 
     -  :doc:`optimization-modeling-components/constraint-programming/index` on Constraint Programming in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
 
