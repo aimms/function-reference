@@ -31,34 +31,34 @@ Return Value
 Example
 -------
 
-    With the declarations 
+With the declarations 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                Set MasterSet {
-                    Index      :  a;
-                }
-                Index b {
-                    Range      :  MasterSet;
-                }
-                Index c;
+    Set MasterSet {
+        Index      :  a;
+    }
+    Index b {
+        Range      :  MasterSet;
+    }
+    Index c;
 
-    The output of the statements
+The output of the statements
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                put "IndexRange( 'a' ) = \"", IndexRange( 'a' ):10, "\"", / ;
-                put "IndexRange( 'b' ) = \"", IndexRange( 'b' ):10, "\"", / ;
-                put "IndexRange( 'c' ) = \"", IndexRange( 'c' ):10, "\"", / ;
+    put "IndexRange( 'a' ) = \"", IndexRange( 'a' ):10, "\"", / ;
+    put "IndexRange( 'b' ) = \"", IndexRange( 'b' ):10, "\"", / ;
+    put "IndexRange( 'c' ) = \"", IndexRange( 'c' ):10, "\"", / ;
 
-    is: 
+is: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                IndexRange( 'a' ) = "MasterSet "
-                IndexRange( 'b' ) = "MasterSet "
-                IndexRange( 'c' ) = "          "
+    IndexRange( 'a' ) = "MasterSet "
+    IndexRange( 'b' ) = "MasterSet "
+    IndexRange( 'c' ) = "          "
 
 .. seealso::
 
-    The functions :aimms:func:`DeclaredSubset` and :aimms:func:`DomainIndex`.
+    - The functions :aimms:func:`DeclaredSubset` and :aimms:func:`DomainIndex`.

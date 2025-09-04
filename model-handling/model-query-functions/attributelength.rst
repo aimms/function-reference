@@ -72,9 +72,7 @@ The results in the listing file:
     _p_cmt :=                                                         5 ;
       
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`AttributeToString`, 
-    
-    *   :aimms:func:`AttributeContainsString`.
+    -    :aimms:func:`AttributeToString`.
+    -    :aimms:func:`AttributeContainsString`.

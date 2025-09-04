@@ -66,13 +66,9 @@ A call to ``pr_testCallerAttribute`` produces in the listing file:
 For a more extended illustration of how the function :aimms:func:`CallerAttribute` can be part of utility code, 
 please check the example at :aimms:func:`CallerNumberOfLocations`.
 
-References
------------
+.. seealso::
 
-    *  :aimms:func:`errh::Attribute`, 
-
-    *  :aimms:func:`CallerLine`, 
-
-    *  :aimms:func:`CallerNode`, and 
-
+    *  :aimms:func:`errh::Attribute`.
+    *  :aimms:func:`CallerLine`.
+    *  :aimms:func:`CallerNode`.
     *  :aimms:func:`CallerNumberOfLocations`.

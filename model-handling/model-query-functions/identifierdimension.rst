@@ -56,8 +56,7 @@ produces in the listing file:
     _p_dim := 2 ;
 
 
-References
------------
+.. seealso::
 
     -  The functions :aimms:func:`DomainIndex` and :aimms:func:`IndexRange`.
 

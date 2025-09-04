@@ -36,45 +36,45 @@ Return Value
 Example
 -------
 
-    With the following declarations: 
+With the following declarations: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-            Set MasterSet {
-                Index        :  ms;
-            }
-            Set DomainSet {
-                SubsetOf     :  MasterSet;
-                Index        :  ds;
-            }
-            Set ActiveSet {
-                SubsetOf     :  DomainSet;
-                Index        :  as;
-            }
-            File outf {
-                Name         :  "outf.put";
-            }
+    Set MasterSet {
+        Index        :  ms;
+    }
+    Set DomainSet {
+        SubsetOf     :  MasterSet;
+        Index        :  ds;
+    }
+    Set ActiveSet {
+        SubsetOf     :  DomainSet;
+        Index        :  as;
+    }
+    File outf {
+        Name         :  "outf.put";
+    }
 
-    The following statements:
+The following statements:
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-            put outf ;
-            put "ActiveSet(=DomainSet =", DeclaredSubset('ActiveSet', 'DomainSet'):0:0,/;
-            put "ActiveSet(=MasterSet =", DeclaredSubset('ActiveSet', 'MasterSet'):0:0,/;
-            put "MasterSet(=ActiveSet =", DeclaredSubset('MasterSet', 'ActiveSet'):0:0,/;
-            put "MasterSet(=outf      =", DeclaredSubset('MasterSet', 'outf'     ):0:0,/;
-            putclose ;
+    put outf ;
+    put "ActiveSet(=DomainSet =", DeclaredSubset('ActiveSet', 'DomainSet'):0:0,/;
+    put "ActiveSet(=MasterSet =", DeclaredSubset('ActiveSet', 'MasterSet'):0:0,/;
+    put "MasterSet(=ActiveSet =", DeclaredSubset('MasterSet', 'ActiveSet'):0:0,/;
+    put "MasterSet(=outf      =", DeclaredSubset('MasterSet', 'outf'     ):0:0,/;
+    putclose ;
 
-    Return the following output. 
+Return the following output. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-            ActiveSet(=DomainSet =1 ! ActiveSet is directly a subset of DomainSet
-            ActiveSet(=MasterSet =1 ! ActiveSet is indirectly a subset of MasterSet
-            MasterSet(=ActiveSet =0 ! But the reverse is not true.
-            MasterSet(=outf      =0 ! outf isn't even a set.
+    ActiveSet(=DomainSet =1 ! ActiveSet is directly a subset of DomainSet
+    ActiveSet(=MasterSet =1 ! ActiveSet is indirectly a subset of MasterSet
+    MasterSet(=ActiveSet =0 ! But the reverse is not true.
+    MasterSet(=outf      =0 ! outf isn't even a set.
 
 .. seealso::
 
-    The function :aimms:func:`IndexRange`.
+    - The function :aimms:func:`IndexRange`.

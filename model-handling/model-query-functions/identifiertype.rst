@@ -26,9 +26,9 @@ Return Value
     This function returns a type as an element in :aimms:set:`AllIdentifierTypes`. If
     ``identifierName`` is not an identifier, an error message is issued.
 
-.. note::
+    .. note::
 
-    This function replaces the suffix :ref:`.type`; this suffix is deprecated.
+        This function replaces the suffix :ref:`.type`; this suffix is deprecated.
 
 
 Example
@@ -61,8 +61,7 @@ produces in the listing file:
     _ep_type := 'parameter' ;
 
 
-References
------------
+.. seealso::
 
     -  The functions :aimms:func:`IdentifierDimension` and :aimms:func:`IdentifierUnit`.
 

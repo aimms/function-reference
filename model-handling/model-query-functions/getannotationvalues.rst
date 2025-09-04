@@ -61,4 +61,4 @@ Produces in the listing file:
 
 .. seealso::
 
-    The functions :aimms:func:`DeclaredSubset` and :aimms:func:`DomainIndex`.
+    - The functions :aimms:func:`DeclaredSubset` and :aimms:func:`DomainIndex`.

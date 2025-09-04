@@ -62,8 +62,7 @@ produces in the listing file:
     _ep_s := 'chapterModel::sectionModelQuery::funcIdentifierElementRange::s_a' ;
 
 
-References
------------
+.. seealso::
 
     -  The functions :aimms:func:`DomainIndex`, :aimms:func:`IdentifierDimension`, and :aimms:func:`IndexRange`.
 

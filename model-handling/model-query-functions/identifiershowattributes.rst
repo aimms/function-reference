@@ -24,4 +24,4 @@ Arguments
 
 .. seealso::
 
-    The function :aimms:func:`IdentifierShowTreeLocation`.
+    - The function :aimms:func:`IdentifierShowTreeLocation`.

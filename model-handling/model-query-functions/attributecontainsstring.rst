@@ -77,12 +77,8 @@ The results in the listing file:
     _ep_p         := 'chapterModel::sectionModelQuery::funcAttributeLength::p' ;
     _bp_loPresent :=                                                         1 ;
       
+.. seealso::
 
-References
------------
-
-    *   :aimms:func:`AttributeToString`, 
-	
-	*   :aimms:func:`AttributeLength`, 
-
-    *	:aimms:func:`me::GetAttribute`.
+    -   :aimms:func:`AttributeToString`.
+	-   :aimms:func:`AttributeLength`.
+    -	:aimms:func:`me::GetAttribute`.

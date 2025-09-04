@@ -39,54 +39,58 @@ Return Value
 
     The procedure returns 1 on success, or 0 otherwise.
 
-.. note::
+    .. note::
 
-    -  The *GMP1* should have been created using the function
-       :aimms:func:`GMP::Benders::CreateMasterProblem`.
+        -   The *GMP1* should have been created using the function
+            :aimms:func:`GMP::Benders::CreateMasterProblem`.
 
-    -  The *GMP2* should have been created using the function
-       :aimms:func:`GMP::Benders::CreateSubProblem`.
+        -   The *GMP2* should have been created using the function
+            :aimms:func:`GMP::Benders::CreateSubProblem`.
 
-    -  The *solution* of the Benders' subproblem (represented by *GMP2*) is
-       used to generate an optimality cut for the Benders' master problem
-       (represented by *GMP1*). More precise, the shadow prices of the
-       constraints and the reduced costs of the variables in the Benders'
-       subproblem are used.
+        -   The *solution* of the Benders' subproblem (represented by *GMP2*) is
+            used to generate an optimality cut for the Benders' master problem
+            (represented by *GMP1*). More precise, the shadow prices of the
+            constraints and the reduced costs of the variables in the Benders'
+            subproblem are used.
 
 Example
 -------
 
-    In the example below we assume that the Benders' subproblem is feasible.
-    Its program status is stored in the element parameter ``ProgramStatus``
-    with range :aimms:set:`AllSolutionStates`. Note that the subproblem is updated before it is
-    solved. 
+In the example below we assume that the Benders' subproblem is feasible.
+Its program status is stored in the element parameter ``ProgramStatus``
+with range :aimms:set:`AllSolutionStates`. Note that the subproblem is updated before it is
+solved. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               ! Initialization.
-               myGMP := GMP::Instance::Generated( MP );
+    ! Initialization.
+    myGMP := GMP::Instance::Generated( MP );
 
-               gmpM := GMP::Benders::CreateMasterProblem( myGMP, AllIntegerVariables,
-                                                          'BendersMasterProblem', 0, 0 );
+    gmpM := GMP::Benders::CreateMasterProblem( myGMP, AllIntegerVariables,
+                                                'BendersMasterProblem', 0, 0 );
 
-               gmpS := GMP::Benders::CreateSubProblem( myGMP, masterGMP, 'BendersSubProblem',
-                                                       0, 0 );
+    gmpS := GMP::Benders::CreateSubProblem( myGMP, masterGMP, 'BendersSubProblem',
+                                            0, 0 );
 
-               NumberOfOptimalityCuts := 1;
+    NumberOfOptimalityCuts := 1;
 
-               ! First iteration of Benders' decomposition algorithm (simplified).
-               GMP::Instance::Solve( gmpM );
+    ! First iteration of Benders' decomposition algorithm (simplified).
+    GMP::Instance::Solve( gmpM );
 
-               GMP::Benders::UpdateSubProblem( gmpS, gmpM, 1, round : 1 );
+    GMP::Benders::UpdateSubProblem( gmpS, gmpM, 1, round : 1 );
 
-               GMP::Instance::Solve( gmpS );
+    GMP::Instance::Solve( gmpS );
 
-               ProgramStatus := GMP::Solution::GetProgramStatus( gmpS, 1 ) ;
-               if ( ProgramStatus = 'Optimal' ) then
-                   GMP::Benders::AddOptimalityCut( gmpM, gmpS, 1, NumberOfOptimalityCuts );
-                   NumberOfOptimalityCuts += 1;
-               endif;
+    ProgramStatus := GMP::Solution::GetProgramStatus( gmpS, 1 ) ;
+    if ( ProgramStatus = 'Optimal' ) then
+        GMP::Benders::AddOptimalityCut( gmpM, gmpS, 1, NumberOfOptimalityCuts );
+        NumberOfOptimalityCuts += 1;
+    endif;
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Benders::CreateMasterProblem`, :aimms:func:`GMP::Benders::CreateSubProblem`, :aimms:func:`GMP::Benders::AddFeasibilityCut`, :aimms:func:`GMP::SolverSession::AddBendersFeasibilityCut` and :aimms:func:`GMP::SolverSession::AddBendersOptimalityCut`.
+    - :aimms:func:`GMP::Benders::CreateMasterProblem`.
+    - :aimms:func:`GMP::Benders::CreateSubProblem`.
+    - :aimms:func:`GMP::Benders::AddFeasibilityCut`.
+    - :aimms:func:`GMP::SolverSession::AddBendersFeasibilityCut`.
+    - :aimms:func:`GMP::SolverSession::AddBendersOptimalityCut`.

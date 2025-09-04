@@ -27,9 +27,9 @@ Return Value
     If ``identifierName`` is not an identifier, an error message is issued. 
     When the text is not specified, the name of the identifier is returned.
 
-.. note::
+    .. note::
 
-    This function replaces the deprecated suffix :ref:`.txt`.
+        This function replaces the deprecated suffix :ref:`.txt`.
 
 
 Example
@@ -64,8 +64,7 @@ produces in the listing file:
     _sp_txt := "a scalar" ;
 
 
-References
------------
+.. seealso::
 
     -  The functions :aimms:func:`IdentifierText`.
 

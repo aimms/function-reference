@@ -28,12 +28,12 @@ Return Value
     parameter, variable or constraint, the unit ``[]`` is returned without
     further warning.
 
-.. note::
+    .. note::
 
-    This function complements the suffix :ref:`.unit`; when the unit of an
-    identifier is a unit parameter, this function will return that unit
-    parameter, whilst the suffix ``unit`` will return the value of that unit
-    parameter.
+        This function complements the suffix :ref:`.unit`; when the unit of an
+        identifier is a unit parameter, this function will return that unit
+        parameter, whilst the suffix ``unit`` will return the value of that unit
+        parameter.
 
 
 Example
@@ -67,9 +67,7 @@ produces in the listing file:
 
     _up_p := [m] ;
 
-
-References
------------
+.. seealso::
 
 
     -  The functions :aimms:func:`IdentifierDimension` and :aimms:func:`IdentifierType`.

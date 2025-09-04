@@ -71,13 +71,9 @@ A call to ``pr_testCallerNode`` produces in the listing file:
 For a more extended illustration of how the function :aimms:func:`CallerNode` can be part of utility code, 
 please check the example at :aimms:func:`CallerNumberOfLocations`.
 
-References
------------
+.. seealso::
 
-    *  :aimms:func:`CallerAttribute`, 
-
-    *  :aimms:func:`CallerLine`, 
-
-    *  :aimms:func:`errh::Node`, and 
-
-    *  :aimms:func:`CallerNumberOfLocations`.
+    -  :aimms:func:`CallerAttribute`.
+    -  :aimms:func:`CallerLine`.
+    -  :aimms:func:`errh::Node`. 
+    -  :aimms:func:`CallerNumberOfLocations`.

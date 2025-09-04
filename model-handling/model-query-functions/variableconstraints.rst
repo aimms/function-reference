@@ -35,4 +35,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`ConstraintVariables` and :aimms:func:`ReferencedIdentifiers`.
+    - The functions :aimms:func:`ConstraintVariables` and :aimms:func:`ReferencedIdentifiers`.

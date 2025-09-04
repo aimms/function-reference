@@ -38,32 +38,32 @@ Return Value
 Example
 -------
 
-    The following code uses the function :aimms:func:`DomainIndex` to obtain the
-    indices of the index domain of a parameter: 
+The following code uses the function :aimms:func:`DomainIndex` to obtain the
+indices of the index domain of a parameter: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                put outf ;
-                for ( IndexParameters | IdentifierDimension( IndexParameters ) > 0 ) do
-                   put IndexParameters:0, "(" ;
-                   while loopcount <= IdentifierDimension( IndexParameters ) do
-                       put DomainIndex( IndexParameters, loopcount ):0 ;
-                       if loopCount < IdentifierDimension( IndexParameters ) then put "," ; endif ;
-                   endwhile ;
-                   put ")", /  ; 
-                endfor ;
-                putclose ;
+    put outf ;
+    for ( IndexParameters | IdentifierDimension( IndexParameters ) > 0 ) do
+        put IndexParameters:0, "(" ;
+        while loopcount <= IdentifierDimension( IndexParameters ) do
+            put DomainIndex( IndexParameters, loopcount ):0 ;
+            if loopCount < IdentifierDimension( IndexParameters ) then put "," ; endif ;
+        endwhile ;
+        put ")", /  ; 
+    endfor ;
+    putclose ;
 
-    A fragment of
-    the output of this code might look as follows: 
+A fragment of
+the output of this code might look as follows: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-                LowFP(f,p)
-                UppFP(f,p)
-                Supply(c)
-                Demand(f)
+    LowFP(f,p)
+    UppFP(f,p)
+    Supply(c)
+    Demand(f)
 
 .. seealso::
 
-    The functions :aimms:func:`IdentifierDimension`, :aimms:func:`DeclaredSubset` and :aimms:func:`IndexRange`.
+    - The functions :aimms:func:`IdentifierDimension`, :aimms:func:`DeclaredSubset` and :aimms:func:`IndexRange`.

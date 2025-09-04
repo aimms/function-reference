@@ -60,13 +60,9 @@ An instance of its output might be:
         1 work1                body            4
         2 MainExecution        body            1
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`CallerAttribute`, 
-
-    *   :aimms:func:`CallerLine`, 
-
-    *   :aimms:func:`CallerNode`, and 
-
-    *   :aimms:func:`errh::NumberOfLocations`.
+    -   :aimms:func:`CallerAttribute`.
+    -   :aimms:func:`CallerLine`.
+    -   :aimms:func:`CallerNode`. 
+    -  :aimms:func:`errh::NumberOfLocations`.

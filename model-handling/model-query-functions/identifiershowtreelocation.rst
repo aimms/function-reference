@@ -26,4 +26,4 @@ Arguments
 
 .. seealso::
 
-    The function :aimms:func:`IdentifierShowAttributes`.
+    - The function :aimms:func:`IdentifierShowAttributes`.

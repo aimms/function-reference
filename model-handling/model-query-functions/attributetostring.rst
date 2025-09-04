@@ -33,19 +33,16 @@ Return Value
     success or the empty string otherwise and the predeclared identifier
     :aimms:set:`CurrentErrorMessage` contains an appropriate error message.
 
-.. note::
+    .. note::
 
-    In order to protect the intellectual property of the model developer,
-    the string ``Encrypted`` is returned and the predeclared identifier
-    :aimms:set:`CurrentErrorMessage` contains an appropriate error message, when the identifier is
-    in an encrypted section of the model. There is one exception; if the
-    procedure making the call ``AttributeToString(id,attr)`` is in the same
-    component as the identifier ``id``, the attribute ``attr`` is still
-    returned as string. Here component is the main model or one of the
-    libraries.
-
-
-
+        In order to protect the intellectual property of the model developer,
+        the string ``Encrypted`` is returned and the predeclared identifier
+        :aimms:set:`CurrentErrorMessage` contains an appropriate error message, when the identifier is
+        in an encrypted section of the model. There is one exception; if the
+        procedure making the call ``AttributeToString(id,attr)`` is in the same
+        component as the identifier ``id``, the attribute ``attr`` is still
+        returned as string. Here component is the main model or one of the
+        libraries.
 
 
 Example
@@ -86,13 +83,9 @@ The results in the listing file:
     _sp_cmt :=                                                   "Hello\n" ;
       
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`StringToElement`, 
-
-    *   :aimms:func:`me::GetAttribute`, 
-
-    *   :aimms:func:`AttributeContainsString`, and
-
-    *   :aimms:func:`AttributeLength`.
+    -   :aimms:func:`StringToElement`.
+    -   :aimms:func:`me::GetAttribute`.
+    -   :aimms:func:`AttributeContainsString`.
+    -   :aimms:func:`AttributeLength`.

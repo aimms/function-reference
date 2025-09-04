@@ -65,13 +65,9 @@ A call to ``pr_testCallerLine`` produces in the listing file:
 For a more extended illustration of how the function :aimms:func:`CallerLine` can be part of utility code, 
 please check the example at :aimms:func:`CallerNumberOfLocations`.
 
-References
------------
+.. seealso::
 
-    *  :aimms:func:`CallerAttribute`, 
-
-    *  :aimms:func:`errh::Line`, 
-
-    *  :aimms:func:`CallerNode`, and 
-
+    *  :aimms:func:`CallerAttribute`.
+    *  :aimms:func:`errh::Line`.
+    *  :aimms:func:`CallerNode`.
     *  :aimms:func:`CallerNumberOfLocations`.

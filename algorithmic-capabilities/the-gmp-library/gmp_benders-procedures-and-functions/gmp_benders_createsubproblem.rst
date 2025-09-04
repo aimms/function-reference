@@ -48,38 +48,42 @@ Return Value
     A new element in the set :aimms:set:`AllGeneratedMathematicalPrograms` with the name as specified by the
     *name* argument.
 
-.. note::
+    .. note::
 
-    -  The *GMP1* must have type LP, MIP or RMIP.
+        -   The *GMP1* must have type LP, MIP or RMIP.
 
-    -  The *GMP2* should have been created using the function
-       :aimms:func:`GMP::Benders::CreateMasterProblem`. Note that the call to that
-       function specifies how the variables (and constraints) are divided
-       among the master and subproblem.
+        -   The *GMP2* should have been created using the function
+            :aimms:func:`GMP::Benders::CreateMasterProblem`. Note that the call to that
+            function specifies how the variables (and constraints) are divided
+            among the master and subproblem.
 
-    -  The *useDual* argument is discussed in more detail in :ref:`sec:benders.primaldual.sub`
-       of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+        -   The *useDual* argument is discussed in more detail in :ref:`sec:benders.primaldual.sub`
+            of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
-    -  The *normalizationType* argument is discussed in more detail in
-       :ref:`sec:benders.primaldual.sub` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+        -   The *normalizationType* argument is discussed in more detail in
+            :ref:`sec:benders.primaldual.sub` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
 
 Example
 -------
 
-    If the math program has type MIP then often the set of master problem
-    variables equals the set :aimms:set:`AllIntegerVariables`. All other variables automatically
-    become part of the subproblem. 
+If the math program has type MIP then often the set of master problem
+variables equals the set :aimms:set:`AllIntegerVariables`. All other variables automatically
+become part of the subproblem. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generated( MP );
+    myGMP := GMP::Instance::Generated( MP );
 
-               gmpM := GMP::Benders::CreateMasterProblem( myGMP, AllIntegerVariables,
-                                                          'BendersMasterProblem', 0, 0 );
+    gmpM := GMP::Benders::CreateMasterProblem( myGMP, AllIntegerVariables,
+                                                'BendersMasterProblem', 0, 0 );
 
-               gmpS := GMP::Benders::CreateSubProblem( myGMP, masterGMP, 'BendersSubProblem',
-                                                       0, 0 );
+    gmpS := GMP::Benders::CreateSubProblem( myGMP, masterGMP, 'BendersSubProblem',
+                                            0, 0 );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Benders::CreateMasterProblem`, :aimms:func:`GMP::Benders::AddFeasibilityCut`, :aimms:func:`GMP::Benders::AddOptimalityCut`, :aimms:func:`GMP::Benders::UpdateSubProblem` and :aimms:func:`GMP::Instance::CreateFeasibility`.
+    - :aimms:func:`GMP::Benders::CreateMasterProblem`.
+    - :aimms:func:`GMP::Benders::AddFeasibilityCut`.
+    - :aimms:func:`GMP::Benders::AddOptimalityCut`.
+    - :aimms:func:`GMP::Benders::UpdateSubProblem`.
+    - :aimms:func:`GMP::Instance::CreateFeasibility`.

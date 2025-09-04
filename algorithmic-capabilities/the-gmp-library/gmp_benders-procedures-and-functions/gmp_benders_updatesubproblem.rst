@@ -41,44 +41,46 @@ Return Value
 
     The procedure returns 1 on success, or 0 otherwise.
 
-.. note::
+    .. note::
 
-    -  The *GMP1* should have been created using the function
-       :aimms:func:`GMP::Benders::CreateSubProblem` or the function
-       :aimms:func:`GMP::Instance::CreateFeasibility`.
+        -   The *GMP1* should have been created using the function
+            :aimms:func:`GMP::Benders::CreateSubProblem` or the function
+            :aimms:func:`GMP::Instance::CreateFeasibility`.
 
-    -  The *GMP2* should have been created using the function
-       :aimms:func:`GMP::Benders::CreateMasterProblem`.
+        -   The *GMP2* should have been created using the function
+            :aimms:func:`GMP::Benders::CreateMasterProblem`.
 
-    -  The *solution* of the Benders' master problem (represented by *GMP2*)
-       is used to update the Benders' subproblem (represented by *GMP1*).
-       That is, the right-hand-side values of the constraints in the
-       subproblem are reevaluated using the level values of the variables in
-       the solution of the Benders' master problem.
+        -   The *solution* of the Benders' master problem (represented by *GMP2*)
+            is used to update the Benders' subproblem (represented by *GMP1*).
+            That is, the right-hand-side values of the constraints in the
+            subproblem are reevaluated using the level values of the variables in
+            the solution of the Benders' master problem.
 
 Example
 -------
 
-    Before solving the subproblem it should be updated using a solution of
-    the master problem. In the example below we use the solution at position
-    1 in the solution repository of the GMP belonging to the master problem.
+Before solving the subproblem it should be updated using a solution of
+the master problem. In the example below we use the solution at position
+1 in the solution repository of the GMP belonging to the master problem.
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generated( MP );
+    myGMP := GMP::Instance::Generated( MP );
 
-               gmpM := GMP::Benders::CreateMasterProblem( myGMP, AllIntegerVariables,
-                                                          'BendersMasterProblem', 0, 0 );
+    gmpM := GMP::Benders::CreateMasterProblem( myGMP, AllIntegerVariables,
+                                                'BendersMasterProblem', 0, 0 );
 
-               gmpS := GMP::Benders::CreateSubProblem( myGMP, masterGMP, 'BendersSubProblem',
-                                                       0, 0 );
+    gmpS := GMP::Benders::CreateSubProblem( myGMP, masterGMP, 'BendersSubProblem',
+                                            0, 0 );
 
-               GMP::Instance::Solve( gmpM );
+    GMP::Instance::Solve( gmpM );
 
-               GMP::Benders::UpdateSubProblem( gmpS, gmpM, 1, round : 1 );
+    GMP::Benders::UpdateSubProblem( gmpS, gmpM, 1, round : 1 );
 
-               GMP::Instance::Solve( gmpS );
+    GMP::Instance::Solve( gmpS );
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Benders::CreateMasterProblem`, :aimms:func:`GMP::Benders::CreateSubProblem` and :aimms:func:`GMP::Instance::CreateFeasibility`.
+    - :aimms:func:`GMP::Benders::CreateMasterProblem`.
+    - :aimms:func:`GMP::Benders::CreateSubProblem`.
+    - :aimms:func:`GMP::Instance::CreateFeasibility`.
