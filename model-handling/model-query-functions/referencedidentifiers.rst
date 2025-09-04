@@ -82,10 +82,10 @@ produces in the listing file:
 References
 -----------
 
-    -   :aimms:func:`ConstraintVariables`. 
+    -   :aimms:func:`ConstraintVariables`.
 
     -   :aimms:func:`VariableConstraints`.
 
-    -   `ReferencedIdentifiers <https://how-to.aimms.com/Articles/582/582-reduce-client-server-exchange.html>`_.
+    -   `Referenced Identifiers <https://how-to.aimms.com/Articles/582/582-reduce-client-server-exchange.html>`_.
 
     -   `Working with the Set AllIdentifiers <https://documentation.aimms.com/language-reference/data-communication-components/data-initialization-verification-and-control/working-with-the-set-allidentifiers.html#working-with-the-set-allidentifiers>`_.
