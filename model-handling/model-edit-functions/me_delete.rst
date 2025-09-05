@@ -36,6 +36,8 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 .. figure:: images/runtimelib-setup.png
     :align: center
 
+|
+
 Let ``ep_functionReferenceExampleRuntimeParameter`` have value ``frerl::p_a``, then the code:
 
 .. code-block:: aimms
@@ -46,6 +48,8 @@ deletes that parameter from the declaration section, thus changing that library 
 
 .. figure:: images/runtimelib-after-delete.png
     :align: center
+
+|
 
 illustrating that a runtime library can shrink at runtime.
 

@@ -27,8 +27,7 @@ Arguments
 Return Value
 ------------
 
-    Returns 1 if the attribute ``attr`` of runtime identifier ``runtimeId`` is allowed. 
-	When ``runtimeId`` doesn't reference a runtime identifier an error will be raised.
+    Returns 1 if the attribute ``attr`` of runtime identifier ``runtimeId`` is allowed. When ``runtimeId`` doesn't reference a runtime identifier an error will be raised.
 
 
 Example

@@ -39,6 +39,8 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 .. figure:: images/runtimelib-setup.png
     :align: center
 
+|
+
 Let ``ep_functionReferenceExampleRuntimeLib`` be the element parameter 
 that holds the root of that library as value, then the code:
 

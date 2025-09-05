@@ -65,6 +65,8 @@ inserts a variable at the end of the declaration section, thus changing that lib
 .. figure:: images/runtimelib-after-create.png
     :align: center
 
+|
+
 illustrating that a runtime library can grow at runtime.
 
 .. seealso::

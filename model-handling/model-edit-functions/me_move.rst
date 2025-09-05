@@ -72,6 +72,8 @@ moves the procedure to the front of the library, as shown below:
 .. figure:: images/runtimelib-after-move.png
     :align: center
 
+|
+
 illustrating that a runtime library can be reorganized at runtime.
 
 .. seealso::
