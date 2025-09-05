@@ -24,7 +24,7 @@ Arguments
     *merge (optional)*
         With this optional argument (default 0), you can choose whether you want
         to merge the data included in the XML file with the existing data, or
-        overwrite any existing data (default)
+        overwrite any existing data (default).
 
 Return Value
 ------------
@@ -34,5 +34,5 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`GenerateXML`, :aimms:func:`ReadXML`, :aimms:func:`WriteXML`. Generating XML data is
-    discussed in full detail in :doc:`data-communication-components/reading-and-writing-xml-data/reading-and-writing-aimms-generated-xml-data` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The procedures :aimms:func:`GenerateXML`, :aimms:func:`ReadXML`, :aimms:func:`WriteXML`. 
+    - Generating XML data is discussed in full detail in :doc:`data-communication-components/reading-and-writing-xml-data/reading-and-writing-aimms-generated-xml-data` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.

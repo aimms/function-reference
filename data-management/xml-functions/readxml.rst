@@ -42,14 +42,13 @@ Return Value
 
     The procedure returns 1 if successful, or 0 otherwise.
 
-.. note::
+    .. note::
 
-    The namespace defined in the schema file (if specified) must match the
-    namespace specified in the ``xmlns`` attribute of the root element in
-    the XML data file.
+        The namespace defined in the schema file (if specified) must match the
+        namespace specified in the ``xmlns`` attribute of the root element in
+        the XML data file.
 
 .. seealso::
 
-    The procedures :aimms:func:`GenerateXML`, :aimms:func:`ReadGeneratedXML`, :aimms:func:`WriteXML`. Reading user-defined XML
-    data is discussed in full detail in :doc:`data-communication-components/reading-and-writing-xml-data/reading-and-writing-user-defined-xml-data` of the Language
-    Reference.
+    - The procedures :aimms:func:`GenerateXML`, :aimms:func:`ReadGeneratedXML`, :aimms:func:`WriteXML`. 
+    - Reading user-defined XML data is discussed in full detail in :doc:`data-communication-components/reading-and-writing-xml-data/reading-and-writing-user-defined-xml-data` of the Language Reference.

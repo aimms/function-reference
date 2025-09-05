@@ -35,16 +35,15 @@ Return Value
 
     The procedure returns 1 if successful, or 0 otherwise.
 
-.. note::
+    .. note::
 
-    Notice that the ``merge`` attribute does *not* mean that the generated
-    XML will be appended to the specified XML file. The latter will *always*
-    be overwritten. If the *merge* argument is non-zero, AIMMS will omit the
-    XML header from the generated file, allowing you to merge its contents
-    into another XML document.
+        Notice that the ``merge`` attribute does *not* mean that the generated
+        XML will be appended to the specified XML file. The latter will *always*
+        be overwritten. If the *merge* argument is non-zero, AIMMS will omit the
+        XML header from the generated file, allowing you to merge its contents
+        into another XML document.
 
 .. seealso::
 
-    The procedures :aimms:func:`GenerateXML`, :aimms:func:`ReadGeneratedXML`, :aimms:func:`ReadXML`. Writing user-defined XML
-    data is discussed in full detail in :doc:`data-communication-components/reading-and-writing-xml-data/reading-and-writing-user-defined-xml-data` of the Language
-    Reference.
+    - The procedures :aimms:func:`GenerateXML`, :aimms:func:`ReadGeneratedXML`, :aimms:func:`ReadXML`. 
+    - Writing user-defined XML data is discussed in full detail in :doc:`data-communication-components/reading-and-writing-xml-data/reading-and-writing-user-defined-xml-data` of the Language Reference.
