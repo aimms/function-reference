@@ -15,7 +15,7 @@ GMP::Instance::CreateBlockMatrices
   blocks (the first row and column represent the objective). This model can be
   solved by solving each block separately, and combining the solutions.
   
-.. figure:: blocks.png
+.. figure:: images/blocks.png
    :align: center
    :name: fig:gmp:blocks
    
