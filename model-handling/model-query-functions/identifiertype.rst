@@ -63,7 +63,8 @@ produces in the listing file:
 And below, a common model query example:
 
 .. code-block:: aimms
-   
+    :name: CommonModelQueryExample
+
     SelectedIdentifiers := AllParameters ; ! Or some other selection.
     
     put outf ;
