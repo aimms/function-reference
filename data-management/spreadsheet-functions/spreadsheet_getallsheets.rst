@@ -2,7 +2,7 @@
 
    This article references outdated technology and is provided for historical purposes only. 
    It is not recommended to use this information as a primary source for current projects or documentation. 
-   Please refer to the latest documentation for up-to-date information, see more in: :doc:`aimms-libraries/repository-library/aimmsxllibrary/index` 
+   Please refer to the latest documentation for up-to-date information, see more in: :doc:`aimmsxllibrary/index`  
    and the :doc:`dataexchange/index`.
 
 .. aimms:procedure:: Spreadsheet::GetAllSheets(Workbook, Name)
@@ -29,7 +29,7 @@ Arguments
     *Workbook*
         A scalar string expression representing the Excel or Calc workbook. If
         this argument ends in ``.ods``, OpenOffice Calc is used. Otherwise,
-        Excel is
+        Excel is used.
 
     *Name*
         A 1-dimensional string parameter, which after successful execution will
