@@ -40,4 +40,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackCandidate` and :aimms:func:`GMP::Instance::SetCallbackHeuristic`.
+    - The routines :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackCandidate` and :aimms:func:`GMP::Instance::SetCallbackHeuristic`.

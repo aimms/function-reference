@@ -49,4 +49,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::QuadraticCoefficient::Get`, :aimms:func:`GMP::Coefficient::GetQuadratic` and :aimms:func:`GMP::Coefficient::SetQuadratic`.
+    - The routines :aimms:func:`GMP::QuadraticCoefficient::Get`, :aimms:func:`GMP::Coefficient::GetQuadratic` and :aimms:func:`GMP::Coefficient::SetQuadratic`.

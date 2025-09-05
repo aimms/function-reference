@@ -29,4 +29,4 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Instance::Generate`.
+    - The function :aimms:func:`GMP::Instance::Generate`.

@@ -52,4 +52,4 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`GMP::Linearization::Add`, :aimms:func:`GMP::Linearization::AddSingle` and :aimms:func:`GMP::Linearization::SetWeight`.
+    - The procedures :aimms:func:`GMP::Linearization::Add`, :aimms:func:`GMP::Linearization::AddSingle` and :aimms:func:`GMP::Linearization::SetWeight`.

@@ -33,5 +33,13 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`GMP::SolverSession::Execute`, :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`, :aimms:func:`GMP::Instance::SetCallbackBranch`, :aimms:func:`GMP::Instance::SetCallbackCandidate`,
-    :aimms:func:`GMP::Instance::SetCallbackIncumbent`, :aimms:func:`GMP::Instance::SetCallbackIterations`, :aimms:func:`GMP::Instance::SetCallbackHeuristic`, :aimms:func:`GMP::Instance::SetCallbackStatusChange` and :aimms:func:`GMP::Instance::SetCallbackTime`.
+    - :aimms:func:`GMP::SolverSession::Execute`. 
+    - :aimms:func:`GMP::Instance::SetCallbackAddCut`. 
+    - :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`. 
+    - :aimms:func:`GMP::Instance::SetCallbackBranch`. 
+    - :aimms:func:`GMP::Instance::SetCallbackCandidate`.
+    - :aimms:func:`GMP::Instance::SetCallbackIncumbent`. 
+    - :aimms:func:`GMP::Instance::SetCallbackIterations`. 
+    - :aimms:func:`GMP::Instance::SetCallbackHeuristic`. 
+    - :aimms:func:`GMP::Instance::SetCallbackStatusChange`.
+    - :aimms:func:`GMP::Instance::SetCallbackTime`.

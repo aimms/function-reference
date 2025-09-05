@@ -41,4 +41,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Linearization::Add`.
+    - The procedure :aimms:func:`GMP::Linearization::Add`.

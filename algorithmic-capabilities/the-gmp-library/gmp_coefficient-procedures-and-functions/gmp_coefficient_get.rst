@@ -48,11 +48,11 @@ Return Value
 Example
 -------
 
-    Consider a GMP containing a constraint ``e1`` with definition
-    ``2*x1 + 3*x2 + x2^3 = 0``. Then ``GMP::Coefficient::Get(GMP,e1,x1)``
-    will return 2. Because column ``x2`` is part of the nonlinear term
-    ``x2^3``, ``GMP::Coefficient::Get(GMP,e1,x2)`` will return 0.
+Consider a GMP containing a constraint ``e1`` with definition
+``2*x1 + 3*x2 + x2^3 = 0``. Then ``GMP::Coefficient::Get(GMP,e1,x1)``
+will return 2. Because column ``x2`` is part of the nonlinear term
+``x2^3``, ``GMP::Coefficient::Get(GMP,e1,x2)`` will return 0.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Coefficient::Set` and :aimms:func:`GMP::QuadraticCoefficient::Get`.
+    - The routines :aimms:func:`GMP::Coefficient::Set` and :aimms:func:`GMP::QuadraticCoefficient::Get`.

@@ -39,46 +39,46 @@ Return Value
 Example
 -------
 
-    Assume that 'c1' is a constraint in mathematical program 'MP' with a
-    unit as defined by: 
+Assume that ``c1`` is a constraint in mathematical program ``MP`` with a
+unit as defined by: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Quantity SI_Mass {
-                   BaseUnit      :  kg;
-                   Conversions   :  ton -> kg : # -> # * 1000;
-               }
-               Parameter wght {
-                   Unit          :  ton;
-                   InitialValue  :  20;
-               }
-               Constraint c1 {
-                   Unit          :  ton;
-                   Definition    :  -x1 + 2 * x2 <= wght;
-               }
+    Quantity SI_Mass {
+        BaseUnit      :  kg;
+        Conversions   :  ton -> kg : # -> # * 1000;
+    }
+    Parameter wght {
+        Unit          :  ton;
+        InitialValue  :  20;
+    }
+    Constraint c1 {
+        Unit          :  ton;
+        Definition    :  -x1 + 2 * x2 <= wght;
+    }
 
-    If we want to multiply the
-    right-hand-side value by 1.5 and assign it as the new value by using
-    function :aimms:func:`GMP::Row::SetRightHandSide` we can use 
+If we want to multiply the
+right-hand-side value by 1.5 and assign it as the new value by using
+function :aimms:func:`GMP::Row::SetRightHandSide` we can use 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               rhs1 := 1.5 * (GMP::Row::GetRightHandSide( 'MP', c1 )) [ton];
+    rhs1 := 1.5 * (GMP::Row::GetRightHandSide( 'MP', c1 )) [ton];
 
-               GMP::Row::SetRightHandSide( 'MP', c1, rhs1 );
+    GMP::Row::SetRightHandSide( 'MP', c1, rhs1 );
 
-    if 'rhs1'
-    is a parameter with unit [ton], or we can use 
+if ``rhs1``
+is a parameter with unit ``[ton]``, or we can use 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               rhs2 := 1.5 * GMP::Row::GetRightHandSide( 'MP', c1 );
+    rhs2 := 1.5 * GMP::Row::GetRightHandSide( 'MP', c1 );
 
-               GMP::Row::SetRightHandSide( 'MP', c1, rhs2 * GMP::Row::GetScale( 'MP', c1 ) );
+    GMP::Row::SetRightHandSide( 'MP', c1, rhs2 * GMP::Row::GetScale( 'MP', c1 ) );
 
-    if 'rhs2' is a
-    parameter without a unit.
+if ``rhs2`` is a
+parameter without a unit.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSide`, :aimms:func:`GMP::Row::GetLeftHandSide` and :aimms:func:`GMP::Row::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSide`, :aimms:func:`GMP::Row::GetLeftHandSide` and :aimms:func:`GMP::Row::GetScale`.

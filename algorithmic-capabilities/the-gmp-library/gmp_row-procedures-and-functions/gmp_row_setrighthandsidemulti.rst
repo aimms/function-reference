@@ -50,29 +50,29 @@ Return Value
 Example
 -------
 
-    To set the right-hand-side values of constraint ``c(i)`` to ``rhs(i)``
-    we can use: 
+To set the right-hand-side values of constraint ``c(i)`` to ``rhs(i)``
+we can use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               for (i) do
-                   GMP::Row::SetRightHandSide( myGMP, c(i), rhs(i) );
-               endfor;
+    for (i) do
+        GMP::Row::SetRightHandSide( myGMP, c(i), rhs(i) );
+    endfor;
 
-    It is more efficient to use: 
+It is more efficient to use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Row::SetRightHandSideMulti( myGMP, i, c(i), rhs(i) );
+    GMP::Row::SetRightHandSideMulti( myGMP, i, c(i), rhs(i) );
 
-    If we
-    only want to set the right-hand-side values of those ``c(i)`` for which
-    ``dom(i)`` is unequal to zero, then we use: 
+If we
+only want to set the right-hand-side values of those ``c(i)`` for which
+``dom(i)`` is unequal to zero, then we use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Row::SetRightHandSideMulti( myGMP, i | dom(i), c(i), rhs(i) );
+    GMP::Row::SetRightHandSideMulti( myGMP, i | dom(i), c(i), rhs(i) );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSide`, :aimms:func:`GMP::Row::SetLeftHandSide`, :aimms:func:`GMP::Row::GetRightHandSide` and :aimms:func:`GMP::Row::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSide`, :aimms:func:`GMP::Row::SetLeftHandSide`, :aimms:func:`GMP::Row::GetRightHandSide` and :aimms:func:`GMP::Row::GetScale`.

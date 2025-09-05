@@ -28,4 +28,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetNumberOfColumns` and :aimms:func:`GMP::Instance::GetNumberOfRows`.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetNumberOfColumns` and :aimms:func:`GMP::Instance::GetNumberOfRows`.

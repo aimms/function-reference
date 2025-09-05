@@ -27,4 +27,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::SolverSession::Execute`, :aimms:func:`GMP::Instance::SetIterationLimit`, :aimms:func:`GMP::SolverSession::GetMemoryUsed` and :aimms:func:`GMP::SolverSession::GetTimeUsed`.
+    - The routines :aimms:func:`GMP::SolverSession::Execute`, :aimms:func:`GMP::Instance::SetIterationLimit`, :aimms:func:`GMP::SolverSession::GetMemoryUsed` and :aimms:func:`GMP::SolverSession::GetTimeUsed`.

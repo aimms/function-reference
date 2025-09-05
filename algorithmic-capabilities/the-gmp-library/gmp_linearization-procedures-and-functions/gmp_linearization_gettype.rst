@@ -38,4 +38,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Linearization::SetType`.
+    - The procedure :aimms:func:`GMP::Linearization::SetType`.

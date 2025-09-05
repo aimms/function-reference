@@ -23,4 +23,4 @@ Arguments
 Return Value
 ------------
 
-    The amount of megabytes used to store a generated mathematical program.
+    - The amount of megabytes used to store a generated mathematical program.

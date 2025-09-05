@@ -42,4 +42,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::GetType`, :aimms:func:`GMP::Column::SetTypeMulti` and :aimms:func:`GMP::Column::SetTypeRaw`.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::GetType`, :aimms:func:`GMP::Column::SetTypeMulti` and :aimms:func:`GMP::Column::SetTypeRaw`.

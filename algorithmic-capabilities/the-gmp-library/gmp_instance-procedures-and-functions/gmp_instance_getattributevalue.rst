@@ -149,7 +149,7 @@ as specified by the *objNo* argument.
 
 For Gurobi also other model and solution attributes are supported. For a complete list; see:
 `Model attributes <https://docs.gurobi.com/projects/optimizer/en/current/reference/attributes/model.html>`__.
-Attributes with type 'string' are not supported by this function.
+Attributes with type ``string`` are not supported by this function.
 
 Example
 -------
@@ -174,5 +174,4 @@ for both subproblems. We also retrieve the total runtime by the solver.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`,
-    :aimms:func:`GMP::Column::SetAsMultiObjective` and :aimms:func:`GMP::SolverSession::GetAttributeValue`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::Column::SetAsMultiObjective` and :aimms:func:`GMP::SolverSession::GetAttributeValue`.

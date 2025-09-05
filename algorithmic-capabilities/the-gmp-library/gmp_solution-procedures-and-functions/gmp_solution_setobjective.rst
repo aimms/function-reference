@@ -36,4 +36,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::GetObjective` and :aimms:func:`GMP::Solution::SendToModel`.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::GetObjective` and :aimms:func:`GMP::Solution::SendToModel`.

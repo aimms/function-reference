@@ -71,4 +71,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`.
+    - The routines :aimms:func:`GMP::Instance::Generate`.

@@ -52,39 +52,39 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program. To use
-    :aimms:func:`GMP::Column::FreezeRaw` we declare the following identifiers
-    (in ams format):
+Assume that ``MP`` is a mathematical program. To use
+:aimms:func:`GMP::Column::FreezeRaw` we declare the following identifiers
+(in ams format):
+
+.. code-block:: aimms
+
+    ElementParameter myGMP {
+        Range: AllGeneratedMathematicalPrograms;
+    }
+    Set VariableSet {
+        SubsetOf: AllVariables;
+    }
+    Set ColumnSet {
+        SubsetOf: Integers;
+        Index: cc;
+    }
+    Parameter FixVal {
+        IndexDomain: cc;
+    }
+
+To freeze the variable ``x(i)`` we can use:
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate( MP );
     
-    .. code-block:: aimms
-
-               ElementParameter myGMP {
-                   Range: AllGeneratedMathematicalPrograms;
-               }
-               Set VariableSet {
-                   SubsetOf: AllVariables;
-               }
-               Set ColumnSet {
-                   SubsetOf: Integers;
-                   Index: cc;
-               }
-               Parameter FixVal {
-                   IndexDomain: cc;
-               }
-
-    To freeze the variable ``x(i)`` we can use:
-
-    .. code-block:: aimms
-
-               myGMP := GMP::Instance::Generate( MP );
-               
-               VariableSet := { 'x' };
-               ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
-               
-               FixVal(cc) := 20.0;
-               
-               GMP::Column::FreezeRaw( myGMP, ColumnSet, FixVal );
+    VariableSet := { 'x' };
+    ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
+    
+    FixVal(cc) := 20.0;
+    
+    GMP::Column::FreezeRaw( myGMP, ColumnSet, FixVal );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Column::Freeze`, :aimms:func:`GMP::Column::UnfreezeRaw` and :aimms:func:`GMP::Instance::Copy`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Column::Freeze`, :aimms:func:`GMP::Column::UnfreezeRaw` and :aimms:func:`GMP::Instance::Copy`.

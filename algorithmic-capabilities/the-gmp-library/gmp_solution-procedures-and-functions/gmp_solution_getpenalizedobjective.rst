@@ -61,4 +61,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Solution::UpdatePenaltyWeights`.
+    - The procedure :aimms:func:`GMP::Solution::UpdatePenaltyWeights`.

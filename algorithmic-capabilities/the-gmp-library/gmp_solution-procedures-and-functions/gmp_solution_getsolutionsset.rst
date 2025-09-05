@@ -28,5 +28,5 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Solution::Count` and the section on Managing the
-    solution repository :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-the-solution-repository` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The functions :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Solution::Count`.
+    - :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-the-solution-repository` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

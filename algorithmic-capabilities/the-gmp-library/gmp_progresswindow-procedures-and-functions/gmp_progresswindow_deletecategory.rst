@@ -27,4 +27,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::CreateProgressCategory` and :aimms:func:`GMP::SolverSession::CreateProgressCategory`.
+    - The routines :aimms:func:`GMP::Instance::CreateProgressCategory` and :aimms:func:`GMP::SolverSession::CreateProgressCategory`.

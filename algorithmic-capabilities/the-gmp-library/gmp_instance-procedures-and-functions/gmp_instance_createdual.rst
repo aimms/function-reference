@@ -90,59 +90,58 @@ Return Value
 Example
 -------
 
-    Assume that 'PrimalModel' is a mathematical program with the following
-    declaration (in ams format): 
+Assume that ``PrimalModel`` is a mathematical program with the following
+declaration (in ams format): 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Variable x1 {
-                   Range: [0, 5];
-               }
-               Variable x2 {
-                   Range: nonnegative;
-               }
-               Variable obj {
-                   Definition: - 7 * x1 - 2 * x2;
-               }
-               Constraint c1 {
-                   Definition: - x1 + 2 * x2 <= 4;
-               }
-               MathematicalProgram PrimalModel {
-                   Objective: obj;
-                   Direction: minimize;
-                   Type: LP;
-               }
+   Variable x1 {
+         Range: [0, 5];
+   }
+   Variable x2 {
+         Range: nonnegative;
+   }
+   Variable obj {
+         Definition: - 7 * x1 - 2 * x2;
+   }
+   Constraint c1 {
+         Definition: - x1 + 2 * x2 <= 4;
+   }
+   MathematicalProgram PrimalModel {
+         Objective: obj;
+         Direction: minimize;
+         Type: LP;
+   }
 
-    Then
-    :aimms:func:`GMP::Instance::CreateDual` will create a dual mathematical program
-    with variables 
+Then
+:aimms:func:`GMP::Instance::CreateDual` will create a dual mathematical program
+with variables 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               name                                             lower  upper
-               c1                                                -inf      0
-               obj_definition                                    -inf    inf
-               x1.ExtendedConstraint('DualUpperBound')           -inf      0
-               PrimalModel.ExtendedConstraint('DualObjective')   -inf    inf
+   name                                             lower  upper
+   c1                                                -inf      0
+   obj_definition                                    -inf    inf
+   x1.ExtendedConstraint('DualUpperBound')           -inf      0
+   PrimalModel.ExtendedConstraint('DualObjective')   -inf    inf
 
-    and constraints 
+and constraints 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               x1:
-                  - c1 + 7 * obj_definition + x1.ExtendedConstraint('DualUpperBound') >= 0 ;
+   x1:
+      - c1 + 7 * obj_definition + x1.ExtendedConstraint('DualUpperBound') >= 0 ;
 
-               x2:
-                  + 2 * c1 + 2 * obj_definition >= 0 ;
+   x2:
+      + 2 * c1 + 2 * obj_definition >= 0 ;
 
-               obj:
-                  obj_definition = 1 ;
+   obj:
+      obj_definition = 1 ;
 
-               PrimalModel.ExtendedVariable('DualDefinition'):
-                  - 4 * c1 - 5 * x1.ExtendedConstraint('DualUpperBound')
-                  + PrimalModel.ExtendedConstraint('DualObjective') = 0 ;
+   PrimalModel.ExtendedVariable('DualDefinition'):
+      - 4 * c1 - 5 * x1.ExtendedConstraint('DualUpperBound')
+      + PrimalModel.ExtendedConstraint('DualObjective') = 0 ;
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Instance::Generate`. See :ref:`sec:matrix.extended` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for
-    more details on extended suffixes.
+   - The function :aimms:func:`GMP::Instance::Generate`. See :ref:`sec:matrix.extended` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for more details on extended suffixes.

@@ -50,28 +50,28 @@ Return Value
 Example
 -------
 
-    To set the lower bounds of variable ``x(i)`` to ``lb(i)`` we can use:
+To set the lower bounds of variable ``x(i)`` to ``lb(i)`` we can use:
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               for (i) do
-                   GMP::Column::SetLowerBound( myGMP, x(i), lb(i) );
-               endfor;
+    for (i) do
+        GMP::Column::SetLowerBound( myGMP, x(i), lb(i) );
+    endfor;
 
-    It is more efficient to use: 
+It is more efficient to use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Column::SetLowerBoundMulti( myGMP, i, x(i), lb(i) );
+    GMP::Column::SetLowerBoundMulti( myGMP, i, x(i), lb(i) );
 
-    If we only want to
-    set the lower bounds of those ``x(i)`` for which ``dom(i)`` is unequal
-    to zero, then we use: 
+If we only want to
+set the lower bounds of those ``x(i)`` for which ``dom(i)`` is unequal
+to zero, then we use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Column::SetLowerBoundMulti( myGMP, i | dom(i), x(i), lb(i) );
+    GMP::Column::SetLowerBoundMulti( myGMP, i | dom(i), x(i), lb(i) );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::GetLowerBound` and :aimms:func:`GMP::Column::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::GetLowerBound` and :aimms:func:`GMP::Column::GetScale`.

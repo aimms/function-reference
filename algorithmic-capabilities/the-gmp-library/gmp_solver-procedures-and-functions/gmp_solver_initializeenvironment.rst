@@ -111,33 +111,33 @@ Return Value
 Example
 -------
 
-    Assume that 'MIPSolver' is an element parameter with range :aimms:set:`AllSolvers`
-    and 'myGMP' is an element parameter with range :aimms:set:`AllGeneratedMathematicalPrograms`.
+Assume that ``MIPSolver`` is an element parameter with range :aimms:set:`AllSolvers`
+and ``myGMP`` is an element parameter with range :aimms:set:`AllGeneratedMathematicalPrograms`.
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               MIPSolver := 'Gurobi 12.0';
+    MIPSolver := 'Gurobi 12.0';
 
-               ! First solve using normal solve statement.
+    ! First solve using normal solve statement.
 
-               GMP::Solver::InitializeEnvironment( MIPSolver, computeserver: "myserver1:61000", priority: 10 );
+    GMP::Solver::InitializeEnvironment( MIPSolver, computeserver: "myserver1:61000", priority: 10 );
 
-               solve MP1;
+    solve MP1;
 
-               GMP::Solver::FreeEnvironment( MIPSolver );
+    GMP::Solver::FreeEnvironment( MIPSolver );
 
-               ! Second solve using GMP solve.
+    ! Second solve using GMP solve.
 
-               GMP::Solver::SetEnvironmentStringParameter( MIPSolver, "ComputeServer", "myserver1:61000" );
-               GMP::Solver::SetEnvironmentIntegerParameter( MIPSolver, "CSPriority", 10 );
+    GMP::Solver::SetEnvironmentStringParameter( MIPSolver, "ComputeServer", "myserver1:61000" );
+    GMP::Solver::SetEnvironmentIntegerParameter( MIPSolver, "CSPriority", 10 );
 
-               GMP::Solver::InitializeEnvironment( MIPSolver );
+    GMP::Solver::InitializeEnvironment( MIPSolver );
 
-               mgGMP := GMP::Instance::Generate( MP2 );
-               GMP::Instance::Solve( myGMP );
+    mgGMP := GMP::Instance::Generate( MP2 );
+    GMP::Instance::Solve( myGMP );
 
-               GMP::Solver::FreeEnvironment( MIPSolver );
+    GMP::Solver::FreeEnvironment( MIPSolver );
 
 .. seealso::
 
-    The procedures :aimms:func:`GMP::Solver::FreeEnvironment`, :aimms:func:`GMP::Solver::SetEnvironmentDoubleParameter`, :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter` and :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`.
+    - The procedures :aimms:func:`GMP::Solver::FreeEnvironment`, :aimms:func:`GMP::Solver::SetEnvironmentDoubleParameter`, :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter` and :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`.

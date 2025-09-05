@@ -43,4 +43,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Column::Add` and :aimms:func:`GMP::Instance::CreateDual`.
+    - The routines :aimms:func:`GMP::Column::Add` and :aimms:func:`GMP::Instance::CreateDual`.

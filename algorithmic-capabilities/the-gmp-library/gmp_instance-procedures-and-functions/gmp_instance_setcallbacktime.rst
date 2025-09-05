@@ -63,5 +63,11 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`, :aimms:func:`GMP::Instance::SetCallbackBranch`, :aimms:func:`GMP::Instance::SetCallbackCandidate`,
-    :aimms:func:`GMP::Instance::SetCallbackHeuristic`, :aimms:func:`GMP::Instance::SetCallbackIncumbent` and :aimms:func:`GMP::Instance::SetCallbackStatusChange`.
+   - :aimms:func:`GMP::Instance::Generate`.
+   - :aimms:func:`GMP::Instance::SetCallbackAddCut`.
+   - :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`.
+   - :aimms:func:`GMP::Instance::SetCallbackBranch`.
+   - :aimms:func:`GMP::Instance::SetCallbackCandidate`.
+   - :aimms:func:`GMP::Instance::SetCallbackHeuristic`.
+   - :aimms:func:`GMP::Instance::SetCallbackIncumbent`.
+   - :aimms:func:`GMP::Instance::SetCallbackStatusChange`.

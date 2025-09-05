@@ -42,7 +42,7 @@ Arguments
     *jacTol*
         The Jacobian tolerance; if the Jacobian value (in absolute sense) of a
         column in a nonlinear row is smaller than this value, the column will
-        not be added to the linearization of that row. The default is 1e-5.
+        not be added to the linearization of that row. The default is ``1e-5``.
 
     *local*
         A scalar binary value to indicate whether the linearization is valid for
@@ -94,4 +94,7 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Linearization::Add`, :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint` and :aimms:func:`GMP::SolverSession::GenerateCut`.
+    - :aimms:func:`GMP::Linearization::Add`.
+    - :aimms:func:`GMP::Instance::SetCallbackAddCut`.
+    - :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`.
+    - :aimms:func:`GMP::SolverSession::GenerateCut`.

@@ -50,28 +50,28 @@ Return Value
 Example
 -------
 
-    To set the upper bounds of variable ``x(i)`` to ``ub(i)`` we can use:
+To set the upper bounds of variable ``x(i)`` to ``ub(i)`` we can use:
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               for (i) do
-                   GMP::Column::SetUpperBound( myGMP, x(i), ub(i) );
-               endfor;
+    for (i) do
+        GMP::Column::SetUpperBound( myGMP, x(i), ub(i) );
+    endfor;
 
-    It is more efficient to use: 
+It is more efficient to use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Column::SetUpperBoundMulti( myGMP, i, x(i), ub(i) );
+    GMP::Column::SetUpperBoundMulti( myGMP, i, x(i), ub(i) );
 
-    If we only want to
-    set the upper bounds of those ``x(i)`` for which ``dom(i)`` is unequal
-    to zero, then we use: 
+If we only want to
+set the upper bounds of those ``x(i)`` for which ``dom(i)`` is unequal
+to zero, then we use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Column::SetUpperBoundMulti( myGMP, i | dom(i), x(i), ub(i) );
+    GMP::Column::SetUpperBoundMulti( myGMP, i | dom(i), x(i), ub(i) );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetScale`.

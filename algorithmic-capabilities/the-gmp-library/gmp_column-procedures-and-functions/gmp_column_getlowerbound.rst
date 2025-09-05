@@ -44,46 +44,45 @@ Return Value
 Example
 -------
 
-    Assume that 'x1' is a variable in mathematical program 'MP' with a unit
-    as defined by: 
+Assume that ``x1`` is a variable in mathematical program ``MP`` with a unit
+as defined by: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Quantity SI_Mass {
-                   BaseUnit      :  kg;
-                   Conversions   :  ton -> kg : # -> # * 1000;
-               }
-               Parameter min_wght {
-                   Unit          :  ton;
-                   InitialValue  :  20;
-               }
-               Variable x1 {
-                   Range         :  [min_wght, inf);
-                   Unit          :  ton;
-               }
+    Quantity SI_Mass {
+        BaseUnit      :  kg;
+        Conversions   :  ton -> kg : # -> # * 1000;
+    }
+    Parameter min_wght {
+        Unit          :  ton;
+        InitialValue  :  20;
+    }
+    Variable x1 {
+        Range         :  [min_wght, inf);
+        Unit          :  ton;
+    }
 
-    If we want to multiply the lower bound by 1.5
-    and assign it as the new value by using function
-    :aimms:func:`GMP::Column::SetLowerBound` we can use 
+If we want to multiply the lower bound by 1.5
+and assign it as the new value by using function
+:aimms:func:`GMP::Column::SetLowerBound` we can use 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               lb1 := 1.5 * (GMP::Column::GetLowerBound( 'MP', x1 )) [ton];
+    lb1 := 1.5 * (GMP::Column::GetLowerBound( 'MP', x1 )) [ton];
 
-               GMP::Column::SetLowerBound( 'MP', x1, lb1 );
+    GMP::Column::SetLowerBound( 'MP', x1, lb1 );
 
-    if 'lb1' is a
-    parameter with unit [ton], or we can use 
+if ``lb1`` is a
+parameter with unit ``[ton]``, or we can use 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               lb2 := 1.5 * GMP::Column::GetLowerBound( 'MP', x1 );
+    lb2 := 1.5 * GMP::Column::GetLowerBound( 'MP', x1 );
 
-               GMP::Column::SetLowerBound( 'MP', x1, lb2 * GMP::Column::GetScale( 'MP', x1 ) );
+    GMP::Column::SetLowerBound( 'MP', x1, lb2 * GMP::Column::GetScale( 'MP', x1 ) );
 
-    if 'lb2' is a
-    parameter without a unit.
+if ``lb2`` is a parameter without a unit.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound`, :aimms:func:`GMP::Column::GetScale` and :aimms:func:`GMP::Instance::CreatePresolved`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound`, :aimms:func:`GMP::Column::GetScale` and :aimms:func:`GMP::Instance::CreatePresolved`.

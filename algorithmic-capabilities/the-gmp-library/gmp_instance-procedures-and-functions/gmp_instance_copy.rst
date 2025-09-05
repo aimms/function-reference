@@ -49,4 +49,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Rename` and :aimms:func:`GMP::Instance::SetSolver`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Rename` and :aimms:func:`GMP::Instance::SetSolver`.

@@ -111,5 +111,5 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Linearization::AddSingle` and :aimms:func:`GMP::Linearization::Delete`. See :ref:`sec:matrix.extended` of the Language
-    Reference for more details on extended suffixes.
+    - The routines :aimms:func:`GMP::Linearization::AddSingle` and :aimms:func:`GMP::Linearization::Delete`. 
+    - See :ref:`sec:matrix.extended` of the Language Reference for more details on extended suffixes.

@@ -41,5 +41,5 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Row::SetConvex`. The ``Convex`` suffix is explained in full
-    detail in :ref:`sec:var.constr.glob-suff` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The procedure :aimms:func:`GMP::Row::SetConvex`. 
+    - The ``Convex`` suffix is explained in full detail in :ref:`sec:var.constr.glob-suff` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

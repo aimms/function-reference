@@ -38,4 +38,7 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::SolverSession::AsynchronousExecute`, :aimms:func:`GMP::SolverSession::Interrupt`, :aimms:func:`GMP::SolverSession::WaitForCompletion` and :aimms:func:`GMP::SolverSession::WaitForSingleCompletion`.
+    - :aimms:func:`GMP::SolverSession::AsynchronousExecute`.
+    - :aimms:func:`GMP::SolverSession::Interrupt`.
+    - :aimms:func:`GMP::SolverSession::WaitForCompletion`.
+    - :aimms:func:`GMP::SolverSession::WaitForSingleCompletion`.

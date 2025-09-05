@@ -44,4 +44,6 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`, :aimms:func:`GMP::Instance::SetCallbackCandidate` and :aimms:func:`GMP::Solution::RetrieveFromSolverSession`.
+    - :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`.
+    - :aimms:func:`GMP::Instance::SetCallbackCandidate`.
+    - :aimms:func:`GMP::Solution::RetrieveFromSolverSession`.

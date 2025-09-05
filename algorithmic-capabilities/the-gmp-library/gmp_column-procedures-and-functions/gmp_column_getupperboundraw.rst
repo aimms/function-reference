@@ -48,4 +48,4 @@ Return Value
 
 .. seealso::
 
-    The routine :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetLowerBoundRaw`.
+    - The routine :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetLowerBoundRaw`.

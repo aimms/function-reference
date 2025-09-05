@@ -33,26 +33,26 @@ Return Value
 Example
 -------
 
-    In the example below two multi-objectives are specified after which a
-    multi-objective optimization problem is solved. Next all
-    multi-objectives are deleted by calling :aimms:func:`GMP::Instance::CreateDual`
-    and the model is solved once again, this time as an ordinary
-    optimization problem with one objective (namely the one specified in the
-    objective attribute of the mathematical programming). 
+In the example below two multi-objectives are specified after which a
+multi-objective optimization problem is solved. Next all
+multi-objectives are deleted by calling :aimms:func:`GMP::Instance::CreateDual`
+and the model is solved once again, this time as an ordinary
+optimization problem with one objective (namely the one specified in the
+objective attribute of the mathematical programming). 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generate( MP );
+    myGMP := GMP::Instance::Generate( MP );
 
-               GMP::Column::SetAsMultiObjective( myGMP, TotalDist, 2, 1.0, 0, 0.1 );
-               GMP::Column::SetAsMultiObjective( myGMP, TotalTime, 1, 1.0, 0, 0.0 );
+    GMP::Column::SetAsMultiObjective( myGMP, TotalDist, 2, 1.0, 0, 0.1 );
+    GMP::Column::SetAsMultiObjective( myGMP, TotalTime, 1, 1.0, 0, 0.0 );
 
-               GMP::Instance::Solve( myGMP );
+    GMP::Instance::Solve( myGMP );
 
-               GMP::Instance::DeleteMultiObjectives( myGMP );
+    GMP::Instance::DeleteMultiObjectives( myGMP );
 
-               GMP::Instance::Solve( myGMP );
+    GMP::Instance::Solve( myGMP );
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Column::SetAsMultiObjective`.
+    - The procedure :aimms:func:`GMP::Column::SetAsMultiObjective`.

@@ -61,5 +61,4 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Instance::Generate`. See :ref:`sec:matrix.extended` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for
-    more details on extended suffixes.
+    - The function :aimms:func:`GMP::Instance::Generate`. See :ref:`sec:matrix.extended` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for more details on extended suffixes.

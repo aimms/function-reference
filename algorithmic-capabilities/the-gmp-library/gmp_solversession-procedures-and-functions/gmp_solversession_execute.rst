@@ -39,4 +39,7 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::CreateSolverSession`, :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::SolverSession::AsynchronousExecute` and :aimms:func:`GMP::Solution::ConstraintListing`.
+    - :aimms:func:`GMP::Instance::CreateSolverSession`.
+    - :aimms:func:`GMP::Instance::Solve`.
+    - :aimms:func:`GMP::SolverSession::AsynchronousExecute`.
+    - :aimms:func:`GMP::Solution::ConstraintListing`.

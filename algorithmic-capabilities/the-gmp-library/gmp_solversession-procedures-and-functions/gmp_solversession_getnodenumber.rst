@@ -41,4 +41,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackBranch`, :aimms:func:`GMP::Instance::SetCallbackCandidate`, :aimms:func:`GMP::Instance::SetCallbackHeuristic` and :aimms:func:`GMP::SolverSession::GetNodesUsed`.
+    - The routines :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackBranch`, :aimms:func:`GMP::Instance::SetCallbackCandidate`, :aimms:func:`GMP::Instance::SetCallbackHeuristic` and :aimms:func:`GMP::SolverSession::GetNodesUsed`.

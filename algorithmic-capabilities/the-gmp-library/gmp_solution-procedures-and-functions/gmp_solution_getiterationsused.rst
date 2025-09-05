@@ -32,4 +32,4 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`GMP::Instance::SetIterationLimit` and :aimms:func:`GMP::Solution::SetIterationCount`.
+    - The procedures :aimms:func:`GMP::Instance::SetIterationLimit` and :aimms:func:`GMP::Solution::SetIterationCount`.

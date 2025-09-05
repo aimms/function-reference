@@ -44,4 +44,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Linearization::GetDeviationBound`, :aimms:func:`GMP::Linearization::GetDeviation` and :aimms:func:`GMP::Linearization::RemoveDeviation`.
+    - The routines :aimms:func:`GMP::Linearization::GetDeviationBound`, :aimms:func:`GMP::Linearization::GetDeviation` and :aimms:func:`GMP::Linearization::RemoveDeviation`.

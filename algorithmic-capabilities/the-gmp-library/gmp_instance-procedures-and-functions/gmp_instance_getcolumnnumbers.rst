@@ -34,39 +34,39 @@ Return Value
 Example
 -------
 
-    Assume we have generated a mathematical program and we want to change
-    the upper bound of the variables ``demand(i)`` and ``supply(j,k)`` into
-    100. This can be done as follows: 
+Assume we have generated a mathematical program and we want to change
+the upper bound of the variables ``demand(i)`` and ``supply(j,k)`` into
+100. This can be done as follows: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generated( MP );
+    myGMP := GMP::Instance::Generated( MP );
 
-               for (i) do
-                   GMP::Column::SetUpperBound( myGMP, demand(i), 100 );
-               endfor;
+    for (i) do
+        GMP::Column::SetUpperBound( myGMP, demand(i), 100 );
+    endfor;
 
-               for (j,k) do
-                   GMP::Column::SetUpperBound( myGMP, supply(j,k), 100 );
-               endfor;
+    for (j,k) do
+        GMP::Column::SetUpperBound( myGMP, supply(j,k), 100 );
+    endfor;
 
-    Using the function
-    :aimms:func:`GMP::Instance::GetColumnNumbers` this can also be coded as follows.
-    Here ``ColNrs`` is a subset of :aimms:set:`Integers` with index ``c``, and ``Vars``
-    a subset of :aimms:set:`AllVariables`. 
+Using the function
+:aimms:func:`GMP::Instance::GetColumnNumbers` this can also be coded as follows.
+Here ``ColNrs`` is a subset of :aimms:set:`Integers` with index ``c``, and ``Vars``
+a subset of :aimms:set:`AllVariables`. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generated( MP );
+    myGMP := GMP::Instance::Generated( MP );
 
-               Vars := { 'demand', 'supply' };
+    Vars := { 'demand', 'supply' };
 
-               ColNrs := GMP::Instance::GetColumnNumbers( myGMP, Vars );
+    ColNrs := GMP::Instance::GetColumnNumbers( myGMP, Vars );
 
-               for (c) do
-                   GMP::Column::SetUpperBound( myGMP, c, 100 );
-               endfor;
+    for (c) do
+        GMP::Column::SetUpperBound( myGMP, c, 100 );
+    endfor;
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetNumberOfColumns`, :aimms:func:`GMP::Instance::GetRowNumbers`, :aimms:func:`GMP::Instance::GetObjectiveColumnNumber` and :aimms:func:`GMP::Instance::GetObjectiveRowNumber`.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetNumberOfColumns`, :aimms:func:`GMP::Instance::GetRowNumbers`, :aimms:func:`GMP::Instance::GetObjectiveColumnNumber` and :aimms:func:`GMP::Instance::GetObjectiveRowNumber`.

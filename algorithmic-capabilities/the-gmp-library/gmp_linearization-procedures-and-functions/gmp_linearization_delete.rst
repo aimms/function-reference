@@ -33,4 +33,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Linearization::Add` and :aimms:func:`GMP::Linearization::AddSingle`.
+    - The routines :aimms:func:`GMP::Linearization::Add` and :aimms:func:`GMP::Linearization::AddSingle`.

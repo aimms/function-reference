@@ -35,4 +35,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Row::DeleteIndicatorCondition`, :aimms:func:`GMP::Row::GetIndicatorCondition` and :aimms:func:`GMP::Row::SetIndicatorCondition`.
+    - The routines :aimms:func:`GMP::Row::DeleteIndicatorCondition`, :aimms:func:`GMP::Row::GetIndicatorCondition` and :aimms:func:`GMP::Row::SetIndicatorCondition`.

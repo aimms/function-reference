@@ -33,4 +33,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::row::GetName`.
+    - The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::row::GetName`.

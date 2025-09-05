@@ -41,4 +41,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::RetrieveFromModel` and :aimms:func:`GMP::Solution::RetrieveFromSolverSession`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::RetrieveFromModel` and :aimms:func:`GMP::Solution::RetrieveFromSolverSession`.

@@ -83,39 +83,39 @@ Return Value
 Example
 -------
 
-    The first example shows how to specify a decomposition for the Benders
-    algorithm in CPLEX. The integer variable ``IntVar`` is assigned to the
-    master problem while the continuous variable ``ContVar`` is assigned to
-    the subproblem. 
+The first example shows how to specify a decomposition for the Benders
+algorithm in CPLEX. The integer variable ``IntVar`` is assigned to the
+master problem while the continuous variable ``ContVar`` is assigned to
+the subproblem. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generate( MP );
+    myGMP := GMP::Instance::Generate( MP );
 
-               ! Switch on CPLEX option for using Benders strategy with decomposition specified by user. 
-               GMP::Instance::SetOptionValue( myGMP, 'benders strategy', 1 );
+    ! Switch on CPLEX option for using Benders strategy with decomposition specified by user. 
+    GMP::Instance::SetOptionValue( myGMP, 'benders strategy', 1 );
 
-               GMP::Column::SetDecompositionMulti( myGMP, i, IntVar(i), 0 );
+    GMP::Column::SetDecompositionMulti( myGMP, i, IntVar(i), 0 );
 
-               GMP::Column::SetDecompositionMulti( myGMP, j, ContVar(j), 1 );
+    GMP::Column::SetDecompositionMulti( myGMP, j, ContVar(j), 1 );
 
-               GMP::Instance::Solve( myGMP );
+    GMP::Instance::Solve( myGMP );
 
-    The second example shows how to specify
-    model structure used by ODH-CPLEX. All columns ``X(i,j)`` and
-    ``Y(i,j,k)`` with the same ``i`` are assigned to the same
-    subproblem. 
+The second example shows how to specify
+model structure used by ODH-CPLEX. All columns ``X(i,j)`` and
+``Y(i,j,k)`` with the same ``i`` are assigned to the same
+subproblem. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generate( MP );
+    myGMP := GMP::Instance::Generate( MP );
 
-               GMP::Column::SetDecompositionMulti( myGMP, (i,j), X(i,j), Ord(i) );
+    GMP::Column::SetDecompositionMulti( myGMP, (i,j), X(i,j), Ord(i) );
 
-               GMP::Column::SetDecompositionMulti( myGMP, (i,j,k), Y(i,j,k), Ord(i) );
+    GMP::Column::SetDecompositionMulti( myGMP, (i,j,k), Y(i,j,k), Ord(i) );
 
-               GMP::Instance::Solve( myGMP );
+    GMP::Instance::Solve( myGMP );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve` and :aimms:func:`GMP::Column::SetDecomposition`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve` and :aimms:func:`GMP::Column::SetDecomposition`.

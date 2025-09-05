@@ -199,5 +199,8 @@ for both subproblems. We also retrieve the total runtime by the solver.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::CreateSolverSession`, :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::SolverSession::Execute`,
-    :aimms:func:`GMP::Column::SetAsMultiObjective` and :aimms:func:`GMP::Instance::GetAttributeValue`.
+    - :aimms:func:`GMP::Instance::CreateSolverSession`.
+    - :aimms:func:`GMP::Instance::Generate`.
+    - :aimms:func:`GMP::SolverSession::Execute`.
+    - :aimms:func:`GMP::Column::SetAsMultiObjective`.
+    - :aimms:func:`GMP::Instance::GetAttributeValue`.

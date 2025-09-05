@@ -41,4 +41,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::GetType` and :aimms:func:`GMP::Row::SetType`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::GetType` and :aimms:func:`GMP::Row::SetType`.

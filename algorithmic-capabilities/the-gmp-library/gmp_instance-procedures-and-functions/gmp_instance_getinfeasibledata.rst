@@ -117,23 +117,22 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a symbolic mathematical program and 'pMessage' a string parameter.
+Assume that ``MP`` is a symbolic mathematical program and ``pMessage`` a string parameter.
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               solve MP;
-               
-               if ( MP.ProgramStatus = 'Infeasible'            or
-                    MP.ProgramStatus = 'InfeasibleOrUnbounded' ) then
-                   GMP::Instance::GetInfeasibleData( 'MP', AllParameters, pMessage,
-                                                     method: 4, textFormat: 1 );
-                   
-                   ! Change the font size for the HTML formatted text.
-                   pMessage := "<span style=\"font-size: 20px\">" + pMessage + "</span>";
-               endif;
+    solve MP;
+    
+    if ( MP.ProgramStatus = 'Infeasible'            or
+        MP.ProgramStatus = 'InfeasibleOrUnbounded' ) then
+        GMP::Instance::GetInfeasibleData( 'MP', AllParameters, pMessage,
+                                            method: 4, textFormat: 1 );
+        
+        ! Change the font size for the HTML formatted text.
+        pMessage := "<span style=\"font-size: 20px\">" + pMessage + "</span>";
+    endif;
 
 .. seealso::
 
-    -  Section `Explainability <https://documentation.aimms.com/language-reference/optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-generated-mathematical-program-instances.html#explainability>`__
-       in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    -  Section `Explainability <https://documentation.aimms.com/language-reference/optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/managing-generated-mathematical-program-instances.html#explainability>`_ in the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
     -  Example `Infeasible Data <https://how-to.aimms.com/Articles/662/662-infeasible_data.html>`__.

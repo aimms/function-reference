@@ -41,4 +41,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Solution::Copy`.
+    - The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Solution::Copy`.

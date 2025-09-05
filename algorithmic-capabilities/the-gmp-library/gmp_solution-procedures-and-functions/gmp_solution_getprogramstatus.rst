@@ -38,4 +38,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::GetSolverStatus`, :aimms:func:`GMP::Solution::GetObjective` and :aimms:func:`GMP::Solution::SetProgramStatus`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::GetSolverStatus`, :aimms:func:`GMP::Solution::GetObjective` and :aimms:func:`GMP::Solution::SetProgramStatus`.

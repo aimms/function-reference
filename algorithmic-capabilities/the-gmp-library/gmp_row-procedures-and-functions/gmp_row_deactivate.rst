@@ -39,4 +39,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Activate`, :aimms:func:`GMP::Row::DeactivateMulti` and :aimms:func:`GMP::Row::DeactivateRaw`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Activate`, :aimms:func:`GMP::Row::DeactivateMulti` and :aimms:func:`GMP::Row::DeactivateRaw`.

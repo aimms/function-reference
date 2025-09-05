@@ -26,7 +26,7 @@ Arguments
 ---------
 
     *FileName*
-        The name of the file, with file format '.mps', '.lp' or '.sav', to be
+        The name of the file, with file format ``.mps``, ``.lp`` or ``.sav``, to be
         solved.
 
     *Solver*
@@ -52,8 +52,7 @@ Arguments
 
     *SolutionFile*
         A 0-1 value indicating whether a solution file should be created. If 1,
-        then the solution file will be named '\ *FileName*.sol'. The default is
-        0.
+        then the solution file will be named ``FileName*.sol``. The default is 0.
 
 Return Value
 ------------
@@ -72,13 +71,13 @@ Return Value
 Example
 -------
 
-    To solve model 'mod1.mps' using CPLEX 12.10 execute: 
+To solve model ``mod1.mps`` using CPLEX 12.10 execute: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Tuning::SolveSingleMPS( 'mod1.mps', 'CPLEX 12.10', SolStat, ProStat, obj, iter,
-                                            nodes, soltime );
+    GMP::Tuning::SolveSingleMPS( 'mod1.mps', 'CPLEX 12.10', SolStat, ProStat, obj, iter,
+                                nodes, soltime );
 
 .. seealso::
 
-    The routine :aimms:func:`GMP::Tuning::TuneMultipleMPS`.
+    - The routine :aimms:func:`GMP::Tuning::TuneMultipleMPS`.

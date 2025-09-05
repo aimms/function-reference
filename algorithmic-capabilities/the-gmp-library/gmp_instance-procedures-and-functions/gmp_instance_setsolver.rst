@@ -42,4 +42,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::CreateSolverSession`, :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetSolver` and :aimms:func:`GMP::Instance::Solve`.
+    - The routines :aimms:func:`GMP::Instance::CreateSolverSession`, :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetSolver` and :aimms:func:`GMP::Instance::Solve`.

@@ -71,25 +71,25 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a linear mathematical program and ``c(i)`` is a
-    constraint and ``v(j)`` is a variable in this mathematical program. The
-    following example shows how to calculate a subgradient after a normal
-    solve statement. 
+Assume that ``MP`` is a linear mathematical program and ``c(i)`` is a
+constraint and ``v(j)`` is a variable in this mathematical program. The
+following example shows how to calculate a subgradient after a normal
+solve statement. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               solve MP;
+    solve MP;
 
-               ! The next statement needs to be called once.
-               AllGMPExtensions += { 'RhsChange' };
+    ! The next statement needs to be called once.
+    AllGMPExtensions += { 'RhsChange' };
 
-               c.ExtendedConstraint('RhsChange',i) := 1.0;
+    c.ExtendedConstraint('RhsChange',i) := 1.0;
 
-               GMP::Instance::CalculateSubGradient('MP',AllVariables,AllConstraints);
+    GMP::Instance::CalculateSubGradient('MP',AllVariables,AllConstraints);
 
-               display v.ExtendedVariable('RhsChange',j);
+    display v.ExtendedVariable('RhsChange',j);
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::SolverSession::Execute` and :aimms:func:`GMP::SolverSession::AsynchronousExecute`. See 
-    :ref:`sec:matrix.extended` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for more details on extended suffixes.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::SolverSession::Execute` and :aimms:func:`GMP::SolverSession::AsynchronousExecute`. 
+    - See :ref:`sec:matrix.extended` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__ for more details on extended suffixes.

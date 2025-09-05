@@ -47,5 +47,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Coefficient::Set`, :aimms:func:`GMP::Column::Add`, :aimms:func:`GMP::Column::Delete`, :aimms:func:`GMP::Column::SetType`, :aimms:func:`GMP::Column::SetLowerBound` and
-    :aimms:func:`GMP::Column::SetUpperBound`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Coefficient::Set`, :aimms:func:`GMP::Column::Add`, :aimms:func:`GMP::Column::Delete`, :aimms:func:`GMP::Column::SetType`, :aimms:func:`GMP::Column::SetLowerBound` and :aimms:func:`GMP::Column::SetUpperBound`.

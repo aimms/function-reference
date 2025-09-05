@@ -33,34 +33,34 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program. To use
-    :aimms:func:`GMP::Row::DeactivateRaw` we declare the following identifiers
-    (in ams format):
+Assume that ``MP`` is a mathematical program. To use
+:aimms:func:`GMP::Row::DeactivateRaw` we declare the following identifiers
+(in ams format):
+
+.. code-block:: aimms
+
+    ElementParameter myGMP {
+        Range: AllGeneratedMathematicalPrograms;
+    }
+    Set ConstraintSet {
+        SubsetOf: AllConstraints;
+    }
+    Set RowSet {
+        SubsetOf: Integers;
+        Index: rr;
+    }
+
+To deactivate the constraint ``c(i)`` we can use:
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate( MP );
     
-    .. code-block:: aimms
-
-               ElementParameter myGMP {
-                   Range: AllGeneratedMathematicalPrograms;
-               }
-               Set ConstraintSet {
-                   SubsetOf: AllConstraints;
-               }
-               Set RowSet {
-                   SubsetOf: Integers;
-                   Index: rr;
-               }
-
-    To deactivate the constraint ``c(i)`` we can use:
-
-    .. code-block:: aimms
-
-               myGMP := GMP::Instance::Generate( MP );
-               
-               ConstraintSet := { 'c' };
-               RowSet := GMP::Instance::GetRowNumbers( myGMP, ConstraintSet );
-               
-               GMP::Row::DeactivateRaw( myGMP, RowSet );
+    ConstraintSet := { 'c' };
+    RowSet := GMP::Instance::GetRowNumbers( myGMP, ConstraintSet );
+    
+    GMP::Row::DeactivateRaw( myGMP, RowSet );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetRowNumbers`, :aimms:func:`GMP::Row::ActivateRaw` and :aimms:func:`GMP::Row::Deactivate`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetRowNumbers`, :aimms:func:`GMP::Row::ActivateRaw` and :aimms:func:`GMP::Row::Deactivate`.

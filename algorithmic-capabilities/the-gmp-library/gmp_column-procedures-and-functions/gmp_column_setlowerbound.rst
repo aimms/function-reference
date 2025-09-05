@@ -48,50 +48,50 @@ Return Value
 Example
 -------
 
-    Assume that 'x1' is a variable in mathematical program 'MP' with a unit
-    as defined by: 
+Assume that ``x1`` is a variable in mathematical program ``MP`` with a unit
+as defined by: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Quantity SI_Mass {
-                   BaseUnit      :  kg;
-                   Conversions   :  ton -> kg : # -> # * 1000;
-               }
-               Parameter min_wght {
-                   Unit          :  ton;
-                   InitialValue  :  20;
-               }
-               Variable x1 {
-                   Range         :  [min_wght, inf);
-                   Unit          :  ton;
-               }
+    Quantity SI_Mass {
+        BaseUnit      :  kg;
+        Conversions   :  ton -> kg : # -> # * 1000;
+    }
+    Parameter min_wght {
+        Unit          :  ton;
+        InitialValue  :  20;
+    }
+    Variable x1 {
+        Range         :  [min_wght, inf);
+        Unit          :  ton;
+    }
 
-    Then if we run the following code 
+Then if we run the following code 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Column::SetLowerBound( 'MP', x1, 20 [ton] );
-               lb1 := GMP::Column::GetLowerBound( 'MP', x1 );
-               display lb1;
+    GMP::Column::SetLowerBound( 'MP', x1, 20 [ton] );
+    lb1 := GMP::Column::GetLowerBound( 'MP', x1 );
+    display lb1;
 
-               GMP::Column::SetLowerBound( 'MP', x1, 30 );
-               lb2 := GMP::Column::GetLowerBound( 'MP', x1 );
-               display lb2;
+    GMP::Column::SetLowerBound( 'MP', x1, 30 );
+    lb2 := GMP::Column::GetLowerBound( 'MP', x1 );
+    display lb2;
 
-               GMP::Column::SetLowerBound( 'MP', x1, 40 * GMP::Column::GetScale( 'MP', x1 ) );
-               lb3 := GMP::Column::GetLowerBound( 'MP', x1 );
-               display lb3;
-    
-    (where 'lb1', 'lb2' and 'lb3' are parameters without a unit) we get the following results: 
-    
-    .. code-block:: aimms
+    GMP::Column::SetLowerBound( 'MP', x1, 40 * GMP::Column::GetScale( 'MP', x1 ) );
+    lb3 := GMP::Column::GetLowerBound( 'MP', x1 );
+    display lb3;
 
-               lb1 := 20 ;
+(where ``lb1``, ``lb2`` and ``lb3`` are parameters without a unit) we get the following results: 
 
-               lb2 := 0.030 ;
+.. code-block:: aimms
 
-               lb3 := 40 ;
+    lb1 := 20 ;
+
+    lb2 := 0.030 ;
+
+    lb3 := 40 ;
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetLowerBoundMulti`, :aimms:func:`GMP::Column::SetLowerBoundRaw`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::GetLowerBound` and :aimms:func:`GMP::Column::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetLowerBoundMulti`, :aimms:func:`GMP::Column::SetLowerBoundRaw`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::GetLowerBound` and :aimms:func:`GMP::Column::GetScale`.

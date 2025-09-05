@@ -70,4 +70,4 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Instance::CreatePresolved`.
+    - The function :aimms:func:`GMP::Instance::CreatePresolved`.

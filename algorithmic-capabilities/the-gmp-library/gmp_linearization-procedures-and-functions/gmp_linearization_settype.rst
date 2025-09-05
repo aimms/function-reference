@@ -43,4 +43,4 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Linearization::GetType`.
+    - The function :aimms:func:`GMP::Linearization::GetType`.

@@ -23,7 +23,7 @@ Arguments
 
     *DirectoryName*
         The name of the directory containing the problems to be tuned. All
-        problems with file format '.mps', '.lp' or '.sav' inside the directory
+        problems with file format ``.mps``, ``.lp`` or ``.sav`` inside the directory
         will be used.
 
     *Solver*
@@ -68,26 +68,24 @@ Return Value
 Example
 -------
 
-    Assume we have a set 'FixedOptions' defined as: 
+Assume we have a set ``FixedOptions`` defined as: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Set FixedOptions {
-                   SubsetOf   :  AllOptions;
-                   Definition :  data { 'CPLEX 12.10::mip_search_strategy' };
-               }
+    Set FixedOptions {
+        SubsetOf   :  AllOptions;
+        Definition :  data { 'CPLEX 12.10::mip_search_strategy' };
+    }
 
-    Using
-    CPLEX 12.10 we tune all '.mps', '.lp' and '.sav' problems inside the
-    directory 'Set1' by executing: 
+Using CPLEX 12.10 we tune all ``.mps``, ``.lp`` and ``.sav`` problems inside the
+directory ``Set1`` by executing: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Tuning::TuneMultipleMPS( "Set1", 'CPLEX 12.10', FixedOptions );
+            GMP::Tuning::TuneMultipleMPS( "Set1", 'CPLEX 12.10', FixedOptions );
 
-    Note that the opion 'mip
-    search strategy' is fixed and will not be tuned.
+Note that the option ``mip search strategy`` is fixed and will not be tuned.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Tuning::SolveSingleMPS` and :aimms:func:`GMP::Tuning::TuneSingleGMP`.
+    - The routines :aimms:func:`GMP::Tuning::SolveSingleMPS` and :aimms:func:`GMP::Tuning::TuneSingleGMP`.

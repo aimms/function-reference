@@ -112,66 +112,66 @@ Return Value
 Example
 -------
 
-    Assume that 'prod03' is a mathematical program with the following
-    declaration (in aim format): 
+Assume that ``prod03`` is a mathematical program with the following
+declaration (in aim format): 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Variable i1 {
-                   Range      :  {
-                       {1..5}
-                   }
-               }
-               Variable i2 {
-                   Range      :  {
-                       {1..5}
-                   }
-               }
-               Variable objvar;
-               Constraint e1 {
-                   Definition :  - 3*i1 - 2*i2 + objvar = 0;
-               }
-               Constraint e2 {
-                   Definition :  - i1*i2 <= -3.5;
-               }
-               MathematicalProgram prod03 {
-                   Objective  :  objvar;
-                   Direction  :  minimize;
-                   Type       :  MINLP;
-               }
+    Variable i1 {
+        Range      :  {
+            {1..5}
+        }
+    }
+    Variable i2 {
+        Range      :  {
+            {1..5}
+        }
+    }
+    Variable objvar;
+    Constraint e1 {
+        Definition :  - 3*i1 - 2*i2 + objvar = 0;
+    }
+    Constraint e2 {
+        Definition :  - i1*i2 <= -3.5;
+    }
+    MathematicalProgram prod03 {
+        Objective  :  objvar;
+        Direction  :  minimize;
+        Type       :  MINLP;
+    }
 
-    Assume that AIMMS has executed
-    the following code in which a mathematical program instance 'gmp1' is
-    generated from 'prod03', its integer variables are relaxed, and it is
-    solved. 
+Assume that AIMMS has executed
+the following code in which a mathematical program instance ``gmp1`` is
+generated from ``prod03``, its integer variables are relaxed, and it is
+solved. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               gmp1 := GMP::Instance::Generate(prod03);
-               GMP::Instance::SetMathematicalProgrammingType(gmp1,'RMINLP');
-               GMP::Instance::Solve(gmp1);
+    gmp1 := GMP::Instance::Generate(prod03);
+    GMP::Instance::SetMathematicalProgrammingType(gmp1,'RMINLP');
+    GMP::Instance::Solve(gmp1);
 
-    The optimal solution is :math:`\verb|i1| = 1.528`
-    and :math:`\verb|i2| = 2.291`, with Jacobian values :math:`-2.291` and
-    :math:`-1.528` for :math:`\verb|i1|` and :math:`\verb|i2|` respectively.
-    This solution is stored at position 1 in the solution repository of
-    'gmp1'. If we have a second generated mathematical program 'gmp2' with
-    the same variables as 'gmp1' then 
+The optimal solution is :math:`\verb|i1| = 1.528`
+and :math:`\verb|i2| = 2.291`, with Jacobian values :math:`-2.291` and
+:math:`-1.528` for :math:`\verb|i1|` and :math:`\verb|i2|` respectively.
+This solution is stored at position 1 in the solution repository of
+``gmp1``. If we have a second generated mathematical program ``gmp2`` with
+the same variables as ``gmp1`` then 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Linearization::AddSingle(gmp2,gmp1,1,e2,0,0,1);
+    GMP::Linearization::AddSingle(gmp2,gmp1,1,e2,0,0,1);
 
-    will add a row 
+will add a row 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               e2.ExtendedConstraint('Linearization1'):
-                  - 2.291 * i1 - 1.528 * i2 <= -7 ;
+    e2.ExtendedConstraint('Linearization1'):
+        - 2.291 * i1 - 1.528 * i2 <= -7 ;
 
-        to 'gmp2'.
+to ``gmp2``.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Linearization::Add` and :aimms:func:`GMP::Linearization::Delete`. See :ref:`sec:matrix.extended` of the Language
-    Reference for more details on extended suffixes.
+    - The routines :aimms:func:`GMP::Linearization::Add` and :aimms:func:`GMP::Linearization::Delete`. 
+    - See :ref:`sec:matrix.extended` of the Language Reference for more details on extended suffixes.

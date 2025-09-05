@@ -27,4 +27,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::SolverSession::Execute` and :aimms:func:`GMP::SolverSession::GetSolverStatus`.
+    - The routines :aimms:func:`GMP::SolverSession::Execute` and :aimms:func:`GMP::SolverSession::GetSolverStatus`.

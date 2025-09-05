@@ -44,4 +44,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::IsPrimalDegenerated` and :aimms:func:`GMP::Solution::RetrieveFromSolverSession`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::IsPrimalDegenerated` and :aimms:func:`GMP::Solution::RetrieveFromSolverSession`.

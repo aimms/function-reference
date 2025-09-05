@@ -72,4 +72,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Instance::Solve`.
+    - The procedure :aimms:func:`GMP::Instance::Solve`.

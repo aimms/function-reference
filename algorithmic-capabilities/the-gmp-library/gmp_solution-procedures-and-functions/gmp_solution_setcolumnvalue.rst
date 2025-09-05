@@ -63,49 +63,49 @@ Return Value
 Example
 -------
 
-    Assume we have a GMP for which we have two solutions in the solution
-    repository at positions 1 and 2. Our goal is to add up the level values
-    of each column in the solutions, and place the result in the solution at
-    position 3 in the solution repository. This can be done in a generic way
-    using the function :aimms:func:`GMP::Instance::GetColumnNumbers` as follows. Here
-    ``ColumnNrs`` is a subset of :aimms:set:`Integers` with index ``c``. 
+Assume we have a GMP for which we have two solutions in the solution
+repository at positions 1 and 2. Our goal is to add up the level values
+of each column in the solutions, and place the result in the solution at
+position 3 in the solution repository. This can be done in a generic way
+using the function :aimms:func:`GMP::Instance::GetColumnNumbers` as follows. Here
+``ColumnNrs`` is a subset of :aimms:set:`Integers` with index ``c``. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               ! Get the column numbers of all variables in myGMP.
-               ColumnNrs := GMP::Instance::GetColumnNumbers( myGMP, AllVariables );
+    ! Get the column numbers of all variables in myGMP.
+    ColumnNrs := GMP::Instance::GetColumnNumbers( myGMP, AllVariables );
 
-               for ( c ) do
-                   ! Get level value of column c in solution 1.
-                   val1 := GMP::Solution::GetColumnValue( myGMP, 1, c );
-                   ! Get level value of column c in solution 2.
-                   val2 := GMP::Solution::GetColumnValue( myGMP, 2, c );
+    for ( c ) do
+        ! Get level value of column c in solution 1.
+        val1 := GMP::Solution::GetColumnValue( myGMP, 1, c );
+        ! Get level value of column c in solution 2.
+        val2 := GMP::Solution::GetColumnValue( myGMP, 2, c );
 
-                   ! Assign the sum to column c in solution 3.
-                   GMP::Solution::SetColumnValue( myGMP, 3, c, val1 + val2 );
-               endfor;
+        ! Assign the sum to column c in solution 3.
+        GMP::Solution::SetColumnValue( myGMP, 3, c, val1 + val2 );
+    endfor;
 
-               ! Send solution 3 to the (symbolic) model identifiers.
-               GMP::Solution::SendToModel( myGMP, 3 );
+    ! Send solution 3 to the (symbolic) model identifiers.
+    GMP::Solution::SendToModel( myGMP, 3 );
 
-    In
-    the next example, we use the current level values of the variable
-    ``JobSchedule`` as variable hints: 
+In
+the next example, we use the current level values of the variable
+``JobSchedule`` as variable hints: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generate( FlowShopModel );
+    myGMP := GMP::Instance::Generate( FlowShopModel );
 
-               for (j,s) do
-                   GMP::Solution::SetColumnValue( myGMP, 1, JobSchedule(j,s),
-                                                  JobSchedule(j,s).level, 2 );
-                   GMP::Solution::SetColumnValue( myGMP, 1, JobSchedule(j,s), 10, 3 );
-               endfor;
+    for (j,s) do
+        GMP::Solution::SetColumnValue( myGMP, 1, JobSchedule(j,s),
+                                        JobSchedule(j,s).level, 2 );
+        GMP::Solution::SetColumnValue( myGMP, 1, JobSchedule(j,s), 10, 3 );
+    endfor;
 
-               GMP::Instance::Solve( myGMP );
+    GMP::Instance::Solve( myGMP );
 
-    In this example the hint
-    priority for ``JobSchedule`` is set to 10.
+In this example the hint
+priority for ``JobSchedule`` is set to 10.
 
 .. seealso::
 

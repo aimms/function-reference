@@ -54,29 +54,29 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program and 'gmpMP' and 'gmpPre' are
-    element parameters with range :aimms:set:`AllGeneratedMathematicalPrograms`. To solve the presolved model
-    using GMP functions we can use: 
+Assume that ``MP`` is a mathematical program and ``gmpMP`` and ``gmpPre`` are
+element parameters with range :aimms:set:`AllGeneratedMathematicalPrograms`. To solve the presolved model
+using GMP functions we can use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               gmpMP := GMP::Instance::Generate( MP );
-               gmpPre := GMP::Instance::CreatePresolved( gmpMP, "PresolvedModel" );
+    gmpMP := GMP::Instance::Generate( MP );
+    gmpPre := GMP::Instance::CreatePresolved( gmpMP, "PresolvedModel" );
 
-               GMP::Instance::Solve( gmpPre ) ;
+    GMP::Instance::Solve( gmpPre ) ;
 
-    In case the GMP variant of
-    the AOA module is used we can use: 
+In case the GMP variant of
+the AOA module is used we can use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               gmpMP := GMP::Instance::Generate( MP );
-               gmpPre := GMP::Instance::CreatePresolved( gmpMP, "PresolvedModel" );
+    gmpMP := GMP::Instance::Generate( MP );
+    gmpPre := GMP::Instance::CreatePresolved( gmpMP, "PresolvedModel" );
 
-               GMPOuterApprox::DoOuterApproximation( gmpPre );
+    GMPOuterApprox::DoOuterApproximation( gmpPre );
 
-    Here 'GMPOuterApprox' is
-    the prefix used by the GMP Outer Approximation Module.
+Here ``GMPOuterApprox`` is
+the prefix used by the GMP Outer Approximation Module.
 
 .. seealso::
 

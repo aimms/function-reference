@@ -71,17 +71,17 @@ Return Value
 Example
 -------
 
-    Assume that 'MaxSes' is a parameter then the following statement returns
-    the maximal number of asynchronous solver sessions for CPLEX:
+Assume that ``MaxSes`` is a parameter then the following statement returns
+the maximal number of asynchronous solver sessions for CPLEX:
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               MaxSes := GMP::Solver::GetAsynchronousSessionsLimit( 'CPLEX 22.1' );
+    MaxSes := GMP::Solver::GetAsynchronousSessionsLimit( 'CPLEX 22.1' );
 
-    The value MaxSes is the limit on asynchronous solver
-    sessions that can run at the same time with CPLEX 22.1 plus CPLEX 20.1
-    plus CPLEX 12.10, etc.
+The value MaxSes is the limit on asynchronous solver
+sessions that can run at the same time with CPLEX 22.1 plus CPLEX 20.1
+plus CPLEX 12.10, etc.
 
 .. seealso::
 
-    The routine :aimms:func:`GMP::SolverSession::AsynchronousExecute`.
+    - The routine :aimms:func:`GMP::SolverSession::AsynchronousExecute`.

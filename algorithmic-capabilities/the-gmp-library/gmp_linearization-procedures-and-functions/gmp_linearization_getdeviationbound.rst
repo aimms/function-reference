@@ -40,4 +40,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Linearization::SetDeviationBound` and :aimms:func:`GMP::Linearization::GetDeviation`.
+    - The routines :aimms:func:`GMP::Linearization::SetDeviationBound` and :aimms:func:`GMP::Linearization::GetDeviation`.

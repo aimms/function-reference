@@ -75,5 +75,5 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Row::SetPoolTypeMulti`. The lazy constraint pool and the cut pool are
-    explained in full detail in :ref:`sec:var.constr.indicator` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The procedure :aimms:func:`GMP::Row::SetPoolTypeMulti`. 
+    - The lazy constraint pool and the cut pool are explained in full detail in :ref:`sec:var.constr.indicator` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.

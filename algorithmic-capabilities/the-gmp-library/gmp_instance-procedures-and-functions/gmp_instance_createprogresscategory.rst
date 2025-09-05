@@ -58,4 +58,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::ProgressWindow::DeleteCategory` and :aimms:func:`GMP::SolverSession::CreateProgressCategory`.
+    - The routines :aimms:func:`GMP::ProgressWindow::DeleteCategory` and :aimms:func:`GMP::SolverSession::CreateProgressCategory`.

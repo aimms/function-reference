@@ -65,28 +65,28 @@ Return Value
 Example
 -------
 
-    To set the coefficients of variable ``x(j)`` in constraint ``c(i)`` to
-    ``coef(i,j)`` we can use: 
+To set the coefficients of variable ``x(j)`` in constraint ``c(i)`` to
+``coef(i,j)`` we can use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               for (i,j) do
-                   GMP::Column::Set( myGMP, c(i), x(j), coef(i,j) );
-               endfor;
+    for (i,j) do
+        GMP::Column::Set( myGMP, c(i), x(j), coef(i,j) );
+    endfor;
 
-    It is more efficient to use:
+It is more efficient to use:
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Coefficient::SetMulti( myGMP, (i,j), c(i), x(j), coef(i,j) );
+    GMP::Coefficient::SetMulti( myGMP, (i,j), c(i), x(j), coef(i,j) );
 
-    If we only want to set the coefficients of those ``x(j)``
-    for which ``dom(j)`` is unequal to zero, then we use: 
+If we only want to set the coefficients of those ``x(j)``
+for which ``dom(j)`` is unequal to zero, then we use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Coefficient::SetMulti( myGMP, (i,j) | dom(j), c(i), x(j), coef(i,j) );
+    GMP::Coefficient::SetMulti( myGMP, (i,j) | dom(j), c(i), x(j), coef(i,j) );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Coefficient::Get`, :aimms:func:`GMP::Coefficient::Set` and :aimms:func:`GMP::QuadraticCoefficient::Set`.
+    - The routines :aimms:func:`GMP::Coefficient::Get`, :aimms:func:`GMP::Coefficient::Set` and :aimms:func:`GMP::QuadraticCoefficient::Set`.

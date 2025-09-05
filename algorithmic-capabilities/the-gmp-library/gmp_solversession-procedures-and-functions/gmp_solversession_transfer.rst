@@ -44,4 +44,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::CreateSolverSession`, :aimms:func:`GMP::Instance::GenerateStochasticProgram` and :aimms:func:`GMP::Stochastic::BendersFindReference`.
+    - The routines :aimms:func:`GMP::Instance::CreateSolverSession`, :aimms:func:`GMP::Instance::GenerateStochasticProgram` and :aimms:func:`GMP::Stochastic::BendersFindReference`.

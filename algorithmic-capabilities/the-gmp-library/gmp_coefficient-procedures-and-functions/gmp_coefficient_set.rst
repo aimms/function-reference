@@ -62,38 +62,38 @@ Return Value
 Example
 -------
 
-    Assume that we have the following variable and constraint declarations
-    (in ams format):. 
+Assume that we have the following variable and constraint declarations
+(in ams format):. 
 
-      .. code-block:: aimms
+.. code-block:: aimms
 
-                 Variable y;
-                 Variable z;
-                 Variable x1;
-                 Constraint c1 {
-                     Definition: x1 - 2*y - 3*z = 0;
-                 }
-                 Variable x2 {
-                     Definition: 2*y + 3*z;
-                 }
+    Variable y;
+    Variable z;
+    Variable x1;
+    Constraint c1 {
+        Definition: x1 - 2*y - 3*z = 0;
+    }
+    Variable x2 {
+        Definition: 2*y + 3*z;
+    }
 
-    To change the coefficient of variable ``y`` in constraint ``c1`` to 4 we use:
+To change the coefficient of variable ``y`` in constraint ``c1`` to 4 we use:
 
-      .. code-block:: aimms
+.. code-block:: aimms
 
-                 GMP::Coefficient::Set( myGMP, c1, y, 4 );
+    GMP::Coefficient::Set( myGMP, c1, y, 4 );
 
-    This results in the row ``x1 + 4*y - 3*z = 0``.
+This results in the row ``x1 + 4*y - 3*z = 0``.
 
-    The definition of variable ``x2`` is generated as the row
-    ``x2 - 2*y - 3*z = 0`` by AIMMS. Therefore, using
+The definition of variable ``x2`` is generated as the row
+``x2 - 2*y - 3*z = 0`` by AIMMS. Therefore, using
 
-      .. code-block:: aimms
+.. code-block:: aimms
 
-                 GMP::Coefficient::Set( myGMP, x2_definition, y, -4 );
+    GMP::Coefficient::Set( myGMP, x2_definition, y, -4 );
 
-    will result in the row ``x2 - 4*y - 3*z = 0``.
+will result in the row ``x2 - 4*y - 3*z = 0``.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Coefficient::Get`, :aimms:func:`GMP::Coefficient::SetMulti`, :aimms:func:`GMP::Coefficient::SetRaw` and :aimms:func:`GMP::QuadraticCoefficient::Set`.
+    - The routines :aimms:func:`GMP::Coefficient::Get`, :aimms:func:`GMP::Coefficient::SetMulti`, :aimms:func:`GMP::Coefficient::SetRaw` and :aimms:func:`GMP::QuadraticCoefficient::Set`.

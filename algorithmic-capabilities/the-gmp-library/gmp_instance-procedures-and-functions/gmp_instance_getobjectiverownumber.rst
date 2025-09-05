@@ -41,23 +41,23 @@ Return Value
 Example
 -------
 
-    Assume that we want to change the coefficients of all integer variables
-    in the objective to 10. This can be done as follows. 
+Assume that we want to change the coefficients of all integer variables
+in the objective to 10. This can be done as follows. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               RowNo := GMP::Instance::GetObjectiveRowNumber( myGMP );
+    RowNo := GMP::Instance::GetObjectiveRowNumber( myGMP );
 
-               ColNrs := GMP::Instance::GetColumnNumbers( myGMP, AllIntegerVariables );
+    ColNrs := GMP::Instance::GetColumnNumbers( myGMP, AllIntegerVariables );
 
-               for (c) do
-                   GMP::Coefficient::Set( myGMP, RowNo, c, 10 );
-               endfor;
+    for (c) do
+        GMP::Coefficient::Set( myGMP, RowNo, c, 10 );
+    endfor;
 
-    Here
-    ``RowNo`` is an element parameter with range :aimms:set:`Integers` and ``ColNrs`` a
-    subset of :aimms:set:`Integers` with index ``c``.
+Here
+``RowNo`` is an element parameter with range :aimms:set:`Integers` and ``ColNrs`` a
+subset of :aimms:set:`Integers` with index ``c``.
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Instance::GetObjectiveColumnNumber` and :aimms:func:`GMP::Instance::GetRowNumbers`.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Instance::GetObjectiveColumnNumber` and :aimms:func:`GMP::Instance::GetRowNumbers`.

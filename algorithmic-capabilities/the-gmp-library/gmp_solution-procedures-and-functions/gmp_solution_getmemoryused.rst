@@ -38,4 +38,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Instance::SetMemoryLimit`.
+    - The procedure :aimms:func:`GMP::Instance::SetMemoryLimit`.

@@ -53,29 +53,30 @@ Return Value
 Example
 -------
 
-    Assume we have a GMP for which we want to multiply all shadow prices in
-    a solution by some value, say 10. This can be done in a generic way
-    using the function :aimms:func:`GMP::Instance::GetRowNumbers` as follows. Here
-    ``RowNrs`` is a subset of :aimms:set:`Integers` with index ``r``. 
+Assume we have a GMP for which we want to multiply all shadow prices in
+a solution by some value, say 10. This can be done in a generic way
+using the function :aimms:func:`GMP::Instance::GetRowNumbers` as follows. Here
+``RowNrs`` is a subset of :aimms:set:`Integers` with index ``r``. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               ! Get the row numbers of all constraints in myGMP.
-               RowNrs := GMP::Instance::GetRowNumbers( myGMP, AllConstraints );
+    ! Get the row numbers of all constraints in myGMP.
+    RowNrs := GMP::Instance::GetRowNumbers( myGMP, AllConstraints );
 
-               for ( r ) do
-                   ! Get shadow price of row r in solution 1.
-                   val := GMP::Solution::GetRowValue( myGMP, 1, r, valueType : 1 );
+    for ( r ) do
+        ! Get shadow price of row r in solution 1.
+        val := GMP::Solution::GetRowValue( myGMP, 1, r, valueType : 1 );
 
-                   ! Assign new value for shadow price to row r in solution 1.
-                   GMP::Solution::SetRowValue( myGMP, 1, r, 10 * val, valueType : 1 );
-               endfor;
+        ! Assign new value for shadow price to row r in solution 1.
+        GMP::Solution::SetRowValue( myGMP, 1, r, 10 * val, valueType : 1 );
+    endfor;
 
-               ! Send solution to the (symbolic) model identifiers.
-               GMP::Solution::SendToModel( myGMP, 1 );
+    ! Send solution to the (symbolic) model identifiers.
+    GMP::Solution::SendToModel( myGMP, 1 );
 
-    Note:
-    the shadow prices will only be stored in the data structures of the
+.. note::
+    
+    The shadow prices will only be stored in the data structures of the
     constraints if the ``ShadowPrice`` property of the variables is set, or
     if the option ``Always_Store_Marginals`` is set.
 

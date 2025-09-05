@@ -36,7 +36,7 @@ Arguments
         If 0, the sum of infeasibilities will be minimized, else the maximum
         infeasibility will be minimized.
 
-Mathematical formulation
+Mathematical Formulation
 ~~~~~~~~~~~~~~~~~~~~~~~~
 
 | In this section we show how the feasibility problem is constructed. To
@@ -130,4 +130,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Instance::Solve`.
+   - The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Instance::Solve`.

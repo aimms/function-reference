@@ -37,14 +37,14 @@ Return Value
 Example
 -------
 
-    Let ``ColNo`` be an element parameter with range :aimms:set:`Integers`. 
+Let ``ColNo`` be an element parameter with range :aimms:set:`Integers`. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               ColNo := GMP::Instance::GetObjectiveColumnNumber( myGMP );
+    ColNo := GMP::Instance::GetObjectiveColumnNumber( myGMP );
 
-               value := GMP::Solution::GetColumnValue( myGMP, 1, ColNo );
+    value := GMP::Solution::GetColumnValue( myGMP, 1, ColNo );
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Instance::GetObjectiveRowNumber` and :aimms:func:`GMP::Instance::GetRowNumbers`.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Instance::GetObjectiveRowNumber` and :aimms:func:`GMP::Instance::GetRowNumbers`.

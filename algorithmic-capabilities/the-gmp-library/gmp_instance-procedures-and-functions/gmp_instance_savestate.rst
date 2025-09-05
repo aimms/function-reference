@@ -36,4 +36,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Instance::RestoreState`.
+    - The procedure :aimms:func:`GMP::Instance::RestoreState`.

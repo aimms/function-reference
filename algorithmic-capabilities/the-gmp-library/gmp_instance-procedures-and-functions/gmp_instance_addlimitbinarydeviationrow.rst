@@ -78,58 +78,58 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program containing the binary variables *x(i)* and
-    *y(j)*. Furthermore, we have solved this mathematical program and found a solution but
-    now we want to resolve the mathematical program after we made some changes in the data,
-    resulting in a different generated mathematical program. However, we want to enforce
-    that the solution variables of the binary variables in the second solve does not change
-    much compared to the first solve. This can be achieved using the procedure
-    :aimms:func:`GMP::Instance::AddLimitBinaryDeviationRow`.
+Assume that ``MP`` is a mathematical program containing the binary variables ``x(i)`` and
+``y(j)``. Furthermore, we have solved this mathematical program and found a solution but
+now we want to resolve the mathematical program after we made some changes in the data,
+resulting in a different generated mathematical program. However, we want to enforce
+that the solution variables of the binary variables in the second solve does not change
+much compared to the first solve. This can be achieved using the procedure
+:aimms:func:`GMP::Instance::AddLimitBinaryDeviationRow`.
+
+To use this procedure we declare the following identifiers (in ams format):
+
+.. code-block:: aimms
+
+    ElementParameter myGMP {
+        Range: AllGeneratedMathematicalPrograms;
+    }
+    Set VarSet {
+        SubsetOf: AllIntegerVariables;
+    }
+
+If we want to enforce that at most 4 of the ``x(i)`` and ``y(j)`` variables can get different
+solution values compared to the first solve then we could use:
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate(MP);
     
-    To use this procedure we declare the following identifiers (in ams format):
+    GMP::Solution::RetrieveFromModel( myGMP, 1 );
+
+    VarSet := { 'x', 'y' };
+    GMP::Instance::AddLimitBinaryDeviationRow( myGMP, 1, varSet, 4, 1 );
+
+    GMP::Instance::Solve( myGMP );
+
+After executing this code, it could be that all ``x(i)`` variables get
+the same solution values as before and that 4 of the ``y(j)`` variables get different
+solution values. If we also want to add the restriction that at most 3 of the ``y(j)`` variables
+get different solution values then we should use:
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate(MP);
     
-    .. code-block:: aimms
+    GMP::Solution::RetrieveFromModel( myGMP, 1 );
 
-               ElementParameter myGMP {
-                   Range: AllGeneratedMathematicalPrograms;
-               }
-               Set VarSet {
-                   SubsetOf: AllIntegerVariables;
-               }
+    VarSet := { 'x', 'y' };
+    GMP::Instance::AddLimitBinaryDeviationRow( myGMP, 1, varSet, 4, 1 );
+    VarSet := { 'y' };
+    GMP::Instance::AddLimitBinaryDeviationRow( myGMP, 1, varSet, 3, 2 );
 
-    If we want to enforce that at most 4 of the *x(i)* and *y(j)* variables can get different
-    solution values compared to the first solve then we could use:
-
-    .. code-block:: aimms
-
-               myGMP := GMP::Instance::Generate(MP);
-               
-               GMP::Solution::RetrieveFromModel( myGMP, 1 );
-
-               VarSet := { 'x', 'y' };
-               GMP::Instance::AddLimitBinaryDeviationRow( myGMP, 1, varSet, 4, 1 );
-
-               GMP::Instance::Solve( myGMP );
-    
-    After executing this code, it could be that all *x(i)* variables get
-    the same solution values as before and that 4 of the *y(j)* variables get different
-    solution values. If we also want to add the restriction that at most 3 of the *y(j)* variables
-    get different solution values then we should use:
-    
-    .. code-block:: aimms
-
-               myGMP := GMP::Instance::Generate(MP);
-               
-               GMP::Solution::RetrieveFromModel( myGMP, 1 );
-
-               VarSet := { 'x', 'y' };
-               GMP::Instance::AddLimitBinaryDeviationRow( myGMP, 1, varSet, 4, 1 );
-               VarSet := { 'y' };
-               GMP::Instance::AddLimitBinaryDeviationRow( myGMP, 1, varSet, 3, 2 );
-
-               GMP::Instance::Solve( myGMP );
+    GMP::Instance::Solve( myGMP );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::DeleteIntegerEliminationRows`. See :ref:`sec:matrix.extended` of the Language
-    Reference for more details on extended suffixes.
+    - The routines :aimms:func:`GMP::Instance::DeleteIntegerEliminationRows`. 
+    - See :ref:`sec:matrix.extended` of the Language Reference for more details on extended suffixes.

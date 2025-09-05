@@ -50,4 +50,4 @@ Return Value
 
 .. seealso::
 
-    The routine :aimms:func:`GMP::Coefficient::Get`.
+    - The routine :aimms:func:`GMP::Coefficient::Get`.

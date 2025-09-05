@@ -61,4 +61,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Column::GetScale`, :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::GetRowValue` and :aimms:func:`GMP::Solution::SetColumnValue`.
+    - The routines :aimms:func:`GMP::Column::GetScale`, :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::GetRowValue` and :aimms:func:`GMP::Solution::SetColumnValue`.

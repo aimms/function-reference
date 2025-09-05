@@ -44,4 +44,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Solution::GetSolverStatus`, :aimms:func:`GMP::ProgressWindow::DisplayLine`, :aimms:func:`GMP::ProgressWindow::DisplayProgramStatus` and :aimms:func:`GMP::SolverSession::CreateProgressCategory`.
+    - The routines :aimms:func:`GMP::Solution::GetSolverStatus`, :aimms:func:`GMP::ProgressWindow::DisplayLine`, :aimms:func:`GMP::ProgressWindow::DisplayProgramStatus` and :aimms:func:`GMP::SolverSession::CreateProgressCategory`.

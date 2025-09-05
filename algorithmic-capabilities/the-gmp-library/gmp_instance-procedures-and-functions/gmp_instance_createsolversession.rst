@@ -58,4 +58,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::DeleteSolverSession`, :aimms:func:`GMP::Instance::SetSolver`, :aimms:func:`GMP::SolverSession::GetInstance` and :aimms:func:`GMP::SolverSession::GetSolver`.
+    - The routines :aimms:func:`GMP::Instance::DeleteSolverSession`, :aimms:func:`GMP::Instance::SetSolver`, :aimms:func:`GMP::SolverSession::GetInstance` and :aimms:func:`GMP::SolverSession::GetSolver`.

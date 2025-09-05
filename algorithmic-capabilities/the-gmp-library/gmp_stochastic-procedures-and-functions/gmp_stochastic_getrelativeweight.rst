@@ -42,5 +42,6 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::GenerateStochasticProgram` and :aimms:func:`GMP::Stochastic::GetRepresentativeScenario`. See :doc:`optimization-modeling-components/robust-optimization/basic-concepts` of the Language
-    Reference for more details on scenario tree, scenarios and stages.
+    - :aimms:func:`GMP::Instance::GenerateStochasticProgram`.
+    - :aimms:func:`GMP::Stochastic::GetRepresentativeScenario`. 
+    - See :doc:`optimization-modeling-components/robust-optimization/basic-concepts` of the Language Reference for more details on scenario tree, scenarios and stages.

@@ -42,4 +42,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::GetType`, :aimms:func:`GMP::Row::SetTypeMulti` and :aimms:func:`GMP::Row::SetTypeRaw`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::GetType`, :aimms:func:`GMP::Row::SetTypeMulti` and :aimms:func:`GMP::Row::SetTypeRaw`.

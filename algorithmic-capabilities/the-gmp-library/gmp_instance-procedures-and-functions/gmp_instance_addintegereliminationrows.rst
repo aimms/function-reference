@@ -107,33 +107,33 @@ Return Value
 Example
 -------
 
-    The procedure :aimms:func:`GMP::Instance::AddIntegerEliminationRows` can be used
-    to find the five best integer solutions for some MIP model: 
+The procedure :aimms:func:`GMP::Instance::AddIntegerEliminationRows` can be used
+to find the five best integer solutions for some MIP model: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               gmp_mip := GMP::Instance::Generate( MIP_Model );
+   gmp_mip := GMP::Instance::Generate( MIP_Model );
 
-               cnt := 1;
+   cnt := 1;
 
-               while ( cnt <= 5 ) do
-                   GMP::Instance::Solve( gmp_mip );
+   while ( cnt <= 5 ) do
+         GMP::Instance::Solve( gmp_mip );
 
-                   ! Eliminate previous found integer solution.
-                   GMP::Instance::AddIntegerEliminationRows( gmp_mip, 1, cnt );
+         ! Eliminate previous found integer solution.
+         GMP::Instance::AddIntegerEliminationRows( gmp_mip, 1, cnt );
 
-                   cnt += 1;
+         cnt += 1;
 
-                   ! Copy solution at position 1 to solution at position cnt
-                   ! in solution repository.
-                   GMP::Solution::Copy( gmp_mip, 1, cnt );
-               endwhile;
-    
-    After executing this code, the five best integer solutions will be
-    stored at positions 2 - 6 in the solution repository, with the best
-    solution at position 2 and the 5th best at position 6.
+         ! Copy solution at position 1 to solution at position cnt
+         ! in solution repository.
+         GMP::Solution::Copy( gmp_mip, 1, cnt );
+   endwhile;
+
+After executing this code, the five best integer solutions will be
+stored at positions 2 - 6 in the solution repository, with the best
+solution at position 2 and the 5th best at position 6.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::DeleteIntegerEliminationRows` and :aimms:func:`GMP::Solution::IsInteger`. See :ref:`sec:matrix.extended` of the Language
-    Reference for more details on extended suffixes.
+   - The routines :aimms:func:`GMP::Instance::DeleteIntegerEliminationRows` and :aimms:func:`GMP::Solution::IsInteger`. 
+   - See :ref:`sec:matrix.extended` of the Language Reference for more details on extended suffixes.

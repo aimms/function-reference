@@ -28,4 +28,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and the procedure :aimms:func:`GMP::Instance::SetDirection`.
+    - The routines :aimms:func:`GMP::Instance::Generate` and the procedure :aimms:func:`GMP::Instance::SetDirection`.

@@ -49,4 +49,6 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::GenerateStochasticProgram`, :aimms:func:`GMP::Stochastic::BendersFindReference` and :aimms:func:`GMP::Stochastic::CreateBendersRootproblem`.
+    - :aimms:func:`GMP::Instance::GenerateStochasticProgram`. 
+    - :aimms:func:`GMP::Stochastic::BendersFindReference`. 
+    - :aimms:func:`GMP::Stochastic::CreateBendersRootproblem`.

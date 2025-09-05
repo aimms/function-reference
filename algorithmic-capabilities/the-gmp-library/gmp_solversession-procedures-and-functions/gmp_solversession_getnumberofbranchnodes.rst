@@ -38,4 +38,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::SetCallbackBranch`.
+    - The routines :aimms:func:`GMP::Instance::SetCallbackBranch`.

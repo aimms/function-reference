@@ -51,4 +51,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::UnfreezeMulti`, :aimms:func:`GMP::Column::UnfreezeRaw`, :aimms:func:`GMP::Column::Freeze` and :aimms:func:`GMP::Instance::Copy`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::UnfreezeMulti`, :aimms:func:`GMP::Column::UnfreezeRaw`, :aimms:func:`GMP::Column::Freeze` and :aimms:func:`GMP::Instance::Copy`.

@@ -38,4 +38,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Row::GetIndicatorColumn`, :aimms:func:`GMP::Row::GetIndicatorCondition` and :aimms:func:`GMP::Row::SetIndicatorCondition`.
+    - The routines :aimms:func:`GMP::Row::GetIndicatorColumn`, :aimms:func:`GMP::Row::GetIndicatorCondition` and :aimms:func:`GMP::Row::SetIndicatorCondition`.

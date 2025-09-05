@@ -45,4 +45,4 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Linearization::GetWeight`.
+    - The function :aimms:func:`GMP::Linearization::GetWeight`.

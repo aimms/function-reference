@@ -44,5 +44,5 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Row::GetRelaxationOnly`. The ``RelaxationOnly`` suffix is explained in
-    full detail in :ref:`sec:var.constr.glob-suff` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
+    - The function :aimms:func:`GMP::Row::GetRelaxationOnly`. 
+    - The ``RelaxationOnly`` suffix is explained in full detail in :ref:`sec:var.constr.glob-suff` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.

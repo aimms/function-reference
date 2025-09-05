@@ -60,39 +60,42 @@ Return Value
 Example
 -------
 
-    The procedure :aimms:func:`GMP::SolverSession::GenerateBinaryEliminationRow` can
-    be used to enforce a MIP solver to branch a node that would have been
-    fathomed otherwise. We can achieve this by installing a branching
-    callback using procedure :aimms:func:`GMP::Instance::SetCallbackBranch` and adding
-    the following code to the callback procedure: 
+The procedure :aimms:func:`GMP::SolverSession::GenerateBinaryEliminationRow` can
+be used to enforce a MIP solver to branch a node that would have been
+fathomed otherwise. We can achieve this by installing a branching
+callback using procedure :aimms:func:`GMP::Instance::SetCallbackBranch` and adding
+the following code to the callback procedure: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               ! Get LP solution at the current node.
+    ! Get LP solution at the current node.
 
-               GMP::Solution::RetrieveFromSolverSession(ThisSession,1);
+    GMP::Solution::RetrieveFromSolverSession(ThisSession,1);
 
-               ! Get the number of nodes that the MIP solver wants to create from the
-               ! current branch.
+    ! Get the number of nodes that the MIP solver wants to create from the
+    ! current branch.
 
-               NrBranches := GMP::SolverSession::GetNumberOfBranchNodes(ThisSession);
+    NrBranches := GMP::SolverSession::GetNumberOfBranchNodes(ThisSession);
 
-               if ( NrBranches = 0 ) then
+    if ( NrBranches = 0 ) then
 
-                   ! The LP solution at the current node appears to be integer feasible.
-                   ! We enforce the MIP solver to branch the current node by creating a
-                   ! branch containing one constraint that cuts off this LP solution.
+        ! The LP solution at the current node appears to be integer feasible.
+        ! We enforce the MIP solver to branch the current node by creating a
+        ! branch containing one constraint that cuts off this LP solution.
 
-                   GMP::SolverSession::GenerateBinaryEliminationRow(ThisSession,1,1);
+        GMP::SolverSession::GenerateBinaryEliminationRow(ThisSession,1,1);
 
-               endif;
-               
-               return 1;
+    endif;
+    
+    return 1;
 
-    Here
-    'ThisSession' is an input argument of the callback procedure and a
-    scalar element parameter into the set :aimms:set:`AllSolverSessions`.
+Here ``ThisSession`` is an input argument of the callback procedure and a
+scalar element parameter into the set :aimms:set:`AllSolverSessions`.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::AddIntegerEliminationRows`, :aimms:func:`GMP::Instance::SetCallbackAddCut`, :aimms:func:`GMP::Instance::SetCallbackBranch`, :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint` and :aimms:func:`GMP::SolverSession::GetNumberOfBranchNodes`.
+    - :aimms:func:`GMP::Instance::AddIntegerEliminationRows`.
+    - :aimms:func:`GMP::Instance::SetCallbackAddCut`. 
+    - :aimms:func:`GMP::Instance::SetCallbackBranch`.
+    - :aimms:func:`GMP::Instance::SetCallbackAddLazyConstraint`. 
+    - :aimms:func:`GMP::SolverSession::GetNumberOfBranchNodes`.

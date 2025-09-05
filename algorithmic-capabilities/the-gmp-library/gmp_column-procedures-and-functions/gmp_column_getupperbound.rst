@@ -44,46 +44,46 @@ Return Value
 Example
 -------
 
-    Assume that 'x1' is a variable in mathematical program 'MP' with a unit
-    as defined by: 
+Assume that ``x1`` is a variable in mathematical program ``MP`` with a unit
+as defined by: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Quantity SI_Mass {
-                   BaseUnit      :  kg;
-                   Conversions   :  ton -> kg : # -> # * 1000;
-               }
-               Parameter max_wght {
-                   Unit          :  ton;
-                   InitialValue  :  20;
-               }
-               Variable x1 {
-                   Range         :  [0, max_wght];
-                   Unit          :  ton;
-               }
+            Quantity SI_Mass {
+                BaseUnit      :  kg;
+                Conversions   :  ton -> kg : # -> # * 1000;
+            }
+            Parameter max_wght {
+                Unit          :  ton;
+                InitialValue  :  20;
+            }
+            Variable x1 {
+                Range         :  [0, max_wght];
+                Unit          :  ton;
+            }
 
-    If we want to multiply the upper bound by 1.5
-    and assign it as the new value by using function
-    :aimms:func:`GMP::Column::SetUpperBound` we can use 
+If we want to multiply the upper bound by 1.5
+and assign it as the new value by using function
+:aimms:func:`GMP::Column::SetUpperBound` we can use 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               ub1 := 1.5 * (GMP::Column::GetUpperBound( 'MP', x1 )) [ton];
+            ub1 := 1.5 * (GMP::Column::GetUpperBound( 'MP', x1 )) [ton];
 
-               GMP::Column::SetUpperBound( 'MP', x1, ub1 );
+            GMP::Column::SetUpperBound( 'MP', x1, ub1 );
 
-    if 'ub1' is a
-    parameter with unit [ton], or we can use 
+if ``ub1`` is a
+parameter with unit ``[ton]``, or we can use 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               ub2 := 1.5 * GMP::Column::GetUpperBound( 'MP', x1 );
+            ub2 := 1.5 * GMP::Column::GetUpperBound( 'MP', x1 );
 
-               GMP::Column::SetUpperBound( 'MP', x1, ub2 * GMP::Column::GetScale( 'MP', x1 ) );
+            GMP::Column::SetUpperBound( 'MP', x1, ub2 * GMP::Column::GetScale( 'MP', x1 ) );
 
-    if 'ub2' is a
-    parameter without a unit.
+if ``ub2`` is a 
+parameter without a unit.
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::GetLowerBound`, :aimms:func:`GMP::Column::GetScale` and :aimms:func:`GMP::Instance::CreatePresolved`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::GetLowerBound`, :aimms:func:`GMP::Column::GetScale` and :aimms:func:`GMP::Instance::CreatePresolved`.

@@ -36,4 +36,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::SolverSession::GetIterationsUsed` and :aimms:func:`GMP::Solution::SetProgramStatus`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::SolverSession::GetIterationsUsed` and :aimms:func:`GMP::Solution::SetProgramStatus`.

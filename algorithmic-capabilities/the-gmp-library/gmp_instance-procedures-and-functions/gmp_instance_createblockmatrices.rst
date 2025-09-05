@@ -102,161 +102,160 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program with the following
-    declaration (in ams format): 
+Assume that ``MP`` is a mathematical program with the following
+declaration (in ams format): 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Set Periods {
-                   Index: t;
-                   Definition: {
-                       { 'per-1', 'per-2', 'per-3' }
-                   }
-               }
-               Variable x {
-                   IndexDomain: t;
-                   Range: nonnegative;
-               }
-               Variable y {
-                   IndexDomain: t;
-                   Range: nonnegative;
-               }
-               Variable obj {
-                   Definition: sum( t, 7 * x(t) - 2 * y(t) );
-               }
-               Constraint c1 {
-                   IndexDomain: t;
-                   Definition: - x(t) + 2 * y(t) <= 4;
-               }
-               MathematicalProgram MP {
-                   Objective: obj;
-                   Direction: minimize;
-                   Type: LP;
-               }
+    Set Periods {
+        Index: t;
+        Definition: {
+            { 'per-1', 'per-2', 'per-3' }
+        }
+    }
+    Variable x {
+        IndexDomain: t;
+        Range: nonnegative;
+    }
+    Variable y {
+        IndexDomain: t;
+        Range: nonnegative;
+    }
+    Variable obj {
+        Definition: sum( t, 7 * x(t) - 2 * y(t) );
+    }
+    Constraint c1 {
+        IndexDomain: t;
+        Definition: - x(t) + 2 * y(t) <= 4;
+    }
+    MathematicalProgram MP {
+        Objective: obj;
+        Direction: minimize;
+        Type: LP;
+    }
 
-    To use
-    :aimms:func:`GMP::Instance::CreateBlockMatrices` we declare the following identifiers
-    (in ams format):
+To use
+:aimms:func:`GMP::Instance::CreateBlockMatrices` we declare the following identifiers
+(in ams format):
+
+.. code-block:: aimms
+
+    ElementParameter myGMP {
+        Range: AllGeneratedMathematicalPrograms;
+    }
+    Set GMPset {
+        SubsetOf: AllGeneratedMathematicalPrograms;
+        Parameter: CurrentGMP;
+    }
+    ElementParameter session {
+        Range: AllSolverSessions;
+    }
+    Set ColumnSet {
+        SubsetOf: Integers;
+        Index: cc;
+    }
+    Parameter BlockVals {
+        IndexDomain: cc;
+    }
+    StringParameter ColumnName {
+        IndexDomain: cc;
+    }
+    Parameter MergeSolution {
+        Range: Binary;
+    }
+
+To create block matrices and solve them to create a solution for the original model
+we can use: 
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate( MP );
     
-    .. code-block:: aimms
-
-               ElementParameter myGMP {
-                   Range: AllGeneratedMathematicalPrograms;
-               }
-               Set GMPset {
-                   SubsetOf: AllGeneratedMathematicalPrograms;
-                   Parameter: CurrentGMP;
-               }
-               ElementParameter session {
-                   Range: AllSolverSessions;
-               }
-               Set ColumnSet {
-                   SubsetOf: Integers;
-                   Index: cc;
-               }
-               Parameter BlockVals {
-                   IndexDomain: cc;
-               }
-               StringParameter ColumnName {
-                   IndexDomain: cc;
-               }
-               Parameter MergeSolution {
-                   Range: Binary;
-               }
-
-    To create block matrices and solve them to create a solution for the original model
-    we can use: 
-
-    .. code-block:: aimms
-
-               myGMP := GMP::Instance::Generate( MP );
-               
-               ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, AllVariables );
-               
-               for (cc) do
-                   ColumnName(cc) := GMP::Column::GetName( myGMP, cc );
-               endfor;
-               
-               BlockVals(cc) := 0;
-               
-               for (cc) do
-                   if ( FindString( ColumnName(cc), "per-1" ) ) then
-                       BlockVals(cc) := 1;
-                   elseif ( FindString( ColumnName(cc), "per-2" ) ) then
-                       BlockVals(cc) := 2;
-                   else
-                       BlockVals(cc) := 3;
-                   endif;
-               endfor;
-               
-               GMPset := GMP::Instance::CreateBlockMatrices( myGMP, ColumnSet, BlockVals, "block-" );
-               
-               MergeSolution := 0;
-               
-               while ( Card(GMPset) >= 1 ) do
-                   CurrentGMP := First(GMPset);
-               
-                   session := GMP::Instance::CreateSolverSession( CurrentGMP );
-               
-               	   GMP::SolverSession::Execute( session );
-               
-                   GMP::Solution::RetrieveFromSolverSession( session, 1 );
-                   if ( Card(GMPset) = 1 ) then
-    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 1 );
-                   else
-    	               GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 0 );
-                   endif;
-               
-                   GMP::Instance::Delete( CurrentGMP );   ! Also deletes session
-                   
-                   MergeSolution := 1;
-               endwhile;
-               
-               GMP::Instance::Delete( myGMP );
-
-    The above piece of code creates three block GMP's (with names "block-1", "block-2" and "block-3").
-    This is also the case if 'ColumnSet' or 'BlockVals' would have been empty. If we assign the block
-    values as follows then only two blocks will be created:
-
-    .. code-block:: aimms
-
-               BlockVals(cc) := 0;
-               
-               for (cc) do
-                   if ( FindString( ColumnName(cc), "per-1" ) ) then
-                       BlockVals(cc) := 1;
-                   else
-                       BlockVals(cc) := 2;
-                   endif;
-               endfor;
-
-    In this case the columns corresponding to the periods "per-2" and "per-3" will be assigned to the
-    same block GMP (with the name "block-2").
+    ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, AllVariables );
     
-    The parameter 'MergeSolution' is set to 0 for the first block GMP, otherwise the solution will be
-    merged with an old solution (if one exists).
+    for (cc) do
+        ColumnName(cc) := GMP::Column::GetName( myGMP, cc );
+    endfor;
     
-    Note: the first piece of code is optimized for mathematical programs with inline variables because
-    it contains the following code snippet:
-
-    .. code-block:: aimms
-
-               GMP::Solution::RetrieveFromSolverSession( session, 1 );
-               if ( Card(GMPset) = 1 ) then
-    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 1 );
-               else
-    	           GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 0 );
-               endif;
+    BlockVals(cc) := 0;
     
-    If your mathematical program does not contain any inline variables then you can use the following
-    code instead:
+    for (cc) do
+        if ( FindString( ColumnName(cc), "per-1" ) ) then
+            BlockVals(cc) := 1;
+        elseif ( FindString( ColumnName(cc), "per-2" ) ) then
+            BlockVals(cc) := 2;
+        else
+            BlockVals(cc) := 3;
+        endif;
+    endfor;
+    
+    GMPset := GMP::Instance::CreateBlockMatrices( myGMP, ColumnSet, BlockVals, "block-" );
+    
+    MergeSolution := 0;
+    
+    while ( Card(GMPset) >= 1 ) do
+        CurrentGMP := First(GMPset);
+    
+        session := GMP::Instance::CreateSolverSession( CurrentGMP );
+    
+        GMP::SolverSession::Execute( session );
+    
+        GMP::Solution::RetrieveFromSolverSession( session, 1 );
+        if ( Card(GMPset) = 1 ) then
+            GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 1 );
+        else
+            GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 0 );
+        endif;
+    
+        GMP::Instance::Delete( CurrentGMP );   ! Also deletes session
+        
+        MergeSolution := 1;
+    endwhile;
+    
+    GMP::Instance::Delete( myGMP );
 
-    .. code-block:: aimms
+The above piece of code creates three block GMP's (with names "block-1", "block-2" and "block-3").
+This is also the case if ``ColumnSet`` or ``BlockVals`` would have been empty. If we assign the block
+values as follows then only two blocks will be created:
 
-               GMP::Solution::RetrieveFromSolverSession( session, 1 );
-               GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution );
+.. code-block:: aimms
+
+    BlockVals(cc) := 0;
+    
+    for (cc) do
+        if ( FindString( ColumnName(cc), "per-1" ) ) then
+            BlockVals(cc) := 1;
+        else
+            BlockVals(cc) := 2;
+        endif;
+    endfor;
+
+In this case the columns corresponding to the periods "per-2" and "per-3" will be assigned to the
+same block GMP (with the name "block-2").
+
+The parameter ``MergeSolution`` is set to 0 for the first block GMP, otherwise the solution will be
+merged with an old solution (if one exists).
+
+Note: the first piece of code is optimized for mathematical programs with inline variables because
+it contains the following code snippet:
+
+.. code-block:: aimms
+
+    GMP::Solution::RetrieveFromSolverSession( session, 1 );
+    if ( Card(GMPset) = 1 ) then
+        GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 1 );
+    else
+        GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution, evalInline : 0 );
+    endif;
+
+If your mathematical program does not contain any inline variables then you can use the following
+code instead:
+
+.. code-block:: aimms
+
+    GMP::Solution::RetrieveFromSolverSession( session, 1 );
+    GMP::Solution::SendToModel( CurrentGMP, 1, merge : MergeSolution );
     
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::CreateSolverSession`, :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::RetrieveFromSolverSession`,
-    :aimms:func:`GMP::Solution::SendToModel` and :aimms:func:`GMP::SolverSession::Execute`.
+    - The routines :aimms:func:`GMP::Instance::CreateSolverSession`, :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Solution::RetrieveFromSolverSession`, :aimms:func:`GMP::Solution::SendToModel` and :aimms:func:`GMP::SolverSession::Execute`.

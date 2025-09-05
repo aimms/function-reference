@@ -49,4 +49,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Solution::GetObjective`.
+    - The procedure :aimms:func:`GMP::Solution::GetObjective`.

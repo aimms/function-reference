@@ -34,7 +34,7 @@ Arguments
 Return Value
 ------------
 
-    The procedure returns 1 on success, or 0 otherwise..
+    The procedure returns 1 on success, or 0 otherwise.
 
 .. note::
 
@@ -52,4 +52,7 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::GenerateStochasticProgram`, :aimms:func:`GMP::Stochastic::AddBendersOptimalityCut`, :aimms:func:`GMP::Stochastic::CreateBendersFeasibilitySubproblem` and :aimms:func:`GMP::Stochastic::BendersFindReference`.
+    - :aimms:func:`GMP::Instance::GenerateStochasticProgram`.
+    - :aimms:func:`GMP::Stochastic::AddBendersOptimalityCut`. 
+    - :aimms:func:`GMP::Stochastic::CreateBendersFeasibilitySubproblem`.
+    - :aimms:func:`GMP::Stochastic::BendersFindReference`.

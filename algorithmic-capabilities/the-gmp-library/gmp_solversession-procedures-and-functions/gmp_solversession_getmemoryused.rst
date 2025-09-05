@@ -43,5 +43,5 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::SetCallbackIterations`, :aimms:func:`GMP::Instance::SetCallbackTime`, :aimms:func:`GMP::Instance::SetMemoryLimit`, :aimms:func:`GMP::SolverSession::Execute`, :aimms:func:`GMP::SolverSession::GetIterationsUsed` and
+    - The routines :aimms:func:`GMP::Instance::SetCallbackIterations`, :aimms:func:`GMP::Instance::SetCallbackTime`, :aimms:func:`GMP::Instance::SetMemoryLimit`, :aimms:func:`GMP::SolverSession::Execute`, :aimms:func:`GMP::SolverSession::GetIterationsUsed` and
     :aimms:func:`GMP::SolverSession::GetTimeUsed`.

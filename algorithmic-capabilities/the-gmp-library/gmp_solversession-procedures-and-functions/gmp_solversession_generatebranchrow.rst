@@ -49,4 +49,6 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`GMP::Instance::SetCallbackBranch`, :aimms:func:`GMP::SolverSession::GenerateBranchLowerBound` and :aimms:func:`GMP::SolverSession::GenerateBranchUpperBound`.
+    - :aimms:func:`GMP::Instance::SetCallbackBranch`.
+    - :aimms:func:`GMP::SolverSession::GenerateBranchLowerBound`.
+    - :aimms:func:`GMP::SolverSession::GenerateBranchUpperBound`.

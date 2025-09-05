@@ -69,5 +69,11 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Copy`, :aimms:func:`GMP::SolverSession::Execute`, :aimms:func:`GMP::SolverSession::ExecutionStatus` :aimms:func:`GMP::SolverSession::Interrupt`, :aimms:func:`GMP::SolverSession::WaitForCompletion`,
-    :aimms:func:`GMP::SolverSession::WaitForSingleCompletion`, :aimms:func:`GMP::Solution::ConstraintListing` and :aimms:func:`GMP::Solver::GetAsynchronousSessionsLimit`.
+   - :aimms:func:`GMP::Instance::Copy`.
+   - :aimms:func:`GMP::SolverSession::Execute`.
+   - :aimms:func:`GMP::SolverSession::ExecutionStatus`.
+   - :aimms:func:`GMP::SolverSession::Interrupt`.
+   - :aimms:func:`GMP::SolverSession::WaitForCompletion`.
+   - :aimms:func:`GMP::SolverSession::WaitForSingleCompletion`.
+   - :aimms:func:`GMP::Solution::ConstraintListing`.
+   - :aimms:func:`GMP::Solver::GetAsynchronousSessionsLimit`.

@@ -45,4 +45,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Add`, :aimms:func:`GMP::Row::DeleteMulti` and :aimms:func:`GMP::Row::DeleteRaw`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::Add`, :aimms:func:`GMP::Row::DeleteMulti` and :aimms:func:`GMP::Row::DeleteRaw`.

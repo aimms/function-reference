@@ -69,85 +69,85 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program with the following
-    declaration (in ams format): 
+Assume that ``MP`` is a mathematical program with the following
+declaration (in ams format): 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Variable x {
-                   IndexDomain: t;
-                   Range: nonnegative;
-               }
-               Variable y {
-                   IndexDomain: t;
-                   Range: nonnegative;
-               }
-               Constraint c1 {
-                   IndexDomain: t;
-                   Definition: - 2 * x(t) + y(t) <= 4;
-               }
-               MathematicalProgram MP {
-                   Objective: obj;
-                   Direction: minimize;
-                   Type: LP;
-               }
+            Variable x {
+                IndexDomain: t;
+                Range: nonnegative;
+            }
+            Variable y {
+                IndexDomain: t;
+                Range: nonnegative;
+            }
+            Constraint c1 {
+                IndexDomain: t;
+                Definition: - 2 * x(t) + y(t) <= 4;
+            }
+            MathematicalProgram MP {
+                Objective: obj;
+                Direction: minimize;
+                Type: LP;
+            }
 
-    To use
-    :aimms:func:`GMP::Coefficient::SetRaw` we declare the following identifiers
-    (in ams format):
+To use
+:aimms:func:`GMP::Coefficient::SetRaw` we declare the following identifiers
+(in ams format):
+
+.. code-block:: aimms
+
+    ElementParameter myGMP {
+        Range: AllGeneratedMathematicalPrograms;
+    }
+    Set ConstraintSet {
+        SubsetOf: AllConstraints;
+    }
+    Set VariableSet {
+        SubsetOf: AllVariables;
+    }
+    Set RowSet {
+        SubsetOf: Integers;
+        Index: rr;
+    }
+    Set ColumnSet {
+        SubsetOf: Integers;
+        Index: cc;
+    }
+    Parameter Coef {
+        IndexDomain: (rr,cc);
+    }
+    Parameter ChangeZero {
+        IndexDomain: (rr,cc);
+    }
+
+To set the coefficients of variables ``x(t)`` and ``y(t)`` in constraint ``c1(t)``
+to 1 and 0, respectively, we can use:
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate( MP );
     
-    .. code-block:: aimms
-
-               ElementParameter myGMP {
-                   Range: AllGeneratedMathematicalPrograms;
-               }
-               Set ConstraintSet {
-                   SubsetOf: AllConstraints;
-               }
-               Set VariableSet {
-                   SubsetOf: AllVariables;
-               }
-               Set RowSet {
-                   SubsetOf: Integers;
-                   Index: rr;
-               }
-               Set ColumnSet {
-                   SubsetOf: Integers;
-                   Index: cc;
-               }
-               Parameter Coef {
-                   IndexDomain: (rr,cc);
-               }
-               Parameter ChangeZero {
-                   IndexDomain: (rr,cc);
-               }
-
-    To set the coefficients of variables ``x(t)`` and ``y(t)`` in constraint ``c1(t)``
-    to 1 and 0, respectively, we can use:
-
-    .. code-block:: aimms
-
-               myGMP := GMP::Instance::Generate( MP );
-               
-               ConstraintSet := { 'c1' };
-               RowSet := GMP::Instance::GetRowNumbers( myGMP, ConstraintSet );
-               
-               VariableSet := { 'x' };
-               ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
-               
-               Coef(rr,cc) := 1.0;
-               ChangeZero(rr,cc) := 0;
-               
-               GMP::Coefficient::SetRaw( myGMP, RowSet, ColumnSet, Coef, ChangeZero );
-               
-               VariableSet := { 'y' };
-               ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
-               
-               Coef(rr,cc) := 0.0;
-               ChangeZero(rr,cc) := 1;
-               
-               GMP::Coefficient::SetRaw( myGMP, RowSet, ColumnSet, Coef, ChangeZero );
+    ConstraintSet := { 'c1' };
+    RowSet := GMP::Instance::GetRowNumbers( myGMP, ConstraintSet );
+    
+    VariableSet := { 'x' };
+    ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
+    
+    Coef(rr,cc) := 1.0;
+    ChangeZero(rr,cc) := 0;
+    
+    GMP::Coefficient::SetRaw( myGMP, RowSet, ColumnSet, Coef, ChangeZero );
+    
+    VariableSet := { 'y' };
+    ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
+    
+    Coef(rr,cc) := 0.0;
+    ChangeZero(rr,cc) := 1;
+    
+    GMP::Coefficient::SetRaw( myGMP, RowSet, ColumnSet, Coef, ChangeZero );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Coefficient::Get`, :aimms:func:`GMP::Instance::GetColumnNumbers` and :aimms:func:`GMP::Instance::GetRowNumbers`.
+    - The routines :aimms:func:`GMP::Coefficient::Get`, :aimms:func:`GMP::Instance::GetColumnNumbers` and :aimms:func:`GMP::Instance::GetRowNumbers`.

@@ -32,7 +32,7 @@ Arguments
 Return Value
 ------------
 
-    The procedure returns 1 on success, or 0 otherwise..
+    The procedure returns 1 on success, or 0 otherwise.
 
 .. note::
 
@@ -57,4 +57,8 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::GenerateStochasticProgram`, :aimms:func:`GMP::Stochastic::AddBendersFeasibilityCut`, :aimms:func:`GMP::Stochastic::BendersFindReference`, :aimms:func:`GMP::Stochastic::GetObjectiveBound` and :aimms:func:`GMP::Stochastic::GetRelativeWeight`.
+    - :aimms:func:`GMP::Instance::GenerateStochasticProgram`.
+    - :aimms:func:`GMP::Stochastic::AddBendersFeasibilityCut`.
+    - :aimms:func:`GMP::Stochastic::BendersFindReference`.
+    - :aimms:func:`GMP::Stochastic::GetObjectiveBound`.
+    - :aimms:func:`GMP::Stochastic::GetRelativeWeight`.

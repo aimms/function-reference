@@ -46,28 +46,28 @@ Return Value
 Example
 -------
 
-    To unfreeze variable ``x(i)`` we can use: 
+To unfreeze variable ``x(i)`` we can use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               for (i) do
-                   GMP::Column::Unfreeze( myGMP, x(i) );
-               endfor;
+    for (i) do
+        GMP::Column::Unfreeze( myGMP, x(i) );
+    endfor;
 
-    It is more
-    efficient to use: 
+It is more
+efficient to use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Column::UnfreezeMulti( myGMP, i, x(i) );
+    GMP::Column::UnfreezeMulti( myGMP, i, x(i) );
 
-    If we only want to unfreeze those ``x(i)``
-    for which ``dom(i)`` is unequal to zero, then we use: 
+If we only want to unfreeze those ``x(i)``
+for which ``dom(i)`` is unequal to zero, then we use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Column::UnfreezeMulti( myGMP, i | dom(i), x(i) );
+    GMP::Column::UnfreezeMulti( myGMP, i | dom(i), x(i) );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::Unfreeze`, :aimms:func:`GMP::Column::FreezeMulti` and :aimms:func:`GMP::Instance::Copy`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::Unfreeze`, :aimms:func:`GMP::Column::FreezeMulti` and :aimms:func:`GMP::Instance::Copy`.

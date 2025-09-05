@@ -72,22 +72,22 @@ Return Value
 Example
 -------
 
-    To generate the rows corresponding to constraint ``c(i)`` we can use: 
+To generate the rows corresponding to constraint ``c(i)`` we can use: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Row::GenerateMulti( myGMP, i, c(i) );
+    GMP::Row::GenerateMulti( myGMP, i, c(i) );
 
-    If the row refers to the definition of
-    a variable then we have to place '\_definition' behind the name of the
-    variable. For example, if ``v(j)`` is a variable with a definition and
-    we want to generate all corresponding rows according to its definition
-    then we have to use:
+If the row refers to the definition of
+a variable then we have to place '\_definition' behind the name of the
+variable. For example, if ``v(j)`` is a variable with a definition and
+we want to generate all corresponding rows according to its definition
+then we have to use:
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Row::GenerateMulti( myGMP, j, v_definition(j) );
+    GMP::Row::GenerateMulti( myGMP, j, v_definition(j) );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::Add`, :aimms:func:`GMP::Column::Delete`, :aimms:func:`GMP::Row::Add`, :aimms:func:`GMP::Row::Delete` and :aimms:func:`GMP::Row::Generate`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::Add`, :aimms:func:`GMP::Column::Delete`, :aimms:func:`GMP::Row::Add`, :aimms:func:`GMP::Row::Delete` and :aimms:func:`GMP::Row::Generate`.

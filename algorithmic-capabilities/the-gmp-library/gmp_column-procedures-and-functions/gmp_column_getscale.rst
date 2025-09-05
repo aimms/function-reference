@@ -33,4 +33,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Row::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Row::GetScale`.

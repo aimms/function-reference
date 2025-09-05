@@ -41,4 +41,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::GetType` and :aimms:func:`GMP::Column::SetType`.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::GetType` and :aimms:func:`GMP::Column::SetType`.

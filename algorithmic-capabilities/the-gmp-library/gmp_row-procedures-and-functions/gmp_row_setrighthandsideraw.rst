@@ -44,39 +44,39 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program. To use
-    :aimms:func:`GMP::Row::SetRightHandSideRaw` we declare the following identifiers
-    (in ams format):
+Assume that ``MP`` is a mathematical program. To use
+:aimms:func:`GMP::Row::SetRightHandSideRaw` we declare the following identifiers
+(in ams format):
+
+.. code-block:: aimms
+
+    ElementParameter myGMP {
+        Range: AllGeneratedMathematicalPrograms;
+    }
+    Set ConstraintSet {
+        SubsetOf: AllConstraints;
+    }
+    Set RowSet {
+        SubsetOf: Integers;
+        Index: rr;
+    }
+    Parameter RHS {
+        IndexDomain: rr;
+    }
+
+To change the right-hand-side values of the constraint ``c(i)`` we can use:
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate( MP );
     
-    .. code-block:: aimms
-
-               ElementParameter myGMP {
-                   Range: AllGeneratedMathematicalPrograms;
-               }
-               Set ConstraintSet {
-                   SubsetOf: AllConstraints;
-               }
-               Set RowSet {
-                   SubsetOf: Integers;
-                   Index: rr;
-               }
-               Parameter RHS {
-                   IndexDomain: rr;
-               }
-
-    To change the right-hand-side values of the constraint ``c(i)`` we can use:
-
-    .. code-block:: aimms
-
-               myGMP := GMP::Instance::Generate( MP );
-               
-               ConstraintSet := { 'c' };
-               RowSet := GMP::Instance::GetRowNumbers( myGMP, ConstraintSet );
-               
-               RHS(rr) := 5.0;
-               
-               GMP::Row::SetRightHandSideRaw( myGMP, RowSet, RHS );
+    ConstraintSet := { 'c' };
+    RowSet := GMP::Instance::GetRowNumbers( myGMP, ConstraintSet );
+    
+    RHS(rr) := 5.0;
+    
+    GMP::Row::SetRightHandSideRaw( myGMP, RowSet, RHS );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSide`, :aimms:func:`GMP::Row::SetLeftHandSide`, :aimms:func:`GMP::Row::GetRightHandSide` and :aimms:func:`GMP::Row::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSide`, :aimms:func:`GMP::Row::SetLeftHandSide`, :aimms:func:`GMP::Row::GetRightHandSide` and :aimms:func:`GMP::Row::GetScale`.

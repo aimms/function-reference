@@ -32,4 +32,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Instance::AddLimitBinaryDeviationRow`.
+    - The procedure :aimms:func:`GMP::Instance::AddLimitBinaryDeviationRow`.

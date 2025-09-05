@@ -32,4 +32,4 @@ Return Value
 
 .. seealso::
 
-    The routine :aimms:func:`GMP::SolverSession::Execute` and :aimms:func:`GMP::SolverSession::GetObjective`.
+    - The routine :aimms:func:`GMP::SolverSession::Execute` and :aimms:func:`GMP::SolverSession::GetObjective`.

@@ -48,4 +48,4 @@ Return Value
 
 .. seealso::
 
-    The routine :aimms:func:`GMP::Row::GetRightHandSide`.
+    - The routine :aimms:func:`GMP::Row::GetRightHandSide`.

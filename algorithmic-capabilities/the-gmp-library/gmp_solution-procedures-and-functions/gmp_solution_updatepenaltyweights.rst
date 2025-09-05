@@ -48,4 +48,4 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Solution::GetPenalizedObjective`.
+    - The function :aimms:func:`GMP::Solution::GetPenalizedObjective`.

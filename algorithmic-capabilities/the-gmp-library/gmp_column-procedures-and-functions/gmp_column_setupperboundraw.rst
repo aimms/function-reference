@@ -44,39 +44,39 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program. To use
-    :aimms:func:`GMP::Column::SetUpperBoundRaw` we declare the following identifiers
-    (in ams format):
+Assume that ``MP`` is a mathematical program. To use
+:aimms:func:`GMP::Column::SetUpperBoundRaw` we declare the following identifiers
+(in ams format):
+
+.. code-block:: aimms
+
+    ElementParameter myGMP {
+        Range: AllGeneratedMathematicalPrograms;
+    }
+    Set VariableSet {
+        SubsetOf: AllVariables;
+    }
+    Set ColumnSet {
+        SubsetOf: Integers;
+        Index: cc;
+    }
+    Parameter UB {
+        IndexDomain: cc;
+    }
+
+To set the upper bounds of the variable ``x(i)`` we can use:
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate( MP );
     
-    .. code-block:: aimms
-
-               ElementParameter myGMP {
-                   Range: AllGeneratedMathematicalPrograms;
-               }
-               Set VariableSet {
-                   SubsetOf: AllVariables;
-               }
-               Set ColumnSet {
-                   SubsetOf: Integers;
-                   Index: cc;
-               }
-               Parameter UB {
-                   IndexDomain: cc;
-               }
-
-    To set the upper bounds of the variable ``x(i)`` we can use:
-
-    .. code-block:: aimms
-
-               myGMP := GMP::Instance::Generate( MP );
-               
-               VariableSet := { 'x' };
-               ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
-               
-               UB(cc) := 1.0;
-               
-               GMP::Column::SetUpperBoundRaw( myGMP, ColumnSet, UB );
+    VariableSet := { 'x' };
+    ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
+    
+    UB(cc) := 1.0;
+    
+    GMP::Column::SetUpperBoundRaw( myGMP, ColumnSet, UB );
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Column::SetUpperBound`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetScale`.

@@ -56,20 +56,20 @@ Parameters
 Example
 -------
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               MIPSolver := 'Gurobi 12.0';
-               
-               GMP::Solver::SetEnvironmentStringParameter( MIPSolver, "ComputeServer", "myserver1:61000" );
-               GMP::Solver::SetEnvironmentDoubleParameter( MIPSolver, "CSQueueTimeout", 60 );
-               GMP::Solver::SetEnvironmentDoubleParameter( MIPSolver, "MemLimit", 64 );
+    MIPSolver := 'Gurobi 12.0';
+    
+    GMP::Solver::SetEnvironmentStringParameter( MIPSolver, "ComputeServer", "myserver1:61000" );
+    GMP::Solver::SetEnvironmentDoubleParameter( MIPSolver, "CSQueueTimeout", 60 );
+    GMP::Solver::SetEnvironmentDoubleParameter( MIPSolver, "MemLimit", 64 );
 
-               GMP::Solver::InitializeEnvironment( MIPSolver );
+    GMP::Solver::InitializeEnvironment( MIPSolver );
 
-               solve MP1;
+    solve MP1;
 
-               GMP::Solver::FreeEnvironment( MIPSolver );
+    GMP::Solver::FreeEnvironment( MIPSolver );
 
 .. seealso::
 
-    The procedures :aimms:func:`GMP::Solver::InitializeEnvironment`, :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter` and :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`.
+    - The procedures :aimms:func:`GMP::Solver::InitializeEnvironment`, :aimms:func:`GMP::Solver::SetEnvironmentIntegerParameter` and :aimms:func:`GMP::Solver::SetEnvironmentStringParameter`.

@@ -132,5 +132,5 @@ We can now switch the priorities of the two objectives by adding:
 
 .. seealso::
 
-    The procedure :aimms:func:`GMP::Instance::DeleteMultiObjectives`.
+    - The procedure :aimms:func:`GMP::Instance::DeleteMultiObjectives`.
 

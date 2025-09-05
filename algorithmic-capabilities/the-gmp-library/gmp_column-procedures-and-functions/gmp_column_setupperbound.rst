@@ -48,51 +48,51 @@ Return Value
 Example
 -------
 
-    Assume that 'x1' is a variable in mathematical program 'MP' with a unit
-    as defined by: 
+Assume that ``x1`` is a variable in mathematical program ``MP`` with a unit
+as defined by: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Quantity SI_Mass {
-                   BaseUnit      :  kg;
-                   Conversions   :  ton -> kg : # -> # * 1000;
-               }
-               Parameter max_wght {
-                   Unit          :  ton;
-                   InitialValue  :  20;
-               }
-               Variable x1 {
-                   Range         :  [0, max_wght];
-                   Unit          :  ton;
-               }
+    Quantity SI_Mass {
+        BaseUnit      :  kg;
+        Conversions   :  ton -> kg : # -> # * 1000;
+    }
+    Parameter max_wght {
+        Unit          :  ton;
+        InitialValue  :  20;
+    }
+    Variable x1 {
+        Range         :  [0, max_wght];
+        Unit          :  ton;
+    }
 
-    Then if we run the following code 
+Then if we run the following code 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Column::SetUpperBound( 'MP', x1, 20 [ton] );
-               ub1 := GMP::Column::GetUpperBound( 'MP', x1 );
-               display ub1;
+    GMP::Column::SetUpperBound( 'MP', x1, 20 [ton] );
+    ub1 := GMP::Column::GetUpperBound( 'MP', x1 );
+    display ub1;
 
-               GMP::Column::SetUpperBound( 'MP', x1, 30 );
-               ub2 := GMP::Column::GetUpperBound( 'MP', x1 );
-               display ub2;
+    GMP::Column::SetUpperBound( 'MP', x1, 30 );
+    ub2 := GMP::Column::GetUpperBound( 'MP', x1 );
+    display ub2;
 
-               GMP::Column::SetUpperBound( 'MP', x1, 40 * GMP::Column::GetScale( 'MP', x1 ) );
-               ub3 := GMP::Column::GetUpperBound( 'MP', x1 );
-               display ub3;
-    
-    (where 'ub1', 'ub2' and 'ub3' are parameters without a unit) we get the
-    following results:
-    
-    .. code-block:: aimms
+    GMP::Column::SetUpperBound( 'MP', x1, 40 * GMP::Column::GetScale( 'MP', x1 ) );
+    ub3 := GMP::Column::GetUpperBound( 'MP', x1 );
+    display ub3;
 
-               ub1 := 20 ;
+(where ``ub1``, ``ub2`` and ``ub3`` are parameters without a unit) we get the
+following results:
 
-               ub2 := 0.030 ;
+.. code-block:: aimms
 
-               ub3 := 40 ;
+    ub1 := 20 ;
+
+    ub2 := 0.030 ;
+
+    ub3 := 40 ;
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetUpperBoundMulti`, :aimms:func:`GMP::Column::SetUpperBoundRaw`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Column::SetUpperBoundMulti`, :aimms:func:`GMP::Column::SetUpperBoundRaw`, :aimms:func:`GMP::Column::SetLowerBound`, :aimms:func:`GMP::Column::GetUpperBound` and :aimms:func:`GMP::Column::GetScale`.

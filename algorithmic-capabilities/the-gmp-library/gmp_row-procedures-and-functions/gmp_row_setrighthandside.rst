@@ -48,47 +48,47 @@ Return Value
 Example
 -------
 
-    Assume that 'c1' is a constraint in mathematical program 'MP' with a
-    unit as defined by: 
+Assume that ``c1`` is a constraint in mathematical program ``MP`` with a
+unit as defined by: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Quantity SI_Mass {
-                   BaseUnit     :  kg;
-                   Conversions  :  ton -> kg : # -> # * 1000;
-               }
-               Constraint c1 {
-                   Unit         :  ton;
-                   Definition   :  -x1 + 2 * x2 <= wght;
-               }
+    Quantity SI_Mass {
+        BaseUnit     :  kg;
+        Conversions  :  ton -> kg : # -> # * 1000;
+    }
+    Constraint c1 {
+        Unit         :  ton;
+        Definition   :  -x1 + 2 * x2 <= wght;
+    }
 
-    Then if we run the following code
+Then if we run the following code
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               GMP::Row::SetRightHandSide( 'MP', c1, 20 [ton] );
-               rhs1 := GMP::Row::GetRightHandSide( 'MP', c1 );
-               display rhs1;
+    GMP::Row::SetRightHandSide( 'MP', c1, 20 [ton] );
+    rhs1 := GMP::Row::GetRightHandSide( 'MP', c1 );
+    display rhs1;
 
-               GMP::Row::SetRightHandSide( 'MP', c1, 30 );
-               rhs2 := GMP::Row::GetRightHandSide( 'MP', c1 );
-               display rhs2;
+    GMP::Row::SetRightHandSide( 'MP', c1, 30 );
+    rhs2 := GMP::Row::GetRightHandSide( 'MP', c1 );
+    display rhs2;
 
-               GMP::Row::SetRightHandSide( 'MP', c1, 40 * GMP::Row::GetScale( 'MP', c1 ) );
-               rhs3 := GMP::Row::GetRightHandSide( 'MP', c1 );
-               display rhs3;
+    GMP::Row::SetRightHandSide( 'MP', c1, 40 * GMP::Row::GetScale( 'MP', c1 ) );
+    rhs3 := GMP::Row::GetRightHandSide( 'MP', c1 );
+    display rhs3;
 
-    (where 'rhs1', 'rhs2' and 'rhs3' are parameters without a
-    unit) we get the following results: 
+(where ``rhs1``, ``rhs2`` and ``rhs3`` are parameters without a
+unit) we get the following results: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               rhs1 := 20 ;
+    rhs1 := 20 ;
 
-               rhs2 := 0.030 ;
+    rhs2 := 0.030 ;
 
-               rhs3 := 40 ;
+    rhs3 := 40 ;
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSideMulti`, :aimms:func:`GMP::Row::SetRightHandSideRaw`, :aimms:func:`GMP::Row::SetLeftHandSide`, :aimms:func:`GMP::Row::GetRightHandSide` and :aimms:func:`GMP::Row::GetScale`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Row::SetRightHandSideMulti`, :aimms:func:`GMP::Row::SetRightHandSideRaw`, :aimms:func:`GMP::Row::SetLeftHandSide`, :aimms:func:`GMP::Row::GetRightHandSide` and :aimms:func:`GMP::Row::GetScale`.

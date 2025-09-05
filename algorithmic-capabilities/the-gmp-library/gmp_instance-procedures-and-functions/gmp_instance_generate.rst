@@ -63,47 +63,47 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a symbolic mathematical program which we want to solve twice thereby changing the constraint set: 
+Assume that ``MP`` is a symbolic mathematical program which we want to solve twice thereby changing the constraint set: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               ConstraintSet := { 'C1', 'C2' };
-               myGMP1 := GMP::Instance::Generate( MP );
-               GMP::Instance::Solve( myGMP1 );
-               
-               ConstraintSet := { 'C3', 'C4' };
-               myGMP2 := GMP::Instance::Generate( MP );
-
-    After executing these statements, 'myGMP1' and 'myGMP2' will point to the same generated math program,
-    namely the one using the constraints 'C3' and 'C4'. The set
-    :aimms:set:`AllGeneratedMathematicalPrograms` will contain only one element, namely 'MP'. At this point it
-    makes no difference to use
+    ConstraintSet := { 'C1', 'C2' };
+    myGMP1 := GMP::Instance::Generate( MP );
+    GMP::Instance::Solve( myGMP1 );
     
-    .. code-block:: aimms
+    ConstraintSet := { 'C3', 'C4' };
+    myGMP2 := GMP::Instance::Generate( MP );
 
-               GMP::Instance::Solve( myGMP1 );
+After executing these statements, ``myGMP1`` and ``myGMP2`` will point to the same generated math program,
+namely the one using the constraints ``C3`` and ``C4``. The set
+:aimms:set:`AllGeneratedMathematicalPrograms` will contain only one element, namely ``MP``. At this point it
+makes no difference to use
+
+.. code-block:: aimms
+
+    GMP::Instance::Solve( myGMP1 );
+
+or
+
+.. code-block:: aimms
+
+    GMP::Instance::Solve( myGMP2 );
+
+By using the *name* argument we can create two different GMP's from the same symbolic mathematical program:
+
+.. code-block:: aimms
+
+    ConstraintSet := { 'C1', 'C2' };
+    myGMP1 := GMP::Instance::Generate( MP, "FirstGMP" );
+    GMP::Instance::Solve( myGMP1 );
     
-    or
+    ConstraintSet := { 'C3', 'C4' };
+    myGMP2 := GMP::Instance::Generate( MP, "SecondGMP" );
+    GMP::Instance::Solve( myGMP2 );
 
-    .. code-block:: aimms
-
-               GMP::Instance::Solve( myGMP2 );
-    
-    By using the *name* argument we can create two different GMP's from the same symbolic mathematical program:
-
-    .. code-block:: aimms
-
-               ConstraintSet := { 'C1', 'C2' };
-               myGMP1 := GMP::Instance::Generate( MP, "FirstGMP" );
-               GMP::Instance::Solve( myGMP1 );
-               
-               ConstraintSet := { 'C3', 'C4' };
-               myGMP2 := GMP::Instance::Generate( MP, "SecondGMP" );
-               GMP::Instance::Solve( myGMP2 );
-
-    This time the set :aimms:set:`AllGeneratedMathematicalPrograms` will contain two elements, namely
-    'FirstGMP' and 'SecondGMP'.
+This time the set :aimms:set:`AllGeneratedMathematicalPrograms` will contain two elements, namely
+``FirstGMP`` and ``SecondGMP``.
                
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Delete` and :aimms:func:`GMP::Instance::SetCallbackIterations`.
+    - The routines :aimms:func:`GMP::Instance::Delete` and :aimms:func:`GMP::Instance::SetCallbackIterations`.

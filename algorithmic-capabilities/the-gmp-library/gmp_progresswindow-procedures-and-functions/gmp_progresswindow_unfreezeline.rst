@@ -42,4 +42,4 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`GMP::Instance::CreateProgressCategory`, :aimms:func:`GMP::ProgressWindow::DisplayLine`, :aimms:func:`GMP::ProgressWindow::FreezeLine` and :aimms:func:`GMP::SolverSession::CreateProgressCategory`.
+    - The procedures :aimms:func:`GMP::Instance::CreateProgressCategory`, :aimms:func:`GMP::ProgressWindow::DisplayLine`, :aimms:func:`GMP::ProgressWindow::FreezeLine` and :aimms:func:`GMP::SolverSession::CreateProgressCategory`.

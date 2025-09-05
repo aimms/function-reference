@@ -42,4 +42,6 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::GenerateStochasticProgram`, :aimms:func:`GMP::Stochastic::AddBendersOptimalityCut` and :aimms:func:`GMP::Stochastic::BendersFindReference`.
+    - :aimms:func:`GMP::Instance::GenerateStochasticProgram`.
+    - :aimms:func:`GMP::Stochastic::AddBendersOptimalityCut`.
+    - :aimms:func:`GMP::Stochastic::BendersFindReference`.

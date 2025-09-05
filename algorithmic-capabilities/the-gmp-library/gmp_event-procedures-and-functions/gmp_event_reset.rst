@@ -31,5 +31,5 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Event::Create`, :aimms:func:`GMP::Event::Delete` and :aimms:func:`GMP::Event::Reset`, and :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/synchronization-events` of the
-     Language Reference.
+    - The routines :aimms:func:`GMP::Event::Create`, :aimms:func:`GMP::Event::Delete` and :aimms:func:`GMP::Event::Reset`.
+    - :doc:`optimization-modeling-components/implementing-advanced-algorithms-for-mathematical-programs/synchronization-events` of the Language Reference.

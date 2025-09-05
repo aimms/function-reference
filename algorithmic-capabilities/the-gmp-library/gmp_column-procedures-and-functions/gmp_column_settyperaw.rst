@@ -37,40 +37,40 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program. To use
-    :aimms:func:`GMP::Column::FreezeRaw` we declare the following identifiers
-    (in ams format):
+Assume that ``MP`` is a mathematical program. To use
+:aimms:func:`GMP::Column::FreezeRaw` we declare the following identifiers
+(in ams format):
+
+.. code-block:: aimms
+
+    ElementParameter myGMP {
+        Range: AllGeneratedMathematicalPrograms;
+    }
+    Set VariableSet {
+        SubsetOf: AllVariables;
+    }
+    Set ColumnSet {
+        SubsetOf: Integers;
+        Index: cc;
+    }
+    ElementParameter ColType {
+        IndexDomain: cc;
+        Range: AllColumnTypes;
+    }
+
+To change integer variable ``x(i)`` into a continuous variable we can use:
+
+.. code-block:: aimms
+
+    myGMP := GMP::Instance::Generate( MP );
     
-    .. code-block:: aimms
-
-               ElementParameter myGMP {
-                   Range: AllGeneratedMathematicalPrograms;
-               }
-               Set VariableSet {
-                   SubsetOf: AllVariables;
-               }
-               Set ColumnSet {
-                   SubsetOf: Integers;
-                   Index: cc;
-               }
-               ElementParameter ColType {
-                   IndexDomain: cc;
-                   Range: AllColumnTypes;
-               }
-
-    To change integer variable ``x(i)`` into a continuous variable we can use:
-
-    .. code-block:: aimms
-
-               myGMP := GMP::Instance::Generate( MP );
-               
-               VariableSet := { 'x' };
-               ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
-               
-               ColType(cc) := 'continuous';
-               
-               GMP::Column::FreezeRaw( myGMP, ColumnSet, ColType );
+    VariableSet := { 'x' };
+    ColumnSet := GMP::Instance::GetColumnNumbers( myGMP, VariableSet );
+    
+    ColType(cc) := 'continuous';
+    
+    GMP::Column::FreezeRaw( myGMP, ColumnSet, ColType );
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Column::GetType` and :aimms:func:`GMP::Column::SetType`.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Column::GetType` and :aimms:func:`GMP::Column::SetType`.

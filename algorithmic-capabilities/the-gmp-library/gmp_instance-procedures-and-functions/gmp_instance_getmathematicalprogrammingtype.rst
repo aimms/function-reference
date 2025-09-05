@@ -27,4 +27,4 @@ Return Value
 
 .. seealso::
 
-    The function :aimms:func:`GMP::Instance::Generate` and the procedure :aimms:func:`GMP::Instance::SetMathematicalProgrammingType`.
+    - The function :aimms:func:`GMP::Instance::Generate` and the procedure :aimms:func:`GMP::Instance::SetMathematicalProgrammingType`.

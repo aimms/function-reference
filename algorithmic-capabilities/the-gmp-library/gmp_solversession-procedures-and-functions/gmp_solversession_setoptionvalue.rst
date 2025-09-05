@@ -62,4 +62,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::GetOptionValue`, :aimms:func:`GMP::Instance::SetOptionValue`, :aimms:func:`GMP::SolverSession::GetOptionValue`, :aimms:func:`OptionGetString` and :aimms:func:`OptionGetKeywords`.
+    - The routines :aimms:func:`GMP::Instance::GetOptionValue`, :aimms:func:`GMP::Instance::SetOptionValue`, :aimms:func:`GMP::SolverSession::GetOptionValue`, :aimms:func:`OptionGetString` and :aimms:func:`OptionGetKeywords`.

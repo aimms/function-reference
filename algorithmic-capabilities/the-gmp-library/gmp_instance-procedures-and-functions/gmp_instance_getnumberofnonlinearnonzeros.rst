@@ -28,4 +28,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Instance::GetNumberOfNonzeros`.
+    - The functions :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Instance::GetNumberOfNonzeros`.

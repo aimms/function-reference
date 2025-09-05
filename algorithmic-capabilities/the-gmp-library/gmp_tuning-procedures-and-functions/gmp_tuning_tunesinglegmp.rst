@@ -60,29 +60,28 @@ Return Value
 Example
 -------
 
-    Assume that 'MP' is a mathematical program and 'gmpMP' an element
-    parameter with range 'AllGeneratedMathematicalPrograms'. Furthermore, we
-    have a set 'FixedOptions' defined as: 
+Assume that ``MP`` is a mathematical program and ``gmpMP`` an element
+parameter with range ``AllGeneratedMathematicalPrograms``. Furthermore, we
+have a set ``FixedOptions`` defined as: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               Set FixedOptions {
-                   SubsetOf   :  AllOptions;
-                   Definition :  data { 'CPLEX 12.10::mip_search_strategy' };
-               }
+    Set FixedOptions {
+        SubsetOf   :  AllOptions;
+        Definition :  data { 'CPLEX 12.10::mip_search_strategy' };
+    }
 
-    To tune 'MP' we have
-    to run: 
+To tune ``MP`` we have to run: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               gmpMP := GMP::Instance::Generate( MP );
+    gmpMP := GMP::Instance::Generate( MP );
 
-               GMP::Tuning::TuneSingleGMP( gmpMP, FixedOptions );
+    GMP::Tuning::TuneSingleGMP( gmpMP, FixedOptions );
 
-    Here the opion 'mip search strategy' is fixed and
-    will not be tuned (assuming we are using solver CPLEX 12.10).
+Here the option ``mip search strategy`` is fixed and
+will not be tuned (assuming we are using solver CPLEX 12.10).
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Tuning::SolveSingleMPS` and :aimms:func:`GMP::Tuning::TuneMultipleMPS`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Tuning::SolveSingleMPS` and :aimms:func:`GMP::Tuning::TuneMultipleMPS`.

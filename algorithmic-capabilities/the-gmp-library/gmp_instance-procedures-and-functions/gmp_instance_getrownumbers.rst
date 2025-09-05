@@ -34,39 +34,39 @@ Return Value
 Example
 -------
 
-    Assume we have generated a mathematical program and we want to change
-    the right hand side of the constraints ``c1(i)`` and ``c2(j,k)`` into
-    100. This can be done as follows: 
+Assume we have generated a mathematical program and we want to change
+the right hand side of the constraints ``c1(i)`` and ``c2(j,k)`` into
+100. This can be done as follows: 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generated( MP );
+    myGMP := GMP::Instance::Generated( MP );
 
-               for (i) do
-                   GMP::Row::SetUpperBound( myGMP, c1(i), 100 );
-               endfor;
+    for (i) do
+        GMP::Row::SetUpperBound( myGMP, c1(i), 100 );
+    endfor;
 
-               for (j,k) do
-                   GMP::Row::SetRightHandSide( myGMP, c2(j,k), 100 );
-               endfor;
+    for (j,k) do
+        GMP::Row::SetRightHandSide( myGMP, c2(j,k), 100 );
+    endfor;
 
-    Using the function
-    :aimms:func:`GMP::Instance::GetRowNumbers` this can also be coded as follows. Here
-    ``RowNrs`` is a subset of :aimms:set:`Integers` with index ``r``, and ``Cons`` a
-    subset of :aimms:set:`AllConstraints`. 
+Using the function
+:aimms:func:`GMP::Instance::GetRowNumbers` this can also be coded as follows. Here
+``RowNrs`` is a subset of :aimms:set:`Integers` with index ``r``, and ``Cons`` a
+subset of :aimms:set:`AllConstraints`. 
 
-    .. code-block:: aimms
+.. code-block:: aimms
 
-               myGMP := GMP::Instance::Generated( MP );
+    myGMP := GMP::Instance::Generated( MP );
 
-               Cons := { 'c1', 'c2' };
+    Cons := { 'c1', 'c2' };
 
-               RowNrs := GMP::Instance::GetRowNumbers( myGMP, Cons );
+    RowNrs := GMP::Instance::GetRowNumbers( myGMP, Cons );
 
-               for (r) do
-                   GMP::Row::SetRightHandSide( myGMP, r, 100 );
-               endfor;
+    for (r) do
+        GMP::Row::SetRightHandSide( myGMP, r, 100 );
+    endfor;
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Instance::GetNumberOfRows`, :aimms:func:`GMP::Instance::GetObjectiveColumnNumber` and :aimms:func:`GMP::Instance::GetObjectiveRowNumber`.
+    - The functions :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::GetColumnNumbers`, :aimms:func:`GMP::Instance::GetNumberOfRows`, :aimms:func:`GMP::Instance::GetObjectiveColumnNumber` and :aimms:func:`GMP::Instance::GetObjectiveRowNumber`.

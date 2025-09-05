@@ -27,4 +27,5 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate` and :aimms:func:`GMP::Instance::CreateSolverSession`.
+    - :aimms:func:`GMP::Instance::Generate`.
+    - :aimms:func:`GMP::Instance::CreateSolverSession`.

@@ -36,4 +36,4 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::Instance::SetIterationLimit`, :aimms:func:`GMP::Instance::GMP::Instance::SetMemoryLimit` and :aimms:func:`GMP::Instance::SetTimeLimit`.
+    - The routines :aimms:func:`GMP::Instance::Generate`, :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::Instance::SetIterationLimit`, :aimms:func:`GMP::Instance::GMP::Instance::SetMemoryLimit` and :aimms:func:`GMP::Instance::SetTimeLimit`.

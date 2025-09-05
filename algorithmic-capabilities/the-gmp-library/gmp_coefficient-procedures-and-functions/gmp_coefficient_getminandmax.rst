@@ -59,4 +59,4 @@ Return Value
     
 .. seealso::
 
-    The routines :aimms:func:`GMP::Coefficient::Get` and :aimms:func:`GMP::Coefficient::GetMultiRaw`.
+    - The routines :aimms:func:`GMP::Coefficient::Get` and :aimms:func:`GMP::Coefficient::GetMultiRaw`.

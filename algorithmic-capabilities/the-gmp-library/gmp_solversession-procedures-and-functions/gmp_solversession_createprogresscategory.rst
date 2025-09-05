@@ -5,20 +5,20 @@
 GMP::SolverSession::CreateProgressCategory
 ==========================================
 
-| The function :aimms:func:`GMP::SolverSession::CreateProgressCategory` creates a
-  new progress category for a solver session. This progress category can
-  be used to display solver (session) related information in the
-  Progress Window.
-|
-| There are three levels of progress categories for solver information.
-  By default all solver progress will be displayed in the general AIMMS
-  progress category for solver progress. If a progress category was
-  created for the GMP with procedure
-  :aimms:func:`GMP::Instance::CreateProgressCategory`, then all solver progress
-  related to that GMP will by default be displayed in the solver
-  progress category of the GMP. For displaying solver session progress
-  in a separated category the function
-  :aimms:func:`GMP::SolverSession::CreateProgressCategory` can be used.
+The function :aimms:func:`GMP::SolverSession::CreateProgressCategory` creates a
+new progress category for a solver session. This progress category can
+be used to display solver (session) related information in the
+Progress Window.
+
+There are three levels of progress categories for solver information.
+By default all solver progress will be displayed in the general AIMMS
+progress category for solver progress. If a progress category was
+created for the GMP with procedure
+:aimms:func:`GMP::Instance::CreateProgressCategory`, then all solver progress
+related to that GMP will by default be displayed in the solver
+progress category of the GMP. For displaying solver session progress
+in a separated category the function
+:aimms:func:`GMP::SolverSession::CreateProgressCategory` can be used.
 
 .. code-block:: aimms
 
@@ -65,5 +65,9 @@ Return Value
 
 .. seealso::
 
-    The routines :aimms:func:`GMP::ProgressWindow::CreateProgressCategory`, :aimms:func:`GMP::ProgressWindow::DeleteCategory`, :aimms:func:`GMP::ProgressWindow::DisplayLine`, :aimms:func:`GMP::ProgressWindow::FreezeLine`, :aimms:func:`GMP::ProgressWindow::UnfreezeLine` and
-    :aimms:func:`GMP::ProgressWindow::Transfer`.
+    - :aimms:func:`GMP::ProgressWindow::CreateProgressCategory`
+    - :aimms:func:`GMP::ProgressWindow::DeleteCategory`
+    - :aimms:func:`GMP::ProgressWindow::DisplayLine`
+    - :aimms:func:`GMP::ProgressWindow::FreezeLine`
+    - :aimms:func:`GMP::ProgressWindow::UnfreezeLine` 
+    - :aimms:func:`GMP::ProgressWindow::Transfer`.
