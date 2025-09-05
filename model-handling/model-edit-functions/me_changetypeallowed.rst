@@ -40,8 +40,7 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 .. figure:: images/runtimelib-setup.png
     :align: center
 
-Let ``ep_functionReferenceExampleRuntimeParameter`` have value ``frerl::p_a``, 
-then the code:
+Let ``ep_functionReferenceExampleRuntimeParameter`` have value ``frerl::p_a``, then the code
 
 .. code-block:: aimms
 
@@ -54,13 +53,10 @@ produces in the listing file:
 
     _bp_changeTypeAllowed := 0 ;
 
-Illustrating that a parameter cannot be changed into a quantity.
+illustrating that a parameter cannot be changed into a quantity.
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::ChangeType` 
-
-    *   :aimms:func:`IdentifierTYpe`.
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::ChangeType`.
+    - :aimms:func:`IdentifierTYpe`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.

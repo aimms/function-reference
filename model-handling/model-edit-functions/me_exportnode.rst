@@ -50,18 +50,10 @@ that holds the root of that library as value, then the code:
 
 writes the contents of the runtime library to the file ``test.ams``.
 
+.. seealso::
 
-References
------------
-
-    *   :aimms:func:`me::CreateLibrary`, 
-
-    *   :aimms:func:`me::ImportLibrary` 
-
-    *   :aimms:func:`me::ImportNode`.
-
-	*   :aimms:func:`me::ExportNode` plays an essential role in `Create a static AIMMS Library from a runtime library <https://how-to.aimms.com/Articles/581/581-static-lib-from-runtime-lib.html>`_
-
-
-Generic references for model edit functions can be found on the 
-`index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::CreateLibrary`.
+    - :aimms:func:`me::ImportLibrary`.
+    - :aimms:func:`me::ImportNode`.
+	- :aimms:func:`me::ExportNode` plays an essential role in `Create a static AIMMS Library from a runtime library <https://how-to.aimms.com/Articles/581/581-static-lib-from-runtime-lib.html>`_.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.

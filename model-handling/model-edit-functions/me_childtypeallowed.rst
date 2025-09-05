@@ -7,7 +7,7 @@ me::ChildTypeAllowed
 
 The function :aimms:func:`me::ChildTypeAllowed` returns 1 if a child of type
 ``newType`` can be added as a child to runtime identifier
-``runtimeId``..
+``runtimeId``.
 
 .. code-block:: aimms
 
@@ -41,6 +41,8 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 .. figure:: images/runtimelib-setup.png
     :align: center
 
+|
+
 Let ``ep_functionReferenceExampleRuntimeParameter`` have value ``frerl::p_a``, 
 then the code:
 
@@ -57,15 +59,12 @@ Produces the following in the listing file:
 
     _bp_childTypeAllowed := 0 ;
 
-Illustrating that a parameter cannot have, as child, another parameter.
+illustrating that a parameter cannot have, as child, another parameter.
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::Create` 
-
-    *   :aimms:func:`me::Children`
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::Create`.
+    - :aimms:func:`me::Children`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.
 
 

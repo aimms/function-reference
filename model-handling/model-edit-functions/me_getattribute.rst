@@ -22,7 +22,7 @@ Arguments
         An element in the set :aimms:set:`AllIdentifiers` referencing a runtime identifier.
 
     *attr*
-        An element in the set :aimms:set:`AllAttributeNames`
+        An element in the set :aimms:set:`AllAttributeNames`.
 
 Return Value
 ------------
@@ -66,14 +66,9 @@ produces the following in the listing file:
 
 
 
-References
------------
+.. seealso::
 
-
-    *   :aimms:func:`AttributeToString`
-
-    *   :aimms:func:`me::SetAttribute` 
-
-    *   :aimms:func:`me::Create`.
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`AttributeToString`.
+    - :aimms:func:`me::SetAttribute`.
+    - :aimms:func:`me::Create`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.

@@ -45,6 +45,8 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 .. figure:: images/runtimelib-setup.png
     :align: center
 
+|
+
 Let 
 
 *   ``ep_functionReferenceExampleRuntimeParameter`` refer to the parameter in the runtime library, then the code:
@@ -67,12 +69,8 @@ produces the following in the listing file:
     _sp_annot := "chapterModel::sectionModelEdit::funcMeSetAnnotation::sp_tooltipRuntimeIdentifier" ;
 
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::ChangeType`  
-
-    *   :aimms:func:`me::Rename`.
-    
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::ChangeType`.  
+    - :aimms:func:`me::Rename`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.

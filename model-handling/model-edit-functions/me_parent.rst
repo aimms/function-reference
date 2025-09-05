@@ -36,6 +36,8 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 .. figure:: images/runtimelib-setup.png
     :align: center
 
+|
+
 Let 
 
 *   ``ep_functionReferenceExampleRuntimeLib`` refer to the root of the runtime library, and
@@ -54,12 +56,9 @@ produces the following in the listing file:
 
     _ep_parent := 'FunctionReferenceExampleRuntimeLibrary' ;
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::Children` 
-
-    *   :aimms:func:`me::GetAttribute`.
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::Children`. 
+    - :aimms:func:`me::GetAttribute`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.
 

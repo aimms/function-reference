@@ -40,6 +40,8 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 .. figure:: images/runtimelib-setup.png
     :align: center
 
+|
+
 Let ``ep_functionReferenceExampleRuntimeParameter`` have value ``frerl::p_a``, 
 then the code:
 
@@ -56,11 +58,8 @@ Changes that library to the following:
 
 Illustrating the type change of runtime identifier ``frerl::p_a`` from ``parameter`` to ``string parameter``.
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::Create` 
-    
-    *   :aimms:func:`me::Move`
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::Create`. 
+    - :aimms:func:`me::Move`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.

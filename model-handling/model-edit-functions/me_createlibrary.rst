@@ -35,7 +35,7 @@ Return Value
 Example
 -------
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -45,17 +45,14 @@ The code:
 	_ep_type := IdentifierType(ep_functionReferenceExampleRuntimeLib);
 	display _ep_type ;
 
-Creates a runtime library, and produces in the listing file:
+creates a runtime library, and produces in the listing file:
 
 .. code-block:: aimms
 
     _ep_type := 'LibraryModule' ;
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::ImportLibrary` 
-	
-	*   :aimms:func:`me::Create`
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::ImportLibrary`. 
+	- :aimms:func:`me::Create`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.

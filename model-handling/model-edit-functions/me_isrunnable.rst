@@ -31,4 +31,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`me::Compile` and :aimms:func:`me::IsReadonly`.
+    - The functions :aimms:func:`me::Compile` and :aimms:func:`me::IsReadonly`.

@@ -7,7 +7,7 @@ me::Compile
 
 The procedure :aimms:func:`me::Compile` compiles a runtime identifier and all
 runtime identifiers below that identifier. If that runtime identifier is
-a runtime library, all procedures can be run and set / parameter
+a runtime library, all procedures can be run and set/parameter
 definitions can be evaluated provided there are no errors.
 
 .. code-block:: aimms
@@ -66,17 +66,12 @@ Produces the following in the listing file:
 This is an illustration of the best practice to compile an entire runtime library,
 before executing a procedure instide that library.
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::SetAttribute` 
-
-    *   :aimms:func:`me::Create`.
-
-    *   :aimms:func:`me::IsRunnable` 
-
-    *   The ``APPLY statement``, see :ref:`sec:intern.ref.apply` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::SetAttribute`.
+    - :aimms:func:`me::Create`.
+    - :aimms:func:`me::IsRunnable`.
+    - The ``APPLY statement``, see :ref:`sec:intern.ref.apply` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`_.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.
 
 

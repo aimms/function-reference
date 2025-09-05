@@ -22,7 +22,7 @@ Arguments
         An element in the set :aimms:set:`AllIdentifiers` referencing a runtime identifier.
 
     *attr*
-        An element in the set :aimms:set:`AllAttributeNames`
+        An element in the set :aimms:set:`AllAttributeNames`.
 
 Return Value
 ------------
@@ -34,7 +34,7 @@ Return Value
 Example
 -------
 
-The code:
+The code
 
 .. code-block:: aimms
 
@@ -47,13 +47,9 @@ produces in the listing file:
 
     _bp_isAllowedAttribute := 1 ;
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`IsRuntimeIdentifier`
-
-    *   :aimms:func:`me::SetAttribute` 
-
-    *   :aimms:func:`me::Create`.
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`IsRuntimeIdentifier`.
+    - :aimms:func:`me::SetAttribute`.
+    - :aimms:func:`me::Create`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.

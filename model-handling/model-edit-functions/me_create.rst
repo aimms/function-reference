@@ -48,6 +48,8 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 .. figure:: images/runtimelib-setup.png
     :align: center
 
+|
+
 Let ``ep_functionReferenceExampleRuntimeDeclSec`` have value ``frerl::runtime_declaration_identifiers``, then the code:
 
 .. code-block:: aimms
@@ -63,17 +65,12 @@ inserts a variable at the end of the declaration section, thus changing that lib
 .. figure:: images/runtimelib-after-create.png
     :align: center
 
-Illustrating that a runtime library can grow at runtime.
+illustrating that a runtime library can grow at runtime.
 
-References
------------
+.. seealso::
 
-    *  :aimms:func:`me::Delete` 
-
-    *  :aimms:func:`me::CreateLibrary` 
-
-    *  :aimms:func:`me::Move` 
-
-    *  :aimms:func:`me::SetAttribute`.
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::Delete`.
+    - :aimms:func:`me::CreateLibrary`.
+    - :aimms:func:`me::Move`.
+    - :aimms:func:`me::SetAttribute`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.

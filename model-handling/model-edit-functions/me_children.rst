@@ -12,7 +12,7 @@ runtime identifier and fills an output parameter with those children.
 
     me::Children(
             runtimeId,          ! (input) an element
-            runtimeChildren(i)  ! (output) indexed element parameter.
+            runtimeChildren(i)  ! (output) indexed element parameter
     )
 
 Arguments
@@ -41,8 +41,7 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 .. figure:: images/runtimelib-setup.png
     :align: center
 
-Let ``ep_functionReferenceExampleRuntimeLib`` have value ``FunctionReferenceExampleRuntimeLibrary``, 
-then the code:
+Let ``ep_functionReferenceExampleRuntimeLib`` have value ``FunctionReferenceExampleRuntimeLibrary``, then the code
 
 .. code-block:: aimms
 
@@ -61,16 +60,13 @@ produces in the listing file:
     { 1 : 'frerl::runtime_declaration_identifiers',
       2 : 'frerl::runtimeProc'                     } ;
 
-Illustrating navigating from one runtime identifier to another using model edit functions.
+illustrating navigating from one runtime identifier to another using model edit functions.
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::Parent` 
-
-    *   :aimms:func:`me::GetAttribute`.
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::Parent`.
+    - :aimms:func:`me::GetAttribute`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.
 
 
 

@@ -47,14 +47,11 @@ deletes that parameter from the declaration section, thus changing that library 
 .. figure:: images/runtimelib-after-delete.png
     :align: center
 
-Illustrating that a runtime library can shrink at runtime.
+illustrating that a runtime library can shrink at runtime.
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::Children` 
-
-    *   :aimms:func:`me::GetAttribute`.
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::Children`.
+    - :aimms:func:`me::GetAttribute`.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.
 

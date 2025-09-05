@@ -39,9 +39,9 @@ Return Value
     latter case error(s) have been raised. When ``runtimeId`` doesn't
     reference a runtime identifier an error will be raised.
 
-.. note::
+    .. note::
 
-    The name change file is not supported for runtime libraries.
+        The name change file is not supported for runtime libraries.
 
 
 Example
@@ -51,6 +51,8 @@ Viewing a small runtime library with prefix ``frerl`` in the model explorer:
 
 .. figure:: images/runtimelib-setup.png
     :align: center
+
+|
 
 Let 
 
@@ -70,15 +72,11 @@ moves the procedure to the front of the library, as shown below:
 .. figure:: images/runtimelib-after-move.png
     :align: center
 
-Illustrating that a runtime library can be reorganized at runtime.
+illustrating that a runtime library can be reorganized at runtime.
 
-References
------------
+.. seealso::
 
-    *   :aimms:func:`me::ChangeType`  
-
-    *   :aimms:func:`me::Rename`.
-	
-	*   :aimms:func:`me::Move` plays a central role in `Runtime functions with arguments <https://how-to.aimms.com/Articles/517/517-runtime-functions-with-arguments.html>`_.
-
-Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_
+    - :aimms:func:`me::ChangeType`.  
+    - :aimms:func:`me::Rename`.
+	- :aimms:func:`me::Move` plays a central role in `Runtime functions with arguments <https://how-to.aimms.com/Articles/517/517-runtime-functions-with-arguments.html>`_.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.

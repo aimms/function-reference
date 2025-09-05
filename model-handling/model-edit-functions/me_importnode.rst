@@ -32,4 +32,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`me::CreateLibrary` and :aimms:func:`me::ExportNode`.
+    - The functions :aimms:func:`me::CreateLibrary` and :aimms:func:`me::ExportNode`.
