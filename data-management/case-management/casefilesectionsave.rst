@@ -44,17 +44,17 @@ Return Value
     procedure returns :math:`0` and ``CurrentErrorMessage`` will contain a
     proper error message.
 
-.. note::
+    .. note::
 
-    -  This function is only applicable if the project option
-       ``Data_Management_style`` is set to ``Disk_files_and_folders``.
+        -   This function is only applicable if the project option
+            ``Data_Management_style`` is set to ``Disk_files_and_folders``.
 
-    -  If your application is linked to the AIMMS PRO server, the url can
-       also point to a case file stored at the server.
+        -   If your application is linked to the AIMMS PRO server, the url can
+            also point to a case file stored at the server.
 
-    -  You cannot use this function to create a new case file. A new case
-       file can only be created using ``CaseFileSave``.
+        -   You cannot use this function to create a new case file. A new case
+            file can only be created using ``CaseFileSave``.
 
 .. seealso::
 
-    The functions :aimms:func:`CaseFileSave`, :aimms:func:`CaseFileSectionLoad`, :aimms:func:`CaseFileSectionMerge`, :aimms:func:`CaseFileSectionExists`, :aimms:func:`CaseFileSectionRemove`
+    - The functions :aimms:func:`CaseFileSave`, :aimms:func:`CaseFileSectionLoad`, :aimms:func:`CaseFileSectionMerge`, :aimms:func:`CaseFileSectionExists`, :aimms:func:`CaseFileSectionRemove`.

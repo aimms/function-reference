@@ -26,19 +26,19 @@ Return Value
     procedure returns :math:`-1` and ``CurrentErrorMessage`` will contain a
     proper error message.
 
-.. note::
+    .. note::
 
-    -  This function is only applicable if the project option
-       ``Data_Management_style`` is set to ``Disk_files_and_folders``.
+        -   This function is only applicable if the project option
+            ``Data_Management_style`` is set to ``Disk_files_and_folders``.
 
-    -  This function returns 0 if the IDE is not loaded, for example when
-       running the component version of AIMMS, or when running with the
-       command line option ``--as-server``.
+        -   This function returns 0 if the IDE is not loaded, for example when
+            running the component version of AIMMS, or when running with the
+            command line option ``--as-server``.
 
-    -  An alternative for calling :aimms:func:`CaseCommandNew` is calling :aimms:func:`CaseFileSetCurrent`
-       with an empty string. The latter will not check whether the current
-       case should be saved first.
+        -   An alternative for calling :aimms:func:`CaseCommandNew` is calling :aimms:func:`CaseFileSetCurrent`
+            with an empty string. The latter will not check whether the current
+            case should be saved first.
 
 .. seealso::
 
-    The procedures :aimms:func:`CaseCommandLoadAsActive`, :aimms:func:`CaseCommandLoadIntoActive`, :aimms:func:`CaseCommandMergeIntoActive`, :aimms:func:`CaseCommandSave`, :aimms:func:`CaseCommandSaveAs`
+    - The procedures :aimms:func:`CaseCommandLoadAsActive`, :aimms:func:`CaseCommandLoadIntoActive`, :aimms:func:`CaseCommandMergeIntoActive`, :aimms:func:`CaseCommandSave`, :aimms:func:`CaseCommandSaveAs`.

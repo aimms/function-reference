@@ -68,5 +68,5 @@ renames the parameter as shown below:
 
     - :aimms:func:`me::ChangeType`.
     - :aimms:func:`me::Move`.
-	- Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.
+    - Generic references for model edit functions can be found on the `index page <https://documentation.aimms.com/functionreference/model-handling/model-edit-functions/index.html>`_.
 

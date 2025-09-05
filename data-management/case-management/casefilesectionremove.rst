@@ -35,14 +35,14 @@ Return Value
     removed. In case of any other error, the function returns :math:`-1` and
     ``CurrentErrorMessage`` will contain a proper error message.
 
-.. note::
+    .. note::
 
-    -  This function is only applicable if the project option
-       ``Data_Management_style`` is set to ``Disk_files_and_folders``.
+        -   This function is only applicable if the project option
+            ``Data_Management_style`` is set to ``Disk_files_and_folders``.
 
-    -  If your application is linked to the AIMMS PRO server, the url can
-       also point to a case file stored at the server.
+        -   If your application is linked to the AIMMS PRO server, the url can
+            also point to a case file stored at the server.
 
 .. seealso::
 
-    The functions :aimms:func:`CaseFileSectionSave`, :aimms:func:`CaseFileSectionLoad`, :aimms:func:`CaseFileSectionMerge`, :aimms:func:`CaseFileSectionExists`
+    - The functions :aimms:func:`CaseFileSectionSave`, :aimms:func:`CaseFileSectionLoad`, :aimms:func:`CaseFileSectionMerge`, :aimms:func:`CaseFileSectionExists`.

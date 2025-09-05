@@ -36,21 +36,21 @@ Return Value
     procedure returns 0 and ``CurrentErrorMessage`` will contain a proper
     error message.
 
-.. note::
+    .. note::
 
-    -  This function is only applicable if the project option
-       ``Data_Management_style`` is set to ``Disk_files_and_folders``.
+        -   This function is only applicable if the project option
+            ``Data_Management_style`` is set to ``Disk_files_and_folders``.
 
-    -  This function will only save the data to the specified file. It does
-       not change the value of ``CurrentCase`` or
-       ``CurrentCaseFileContentType``, nor does it mark the current data as
-       being saved.
+        -   This function will only save the data to the specified file. It does
+            not change the value of ``CurrentCase`` or
+            ``CurrentCaseFileContentType``, nor does it mark the current data as
+            being saved.
 
-    -  If your application is linked to the AIMMS PRO server, the url can
-       also point to a case file stored at the server.
+        -   If your application is linked to the AIMMS PRO server, the url can
+            also point to a case file stored at the server.
 
-    -  When you save using :aimms:func:`CaseFileSave` to an existing ``.data`` file
-       with sections, the sections are removed.
+        -   When you save using :aimms:func:`CaseFileSave` to an existing ``.data`` file
+            with sections, the sections are removed.
 
 
 Example
@@ -68,4 +68,4 @@ Reads data from a text file, and then saves it in binary format to ``data/caseC.
 
 .. seealso::
 
-    The functions :aimms:set:`CaseFileSectionSave` and :aimms:set:`CaseFileLoad`
+    - The functions :aimms:set:`CaseFileSectionSave` and :aimms:set:`CaseFileLoad`.

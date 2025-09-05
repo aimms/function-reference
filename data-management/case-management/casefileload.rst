@@ -38,16 +38,16 @@ Return Value
     procedure returns 0 and ``CurrentErrorMessage`` will contain a proper
     error message.
 
-.. note::
+    .. note::
 
-    -  This function is only applicable if the project option
-       ``Data_Management_style`` is set to ``Disk_files_and_folders``.
+        -   This function is only applicable if the project option
+            ``Data_Management_style`` is set to ``Disk_files_and_folders``.
 
-    -  If your application is linked to the AIMMS PRO server, the url can
-       also point to a case file stored at the server.
+        -   If your application is linked to the AIMMS PRO server, the url can
+            also point to a case file stored at the server.
 
-    -  Data stored in user sections of the case file, will not be read by
-       :aimms:func:`CaseFileLoad`.
+        -   Data stored in user sections of the case file, will not be read by
+            :aimms:func:`CaseFileLoad`.
 
 Example
 ----------
@@ -96,4 +96,4 @@ produces in the listing file:
 
 .. seealso::
 
-    The procedure :aimms:func:`CaseFileMerge`.
+    - The procedure :aimms:func:`CaseFileMerge`.

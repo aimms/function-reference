@@ -47,19 +47,19 @@ Return Value
     any other error, it returns :math:`-1`. If the return value is 0 or
     :math:`-1` ``CurrentErrorMessage`` will contain a proper error message.
 
-.. note::
+    .. note::
 
-    -  The newly created monitor is reset automatically, so there is no need
-       to call the function ``DataChangeMonitorReset`` immediately after
-       creation.
+        -   The newly created monitor is reset automatically, so there is no need
+            to call the function ``DataChangeMonitorReset`` immediately after
+            creation.
 
-    -  If your project uses the Data management style 'Disk files and
-       folders', AIMMS itself uses a data change monitor to keep track of
-       whether the active data needs to be saved before exiting, or before
-       loading any new data. The ``ID`` of this internal data change monitor
-       is given by the predeclared string parameter
-       ``DataManagementMonitorID``.
+        -   If your project uses the Data management style 'Disk files and
+            folders', AIMMS itself uses a data change monitor to keep track of
+            whether the active data needs to be saved before exiting, or before
+            loading any new data. The ``ID`` of this internal data change monitor
+            is given by the predeclared string parameter
+            ``DataManagementMonitorID``.
 
 .. seealso::
 
-    The functions :aimms:func:`DataChangeMonitorHasChanged`, :aimms:func:`DataChangeMonitorReset`, :aimms:func:`DataChangeMonitorDelete`.
+    - The functions :aimms:func:`DataChangeMonitorHasChanged`, :aimms:func:`DataChangeMonitorReset`, :aimms:func:`DataChangeMonitorDelete`.

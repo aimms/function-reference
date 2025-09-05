@@ -48,21 +48,21 @@ Return Value
     returns 0 and ``CurrentErrorMessage`` will contain a proper error
     message.
 
-.. note::
+    .. note::
 
-    -  This function is only applicable if the project option
-       ``Data_Management_style`` is set to ``Disk_files_and_folders``.
+        -   This function is only applicable if the project option
+            ``Data_Management_style`` is set to ``Disk_files_and_folders``.
 
-    -  If your application is linked to the AIMMS PRO server, the url can
-       also point to a case file stored at the server.
+        -   If your application is linked to the AIMMS PRO server, the url can
+            also point to a case file stored at the server.
 
-    -  If *url* exists, but is not in :aimms:set:`CaseFileURL`, an element will be added to
-       :aimms:set:`AllCases`.
+        -   If *url* exists, but is not in :aimms:set:`CaseFileURL`, an element will be added to
+            :aimms:set:`AllCases`.
 
-    -  If *url* does not exist, but there is a corresponding entry
-       :aimms:set:`CaseFileURL`, the procedure returns is 1 if checkURLExists is set to 0
-       and it returns 0 if checkURLExists is set to 1.
+        -   If *url* does not exist, but there is a corresponding entry
+            :aimms:set:`CaseFileURL`, the procedure returns is 1 if checkURLExists is set to 0
+            and it returns 0 if checkURLExists is set to 1.
 
 .. seealso::
 
-    The procedures :aimms:func:`CaseDialogSelectMultiple`
+    - The procedures :aimms:func:`CaseDialogSelectMultiple`.

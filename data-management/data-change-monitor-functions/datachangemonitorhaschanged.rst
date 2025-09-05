@@ -36,11 +36,10 @@ Return Value
     identifiers are assumed to be changed, and the function returns 1 as
     well.
 
-.. note::
+    .. note::
 
-    -  Calling :aimms:func:`DataChangeMonitorHasChanged` does not reset the data
-       change monitor.
+        -  Calling :aimms:func:`DataChangeMonitorHasChanged` does not reset the data change monitor.
 
 .. seealso::
 
-    The functions :aimms:func:`DataChangeMonitorCreate`, :aimms:func:`DataChangeMonitorReset`, :aimms:func:`DataChangeMonitorDelete`.
+    - The functions :aimms:func:`DataChangeMonitorCreate`, :aimms:func:`DataChangeMonitorReset`, :aimms:func:`DataChangeMonitorDelete`.

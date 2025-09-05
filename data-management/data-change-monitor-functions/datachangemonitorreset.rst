@@ -36,4 +36,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`DataChangeMonitorCreate`, :aimms:func:`DataChangeMonitorHasChanged`, :aimms:func:`DataChangeMonitorDelete`.
+    - The functions :aimms:func:`DataChangeMonitorCreate`, :aimms:func:`DataChangeMonitorHasChanged`, :aimms:func:`DataChangeMonitorDelete`.

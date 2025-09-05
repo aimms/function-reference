@@ -56,6 +56,8 @@ Changes that library to the following:
 .. figure:: images/runtimelib-after-change-type.png
     :align: center
 
+|
+
 Illustrating the type change of runtime identifier ``frerl::p_a`` from ``parameter`` to ``string parameter``.
 
 .. seealso::

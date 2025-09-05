@@ -22,10 +22,10 @@ Arguments
 ---------
 
     *FirstCase*
-        An element in the set :aimms:set:`AllCases`
+        An element in the set :aimms:set:`AllCases`.
 
     *SecondCase*
-        An element in the set :aimms:set:`AllCases`
+        An element in the set :aimms:set:`AllCases`.
 
     *Identifier*
         An element in the set :aimms:set:`AllIdentifiers`, refering to the specific identifier
