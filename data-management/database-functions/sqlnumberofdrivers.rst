@@ -28,11 +28,11 @@ Return Value
     (using ``'ODBC'`` as argument). In case none are installed, the value
     ``0`` is returned. In case of an error, ``-1`` is returned.
 
-.. note::
+    .. note::
 
-    This function should be used in combination with the function :aimms:func:`SQLDriverName`,
-    to determine all ODBC drivers installed on your system.
+        This function should be used in combination with the function :aimms:func:`SQLDriverName`,
+        to determine all ODBC drivers installed on your system.
 
 .. seealso::
 
-    The functions :aimms:func:`SQLDriverName` and :aimms:func:`SQLCreateConnectionString`.
+    - The functions :aimms:func:`SQLDriverName` and :aimms:func:`SQLCreateConnectionString`.

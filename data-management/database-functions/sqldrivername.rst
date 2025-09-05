@@ -56,4 +56,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`SQLNumberOfDrivers` and :aimms:func:`SQLCreateConnectionString`.
+    - The functions :aimms:func:`SQLNumberOfDrivers` and :aimms:func:`SQLCreateConnectionString`.

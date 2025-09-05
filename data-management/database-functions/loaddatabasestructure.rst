@@ -43,4 +43,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`SaveDatabaseStructure`
+    - The procedure :aimms:func:`SaveDatabaseStructure`.

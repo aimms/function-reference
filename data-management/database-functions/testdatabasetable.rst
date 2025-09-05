@@ -38,4 +38,4 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`TestDataSource` and :aimms:func:`TestDatabaseColumn`.
+    - The procedures :aimms:func:`TestDataSource` and :aimms:func:`TestDatabaseColumn`.

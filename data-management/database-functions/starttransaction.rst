@@ -41,4 +41,4 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:procedure:`CommitTransaction` and :aimms:procedure:`RollbackTransaction`.
+    - The procedures :aimms:procedure:`CommitTransaction` and :aimms:procedure:`RollbackTransaction`.

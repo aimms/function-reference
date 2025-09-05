@@ -31,9 +31,9 @@ Return Value
 
     The function returns the number of views in the specified datasource. If
     there are no views for the specified datasource and owner, 0 is
-    returned. If an error occurs when determining the number of views, -1 is
+    returned. If an error occurs when determining the number of views, ``-1`` is
     returned and an error message is displayed in the error window.
 
 .. seealso::
 
-    The functions :aimms:func:`SQLNumberOfTables`, :aimms:func:`SQLNumberOfColumns` and :aimms:func:`SQLViewName`.
+    - The functions :aimms:func:`SQLNumberOfTables`, :aimms:func:`SQLNumberOfColumns` and :aimms:func:`SQLViewName`.

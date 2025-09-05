@@ -33,18 +33,17 @@ Return Value
     error message can be obtained through the predefined string parameter
     :aimms:set:`CurrentErrorMessage`.
 
-.. note::
+    .. note::
 
-    -  If the SQL statement also produces a result set, then this set is
-       ignored by AIMMS.
+        -   If the SQL statement also produces a result set, then this set is
+            ignored by AIMMS.
 
-    -  Note that the SQL dialect used by, for instance, Oracle, SQL Server
-       and Microsoft Access may differ. If a call to :aimms:procedure:`DirectSQL` fails
-       because of such differences, you should inspect
-       ``CurrentErrorMessage`` for further details.
+        -   Note that the SQL dialect used by, for instance, Oracle, SQL Server
+            and Microsoft Access may differ. If a call to :aimms:procedure:`DirectSQL` fails
+            because of such differences, you should inspect
+            ``CurrentErrorMessage`` for further details.
 
 .. seealso::
 
-    Calling stored procedures and executing SQL queries through AIMMS
-    ``DATABASE PROCEDURES`` is discussed in :doc:`data-communication-components/communicating-with-databases/executing-stored-procedures-and-sql-queries` of the Language
-    Reference.
+    -   Calling stored procedures and executing SQL queries through AIMMS
+        ``DATABASE PROCEDURES`` is discussed in :doc:`data-communication-components/communicating-with-databases/executing-stored-procedures-and-sql-queries` of the Language Reference.

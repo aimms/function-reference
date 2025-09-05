@@ -66,13 +66,13 @@ Return Value
     The function returns a connection string, which can be used to connect
     to a data source on your system.
 
-.. note::
+    .. note::
 
-    The returned connection string can be used as the data source attribute
-    of database related identifiers in AIMMS. Also, it can be used in
-    database related functions (e.g. ``SQLDirect``) as the ``Datasource``
-    argument.
+        The returned connection string can be used as the data source attribute
+        of database related identifiers in AIMMS. Also, it can be used in
+        database related functions (e.g. ``SQLDirect``) as the ``Datasource``
+        argument.
 
 .. seealso::
 
-    The functions :aimms:func:`SQLNumberOfDrivers` and :aimms:func:`SQLDriverName`.
+    - The functions :aimms:func:`SQLNumberOfDrivers` and :aimms:func:`SQLDriverName`.

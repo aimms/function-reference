@@ -54,10 +54,10 @@ Return Value
     as string values. So, if you want to use these results in their numeric
     form, please use the function ``Val``.
 
-.. note::
+    .. note::
 
-    Typically, this function will be used in a construction like the
-    following, to ensure that the right ``ColumnNumber`` argument is passed:
+        Typically, this function will be used in a construction like the
+        following, to ensure that the right ``ColumnNumber`` argument is passed:
 
     .. code-block:: aimms
 
@@ -75,4 +75,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`SQLNumberOfColumns` and :aimms:func:`Val`.
+    - The functions :aimms:func:`SQLNumberOfColumns` and :aimms:func:`Val`.

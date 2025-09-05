@@ -42,4 +42,4 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`TestDatabaseTable` and :aimms:func:`TestDatabaseColumn`.
+    - The procedures :aimms:func:`TestDatabaseTable` and :aimms:func:`TestDatabaseColumn`.

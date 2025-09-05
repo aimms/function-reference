@@ -40,4 +40,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`SQLNumberOfViews`, :aimms:func:`SQLNumberOfTables` and :aimms:func:`SQLColumnData`.
+    - The functions :aimms:func:`SQLNumberOfViews`, :aimms:func:`SQLNumberOfTables` and :aimms:func:`SQLColumnData`.

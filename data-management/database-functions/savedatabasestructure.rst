@@ -33,4 +33,4 @@ Return Value
 
 .. seealso::
 
-    The procedure :aimms:func:`LoadDatabaseStructure`.
+    - The procedure :aimms:func:`LoadDatabaseStructure`.

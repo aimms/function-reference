@@ -43,4 +43,4 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:func:`TestDataSource` and :aimms:func:`TestDatabaseTable`.
+    - The procedures :aimms:func:`TestDataSource` and :aimms:func:`TestDatabaseTable`.

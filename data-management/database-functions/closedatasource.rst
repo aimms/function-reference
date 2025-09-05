@@ -22,9 +22,9 @@ Arguments
     *Datasource*
         A string containing the name of a data source.
 
-.. note::
+    .. note::
 
-    When :aimms:func:`CloseDataSource` is called during a transaction that was
-    explicitly started by calling :aimms:procedure:`StartTransaction` the transaction is rolled back
-    before actually closing the data source. :aimms:set:`CurrentErrorMessage` contains a message
-    telling it did so.
+        When :aimms:func:`CloseDataSource` is called during a transaction that was
+        explicitly started by calling :aimms:procedure:`StartTransaction` the transaction is rolled back
+        before actually closing the data source. :aimms:set:`CurrentErrorMessage` contains a message
+        telling it did so.

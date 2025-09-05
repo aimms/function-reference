@@ -30,4 +30,4 @@ Return Value
 
 .. seealso::
 
-    The procedures :aimms:procedure:`StartTransaction`, :aimms:procedure:`RollbackTransaction`.
+    - The procedures :aimms:procedure:`StartTransaction`, :aimms:procedure:`RollbackTransaction`.

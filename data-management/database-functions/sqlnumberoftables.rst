@@ -31,9 +31,9 @@ Return Value
 
     The function returns the number of tables in the specified datasource.
     If there are no tables for the specified datasource and owner, 0 is
-    returned. If an error occurs when determining the number of tables, -1
+    returned. If an error occurs when determining the number of tables, ``-1``
     is returned and an error message is displayed in the error window.
 
 .. seealso::
 
-    The functions :aimms:func:`SQLNumberOfViews`, :aimms:func:`SQLNumberOfColumns` and :aimms:func:`SQLTableName`.
+    - The functions :aimms:func:`SQLNumberOfViews`, :aimms:func:`SQLNumberOfColumns` and :aimms:func:`SQLTableName`.

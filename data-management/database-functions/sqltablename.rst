@@ -56,4 +56,4 @@ Return Value
 
 .. seealso::
 
-    The functions :aimms:func:`SQLNumberOfTables` and :aimms:func:`SQLViewName`.
+    - The functions :aimms:func:`SQLNumberOfTables` and :aimms:func:`SQLViewName`.
