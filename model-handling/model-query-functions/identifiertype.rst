@@ -89,5 +89,3 @@ And below, a common model query example:
     -  The functions :aimms:func:`IdentifierDimension` and :aimms:func:`IdentifierUnit`.
 
     -  :doc:`data-communication-components/data-initialization-verification-and-control/working-with-the-set-allidentifiers` of the `Language Reference <https://documentation.aimms.com/language-reference/index.html>`__.
-
-    -  The common example in :numref:`CommonModelQueryExample`.
