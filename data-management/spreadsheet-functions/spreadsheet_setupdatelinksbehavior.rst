@@ -1,13 +1,16 @@
+.. warning::
+
+   This article references outdated technology and is provided for historical purposes only. 
+   It is not recommended to use this information as a primary source for current projects or documentation. 
+   Please refer to the latest documentation for up-to-date information, see more in: :doc:`Articles/85/85-using-axll-library` 
+   and the :doc:`dataexchange/index`.
+
 .. aimms:procedure:: Spreadsheet::SetUpdateLinksBehavior(UpdateLinksBehavior)
 
 .. _Spreadsheet::SetUpdateLinksBehavior:
 
 Spreadsheet::SetUpdateLinksBehavior
 ===================================
-
-.. warning::
-
-  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
 
 This procedure specifies how Excel or OpenOffice Calc workbooks
 containing links to other workbooks should be opened. In the Excel case,
@@ -29,56 +32,57 @@ Calc behavior regarding links.
 Arguments
 ---------
 
-    *UpdateLinksBehavior*
-        A scalar expression that sets the behavior of Excel or Calc when a
-        workbook is opened. Possible values are:
+   *UpdateLinksBehavior*
+      A scalar expression that sets the behavior of Excel or Calc when a
+      workbook is opened. Possible values are:
 
-        -  0: (Excel) Excel prompts the user (the Excel default behavior).
+      -  0: (Excel) Excel prompts the user (the Excel default behavior).
 
-        -  1: (Excel) Do not update any links.
+      -  1: (Excel) Do not update any links.
 
-        -  2: (Excel) Only update external links.
+      -  2: (Excel) Only update external links.
 
-        -  3: (Excel) Only update remote links
+      -  3: (Excel) Only update remote links.
 
-        -  4: (Excel) Update both external and remote links
+      -  4: (Excel) Update both external and remote links.
 
-        -  5: (Calc) Do not update any links.
+      -  5: (Calc) Do not update any links.
 
-        -  6: (Calc) If the update setting in Calc\ :math:`^*` is 'Always', all
-           links are updated. Otherwise, no links are updated (the Calc default
-           behavior).
+      -  6: (Calc) If the update setting in Calc\ :math:`^*` is 'Always', all
+         links are updated. Otherwise, no links are updated (the Calc default
+         behavior).
 
-        -  7: (Calc) Always update the links.
+      -  7: (Calc) Always update the links.
 
-        Argument values 0 to 4 are for Excel workbooks, values 5 to 7 are for
-        OpenOffice Calc workbooks. :math:`^*` This setting is called *Update
-        links when opening* and can be found in the Calc menu, under Tools -
-        Options - OpenOffice.org Calc - General.
+      Argument values 0 to 4 are for Excel workbooks, values 5 to 7 are for
+      OpenOffice Calc workbooks. 
+      
+      :math:`^*` This setting is called :menuselection:`Update links when opening` and can be found 
+      in the Calc menu, under :menuselection:`Tools > Options > OpenOffice.org > Calc > General`.
 
 Return Value
 ------------
 
-    The procedure returns 1 on success, or 0 otherwise. In case of an error
-    the pre-defined AIMMS parameter :aimms:set:`CurrentErrorMessage` contains a description of what
-    went wrong.
+   The procedure returns 1 on success, or 0 otherwise. In case of an error
+   the pre-defined AIMMS parameter :aimms:set:`CurrentErrorMessage` contains a description of what
+   went wrong.
 
 .. note::
 
-    -  When the procedure is called, the setting remains valid for all
-       consequent workbooks that will be opened, until the procedure is
-       called again with a different setting.
+    - When the procedure is called, the setting remains valid for all
+      consequent workbooks that will be opened, until the procedure is
+      called again with a different setting.
 
-    -  In case you use both Excel and Calc workbooks with links in your
-       AIMMS application, you should call this function twice: once with an
-       argument to control the Excel behavior, and once with an argument to
-       control the Calc behavior. The setting of the first call will be
-       remembered when you do the second call. For example: first call
-       ``Spreadsheet::SetUpdateLinksBehavior(1)``, to specify that Excel
-       workbooks should not update their links, and then call
-       ``Spreadsheet::SetUpdateLinksBehavior(7)``, to specify that Calc
-       workbooks should always update their links upon opening.
+    - In case you use both Excel and Calc workbooks with links in your
+      AIMMS application, you should call this function twice: once with an
+      argument to control the Excel behavior, and once with an argument to
+      control the Calc behavior. The setting of the first call will be
+      remembered when you do the second call. For example: first call
+      ``Spreadsheet::SetUpdateLinksBehavior(1)``, to specify that Excel
+      workbooks should not update their links, and then call
+      ``Spreadsheet::SetUpdateLinksBehavior(7)``, to specify that Calc
+      workbooks should always update their links upon opening.
 
-    -  Upto AIMMS 3.11 this function was known as
-       ``ExcelSetUpdateLinksBehavior``, which has become deprecated as of
-       AIMMS 3.12.
+    - Upto AIMMS 3.11 this function was known as
+      ``ExcelSetUpdateLinksBehavior``, which has become deprecated as of
+      AIMMS 3.12.

@@ -1,13 +1,16 @@
+.. warning::
+
+   This article references outdated technology and is provided for historical purposes only. 
+   It is not recommended to use this information as a primary source for current projects or documentation. 
+   Please refer to the latest documentation for up-to-date information, see more in: :doc:`aimms-libraries/repository-library/aimmsxllibrary/index` 
+   and the :doc:`dataexchange/index`.
+
 .. aimms:function:: Spreadsheet::ColumnNumber(ColumnName)
 
 .. _Spreadsheet::ColumnNumber:
 
 Spreadsheet::ColumnNumber
 =========================
-
-.. warning::
-
-  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
 
 The function :aimms:func:`Spreadsheet::ColumnNumber` returns the number of the
 Excel or OpenOffice Calc column with the given name.

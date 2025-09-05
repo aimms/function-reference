@@ -1,13 +1,16 @@
+.. warning::
+
+   This article references outdated technology and is provided for historical purposes only. 
+   It is not recommended to use this information as a primary source for current projects or documentation. 
+   Please refer to the latest documentation for up-to-date information, see more in: :doc:`Articles/85/85-using-axll-library` 
+   and the :doc:`dataexchange/index`.
+
 .. aimms:procedure:: Spreadsheet::RetrieveParameter(Workbook, Parameter, Range, Sheet, Transposed)
 
 .. _Spreadsheet::RetrieveParameter:
 
 Spreadsheet::RetrieveParameter
 ==============================
-
-.. warning::
-
-  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
 
 The procedure :aimms:func:`Spreadsheet::RetrieveParameter` reads data from the
 given range in the Excel or OpenOffice Calc workbook into the specified

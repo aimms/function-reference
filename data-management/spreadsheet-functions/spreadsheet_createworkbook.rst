@@ -1,13 +1,16 @@
+.. warning::
+
+   This article references outdated technology and is provided for historical purposes only. 
+   It is not recommended to use this information as a primary source for current projects or documentation. 
+   Please refer to the latest documentation for up-to-date information, see more in: :doc:`aimms-libraries/repository-library/aimmsxllibrary/index` 
+   and the :doc:`dataexchange/index`.
+
 .. aimms:procedure:: Spreadsheet::CreateWorkbook(WorkbookName, SheetName)
 
 .. _Spreadsheet::CreateWorkbook:
 
 Spreadsheet::CreateWorkbook
 ===========================
-
-.. warning::
-
-  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
 
 The procedure :aimms:func:`Spreadsheet::CreateWorkbook` creates a new Excel or
 OpenOffice Calc workbook. In the Calc case, the workbook contains three

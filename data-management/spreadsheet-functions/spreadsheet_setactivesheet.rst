@@ -1,13 +1,16 @@
+.. warning::
+
+   This article references outdated technology and is provided for historical purposes only. 
+   It is not recommended to use this information as a primary source for current projects or documentation. 
+   Please refer to the latest documentation for up-to-date information, see more in: :doc:`Articles/85/85-using-axll-library` 
+   and the :doc:`dataexchange/index`.
+
 .. aimms:procedure:: Spreadsheet::SetActiveSheet(Workbook, Name)
 
 .. _Spreadsheet::SetActiveSheet:
 
 Spreadsheet::SetActiveSheet
 ===========================
-
-.. warning::
-
-  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
 
 The procedure :aimms:func:`Spreadsheet::SetActiveSheet` sets the active sheet for
 the given Excel or OpenOffice Calc workbook.

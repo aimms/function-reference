@@ -1,13 +1,16 @@
+.. warning::
+
+   This article references outdated technology and is provided for historical purposes only. 
+   It is not recommended to use this information as a primary source for current projects or documentation. 
+   Please refer to the latest documentation for up-to-date information, see more in: :doc:`aimms-libraries/repository-library/aimmsxllibrary/index` 
+   and the :doc:`dataexchange/index`.
+
 .. aimms:procedure:: Spreadsheet::DeleteSheet(Workbook, Name)
 
 .. _Spreadsheet::DeleteSheet:
 
 Spreadsheet::DeleteSheet
 ========================
-
-.. warning::
-
-  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
 
 The procedure :aimms:func:`Spreadsheet::DeleteSheet` deletes the given sheet from
 the specified Excel or OpenOffice Calc workbook.
@@ -25,7 +28,7 @@ Arguments
     *Workbook*
         A scalar string expression representing the Excel or Calc workbook. If
         this argument ends in ``.ods``, OpenOffice Calc is used. Otherwise,
-        Excel is
+        Excel is used.
 
     *Name*
         The name of the sheet to be deleted.

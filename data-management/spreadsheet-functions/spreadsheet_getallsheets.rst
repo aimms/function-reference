@@ -1,13 +1,16 @@
+.. warning::
+
+   This article references outdated technology and is provided for historical purposes only. 
+   It is not recommended to use this information as a primary source for current projects or documentation. 
+   Please refer to the latest documentation for up-to-date information, see more in: :doc:`aimms-libraries/repository-library/aimmsxllibrary/index` 
+   and the :doc:`dataexchange/index`.
+
 .. aimms:procedure:: Spreadsheet::GetAllSheets(Workbook, Name)
 
 .. _Spreadsheet::GetAllSheets:
 
 Spreadsheet::GetAllSheets
 =========================
-
-.. warning::
-
-  :doc:`index` are :doc:`deprecated <deprecation-table>`. One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
 
 The procedure :aimms:func:`Spreadsheet::GetAllSheets` obtains the names of all
 sheets currently present in the specified Excel or OpenOffice Calc
@@ -40,6 +43,3 @@ Return Value
     the pre-defined AIMMS parameter :aimms:set:`CurrentErrorMessage` contains a description of what
     went wrong.
 
-.. note::
-
-    None.

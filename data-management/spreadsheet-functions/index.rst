@@ -1,11 +1,12 @@
+.. warning::
+
+  This article references outdated technology and is provided for historical purposes only. 
+  It is not recommended to use this information as a primary source for current projects or documentation. 
+  Please refer to the latest documentation for up-to-date information, see more in: :doc:`aimms-libraries/repository-library/aimmsxllibrary/index` 
+  and the :doc:`dataexchange/index`.
+
 Spreadsheet Functions
 ---------------------
-
-.. warning:: 
-  
-  As detailed in the :doc:`deprecation-table`, Spreadsheet Functions are deprecated. 
-
-  One may use the :doc:`Articles/85/85-using-axll-library` or the :doc:`dataexchange/index`.
 
 AIMMS supports the following functions for reading from and
 writing to Excel and OpenOffice Calc workbooks:
@@ -38,4 +39,7 @@ writing to Excel and OpenOffice Calc workbooks:
    spreadsheet_saveworkbook
    spreadsheet_print
 
-The functions operate on OpenOffice Calc workbooks, if the ``WorkbookName`` argument ends in ``.ods``. In all other cases, the functions operate on Excel workbooks.
+.. note::
+  
+  The functions operate on OpenOffice Calc workbooks, if the ``WorkbookName`` argument ends in ``.ods``. 
+  In all other cases, the functions operate on Excel workbooks.
