@@ -13,6 +13,7 @@ instance:
    gmp_solversession_addlinearization
    gmp_solversession_asynchronousexecute
    gmp_solversession_createprogresscategory
+   gmp_solversession_delete
    gmp_solversession_execute
    gmp_solversession_executionstatus
    gmp_solversession_generatebinaryeliminationrow

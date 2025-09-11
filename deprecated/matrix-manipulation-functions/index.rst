@@ -1,3 +1,5 @@
+.. _sec:depr_mm_proc:
+
 Matrix Manipulation Procedures
 ==============================
 

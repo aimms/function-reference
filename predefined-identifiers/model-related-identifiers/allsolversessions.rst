@@ -30,9 +30,9 @@ Updatability
     The contents of :aimms:set:`AllSolverSessions` can only be modified
     programmatically through the ``SOLVE`` statement, and the functions
     ``GMP::Instance::Solve``, ``GMP::Instance::CreateSolverSession`` and
-    ``GMP::Instance::DeleteSolverSession``.
+    ``GMP::SolverSession::Delete``.
 
 .. seealso::
 
-    The functions :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::Instance::CreateSolverSession` and :aimms:func:`GMP::Instance::DeleteSolverSession`, and the predeclared
+    The functions :aimms:func:`GMP::Instance::Solve`, :aimms:func:`GMP::Instance::CreateSolverSession` and :aimms:func:`GMP::SolverSession::Delete`, and the predeclared
     identifier :aimms:set:`AllSolverSessionCompletionObjects`.

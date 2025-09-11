@@ -25,6 +25,10 @@ Return Value
 
     The procedure returns 1 on success, or 0 otherwise.
 
+.. note::
+
+    This procedure has been deprecated since AIMMS version 25.7. It has been replaced by the procedure ``GMP::SolverSession::Delete``.
+
 .. seealso::
 
-    - The functions :aimms:func:`GMP::Instance::CreateSolverSession` and :aimms:func:`GMP::SolverSession::GetInstance`.
+    - The functions :aimms:func:`GMP::Instance::CreateSolverSession` and :aimms:func:`GMP::SolverSession::Delete`.
