@@ -107,8 +107,8 @@ The mapping of the removed matrix manipulation procedures to GMP procedures and
 functions is documented in :ref:`sec:depr_mm_proc`. The following GMP procedures
 are deprecated:
 
--  The procedure ``GMP::Instance::DeleteSolverSession`` has been replaced by
-   :any:`SolverSession::Delete`.
+-  The procedure ``GMP::Instance::DeleteSolverSession`` has been replaced by the
+   procedure :aimms:func:`GMP::SolverSession::Delete`.
 
 The following intrinsic functions are deprecated, but can be replaced by an
 equivalent call to an existing intrinsic procedure or function:
