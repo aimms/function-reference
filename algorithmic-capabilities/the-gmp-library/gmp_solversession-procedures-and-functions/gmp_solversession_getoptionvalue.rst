@@ -37,8 +37,8 @@ Return Value
        corresponding option keywords, you can use the functions
        ``OptionGetString`` and ``OptionGetKeywords``.
 
-    -  This function can also be used to get the value of the following Solvers General
-       options:
+    -  This function can also be used to retrieve the current option value
+       of the following Solvers General options:
 
        -  :ref:`option-AIMMS-cutoff`
 

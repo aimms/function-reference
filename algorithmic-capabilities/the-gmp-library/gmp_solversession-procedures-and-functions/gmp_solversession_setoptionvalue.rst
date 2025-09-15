@@ -80,17 +80,8 @@ Return Value
        -  :ref:`option-AIMMS-time_limit`
 
     -  Some options that control the termination of the solving process can be modified from within
-       a callback within :ref:`SolverGurobi` (version 12.0 or higher), using this procedure:
-
-       -  :ref:`option-AIMMS-time_limit`
-
-       -  :ref:`option-GUROBI-barrier_iteration_limit`
-
-       -  :ref:`option-GUROBI-feasibility_pump_passes`
-
-       -  :ref:`option-GUROBI-node_limit`
-
-       -  :ref:`option-GUROBI-work_limit`
+       a callback within :ref:`SolverGurobi`; see the section :ref:`GUROBI_Callback_Settable_Options`
+       for more information.
 
 .. seealso::
 
