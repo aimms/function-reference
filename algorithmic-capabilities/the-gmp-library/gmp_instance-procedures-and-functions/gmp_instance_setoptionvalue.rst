@@ -57,7 +57,7 @@ Return Value
     -  This procedure can also be used to set the following Solvers General
        options:
 
-       -  Cutoff
+       -  :ref:`option-AIMMS-cutoff`
 
        -  Iteration limit
 
@@ -75,4 +75,4 @@ Return Value
 
 .. seealso::
 
-    - The routines :aimms:func:`GMP::Instance::GetOptionValue`, :aimms:func:`GMP::SolverSession::GetOptionValue`, :aimms:func:`GMP::SolverSession::SetOptionValue`, :aimms:func:`OptionGetString` and :aimms:func:`OptionGetKeywords`.
+    - The routines :aimms:func:`GMP::Instance::GetOptionValue`, :aimms:func:`GMP::SolverSession::SetOptionValue`, :aimms:func:`OptionGetString` and :aimms:func:`OptionGetKeywords`.
