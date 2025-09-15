@@ -59,19 +59,19 @@ Return Value
 
        -  :ref:`option-AIMMS-cutoff`
 
-       -  Iteration limit
+       -  :ref:`option-AIMMS-iteration_limit`
 
-       -  Maximal number of domain errors
+       -  :ref:`option-AIMMS-maximal_number_of_domain_errors`
 
-       -  Maximal number of integer solutions
+       -  :ref:`option-AIMMS-maximal_number_of_integer_solutions`
 
-       -  MIP absolute optimality tolerance
+       -  :ref:`option-AIMMS-mip_absolute_optimality_tolerance`
 
-       -  MIP relative optimality tolerance
+       -  :ref:`option-AIMMS-mip_relative_optimality_tolerance`
 
-       -  Solver workspace
+       -  :ref:`option-AIMMS-solver_workspace`
 
-       -  Time limit
+       -  :ref:`option-AIMMS-time_limit`
 
 .. seealso::
 

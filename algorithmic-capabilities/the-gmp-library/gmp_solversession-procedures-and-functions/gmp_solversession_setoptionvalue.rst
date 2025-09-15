@@ -60,6 +60,38 @@ Return Value
        obtain the corresponding option keywords, you can use the functions
        ``OptionGetString`` and ``OptionGetKeywords``.
 
+    -  This procedure can also be used to set the following Solvers General
+       options:
+
+       -  :ref:`option-AIMMS-cutoff`
+
+       -  :ref:`option-AIMMS-iteration_limit`
+
+       -  :ref:`option-AIMMS-maximal_number_of_domain_errors`
+
+       -  :ref:`option-AIMMS-maximal_number_of_integer_solutions`
+
+       -  :ref:`option-AIMMS-mip_absolute_optimality_tolerance`
+
+       -  :ref:`option-AIMMS-mip_relative_optimality_tolerance`
+
+       -  :ref:`option-AIMMS-solver_workspace`
+
+       -  :ref:`option-AIMMS-time_limit`
+
+    -  Some options that control the termination of the solving process can be modified from within
+       a callback within :ref:`SolverGurobi` (version 12.0 or higher), using this procedure:
+
+       -  :ref:`option-AIMMS-time_limit`
+
+       -  :ref:`option-GUROBI-barrier_iteration_limit`
+
+       -  :ref:`option-GUROBI-feasibility_pump_passes`
+
+       -  :ref:`option-GUROBI-node_limit`
+
+       -  :ref:`option-GUROBI-work_limit`
+
 .. seealso::
 
-    - The routines :aimms:func:`GMP::Instance::GetOptionValue`, :aimms:func:`GMP::Instance::SetOptionValue`, :aimms:func:`GMP::SolverSession::GetOptionValue`, :aimms:func:`OptionGetString` and :aimms:func:`OptionGetKeywords`.
+    - The routines :aimms:func:`GMP::Instance::SetOptionValue`, :aimms:func:`GMP::SolverSession::GetOptionValue`, :aimms:func:`OptionGetString` and :aimms:func:`OptionGetKeywords`.

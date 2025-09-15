@@ -32,10 +32,29 @@ Return Value
 
 .. note::
 
-    Options for which strings are displayed in the AIMMS **Options** dialog
-    box, are also represented by numerical (integer) values. To obtain the
-    corresponding option keywords, you can use the functions
-    ``OptionGetString`` and ``OptionGetKeywords``.
+    -  Options for which strings are displayed in the AIMMS **Options** dialog
+       box, are also represented by numerical (integer) values. To obtain the
+       corresponding option keywords, you can use the functions
+       ``OptionGetString`` and ``OptionGetKeywords``.
+
+    -  This function can also be used to get the value of the following Solvers General
+       options:
+
+       -  :ref:`option-AIMMS-cutoff`
+
+       -  :ref:`option-AIMMS-iteration_limit`
+
+       -  :ref:`option-AIMMS-maximal_number_of_domain_errors`
+
+       -  :ref:`option-AIMMS-maximal_number_of_integer_solutions`
+
+       -  :ref:`option-AIMMS-mip_absolute_optimality_tolerance`
+
+       -  :ref:`option-AIMMS-mip_relative_optimality_tolerance`
+
+       -  :ref:`option-AIMMS-solver_workspace`
+
+       -  :ref:`option-AIMMS-time_limit`
 
 .. seealso::
 
