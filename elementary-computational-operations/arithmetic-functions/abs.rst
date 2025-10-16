@@ -3,7 +3,7 @@
 .. _Abs:
 
 Abs
-===
+=====
 
 .. code-block:: aimms
 
