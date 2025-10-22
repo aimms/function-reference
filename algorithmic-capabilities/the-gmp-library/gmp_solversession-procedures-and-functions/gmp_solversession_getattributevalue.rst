@@ -117,7 +117,7 @@ The table below shows the solution quality attributes supported by CPLEX and Gur
 +-----------------+--------+--------+---------------------------------------------------+
 
 The table below shows the attributes for multi-objective optimization supported by CPLEX and Gurobi.
-These attribites can be used to retrieve model or solution information for each subproblem solved,
+These attributes can be used to retrieve model or solution information for each subproblem solved,
 as specified by the *objNo* argument.
 
 +-----------------+--------+--------+---------------------------------------------------+
