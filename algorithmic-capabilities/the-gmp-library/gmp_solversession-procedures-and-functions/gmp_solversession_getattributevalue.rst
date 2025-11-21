@@ -121,7 +121,7 @@ These attributes can be used to retrieve model or solution information for each 
 as specified by the *objNo* argument.
 
 +-----------------------------------------+--------+--------+---------------------------------------------------+
-| Attribute                             | CPLEX  | Gurobi | Description                                       |
+| Attribute                               | CPLEX  | Gurobi | Description                                       |
 +=========================================+========+========+===================================================+
 | ObjNPriority                            | ✔      | ✔      | Objective priority                                |
 +-----------------------------------------+--------+--------+---------------------------------------------------+
