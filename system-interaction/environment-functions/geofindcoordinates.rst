@@ -55,6 +55,12 @@ Return Value
     The procedure returns 1 on success, and 0 if the specified address could
     not be found. On failure, the pre-defined identifier :aimms:set:`CurrentErrorMessage` will
     contain a proper error message.
+    
+.. Evolution
+.. -----------
+.. 
+.. Nowadays there are better alternatives. 
+.. One is provided in this `how to <https://how-to.aimms.com/Articles/684/684-LocationIQ.html>`_.
 
 Example
 -------
@@ -85,6 +91,10 @@ Example
 
 .. note::
 
+    -  Using `AIMMS Dex Rest API client interface <https://documentation.aimms.com/dataexchange/rest-client.html>`_ 
+       you can build your own Geocoding provider, as illustrated in this 
+       `how to <https://how-to.aimms.com/Articles/684/684-LocationIQ.html>`_.
+
     -  With the introduction of AIMMS 3.9.5 and AIMMS 3.10 PR, this
        procedure has been disabled because Microsoft discontinued support to
        the Virtual Earth geocoder service that was used to locate the
@@ -103,3 +113,4 @@ Example
        policy <http://wiki.openstreetmap.org/wiki/Nominatim#Usage_Policy>`__
        for more details), AIMMS inserts a small delay in case the time
        between two consecutive geocoding requests is smaller than a second.
+
