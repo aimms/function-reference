@@ -34,7 +34,7 @@ Dimension
 ---------
 
     The ``.Nonvar`` suffix has the same dimension and domain as that of the
-    constraint or variable at hand.
+    variable at hand.
 
 .. note::
 

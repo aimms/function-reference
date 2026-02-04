@@ -19,7 +19,7 @@ Dimension
 ---------
 
     The ``.ReducedCost`` suffix has the same dimension and domain as that of
-    the constraint at hand.
+    the variable at hand.
 
 .. note::
 

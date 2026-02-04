@@ -18,7 +18,7 @@ Dimension
 ---------
 
     The ``.Priority`` suffix has the same dimension and domain as that of
-    the constraint or variable at hand.
+    the variable at hand.
 
 .. note::
 

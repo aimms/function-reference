@@ -18,3 +18,4 @@ AIMMS variables support the following collection of suffixes.
    nominalcoefficient
    smallestvalue
    largestvalue
+   robust
