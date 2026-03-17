@@ -39,7 +39,7 @@ Arguments
 
     -  The used regular expressions grammar follows the implementation of
        the `modified ECMAScript regular expression grammar in the C++
-       Standard Library <https://en.cppreference.com/w/cpp/regex/ecmascript>`__. It follows `ECMA-262 grammar <https://ecma-international.org/ecma-262/>`__ and `POSIX grammar <http://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html#tag_09_03>`__,
+       Standard Library <https://en.cppreference.com/w/cpp/regex/ecmascript>`__. It follows `ECMA-262 grammar <https://ecma-international.org/ecma-262/>`__ and `POSIX grammar <https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap09.html#tag_09_03>`__,
        with some modifications.
 
     -  To include a special character in a string, it should be escaped by
