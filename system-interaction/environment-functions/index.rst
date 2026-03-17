@@ -11,4 +11,5 @@ or allow modification of, various system settings:
    environmentgetstring
    environmentsetstring
    geofindcoordinates
+   setloggerlevel
    testinternetconnection
