@@ -40,7 +40,7 @@ Return Value
 
     -  If the specified path contains folders that do not exist, then these
        folders are created automatically. To check whether a specific case
-       path already exists you can use the function ``CaseFind``.
+       path already exists you can use the function :aimms:func:`CaseFind`.
 
     -  If the option ``Data_Management_style`` is set to
        ``disk_files_and_folders`` there is no valid replacement.

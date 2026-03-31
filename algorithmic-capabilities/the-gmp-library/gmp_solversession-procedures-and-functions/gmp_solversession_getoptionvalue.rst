@@ -35,7 +35,7 @@ Return Value
     -  Options for which strings are displayed in the AIMMS **Options** dialog
        box, are also represented by numerical (integer) values. To obtain the
        corresponding option keywords, you can use the functions
-       ``OptionGetString`` and ``OptionGetKeywords``.
+       :aimms:func:`OptionGetString` and :aimms:func:`OptionGetKeywords`.
 
     -  This function can also be used to retrieve the current option value
        of the following Solvers General options:

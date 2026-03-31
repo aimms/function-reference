@@ -21,7 +21,7 @@ Arguments
 
     *histogram\_id*
         A scalar value representing a histogram that was previously created
-        using the ``HistogramCreate`` function.
+        using the :aimms:func:`HistogramCreate` function.
 
     *left\_bound*
         A one-dimensional identifier that will be filled with the left bound of

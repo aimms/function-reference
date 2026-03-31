@@ -6,7 +6,7 @@ HistogramDelete
 ===============
 
 The procedure :aimms:func:`HistogramDelete` deletes a histogram that was created
-using the ``HistogramCreate`` procedure. After the historgram has been
+using the :aimms:func:`HistogramCreate` procedure. After the historgram has been
 deleted, the histogram id is no longer valid.
 
 .. code-block:: aimms
@@ -20,7 +20,7 @@ Arguments
 
     *histogram\_id*
         A scalar value representing a histogram that was previously created
-        using the ``HistogramCreate`` procedure. When the procedure returns,
+        using the :aimms:func:`HistogramCreate` procedure. When the procedure returns,
         this *histogram_id* no longer refers to a valid histogram.
 
 Return Value

@@ -48,7 +48,7 @@ Return Value
     -  If the specified path contains folders that do not exist, then these
        folders are created automatically. To check whether a specific
        dataset path already exists you can use the procedure
-       ``DatasetFind``.
+       :aimms:func:`DatasetFind`.
 
 .. seealso::
 

@@ -9,7 +9,7 @@ The function :aimms:func:`InvestmentVariableInternalRateReturnInPeriodic` return
 the internal rate of return for an investment based on a series of
 in-periodic cash flows. The internal rate of return is the interest rate
 received for an investment. This function uses the procedure
-``InvestmentVariableInternalRateReturnInPeriodicAll`` to determine all
+:aimms:func:`InvestmentVariableInternalRateReturnInPeriodicAll` to determine all
 possible internal rates and returns the internal rate that is within the
 specified bounds.
 

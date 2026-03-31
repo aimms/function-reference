@@ -19,7 +19,7 @@ Arguments
 
     *histogram\_id*
         A scalar value representing a histogram that was previously created
-        using the ``HistogramCreate`` function.
+        using the :aimms:func:`HistogramCreate` function.
 
 Return Value
 ------------

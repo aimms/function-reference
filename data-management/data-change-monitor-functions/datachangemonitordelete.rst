@@ -7,7 +7,7 @@ DataChangeMonitorDelete
 
 With the function :aimms:func:`DataChangeMonitorDelete`, you can delete a data
 change monitor that was created using the function
-``DataChangeMonitorCreate``.
+:aimms:func:`DataChangeMonitorCreate`.
 
 .. code-block:: aimms
 

@@ -7,8 +7,8 @@ PrintStartReport
 
 With the procedure :aimms:func:`PrintStartReport` you start printing a report that
 consists of the printing of multiple pages (using the procedure
-``PrintPage``). The advantage of printing in the form of a report is
-that all print request until ``PrintEndReport`` arrive at the printer as
+:aimms:func:`PrintPage`). The advantage of printing in the form of a report is
+that all print request until :aimms:func:`PrintEndReport` arrive at the printer as
 a single print job, and that the pages are numbered correctly.
 
 .. code-block:: aimms
@@ -40,7 +40,7 @@ Return Value
 .. note::
 
     A successful call to :aimms:func:`PrintStartReport` must be followed by a call to
-    ``PrintEndReport``, otherwise nothing is printed, and your printer may
+    :aimms:func:`PrintEndReport`, otherwise nothing is printed, and your printer may
     hang.
 
 .. seealso::

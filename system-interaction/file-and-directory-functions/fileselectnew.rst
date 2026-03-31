@@ -8,7 +8,7 @@ FileSelectNew
 With the procedure :aimms:func:`FileSelectNew` the user can select a new (or
 existing) file using Windows' file selection dialog box. Usually it is
 used to select an output file (i.e. for writing), because other than
-``FileSelect``, this procedure allows you to specify new file names. If
+:aimms:func:`FileSelect`, this procedure allows you to specify new file names. If
 an existing file name is selected, a warning will be displayed. The
 procedure does not create any files on disk or make any changes to
 existing files. It only returns the file name selected by the user.

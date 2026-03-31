@@ -6,7 +6,7 @@ CaseFileSectionSave
 ===================
 
 Beside the main data area in a case file, which is written using the
-function ``CaseFileSave``, you can store additional data in user defined
+function :aimms:func:`CaseFileSave`, you can store additional data in user defined
 sections of the case file. To save data in a user section, you call the
 function :aimms:func:`CaseFileSectionSave`.
 
@@ -53,7 +53,7 @@ Return Value
             also point to a case file stored at the server.
 
         -   You cannot use this function to create a new case file. A new case
-            file can only be created using ``CaseFileSave``.
+            file can only be created using :aimms:func:`CaseFileSave`.
 
 .. seealso::
 

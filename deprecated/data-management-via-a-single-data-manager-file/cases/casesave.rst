@@ -7,7 +7,7 @@ CaseSave
 
 The procedure :aimms:func:`CaseSave` saves the data to the current case. If there
 is no current case, then the procedure behaves exactly as the
-``CaseSaveAs`` procedure. If the case has active references to datasets
+:aimms:func:`CaseSaveAs` procedure. If the case has active references to datasets
 that contain changed data, then these datasets are saved as well.
 
 .. code-block:: aimms

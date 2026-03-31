@@ -7,8 +7,8 @@ HistogramCreate
 
 The function :aimms:func:`HistogramCreate` sets up a new histogram. The created
 histogram does not yet contain any observations. These observations must
-be added later using the function ``HistogramAddObservation`` or
-``HistogramAddObservations``.
+be added later using the function :aimms:func:`HistogramAddObservation` or
+:aimms:func:`HistogramAddObservations`.
 
 .. code-block:: aimms
 

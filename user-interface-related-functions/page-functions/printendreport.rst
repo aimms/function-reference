@@ -6,7 +6,7 @@ PrintEndReport
 ==============
 
 With the procedure ``PageEndReport`` you finish the printing of a report
-that was started via a call to ``PrintStartReport``.
+that was started via a call to :aimms:func:`PrintStartReport`.
 
 .. code-block:: aimms
 

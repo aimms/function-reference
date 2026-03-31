@@ -7,7 +7,7 @@ SQLViewName
 
 With the function :aimms:func:`SQLViewName` you can determine the name of a
 certain view in a datasource. This function is designed to be used in
-conjunction with the ``SQLNumberOfViews`` function.
+conjunction with the :aimms:func:`SQLNumberOfViews` function.
 
 .. code-block:: aimms
 
@@ -26,7 +26,7 @@ Arguments
     *ViewNo*
         An integer containing the number of the view for which you want to
         retrieve the name. To determine the maximum value of this argument,
-        please use the function ``SQLNumberOfViews`` prior to calling this
+        please use the function :aimms:func:`SQLNumberOfViews` prior to calling this
         function. The minimum value of this argument is 1.
 
     *Owner*

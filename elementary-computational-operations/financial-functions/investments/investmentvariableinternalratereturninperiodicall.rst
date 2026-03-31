@@ -74,7 +74,7 @@ Equation
 
     -  When you want to use the procedure in an objective function or
        constraint you have to use
-       ``InvestmentVariableInternalRateReturnInPeriodic``.
+       :aimms:func:`InvestmentVariableInternalRateReturnInPeriodic`.
 
     -  The procedure :aimms:func:`InvestmentVariableInternalRateReturnInPeriodicAll`
        is similar to the Excel function `XIRR <https://learn.microsoft.com/en-us/office/troubleshoot/excel/algorithm-of-xirr-funcation>`_.

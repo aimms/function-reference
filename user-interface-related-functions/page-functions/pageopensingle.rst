@@ -5,7 +5,7 @@
 PageOpenSingle
 ==============
 
-The procedure :aimms:func:`PageOpenSingle` is similar to ``PageOpen``, except that
+The procedure :aimms:func:`PageOpenSingle` is similar to :aimms:func:`PageOpen`, except that
 after successfull opening the page :aimms:func:`PageOpenSingle` makes sure that
 all other currently opened pages are closed.
 

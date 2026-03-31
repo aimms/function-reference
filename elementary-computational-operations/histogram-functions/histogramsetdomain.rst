@@ -24,7 +24,7 @@ Arguments
 
     *histogram\_id*
         A scalar value representing a histogram that was previously created
-        using the ``HistogramCreate`` procedure.
+        using the :aimms:func:`HistogramCreate` procedure.
 
     *intervals*
         The number of fixed-width intervals (not including the *left\_* or

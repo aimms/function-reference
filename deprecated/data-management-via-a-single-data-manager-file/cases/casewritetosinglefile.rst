@@ -37,7 +37,7 @@ Return Value
        element parameter ``CurrentDefaultCaseType``.
 
     The files written by :aimms:func:`CaseWriteToSingleFile` can only be read by
-    ``CaseReadFromSingleFile``.
+    :aimms:func:`CaseReadFromSingleFile`.
 
 .. seealso::
 

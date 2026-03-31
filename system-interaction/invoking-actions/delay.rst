@@ -8,7 +8,7 @@ Delay
 With the procedure :aimms:func:`Delay` you can block the execution of your model
 for the indicated delay time. You can use this procedure, for instance,
 when you want to display intermediate results on a page using the
-procedure ``PageRefreshAll``.
+procedure :aimms:func:`PageRefreshAll`.
 
 .. code-block:: aimms
 

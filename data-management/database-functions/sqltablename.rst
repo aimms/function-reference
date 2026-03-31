@@ -7,7 +7,7 @@ SQLTableName
 
 With the function :aimms:func:`SQLTableName` you can determine the name of a
 certain table in a datasource. This function is designed to be used in
-conjunction with the ``SQLNumberOfTables`` function.
+conjunction with the :aimms:func:`SQLNumberOfTables` function.
 
 .. code-block:: aimms
 
@@ -26,7 +26,7 @@ Arguments
     *TableNo*
         An integer containing the number of the table for which you want to
         retrieve the name. To determine the maximum value of this argument,
-        please use the function ``SQLNumberOfTables`` prior to calling this
+        please use the function :aimms:func:`SQLNumberOfTables` prior to calling this
         function. The minimum value of this argument is 1.
 
     *Owner*

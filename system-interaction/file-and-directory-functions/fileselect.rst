@@ -8,7 +8,7 @@ FileSelect
 With the procedure :aimms:func:`FileSelect` you can let the user select an
 existing file name using Windows' standard file selection dialog box.
 Usually you use this procedure to select some input file (i.e. a file
-for reading), because other than ``FileSelectNew``, this procedure only
+for reading), because other than :aimms:func:`FileSelectNew`, this procedure only
 allows the user to select existing files.
 
 .. code-block:: aimms

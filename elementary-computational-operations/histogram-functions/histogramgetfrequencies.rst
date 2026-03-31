@@ -20,7 +20,7 @@ Arguments
 
     *histogram\_id*
         A scalar value representing a histogram that was previously created
-        using the ``HistogramCreate`` procedure.
+        using the :aimms:func:`HistogramCreate` procedure.
 
     *frequencies*
         A one-dimensional identifier that will be filled with the frequencies of

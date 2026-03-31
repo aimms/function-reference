@@ -7,7 +7,7 @@ DatasetSave
 
 The procedure :aimms:func:`DatasetSave` saves the data of a data category to the
 active dataset. If there is no named active dataset, then the procedure
-behaves exactly as the ``DatasetSaveAs`` procedure.
+behaves exactly as the :aimms:func:`DatasetSaveAs` procedure.
 
 .. code-block:: aimms
 

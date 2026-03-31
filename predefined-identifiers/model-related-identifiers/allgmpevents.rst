@@ -18,8 +18,8 @@ Definition
 ----------
 
     The set :aimms:set:`AllGMPEvents` contains all GMP events used by the functions
-    ``GMP::Event::Create``, ``GMP::Event::Delete``, ``GMP::Event::Reset``,
-    and ``GMP::Event::Set``.
+    :aimms:func:`GMP::Event::Create`, :aimms:func:`GMP::Event::Delete`, :aimms:func:`GMP::Event::Reset`,
+    and :aimms:func:`GMP::Event::Set`.
 
 .. seealso::
 

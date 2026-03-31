@@ -34,7 +34,7 @@ Updatability
 
     If you have installed the same callback procedure for several callbacks,
     you can call the function
-    ``GMP::SolverSession::GetCallbackInterruptStatus``, which returns an
+    :aimms:func:`GMP::SolverSession::GetCallbackInterruptStatus`, which returns an
     element into the set :aimms:set:`AllSolverInterrupts`, to obtain the particular
     callback for which your callback procedure was called.
 

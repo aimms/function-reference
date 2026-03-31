@@ -6,7 +6,7 @@ DialogGetElementByData
 ======================
 
 The procedure :aimms:func:`DialogGetElementByData` is an extension of the
-procedure ``DialogGetElementByText``. Instead of only showing a list box
+procedure :aimms:func:`DialogGetElementByText`. Instead of only showing a list box
 with only a single string per element, this procedure allows you to show
 a list box with multiple columns of text per element. The text that is
 displayed in each column is specified via a 2-dimensional string

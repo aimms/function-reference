@@ -13,7 +13,7 @@ this is the case, AIMMS will abort the ``SOLVE`` statement with a
 runtime error. If the solver is not locked, AIMMS locks the solver for
 the duration of ``SOLVE`` statement by default. With the procedure
 :aimms:func:`SolverReleaseControl` you can unlock a solver previously locked by a
-call to the procedure ``SolverGetControl``.
+call to the procedure :aimms:func:`SolverGetControl`.
 
 .. code-block:: aimms
 

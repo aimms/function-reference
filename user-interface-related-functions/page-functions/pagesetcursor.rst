@@ -7,7 +7,7 @@ PageSetCursor
 
 With the procedure :aimms:func:`PageSetCursor` you have maximum control over where
 you want to set the current keyboard input focus. Similar to
-``PageSetFocus`` you can specify which page object should get the focus,
+:aimms:func:`PageSetFocus` you can specify which page object should get the focus,
 but additionally you can specify the data element that should be
 highlighted within the focus object.
 

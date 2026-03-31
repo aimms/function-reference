@@ -8,7 +8,7 @@ CaseSetCurrent
 The procedure :aimms:func:`CaseSetCurrent` sets the case that is regarded as the
 current case. It does not load or save any data or checks whether data
 needs to be saved. You can, for example, use it to make a newly created
-case the current case, so that during a ``CaseSave`` the data is written
+case the current case, so that during a :aimms:func:`CaseSave` the data is written
 to this case.
 
 .. code-block:: aimms

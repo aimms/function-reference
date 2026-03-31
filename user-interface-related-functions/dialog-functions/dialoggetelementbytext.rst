@@ -7,7 +7,7 @@ DialogGetElementByText
 
 The procedure :aimms:func:`DialogGetElementByText` displays a dialog box in which
 the user can select an element from a set. However, other than
-``DialogGetElement``, this procedure does not show a list of element
+:aimms:func:`DialogGetElement`, this procedure does not show a list of element
 names but a list of strings, which are given as a separate argument to
 the procedure.
 

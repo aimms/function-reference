@@ -51,7 +51,7 @@ Return Value
     -  This function is only applicable if the project option
        ``Data_Management_style`` is set to ``Single_Data_Manager_file``.
 
-    -  You can use the functions ``CaseGetType`` and ``CaseTypeCategories``
+    -  You can use the functions :aimms:func:`CaseGetType` and :aimms:func:`CaseTypeCategories`
        to check whether a specific data category is part of a case.
 
     -  If the option ``Data_Management_style`` is set to

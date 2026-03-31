@@ -11,7 +11,7 @@ that you can override items in the **Data** menu using the options
 listed under
 ``Project - Data manager - Using disk files and folders - Data menu overrides``).
 If there is no active case yet, this procedure behaves the same as
-``CaseCommandSaveAs``. Otherwise, the active data is saved to the active
+:aimms:func:`CaseCommandSaveAs`. Otherwise, the active data is saved to the active
 case file.
 
 .. code-block:: aimms

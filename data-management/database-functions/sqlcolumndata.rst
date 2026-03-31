@@ -33,7 +33,7 @@ Arguments
     *ColumnNumber*
         An integer containing the number of the column for which to retrieve a
         characteristic. The maximum value of this argument can be obtained by
-        calling the function ``SQLNumberOfColumns`` prior to calling this
+        calling the function :aimms:func:`SQLNumberOfColumns` prior to calling this
         function. The minimum value of this argument is 1.
 
     *Owner*
@@ -52,7 +52,7 @@ Return Value
     This means that also the numerical characteristics (``'Width'``,
     ``'NumberOfDecimals'`` and (possibly) ``'DefaultValue'``) are returned
     as string values. So, if you want to use these results in their numeric
-    form, please use the function ``Val``.
+    form, please use the function :aimms:func:`Val`.
 
     .. note::
 

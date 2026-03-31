@@ -20,7 +20,7 @@ Definition
     The set :aimms:set:`AllExecutionStatuses` contains the names of all execution
     statuses associated with asynchronous solves. The execution status of an
     asynchronous solve can be queried using the function
-    ``GMP::SolverSession::ExecutionStatus``.
+    :aimms:func:`GMP::SolverSession::ExecutionStatus`.
 
 .. seealso::
 

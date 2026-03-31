@@ -45,7 +45,7 @@ Return Value
 .. note::
 
     You can only modify user colors that have been added using the procedure
-    ``UserColorAdd``. Colors added through the **Tools-User Colors** dialog
+    :aimms:func:`UserColorAdd`. Colors added through the **Tools-User Colors** dialog
     box are fixed and cannot be deleted or modified.
 
 .. seealso::

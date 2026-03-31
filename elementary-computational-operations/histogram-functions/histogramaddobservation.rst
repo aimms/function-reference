@@ -7,7 +7,7 @@ HistogramAddObservation
 
 The procedure :aimms:func:`HistogramAddObservation` adds a new observation to a
 histogram that was previously created through the procedure
-``HistogramCreate``.
+:aimms:func:`HistogramCreate`.
 
 .. code-block:: aimms
 
@@ -21,7 +21,7 @@ Arguments
 
     *histogram\_id*
         A scalar value representing a histogram that was previously created
-        using the ``HistogramCreate`` procedure.
+        using the :aimms:func:`HistogramCreate` procedure.
 
     *value*
         The value of a new observation that should be added to the histogram.

@@ -7,7 +7,7 @@ AllDataSourceProperties
 
 The predefined set :aimms:set:`AllDataSourceProperties` contains all datasource
 properties, which can be queried using the function
-``GetDataSourceProperty``.
+:aimms:func:`GetDataSourceProperty`.
 
 .. code-block:: aimms
 
@@ -25,7 +25,7 @@ Definition
 ----------
 
     The set :aimms:set:`AllDataSourceProperties` contains all datasource properties,
-    which can be queried using the function ``GetDataSourceProperty``. They
+    which can be queried using the function :aimms:func:`GetDataSourceProperty`. They
     are:
 
     -  ``SQL_DATA_SOURCE_NAME`` : The name of the datasource.

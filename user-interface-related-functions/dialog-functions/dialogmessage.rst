@@ -29,7 +29,7 @@ Arguments
 
 .. note::
 
-    The procedures :aimms:func:`DialogMessage` and ``DialogError`` only differ in the
+    The procedures :aimms:func:`DialogMessage` and :aimms:func:`DialogError` only differ in the
     icon that is displayed at the left side of the dialog box
 
 .. seealso::

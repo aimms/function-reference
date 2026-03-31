@@ -27,7 +27,7 @@ Return Value
 
 .. note::
 
-    This procedure has been deprecated since AIMMS version 25.7. It has been replaced by the procedure ``GMP::SolverSession::Delete``.
+    This procedure has been deprecated since AIMMS version 25.7. It has been replaced by the procedure :aimms:func:`GMP::SolverSession::Delete`.
 
 .. seealso::
 
