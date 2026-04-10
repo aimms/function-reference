@@ -18,7 +18,7 @@ deterministic equivalent of a stochastic mathematical program.
          ScenarioProbability,   ! (input) a double parameter
          ScenarioTreeMap,       ! (input) an element parameter
          RootScenarioName,      ! (input) a string expression
-         [GenerationMode],      ! (optional) a stochatic generation mode
+         [GenerationMode],      ! (optional) a stochastic generation mode
          [Name]                 ! (optional) a string expression
     )
 
