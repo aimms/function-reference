@@ -20,7 +20,7 @@ Arguments
 ---------
 
     *delaytime*
-        The number of seconds that the execution should be blocked.
+        The number of seconds that the execution should be blocked. Although the compiler is not flagging it, this should be a unitless expression.
 
 .. seealso::
 
