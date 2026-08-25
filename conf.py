@@ -68,6 +68,15 @@ linkcheck_ignore = [r'https://web.imt-atlantique.fr/x-info/sdemasse/gccatold/tit
                     r'https://www.gurobi.com/documentation/9.1/refman/configuration_parameters.html',
                     r'https://www.gurobi.com/documentation/9.1/refman/parameters.html#sec:Parameters']
 
+# The linkcheck pipeline runs this project twice. With
+# SPHINX_IGNORE_EXTERNAL_LINKS set it checks only links internal to the project,
+# and that run gates the pipeline; without it, external links are checked too and
+# the job is allowed to fail. External sites rot and rate-limit on their own
+# schedule - support.microsoft.com answers 403 to CI runners, which is what broke
+# this repo's pipeline - and that must never block a documentation merge.
+if os.environ.get('SPHINX_IGNORE_EXTERNAL_LINKS') == 'true':
+    linkcheck_ignore += [r'^https?://']
+
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
 
