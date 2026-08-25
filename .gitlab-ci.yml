@@ -4,45 +4,106 @@ variables:
 stages:
   - test
   - build
-  - pdf
+  - deploy
 
 .run_on_dockerhost: &run_on_dockerhost
   tags:
     - docker20
   image: "${DOCKER_ACCESS_URL}/other/dockerdev/documentation:latest"
 
+# Two linkcheck runs, the same pair every AIMMS docs repo has: the gating one
+# checks only links internal to this project, the informational one also checks
+# external links and is allowed to fail. Splitting them is what keeps a rotted
+# or bot-blocked third-party URL from turning the pipeline red - this repo used
+# to fail on a 403 from support.microsoft.com.
 linkcheck:
   <<: *run_on_dockerhost
   stage: test
+  variables:
+    SPHINX_IGNORE_EXTERNAL_LINKS: "true"
   script:
-    - python3 -msphinx -W -b linkcheck . _build/linkcheck
+    - sphinx-build -W --keep-going -b linkcheck . _build/linkcheck
 
-build_and_staging:
+linkcheck_external:
+  <<: *run_on_dockerhost
+  stage: test
+  script:
+    - sphinx-build -W --keep-going -b linkcheck . _build/linkcheck
+  allow_failure: true
+
+build:
+  <<: *run_on_dockerhost
+  stage: test
+  script:
+    - sphinx-build -W --keep-going -b html . _build/html
+
+# Informational for now, unlike the gating spellcheck in documentation and
+# how-to. A run over this repo flags words in 734 files: mostly AIMMS identifiers
+# the checker cannot know (cp::AllDifferent, allowEqual) but real typos too
+# (occurences, Allthough, upperbound). Feed the identifiers into
+# spelling_wordlist.txt and fix the typos, then drop allow_failure so this gates
+# like the other repos.
+spellcheck:
+  <<: *run_on_dockerhost
+  stage: test
+  script:
+    - sphinx-build -W --keep-going -b spelling . _build/spelling
+  allow_failure: true
+
+# Every branch gets its own parallel Pages deployment at:
+#   <CI_PAGES_URL>/<branch-slug>/
+build_staging:
   <<: *run_on_dockerhost
   stage: build
+  # Depend on the three gating checks by name rather than on the whole test
+  # stage. Stage ordering alone would also make linkcheck_external a
+  # prerequisite: it is allow_failure so it can never fail the pipeline, but the
+  # stage would still wait for it to finish, and checking every external URL is
+  # by far the slowest job here. spellcheck is listed even where it is
+  # allow_failure - a needed job that fails but is allowed to does not block.
+  needs:
+    - job: build
+    - job: linkcheck
+    - job: spellcheck
   rules:
-    - if: $CI_COMMIT_TAG       # no pipelines on tags
-      when: never
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'  #when a merge request is active, all pushes trigger two pipelines if we allow this one
-      when: never
-    - if: '$CI_COMMIT_BRANCH != "master"'
-      when: always
+    # CI_COMMIT_BRANCH is set only for branch pipelines, so requiring it already
+    # excludes tag and merge-request pipelines. The explicit guards that used to
+    # sit here for those two cases were redundant once the condition was written
+    # this way.
+    - if: $CI_COMMIT_BRANCH && $CI_COMMIT_BRANCH != "master"
+      when: on_success
     - when: never
+  # The "pages" keyword - not the job name - is what makes this a Pages job
+  # (GitLab 17.9+). Keep it, or staging stops publishing.
+  pages:
+    path_prefix: "$CI_COMMIT_REF_SLUG"
+    # Doc branches can stay open for months. Every push to the branch
+    # republishes and resets this clock, so only branches that go quiet for a
+    # full quarter expire - and re-running this job republishes them at the
+    # same URL.
+    expire_in: 3 months
+  environment:
+    name: docs-staging/$CI_COMMIT_REF_SLUG
+    url: $CI_PAGES_URL
   script:
-    - sphinx-build -M html . _build
-    - bash load_ssh_key_for_deploy.sh
-    - ssh support@data.aimms.com mkdir -p /home/aimms/www/functional-reference-staging/${CI_COMMIT_BRANCH}
-    - rsync -r --omit-dir-times --delete-excluded _build/html/ support@data.aimms.com:/home/aimms/www/functional-reference-staging/${CI_COMMIT_BRANCH}
+    - sphinx-build -b html . _build/html
+    # Pages publishes the "public" directory at the repository root
+    - rm -rf public
+    - mv _build/html public
+    - echo "Staging documentation published to ${CI_PAGES_URL}"
+  artifacts:
+    paths:
+      - public
 
-build_and_install:
+deploy:
   <<: *run_on_dockerhost
-  stage: build
+  stage: deploy
   rules:
     - if: $CI_COMMIT_BRANCH == "master"
-      when: always
+      when: on_success
     - when: never
   script:
-    - python3 -msphinx -W -b html . _build/html
+    - sphinx-build -W --keep-going -b html . _build/html
     - python3 -msphinx.ext.intersphinx _build/html/objects.inv > _build/html/help_index_functionreference.txt
     - cp -r _build/html functionreference
     - az storage copy -s 'functionreference' --recursive --destination-container '$web' -- --overwrite=true --as-subdir=true
@@ -51,14 +112,14 @@ build_and_install:
 
 compile_PDF:
   <<: *run_on_dockerhost
-  stage: pdf
+  stage: deploy
   rules:
     - if: $CI_COMMIT_BRANCH == "master"
-      when: always
+      when: on_success
     - when: never
   script:
-    - python3 -msphinx -M latex . _build
-    - python3 -msphinx -M latexpdf . _build
+    - sphinx-build -M latex . _build
+    - sphinx-build -M latexpdf . _build
     - mkdir -p functionreference && cp _build/latex/AIMMS_func.pdf functionreference/AIMMS_func.pdf
     - az storage copy -s 'functionreference' --recursive --destination-container '$web' -- --overwrite=true --as-subdir=true
     - bash load_ssh_key_for_deploy.sh
