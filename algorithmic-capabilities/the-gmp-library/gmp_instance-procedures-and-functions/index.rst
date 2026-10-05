@@ -75,3 +75,4 @@ managing generated mathematical program instances:
    gmp_instance_setstartingpointselection
    gmp_instance_settimelimit
    gmp_instance_solve
+   gmp_instance_solvewithroundandrepair
