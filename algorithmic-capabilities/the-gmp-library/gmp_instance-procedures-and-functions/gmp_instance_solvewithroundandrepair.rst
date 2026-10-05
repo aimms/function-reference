@@ -12,7 +12,8 @@ GMP::Instance::SolveWithRoundAndRepair
 | While the solver works on the MIP, the procedure collects fractional (node LP)
   solutions and interrupts the solve after every *freq* distinct fractional
   solutions. The binary variables in *variableSet* are then rounded, and the
-  rounded solution is repaired by solving two auxiliary MIPs.
+  rounded values are used to construct an integer solution by solving two
+  auxiliary MIPs.
 |
 | The repaired solution is passed to the solver as a heuristic solution, and the
   solve continues. This is repeated until the relative MIP gap of the
