@@ -70,7 +70,7 @@ Return Value
 
     -  This procedure can only be used for models of type MIP or MIQP, and
        only with a solver that supports interrupting a solve and continuing it
-       later, which are CPLEX and Gurobi. See the article `Implementing Continued
+       later, i.e., CPLEX or Gurobi. See the article `Implementing Continued
        Solves <https://how-to.aimms.com/Articles/685/685-continued-solve.html>`__
        for more information about continued solves.
 
