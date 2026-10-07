@@ -51,6 +51,11 @@ Return Value
        will change the mathematical programming type from MINLP (NLP) into
        MIP (LP) if the presolved model contains no nonlinear constraints.
 
+    -  This function is not supported for GMP's generated using
+       :aimms:func:`GMP::Instance::CreateDual`, GMP's generated using
+       :aimms:func:`GMP::Instance::GenerateRobustCounterpart`, and GMP's
+       generated using :aimms:func:`GMP::Instance::GenerateStochasticProgram`.
+
 Example
 -------
 
